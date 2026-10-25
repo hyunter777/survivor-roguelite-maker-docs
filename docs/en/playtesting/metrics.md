@@ -25,9 +25,9 @@ When adding your own text-input UI, suppress gameplay movement while the UI owns
 
 ## Figure
 
-![Screenshot slot: run-summary (capture pending).](../../assets/run-summary.svg)
+![Run details with damage, DPS, kills and share by weapon.](../../assets/run-summary.png)
 
-Screenshot slot: run-summary (capture pending).
+Run details with damage, DPS, kills and share by weapon.
 
 ## Check your result
 

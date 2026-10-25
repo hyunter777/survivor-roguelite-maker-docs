@@ -16,9 +16,9 @@ Wave Editor exposes wave/groups/entries and expected spawning over time. Compare
 
 ## Figure
 
-![Screenshot slot: content-browser (capture pending).](../../assets/content-browser.svg)
+![Content Browser with a selected weapon and validation results.](../../assets/content-browser.png)
 
-Screenshot slot: content-browser (capture pending).
+Content Browser with a selected weapon and validation results.
 
 ## Check your result
 

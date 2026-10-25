@@ -28,9 +28,9 @@ Observe boss spawn/phase/defeat events and verify the wave ends at the intended 
 
 ## Figure
 
-![Screenshot slot: boss-horde-inspector (capture pending).](../../assets/boss-horde-inspector.svg)
+![Enemy inspector with boss phases and wave-scaled previews.](../../assets/boss-horde-inspector.png)
 
-Screenshot slot: boss-horde-inspector (capture pending).
+Enemy inspector with boss phases and wave-scaled previews.
 
 ## Check your result
 

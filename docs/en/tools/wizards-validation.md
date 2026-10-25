@@ -21,9 +21,9 @@ Open **Tools/Survivor Roguelite Maker/Content Browser** and validate your select
 
 ## Figure
 
-![Screenshot slot: scene-wizard (capture pending).](../../assets/scene-wizard.svg)
+![Create Game Scene wizard with content, catalogs and output paths.](../../assets/scene-wizard.png)
 
-Screenshot slot: scene-wizard (capture pending).
+Create Game Scene wizard with content, catalogs and output paths.
 
 ## Check your result
 

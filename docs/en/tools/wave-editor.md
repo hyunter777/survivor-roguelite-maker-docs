@@ -16,9 +16,9 @@ Wave Editor exposes wave/groups/entries and expected spawning over time. Compare
 
 ## Figure
 
-![Screenshot slot: wave-editor (capture pending).](../../assets/wave-editor.svg)
+![Wave Editor with spawn timeline and preview.](../../assets/wave-editor.png)
 
-Screenshot slot: wave-editor (capture pending).
+Wave Editor with spawn timeline and preview.
 
 ## Check your result
 

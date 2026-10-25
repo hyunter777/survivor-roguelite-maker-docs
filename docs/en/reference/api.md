@@ -21,9 +21,9 @@ Select the API version matching the installed package.
 
 ## Figure
 
-![Screenshot slot: api-reference (capture pending).](../../assets/api-reference.svg)
+![SimSystems in the public API reference.](../../assets/api-reference.png)
 
-Screenshot slot: api-reference (capture pending).
+SimSystems in the public API reference.
 
 ## Check your result
 

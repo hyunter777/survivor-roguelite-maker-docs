@@ -21,9 +21,9 @@ Inspect a single wave in Horde Preview before tuning an entire arena in Run Paci
 
 ## Figure
 
-![Screenshot slot: boss-horde-inspector (capture pending).](../../assets/boss-horde-inspector.svg)
+![Enemy inspector with boss phases and wave-scaled previews.](../../assets/boss-horde-inspector.png)
 
-Screenshot slot: boss-horde-inspector (capture pending).
+Enemy inspector with boss phases and wave-scaled previews.
 
 ## Check your result
 

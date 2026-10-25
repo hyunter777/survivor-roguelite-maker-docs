@@ -20,9 +20,9 @@ Before upgrading a project, back up assets and saves, preserve stable ids/arena 
 
 ## Figure
 
-![Screenshot slot: release-notes (capture pending).](../assets/release-notes.svg)
+![Release Notes for version 1.0.0.](../assets/release-notes.png)
 
-Screenshot slot: release-notes (capture pending).
+Release Notes for version 1.0.0.
 
 ## Check your result
 

@@ -20,9 +20,9 @@ The site is hosted on GitHub Pages. Send support reproductions to hyunter@flycat
 
 ## Figure
 
-![Screenshot slot: support-checklist (capture pending).](../assets/support-checklist.svg)
+![Support and license guide with contact and reproduction details.](../assets/support-checklist.png)
 
-Screenshot slot: support-checklist (capture pending).
+Support and license guide with contact and reproduction details.
 
 ## Check your result
 

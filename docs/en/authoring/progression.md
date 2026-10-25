@@ -17,9 +17,9 @@ Use the profile/configuration path to obtain availability rather than mutating s
 
 ## Figure
 
-![Screenshot slot: unlock-settings (capture pending).](../../assets/unlock-settings.svg)
+![Content inspector with unlock rules.](../../assets/unlock-settings.png)
 
-Screenshot slot: unlock-settings (capture pending).
+Content inspector with unlock rules.
 
 ## Check your result
 

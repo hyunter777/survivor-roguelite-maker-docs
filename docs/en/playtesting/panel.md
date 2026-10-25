@@ -36,9 +36,9 @@ Speed and single stepping do not count as cheats by themselves because they do n
 
 ## Figure
 
-![Screenshot slot: playtest-panel (capture pending).](../../assets/playtest-panel.svg)
+![Playtest panel and DPS meter during an active wave.](../../assets/playtest-panel.png)
 
-Screenshot slot: playtest-panel (capture pending).
+Playtest panel and DPS meter during an active wave.
 
 ## Check your result
 

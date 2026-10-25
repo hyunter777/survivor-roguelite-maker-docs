@@ -26,9 +26,9 @@ Package code, a sample's authoring source, and a sample's generated assets have 
 
 ## Figure
 
-![Screenshot slot: package-manager (capture pending).](../../assets/package-manager.svg)
+![Package Manager showing Survivor Roguelite Maker and its dependencies.](../../assets/package-manager.png)
 
-Screenshot slot: package-manager (capture pending).
+Package Manager showing Survivor Roguelite Maker and its dependencies.
 
 ## Check your result
 

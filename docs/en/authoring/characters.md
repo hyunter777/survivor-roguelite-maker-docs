@@ -20,9 +20,9 @@ Enable UseTriggerRules or UsePoolConstraints when relying on their extended fiel
 
 ## Figure
 
-![Screenshot slot: character-inspector (capture pending).](../../assets/character-inspector.svg)
+![Character inspector with starting loadout and effects.](../../assets/character-inspector.png)
 
-Screenshot slot: character-inspector (capture pending).
+Character inspector with starting loadout and effects.
 
 ## Check your result
 

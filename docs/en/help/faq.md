@@ -36,9 +36,9 @@ Put game assets/code in your own folder, preserve ids, and use adapters rather t
 
 ## Figure
 
-![Screenshot slot: faq-checklist (capture pending).](../../assets/faq-checklist.svg)
+![FAQ covering setup and extension workflows.](../../assets/faq-checklist.png)
 
-Screenshot slot: faq-checklist (capture pending).
+FAQ covering setup and extension workflows.
 
 ## Check your result
 

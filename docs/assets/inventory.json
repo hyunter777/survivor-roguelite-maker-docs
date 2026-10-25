@@ -1,15 +1,23 @@
 {
   "api-reference": {
-    "status": "pending",
-    "file": "api-reference.svg"
+    "status": "captured",
+    "file": "api-reference.png",
+    "caption": "SimSystems in the public API reference.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "218b5f2317c76025dc9469de3f3d618c9db3a07ab8e7715166127c9e88d8ddba"
   },
   "architecture": {
     "status": "diagram",
     "file": "architecture.svg"
   },
   "balance-simulator": {
-    "status": "pending",
-    "file": "balance-simulator.svg"
+    "status": "captured",
+    "file": "balance-simulator.png",
+    "caption": "Balance Simulator with seeded run results and wave charts.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "1f5837e83215f7314f0788936da729351dc5f8aabdb2322aa1c3b65284d2b2bf"
   },
   "behaviour-registry": {
     "status": "diagram",
@@ -20,80 +28,132 @@
     "file": "bootstrap-extension.svg"
   },
   "bootstrap-inspector": {
-    "status": "pending",
-    "file": "bootstrap-inspector.svg"
+    "status": "captured",
+    "file": "bootstrap-inspector.png",
+    "caption": "Scene bootstrap with content, catalogs and Seed settings.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "f4d3194369f76ae2249e001e99e7c6d6f58d04510f5ddc3010c637fc9104938d"
   },
   "boss-horde-inspector": {
-    "status": "pending",
-    "file": "boss-horde-inspector.svg"
+    "status": "captured",
+    "file": "boss-horde-inspector.png",
+    "caption": "Enemy inspector with boss phases and wave-scaled previews.",
+    "width": 1600,
+    "height": 1400,
+    "sha256": "1eaec3989bf04e8aadebd7402bf84ec67143670e5ff4e722225bb9ab70e2a369"
   },
   "build-lab": {
     "status": "captured",
     "file": "build-lab.png"
   },
   "character-inspector": {
-    "status": "pending",
-    "file": "character-inspector.svg"
+    "status": "captured",
+    "file": "character-inspector.png",
+    "caption": "Character inspector with starting loadout and effects.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "e8ef9a4e6a7c538bc08e4df556481b8c5562f85babe643d4f945534c063b02fa"
   },
   "content-browser": {
-    "status": "pending",
-    "file": "content-browser.svg"
+    "status": "captured",
+    "file": "content-browser.png",
+    "caption": "Content Browser with a selected weapon and validation results.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "d4d38bd4fe971d80afc7bfd4815472acb32f5a29882a7e521a06c529f7d53458"
   },
   "content-graph": {
     "status": "diagram",
     "file": "content-graph.svg"
   },
   "content-registry": {
-    "status": "pending",
-    "file": "content-registry.svg"
+    "status": "captured",
+    "file": "content-registry.png",
+    "caption": "Content registry linking settings, stats and authored assets.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "483da64a0440d89d61eaa1a70870ab1e61324dc08438551a6c922d252af23201"
   },
   "content-table": {
     "status": "captured",
     "file": "content-table.png"
   },
   "custom-pickup": {
-    "status": "pending",
-    "file": "custom-pickup.svg"
+    "status": "captured",
+    "file": "custom-pickup.png",
+    "caption": "IPickupBehaviour.Collect in the public API reference.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "ecd7511dd3de190ec191cf29b3f4855e54778b5e8e64fe953064892d6a4dac69"
   },
   "demo-menu": {
     "status": "captured",
     "file": "demo-menu.png"
   },
   "determinism-checklist": {
-    "status": "pending",
-    "file": "determinism-checklist.svg"
+    "status": "captured",
+    "file": "determinism-checklist.png",
+    "caption": "Scene bootstrap configured with a fixed Seed.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "f4d3194369f76ae2249e001e99e7c6d6f58d04510f5ddc3010c637fc9104938d"
   },
   "effect-inspector": {
-    "status": "pending",
-    "file": "effect-inspector.svg"
+    "status": "captured",
+    "file": "effect-inspector.png",
+    "caption": "Item inspector with Link effect source and scaling fields.",
+    "width": 1600,
+    "height": 1400,
+    "sha256": "6f255a78a9fdd5ab53074eca325c21817ec99fd4788b496484355704c983531e"
   },
   "enemy-inspector": {
-    "status": "pending",
-    "file": "enemy-inspector.svg"
+    "status": "captured",
+    "file": "enemy-inspector.png",
+    "caption": "Enemy inspector with movement, special attack and scaled combat fields.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "686cce7be656373b162bf45cdecceb384c868ad033f01ef454d131f1283b9205"
   },
   "extension-map": {
     "status": "diagram",
     "file": "extension-map.svg"
   },
   "faq-checklist": {
-    "status": "pending",
-    "file": "faq-checklist.svg"
+    "status": "captured",
+    "file": "faq-checklist.png",
+    "caption": "FAQ covering setup and extension workflows.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "e7096fce30fedd7ed26872f7a95e811e911f2f23cb48ba4eed349fc739d41836"
   },
   "feature-map": {
-    "status": "pending",
-    "file": "feature-map.svg"
+    "status": "captured",
+    "file": "feature-map.png",
+    "caption": "Content Browser listing the connected content categories.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "83cc5f567f7f8d620c22afe2f3bd56cd3a9b003b38c470ee32bc3c59d32f42bf"
   },
   "feedback-audio": {
-    "status": "pending",
-    "file": "feedback-audio.svg"
+    "status": "captured",
+    "file": "feedback-audio.png",
+    "caption": "Sound Catalog with cues, event mappings and music contexts.",
+    "width": 1600,
+    "height": 1400,
+    "sha256": "bb1fa4ac5941a9294a8221deb8d08a3dd29f0451428b401c057f85d4de0874d0"
   },
   "game-overview": {
     "status": "captured",
     "file": "game-overview.png"
   },
   "game-settings": {
-    "status": "pending",
-    "file": "game-settings.svg"
+    "status": "captured",
+    "file": "game-settings.png",
+    "caption": "Game Settings inspector with Run rules.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "b6aced770dc8bd09fb950e2ed6c7dec195a827cfbb528be2c5200f48301bd719"
   },
   "handler-flow": {
     "status": "diagram",
@@ -104,8 +164,12 @@
     "file": "horde-preview.png"
   },
   "item-set-inspector": {
-    "status": "pending",
-    "file": "item-set-inspector.svg"
+    "status": "captured",
+    "file": "item-set-inspector.png",
+    "caption": "Weapon Set inspector with its threshold table and bonuses.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "225165dae3dc04668a2ff3ba692b36ec233928bc5f79f811d0cf5e13da2ab4bb"
   },
   "module-event-flow": {
     "status": "diagram",
@@ -120,32 +184,60 @@
     "file": "offer-odds.png"
   },
   "offer-settings": {
-    "status": "pending",
-    "file": "offer-settings.svg"
+    "status": "captured",
+    "file": "offer-settings.png",
+    "caption": "Game Settings inspector with pool eligibility and guarantee rules.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "cd0215a42f5d7dba31f9e5ac7fd8ee2a5d98856bceadccf0a0c46129578468ea"
   },
   "options-menu": {
-    "status": "pending",
-    "file": "options-menu.svg"
+    "status": "captured",
+    "file": "options-menu.png",
+    "caption": "In-game Settings screen with audio, display and feedback controls.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "c7a9b8b79848ba6113e908244184ae7bc988a126b29c5819cc2f9fe299b8903c"
   },
   "package-manager": {
-    "status": "pending",
-    "file": "package-manager.svg"
+    "status": "captured",
+    "file": "package-manager.png",
+    "caption": "Package Manager showing Survivor Roguelite Maker and its dependencies.",
+    "width": 1600,
+    "height": 314,
+    "sha256": "597205d8a5c0aca47a05ab6f234ea4f3b227ac2c63ef4a69891c3d903ef5e0be"
   },
   "performance-table": {
-    "status": "pending",
-    "file": "performance-table.svg"
+    "status": "captured",
+    "file": "performance-table.png",
+    "caption": "Performance guide with simulation benchmark conditions and results.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "da7770ba380b6a4be11e9b3cab694a71e20d655c384cc271a0cc7708a9537069"
   },
   "playtest-panel": {
-    "status": "pending",
-    "file": "playtest-panel.svg"
+    "status": "captured",
+    "file": "playtest-panel.png",
+    "caption": "Playtest panel and DPS meter during an active wave.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "a80fd9120565c6aff7b610d28eb0ba9c3c100c042189623652661bedb1d8d57b"
   },
   "project-requirements": {
-    "status": "pending",
-    "file": "project-requirements.svg"
+    "status": "captured",
+    "file": "project-requirements.png",
+    "caption": "Player settings with Input System Package selected for Active Input Handling.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "0d76ab21769e666214b582a706192573836e5e999881d857cf6359f90e81b885"
   },
   "release-notes": {
-    "status": "pending",
-    "file": "release-notes.svg"
+    "status": "captured",
+    "file": "release-notes.png",
+    "caption": "Release Notes for version 1.0.0.",
+    "width": 1600,
+    "height": 993,
+    "sha256": "0441f478ce63ece0df64924aef27dec5fac68a82dca00005d943094df9061e56"
   },
   "run-loop": {
     "status": "diagram",
@@ -156,71 +248,127 @@
     "file": "run-pacing.png"
   },
   "run-summary": {
-    "status": "pending",
-    "file": "run-summary.svg"
+    "status": "captured",
+    "file": "run-summary.png",
+    "caption": "Run details with damage, DPS, kills and share by weapon.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "f2a48ee09d0b81280524930f1c2e5446ad0f01aaa2786e81fd825182f40a2d4f"
   },
   "sample-import": {
-    "status": "pending",
-    "file": "sample-import.svg"
+    "status": "captured",
+    "file": "sample-import.png",
+    "caption": "Package Manager Samples tab with the demo import controls.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "4d797676f1ff8ad7e4297b0dabd34d109635341019961f391aaa94cb414886e4"
   },
   "save-continue": {
-    "status": "pending",
-    "file": "save-continue.svg"
+    "status": "captured",
+    "file": "save-continue.png",
+    "caption": "Main menu offering Continue for a saved run.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "7876afa6efd9d5aa1325e6d91f89ed90073034063a7cef5476990bb3df467af7"
   },
   "save-hook-flow": {
     "status": "diagram",
     "file": "save-hook-flow.svg"
   },
   "scene-wizard": {
-    "status": "pending",
-    "file": "scene-wizard.svg"
+    "status": "captured",
+    "file": "scene-wizard.png",
+    "caption": "Create Game Scene wizard with content, catalogs and output paths.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "edad2158155a7858e22d0e98409ba9b2e494b4980d550cf7005deaf23a459280"
   },
   "support-checklist": {
-    "status": "pending",
-    "file": "support-checklist.svg"
+    "status": "captured",
+    "file": "support-checklist.png",
+    "caption": "Support and license guide with contact and reproduction details.",
+    "width": 1600,
+    "height": 983,
+    "sha256": "1a94c2d5746833d8a10191878d854ab427c3ca2c7d08bd9ec00aea4315523bdb"
   },
   "tick-flow": {
     "status": "diagram",
     "file": "tick-flow.svg"
   },
   "tools-menu": {
-    "status": "pending",
-    "file": "tools-menu.svg"
+    "status": "captured",
+    "file": "tools-menu.png",
+    "caption": "Unity Search listing the Survivor Roguelite Maker tool commands.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "41f6160e7fafc6f16776082d3e70ddcfb660527eebd7b80186adffb136ebeddf"
   },
   "trigger-inspector": {
-    "status": "pending",
-    "file": "trigger-inspector.svg"
+    "status": "captured",
+    "file": "trigger-inspector.png",
+    "caption": "Item inspector with trigger event, action and condition fields.",
+    "width": 1600,
+    "height": 1400,
+    "sha256": "a94ee72efba65547def8a6eb33a496a55ba8a1223c5ce40f28b6f4f360e48427"
   },
   "ui-localization": {
-    "status": "pending",
-    "file": "ui-localization.svg"
+    "status": "captured",
+    "file": "ui-localization.png",
+    "caption": "Localized Text asset with English and Spanish text entries.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "d08fad2ac2ec6f98460493cd3db5155d1af153086c61b0a3b248c1554ff7e4dc"
   },
   "unlock-settings": {
-    "status": "pending",
-    "file": "unlock-settings.svg"
+    "status": "captured",
+    "file": "unlock-settings.png",
+    "caption": "Content inspector with unlock rules.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "564de6c27f0e38ddc1ef9d3251a1c86750b3caf94e8744e83de5fae8362917d8"
   },
   "validation-issues": {
-    "status": "pending",
-    "file": "validation-issues.svg"
+    "status": "captured",
+    "file": "validation-issues.png",
+    "caption": "Content Browser displaying the selected asset and validation results.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "d4d38bd4fe971d80afc7bfd4815472acb32f5a29882a7e521a06c529f7d53458"
   },
   "view-catalog": {
-    "status": "pending",
-    "file": "view-catalog.svg"
+    "status": "captured",
+    "file": "view-catalog.png",
+    "caption": "View Catalog mapping definition ids to sprites and prefabs.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "e868f6ecc5dea9d9a425452dd14608a53dd391c36104657928f8e7bf5d70966f"
   },
   "wave-editor": {
-    "status": "pending",
-    "file": "wave-editor.svg"
+    "status": "captured",
+    "file": "wave-editor.png",
+    "caption": "Wave Editor with spawn timeline and preview.",
+    "width": 1600,
+    "height": 900,
+    "sha256": "394aa52b6b17bde8d2f0f68e2c07b45ebb562d186b29f078ee1131e3b7385599"
   },
   "weapon-inspector": {
-    "status": "pending",
-    "file": "weapon-inspector.svg"
+    "status": "captured",
+    "file": "weapon-inspector.png",
+    "caption": "Weapon inspector with ranged combat fields.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "f3cd85e98419076425864f0f4a62157e6fa799a952ac250771df07397a6b92bb"
   },
   "weapon-lab": {
     "status": "captured",
     "file": "weapon-lab.png"
   },
   "weapon-tier-chain": {
-    "status": "pending",
-    "file": "weapon-tier-chain.svg"
+    "status": "captured",
+    "file": "weapon-tier-chain.png",
+    "caption": "Weapon inspector displaying the connected tier chain.",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "20580bc9813332f4043e2915731e9fe7047af30174fd1b1f5c57d023ed911bf9"
   }
 }

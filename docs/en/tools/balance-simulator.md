@@ -16,9 +16,9 @@ Compare the same seed range before and after a balance edit. Read how many runs 
 
 ## Figure
 
-![Screenshot slot: balance-simulator (capture pending).](../../assets/balance-simulator.svg)
+![Balance Simulator with seeded run results and wave charts.](../../assets/balance-simulator.png)
 
-Screenshot slot: balance-simulator (capture pending).
+Balance Simulator with seeded run results and wave charts.
 
 ## Check your result
 

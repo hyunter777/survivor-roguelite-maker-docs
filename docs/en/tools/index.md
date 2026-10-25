@@ -48,9 +48,9 @@ Supply Content, Settings, SimSettings, Arena and a BuildSpec whose ids exist in 
 
 ## Figure
 
-![Screenshot slot: tools-menu (capture pending).](../../assets/tools-menu.svg)
+![Unity Search listing the Survivor Roguelite Maker tool commands.](../../assets/tools-menu.png)
 
-Screenshot slot: tools-menu (capture pending).
+Unity Search listing the Survivor Roguelite Maker tool commands.
 
 ## Check your result
 

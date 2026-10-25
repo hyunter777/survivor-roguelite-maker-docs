@@ -19,9 +19,9 @@ The simulation libraries are engine-independent. The supplied UI/input targets k
 
 ## Figure
 
-![Screenshot slot: project-requirements (capture pending).](../../assets/project-requirements.svg)
+![Player settings with Input System Package selected for Active Input Handling.](../../assets/project-requirements.png)
 
-Screenshot slot: project-requirements (capture pending).
+Player settings with Input System Package selected for Active Input Handling.
 
 ## Check your result
 

@@ -18,9 +18,9 @@ Create an independent game through Tools/Survivor Roguelite Maker/New Game Proje
 
 ## Figure
 
-![Sample import screenshot slot.](../../assets/sample-import.svg)
+![Package Manager Samples tab with the demo import controls.](../../assets/sample-import.png)
 
-Screenshot slot: sample-import (capture pending).
+Package Manager Samples tab with the demo import controls.
 
 ## Check your result
 

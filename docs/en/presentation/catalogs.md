@@ -64,9 +64,9 @@ Create matching Animator parameters: Speed (float), Attack/Hurt/Death (triggers)
 
 ## Figure
 
-![Screenshot slot: view-catalog (capture pending).](../../assets/view-catalog.svg)
+![View Catalog mapping definition ids to sprites and prefabs.](../../assets/view-catalog.png)
 
-Screenshot slot: view-catalog (capture pending).
+View Catalog mapping definition ids to sprites and prefabs.
 
 ## Check your result
 

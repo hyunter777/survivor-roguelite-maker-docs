@@ -21,9 +21,9 @@ For custom events, consume `SimEventKind.Custom` and CustomId through `ICustomEv
 
 ## Figure
 
-![Screenshot slot: feedback-audio (capture pending).](../../assets/feedback-audio.svg)
+![Sound Catalog with cues, event mappings and music contexts.](../../assets/feedback-audio.png)
 
-Screenshot slot: feedback-audio (capture pending).
+Sound Catalog with cues, event mappings and music contexts.
 
 ## Check your result
 

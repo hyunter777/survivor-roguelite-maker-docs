@@ -4,7 +4,7 @@ English is the only published language for the first release. The source is arra
 
 ## Page contract
 
-Every guide states its purpose, prerequisites, relevant Unity menu or code-only entry point, a field/API table, a practical workflow, validation checks, related pages and a figure slot. Code examples are complete types or explicitly identified fragments, and complete examples are compile-checked against the package. Screenshots use descriptive filenames and an asset manifest; pending captures are visibly labelled, never presented as real UI. API reference is generated from public symbols/XML documentation, with no implementation source published.
+Every guide states its purpose, prerequisites, relevant Unity menu or code-only entry point, a field/API table, a practical workflow, validation checks, related pages and a figure slot. Code examples are complete types or explicitly identified fragments, and complete examples are compile-checked against the package. Screenshots use descriptive filenames, screen-specific captions and an asset manifest. API reference is generated from public symbols/XML documentation, with no implementation source published.
 
 ## 1. Introduction
 

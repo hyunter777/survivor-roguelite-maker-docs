@@ -29,9 +29,9 @@ Use the inspector's next-tier creation action to clone/scale a weapon and link i
 
 ## Figure
 
-![Screenshot slot: weapon-inspector (capture pending).](../../assets/weapon-inspector.svg)
+![Weapon inspector with ranged combat fields.](../../assets/weapon-inspector.png)
 
-Screenshot slot: weapon-inspector (capture pending).
+Weapon inspector with ranged combat fields.
 
 ## Check your result
 

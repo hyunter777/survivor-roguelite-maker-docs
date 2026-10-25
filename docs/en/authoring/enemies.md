@@ -19,9 +19,9 @@ Configure body/hit radius, speed, rewards, neutral behaviour and status immuniti
 
 ## Figure
 
-![Screenshot slot: enemy-inspector (capture pending).](../../assets/enemy-inspector.svg)
+![Enemy inspector with movement, special attack and scaled combat fields.](../../assets/enemy-inspector.png)
 
-Screenshot slot: enemy-inspector (capture pending).
+Enemy inspector with movement, special attack and scaled combat fields.
 
 ## Check your result
 

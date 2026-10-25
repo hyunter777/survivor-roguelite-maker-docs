@@ -61,9 +61,9 @@ The caller supplies a valid request/content registry and registers any custom ha
 
 ## Figure
 
-![Screenshot slot: save-continue (capture pending).](../../assets/save-continue.svg)
+![Main menu offering Continue for a saved run.](../../assets/save-continue.png)
 
-Screenshot slot: save-continue (capture pending).
+Main menu offering Continue for a saved run.
 
 ## Check your result
 

@@ -25,9 +25,9 @@ For custom events, consume `SimEventKind.Custom` and CustomId through `ICustomEv
 
 ## Figure
 
-![Screenshot slot: options-menu (capture pending).](../../assets/options-menu.svg)
+![In-game Settings screen with audio, display and feedback controls.](../../assets/options-menu.png)
 
-Screenshot slot: options-menu (capture pending).
+In-game Settings screen with audio, display and feedback controls.
 
 ## Check your result
 

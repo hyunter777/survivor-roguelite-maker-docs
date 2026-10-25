@@ -20,9 +20,9 @@ Enable Use Trigger Rules before configuring Include Reactions, Include Neutral a
 
 ## Figure
 
-![Screenshot slot: trigger-inspector (capture pending).](../../assets/trigger-inspector.svg)
+![Item inspector with trigger event, action and condition fields.](../../assets/trigger-inspector.png)
 
-Screenshot slot: trigger-inspector (capture pending).
+Item inspector with trigger event, action and condition fields.
 
 ## Check your result
 

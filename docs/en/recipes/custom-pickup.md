@@ -42,9 +42,9 @@ Implement IPickupSettlementBehaviour.Settle to collect custom pickups at wave en
 
 ## Figure
 
-![Screenshot slot: custom-pickup (capture pending).](../../assets/custom-pickup.svg)
+![IPickupBehaviour.Collect in the public API reference.](../../assets/custom-pickup.png)
 
-Screenshot slot: custom-pickup (capture pending).
+IPickupBehaviour.Collect in the public API reference.
 
 ## Check your result
 

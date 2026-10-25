@@ -28,9 +28,9 @@ The resulting acquisition must either succeed by the documented rules or be abse
 
 ## Figure
 
-![Screenshot slot: weapon-tier-chain (capture pending).](../../assets/weapon-tier-chain.svg)
+![Weapon inspector displaying the connected tier chain.](../../assets/weapon-tier-chain.png)
 
-Screenshot slot: weapon-tier-chain (capture pending).
+Weapon inspector displaying the connected tier chain.
 
 ## Check your result
 

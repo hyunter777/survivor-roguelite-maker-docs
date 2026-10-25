@@ -28,9 +28,9 @@ Translated labels change while inventory/save identity stays the same.
 
 ## Figure
 
-![Screenshot slot: ui-localization (capture pending).](../../assets/ui-localization.svg)
+![Localized Text asset with English and Spanish text entries.](../../assets/ui-localization.png)
 
-Screenshot slot: ui-localization (capture pending).
+Localized Text asset with English and Spanish text entries.
 
 ## Check your result
 

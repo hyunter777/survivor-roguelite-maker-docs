@@ -28,9 +28,9 @@ An immune target must remain unaffected; a valid application emits StatusApplied
 
 ## Figure
 
-![Screenshot slot: effect-inspector (capture pending).](../../assets/effect-inspector.svg)
+![Item inspector with Link effect source and scaling fields.](../../assets/effect-inspector.png)
 
-Screenshot slot: effect-inspector (capture pending).
+Item inspector with Link effect source and scaling fields.
 
 ## Check your result
 

@@ -22,9 +22,9 @@ Inspect a single wave in Horde Preview before tuning an entire arena in Run Paci
 
 ## Figure
 
-![Screenshot slot: wave-editor (capture pending).](../../assets/wave-editor.svg)
+![Wave Editor with spawn timeline and preview.](../../assets/wave-editor.png)
 
-Screenshot slot: wave-editor (capture pending).
+Wave Editor with spawn timeline and preview.
 
 ## Check your result
 

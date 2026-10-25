@@ -76,9 +76,9 @@ Use your own Assets folder/asmdef and register adapters rather than editing pack
 
 ## Figure
 
-![Screenshot slot: validation-issues (capture pending).](../../assets/validation-issues.svg)
+![Content Browser displaying the selected asset and validation results.](../../assets/validation-issues.png)
 
-Screenshot slot: validation-issues (capture pending).
+Content Browser displaying the selected asset and validation results.
 
 ## Check your result
 

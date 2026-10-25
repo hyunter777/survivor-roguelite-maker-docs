@@ -26,9 +26,9 @@ An owned item has an instance id, acquisition/expiry waves, counters and effect 
 
 ## Figure
 
-![Screenshot slot: item-set-inspector (capture pending).](../../assets/item-set-inspector.svg)
+![Weapon Set inspector with its threshold table and bonuses.](../../assets/item-set-inspector.png)
 
-Screenshot slot: item-set-inspector (capture pending).
+Weapon Set inspector with its threshold table and bonuses.
 
 ## Check your result
 

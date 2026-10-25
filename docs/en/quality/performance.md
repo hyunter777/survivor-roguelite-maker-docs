@@ -40,9 +40,9 @@ Analysis jobs advance in budgeted slices and cancel when their context changes. 
 
 ## Figure
 
-![Screenshot slot: performance-table (capture pending).](../../assets/performance-table.svg)
+![Performance guide with simulation benchmark conditions and results.](../../assets/performance-table.png)
 
-Screenshot slot: performance-table (capture pending).
+Performance guide with simulation benchmark conditions and results.
 
 ## Check your result
 

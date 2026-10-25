@@ -33,9 +33,9 @@ Use stable, unique ids within the content categories that reference them. Displa
 
 ## Figure
 
-![Screenshot slot: content-registry (capture pending).](../../assets/content-registry.svg)
+![Content registry linking settings, stats and authored assets.](../../assets/content-registry.png)
 
-Screenshot slot: content-registry (capture pending).
+Content registry linking settings, stats and authored assets.
 
 ## Check your result
 

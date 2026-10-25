@@ -20,9 +20,9 @@ The default UI uses uGUI and TextMesh Pro. `GameUiRoot` connects menu, HUD, choi
 
 ## Figure
 
-![Screenshot slot: bootstrap-inspector (capture pending).](../../assets/bootstrap-inspector.svg)
+![Scene bootstrap with content, catalogs and Seed settings.](../../assets/bootstrap-inspector.png)
 
-Screenshot slot: bootstrap-inspector (capture pending).
+Scene bootstrap with content, catalogs and Seed settings.
 
 ## Check your result
 

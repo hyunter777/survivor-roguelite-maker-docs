@@ -20,9 +20,9 @@ Test at both a free slot and a full slot, including a held terminal tier. Valida
 
 ## Figure
 
-![Screenshot slot: weapon-tier-chain (capture pending).](../../assets/weapon-tier-chain.svg)
+![Weapon inspector displaying the connected tier chain.](../../assets/weapon-tier-chain.png)
 
-Screenshot slot: weapon-tier-chain (capture pending).
+Weapon inspector displaying the connected tier chain.
 
 ## Check your result
 

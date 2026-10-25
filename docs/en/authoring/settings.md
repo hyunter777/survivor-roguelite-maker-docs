@@ -20,9 +20,9 @@ Read the inspector's unit display and convert seconds with SimSettings.Ticks in 
 
 ## Figure
 
-![Screenshot slot: game-settings (capture pending).](../../assets/game-settings.svg)
+![Game Settings inspector with Run rules.](../../assets/game-settings.png)
 
-Screenshot slot: game-settings (capture pending).
+Game Settings inspector with Run rules.
 
 ## Check your result
 

@@ -23,9 +23,9 @@ Horde Preview scrubs recorded value frames. Between-wave save/continue preserves
 
 ## Figure
 
-![Screenshot slot: determinism-checklist (capture pending).](../../assets/determinism-checklist.svg)
+![Scene bootstrap configured with a fixed Seed.](../../assets/determinism-checklist.png)
 
-Screenshot slot: determinism-checklist (capture pending).
+Scene bootstrap configured with a fixed Seed.
 
 ## Check your result
 

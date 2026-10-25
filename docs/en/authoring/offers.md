@@ -20,9 +20,9 @@ Sets count weapon membership. Duplicate references to one set on a weapon count 
 
 ## Figure
 
-![Screenshot slot: offer-settings (capture pending).](../../assets/offer-settings.svg)
+![Game Settings inspector with pool eligibility and guarantee rules.](../../assets/offer-settings.png)
 
-Screenshot slot: offer-settings (capture pending).
+Game Settings inspector with pool eligibility and guarantee rules.
 
 ## Check your result
 

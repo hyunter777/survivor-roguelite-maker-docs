@@ -36,9 +36,9 @@ Lifetime Waves expires relative to acquisition/start wave; zero disables wave ex
 
 ## Figure
 
-![Screenshot slot: effect-inspector (capture pending).](../../assets/effect-inspector.svg)
+![Item inspector with Link effect source and scaling fields.](../../assets/effect-inspector.png)
 
-Screenshot slot: effect-inspector (capture pending).
+Item inspector with Link effect source and scaling fields.
 
 ## Check your result
 

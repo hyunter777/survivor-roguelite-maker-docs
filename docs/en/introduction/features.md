@@ -29,9 +29,9 @@ The built-in game uses the primary player. Use the player list when implementing
 
 ## Figure
 
-![Screenshot slot: feature-map (capture pending).](../../assets/feature-map.svg)
+![Content Browser listing the connected content categories.](../../assets/feature-map.png)
 
-Screenshot slot: feature-map (capture pending).
+Content Browser listing the connected content categories.
 
 ## Check your result
 
