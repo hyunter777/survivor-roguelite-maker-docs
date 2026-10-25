@@ -17,9 +17,8 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: 'Finds enemies near a point. Results are candidates (they may lie a little outside the radius;
-
-    callers keep their exact tests) in <xref href="SurvivorsMaker.Simulation.SimWorld.Enemies" data-throw-if-not-resolved="false"></xref>
+  summary: 'Finds enemies near a point. Results include candidates outside the radius; apply exact distance and shape tests.
+    Candidates appear in <xref href="SurvivorsMaker.Simulation.SimWorld.Enemies" data-throw-if-not-resolved="false"></xref>
     order, so systems give the
 
     same results as a full scan. Rebuilt by the tick loop after enemies move and spawns are admitted.'
@@ -65,7 +64,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Clears <code class="paramref">results</code>, then adds living enemies that may be within <code class="paramref">radius</code>
+  summary: Clears <code class="paramref">results</code>, then adds living enemy candidates near <code class="paramref">radius</code>
     of <code class="paramref">center</code>.
   example: []
   syntax:

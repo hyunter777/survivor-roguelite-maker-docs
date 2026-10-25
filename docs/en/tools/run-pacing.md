@@ -1,10 +1,10 @@
 # Run Pacing
 
-Pick Content, mode, bot, run count, first seed, difficulty and wave range, then start the forecast. The job advances in slices and can be cancelled. Reports can be partial when cancelled; inspect entered-run counts before interpreting averages.
+Pick Content, mode, bot, run count, first seed, difficulty and wave range, then start the forecast. The job advances in slices and can be cancelled. Cancellation returns completed samples. Read entered-run counts alongside the averages.
 
 Read threat and power together: spawned enemy health, average/peak live enemies, incoming player damage, player DPS and survival. Threat To Power compares spawned enemy health with DPS times wave duration. Read it alongside survival, density and incoming damage. Level, experience, income, expenditure and shop-price series help expose growth/economy mismatches.
 
-Reports use wave samples, including Field mode. Do not assume a wave-axis graph is a continuous real-time difficulty model. Compare the same bot policy and seed range across edits. Compare identical seeds/settings before and after an edit, and check how many runs reached later waves.
+Reports use wave samples, including Field mode. Read the graph by wave number. Compare the same bot policy and seed range across edits. Compare identical seeds/settings before and after an edit, and check how many runs reached later waves.
 
 ## Entry point and reference fields
 

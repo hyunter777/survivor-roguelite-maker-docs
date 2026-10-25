@@ -41,8 +41,8 @@ items:
     (a plain copy only where the platform has no replace).</li><li>A corrupt or incompatible file is moved aside (<code>*.corrupt</code>
     / <code>*.incompatible</code>) and kept; the store then
 
-    starts from defaults.</li><li>A file from a newer schema, or one that cannot be read at all, is left untouched and the
-    store refuses to write
+    starts from defaults.</li><li>A file from a newer schema, or an unreadable file, is left untouched and the store refuses
+    to write
 
     over it for the rest of the session.</li></ul>'
   example: []

@@ -792,7 +792,7 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: May also be driven by a host. A stalled frame never produces unbounded catch-up.
+  summary: A host can also drive this component. A stalled frame never produces unbounded catch-up.
   example: []
   syntax:
     content: public void AdvanceFrame(float seconds)

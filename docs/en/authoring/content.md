@@ -16,9 +16,9 @@ Create assets below **Assets/Create/Survivor Roguelite Maker/**. Start with the 
 | Content/Wave | Duration, capacity, spawn groups, elite chances, horde events, boss ending rule |
 | Content/Arena | World dimensions, ordered waves and common spawn groups |
 
-View and sound catalogs belong to Presentation and are assigned on the scene bootstrap. They map ids to presentation assets; they are not combat definitions. See [Presentation](../presentation/catalogs.md).
+View and sound catalogs belong to Presentation and are assigned on the scene bootstrap. They map ids to presentation assets. See [Presentation](../presentation/catalogs.md).
 
-Use stable, unique ids within the content categories that reference them. Display Name, Description and Text Key are presentation text; Id supplies save identity. A tier chain needs a unique id for every tier, a consistent family and acyclic Next Tier links. Include the weapons you want in the registry; adding a link does not replace checking the registry and character's starting list.
+Use stable, unique ids within the content categories that reference them. Display Name, Description and Text Key are presentation text; Id supplies save identity. A tier chain needs a unique id for every tier, a consistent family and acyclic Next Tier links. Add each weapon to the registry and configure the character's starting list separately.
 
 ## Entry point and reference fields
 

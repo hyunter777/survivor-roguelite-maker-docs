@@ -1,7 +1,8 @@
 # Welcome
 
-!!! tip "Choose your first session"
-    Open the five-minute demo to learn the run loop, or create your own content with the ten-minute first-game guide.
+[Play the demo](getting-started/demo.md){ .md-button .md-button--primary }
+[Create your first game](getting-started/first-game.md){ .md-button }
+[Browse the API](reference/api.md){ .md-button }
 
 Build a single-player survival action game with automatic weapons, waves, level-up choices and an optional shop. This manual is for designers authoring data, programmers extending rules, and teams evaluating balance before a full play session.
 

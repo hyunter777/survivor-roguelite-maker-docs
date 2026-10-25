@@ -1,4 +1,4 @@
-# Faq
+# FAQ
 
 ### Is multiplayer included?
 
@@ -6,7 +6,7 @@ The shipped game is single-player. Build additional player rules through the sim
 
 ### Can I replace art, input or storage?
 
-Yes, through ICharacterVisual/IWaveView, IPlayerInput and storage interfaces. Your own rig, bindings and platform backend still need configuration and testing.
+Yes, through ICharacterVisual/IWaveView, IPlayerInput and storage interfaces. Configure your rig, bindings and platform backend through these interfaces.
 
 ### Is a fixed seed enough?
 
@@ -16,7 +16,7 @@ Hold content, settings, version/platform, choices and per-tick input fixed too. 
 
 An expected single-target formula, target-ring measurement and live wave have different density/reach/movement assumptions. Compare matching scenarios.
 
-### Does every game allocate zero bytes per tick?
+### How do I measure runtime allocations?
 
 Profile the warmed simulation, setup, UI and analysis as separate workloads.
 
@@ -44,4 +44,4 @@ Screenshot slot: faq-checklist (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Api](../reference/api.md) · [Troubleshooting](troubleshooting.md) · [Release Notes](../release-notes.md)
+[Documentation home](../index.md) · [API](../reference/api.md) · [Troubleshooting](troubleshooting.md) · [Release Notes](../release-notes.md)

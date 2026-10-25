@@ -126,7 +126,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Clears <code class="paramref">results</code>, then adds living enemies that may be within <code class="paramref">radius</code>
+  summary: Clears <code class="paramref">results</code>, then adds living enemy candidates near <code class="paramref">radius</code>
     of <code class="paramref">center</code>.
   example: []
   syntax:

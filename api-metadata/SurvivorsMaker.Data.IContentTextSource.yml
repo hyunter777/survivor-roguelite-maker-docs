@@ -116,7 +116,7 @@ items:
   assemblies:
   - SurvivorsMaker.Data
   namespace: SurvivorsMaker.Data
-  summary: Plain description. May be empty.
+  summary: Optional plain description.
   example: []
   syntax:
     content: string TextDescription { get; }

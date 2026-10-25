@@ -4,7 +4,7 @@ Use Unity 6. The package declares 6000.0 as its minimum editor version; the deve
 
 The supplied presentation uses uGUI, TextMesh Pro, Input System, sprites and an orthographic camera. The manifest declares uGUI 2.0.0 and Input System 1.17.0. Import TMP Essential Resources when requested. Select Input System or Both in Active Input Handling.
 
-The simulation libraries do not depend on UnityEngine. The supplied UI/input targets keyboard and mouse. Other devices, platform storage, networking and art rigs need appropriate adapters. Match materials and camera configuration to your project's render pipeline.
+The simulation libraries are engine-independent. The supplied UI/input targets keyboard and mouse. Connect custom devices, storage and art rigs through the adapter interfaces. Match materials and camera configuration to your project's render pipeline.
 
 ## Entry point and reference fields
 

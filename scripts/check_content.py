@@ -5,21 +5,26 @@ from urllib.parse import unquote, urlsplit
 import json, re, sys
 
 ROOT=Path(__file__).resolve().parents[1]
-FORBIDDEN=re.compile(r'however|note that this does not guarantee|we do not claim|this is not intended to|not necessarily|may or may not|at this time|currently does not|be aware that|it is important to note|keep in mind|please note|disclaimer|limitations|we cannot guarantee|should work|in most cases',re.I)
+FORBIDDEN=re.compile(r'however|note that this does not guarantee|we do not claim|this is not intended to|not necessarily|may or may not|at this time|currently does not|be aware that|it is important to note|keep in mind|please note|disclaimer|limitations|we cannot guarantee|should work|in most cases|\b(?:may|might|should|cannot|unsupported|caveat)\b|not (?:guaranteed|supported|intended)',re.I)
 LEAKS=re.compile(r'(?<![A-Za-z])[A-Za-z]:[\\/]',re.I)
 
 class Links(HTMLParser):
-    def __init__(self): super().__init__(); self.links=[]; self.ids=set()
+    def __init__(self): super().__init__(); self.links=[]; self.ids=set(); self.prose=[]; self.hidden=0
     def handle_starttag(self,tag,attrs):
+        if tag in {'script','style'}:self.hidden+=1
         data=dict(attrs)
         if 'id' in data:self.ids.add(data['id'])
         if tag=='a' and 'name' in data:self.ids.add(data['name'])
         for key in ['href','src']:
             if key in data:self.links.append(data[key])
+    def handle_endtag(self,tag):
+        if tag in {'script','style'}:self.hidden=max(0,self.hidden-1)
+    def handle_data(self,data):
+        if not self.hidden:self.prose.append(data)
 
 def main():
     errors=[]; forbidden=[]
-    sources=list((ROOT/'docs/en').rglob('*.md'))+list((ROOT/'docfx').glob('*.md'))+list((ROOT/'api-metadata').glob('*.yml'))+[ROOT/'outline.md']
+    sources=list((ROOT/'docs/en').rglob('*.md'))+list((ROOT/'docfx').glob('*.md'))+list((ROOT/'api-metadata').glob('*.yml'))+list((ROOT/'docs/assets').glob('*.svg'))+[ROOT/'outline.md',ROOT/'README.md',ROOT/'screenshots-needed.md']
     for path in sources:
         text=path.read_text(encoding='utf-8-sig')
         if FORBIDDEN.search(text): forbidden.append(path.relative_to(ROOT).as_posix())
@@ -27,6 +32,7 @@ def main():
     parsed={}
     for path in (ROOT/'site').rglob('*.html'):
         parser=Links();parser.feed(path.read_text(encoding='utf-8'));parsed[path.resolve()]=parser
+        if FORBIDDEN.search(' '.join(parser.prose)):forbidden.append(path.relative_to(ROOT).as_posix())
     for path,parser in parsed.items():
         for link in parser.links:
             url=urlsplit(link)

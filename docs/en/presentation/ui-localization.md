@@ -1,4 +1,4 @@
-# Ui Localization
+# UI and localization
 
 GameUiRoot connects menu, HUD, choices, shop, pause/options and results. Generate editable prefabs, assign their references and theme, and retain controller/session actions as the mutation boundary.
 
@@ -28,4 +28,4 @@ Screenshot slot: ui-localization (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [Catalogs](catalogs.md) · [Feedback Audio](feedback-audio.md)
+[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [Catalogs](catalogs.md) · [Feedback and audio](feedback-audio.md)

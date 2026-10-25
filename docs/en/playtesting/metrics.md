@@ -10,7 +10,7 @@ Custom damage code sets world.HitSource around calls to ICombat and clear it in 
 4. Repeat without cheats, then compare with a headless Build Lab trial.
 5. Test a non-development player to confirm the panel is absent and ordinary UI/input still work.
 
-When adding your own text-input UI, suppress gameplay movement while the UI owns keyboard input. Do not assume a custom input adapter automatically respects every focusable field.
+When adding your own text-input UI, suppress gameplay movement while the UI owns keyboard input. Route keyboard focus from your custom UI to the input adapter.
 
 ## Entry point and reference fields
 

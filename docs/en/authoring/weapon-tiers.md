@@ -2,7 +2,7 @@
 
 Give every tier a unique Id, keep its Family consistent, and connect NextTier without cycles. The inspector displays the chain and offers a next-tier creation action with scaling/registration choices. Review its proposed values before accepting.
 
-Register tiers in Content.Weapons and keep starting choices separate. A full inventory is not unconditional acquisition: current shop/acquisition settings determine whether an equal definition can merge upward, whether a held weapon's next tier replaces it, and whether a candidate is rejected. MergeOnFullSlots matters at full capacity.
+Register tiers in Content.Weapons and keep starting choices separate. Shop/acquisition settings control equal-definition merges, next-tier replacements and candidate eligibility at full capacity. MergeOnFullSlots matters at full capacity.
 
 Test at both a free slot and a full slot, including a held terminal tier. Validate that the offer pool never presents an unreceivable candidate. Use the tier chain for weapon progression.
 

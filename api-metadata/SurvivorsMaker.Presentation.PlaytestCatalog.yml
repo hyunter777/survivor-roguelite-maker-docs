@@ -142,7 +142,7 @@ items:
   summary: 'Entries whose name or id contains <code class="paramref">query</code> (case-insensitive; empty = all), in their
     order,
 
-    at most <code class="paramref">max</code>. Returns how many matched in total (may exceed what was written).'
+    at most <code class="paramref">max</code>. Returns the total match count, including matches beyond the output capacity.'
   example: []
   syntax:
     content: public static int Filter(IReadOnlyList<PlaytestEntry> entries, string query, int max, List<PlaytestEntry> into)

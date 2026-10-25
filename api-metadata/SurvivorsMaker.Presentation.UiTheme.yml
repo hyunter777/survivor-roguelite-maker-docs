@@ -357,15 +357,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CornerRadius'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CornerRadius As Single'
   attributes:
@@ -373,7 +373,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
   id: ButtonCornerRadius
@@ -388,15 +388,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float ButtonCornerRadius'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public ButtonCornerRadius As Single'
   attributes:
@@ -404,7 +404,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
   id: BarCornerRadius
@@ -419,15 +419,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BarCornerRadius'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BarCornerRadius As Single'
   attributes:
@@ -435,7 +435,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BorderWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BorderWidth
   id: BorderWidth
@@ -450,15 +450,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BorderWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BorderWidth As Single'
   attributes:
@@ -466,7 +466,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.FocusWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.FocusWidth
   id: FocusWidth
@@ -481,15 +481,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float FocusWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public FocusWidth As Single'
   attributes:
@@ -497,7 +497,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.FocusGap
   commentId: F:SurvivorsMaker.Presentation.UiTheme.FocusGap
   id: FocusGap
@@ -515,12 +515,12 @@ items:
   summary: Gap between a button and its focus ring.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float FocusGap'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public FocusGap As Single'
   attributes:
@@ -528,7 +528,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
   id: ReferencePixelsPerUnit
@@ -1975,17 +1975,17 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       [Header("Spacing (8 px grid)")]
 
       public int Padding'
     return:
       type: System.Int32
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       <Header("Spacing (8 px grid)")>
 
@@ -1995,7 +1995,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   - type: UnityEngine.HeaderAttribute
     ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
     arguments:
@@ -2015,15 +2015,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float Spacing'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public Spacing As Single'
   attributes:
@@ -2031,7 +2031,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ButtonHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonHeight
   id: ButtonHeight
@@ -2046,15 +2046,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float ButtonHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public ButtonHeight As Single'
   attributes:
@@ -2062,7 +2062,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CardHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CardHeight
   id: CardHeight
@@ -2077,15 +2077,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CardHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CardHeight As Single'
   attributes:
@@ -2093,7 +2093,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.IconSize
   commentId: F:SurvivorsMaker.Presentation.UiTheme.IconSize
   id: IconSize
@@ -2108,15 +2108,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float IconSize'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public IconSize As Single'
   attributes:
@@ -2124,7 +2124,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ButtonPadding
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonPadding
   id: ButtonPadding
@@ -2139,15 +2139,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float ButtonPadding'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public ButtonPadding As Single'
   attributes:
@@ -2155,7 +2155,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
   id: MinButtonWidth
@@ -2170,15 +2170,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MinButtonWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MinButtonWidth As Single'
   attributes:
@@ -2186,7 +2186,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
   id: MaxButtonWidth
@@ -2201,15 +2201,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MaxButtonWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MaxButtonWidth As Single'
   attributes:
@@ -2217,7 +2217,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CardPadding
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CardPadding
   id: CardPadding
@@ -2232,15 +2232,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public int CardPadding'
     return:
       type: System.Int32
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CardPadding As Integer'
   attributes:
@@ -2248,7 +2248,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CardSpacing
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CardSpacing
   id: CardSpacing
@@ -2263,15 +2263,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CardSpacing'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CardSpacing As Single'
   attributes:
@@ -2279,7 +2279,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
   id: TierStripeHeight
@@ -2294,15 +2294,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float TierStripeHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public TierStripeHeight As Single'
   attributes:
@@ -2310,7 +2310,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
   id: CardTitleHeight
@@ -2325,15 +2325,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CardTitleHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CardTitleHeight As Single'
   attributes:
@@ -2341,7 +2341,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
   id: CardDetailHeight
@@ -2356,15 +2356,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CardDetailHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CardDetailHeight As Single'
   attributes:
@@ -2372,7 +2372,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CompactIconSize
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CompactIconSize
   id: CompactIconSize
@@ -2387,15 +2387,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CompactIconSize'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CompactIconSize As Single'
   attributes:
@@ -2403,7 +2403,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
   id: CompactTitleHeight
@@ -2418,15 +2418,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float CompactTitleHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public CompactTitleHeight As Single'
   attributes:
@@ -2434,7 +2434,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
   id: WeaponCardHeight
@@ -2449,15 +2449,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float WeaponCardHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public WeaponCardHeight As Single'
   attributes:
@@ -2465,7 +2465,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
   id: LevelUpPanelWidth
@@ -2480,15 +2480,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float LevelUpPanelWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public LevelUpPanelWidth As Single'
   attributes:
@@ -2496,7 +2496,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
   id: LevelUpPanelHeight
@@ -2511,15 +2511,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float LevelUpPanelHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public LevelUpPanelHeight As Single'
   attributes:
@@ -2527,7 +2527,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
   id: ChoiceCardWidth
@@ -2542,15 +2542,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float ChoiceCardWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public ChoiceCardWidth As Single'
   attributes:
@@ -2558,7 +2558,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
   id: ChoiceCardMinHeight
@@ -2573,15 +2573,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float ChoiceCardMinHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public ChoiceCardMinHeight As Single'
   attributes:
@@ -2589,7 +2589,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
   id: WeaponCardWidth
@@ -2604,15 +2604,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float WeaponCardWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public WeaponCardWidth As Single'
   attributes:
@@ -2620,7 +2620,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
   commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
   id: WeaponGridColumns
@@ -2666,15 +2666,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float StatsWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public StatsWidth As Single'
   attributes:
@@ -2682,7 +2682,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudPadding
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudPadding
   id: HudPadding
@@ -2697,15 +2697,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public int HudPadding'
     return:
       type: System.Int32
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudPadding As Integer'
   attributes:
@@ -2713,7 +2713,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudTextHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudTextHeight
   id: HudTextHeight
@@ -2728,15 +2728,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudTextHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudTextHeight As Single'
   attributes:
@@ -2744,7 +2744,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudGap
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudGap
   id: HudGap
@@ -2759,15 +2759,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudGap'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudGap As Single'
   attributes:
@@ -2775,7 +2775,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudBarHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudBarHeight
   id: HudBarHeight
@@ -2790,15 +2790,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudBarHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudBarHeight As Single'
   attributes:
@@ -2806,7 +2806,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
   id: HudBadgeWidth
@@ -2821,15 +2821,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudBadgeWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudBadgeWidth As Single'
   attributes:
@@ -2837,7 +2837,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HeaderHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HeaderHeight
   id: HeaderHeight
@@ -2852,15 +2852,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HeaderHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HeaderHeight As Single'
   attributes:
@@ -2868,7 +2868,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.FooterHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.FooterHeight
   id: FooterHeight
@@ -2883,15 +2883,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float FooterHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public FooterHeight As Single'
   attributes:
@@ -2899,7 +2899,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BarHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BarHeight
   id: BarHeight
@@ -2914,15 +2914,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BarHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BarHeight As Single'
   attributes:
@@ -2930,7 +2930,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudHeight
   id: HudHeight
@@ -2945,15 +2945,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudHeight As Single'
   attributes:
@@ -2961,7 +2961,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.PanelWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.PanelWidth
   id: PanelWidth
@@ -2976,15 +2976,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float PanelWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public PanelWidth As Single'
   attributes:
@@ -2992,7 +2992,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.PanelHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.PanelHeight
   id: PanelHeight
@@ -3007,15 +3007,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float PanelHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public PanelHeight As Single'
   attributes:
@@ -3023,7 +3023,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.MenuWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuWidth
   id: MenuWidth
@@ -3038,15 +3038,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MenuWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MenuWidth As Single'
   attributes:
@@ -3054,7 +3054,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.MenuHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuHeight
   id: MenuHeight
@@ -3069,15 +3069,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MenuHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MenuHeight As Single'
   attributes:
@@ -3085,7 +3085,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.DialogWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.DialogWidth
   id: DialogWidth
@@ -3100,15 +3100,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float DialogWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public DialogWidth As Single'
   attributes:
@@ -3116,7 +3116,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.DialogHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.DialogHeight
   id: DialogHeight
@@ -3131,15 +3131,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float DialogHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public DialogHeight As Single'
   attributes:
@@ -3147,7 +3147,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BannerWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BannerWidth
   id: BannerWidth
@@ -3162,15 +3162,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BannerWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BannerWidth As Single'
   attributes:
@@ -3178,7 +3178,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BannerHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BannerHeight
   id: BannerHeight
@@ -3193,15 +3193,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BannerHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BannerHeight As Single'
   attributes:
@@ -3209,7 +3209,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.HudWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.HudWidth
   id: HudWidth
@@ -3224,15 +3224,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float HudWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public HudWidth As Single'
   attributes:
@@ -3240,7 +3240,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
   id: StatColumnWeight
@@ -3317,15 +3317,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MenuIconSize'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MenuIconSize As Single'
   attributes:
@@ -3333,7 +3333,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
   id: MenuCardHeight
@@ -3348,15 +3348,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float MenuCardHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public MenuCardHeight As Single'
   attributes:
@@ -3364,7 +3364,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossTopGap
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossTopGap
   id: BossTopGap
@@ -3379,15 +3379,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossTopGap'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossTopGap As Single'
   attributes:
@@ -3395,7 +3395,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossBarWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossBarWidth
   id: BossBarWidth
@@ -3410,15 +3410,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossBarWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossBarWidth As Single'
   attributes:
@@ -3426,7 +3426,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
   id: BossPanelHeight
@@ -3441,15 +3441,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossPanelHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossPanelHeight As Single'
   attributes:
@@ -3457,7 +3457,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossBarHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossBarHeight
   id: BossBarHeight
@@ -3472,15 +3472,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossBarHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossBarHeight As Single'
   attributes:
@@ -3488,7 +3488,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossPipSize
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossPipSize
   id: BossPipSize
@@ -3503,15 +3503,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossPipSize'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossPipSize As Single'
   attributes:
@@ -3519,7 +3519,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossTickWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossTickWidth
   id: BossTickWidth
@@ -3534,15 +3534,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float BossTickWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public BossTickWidth As Single'
   attributes:
@@ -3550,7 +3550,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.BossChipDelay
   commentId: F:SurvivorsMaker.Presentation.UiTheme.BossChipDelay
   id: BossChipDelay
@@ -4216,15 +4216,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float RecordsWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public RecordsWidth As Single'
   attributes:
@@ -4232,7 +4232,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
   id: RecordsRowHeight
@@ -4247,15 +4247,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float RecordsRowHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public RecordsRowHeight As Single'
   attributes:
@@ -4263,7 +4263,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
   id: RecordsNumberWidth
@@ -4278,15 +4278,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float RecordsNumberWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public RecordsNumberWidth As Single'
   attributes:
@@ -4294,7 +4294,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.SettingsWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsWidth
   id: SettingsWidth
@@ -4309,15 +4309,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float SettingsWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public SettingsWidth As Single'
   attributes:
@@ -4325,7 +4325,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.SettingsHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsHeight
   id: SettingsHeight
@@ -4340,15 +4340,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float SettingsHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public SettingsHeight As Single'
   attributes:
@@ -4356,7 +4356,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
   commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
   id: SettingsRowHeight
@@ -4371,15 +4371,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float SettingsRowHeight'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public SettingsRowHeight As Single'
   attributes:
@@ -4387,7 +4387,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
   id: SettingsControlWidth
@@ -4402,15 +4402,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
   example: []
   syntax:
-    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")]
 
       public float SettingsControlWidth'
     return:
       type: System.Single
-    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.")>
 
       Public SettingsControlWidth As Single'
   attributes:
@@ -4418,7 +4418,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets accept positive and negative values.
 - uid: SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
   commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
   id: SettingsValueWidth

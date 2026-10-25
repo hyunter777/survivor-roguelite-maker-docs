@@ -20,8 +20,7 @@ items:
   assemblies:
   - SurvivorsMaker.Editor
   namespace: SurvivorsMaker.Editor
-  summary: "Reads optional public result metadata without requiring a Shared contract change.\n            Missing metadata
-    stays unavailable; probabilities and private/default analysis settings are not substitutes."
+  summary: Reads public analysis metadata and reports the fields supplied by each result.
   example: []
   syntax:
     content: public static class MakerResultMetadata
@@ -70,14 +69,10 @@ items:
   - SurvivorsMaker.Editor
   namespace: SurvivorsMaker.Editor
   syntax:
-    content: public const string FirstObservedTooltip = "Conditional mean of first-observed progress among paths where this
-      offer appeared at the sampled progress values. Paths with no observed appearance and progress outside the sampled window
-      are excluded. -1 means not observed in this window, not impossible in a full run."
+    content: public const string FirstObservedTooltip
     return:
       type: System.String
-    content.vb: Public Const FirstObservedTooltip As String = "Conditional mean of first-observed progress among paths where
-      this offer appeared at the sampled progress values. Paths with no observed appearance and progress outside the sampled
-      window are excluded. -1 means not observed in this window, not impossible in a full run."
+    content.vb: Public Const FirstObservedTooltip As String
 - uid: SurvivorsMaker.Editor.MakerResultMetadata.NotObservedTooltip
   commentId: F:SurvivorsMaker.Editor.MakerResultMetadata.NotObservedTooltip
   id: NotObservedTooltip
@@ -93,14 +88,10 @@ items:
   - SurvivorsMaker.Editor
   namespace: SurvivorsMaker.Editor
   syntax:
-    content: 'public const string NotObservedTooltip = "Share of sampled paths with no appearance at any sampled progress
-      value: (SampledPaths - SeenPaths) / SampledPaths. This is an observation-window statistic, not a lifetime non-appearance
-      probability. Without path counts the value is not provided; per-slot chances cannot reconstruct it."'
+    content: public const string NotObservedTooltip
     return:
       type: System.String
-    content.vb: 'Public Const NotObservedTooltip As String = "Share of sampled paths with no appearance at any sampled progress
-      value: (SampledPaths - SeenPaths) / SampledPaths. This is an observation-window statistic, not a lifetime non-appearance
-      probability. Without path counts the value is not provided; per-slot chances cannot reconstruct it."'
+    content.vb: Public Const NotObservedTooltip As String
 - uid: SurvivorsMaker.Editor.MakerResultMetadata.TryObservationCounts(System.Object,System.Int32@,System.Int32@)
   commentId: M:SurvivorsMaker.Editor.MakerResultMetadata.TryObservationCounts(System.Object,System.Int32@,System.Int32@)
   id: TryObservationCounts(System.Object,System.Int32@,System.Int32@)

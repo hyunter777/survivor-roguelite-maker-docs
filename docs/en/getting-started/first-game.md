@@ -7,14 +7,14 @@
 5. Select the object with `SurvivorsSceneBootstrap`. Check Content, Views and Sounds. Assign separate Arena Settings and Field Settings if you want different rules for each mode; otherwise the content's Settings is used. A nonzero Seed is useful while testing.
 6. Enter Play Mode, choose a character and starting weapon in the menu, and start. Move with the supplied movement bindings; attacks are automatic. Use the pause action for pause/options. In Arena mode, finish a wave, choose level-up rewards and shop. In Field mode, choices interrupt combat and the next wave follows automatically.
 
-The generated sound catalog contains empty cues until you assign audio. Placeholder visuals are intentional; lack of a sound does not stop the simulation.
+Assign audio clips to the generated sound cues and replace the placeholder visuals with your art.
 
 ## Add a first weapon
 
-1. Choose an output folder in your Project window. Use **Assets/Create/Survivor Roguelite Maker/Templates/Weapon - Ranged**. The template initializes a `WeaponAsset`; it does not add the weapon to every content registry automatically.
+1. Choose an output folder in your Project window. Use **Assets/Create/Survivor Roguelite Maker/Templates/Weapon - Ranged**. The template initializes a `WeaponAsset`. Add it to the content registry in the following step.
 2. Give it a unique Id and a player-facing Display Name. Set the damage, range, cooldown, projectile count and a positive projectile speed. The inspector's time controls display friendly units; the underlying simulation still uses ticks where the field specifies ticks.
 3. Add the weapon to your `ContentAsset.Weapons` list. To offer it at the start, also add it to your character's Starting Weapons. For normal shop/level-up use, configure availability and offer-channel eligibility.
-4. Add a view entry with the weapon's Id to your view catalog. Assign a sprite or prefab, and optionally a separate projectile visual. Missing visual entries use fallback rendering; they do not prevent attacks.
+4. Add a view entry with the weapon's Id to your view catalog. Assign a sprite or prefab, and optionally a separate projectile visual. Missing visual entries use fallback rendering.
 5. Open **Tools/Survivor Roguelite Maker/Weapon Lab**, assign your content/settings and weapon, and measure it against dummies. Then open **Build Lab** to test it with a character and items.
 6. Validate the content in **Content Browser**, then start a fresh run to use the updated definition graph.
 

@@ -24,7 +24,7 @@ items:
   namespace: SurvivorsMaker.Editor
   summary: "Polls a synchronous headless API off the editor thread. Inputs must already be copied.\n            Cancel discards
     its result; a synchronous call already in flight finishes in the background.\n            A predecessor serializes rapid
-    edits so obsolete requests cannot flood the worker pool."
+    edits to keep obsolete requests out of the worker pool."
   example: []
   syntax:
     content: 'public sealed class AnalysisTaskJob<T> : IAnalysisJob<T>'

@@ -1,6 +1,6 @@
 # Ticks
 
-Positions and ranges are world units. The default simulation frequency is 60 ticks per second and is configured by `SimSettings.TicksPerSecond`. Convert authored seconds with `SimSettings.Ticks`; do not assume a fixed conversion in custom systems. Percent stats use the configured stat bindings and percentage conversion; a displayed stat value of 10 usually means ten percentage points, whereas probability fields such as hit-effect Chance use fractions from 0 to 1.
+Positions and ranges are world units. The default simulation frequency is 60 ticks per second and is configured by `SimSettings.TicksPerSecond`. Convert authored seconds with `SimSettings.Ticks`; do not assume a fixed conversion in custom systems. Percent stats use the configured stat bindings and percentage conversion; percent stats use percentage points, and probability fields such as hit-effect Chance use fractions from 0 to 1.
 
 Each running tick schedules spawns, moves players, updates weapon anchors, advances statuses and enemies, admits behaviour spawns, rebuilds the spatial index, ticks weapons/projectiles, resolves deaths/triggers/pickups and regeneration, then performs end checks. Modules expose named boundaries in this order. Read [Extending](../extending/index.md) for the exact module phases.
 

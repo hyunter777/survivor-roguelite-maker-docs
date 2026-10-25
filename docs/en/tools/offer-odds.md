@@ -2,9 +2,9 @@
 
 Select character, mode, Shop or Level-up, Luck, progress values, sample-path count and seed. Draw a baseline, then use Compare With to isolate guarantee or character-policy changes. Progress means waves in Arena mode and levels in Field mode.
 
-Chance is the share of offer slots containing an id at a sampled progress value. First Seen Mean averages the first appearance among observed paths in the sampled window. A value of -1 marks an unobserved entry in that window. Not Observed % needs the report's path counts. Cancellation can leave fewer or partially observed paths.
+Chance is the share of offer slots containing an id at a sampled progress value. First Seen Mean averages the first appearance among observed paths in the sampled window. A value of -1 marks an unobserved entry in that window. Not Observed % needs the report's path counts. Read observed-path counts alongside each result.
 
-Weights, guarantees, bans, ownership and eligibility interact. An isolated odds experiment is not the same as a complete player purchasing history. Use whole-run simulation and direct play to confirm a change. If you customize stat bindings, verify the Luck binding used by the request/settings rather than assuming the default stat id.
+Weights, guarantees, bans, ownership and eligibility interact. Use whole-run simulation and direct play to measure purchasing histories. Select the Luck binding from your request/settings when customizing stat bindings.
 
 ## Entry point and reference fields
 

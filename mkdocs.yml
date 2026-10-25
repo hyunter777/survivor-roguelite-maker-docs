@@ -69,17 +69,17 @@ nav:
   - Characters: authoring/characters.md
   - Weapons: authoring/weapons.md
   - Weapon Tiers: authoring/weapon-tiers.md
-  - Items Sets: authoring/items-sets.md
-  - Stats Effects: authoring/stats-effects.md
+  - Items, upgrades and sets: authoring/items-sets.md
+  - Stats and effects: authoring/stats-effects.md
   - Triggers: authoring/triggers.md
   - Offers: authoring/offers.md
   - Enemies: authoring/enemies.md
-  - Elites Bosses Hordes: authoring/elites-bosses-hordes.md
-  - Waves Arenas: authoring/waves-arenas.md
+  - Elites, bosses and hordes: authoring/elites-bosses-hordes.md
+  - Waves and arenas: authoring/waves-arenas.md
   - Progression: authoring/progression.md
   - Settings: authoring/settings.md
 - Maker tools:
-  - Index: tools/index.md
+  - Tools overview: tools/index.md
   - Content Browser: tools/content-browser.md
   - Wave Editor: tools/wave-editor.md
   - Balance Simulator: tools/balance-simulator.md
@@ -89,24 +89,24 @@ nav:
   - Weapon Lab: tools/weapon-lab.md
   - Offer Odds: tools/offer-odds.md
   - Content Table: tools/content-table.md
-  - Wizards Validation: tools/wizards-validation.md
+  - Wizards and validation: tools/wizards-validation.md
 - Presentation:
   - Bootstrap: presentation/bootstrap.md
   - Catalogs: presentation/catalogs.md
-  - Ui Localization: presentation/ui-localization.md
-  - Feedback Audio: presentation/feedback-audio.md
+  - UI and localization: presentation/ui-localization.md
+  - Feedback and audio: presentation/feedback-audio.md
 - Playtesting:
   - Panel: playtesting/panel.md
   - Metrics: playtesting/metrics.md
 - Saves and options:
   - Continue: saves/continue.md
-  - Options Migrations: saves/options-migrations.md
+  - Options and migrations: saves/options-migrations.md
 - Extending:
-  - Index: extending/index.md
+  - Extension points: extending/index.md
   - Behaviours: extending/behaviours.md
-  - Modules Events: extending/modules-events.md
-  - Effect Trigger Handlers: extending/effect-trigger-handlers.md
-  - Bootstrap Systems: extending/bootstrap-systems.md
+  - Modules and events: extending/modules-events.md
+  - Effect and trigger handlers: extending/effect-trigger-handlers.md
+  - Bootstrap and systems: extending/bootstrap-systems.md
   - Save Hooks: extending/save-hooks.md
 - Performance and determinism:
   - Determinism: quality/determinism.md
@@ -117,15 +117,15 @@ nav:
   - Status Weapon: recipes/status-weapon.md
   - Custom Weapon: recipes/custom-weapon.md
   - Custom Pickup: recipes/custom-pickup.md
-  - Localized Ui: recipes/localized-ui.md
+  - Localized UI: recipes/localized-ui.md
   - Field Mode: recipes/field-mode.md
   - Saved Effect: recipes/saved-effect.md
 - Reference and help:
-  - Api: reference/api.md
+  - API: reference/api.md
   - Troubleshooting: help/troubleshooting.md
-  - Faq: help/faq.md
+  - FAQ: help/faq.md
   - Release Notes: release-notes.md
-  - Support License: support-license.md
+  - Support and license: support-license.md
 validation:
   links:
     not_found: warn

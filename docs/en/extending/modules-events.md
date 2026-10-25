@@ -1,4 +1,4 @@
-# Modules Events
+# Modules and events
 
 Modules run in list order at six fixed boundaries: After Schedule, Before Enemies, After Enemies, After Combat, After Deaths and End Of Tick. They receive Begin once for each new world. Keep mutable state per world/instance, not in a global singleton. Use only `world.Random` for gameplay randomness.
 
@@ -100,4 +100,4 @@ Concept diagram.
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Index](index.md) · [Behaviours](behaviours.md) · [Effect Trigger Handlers](effect-trigger-handlers.md)
+[Documentation home](../index.md) · [Index](index.md) · [Behaviours](behaviours.md) · [Effect and trigger handlers](effect-trigger-handlers.md)

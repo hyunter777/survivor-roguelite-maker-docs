@@ -386,7 +386,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Uses normal survival settlement without taking another tick. Death cannot be overridden.
+  summary: Uses normal survival settlement without taking another tick. Death takes precedence.
   example: []
   syntax:
     content: public bool EndForPlaytest()

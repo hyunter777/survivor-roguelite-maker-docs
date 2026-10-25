@@ -78,7 +78,7 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: Optional prefab; may carry an <xref href="SurvivorsMaker.Presentation.ICharacterVisual" data-throw-if-not-resolved="false"></xref>.
+  summary: Optional prefab with an optional <xref href="SurvivorsMaker.Presentation.ICharacterVisual" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public GameObject Prefab

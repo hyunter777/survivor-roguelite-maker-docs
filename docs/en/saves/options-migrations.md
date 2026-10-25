@@ -1,4 +1,4 @@
-# Options Migrations
+# Options and migrations
 
 SaveEnvelope records a Domain and SchemaVersion; its payload also has a Version. These are different version layers. `SaveMigrationRegistry.CreateDefault(legacyArenaIds)` includes the supported legacy-to-current paths. A future schema is not rewritten as the current one. Register explicit ISaveMigration steps when extending your own transport/schema, and validate the resulting payload before swapping the active run.
 

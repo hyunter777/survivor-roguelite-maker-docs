@@ -1,6 +1,6 @@
 # Definitions
 
-Ids connect authoring, views, offers and saves. Keep them stable after shipping. Id comparison is case-sensitive. Within an offer window, duplicate prevention uses ids; inventory counts, combining and sets use definition-object identity. Reuse one asset/definition object for one content entry instead of manufacturing copies with the same id.
+Ids connect authoring, views, offers and saves. Keep them stable after shipping. Id comparison is case-sensitive. Within an offer window, duplicate prevention uses ids; inventory counts, combining and sets use definition-object identity. Reuse one asset/definition object for each content entry.
 
 The asset conversion cache preserves repeated references as the same definition object. Treat converted definitions as immutable during a run. Start a fresh run after changing authoring assets; code that deliberately invalidates the cache must re-register its runtime custom handlers on the new graph.
 

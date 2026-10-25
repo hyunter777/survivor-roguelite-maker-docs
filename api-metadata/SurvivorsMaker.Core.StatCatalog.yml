@@ -212,7 +212,7 @@ items:
   assemblies:
   - SurvivorsMaker.Core
   namespace: SurvivorsMaker.Core
-  summary: 'Problems an author should fix: empty or duplicate ids, min above max, base outside limits.'
+  summary: 'Authoring errors: empty or duplicate ids, min above max, base outside limits.'
   example: []
   syntax:
     content: public static List<string> Validate(IEnumerable<StatDefinition> stats)

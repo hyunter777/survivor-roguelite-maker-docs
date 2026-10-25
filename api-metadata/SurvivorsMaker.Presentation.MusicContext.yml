@@ -21,7 +21,7 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: What kind of music should play. Each maps to one track in the sound catalog.
+  summary: Music context. Each maps to one track in the sound catalog.
   example: []
   syntax:
     content: public enum MusicContext

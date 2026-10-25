@@ -126,15 +126,15 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: Initial entity lookup capacity; nonnegative. Capacity may grow during play.
+  summary: Initial entity lookup capacity; nonnegative. Capacity grows during play as needed.
   example: []
   syntax:
-    content: '[Tooltip("Initial entity lookup capacity; nonnegative. Capacity may grow during play.")]
+    content: '[Tooltip("Initial entity lookup capacity; nonnegative. Capacity grows during play as needed.")]
 
       public int InitialCapacity'
     return:
       type: System.Int32
-    content.vb: '<Tooltip("Initial entity lookup capacity; nonnegative. Capacity may grow during play.")>
+    content.vb: '<Tooltip("Initial entity lookup capacity; nonnegative. Capacity grows during play as needed.")>
 
       Public InitialCapacity As Integer'
   attributes:
@@ -142,7 +142,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: Initial entity lookup capacity; nonnegative. Capacity may grow during play.
+      value: Initial entity lookup capacity; nonnegative. Capacity grows during play as needed.
 - uid: SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
   commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
   id: PrewarmPerPool

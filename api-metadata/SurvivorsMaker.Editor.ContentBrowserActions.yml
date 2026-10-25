@@ -93,7 +93,7 @@ items:
   summary: 'Creates one entry of <code class="paramref">kind</code> (optionally from a <code class="paramref">template</code>
     of that kind) and adds it to the content.
 
-    Elites have no content list: the asset is created and should be assigned to a spawn entry or horde.
+    Elites have no content list: create the asset and assign it to a spawn entry or horde.
 
     A summoner template also creates and registers the minion it summons.'
   example: []

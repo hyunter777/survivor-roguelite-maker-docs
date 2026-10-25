@@ -1,4 +1,4 @@
-# Api
+# API
 
 [Open the public API reference](https://hyunter777.github.io/survivor-roguelite-maker-docs/api/).
 
@@ -29,4 +29,4 @@ Screenshot slot: api-reference (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Troubleshooting](../help/troubleshooting.md) · [Faq](../help/faq.md) · [Release Notes](../release-notes.md)
+[Documentation home](../index.md) · [Troubleshooting](../help/troubleshooting.md) · [FAQ](../help/faq.md) · [Release Notes](../release-notes.md)

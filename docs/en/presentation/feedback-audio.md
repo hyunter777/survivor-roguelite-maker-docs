@@ -1,4 +1,4 @@
-# Feedback Audio
+# Feedback and audio
 
 `SpriteCharacterVisual` provides the built-in facing, walk motion, hit flash, attack punch and death animation. `PresentationSettings` holds view/feedback tuning. `WaveFeedback` consumes simulation events for pooled damage numbers, death effects, screen shake and sound. Critical damage can use distinct size/color.
 
@@ -29,4 +29,4 @@ Screenshot slot: feedback-audio (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [Catalogs](catalogs.md) · [Ui Localization](ui-localization.md)
+[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [Catalogs](catalogs.md) · [UI and localization](ui-localization.md)

@@ -1,4 +1,4 @@
-# Stats Effects
+# Stats and effects
 
 For Add/Set/Link/Limit/Convert, Target is a stat id. The inspector offers the selected content's stat catalog; a valid id outside that catalog remains editable. List operations use free-form entry ids with a List key. A nonempty Handler selects a registered custom effect implementation.
 
@@ -17,7 +17,7 @@ Evaluated methods require valid explicit values. In particular, Unit must be pos
 
 For internal stat sources, Read Layer selects Permanent, With Temporary or Final. External Source uses a case-sensitive adapter key instead. Common run keys include `currency`, `items`, `weapons`, `free_weapon_slots`, `item:<id>`, `weapon_family:<family>`, `weapon_kind:<enum name>` and `set:<id>`. Unique/duplicate and tier queries also exist on `RunStatSource`. Combat adds its own sources through `SimStatSource`; use the supported key list in that adapter when adding a new dependency.
 
-Do not treat a Build Lab provider label such as `character:<id>` or `grant:<id>` as an external source query. Provider identity and a Link's Input Source are separate fields.
+Provider labels such as `character:<id>` and `grant:<id>` identify contributions in Build Lab. A Link's Input Source selects a dependency through an adapter key.
 
 Lifetime Waves expires relative to acquisition/start wave; zero disables wave expiry. Lifetime Ticks advances only during combat. Wave-scoped timed effects restart for a new wave, while Run-scoped ones retain remaining ticks. Temporary controls the evaluation layer; lifetime controls removal. A captured limit keeps its saved capture, even if its source later changes.
 

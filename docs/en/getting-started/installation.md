@@ -12,7 +12,7 @@
 4. Import TMP Essential Resources if they are absent.
 5. Keep generated content and custom code in your own Assets folder. Back up content and saves before updating the package.
 
-Package code, a sample's authoring source, and a sample's generated assets have different ownership. Editing generated output is convenient for experiments, but rebuilding can replace it. Duplicate the content into your own game folder for permanent work.
+Package code, a sample's authoring source, and a sample's generated assets have different ownership. The builder regenerates its output. Duplicate content into your own game folder for permanent work.
 
 ## Entry point and reference fields
 

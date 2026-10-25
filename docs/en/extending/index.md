@@ -26,4 +26,4 @@ Concept diagram.
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Behaviours](behaviours.md) · [Modules Events](modules-events.md) · [Effect Trigger Handlers](effect-trigger-handlers.md)
+[Documentation home](../index.md) · [Behaviours](behaviours.md) · [Modules and events](modules-events.md) · [Effect and trigger handlers](effect-trigger-handlers.md)

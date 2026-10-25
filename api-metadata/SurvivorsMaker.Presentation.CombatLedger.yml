@@ -349,7 +349,7 @@ items:
   summary: 'One event of the tick. Level-ups always; damage only when no tap reports it (<xref href="SurvivorsMaker.Presentation.CombatLedger.Attributed"
     data-throw-if-not-resolved="false"></xref> false).
 
-    <code class="paramref">slotWeaponIds</code>: item id per weapon slot (may be null); <code class="paramref">enemyIdOf</code>:
+    <code class="paramref">slotWeaponIds</code>: item id per weapon slot (optional); <code class="paramref">enemyIdOf</code>:
     entity id → enemy id.'
   example: []
   syntax:

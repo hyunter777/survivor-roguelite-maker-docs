@@ -17,7 +17,7 @@ items:
   assemblies:
   - SurvivorsMaker.Core
   namespace: SurvivorsMaker.Core
-  summary: 'Rules for an effect the built-in methods cannot express, e.g. "+1 armor for every 5 max health".
+  summary: 'Rules for a custom effect, e.g. "+1 armor for every 5 max health".
 
     Register it in <xref href="SurvivorsMaker.Core.EffectHandlers" data-throw-if-not-resolved="false"></xref> under the id
     effects put in <xref href="SurvivorsMaker.Core.Effect.Handler" data-throw-if-not-resolved="false"></xref>.'

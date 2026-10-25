@@ -1,10 +1,10 @@
 # Settings
 
-GameSettingsAsset exposes Run and Simulation plus serializable defense/level-curve settings. Content.Settings supplies defaults; the bootstrap can assign separate ArenaSettings and FieldSettings. Do not accidentally measure one settings asset and play another.
+GameSettingsAsset exposes Run and Simulation plus serializable defense/level-curve settings. Content.Settings supplies defaults; the bootstrap can assign separate ArenaSettings and FieldSettings. Use the same settings asset for measurement and play.
 
 Run covers shop prices, offers, choices, inventory policies, income settlement, conversions and save arena ids. Simulation covers fixed frequency, stat bindings, combat/player/spawn rules and weapon timing. Expose new values as settings or definition fields.
 
-Authoring seconds and simulation ticks are not interchangeable. Use the inspector's unit display and SimSettings.Ticks in code. Stat ids come from the selected catalog/bindings. Validate finite ranges and remeasure after changing a formula or cap.
+Read the inspector's unit display and convert seconds with SimSettings.Ticks in code. Stat ids come from the selected catalog/bindings. Validate finite ranges and remeasure after changing a formula or cap.
 
 ## Entry point and reference fields
 

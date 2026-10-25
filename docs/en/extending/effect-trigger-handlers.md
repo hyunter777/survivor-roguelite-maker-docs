@@ -1,4 +1,4 @@
-# Effect Trigger Handlers
+# Effect and trigger handlers
 
 Set Effect.Handler to your registered id. A handler must return an `AppliedEffect` containing itself and enough state to undo the actual contribution. Do not mutate shared Effect definitions. Implement IEffectStatePersistence for saveable applications.
 
@@ -82,7 +82,7 @@ namespace MakerManualExamples
 }
 ```
 
-Call StartWave after configuring profile/run stores if needed. For run-side custom actions, add your `IRunTriggerHandler` to `controller.RunTriggerHandlers` at the same boundary. Registering handlers does not create the corresponding effects/triggers in your content; both authoring and code registration are required.
+Call StartWave after configuring profile/run stores if needed. For run-side custom actions, add your `IRunTriggerHandler` to `controller.RunTriggerHandlers` at the same boundary. Author the matching effects/triggers in your content and register their handlers in code.
 
 ## Entry point and reference fields
 
@@ -105,4 +105,4 @@ Concept diagram.
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Index](index.md) · [Behaviours](behaviours.md) · [Modules Events](modules-events.md)
+[Documentation home](../index.md) · [Index](index.md) · [Behaviours](behaviours.md) · [Modules and events](modules-events.md)

@@ -2,9 +2,9 @@
 
 Use Item for shop stock and Upgrade for level-up stat rewards. Availability and channel policy determine where a definition appears. Explicit authoring switches such as Use Acquisition, Use Pool Constraints and Use Trigger Rules preserve older data when off; enable the appropriate switch before relying on its extended fields.
 
-Pool settings cover tier weights, tag weights, kind-specific slots, family constraints, character preferences/bans, guarantees and banish allowances. Guarantees still need eligible candidates. Full-slot weapon merges and next-tier replacement follow the acquisition/shop rules. Validate each tier and use Offer Odds with the intended character, mode, progress and inventory assumptions.
+Pool settings cover tier weights, tag weights, kind-specific slots, family constraints, character preferences/bans, guarantees and banish allowances. Guarantees select from eligible candidates. Full-slot weapon merges and next-tier replacement follow the acquisition/shop rules. Validate each tier and use Offer Odds with the intended character, mode, progress and inventory configuration.
 
-Sets count weapon membership, not item tags. Duplicate references to one set on a weapon count once. Only the highest reached threshold applies, with the first entry winning an equal threshold. Character policy tags are preferences/bans, not owned tag contributions.
+Sets count weapon membership. Duplicate references to one set on a weapon count once. Only the highest reached threshold applies, with the first entry winning an equal threshold. Character policy tags control preferences and bans; inventory tags describe owned content.
 
 ## Entry point and reference fields
 

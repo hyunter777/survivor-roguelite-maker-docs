@@ -621,9 +621,7 @@ items:
 
     Set entries are deltas from the preceding fold in their own layer. Limits follow scalar
 
-    entries, then final rounding. Custom/store contributions are an unattributed net residual:
-
-    arbitrary handler state cannot safely be replayed to discover per-provider amounts.'
+    entries, then final rounding. Custom/store contributions use the net Store residual.'
   example: []
   syntax:
     content: public StatExplanation Explain(string id, Func<AppliedEffect, string> sourceKey = null)

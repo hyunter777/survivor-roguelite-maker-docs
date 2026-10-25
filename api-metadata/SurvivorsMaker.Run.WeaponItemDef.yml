@@ -270,7 +270,7 @@ items:
   assemblies:
   - SurvivorsMaker.Run
   namespace: SurvivorsMaker.Run
-  summary: What two of this weapon merge into. Null = cannot merge.
+  summary: What two of this weapon merge into. Null disables merging.
   example: []
   syntax:
     content: public WeaponItemDef NextTier

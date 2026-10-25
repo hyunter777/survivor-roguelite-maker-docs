@@ -206,7 +206,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: 'Custom events: the sender''s id (e.g. "mine_armed"). Built-in events may set it for detail (e.g. the status behaviour
+  summary: 'Custom events: the sender''s id (e.g. "mine_armed"). Built-in events use it for detail (e.g. the status behaviour
     id).'
   example: []
   syntax:

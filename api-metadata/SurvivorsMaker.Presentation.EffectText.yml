@@ -220,7 +220,7 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: The description above the generated detail lines (effects, weapon summary). Either may be empty.
+  summary: The description above the generated detail lines (effects, weapon summary). Both descriptions are optional.
   example: []
   syntax:
     content: public static string WithDescription(string description, string details)

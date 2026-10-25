@@ -25,7 +25,7 @@ Use reusable candidate lists and buffers; avoid LINQ, closures, string formattin
 
 StatBuild caches by Store/Source revision and evaluation settings identity. Custom sources must keep reads stable until Revision changes. Call Store.Touch/Invalidate as required after deliberate writes. `StatBuild.Explain` and `InventoryAnalysis` allocate only when explicitly requested from tool and UI requests.
 
-Analysis jobs advance in budgeted slices and cancelled when their context changes. Recording every preview frame or running many bot paths has a different memory/cost profile from the steady-state simulation benchmark.
+Analysis jobs advance in budgeted slices and cancel when their context changes. Recording every preview frame or running many bot paths has a different memory/cost profile from the steady-state simulation benchmark.
 
 ## Entry point and reference fields
 

@@ -36,7 +36,7 @@ items:
 
     the original is kept beside it as <code>*.v1.bak</code>, the progress is rewritten here and the saved run is handed to
 
-    the linked run store. A run whose arena cannot be mapped stays in the backup only.'
+    the linked run store. The backup preserves runs with an unmapped arena.'
   example: []
   syntax:
     content: 'public sealed class JsonFileProfileStore : IProfileStore'

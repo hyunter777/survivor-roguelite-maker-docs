@@ -56,7 +56,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Inclusive wave range (1-based) this group may appear in. Max ≤ 0 = no upper limit.
+  summary: Inclusive wave range (1-based) for this group. Max ≤ 0 = no upper limit.
   example: []
   syntax:
     content: public int MinWave

@@ -1,6 +1,6 @@
 # Horde Preview
 
-Record a wave with a seed, difficulty, player/bot setup and frame interval. Scrub recorded frames with the time slider and inspect positions, counts and density. Scrubbing reads captured frames; it does not reverse-mutate a live SimWorld. A smaller record interval improves temporal detail and increases memory use.
+Record a wave with a seed, difficulty, player/bot setup and frame interval. Scrub recorded frames with the time slider and inspect positions, counts and density. Scrubbing reads captured frames. A smaller record interval improves temporal detail and increases memory use.
 
 The preview displays schematic enemy positions and density. Record again after changing a definition or seed.
 

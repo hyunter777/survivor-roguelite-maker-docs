@@ -4,11 +4,11 @@ With the generated GameUiRoot, **F2** opens the Playtest panel and **F3** toggle
 
 The Playtest panel is compiled for the editor or Development Builds unless `SURVIVORS_MAKER_NO_PLAYTEST` is defined, and requires a debug build at runtime. Release players retain an inert component that removes itself instead of leaving a missing-script reference. The DPS meter is separately configurable and can exist in ordinary builds. Disable it if you do not want it in your shipping UI.
 
-Commands use IPlaytestCommands on RunController. Read the result shown by the panel: a rejected command does not mean the requested change occurred.
+Commands use IPlaytestCommands on RunController. Read the result shown by the panel; successful commands apply the requested change.
 
 | Command | When it is accepted |
 |---|---|
-| Give weapon | Between waves, known weapon id and a free weapon slot; this command does not perform a full-slot merge |
+| Give weapon | Between waves, known weapon id and a free weapon slot |
 | Give item/upgrade | Between waves, or during an active Field wave; uses the item-instance path |
 | Give currency | An active unfinished run and a valid positive credit |
 | Give levels | An active unfinished run, valid count and representable level/health totals; choices queue through normal flow |

@@ -430,15 +430,15 @@ items:
   assemblies:
   - SurvivorsMaker.Data
   namespace: SurvivorsMaker.Data
-  summary: 'How often this guarantee may reserve slots: each window, once per wave, or once per run.'
+  summary: 'How often this guarantee reserves slots: each window, once per wave, or once per run.'
   example: []
   syntax:
-    content: '[Tooltip("How often this guarantee may reserve slots: each window, once per wave, or once per run.")]
+    content: '[Tooltip("How often this guarantee reserves slots: each window, once per wave, or once per run.")]
 
       public GuaranteeLifetime Lifetime'
     return:
       type: SurvivorsMaker.Run.GuaranteeLifetime
-    content.vb: '<Tooltip("How often this guarantee may reserve slots: each window, once per wave, or once per run.")>
+    content.vb: '<Tooltip("How often this guarantee reserves slots: each window, once per wave, or once per run.")>
 
       Public Lifetime As GuaranteeLifetime'
   attributes:
@@ -446,7 +446,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: 'How often this guarantee may reserve slots: each window, once per wave, or once per run.'
+      value: 'How often this guarantee reserves slots: each window, once per wave, or once per run.'
 - uid: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
   commentId: M:SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
   id: ToDef

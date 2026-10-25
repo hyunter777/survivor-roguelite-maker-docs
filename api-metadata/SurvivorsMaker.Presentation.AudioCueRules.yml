@@ -60,8 +60,8 @@ items:
     <xref href="SurvivorsMaker.Simulation.SimEventKind.WeaponFired" data-throw-if-not-resolved="false"></xref> and <code class="paramref">trigger</code>
     the fired trigger for
 
-    <xref href="SurvivorsMaker.Simulation.SimEventKind.TriggerFired" data-throw-if-not-resolved="false"></xref>; both may
-    be null.'
+    <xref href="SurvivorsMaker.Simulation.SimEventKind.TriggerFired" data-throw-if-not-resolved="false"></xref>; both parameters
+    are optional.'
   example: []
   syntax:
     content: public static string ForEvent(SimEvent value, SoundCueKeys keys, WeaponState weapon = null, TriggerDef trigger

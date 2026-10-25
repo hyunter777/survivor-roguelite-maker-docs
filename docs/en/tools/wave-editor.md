@@ -12,7 +12,7 @@ Wave Editor exposes wave/groups/entries and expected spawning over time. Compare
 |---|---|
 | `Wave / Groups` | Schedule being authored |
 | `Count / Interval / Delay` | Spawn timing |
-| `Preview` | Expected schedule, not guaranteed admitted spawns |
+| `Preview` | Scheduled counts before runtime spawn admission |
 
 ## Figure
 

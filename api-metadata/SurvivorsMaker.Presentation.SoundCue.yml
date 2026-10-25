@@ -187,7 +187,7 @@ items:
   assemblies:
   - SurvivorsMaker.Presentation
   namespace: SurvivorsMaker.Presentation
-  summary: Voices of this cue that may play at once. 0 = only the global voice limit.
+  summary: Maximum simultaneous voices for this cue. 0 = only the global voice limit.
   example: []
   syntax:
     content: '[Min(0)]

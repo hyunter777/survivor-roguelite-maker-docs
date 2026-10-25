@@ -437,7 +437,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Extra enemies a projectile may hit after the first.
+  summary: Extra enemies a projectile hits after the first.
   example: []
   syntax:
     content: public int Pierce

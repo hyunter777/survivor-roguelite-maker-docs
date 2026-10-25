@@ -1,6 +1,6 @@
 # Balance Simulator
 
-Run complete seeded bot sessions to inspect progression, survival and economy. Choose a representative content/settings pair and record bot type, sample count and first seed. Random and Greedy are repeatable policies, not human skill models.
+Run complete seeded bot sessions to inspect progression, survival and economy. Choose a representative content/settings pair and record bot type, sample count and first seed. Random and Greedy provide repeatable bot policies.
 
 Compare the same seed range before and after a balance edit. Read how many runs reach late waves before trusting late-wave averages. Use fixed-build trials when you want to isolate equipment rather than simulate shopping decisions. Keep generated reports with the settings/content version that produced them.
 

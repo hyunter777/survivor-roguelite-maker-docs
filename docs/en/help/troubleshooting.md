@@ -2,7 +2,7 @@
 
 ## The Tools menu is missing
 
-Resolve Console compile errors first. Confirm that this package's Editor assembly is imported and dependencies resolved. The root is **Tools/Survivor Roguelite Maker/**. Importing only copied runtime scripts does not install editor windows.
+Resolve Console compile errors first. Confirm that this package's Editor assembly is imported and dependencies resolved. The root is **Tools/Survivor Roguelite Maker/**. Install the complete package to add the editor windows.
 
 ## The game opens but there is no movement
 
@@ -10,7 +10,7 @@ Check Active Input Handling (Input System or Both), keyboard focus, the input co
 
 ## Text is blank or the UI reports missing TMP resources
 
-Import TMP Essential Resources, then confirm fonts on your theme/UI prefabs. The package depends on uGUI, which supplies the TMP API in this setup; project resources/fonts still need to be available. Regenerate UI in your own project folder only when you intend to replace the generated output.
+Import TMP Essential Resources, then confirm fonts on your theme/UI prefabs. The package depends on uGUI, which supplies the TMP API in this setup; assign the project resources and fonts. Regenerate UI in your own project folder only when you intend to replace the generated output.
 
 ## Entities appear as squares, or everything is silent
 
@@ -22,11 +22,11 @@ Check Content.Weapons, Available, channel policy, tier, character restrictions/b
 
 ## A ranged weapon fires no projectile
 
-Projectile speed must be positive. Check nearest-target range, cooldown, projectile count, source stat bindings and arena bounds. A nearer small target outside exact range is not replaced by a farther large target simply because the latter's radius reaches you. Weapon Lab is useful for separating range problems from wave movement.
+Projectile speed must be positive. Check nearest-target range, cooldown, projectile count, source stat bindings and arena bounds. Nearest-target selection happens before the exact range test. Weapon Lab is useful for separating range problems from wave movement.
 
 ## My Link/Convert/Limit has no effect
 
-Use a valid target/source key and positive Unit. Check Conversion Fraction for Convert, input/output ranges for Linear, the selected read layer and diagnostics for unknown sources/cycles. A captured limit keeps its original capture. Convert does not execute during Get or Build Lab stat inspection; it needs an explicit conversion boundary. Enable extended authoring switches for rule fields where required.
+Use a valid target/source key and positive Unit. Check Conversion Fraction for Convert, input/output ranges for Linear, the selected read layer and diagnostics for unknown sources/cycles. A captured limit keeps its original capture. Run Convert at an explicit conversion boundary. Enable extended authoring switches for rule fields where required.
 
 ## My trigger does not fire
 
@@ -46,11 +46,11 @@ Implement IEffectStatePersistence, register the same handler id before restoring
 
 ## The same seed gives different results
 
-Compare content/settings versions, actual seed, per-tick input and run choices. A zero session seed chooses a new seed. Custom randomness, unordered processing or a handler-global counter can also break repeatability. Cross-platform floating-point identity is not guaranteed. See [Determinism & Performance](../quality/determinism.md).
+Compare content/settings versions, actual seed, per-tick input and run choices. A zero session seed chooses a new seed. Custom randomness, unordered processing or a handler-global counter can also break repeatability. Use the same platform and floating-point environment for exact replay comparisons. See [Determinism & Performance](../quality/determinism.md).
 
 ## Why do expected DPS, Weapon Lab and live DPS differ?
 
-They use different models/scenarios. Reach, density, target movement/health, measurement length, status/secondary effects and damage attribution matter. Compare identical scenarios and inspect actual hit counts instead of treating the estimate as a promise.
+They use different models/scenarios. Reach, density, target movement/health, measurement length, status/secondary effects and damage attribution matter. Compare identical scenarios and inspect actual hit counts.
 
 ## The Playtest panel is missing from a player build
 
@@ -84,4 +84,4 @@ Screenshot slot: validation-issues (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Api](../reference/api.md) · [Faq](faq.md) · [Release Notes](../release-notes.md)
+[Documentation home](../index.md) · [API](../reference/api.md) · [FAQ](faq.md) · [Release Notes](../release-notes.md)

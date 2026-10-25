@@ -27,7 +27,7 @@ namespace MakerManualExamples
 
 Register before spawning; invalid ids are rejected before list/id mutation. Collection is accepted only when Collected becomes true. A rejected pickup remains available for a later collection attempt. Supply a matching custom pickup view entry and test it in range.
 
-Custom pickups disappear without end-of-wave collection unless they also implement IPickupSettlementBehaviour.Settle. Choose settlement explicitly; it uses the normal wallet/effect boundary rather than silently duplicating income. Do not return/remove a pickup from unrelated code while the pickup system owns collection.
+Implement IPickupSettlementBehaviour.Settle to collect custom pickups at wave end. Settlement uses the normal wallet/effect boundary. Do not return/remove a pickup from unrelated code while the pickup system owns collection.
 
 ## Entry point and reference fields
 

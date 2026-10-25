@@ -74,7 +74,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Push between overlapping enemies, in world units per second at full overlap. 0 = off (enemies may stack).
+  summary: Push between overlapping enemies, in world units per second at full overlap. 0 = off, allowing enemies to stack.
   example: []
   syntax:
     content: public float SeparationStrength

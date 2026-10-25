@@ -190,7 +190,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: 'Shoot/Charge: wind-up may start only when the player distance is within [MinRange, MaxRange].'
+  summary: 'Shoot/Charge: wind-up starts when the player distance is within [MinRange, MaxRange].'
   example: []
   syntax:
     content: public float MinRange

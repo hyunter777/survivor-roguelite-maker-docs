@@ -63,7 +63,7 @@ items:
   assemblies:
   - SurvivorsMaker.Run
   namespace: SurvivorsMaker.Run
-  summary: 'Opt in: legacy shops can display weapons that cannot currently fit.'
+  summary: 'Opt in: legacy shops can display weapons beyond the active slot capacity.'
   example: []
   syntax:
     content: public bool EnforceShopCapacity

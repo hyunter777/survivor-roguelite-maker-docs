@@ -42,7 +42,7 @@ Every guide states its purpose, prerequisites, relevant Unity menu or code-only 
 | `authoring/weapon-tiers.md` | Tier ids/families; NextTier chain; next-tier creation; merge/replacement/full-slot rules; cycle validation | `weapon-tier-chain` |
 | `authoring/items-sets.md` | Items vs upgrades; instance/lifetime; max owned; set membership/count/order/highest threshold; capture timing | `item-set-inspector` |
 | `authoring/stats-effects.md` | Stat catalog/bindings; Add/Set/list operations; Link/Convert/Limit; source keys/read layers; efficiency; rounding/transforms; expiry and diagnostics | `effect-inspector` |
-| `authoring/triggers.md` | Legacy/explicit rules; events/conditions/counters; maintained conditions; filters; reactions/cooldowns; custom handlers and unsupported combinations | `trigger-inspector` |
+| `authoring/triggers.md` | Legacy/explicit rules; events/conditions/counters; maintained conditions; filters; reactions/cooldowns; custom handlers and action-specific field rules | `trigger-inspector` |
 | `authoring/offers.md` | Channels; tiers/progress/luck; tags/weights; character bans; slots/families; guarantees; banish; authoring switches and eligibility | `offer-settings` |
 | `authoring/enemies.md` | Scaled fields; movement kinds; shoot/charge/summon; body/contact damage; status immunities; references and previews | `enemy-inspector` |
 | `authoring/elites-bosses-hordes.md` | Elite modifiers; phases and movement/attack overrides; summon references; horde timing/shape; boss ending prerequisites | `boss-horde-inspector` |

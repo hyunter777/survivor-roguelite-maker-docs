@@ -1,6 +1,6 @@
 # Continue
 
-RunSaves captures a run **between waves**: Shop, LevelUp without a live wave, or Wave before the next wave has started. Complete the current wave before saving a Field run. `RunController.Save()` returns null when capture is unavailable; the session's CanSave is the UI-facing check.
+RunSaves captures a run **between waves**: Shop, LevelUp without a live wave, or Wave before the next wave has started. Complete the current wave before saving a Field run. Check the session's CanSave property before calling `RunController.Save()`.
 
 Saved state includes seed/generator state, character/arena identity, inventory and item instances, currency, level/experience, choices/offers, remaining effect lifetimes/captures, supported trigger counters and custom effect payloads. Resume from the next between-wave boundary. Options, profile progress and the continued run are separate storage domains.
 
@@ -69,4 +69,4 @@ Screenshot slot: save-continue (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Options Migrations](options-migrations.md)
+[Documentation home](../index.md) · [Options and migrations](options-migrations.md)

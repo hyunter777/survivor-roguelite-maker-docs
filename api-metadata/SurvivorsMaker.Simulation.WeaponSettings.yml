@@ -133,7 +133,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Melee targets may be this much farther than the weapon's reach.
+  summary: Additional distance allowed for melee targets beyond the weapon's reach.
   example: []
   syntax:
     content: public float MeleeReachSlack

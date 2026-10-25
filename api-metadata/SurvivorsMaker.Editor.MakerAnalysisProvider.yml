@@ -62,8 +62,7 @@ items:
   assemblies:
   - SurvivorsMaker.Editor
   namespace: SurvivorsMaker.Editor
-  summary: Full type names tried in order. A type may expose a static Default/Instance property or a public parameterless
-    constructor.
+  summary: Full type names tried in order. Use a type with a static Default/Instance property or a public parameterless constructor.
   example: []
   syntax:
     content: public static readonly string[] DefaultTypeNames

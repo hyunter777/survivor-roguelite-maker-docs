@@ -1,4 +1,4 @@
-# Localized Ui
+# Localized UI
 
 ## Goal
 

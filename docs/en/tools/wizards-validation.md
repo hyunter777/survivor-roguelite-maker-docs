@@ -1,4 +1,4 @@
-# Wizards Validation
+# Wizards and validation
 
 Use **Tools/Survivor Roguelite Maker/Create Game Scene...**. Assign your Content, optional mode-specific settings, view/sound catalogs and scene path. The wizard creates or wires a bootstrap, game, camera, input, UI and floor. Its create-missing-catalogs option can fill empty catalog references.
 

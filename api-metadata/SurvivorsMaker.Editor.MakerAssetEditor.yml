@@ -269,7 +269,7 @@ items:
   namespace: SurvivorsMaker.Editor
   summary: 'Tags, bundles (pool groups) and the opt-in acquisition policy shared by items and weapons. With the toggle
 
-    off the definition keeps legacy eligibility; on, only the listed channels may offer it.'
+    off the definition keeps legacy eligibility; on, only the listed channels offer it.'
   example: []
   syntax:
     content: protected void OfferPool(VisualElement root, params string[] extra)

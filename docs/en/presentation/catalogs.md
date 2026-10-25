@@ -72,4 +72,4 @@ Screenshot slot: view-catalog (capture pending).
 
 Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
 
-[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [Ui Localization](ui-localization.md) · [Feedback Audio](feedback-audio.md)
+[Documentation home](../index.md) · [Bootstrap](bootstrap.md) · [UI and localization](ui-localization.md) · [Feedback and audio](feedback-audio.md)

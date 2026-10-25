@@ -1,6 +1,6 @@
 # Weapon Lab
 
-Choose a WeaponAsset/tier, stat sliders, dummy count, ring radius and measurement length. Compare the rough estimate with measured DPS, hit/kill counts and the density curve. Use the visual preview to see range, projectile and orbit/aura behaviour; pause it when examining a configuration.
+Choose a WeaponAsset/tier, stat sliders, dummy count, ring radius and measurement length. Compare expected DPS with measured DPS, hit/kill counts and the density curve. Use the visual preview to see range, projectile and orbit/aura behaviour; pause it when examining a configuration.
 
 Re-measure after changing stats or weapon fields. A measured number is specific to this target layout, time interval and seed. Register custom behaviours in both the scene systems and the analysis systems.
 

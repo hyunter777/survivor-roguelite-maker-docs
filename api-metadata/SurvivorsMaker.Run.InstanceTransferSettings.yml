@@ -48,7 +48,7 @@ items:
   assemblies:
   - SurvivorsMaker.Run
   namespace: SurvivorsMaker.Run
-  summary: Reset by default so unknown growth counters cannot pay historical thresholds again.
+  summary: Resets unknown growth counters by default and starts threshold tracking from zero.
   example: []
   syntax:
     content: public CounterTransfer DefaultCounterPolicy

@@ -3,6 +3,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 import argparse, json, os, re, shutil, subprocess
 import yaml
+from api_prose import polish
 
 class DocfxLoader(yaml.CSafeLoader):
     pass
@@ -32,7 +33,7 @@ def clean(value):
     value = re.sub(r'(?<![A-Za-z])[A-Za-z]:[\\/][^\s<>"\']+', '', value)
     value = re.sub(r'\b(?:M\d+(?:\.\d+)?|WP\d+(?:-\w+)?)\b', '', value)
     value = value.replace('should work in co-op', 'operate on additional players')
-    return value
+    return polish(value)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

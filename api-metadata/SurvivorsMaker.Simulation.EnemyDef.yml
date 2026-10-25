@@ -422,7 +422,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: Statuses this enemy ignores, by behaviour id (custom statuses; built-ins may be listed here too).
+  summary: Statuses this enemy ignores, by behaviour id (accepts custom and built-in status ids).
   example: []
   syntax:
     content: public List<string> StatusImmunityIds

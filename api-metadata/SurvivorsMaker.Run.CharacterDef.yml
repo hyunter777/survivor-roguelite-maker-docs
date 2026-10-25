@@ -230,7 +230,7 @@ items:
   assemblies:
   - SurvivorsMaker.Run
   namespace: SurvivorsMaker.Run
-  summary: Weapons the player may pick one of at run start.
+  summary: Weapon choices at run start.
   example: []
   syntax:
     content: public List<WeaponItemDef> StartingWeapons

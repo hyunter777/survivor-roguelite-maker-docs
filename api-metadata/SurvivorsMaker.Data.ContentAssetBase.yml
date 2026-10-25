@@ -145,7 +145,7 @@ items:
   assemblies:
   - SurvivorsMaker.Data
   namespace: SurvivorsMaker.Data
-  summary: Invalidates conversion caches after Inspector edits; overrides should retain this invalidation.
+  summary: Invalidates conversion caches after Inspector edits; Retain this invalidation in overrides.
   example: []
   syntax:
     content: protected virtual void OnValidate()

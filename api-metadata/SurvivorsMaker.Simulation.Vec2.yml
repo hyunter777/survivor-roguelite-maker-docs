@@ -45,7 +45,7 @@ items:
   assemblies:
   - SurvivorsMaker.Simulation
   namespace: SurvivorsMaker.Simulation
-  summary: 2D vector for the simulation, which cannot reference UnityEngine. Presentation converts to Vector2.
+  summary: 2D vector for the simulation, with engine-independent arithmetic. Presentation converts to Vector2.
   example: []
   syntax:
     content: 'public struct Vec2 : IEquatable<Vec2>'

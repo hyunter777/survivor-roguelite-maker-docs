@@ -48,7 +48,7 @@ items:
   assemblies:
   - SurvivorsMaker.Run
   namespace: SurvivorsMaker.Run
-  summary: Null when the run is in a phase that cannot be saved (a wave is running, or it ended).
+  summary: Returns a snapshot between waves; returns null during an active wave or after the run ends.
   example: []
   syntax:
     content: public RunSnapshot Capture(RunState run)
