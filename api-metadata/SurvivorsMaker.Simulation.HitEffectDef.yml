@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.HitEffectDef
+  commentId: T:SurvivorsMaker.Simulation.HitEffectDef
+  id: HitEffectDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.HitEffectDef.#ctor
+  - SurvivorsMaker.Simulation.HitEffectDef.Chance
+  - SurvivorsMaker.Simulation.HitEffectDef.Count
+  - SurvivorsMaker.Simulation.HitEffectDef.DamageMultiplier
+  - SurvivorsMaker.Simulation.HitEffectDef.Falloff
+  - SurvivorsMaker.Simulation.HitEffectDef.Kind
+  - SurvivorsMaker.Simulation.HitEffectDef.Radius
+  - SurvivorsMaker.Simulation.HitEffectDef.Status
+  langs:
+  - csharp
+  - vb
+  name: HitEffectDef
+  nameWithType: HitEffectDef
+  fullName: SurvivorsMaker.Simulation.HitEffectDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class HitEffectDef
+    content.vb: Public NotInheritable Class HitEffectDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Kind
+  id: Kind
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: HitEffectDef.Kind
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public HitEffectKind Kind
+    return:
+      type: SurvivorsMaker.Simulation.HitEffectKind
+    content.vb: Public Kind As HitEffectKind
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Chance
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Chance
+  id: Chance
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Chance
+  nameWithType: HitEffectDef.Chance
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Chance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Chance 0–1 per hit.
+  example: []
+  syntax:
+    content: public float Chance
+    return:
+      type: System.Single
+    content.vb: Public Chance As Single
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Radius
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Radius
+  id: Radius
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: HitEffectDef.Radius
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Radius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Explode: radius. Chain: jump range.'
+  example: []
+  syntax:
+    content: public float Radius
+    return:
+      type: System.Single
+    content.vb: Public Radius As Single
+- uid: SurvivorsMaker.Simulation.HitEffectDef.DamageMultiplier
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.DamageMultiplier
+  id: DamageMultiplier
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: DamageMultiplier
+  nameWithType: HitEffectDef.DamageMultiplier
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.DamageMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Explode/Chain: damage as a fraction of the hit''s damage.'
+  example: []
+  syntax:
+    content: public float DamageMultiplier
+    return:
+      type: System.Single
+    content.vb: Public DamageMultiplier As Single
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Count
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Count
+  id: Count
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: HitEffectDef.Count
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Count
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Chain: number of jumps.'
+  example: []
+  syntax:
+    content: public int Count
+    return:
+      type: System.Int32
+    content.vb: Public Count As Integer
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Falloff
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Falloff
+  id: Falloff
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Falloff
+  nameWithType: HitEffectDef.Falloff
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Falloff
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Chain: damage multiplier applied per jump.'
+  example: []
+  syntax:
+    content: public float Falloff
+    return:
+      type: System.Single
+    content.vb: Public Falloff As Single
+- uid: SurvivorsMaker.Simulation.HitEffectDef.Status
+  commentId: F:SurvivorsMaker.Simulation.HitEffectDef.Status
+  id: Status
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: HitEffectDef.Status
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatusEffectDef Status
+    return:
+      type: SurvivorsMaker.Simulation.StatusEffectDef
+    content.vb: Public Status As StatusEffectDef
+- uid: SurvivorsMaker.Simulation.HitEffectDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.HitEffectDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.HitEffectDef
+  langs:
+  - csharp
+  - vb
+  name: HitEffectDef()
+  nameWithType: HitEffectDef.HitEffectDef()
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.HitEffectDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public HitEffectDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.HitEffectDef.#ctor*
+  nameWithType.vb: HitEffectDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.HitEffectDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.HitEffectKind
+  commentId: T:SurvivorsMaker.Simulation.HitEffectKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HitEffectKind.html
+  name: HitEffectKind
+  nameWithType: HitEffectKind
+  fullName: SurvivorsMaker.Simulation.HitEffectKind
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+- uid: SurvivorsMaker.Simulation.HitEffectDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.HitEffectDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HitEffectDef.html#SurvivorsMaker_Simulation_HitEffectDef__ctor
+  name: HitEffectDef
+  nameWithType: HitEffectDef.HitEffectDef
+  fullName: SurvivorsMaker.Simulation.HitEffectDef.HitEffectDef
+  nameWithType.vb: HitEffectDef.New
+  fullName.vb: SurvivorsMaker.Simulation.HitEffectDef.New
+  name.vb: New

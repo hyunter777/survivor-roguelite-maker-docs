@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.IStatSourceDependencies
+  commentId: T:SurvivorsMaker.Core.IStatSourceDependencies
+  id: IStatSourceDependencies
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  langs:
+  - csharp
+  - vb
+  name: IStatSourceDependencies
+  nameWithType: IStatSourceDependencies
+  fullName: SurvivorsMaker.Core.IStatSourceDependencies
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Declare derived external sources (e.g. missing health depends on maximum health).
+  example: []
+  syntax:
+    content: public interface IStatSourceDependencies
+    content.vb: Public Interface IStatSourceDependencies
+  derivedClasses:
+  - SurvivorsMaker.Run.RunStatSource
+  - SurvivorsMaker.Simulation.SimStatSource
+- uid: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  id: GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Core.IStatSourceDependencies
+  langs:
+  - csharp
+  - vb
+  name: GetDependencies(string, List<string>)
+  nameWithType: IStatSourceDependencies.GetDependencies(string, List<string>)
+  fullName: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(string, System.Collections.Generic.List<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Reports stat ids used to derive an external source into the reusable output list; must not mutate gameplay.
+  example: []
+  syntax:
+    content: void GetDependencies(string key, List<string> into)
+    parameters:
+    - id: key
+      type: System.String
+    - id: into
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Sub GetDependencies(key As String, into As List(Of String))
+  overload: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies*
+  nameWithType.vb: IStatSourceDependencies.GetDependencies(String, List(Of String))
+  fullName.vb: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(String, System.Collections.Generic.List(Of String))
+  name.vb: GetDependencies(String, List(Of String))
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies*
+  commentId: Overload:SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSourceDependencies.html#SurvivorsMaker_Core_IStatSourceDependencies_GetDependencies_System_String_System_Collections_Generic_List_System_String__
+  name: GetDependencies
+  nameWithType: IStatSourceDependencies.GetDependencies
+  fullName: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

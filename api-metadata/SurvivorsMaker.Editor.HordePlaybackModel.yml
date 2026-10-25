@@ -1,0 +1,970 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.HordePlaybackModel
+  commentId: T:SurvivorsMaker.Editor.HordePlaybackModel
+  id: HordePlaybackModel
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.HordePlaybackModel.BossFlag
+  - SurvivorsMaker.Editor.HordePlaybackModel.Count(SurvivorsMaker.Balance.WaveFrame)
+  - SurvivorsMaker.Editor.HordePlaybackModel.CountFlag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  - SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Definition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Density(System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame},SurvivorsMaker.Simulation.ArenaRect,System.Int32,System.Int32)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Duration(SurvivorsMaker.Balance.WavePlayback)
+  - SurvivorsMaker.Editor.HordePlaybackModel.EliteFlag
+  - SurvivorsMaker.Editor.HordePlaybackModel.Flag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  - SurvivorsMaker.Editor.HordePlaybackModel.FrameAt(SurvivorsMaker.Balance.WavePlayback,System.Single)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Max(System.Int32[])
+  - SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive(SurvivorsMaker.Balance.WavePlayback,System.Int32@)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Seconds(SurvivorsMaker.Balance.WavePlayback,SurvivorsMaker.Balance.WaveFrame)
+  - SurvivorsMaker.Editor.HordePlaybackModel.Stride
+  langs:
+  - csharp
+  - vb
+  name: HordePlaybackModel
+  nameWithType: HordePlaybackModel
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Reads <xref href="SurvivorsMaker.Balance.WavePlayback" data-throw-if-not-resolved="false"></xref> frames: counts,
+    flags, frame lookup by time and density grids.'
+  example: []
+  syntax:
+    content: public static class HordePlaybackModel
+    content.vb: Public Module HordePlaybackModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Stride
+  commentId: F:SurvivorsMaker.Editor.HordePlaybackModel.Stride
+  id: Stride
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Stride
+  nameWithType: HordePlaybackModel.Stride
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Stride
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Floats per enemy in <xref href="SurvivorsMaker.Balance.WaveFrame.Enemies" data-throw-if-not-resolved="false"></xref>:
+    x, y, definition index, flags.'
+  example: []
+  syntax:
+    content: public const int Stride = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const Stride As Integer = 4
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.EliteFlag
+  commentId: F:SurvivorsMaker.Editor.HordePlaybackModel.EliteFlag
+  id: EliteFlag
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: EliteFlag
+  nameWithType: HordePlaybackModel.EliteFlag
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.EliteFlag
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int EliteFlag = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const EliteFlag As Integer = 1
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.BossFlag
+  commentId: F:SurvivorsMaker.Editor.HordePlaybackModel.BossFlag
+  id: BossFlag
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: BossFlag
+  nameWithType: HordePlaybackModel.BossFlag
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.BossFlag
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int BossFlag = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const BossFlag As Integer = 2
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Count(SurvivorsMaker.Balance.WaveFrame)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Count(SurvivorsMaker.Balance.WaveFrame)
+  id: Count(SurvivorsMaker.Balance.WaveFrame)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Count(WaveFrame)
+  nameWithType: HordePlaybackModel.Count(WaveFrame)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Count(SurvivorsMaker.Balance.WaveFrame)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int Count(WaveFrame frame)
+    parameters:
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Count(frame As WaveFrame) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Count*
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Flag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Flag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  id: Flag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Flag(WaveFrame, int)
+  nameWithType: HordePlaybackModel.Flag(WaveFrame, int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Flag(SurvivorsMaker.Balance.WaveFrame, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int Flag(WaveFrame frame, int enemy)
+    parameters:
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    - id: enemy
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Flag(frame As WaveFrame, enemy As Integer) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Flag*
+  nameWithType.vb: HordePlaybackModel.Flag(WaveFrame, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.Flag(SurvivorsMaker.Balance.WaveFrame, Integer)
+  name.vb: Flag(WaveFrame, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Definition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Definition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  id: Definition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Definition(WaveFrame, int)
+  nameWithType: HordePlaybackModel.Definition(WaveFrame, int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Definition(SurvivorsMaker.Balance.WaveFrame, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int Definition(WaveFrame frame, int enemy)
+    parameters:
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    - id: enemy
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Definition(frame As WaveFrame, enemy As Integer) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Definition*
+  nameWithType.vb: HordePlaybackModel.Definition(WaveFrame, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.Definition(SurvivorsMaker.Balance.WaveFrame, Integer)
+  name.vb: Definition(WaveFrame, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.CountFlag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  id: CountFlag(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: CountFlag(WaveFrame, int)
+  nameWithType: HordePlaybackModel.CountFlag(WaveFrame, int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag(SurvivorsMaker.Balance.WaveFrame, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int CountFlag(WaveFrame frame, int flag)
+    parameters:
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    - id: flag
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CountFlag(frame As WaveFrame, flag As Integer) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag*
+  nameWithType.vb: HordePlaybackModel.CountFlag(WaveFrame, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag(SurvivorsMaker.Balance.WaveFrame, Integer)
+  name.vb: CountFlag(WaveFrame, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  id: CountsByDefinition(SurvivorsMaker.Balance.WaveFrame,System.Int32)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: CountsByDefinition(WaveFrame, int)
+  nameWithType: HordePlaybackModel.CountsByDefinition(WaveFrame, int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition(SurvivorsMaker.Balance.WaveFrame, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Alive count per definition index (index ≥ definitions is ignored).
+  example: []
+  syntax:
+    content: public static int[] CountsByDefinition(WaveFrame frame, int definitions)
+    parameters:
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    - id: definitions
+      type: System.Int32
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function CountsByDefinition(frame As WaveFrame, definitions As Integer) As Integer()
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition*
+  nameWithType.vb: HordePlaybackModel.CountsByDefinition(WaveFrame, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition(SurvivorsMaker.Balance.WaveFrame, Integer)
+  name.vb: CountsByDefinition(WaveFrame, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Seconds(SurvivorsMaker.Balance.WavePlayback,SurvivorsMaker.Balance.WaveFrame)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Seconds(SurvivorsMaker.Balance.WavePlayback,SurvivorsMaker.Balance.WaveFrame)
+  id: Seconds(SurvivorsMaker.Balance.WavePlayback,SurvivorsMaker.Balance.WaveFrame)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Seconds(WavePlayback, WaveFrame)
+  nameWithType: HordePlaybackModel.Seconds(WavePlayback, WaveFrame)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Seconds(SurvivorsMaker.Balance.WavePlayback, SurvivorsMaker.Balance.WaveFrame)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static float Seconds(WavePlayback playback, WaveFrame frame)
+    parameters:
+    - id: playback
+      type: SurvivorsMaker.Balance.WavePlayback
+    - id: frame
+      type: SurvivorsMaker.Balance.WaveFrame
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Seconds(playback As WavePlayback, frame As WaveFrame) As Single
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Seconds*
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Duration(SurvivorsMaker.Balance.WavePlayback)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Duration(SurvivorsMaker.Balance.WavePlayback)
+  id: Duration(SurvivorsMaker.Balance.WavePlayback)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Duration(WavePlayback)
+  nameWithType: HordePlaybackModel.Duration(WavePlayback)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Duration(SurvivorsMaker.Balance.WavePlayback)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static float Duration(WavePlayback playback)
+    parameters:
+    - id: playback
+      type: SurvivorsMaker.Balance.WavePlayback
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Duration(playback As WavePlayback) As Single
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Duration*
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt(SurvivorsMaker.Balance.WavePlayback,System.Single)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.FrameAt(SurvivorsMaker.Balance.WavePlayback,System.Single)
+  id: FrameAt(SurvivorsMaker.Balance.WavePlayback,System.Single)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: FrameAt(WavePlayback, float)
+  nameWithType: HordePlaybackModel.FrameAt(WavePlayback, float)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt(SurvivorsMaker.Balance.WavePlayback, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Last frame at or before <code class="paramref">seconds</code> (frames are in tick order).
+  example: []
+  syntax:
+    content: public static int FrameAt(WavePlayback playback, float seconds)
+    parameters:
+    - id: playback
+      type: SurvivorsMaker.Balance.WavePlayback
+    - id: seconds
+      type: System.Single
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FrameAt(playback As WavePlayback, seconds As Single) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt*
+  nameWithType.vb: HordePlaybackModel.FrameAt(WavePlayback, Single)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt(SurvivorsMaker.Balance.WavePlayback, Single)
+  name.vb: FrameAt(WavePlayback, Single)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive(SurvivorsMaker.Balance.WavePlayback,System.Int32@)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive(SurvivorsMaker.Balance.WavePlayback,System.Int32@)
+  id: PeakAlive(SurvivorsMaker.Balance.WavePlayback,System.Int32@)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: PeakAlive(WavePlayback, out int)
+  nameWithType: HordePlaybackModel.PeakAlive(WavePlayback, out int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive(SurvivorsMaker.Balance.WavePlayback, out int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int PeakAlive(WavePlayback playback, out int frameIndex)
+    parameters:
+    - id: playback
+      type: SurvivorsMaker.Balance.WavePlayback
+    - id: frameIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function PeakAlive(playback As WavePlayback, frameIndex As Integer) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive*
+  nameWithType.vb: HordePlaybackModel.PeakAlive(WavePlayback, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive(SurvivorsMaker.Balance.WavePlayback, Integer)
+  name.vb: PeakAlive(WavePlayback, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Density(System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame},SurvivorsMaker.Simulation.ArenaRect,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Density(System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame},SurvivorsMaker.Simulation.ArenaRect,System.Int32,System.Int32)
+  id: Density(System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame},SurvivorsMaker.Simulation.ArenaRect,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Density(IEnumerable<WaveFrame>, ArenaRect, int, int)
+  nameWithType: HordePlaybackModel.Density(IEnumerable<WaveFrame>, ArenaRect, int, int)
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Density(System.Collections.Generic.IEnumerable<SurvivorsMaker.Balance.WaveFrame>,
+    SurvivorsMaker.Simulation.ArenaRect, int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Enemy counts on a <code class="paramref">columns</code> × <code class="paramref">rows</code> grid over the arena,
+    row-major from
+
+    the bottom-left (min) corner. Positions outside the arena are clamped to the edge cells.'
+  example: []
+  syntax:
+    content: public static int[] Density(IEnumerable<WaveFrame> frames, ArenaRect arena, int columns, int rows)
+    parameters:
+    - id: frames
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame}
+    - id: arena
+      type: SurvivorsMaker.Simulation.ArenaRect
+    - id: columns
+      type: System.Int32
+    - id: rows
+      type: System.Int32
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function Density(frames As IEnumerable(Of WaveFrame), arena As ArenaRect, columns As Integer,
+      rows As Integer) As Integer()
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Density*
+  nameWithType.vb: HordePlaybackModel.Density(IEnumerable(Of WaveFrame), ArenaRect, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.Density(System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Balance.WaveFrame),
+    SurvivorsMaker.Simulation.ArenaRect, Integer, Integer)
+  name.vb: Density(IEnumerable(Of WaveFrame), ArenaRect, Integer, Integer)
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Max(System.Int32[])
+  commentId: M:SurvivorsMaker.Editor.HordePlaybackModel.Max(System.Int32[])
+  id: Max(System.Int32[])
+  parent: SurvivorsMaker.Editor.HordePlaybackModel
+  langs:
+  - csharp
+  - vb
+  name: Max(int[])
+  nameWithType: HordePlaybackModel.Max(int[])
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Max(int[])
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int Max(int[] values)
+    parameters:
+    - id: values
+      type: System.Int32[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Max(values As Integer()) As Integer
+  overload: SurvivorsMaker.Editor.HordePlaybackModel.Max*
+  nameWithType.vb: HordePlaybackModel.Max(Integer())
+  fullName.vb: SurvivorsMaker.Editor.HordePlaybackModel.Max(Integer())
+  name.vb: Max(Integer())
+references:
+- uid: SurvivorsMaker.Balance.WavePlayback
+  commentId: T:SurvivorsMaker.Balance.WavePlayback
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WavePlayback.html
+  name: WavePlayback
+  nameWithType: WavePlayback
+  fullName: SurvivorsMaker.Balance.WavePlayback
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.WaveFrame.Enemies
+  commentId: F:SurvivorsMaker.Balance.WaveFrame.Enemies
+  isExternal: true
+  name: Enemies
+  nameWithType: WaveFrame.Enemies
+  fullName: SurvivorsMaker.Balance.WaveFrame.Enemies
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Count*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Count
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Count_SurvivorsMaker_Balance_WaveFrame_
+  name: Count
+  nameWithType: HordePlaybackModel.Count
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Count
+- uid: SurvivorsMaker.Balance.WaveFrame
+  commentId: T:SurvivorsMaker.Balance.WaveFrame
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WaveFrame.html
+  name: WaveFrame
+  nameWithType: WaveFrame
+  fullName: SurvivorsMaker.Balance.WaveFrame
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Flag*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Flag
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Flag_SurvivorsMaker_Balance_WaveFrame_System_Int32_
+  name: Flag
+  nameWithType: HordePlaybackModel.Flag
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Flag
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Definition*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Definition
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Definition_SurvivorsMaker_Balance_WaveFrame_System_Int32_
+  name: Definition
+  nameWithType: HordePlaybackModel.Definition
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Definition
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.CountFlag
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_CountFlag_SurvivorsMaker_Balance_WaveFrame_System_Int32_
+  name: CountFlag
+  nameWithType: HordePlaybackModel.CountFlag
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.CountFlag
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_CountsByDefinition_SurvivorsMaker_Balance_WaveFrame_System_Int32_
+  name: CountsByDefinition
+  nameWithType: HordePlaybackModel.CountsByDefinition
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.CountsByDefinition
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Seconds*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Seconds
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Seconds_SurvivorsMaker_Balance_WavePlayback_SurvivorsMaker_Balance_WaveFrame_
+  name: Seconds
+  nameWithType: HordePlaybackModel.Seconds
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Seconds
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Duration*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Duration
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Duration_SurvivorsMaker_Balance_WavePlayback_
+  name: Duration
+  nameWithType: HordePlaybackModel.Duration
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Duration
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.FrameAt
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_FrameAt_SurvivorsMaker_Balance_WavePlayback_System_Single_
+  name: FrameAt
+  nameWithType: HordePlaybackModel.FrameAt
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.FrameAt
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_PeakAlive_SurvivorsMaker_Balance_WavePlayback_System_Int32__
+  name: PeakAlive
+  nameWithType: HordePlaybackModel.PeakAlive
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.PeakAlive
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Density*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Density
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Density_System_Collections_Generic_IEnumerable_SurvivorsMaker_Balance_WaveFrame__SurvivorsMaker_Simulation_ArenaRect_System_Int32_System_Int32_
+  name: Density
+  nameWithType: HordePlaybackModel.Density
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Density
+- uid: System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame}
+  commentId: T:System.Collections.Generic.IEnumerable{SurvivorsMaker.Balance.WaveFrame}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<WaveFrame>
+  nameWithType: IEnumerable<WaveFrame>
+  fullName: System.Collections.Generic.IEnumerable<SurvivorsMaker.Balance.WaveFrame>
+  nameWithType.vb: IEnumerable(Of WaveFrame)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Balance.WaveFrame)
+  name.vb: IEnumerable(Of WaveFrame)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SurvivorsMaker.Balance.WaveFrame
+    name: WaveFrame
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.WaveFrame
+    name: WaveFrame
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Simulation.ArenaRect
+  commentId: T:SurvivorsMaker.Simulation.ArenaRect
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html
+  name: ArenaRect
+  nameWithType: ArenaRect
+  fullName: SurvivorsMaker.Simulation.ArenaRect
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Editor.HordePlaybackModel.Max*
+  commentId: Overload:SurvivorsMaker.Editor.HordePlaybackModel.Max
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordePlaybackModel.html#SurvivorsMaker_Editor_HordePlaybackModel_Max_System_Int32___
+  name: Max
+  nameWithType: HordePlaybackModel.Max
+  fullName: SurvivorsMaker.Editor.HordePlaybackModel.Max

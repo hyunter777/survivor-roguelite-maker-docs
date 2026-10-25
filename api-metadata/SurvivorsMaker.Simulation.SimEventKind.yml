@@ -1,0 +1,542 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimEventKind
+  commentId: T:SurvivorsMaker.Simulation.SimEventKind
+  id: SimEventKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimEventKind.BossDefeated
+  - SurvivorsMaker.Simulation.SimEventKind.BossPhaseChanged
+  - SurvivorsMaker.Simulation.SimEventKind.BossSpawned
+  - SurvivorsMaker.Simulation.SimEventKind.ChainJump
+  - SurvivorsMaker.Simulation.SimEventKind.CurrencyCollected
+  - SurvivorsMaker.Simulation.SimEventKind.Custom
+  - SurvivorsMaker.Simulation.SimEventKind.EliteSpawned
+  - SurvivorsMaker.Simulation.SimEventKind.EnemyAttackWindup
+  - SurvivorsMaker.Simulation.SimEventKind.EnemyDamaged
+  - SurvivorsMaker.Simulation.SimEventKind.EnemyKilled
+  - SurvivorsMaker.Simulation.SimEventKind.EnemySpawned
+  - SurvivorsMaker.Simulation.SimEventKind.Explosion
+  - SurvivorsMaker.Simulation.SimEventKind.HealCollected
+  - SurvivorsMaker.Simulation.SimEventKind.HordeStarted
+  - SurvivorsMaker.Simulation.SimEventKind.LevelUp
+  - SurvivorsMaker.Simulation.SimEventKind.PlayerDamaged
+  - SurvivorsMaker.Simulation.SimEventKind.PlayerDodged
+  - SurvivorsMaker.Simulation.SimEventKind.SpawnTelegraphed
+  - SurvivorsMaker.Simulation.SimEventKind.StatusApplied
+  - SurvivorsMaker.Simulation.SimEventKind.StatusDamage
+  - SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  - SurvivorsMaker.Simulation.SimEventKind.WaveEnded
+  - SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  langs:
+  - csharp
+  - vb
+  name: SimEventKind
+  nameWithType: SimEventKind
+  fullName: SurvivorsMaker.Simulation.SimEventKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum SimEventKind
+    content.vb: Public Enum SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  id: WeaponFired
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: WeaponFired
+  nameWithType: SimEventKind.WeaponFired
+  fullName: SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A weapon started an attack. Slot, Position = anchor.
+  example: []
+  syntax:
+    content: WeaponFired = 0
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.EnemyDamaged
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.EnemyDamaged
+  id: EnemyDamaged
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: EnemyDamaged
+  nameWithType: SimEventKind.EnemyDamaged
+  fullName: SurvivorsMaker.Simulation.SimEventKind.EnemyDamaged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A weapon hit an enemy. Slot, TargetId, Position = target, Amount = damage, IsCrit.
+  example: []
+  syntax:
+    content: EnemyDamaged = 1
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.EnemyKilled
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.EnemyKilled
+  id: EnemyKilled
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: EnemyKilled
+  nameWithType: SimEventKind.EnemyKilled
+  fullName: SurvivorsMaker.Simulation.SimEventKind.EnemyKilled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: An enemy died and was collected. TargetId, Position.
+  example: []
+  syntax:
+    content: EnemyKilled = 2
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.PlayerDamaged
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.PlayerDamaged
+  id: PlayerDamaged
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: PlayerDamaged
+  nameWithType: SimEventKind.PlayerDamaged
+  fullName: SurvivorsMaker.Simulation.SimEventKind.PlayerDamaged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The player took damage after dodge and defense. Position = player, Amount = damage, SourceId.
+  example: []
+  syntax:
+    content: PlayerDamaged = 3
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.PlayerDodged
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.PlayerDodged
+  id: PlayerDodged
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: PlayerDodged
+  nameWithType: SimEventKind.PlayerDodged
+  fullName: SurvivorsMaker.Simulation.SimEventKind.PlayerDodged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The player dodged a hit. Position = player, SourceId.
+  example: []
+  syntax:
+    content: PlayerDodged = 4
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.CurrencyCollected
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.CurrencyCollected
+  id: CurrencyCollected
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCollected
+  nameWithType: SimEventKind.CurrencyCollected
+  fullName: SurvivorsMaker.Simulation.SimEventKind.CurrencyCollected
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A currency pickup was collected. TargetId = pickup, Position = pickup, Amount = value.
+  example: []
+  syntax:
+    content: CurrencyCollected = 5
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.HealCollected
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.HealCollected
+  id: HealCollected
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: HealCollected
+  nameWithType: SimEventKind.HealCollected
+  fullName: SurvivorsMaker.Simulation.SimEventKind.HealCollected
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A healing pickup was collected. TargetId = pickup, Position = pickup, Amount = healed.
+  example: []
+  syntax:
+    content: HealCollected = 6
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.LevelUp
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: SimEventKind.LevelUp
+  fullName: SurvivorsMaker.Simulation.SimEventKind.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The player reached a new level. Position = player, Amount = new level.
+  example: []
+  syntax:
+    content: LevelUp = 7
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.EnemyAttackWindup
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.EnemyAttackWindup
+  id: EnemyAttackWindup
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: EnemyAttackWindup
+  nameWithType: SimEventKind.EnemyAttackWindup
+  fullName: SurvivorsMaker.Simulation.SimEventKind.EnemyAttackWindup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: An enemy began winding up a special attack. SourceId, Position.
+  example: []
+  syntax:
+    content: EnemyAttackWindup = 8
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.SpawnTelegraphed
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.SpawnTelegraphed
+  id: SpawnTelegraphed
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: SpawnTelegraphed
+  nameWithType: SimEventKind.SpawnTelegraphed
+  fullName: SurvivorsMaker.Simulation.SimEventKind.SpawnTelegraphed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A spawn telegraph was placed. TargetId = telegraph, Position.
+  example: []
+  syntax:
+    content: SpawnTelegraphed = 9
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.EnemySpawned
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.EnemySpawned
+  id: EnemySpawned
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: EnemySpawned
+  nameWithType: SimEventKind.EnemySpawned
+  fullName: SurvivorsMaker.Simulation.SimEventKind.EnemySpawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A telegraph turned into an enemy. SourceId = telegraph, TargetId = new enemy, Position.
+  example: []
+  syntax:
+    content: EnemySpawned = 10
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.WaveEnded
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.WaveEnded
+  id: WaveEnded
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: WaveEnded
+  nameWithType: SimEventKind.WaveEnded
+  fullName: SurvivorsMaker.Simulation.SimEventKind.WaveEnded
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The wave ended. Amount = 1 for survived, 0 for died.
+  example: []
+  syntax:
+    content: WaveEnded = 11
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.StatusApplied
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.StatusApplied
+  id: StatusApplied
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: StatusApplied
+  nameWithType: SimEventKind.StatusApplied
+  fullName: SurvivorsMaker.Simulation.SimEventKind.StatusApplied
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A status was applied or stacked. TargetId, Position, Amount = stacks, Slot = (int)StatusKind.
+  example: []
+  syntax:
+    content: StatusApplied = 12
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.StatusDamage
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.StatusDamage
+  id: StatusDamage
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: StatusDamage
+  nameWithType: SimEventKind.StatusDamage
+  fullName: SurvivorsMaker.Simulation.SimEventKind.StatusDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Burn or other status damage. TargetId, Position, Amount = damage, Slot = (int)StatusKind.
+  example: []
+  syntax:
+    content: StatusDamage = 13
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.Explosion
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.Explosion
+  id: Explosion
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: Explosion
+  nameWithType: SimEventKind.Explosion
+  fullName: SurvivorsMaker.Simulation.SimEventKind.Explosion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: An explosion (hit effect or trigger). Position, Amount = radius.
+  example: []
+  syntax:
+    content: Explosion = 14
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.ChainJump
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.ChainJump
+  id: ChainJump
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: ChainJump
+  nameWithType: SimEventKind.ChainJump
+  fullName: SurvivorsMaker.Simulation.SimEventKind.ChainJump
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A chain jump. SourceId = from enemy, TargetId = to enemy, Position = target.
+  example: []
+  syntax:
+    content: ChainJump = 15
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.EliteSpawned
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.EliteSpawned
+  id: EliteSpawned
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: EliteSpawned
+  nameWithType: SimEventKind.EliteSpawned
+  fullName: SurvivorsMaker.Simulation.SimEventKind.EliteSpawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A telegraph became an elite. TargetId, Position.
+  example: []
+  syntax:
+    content: EliteSpawned = 16
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.BossSpawned
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.BossSpawned
+  id: BossSpawned
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: BossSpawned
+  nameWithType: SimEventKind.BossSpawned
+  fullName: SurvivorsMaker.Simulation.SimEventKind.BossSpawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A boss appeared. TargetId, Position.
+  example: []
+  syntax:
+    content: BossSpawned = 17
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.BossPhaseChanged
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.BossPhaseChanged
+  id: BossPhaseChanged
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: BossPhaseChanged
+  nameWithType: SimEventKind.BossPhaseChanged
+  fullName: SurvivorsMaker.Simulation.SimEventKind.BossPhaseChanged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A boss entered a new phase. TargetId, Position, Amount = phase index.
+  example: []
+  syntax:
+    content: BossPhaseChanged = 18
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.BossDefeated
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.BossDefeated
+  id: BossDefeated
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: BossDefeated
+  nameWithType: SimEventKind.BossDefeated
+  fullName: SurvivorsMaker.Simulation.SimEventKind.BossDefeated
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A boss died. TargetId, Position.
+  example: []
+  syntax:
+    content: BossDefeated = 19
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.HordeStarted
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.HordeStarted
+  id: HordeStarted
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: HordeStarted
+  nameWithType: SimEventKind.HordeStarted
+  fullName: SurvivorsMaker.Simulation.SimEventKind.HordeStarted
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A horde burst started. Position = center or player, Amount = enemies requested.
+  example: []
+  syntax:
+    content: HordeStarted = 20
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  id: TriggerFired
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: TriggerFired
+  nameWithType: SimEventKind.TriggerFired
+  fullName: SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A trigger fired. Position, Slot = trigger index in WaveRequest.Triggers.
+  example: []
+  syntax:
+    content: TriggerFired = 21
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEventKind.Custom
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.Custom
+  id: Custom
+  parent: SurvivorsMaker.Simulation.SimEventKind
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: SimEventKind.Custom
+  fullName: SurvivorsMaker.Simulation.SimEventKind.Custom
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'A game-defined event: see <xref href="SurvivorsMaker.Simulation.SimEvent.CustomId" data-throw-if-not-resolved="false"></xref>.
+    Position, Amount, ids and Slot are the sender''s choice.'
+  example: []
+  syntax:
+    content: Custom = 22
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.SimEventKind
+  commentId: T:SurvivorsMaker.Simulation.SimEventKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEventKind.html
+  name: SimEventKind
+  nameWithType: SimEventKind
+  fullName: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEvent.CustomId
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.CustomId
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEvent.html#SurvivorsMaker_Simulation_SimEvent_CustomId
+  name: CustomId
+  nameWithType: SimEvent.CustomId
+  fullName: SurvivorsMaker.Simulation.SimEvent.CustomId

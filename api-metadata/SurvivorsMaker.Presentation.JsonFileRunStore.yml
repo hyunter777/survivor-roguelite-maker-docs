@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore
+  commentId: T:SurvivorsMaker.Presentation.JsonFileRunStore
+  id: JsonFileRunStore
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.JsonFileRunStore.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.String}})
+  - SurvivorsMaker.Presentation.JsonFileRunStore.Delete
+  - SurvivorsMaker.Presentation.JsonFileRunStore.File
+  - SurvivorsMaker.Presentation.JsonFileRunStore.Load
+  - SurvivorsMaker.Presentation.JsonFileRunStore.Path
+  - SurvivorsMaker.Presentation.JsonFileRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  langs:
+  - csharp
+  - vb
+  name: JsonFileRunStore
+  nameWithType: JsonFileRunStore
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The run in progress (single slot) as a <xref href="SurvivorsMaker.Run.SaveEnvelope" data-throw-if-not-resolved="false"></xref>
+    JSON file. Saving null empties the slot.
+  example: []
+  syntax:
+    content: 'public sealed class JsonFileRunStore : IRunStore'
+    content.vb: Public NotInheritable Class JsonFileRunStore Implements IRunStore
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Run.IRunStore
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.String}})
+  commentId: M:SurvivorsMaker.Presentation.JsonFileRunStore.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.String}})
+  id: '#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.String}})'
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: JsonFileRunStore(string, Func<IReadOnlyList<string>>)
+  nameWithType: JsonFileRunStore.JsonFileRunStore(string, Func<IReadOnlyList<string>>)
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.JsonFileRunStore(string, System.Func<System.Collections.Generic.IReadOnlyList<string>>)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Creates storage for one run snapshot independently of profile progress and user options.
+  example: []
+  syntax:
+    content: public JsonFileRunStore(string path, Func<IReadOnlyList<string>> arenaIds = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: Nonempty run file path.
+    - id: arenaIds
+      type: System.Func{System.Collections.Generic.IReadOnlyList{System.String}}
+      description: Stable arena ids in content order; needed only to read runs saved before arena ids existed.
+    content.vb: Public Sub New(path As String, arenaIds As Func(Of IReadOnlyList(Of String)) = Nothing)
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.#ctor*
+  nameWithType.vb: JsonFileRunStore.New(String, Func(Of IReadOnlyList(Of String)))
+  fullName.vb: SurvivorsMaker.Presentation.JsonFileRunStore.New(String, System.Func(Of System.Collections.Generic.IReadOnlyList(Of
+    String)))
+  name.vb: New(String, Func(Of IReadOnlyList(Of String)))
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Load
+  commentId: M:SurvivorsMaker.Presentation.JsonFileRunStore.Load
+  id: Load
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: JsonFileRunStore.Load()
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Load()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Loads the saved-run snapshot, or no snapshot when none is stored.
+  example: []
+  syntax:
+    content: public RunSnapshot Load()
+    return:
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Public Function Load() As RunSnapshot
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.Load*
+  implements:
+  - SurvivorsMaker.Run.IRunStore.Load
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  commentId: M:SurvivorsMaker.Presentation.JsonFileRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  id: Save(SurvivorsMaker.Run.RunSnapshot)
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: Save(RunSnapshot)
+  nameWithType: JsonFileRunStore.Save(RunSnapshot)
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stores the supplied run snapshot separately from profile and user options.
+  example: []
+  syntax:
+    content: public void Save(RunSnapshot run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Public Sub Save(run As RunSnapshot)
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.Save*
+  implements:
+  - SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Delete
+  commentId: M:SurvivorsMaker.Presentation.JsonFileRunStore.Delete
+  id: Delete
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: JsonFileRunStore.Delete()
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Delete()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Deletes the saved run regardless of its state (an explicit reset).
+  example: []
+  syntax:
+    content: public void Delete()
+    content.vb: Public Sub Delete()
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.Delete*
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Path
+  commentId: P:SurvivorsMaker.Presentation.JsonFileRunStore.Path
+  id: Path
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: JsonFileRunStore.Path
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Path
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Path As String
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.Path*
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.File
+  commentId: P:SurvivorsMaker.Presentation.JsonFileRunStore.File
+  id: File
+  parent: SurvivorsMaker.Presentation.JsonFileRunStore
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: JsonFileRunStore.File
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.File
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public JsonEnvelopeFile File { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Presentation.JsonEnvelopeFile
+    content.vb: Public ReadOnly Property File As JsonEnvelopeFile
+  overload: SurvivorsMaker.Presentation.JsonFileRunStore.File*
+references:
+- uid: SurvivorsMaker.Run.SaveEnvelope
+  commentId: T:SurvivorsMaker.Run.SaveEnvelope
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveEnvelope.html
+  name: SaveEnvelope
+  nameWithType: SaveEnvelope
+  fullName: SurvivorsMaker.Run.SaveEnvelope
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Run.IRunStore
+  commentId: T:SurvivorsMaker.Run.IRunStore
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html
+  name: IRunStore
+  nameWithType: IRunStore
+  fullName: SurvivorsMaker.Run.IRunStore
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore__ctor_System_String_System_Func_System_Collections_Generic_IReadOnlyList_System_String___
+  name: JsonFileRunStore
+  nameWithType: JsonFileRunStore.JsonFileRunStore
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.JsonFileRunStore
+  nameWithType.vb: JsonFileRunStore.New
+  fullName.vb: SurvivorsMaker.Presentation.JsonFileRunStore.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{System.Collections.Generic.IReadOnlyList{System.String}}
+  commentId: T:System.Func{System.Collections.Generic.IReadOnlyList{System.String}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<IReadOnlyList<string>>
+  nameWithType: Func<IReadOnlyList<string>>
+  fullName: System.Func<System.Collections.Generic.IReadOnlyList<string>>
+  nameWithType.vb: Func(Of IReadOnlyList(Of String))
+  fullName.vb: System.Func(Of System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Func(Of IReadOnlyList(Of String))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Load*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.Load
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore_Load
+  name: Load
+  nameWithType: JsonFileRunStore.Load
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Load
+- uid: SurvivorsMaker.Run.IRunStore.Load
+  commentId: M:SurvivorsMaker.Run.IRunStore.Load
+  parent: SurvivorsMaker.Run.IRunStore
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Load
+  name: Load()
+  nameWithType: IRunStore.Load()
+  fullName: SurvivorsMaker.Run.IRunStore.Load()
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IRunStore.Load
+    name: Load
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Load
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IRunStore.Load
+    name: Load
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Load
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Save*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.Save
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore_Save_SurvivorsMaker_Run_RunSnapshot_
+  name: Save
+  nameWithType: JsonFileRunStore.Save
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Save
+- uid: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  commentId: M:SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  parent: SurvivorsMaker.Run.IRunStore
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Save_SurvivorsMaker_Run_RunSnapshot_
+  name: Save(RunSnapshot)
+  nameWithType: IRunStore.Save(RunSnapshot)
+  fullName: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+    name: Save
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Save_SurvivorsMaker_Run_RunSnapshot_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunSnapshot
+    name: RunSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.RunSnapshot.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+    name: Save
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Save_SurvivorsMaker_Run_RunSnapshot_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunSnapshot
+    name: RunSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.RunSnapshot.html
+  - name: )
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Delete*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.Delete
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore_Delete
+  name: Delete
+  nameWithType: JsonFileRunStore.Delete
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Delete
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.Path*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.Path
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore_Path
+  name: Path
+  nameWithType: JsonFileRunStore.Path
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.Path
+- uid: SurvivorsMaker.Presentation.JsonFileRunStore.File*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonFileRunStore.File
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonFileRunStore.html#SurvivorsMaker_Presentation_JsonFileRunStore_File
+  name: File
+  nameWithType: JsonFileRunStore.File
+  fullName: SurvivorsMaker.Presentation.JsonFileRunStore.File
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  commentId: T:SurvivorsMaker.Presentation.JsonEnvelopeFile
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html
+  name: JsonEnvelopeFile
+  nameWithType: JsonEnvelopeFile
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile

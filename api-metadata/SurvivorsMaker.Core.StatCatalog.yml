@@ -1,0 +1,884 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatCatalog
+  commentId: T:SurvivorsMaker.Core.StatCatalog
+  id: StatCatalog
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatCatalog.#ctor
+  - SurvivorsMaker.Core.StatCatalog.#ctor(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  - SurvivorsMaker.Core.StatCatalog.Add(SurvivorsMaker.Core.StatDefinition)
+  - SurvivorsMaker.Core.StatCatalog.Contains(System.String)
+  - SurvivorsMaker.Core.StatCatalog.Count
+  - SurvivorsMaker.Core.StatCatalog.IndexOf(System.String)
+  - SurvivorsMaker.Core.StatCatalog.Item(System.String)
+  - SurvivorsMaker.Core.StatCatalog.Stats
+  - SurvivorsMaker.Core.StatCatalog.TryGet(System.String,SurvivorsMaker.Core.StatDefinition@)
+  - SurvivorsMaker.Core.StatCatalog.Validate(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  langs:
+  - csharp
+  - vb
+  name: StatCatalog
+  nameWithType: StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'The list of stats a game uses. Effects that target an id outside the catalog are
+
+    reported by <xref href="SurvivorsMaker.Core.StatBuild" data-throw-if-not-resolved="false"></xref> instead of silently
+    creating a new stat.'
+  example: []
+  syntax:
+    content: public sealed class StatCatalog
+    content.vb: Public NotInheritable Class StatCatalog
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.StatCatalog.#ctor
+  commentId: M:SurvivorsMaker.Core.StatCatalog.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: StatCatalog()
+  nameWithType: StatCatalog.StatCatalog()
+  fullName: SurvivorsMaker.Core.StatCatalog.StatCatalog()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatCatalog()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Core.StatCatalog.#ctor*
+  nameWithType.vb: StatCatalog.New()
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Core.StatCatalog.#ctor(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  commentId: M:SurvivorsMaker.Core.StatCatalog.#ctor(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  id: '#ctor(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})'
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: StatCatalog(IEnumerable<StatDefinition>)
+  nameWithType: StatCatalog.StatCatalog(IEnumerable<StatDefinition>)
+  fullName: SurvivorsMaker.Core.StatCatalog.StatCatalog(System.Collections.Generic.IEnumerable<SurvivorsMaker.Core.StatDefinition>)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatCatalog(IEnumerable<StatDefinition> stats)
+    parameters:
+    - id: stats
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition}
+    content.vb: Public Sub New(stats As IEnumerable(Of StatDefinition))
+  overload: SurvivorsMaker.Core.StatCatalog.#ctor*
+  nameWithType.vb: StatCatalog.New(IEnumerable(Of StatDefinition))
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.New(System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Core.StatDefinition))
+  name.vb: New(IEnumerable(Of StatDefinition))
+- uid: SurvivorsMaker.Core.StatCatalog.Add(SurvivorsMaker.Core.StatDefinition)
+  commentId: M:SurvivorsMaker.Core.StatCatalog.Add(SurvivorsMaker.Core.StatDefinition)
+  id: Add(SurvivorsMaker.Core.StatDefinition)
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: Add(StatDefinition)
+  nameWithType: StatCatalog.Add(StatDefinition)
+  fullName: SurvivorsMaker.Core.StatCatalog.Add(SurvivorsMaker.Core.StatDefinition)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Adds a nonempty unique stat definition and returns this catalog; invalid ids are rejected.
+  example: []
+  syntax:
+    content: public StatCatalog Add(StatDefinition stat)
+    parameters:
+    - id: stat
+      type: SurvivorsMaker.Core.StatDefinition
+    return:
+      type: SurvivorsMaker.Core.StatCatalog
+    content.vb: Public Function Add(stat As StatDefinition) As StatCatalog
+  overload: SurvivorsMaker.Core.StatCatalog.Add*
+- uid: SurvivorsMaker.Core.StatCatalog.Contains(System.String)
+  commentId: M:SurvivorsMaker.Core.StatCatalog.Contains(System.String)
+  id: Contains(System.String)
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: StatCatalog.Contains(string)
+  fullName: SurvivorsMaker.Core.StatCatalog.Contains(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Tests whether the catalog contains the supplied case-sensitive stat id.
+  example: []
+  syntax:
+    content: public bool Contains(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(id As String) As Boolean
+  overload: SurvivorsMaker.Core.StatCatalog.Contains*
+  nameWithType.vb: StatCatalog.Contains(String)
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.Contains(String)
+  name.vb: Contains(String)
+- uid: SurvivorsMaker.Core.StatCatalog.TryGet(System.String,SurvivorsMaker.Core.StatDefinition@)
+  commentId: M:SurvivorsMaker.Core.StatCatalog.TryGet(System.String,SurvivorsMaker.Core.StatDefinition@)
+  id: TryGet(System.String,SurvivorsMaker.Core.StatDefinition@)
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: TryGet(string, out StatDefinition)
+  nameWithType: StatCatalog.TryGet(string, out StatDefinition)
+  fullName: SurvivorsMaker.Core.StatCatalog.TryGet(string, out SurvivorsMaker.Core.StatDefinition)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Looks up a stat definition by its case-sensitive id without adding it.
+  example: []
+  syntax:
+    content: public bool TryGet(string id, out StatDefinition stat)
+    parameters:
+    - id: id
+      type: System.String
+    - id: stat
+      type: SurvivorsMaker.Core.StatDefinition
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(id As String, stat As StatDefinition) As Boolean
+  overload: SurvivorsMaker.Core.StatCatalog.TryGet*
+  nameWithType.vb: StatCatalog.TryGet(String, StatDefinition)
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.TryGet(String, SurvivorsMaker.Core.StatDefinition)
+  name.vb: TryGet(String, StatDefinition)
+- uid: SurvivorsMaker.Core.StatCatalog.IndexOf(System.String)
+  commentId: M:SurvivorsMaker.Core.StatCatalog.IndexOf(System.String)
+  id: IndexOf(System.String)
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(string)
+  nameWithType: StatCatalog.IndexOf(string)
+  fullName: SurvivorsMaker.Core.StatCatalog.IndexOf(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Position of the stat in the catalog, or -1.
+  example: []
+  syntax:
+    content: public int IndexOf(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function IndexOf(id As String) As Integer
+  overload: SurvivorsMaker.Core.StatCatalog.IndexOf*
+  nameWithType.vb: StatCatalog.IndexOf(String)
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.IndexOf(String)
+  name.vb: IndexOf(String)
+- uid: SurvivorsMaker.Core.StatCatalog.Validate(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  commentId: M:SurvivorsMaker.Core.StatCatalog.Validate(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  id: Validate(System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition})
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: Validate(IEnumerable<StatDefinition>)
+  nameWithType: StatCatalog.Validate(IEnumerable<StatDefinition>)
+  fullName: SurvivorsMaker.Core.StatCatalog.Validate(System.Collections.Generic.IEnumerable<SurvivorsMaker.Core.StatDefinition>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Problems an author should fix: empty or duplicate ids, min above max, base outside limits.'
+  example: []
+  syntax:
+    content: public static List<string> Validate(IEnumerable<StatDefinition> stats)
+    parameters:
+    - id: stats
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition}
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function Validate(stats As IEnumerable(Of StatDefinition)) As List(Of String)
+  overload: SurvivorsMaker.Core.StatCatalog.Validate*
+  nameWithType.vb: StatCatalog.Validate(IEnumerable(Of StatDefinition))
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.Validate(System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Core.StatDefinition))
+  name.vb: Validate(IEnumerable(Of StatDefinition))
+- uid: SurvivorsMaker.Core.StatCatalog.Stats
+  commentId: P:SurvivorsMaker.Core.StatCatalog.Stats
+  id: Stats
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: StatCatalog.Stats
+  fullName: SurvivorsMaker.Core.StatCatalog.Stats
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public IReadOnlyList<StatDefinition> Stats { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.StatDefinition}
+    content.vb: Public ReadOnly Property Stats As IReadOnlyList(Of StatDefinition)
+  overload: SurvivorsMaker.Core.StatCatalog.Stats*
+- uid: SurvivorsMaker.Core.StatCatalog.Count
+  commentId: P:SurvivorsMaker.Core.StatCatalog.Count
+  id: Count
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: StatCatalog.Count
+  fullName: SurvivorsMaker.Core.StatCatalog.Count
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: SurvivorsMaker.Core.StatCatalog.Count*
+- uid: SurvivorsMaker.Core.StatCatalog.Item(System.String)
+  commentId: P:SurvivorsMaker.Core.StatCatalog.Item(System.String)
+  id: Item(System.String)
+  parent: SurvivorsMaker.Core.StatCatalog
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: StatCatalog.this[string]
+  fullName: SurvivorsMaker.Core.StatCatalog.this[string]
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatDefinition this[string id] { get; }
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: SurvivorsMaker.Core.StatDefinition
+    content.vb: Public ReadOnly Default Property this[](id As String) As StatDefinition
+  overload: SurvivorsMaker.Core.StatCatalog.Item*
+  nameWithType.vb: StatCatalog.this[](String)
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.this[](String)
+  name.vb: this[](String)
+references:
+- uid: SurvivorsMaker.Core.StatBuild
+  commentId: T:SurvivorsMaker.Core.StatBuild
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatBuild.html
+  name: StatBuild
+  nameWithType: StatBuild
+  fullName: SurvivorsMaker.Core.StatBuild
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.StatCatalog.#ctor*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog__ctor
+  name: StatCatalog
+  nameWithType: StatCatalog.StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog.StatCatalog
+  nameWithType.vb: StatCatalog.New
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition}
+  commentId: T:System.Collections.Generic.IEnumerable{SurvivorsMaker.Core.StatDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<StatDefinition>
+  nameWithType: IEnumerable<StatDefinition>
+  fullName: System.Collections.Generic.IEnumerable<SurvivorsMaker.Core.StatDefinition>
+  nameWithType.vb: IEnumerable(Of StatDefinition)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Core.StatDefinition)
+  name.vb: IEnumerable(Of StatDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Core.StatCatalog.Add*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Add
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Add_SurvivorsMaker_Core_StatDefinition_
+  name: Add
+  nameWithType: StatCatalog.Add
+  fullName: SurvivorsMaker.Core.StatCatalog.Add
+- uid: SurvivorsMaker.Core.StatDefinition
+  commentId: T:SurvivorsMaker.Core.StatDefinition
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html
+  name: StatDefinition
+  nameWithType: StatDefinition
+  fullName: SurvivorsMaker.Core.StatDefinition
+- uid: SurvivorsMaker.Core.StatCatalog
+  commentId: T:SurvivorsMaker.Core.StatCatalog
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html
+  name: StatCatalog
+  nameWithType: StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog
+- uid: SurvivorsMaker.Core.StatCatalog.Contains*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Contains
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Contains_System_String_
+  name: Contains
+  nameWithType: StatCatalog.Contains
+  fullName: SurvivorsMaker.Core.StatCatalog.Contains
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Core.StatCatalog.TryGet*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.TryGet
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_TryGet_System_String_SurvivorsMaker_Core_StatDefinition__
+  name: TryGet
+  nameWithType: StatCatalog.TryGet
+  fullName: SurvivorsMaker.Core.StatCatalog.TryGet
+- uid: SurvivorsMaker.Core.StatCatalog.IndexOf*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.IndexOf
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_IndexOf_System_String_
+  name: IndexOf
+  nameWithType: StatCatalog.IndexOf
+  fullName: SurvivorsMaker.Core.StatCatalog.IndexOf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Core.StatCatalog.Validate*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Validate
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Validate_System_Collections_Generic_IEnumerable_SurvivorsMaker_Core_StatDefinition__
+  name: Validate
+  nameWithType: StatCatalog.Validate
+  fullName: SurvivorsMaker.Core.StatCatalog.Validate
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Core.StatCatalog.Stats*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Stats
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Stats
+  name: Stats
+  nameWithType: StatCatalog.Stats
+  fullName: SurvivorsMaker.Core.StatCatalog.Stats
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.StatDefinition}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.StatDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<StatDefinition>
+  nameWithType: IReadOnlyList<StatDefinition>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Core.StatDefinition>
+  nameWithType.vb: IReadOnlyList(Of StatDefinition)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Core.StatDefinition)
+  name.vb: IReadOnlyList(Of StatDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Core.StatCatalog.Count*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Count
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Count
+  name: Count
+  nameWithType: StatCatalog.Count
+  fullName: SurvivorsMaker.Core.StatCatalog.Count
+- uid: SurvivorsMaker.Core.StatCatalog.Item*
+  commentId: Overload:SurvivorsMaker.Core.StatCatalog.Item
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html#SurvivorsMaker_Core_StatCatalog_Item_System_String_
+  name: this
+  nameWithType: StatCatalog.this
+  fullName: SurvivorsMaker.Core.StatCatalog.this
+  nameWithType.vb: StatCatalog.this[]
+  fullName.vb: SurvivorsMaker.Core.StatCatalog.this[]
+  name.vb: this[]

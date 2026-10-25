@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiColorRole
+  commentId: T:SurvivorsMaker.Presentation.UiColorRole
+  id: UiColorRole
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiColorRole.Accent
+  - SurvivorsMaker.Presentation.UiColorRole.Background
+  - SurvivorsMaker.Presentation.UiColorRole.Border
+  - SurvivorsMaker.Presentation.UiColorRole.Custom
+  - SurvivorsMaker.Presentation.UiColorRole.Experience
+  - SurvivorsMaker.Presentation.UiColorRole.Gold
+  - SurvivorsMaker.Presentation.UiColorRole.Health
+  - SurvivorsMaker.Presentation.UiColorRole.Hud
+  - SurvivorsMaker.Presentation.UiColorRole.Locked
+  - SurvivorsMaker.Presentation.UiColorRole.Muted
+  - SurvivorsMaker.Presentation.UiColorRole.Panel
+  - SurvivorsMaker.Presentation.UiColorRole.Surface
+  - SurvivorsMaker.Presentation.UiColorRole.Text
+  - SurvivorsMaker.Presentation.UiColorRole.Track
+  - SurvivorsMaker.Presentation.UiColorRole.Warning
+  langs:
+  - csharp
+  - vb
+  name: UiColorRole
+  nameWithType: UiColorRole
+  fullName: SurvivorsMaker.Presentation.UiColorRole
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Semantic colour role resolved from the active UI theme.
+  example: []
+  syntax:
+    content: public enum UiColorRole
+    content.vb: Public Enum UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Custom
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Custom
+  id: Custom
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: UiColorRole.Custom
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Custom
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Custom = 0
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Text
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Text
+  id: Text
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UiColorRole.Text
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Text
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Text = 1
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Muted
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Muted
+  id: Muted
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Muted
+  nameWithType: UiColorRole.Muted
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Muted
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Muted = 2
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Background
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Background
+  id: Background
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Background
+  nameWithType: UiColorRole.Background
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Background
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Background = 3
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Surface
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Surface
+  id: Surface
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Surface
+  nameWithType: UiColorRole.Surface
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Surface
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Surface = 4
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Accent
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Accent
+  id: Accent
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Accent
+  nameWithType: UiColorRole.Accent
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Accent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Accent = 5
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Health
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Health
+  id: Health
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: UiColorRole.Health
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Health
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Health = 6
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Experience
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Experience
+  id: Experience
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: UiColorRole.Experience
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Experience = 7
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Hud
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Hud
+  id: Hud
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Hud
+  nameWithType: UiColorRole.Hud
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Hud
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Hud = 8
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Warning
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Warning
+  id: Warning
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: UiColorRole.Warning
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Warning
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Warning = 9
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Gold
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Gold
+  id: Gold
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Gold
+  nameWithType: UiColorRole.Gold
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Gold
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Gold = 10
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Locked
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Locked
+  id: Locked
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Locked
+  nameWithType: UiColorRole.Locked
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Locked
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Locked = 11
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Panel
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Panel
+  id: Panel
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Panel
+  nameWithType: UiColorRole.Panel
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Panel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Panel = 12
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Border
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Border
+  id: Border
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Border
+  nameWithType: UiColorRole.Border
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Border
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Border = 13
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiColorRole.Track
+  commentId: F:SurvivorsMaker.Presentation.UiColorRole.Track
+  id: Track
+  parent: SurvivorsMaker.Presentation.UiColorRole
+  langs:
+  - csharp
+  - vb
+  name: Track
+  nameWithType: UiColorRole.Track
+  fullName: SurvivorsMaker.Presentation.UiColorRole.Track
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Track = 14
+    return:
+      type: SurvivorsMaker.Presentation.UiColorRole
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiColorRole
+  commentId: T:SurvivorsMaker.Presentation.UiColorRole
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiColorRole.html
+  name: UiColorRole
+  nameWithType: UiColorRole
+  fullName: SurvivorsMaker.Presentation.UiColorRole

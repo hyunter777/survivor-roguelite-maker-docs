@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings
+  commentId: T:SurvivorsMaker.Balance.MakerAnalysisSettings
+  id: MakerAnalysisSettings
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor
+  - SurvivorsMaker.Balance.MakerAnalysisSettings.BuildProbe
+  - SurvivorsMaker.Balance.MakerAnalysisSettings.DensityCounts
+  - SurvivorsMaker.Balance.MakerAnalysisSettings.MaxTierColumns
+  - SurvivorsMaker.Balance.MakerAnalysisSettings.MinProbeExtent
+  langs:
+  - csharp
+  - vb
+  name: MakerAnalysisSettings
+  nameWithType: MakerAnalysisSettings
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Analysis-only sampling settings; gameplay definitions and settings remain unchanged.
+  example: []
+  syntax:
+    content: public sealed class MakerAnalysisSettings
+    content.vb: Public NotInheritable Class MakerAnalysisSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.BuildProbe
+  commentId: F:SurvivorsMaker.Balance.MakerAnalysisSettings.BuildProbe
+  id: BuildProbe
+  parent: SurvivorsMaker.Balance.MakerAnalysisSettings
+  langs:
+  - csharp
+  - vb
+  name: BuildProbe
+  nameWithType: MakerAnalysisSettings.BuildProbe
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.BuildProbe
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public WeaponLabRequest BuildProbe
+    return:
+      type: SurvivorsMaker.Balance.WeaponLabRequest
+    content.vb: Public BuildProbe As WeaponLabRequest
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.DensityCounts
+  commentId: F:SurvivorsMaker.Balance.MakerAnalysisSettings.DensityCounts
+  id: DensityCounts
+  parent: SurvivorsMaker.Balance.MakerAnalysisSettings
+  langs:
+  - csharp
+  - vb
+  name: DensityCounts
+  nameWithType: MakerAnalysisSettings.DensityCounts
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.DensityCounts
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int[] DensityCounts
+    return:
+      type: System.Int32[]
+    content.vb: Public DensityCounts As Integer()
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.MaxTierColumns
+  commentId: F:SurvivorsMaker.Balance.MakerAnalysisSettings.MaxTierColumns
+  id: MaxTierColumns
+  parent: SurvivorsMaker.Balance.MakerAnalysisSettings
+  langs:
+  - csharp
+  - vb
+  name: MaxTierColumns
+  nameWithType: MakerAnalysisSettings.MaxTierColumns
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.MaxTierColumns
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int MaxTierColumns
+    return:
+      type: System.Int32
+    content.vb: Public MaxTierColumns As Integer
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.MinProbeExtent
+  commentId: F:SurvivorsMaker.Balance.MakerAnalysisSettings.MinProbeExtent
+  id: MinProbeExtent
+  parent: SurvivorsMaker.Balance.MakerAnalysisSettings
+  langs:
+  - csharp
+  - vb
+  name: MinProbeExtent
+  nameWithType: MakerAnalysisSettings.MinProbeExtent
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.MinProbeExtent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MinProbeExtent
+    return:
+      type: System.Single
+    content.vb: Public MinProbeExtent As Single
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor
+  commentId: M:SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Balance.MakerAnalysisSettings
+  langs:
+  - csharp
+  - vb
+  name: MakerAnalysisSettings()
+  nameWithType: MakerAnalysisSettings.MakerAnalysisSettings()
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.MakerAnalysisSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public MakerAnalysisSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor*
+  nameWithType.vb: MakerAnalysisSettings.New()
+  fullName.vb: SurvivorsMaker.Balance.MakerAnalysisSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.WeaponLabRequest
+  commentId: T:SurvivorsMaker.Balance.WeaponLabRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WeaponLabRequest.html
+  name: WeaponLabRequest
+  nameWithType: WeaponLabRequest
+  fullName: SurvivorsMaker.Balance.WeaponLabRequest
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Balance.MakerAnalysisSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Balance.MakerAnalysisSettings.html#SurvivorsMaker_Balance_MakerAnalysisSettings__ctor
+  name: MakerAnalysisSettings
+  nameWithType: MakerAnalysisSettings.MakerAnalysisSettings
+  fullName: SurvivorsMaker.Balance.MakerAnalysisSettings.MakerAnalysisSettings
+  nameWithType.vb: MakerAnalysisSettings.New
+  fullName.vb: SurvivorsMaker.Balance.MakerAnalysisSettings.New
+  name.vb: New

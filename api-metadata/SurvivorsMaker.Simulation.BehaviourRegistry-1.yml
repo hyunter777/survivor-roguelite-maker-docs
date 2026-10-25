@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry`1
+  id: BehaviourRegistry`1
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains(System.String)
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.Get(System.String)
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.Register(System.String,`0)
+  - SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet(System.String,`0@)
+  langs:
+  - csharp
+  - vb
+  name: BehaviourRegistry<T>
+  nameWithType: BehaviourRegistry<T>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Behaviours by id. Ids are case-sensitive. Registering an id that exists replaces it, so a game
+
+    can override a built-in. <xref href="SurvivorsMaker.Simulation.BehaviourRegistry%601.Ids" data-throw-if-not-resolved="false"></xref>
+    keeps first-registration order for tools.'
+  example: []
+  syntax:
+    content: 'public sealed class BehaviourRegistry<T> where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class BehaviourRegistry(Of T As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: BehaviourRegistry(Of T)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T)
+  name.vb: BehaviourRegistry(Of T)
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Register(System.String,`0)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourRegistry`1.Register(System.String,`0)
+  id: Register(System.String,`0)
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Register(string, T)
+  nameWithType: BehaviourRegistry<T>.Register(string, T)
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Register(string, T)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public void Register(string id, T behaviour)
+    parameters:
+    - id: id
+      type: System.String
+    - id: behaviour
+      type: '{T}'
+    content.vb: Public Sub Register(id As String, behaviour As T)
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.Register*
+  nameWithType.vb: BehaviourRegistry(Of T).Register(String, T)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Register(String, T)
+  name.vb: Register(String, T)
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains(System.String)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains(System.String)
+  id: Contains(System.String)
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(string)
+  nameWithType: BehaviourRegistry<T>.Contains(string)
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Contains(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool Contains(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(id As String) As Boolean
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains*
+  nameWithType.vb: BehaviourRegistry(Of T).Contains(String)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Contains(String)
+  name.vb: Contains(String)
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet(System.String,`0@)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet(System.String,`0@)
+  id: TryGet(System.String,`0@)
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: TryGet(string, out T)
+  nameWithType: BehaviourRegistry<T>.TryGet(string, out T)
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.TryGet(string, out T)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool TryGet(string id, out T behaviour)
+    parameters:
+    - id: id
+      type: System.String
+    - id: behaviour
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(id As String, behaviour As T) As Boolean
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet*
+  nameWithType.vb: BehaviourRegistry(Of T).TryGet(String, T)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).TryGet(String, T)
+  name.vb: TryGet(String, T)
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Get(System.String)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourRegistry`1.Get(System.String)
+  id: Get(System.String)
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Get(string)
+  nameWithType: BehaviourRegistry<T>.Get(string)
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Get(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Throws <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> naming the id when
+    it is not registered.
+  example: []
+  syntax:
+    content: public T Get(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: '{T}'
+    content.vb: Public Function [Get](id As String) As T
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.Get*
+  nameWithType.vb: BehaviourRegistry(Of T).Get(String)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Get(String)
+  name.vb: Get(String)
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor
+  commentId: M:SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: BehaviourRegistry()
+  nameWithType: BehaviourRegistry<T>.BehaviourRegistry()
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.BehaviourRegistry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public BehaviourRegistry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor*
+  nameWithType.vb: BehaviourRegistry(Of T).New()
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).New()
+  name.vb: New()
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  commentId: P:SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  id: Ids
+  parent: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  langs:
+  - csharp
+  - vb
+  name: Ids
+  nameWithType: BehaviourRegistry<T>.Ids
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Ids
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public IReadOnlyList<string> Ids { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public ReadOnly Property Ids As IReadOnlyList(Of String)
+  overload: SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids*
+  nameWithType.vb: BehaviourRegistry(Of T).Ids
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Ids
+references:
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  commentId: P:SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_Ids
+  name: Ids
+  nameWithType: BehaviourRegistry<T>.Ids
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Ids
+  nameWithType.vb: BehaviourRegistry(Of T).Ids
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Ids
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Register*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.Register
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_Register_System_String__0_
+  name: Register
+  nameWithType: BehaviourRegistry<T>.Register
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Register
+  nameWithType.vb: BehaviourRegistry(Of T).Register
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Register
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.Contains
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_Contains_System_String_
+  name: Contains
+  nameWithType: BehaviourRegistry<T>.Contains
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Contains
+  nameWithType.vb: BehaviourRegistry(Of T).Contains
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.TryGet
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_TryGet_System_String__0__
+  name: TryGet
+  nameWithType: BehaviourRegistry<T>.TryGet
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.TryGet
+  nameWithType.vb: BehaviourRegistry(Of T).TryGet
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).TryGet
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Get*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.Get
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_Get_System_String_
+  name: Get
+  nameWithType: BehaviourRegistry<T>.Get
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Get
+  nameWithType.vb: BehaviourRegistry(Of T).Get
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Get
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1__ctor
+  name: BehaviourRegistry
+  nameWithType: BehaviourRegistry<T>.BehaviourRegistry
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.BehaviourRegistry
+  nameWithType.vb: BehaviourRegistry(Of T).New
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourRegistry`1.Ids
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html#SurvivorsMaker_Simulation_BehaviourRegistry_1_Ids
+  name: Ids
+  nameWithType: BehaviourRegistry<T>.Ids
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>.Ids
+  nameWithType.vb: BehaviourRegistry(Of T).Ids
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T).Ids
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

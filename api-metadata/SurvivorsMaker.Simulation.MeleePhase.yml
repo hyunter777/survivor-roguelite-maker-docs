@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.MeleePhase
+  commentId: T:SurvivorsMaker.Simulation.MeleePhase
+  id: MeleePhase
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.MeleePhase.Idle
+  - SurvivorsMaker.Simulation.MeleePhase.Return
+  - SurvivorsMaker.Simulation.MeleePhase.Strike
+  - SurvivorsMaker.Simulation.MeleePhase.Windup
+  langs:
+  - csharp
+  - vb
+  name: MeleePhase
+  nameWithType: MeleePhase
+  fullName: SurvivorsMaker.Simulation.MeleePhase
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum MeleePhase
+    content.vb: Public Enum MeleePhase
+- uid: SurvivorsMaker.Simulation.MeleePhase.Idle
+  commentId: F:SurvivorsMaker.Simulation.MeleePhase.Idle
+  id: Idle
+  parent: SurvivorsMaker.Simulation.MeleePhase
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: MeleePhase.Idle
+  fullName: SurvivorsMaker.Simulation.MeleePhase.Idle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Idle = 0
+    return:
+      type: SurvivorsMaker.Simulation.MeleePhase
+- uid: SurvivorsMaker.Simulation.MeleePhase.Windup
+  commentId: F:SurvivorsMaker.Simulation.MeleePhase.Windup
+  id: Windup
+  parent: SurvivorsMaker.Simulation.MeleePhase
+  langs:
+  - csharp
+  - vb
+  name: Windup
+  nameWithType: MeleePhase.Windup
+  fullName: SurvivorsMaker.Simulation.MeleePhase.Windup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Windup = 1
+    return:
+      type: SurvivorsMaker.Simulation.MeleePhase
+- uid: SurvivorsMaker.Simulation.MeleePhase.Strike
+  commentId: F:SurvivorsMaker.Simulation.MeleePhase.Strike
+  id: Strike
+  parent: SurvivorsMaker.Simulation.MeleePhase
+  langs:
+  - csharp
+  - vb
+  name: Strike
+  nameWithType: MeleePhase.Strike
+  fullName: SurvivorsMaker.Simulation.MeleePhase.Strike
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Strike = 2
+    return:
+      type: SurvivorsMaker.Simulation.MeleePhase
+- uid: SurvivorsMaker.Simulation.MeleePhase.Return
+  commentId: F:SurvivorsMaker.Simulation.MeleePhase.Return
+  id: Return
+  parent: SurvivorsMaker.Simulation.MeleePhase
+  langs:
+  - csharp
+  - vb
+  name: Return
+  nameWithType: MeleePhase.Return
+  fullName: SurvivorsMaker.Simulation.MeleePhase.Return
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Return = 3
+    return:
+      type: SurvivorsMaker.Simulation.MeleePhase
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.MeleePhase
+  commentId: T:SurvivorsMaker.Simulation.MeleePhase
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MeleePhase.html
+  name: MeleePhase
+  nameWithType: MeleePhase
+  fullName: SurvivorsMaker.Simulation.MeleePhase

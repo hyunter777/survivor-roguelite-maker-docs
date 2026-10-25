@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  id: ContentTextKind
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.ContentTextKind.Character
+  - SurvivorsMaker.Data.ContentTextKind.Enemy
+  - SurvivorsMaker.Data.ContentTextKind.Item
+  - SurvivorsMaker.Data.ContentTextKind.Set
+  - SurvivorsMaker.Data.ContentTextKind.Weapon
+  langs:
+  - csharp
+  - vb
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Which kind of content a display text belongs to. Ids are unique per kind (weapons and items share one product list).
+  example: []
+  syntax:
+    content: public enum ContentTextKind
+    content.vb: Public Enum ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextKind.Character
+  commentId: F:SurvivorsMaker.Data.ContentTextKind.Character
+  id: Character
+  parent: SurvivorsMaker.Data.ContentTextKind
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: ContentTextKind.Character
+  fullName: SurvivorsMaker.Data.ContentTextKind.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: Character = 0
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextKind.Weapon
+  commentId: F:SurvivorsMaker.Data.ContentTextKind.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Data.ContentTextKind
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: ContentTextKind.Weapon
+  fullName: SurvivorsMaker.Data.ContentTextKind.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: Weapon = 1
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextKind.Item
+  commentId: F:SurvivorsMaker.Data.ContentTextKind.Item
+  id: Item
+  parent: SurvivorsMaker.Data.ContentTextKind
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: ContentTextKind.Item
+  fullName: SurvivorsMaker.Data.ContentTextKind.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: Item = 2
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextKind.Set
+  commentId: F:SurvivorsMaker.Data.ContentTextKind.Set
+  id: Set
+  parent: SurvivorsMaker.Data.ContentTextKind
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: ContentTextKind.Set
+  fullName: SurvivorsMaker.Data.ContentTextKind.Set
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: Set = 3
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextKind.Enemy
+  commentId: F:SurvivorsMaker.Data.ContentTextKind.Enemy
+  id: Enemy
+  parent: SurvivorsMaker.Data.ContentTextKind
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: ContentTextKind.Enemy
+  fullName: SurvivorsMaker.Data.ContentTextKind.Enemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: Enemy = 4
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind

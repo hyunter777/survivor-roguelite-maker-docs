@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.TagWeightMode
+  commentId: T:SurvivorsMaker.Run.TagWeightMode
+  id: TagWeightMode
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.TagWeightMode.Maximum
+  - SurvivorsMaker.Run.TagWeightMode.Product
+  - SurvivorsMaker.Run.TagWeightMode.Sum
+  langs:
+  - csharp
+  - vb
+  name: TagWeightMode
+  nameWithType: TagWeightMode
+  fullName: SurvivorsMaker.Run.TagWeightMode
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: How multiple matching tag weights combine into one relative candidate weight.
+  example: []
+  syntax:
+    content: public enum TagWeightMode
+    content.vb: Public Enum TagWeightMode
+- uid: SurvivorsMaker.Run.TagWeightMode.Maximum
+  commentId: F:SurvivorsMaker.Run.TagWeightMode.Maximum
+  id: Maximum
+  parent: SurvivorsMaker.Run.TagWeightMode
+  langs:
+  - csharp
+  - vb
+  name: Maximum
+  nameWithType: TagWeightMode.Maximum
+  fullName: SurvivorsMaker.Run.TagWeightMode.Maximum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Maximum = 0
+    return:
+      type: SurvivorsMaker.Run.TagWeightMode
+- uid: SurvivorsMaker.Run.TagWeightMode.Sum
+  commentId: F:SurvivorsMaker.Run.TagWeightMode.Sum
+  id: Sum
+  parent: SurvivorsMaker.Run.TagWeightMode
+  langs:
+  - csharp
+  - vb
+  name: Sum
+  nameWithType: TagWeightMode.Sum
+  fullName: SurvivorsMaker.Run.TagWeightMode.Sum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Sum = 1
+    return:
+      type: SurvivorsMaker.Run.TagWeightMode
+- uid: SurvivorsMaker.Run.TagWeightMode.Product
+  commentId: F:SurvivorsMaker.Run.TagWeightMode.Product
+  id: Product
+  parent: SurvivorsMaker.Run.TagWeightMode
+  langs:
+  - csharp
+  - vb
+  name: Product
+  nameWithType: TagWeightMode.Product
+  fullName: SurvivorsMaker.Run.TagWeightMode.Product
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Product = 2
+    return:
+      type: SurvivorsMaker.Run.TagWeightMode
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.TagWeightMode
+  commentId: T:SurvivorsMaker.Run.TagWeightMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.TagWeightMode.html
+  name: TagWeightMode
+  nameWithType: TagWeightMode
+  fullName: SurvivorsMaker.Run.TagWeightMode

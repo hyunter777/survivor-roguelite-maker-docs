@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.EffectRounding
+  commentId: T:SurvivorsMaker.Core.EffectRounding
+  id: EffectRounding
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.EffectRounding.Round
+  - SurvivorsMaker.Core.EffectRounding.Truncate
+  - SurvivorsMaker.Core.EffectRounding.WholeBundles
+  langs:
+  - csharp
+  - vb
+  name: EffectRounding
+  nameWithType: EffectRounding
+  fullName: SurvivorsMaker.Core.EffectRounding
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: How a transformed effect input is reduced to discrete output bundles.
+  example: []
+  syntax:
+    content: public enum EffectRounding
+    content.vb: Public Enum EffectRounding
+- uid: SurvivorsMaker.Core.EffectRounding.Truncate
+  commentId: F:SurvivorsMaker.Core.EffectRounding.Truncate
+  id: Truncate
+  parent: SurvivorsMaker.Core.EffectRounding
+  langs:
+  - csharp
+  - vb
+  name: Truncate
+  nameWithType: EffectRounding.Truncate
+  fullName: SurvivorsMaker.Core.EffectRounding.Truncate
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Truncate = 0
+    return:
+      type: SurvivorsMaker.Core.EffectRounding
+- uid: SurvivorsMaker.Core.EffectRounding.WholeBundles
+  commentId: F:SurvivorsMaker.Core.EffectRounding.WholeBundles
+  id: WholeBundles
+  parent: SurvivorsMaker.Core.EffectRounding
+  langs:
+  - csharp
+  - vb
+  name: WholeBundles
+  nameWithType: EffectRounding.WholeBundles
+  fullName: SurvivorsMaker.Core.EffectRounding.WholeBundles
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: WholeBundles = 1
+    return:
+      type: SurvivorsMaker.Core.EffectRounding
+- uid: SurvivorsMaker.Core.EffectRounding.Round
+  commentId: F:SurvivorsMaker.Core.EffectRounding.Round
+  id: Round
+  parent: SurvivorsMaker.Core.EffectRounding
+  langs:
+  - csharp
+  - vb
+  name: Round
+  nameWithType: EffectRounding.Round
+  fullName: SurvivorsMaker.Core.EffectRounding.Round
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Round = 2
+    return:
+      type: SurvivorsMaker.Core.EffectRounding
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.EffectRounding
+  commentId: T:SurvivorsMaker.Core.EffectRounding
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectRounding.html
+  name: EffectRounding
+  nameWithType: EffectRounding
+  fullName: SurvivorsMaker.Core.EffectRounding

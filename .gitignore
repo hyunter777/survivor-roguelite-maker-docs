@@ -1,0 +1,9 @@
+site/
+.build/
+__pycache__/
+*.pyc
+.venv/
+.cache/
+*.log
+bin/
+obj/

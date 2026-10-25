@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset
+  commentId: T:SurvivorsMaker.Simulation.TriggerCounterReset
+  id: TriggerCounterReset
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerCounterReset.Clear
+  - SurvivorsMaker.Simulation.TriggerCounterReset.KeepRemainder
+  - SurvivorsMaker.Simulation.TriggerCounterReset.Once
+  langs:
+  - csharp
+  - vb
+  name: TriggerCounterReset
+  nameWithType: TriggerCounterReset
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Boundary that clears an extended trigger counter.
+  example: []
+  syntax:
+    content: public enum TriggerCounterReset
+    content.vb: Public Enum TriggerCounterReset
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset.KeepRemainder
+  commentId: F:SurvivorsMaker.Simulation.TriggerCounterReset.KeepRemainder
+  id: KeepRemainder
+  parent: SurvivorsMaker.Simulation.TriggerCounterReset
+  langs:
+  - csharp
+  - vb
+  name: KeepRemainder
+  nameWithType: TriggerCounterReset.KeepRemainder
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset.KeepRemainder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: KeepRemainder = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerCounterReset
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset.Clear
+  commentId: F:SurvivorsMaker.Simulation.TriggerCounterReset.Clear
+  id: Clear
+  parent: SurvivorsMaker.Simulation.TriggerCounterReset
+  langs:
+  - csharp
+  - vb
+  name: Clear
+  nameWithType: TriggerCounterReset.Clear
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset.Clear
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Clear = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerCounterReset
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset.Once
+  commentId: F:SurvivorsMaker.Simulation.TriggerCounterReset.Once
+  id: Once
+  parent: SurvivorsMaker.Simulation.TriggerCounterReset
+  langs:
+  - csharp
+  - vb
+  name: Once
+  nameWithType: TriggerCounterReset.Once
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset.Once
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Once = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerCounterReset
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset
+  commentId: T:SurvivorsMaker.Simulation.TriggerCounterReset
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerCounterReset.html
+  name: TriggerCounterReset
+  nameWithType: TriggerCounterReset
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset

@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IPlaytestCommands
+  commentId: T:SurvivorsMaker.Run.IPlaytestCommands
+  id: IPlaytestCommands
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  - SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  - SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  - SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  - SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  langs:
+  - csharp
+  - vb
+  name: IPlaytestCommands
+  nameWithType: IPlaytestCommands
+  fullName: SurvivorsMaker.Run.IPlaytestCommands
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Development cheats for the in-game Playtest panel. Implemented by Run/Flow on
+
+    top of RunController. Calls are rejected with <xref href="SurvivorsMaker.Run.RunResult.WrongPhase" data-throw-if-not-resolved="false"></xref>
+    or
+
+    <xref href="SurvivorsMaker.Run.RunResult.NotAllowed" data-throw-if-not-resolved="false"></xref> instead of throwing. A
+    run that used any of them is marked
+
+    <xref href="SurvivorsMaker.Run.IPlaytestCommands.UsedCheats" data-throw-if-not-resolved="false"></xref> so records and
+    unlocks can ignore it.'
+  example: []
+  syntax:
+    content: public interface IPlaytestCommands
+    content.vb: Public Interface IPlaytestCommands
+  derivedClasses:
+  - SurvivorsMaker.Run.RunController
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  id: GiveWeapon(System.String)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: GiveWeapon(string)
+  nameWithType: IPlaytestCommands.GiveWeapon(string)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves: adds a weapon (by item id) to a free slot.'
+  example: []
+  syntax:
+    content: RunResult GiveWeapon(string weaponId)
+    parameters:
+    - id: weaponId
+      type: System.String
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function GiveWeapon(weaponId As String) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon*
+  nameWithType.vb: IPlaytestCommands.GiveWeapon(String)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(String)
+  name.vb: GiveWeapon(String)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  id: GiveItem(System.String)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: GiveItem(string)
+  nameWithType: IPlaytestCommands.GiveItem(string)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves or in field mode during a wave: adds an item or upgrade by id.'
+  example: []
+  syntax:
+    content: RunResult GiveItem(string itemId)
+    parameters:
+    - id: itemId
+      type: System.String
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function GiveItem(itemId As String) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.GiveItem*
+  nameWithType.vb: IPlaytestCommands.GiveItem(String)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(String)
+  name.vb: GiveItem(String)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  id: GiveCurrency(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: GiveCurrency(int)
+  nameWithType: IPlaytestCommands.GiveCurrency(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: RunResult GiveCurrency(int amount)
+    parameters:
+    - id: amount
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function GiveCurrency(amount As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency*
+  nameWithType.vb: IPlaytestCommands.GiveCurrency(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(Integer)
+  name.vb: GiveCurrency(Integer)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  id: GiveLevels(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: GiveLevels(int)
+  nameWithType: IPlaytestCommands.GiveLevels(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Gains levels now (pending level-ups as usual).
+  example: []
+  syntax:
+    content: RunResult GiveLevels(int levels)
+    parameters:
+    - id: levels
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function GiveLevels(levels As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels*
+  nameWithType.vb: IPlaytestCommands.GiveLevels(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(Integer)
+  name.vb: GiveLevels(Integer)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  id: SkipToWave(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: SkipToWave(int)
+  nameWithType: IPlaytestCommands.SkipToWave(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves: the next wave started is <code class="paramref">wave</code> (1-based).'
+  example: []
+  syntax:
+    content: RunResult SkipToWave(int wave)
+    parameters:
+    - id: wave
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function SkipToWave(wave As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave*
+  nameWithType.vb: IPlaytestCommands.SkipToWave(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(Integer)
+  name.vb: SkipToWave(Integer)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  id: SetInvulnerable(System.Boolean)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: SetInvulnerable(bool)
+  nameWithType: IPlaytestCommands.SetInvulnerable(bool)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: player takes no damage while on.'
+  example: []
+  syntax:
+    content: RunResult SetInvulnerable(bool on)
+    parameters:
+    - id: true
+      type: System.Boolean
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function SetInvulnerable([on] As Boolean) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable*
+  nameWithType.vb: IPlaytestCommands.SetInvulnerable(Boolean)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(Boolean)
+  name.vb: SetInvulnerable(Boolean)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  id: SpawnEnemies(System.String,System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: SpawnEnemies(string, int)
+  nameWithType: IPlaytestCommands.SpawnEnemies(string, int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: spawns <code class="paramref">count</code> of an enemy id around the player now (bypasses telegraph
+    and capacity).'
+  example: []
+  syntax:
+    content: RunResult SpawnEnemies(string enemyId, int count)
+    parameters:
+    - id: enemyId
+      type: System.String
+    - id: count
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function SpawnEnemies(enemyId As String, count As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies*
+  nameWithType.vb: IPlaytestCommands.SpawnEnemies(String, Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(String, Integer)
+  name.vb: SpawnEnemies(String, Integer)
+- uid: SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  id: EndWave
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: EndWave()
+  nameWithType: IPlaytestCommands.EndWave()
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.EndWave()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: ends it as survived.'
+  example: []
+  syntax:
+    content: RunResult EndWave()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function EndWave() As RunResult
+  overload: SurvivorsMaker.Run.IPlaytestCommands.EndWave*
+- uid: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  commentId: P:SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  id: UsedCheats
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  langs:
+  - csharp
+  - vb
+  name: UsedCheats
+  nameWithType: IPlaytestCommands.UsedCheats
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: bool UsedCheats { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property UsedCheats As Boolean
+  overload: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats*
+references:
+- uid: SurvivorsMaker.Run.RunResult.WrongPhase
+  commentId: F:SurvivorsMaker.Run.RunResult.WrongPhase
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html#SurvivorsMaker_Run_RunResult_WrongPhase
+  name: WrongPhase
+  nameWithType: RunResult.WrongPhase
+  fullName: SurvivorsMaker.Run.RunResult.WrongPhase
+- uid: SurvivorsMaker.Run.RunResult.NotAllowed
+  commentId: F:SurvivorsMaker.Run.RunResult.NotAllowed
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html#SurvivorsMaker_Run_RunResult_NotAllowed
+  name: NotAllowed
+  nameWithType: RunResult.NotAllowed
+  fullName: SurvivorsMaker.Run.RunResult.NotAllowed
+- uid: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  commentId: P:SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_UsedCheats
+  name: UsedCheats
+  nameWithType: IPlaytestCommands.UsedCheats
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IPlaytestCommands
+  commentId: T:SurvivorsMaker.Run.IPlaytestCommands
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html
+  name: IPlaytestCommands
+  nameWithType: IPlaytestCommands
+  fullName: SurvivorsMaker.Run.IPlaytestCommands
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveWeapon_System_String_
+  name: GiveWeapon
+  nameWithType: IPlaytestCommands.GiveWeapon
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveItem*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.GiveItem
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveItem_System_String_
+  name: GiveItem
+  nameWithType: IPlaytestCommands.GiveItem
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveItem
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveCurrency_System_Int32_
+  name: GiveCurrency
+  nameWithType: IPlaytestCommands.GiveCurrency
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.GiveLevels
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveLevels_System_Int32_
+  name: GiveLevels
+  nameWithType: IPlaytestCommands.GiveLevels
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.SkipToWave
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SkipToWave_System_Int32_
+  name: SkipToWave
+  nameWithType: IPlaytestCommands.SkipToWave
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SetInvulnerable_System_Boolean_
+  name: SetInvulnerable
+  nameWithType: IPlaytestCommands.SetInvulnerable
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SpawnEnemies_System_String_System_Int32_
+  name: SpawnEnemies
+  nameWithType: IPlaytestCommands.SpawnEnemies
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies
+- uid: SurvivorsMaker.Run.IPlaytestCommands.EndWave*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_EndWave
+  name: EndWave
+  nameWithType: IPlaytestCommands.EndWave
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.EndWave
+- uid: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats*
+  commentId: Overload:SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_UsedCheats
+  name: UsedCheats
+  nameWithType: IPlaytestCommands.UsedCheats
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats

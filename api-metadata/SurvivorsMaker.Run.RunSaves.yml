@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunSaves
+  commentId: T:SurvivorsMaker.Run.RunSaves
+  id: RunSaves
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunSaves.#ctor
+  - SurvivorsMaker.Run.RunSaves.Capture(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.RunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  langs:
+  - csharp
+  - vb
+  name: RunSaves
+  nameWithType: RunSaves
+  fullName: SurvivorsMaker.Run.RunSaves
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Snapshots only between waves; restoring never rolls choices or grants starting items.
+  example: []
+  syntax:
+    content: 'public sealed class RunSaves : IRunSaves'
+    content.vb: Public NotInheritable Class RunSaves Implements IRunSaves
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Run.IRunSaves
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.RunSaves.Capture(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.RunSaves.Capture(SurvivorsMaker.Run.RunState)
+  id: Capture(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.RunSaves
+  langs:
+  - csharp
+  - vb
+  name: Capture(RunState)
+  nameWithType: RunSaves.Capture(RunState)
+  fullName: SurvivorsMaker.Run.RunSaves.Capture(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Null when the run is in a phase that cannot be saved (a wave is running, or it ended).
+  example: []
+  syntax:
+    content: public RunSnapshot Capture(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Public Function Capture(run As RunState) As RunSnapshot
+  overload: SurvivorsMaker.Run.RunSaves.Capture*
+  implements:
+  - SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+- uid: SurvivorsMaker.Run.RunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  commentId: M:SurvivorsMaker.Run.RunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  id: Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  parent: SurvivorsMaker.Run.RunSaves
+  langs:
+  - csharp
+  - vb
+  name: Restore(RunSnapshot, RunRequest)
+  nameWithType: RunSaves.Restore(RunSnapshot, RunRequest)
+  fullName: SurvivorsMaker.Run.RunSaves.Restore(SurvivorsMaker.Run.RunSnapshot, SurvivorsMaker.Run.RunRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Rebuilds a run. Throws ArgumentException naming the first unknown id.
+  example: []
+  syntax:
+    content: public RunState Restore(RunSnapshot snapshot, RunRequest request)
+    parameters:
+    - id: snapshot
+      type: SurvivorsMaker.Run.RunSnapshot
+    - id: request
+      type: SurvivorsMaker.Run.RunRequest
+    return:
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Function Restore(snapshot As RunSnapshot, request As RunRequest) As RunState
+  overload: SurvivorsMaker.Run.RunSaves.Restore*
+  implements:
+  - SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+- uid: SurvivorsMaker.Run.RunSaves.#ctor
+  commentId: M:SurvivorsMaker.Run.RunSaves.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.RunSaves
+  langs:
+  - csharp
+  - vb
+  name: RunSaves()
+  nameWithType: RunSaves.RunSaves()
+  fullName: SurvivorsMaker.Run.RunSaves.RunSaves()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunSaves()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.RunSaves.#ctor*
+  nameWithType.vb: RunSaves.New()
+  fullName.vb: SurvivorsMaker.Run.RunSaves.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Run.IRunSaves
+  commentId: T:SurvivorsMaker.Run.IRunSaves
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunSaves.html
+  name: IRunSaves
+  nameWithType: IRunSaves
+  fullName: SurvivorsMaker.Run.IRunSaves
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.RunSaves.Capture*
+  commentId: Overload:SurvivorsMaker.Run.RunSaves.Capture
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSaves.html#SurvivorsMaker_Run_RunSaves_Capture_SurvivorsMaker_Run_RunState_
+  name: Capture
+  nameWithType: RunSaves.Capture
+  fullName: SurvivorsMaker.Run.RunSaves.Capture
+- uid: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IRunSaves
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Capture_SurvivorsMaker_Run_RunState_
+  name: Capture(RunState)
+  nameWithType: IRunSaves.Capture(RunState)
+  fullName: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+    name: Capture
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Capture_SurvivorsMaker_Run_RunState_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+    name: Capture
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Capture_SurvivorsMaker_Run_RunState_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: )
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+- uid: SurvivorsMaker.Run.RunSaves.Restore*
+  commentId: Overload:SurvivorsMaker.Run.RunSaves.Restore
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSaves.html#SurvivorsMaker_Run_RunSaves_Restore_SurvivorsMaker_Run_RunSnapshot_SurvivorsMaker_Run_RunRequest_
+  name: Restore
+  nameWithType: RunSaves.Restore
+  fullName: SurvivorsMaker.Run.RunSaves.Restore
+- uid: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  commentId: M:SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  parent: SurvivorsMaker.Run.IRunSaves
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Restore_SurvivorsMaker_Run_RunSnapshot_SurvivorsMaker_Run_RunRequest_
+  name: Restore(RunSnapshot, RunRequest)
+  nameWithType: IRunSaves.Restore(RunSnapshot, RunRequest)
+  fullName: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot, SurvivorsMaker.Run.RunRequest)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+    name: Restore
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Restore_SurvivorsMaker_Run_RunSnapshot_SurvivorsMaker_Run_RunRequest_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunSnapshot
+    name: RunSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.RunSnapshot.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.RunRequest
+    name: RunRequest
+    isExternal: true
+    href: SurvivorsMaker.Run.RunRequest.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+    name: Restore
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Restore_SurvivorsMaker_Run_RunSnapshot_SurvivorsMaker_Run_RunRequest_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunSnapshot
+    name: RunSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.RunSnapshot.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.RunRequest
+    name: RunRequest
+    isExternal: true
+    href: SurvivorsMaker.Run.RunRequest.html
+  - name: )
+- uid: SurvivorsMaker.Run.RunRequest
+  commentId: T:SurvivorsMaker.Run.RunRequest
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunRequest.html
+  name: RunRequest
+  nameWithType: RunRequest
+  fullName: SurvivorsMaker.Run.RunRequest
+- uid: SurvivorsMaker.Run.RunSaves.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.RunSaves.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSaves.html#SurvivorsMaker_Run_RunSaves__ctor
+  name: RunSaves
+  nameWithType: RunSaves.RunSaves
+  fullName: SurvivorsMaker.Run.RunSaves.RunSaves
+  nameWithType.vb: RunSaves.New
+  fullName.vb: SurvivorsMaker.Run.RunSaves.New
+  name.vb: New

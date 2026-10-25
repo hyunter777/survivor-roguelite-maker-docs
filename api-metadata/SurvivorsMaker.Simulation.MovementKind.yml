@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.MovementKind
+  commentId: T:SurvivorsMaker.Simulation.MovementKind
+  id: MovementKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.MovementKind.Chase
+  - SurvivorsMaker.Simulation.MovementKind.ChaseWithOffset
+  - SurvivorsMaker.Simulation.MovementKind.KeepDistance
+  - SurvivorsMaker.Simulation.MovementKind.WanderArena
+  - SurvivorsMaker.Simulation.MovementKind.WanderNearPlayer
+  langs:
+  - csharp
+  - vb
+  name: MovementKind
+  nameWithType: MovementKind
+  fullName: SurvivorsMaker.Simulation.MovementKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum MovementKind
+    content.vb: Public Enum MovementKind
+- uid: SurvivorsMaker.Simulation.MovementKind.Chase
+  commentId: F:SurvivorsMaker.Simulation.MovementKind.Chase
+  id: Chase
+  parent: SurvivorsMaker.Simulation.MovementKind
+  langs:
+  - csharp
+  - vb
+  name: Chase
+  nameWithType: MovementKind.Chase
+  fullName: SurvivorsMaker.Simulation.MovementKind.Chase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Walks straight at the player every tick.
+  example: []
+  syntax:
+    content: Chase = 0
+    return:
+      type: SurvivorsMaker.Simulation.MovementKind
+- uid: SurvivorsMaker.Simulation.MovementKind.KeepDistance
+  commentId: F:SurvivorsMaker.Simulation.MovementKind.KeepDistance
+  id: KeepDistance
+  parent: SurvivorsMaker.Simulation.MovementKind
+  langs:
+  - csharp
+  - vb
+  name: KeepDistance
+  nameWithType: MovementKind.KeepDistance
+  fullName: SurvivorsMaker.Simulation.MovementKind.KeepDistance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Keeps a preferred distance: approaches, holds or backs off.'
+  example: []
+  syntax:
+    content: KeepDistance = 1
+    return:
+      type: SurvivorsMaker.Simulation.MovementKind
+- uid: SurvivorsMaker.Simulation.MovementKind.WanderArena
+  commentId: F:SurvivorsMaker.Simulation.MovementKind.WanderArena
+  id: WanderArena
+  parent: SurvivorsMaker.Simulation.MovementKind
+  langs:
+  - csharp
+  - vb
+  name: WanderArena
+  nameWithType: MovementKind.WanderArena
+  fullName: SurvivorsMaker.Simulation.MovementKind.WanderArena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Picks random points in the arena and walks to them.
+  example: []
+  syntax:
+    content: WanderArena = 2
+    return:
+      type: SurvivorsMaker.Simulation.MovementKind
+- uid: SurvivorsMaker.Simulation.MovementKind.WanderNearPlayer
+  commentId: F:SurvivorsMaker.Simulation.MovementKind.WanderNearPlayer
+  id: WanderNearPlayer
+  parent: SurvivorsMaker.Simulation.MovementKind
+  langs:
+  - csharp
+  - vb
+  name: WanderNearPlayer
+  nameWithType: MovementKind.WanderNearPlayer
+  fullName: SurvivorsMaker.Simulation.MovementKind.WanderNearPlayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Picks random points near the player (fixed when picked) and walks to them.
+  example: []
+  syntax:
+    content: WanderNearPlayer = 3
+    return:
+      type: SurvivorsMaker.Simulation.MovementKind
+- uid: SurvivorsMaker.Simulation.MovementKind.ChaseWithOffset
+  commentId: F:SurvivorsMaker.Simulation.MovementKind.ChaseWithOffset
+  id: ChaseWithOffset
+  parent: SurvivorsMaker.Simulation.MovementKind
+  langs:
+  - csharp
+  - vb
+  name: ChaseWithOffset
+  nameWithType: MovementKind.ChaseWithOffset
+  fullName: SurvivorsMaker.Simulation.MovementKind.ChaseWithOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Chases the player plus an offset fixed at spawn.
+  example: []
+  syntax:
+    content: ChaseWithOffset = 4
+    return:
+      type: SurvivorsMaker.Simulation.MovementKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.MovementKind
+  commentId: T:SurvivorsMaker.Simulation.MovementKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MovementKind.html
+  name: MovementKind
+  nameWithType: MovementKind
+  fullName: SurvivorsMaker.Simulation.MovementKind

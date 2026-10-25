@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IEnemyMovement
+  commentId: T:SurvivorsMaker.Simulation.IEnemyMovement
+  id: IEnemyMovement
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IEnemyMovement.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.IEnemyMovement.Step(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IEnemyMovement
+  nameWithType: IEnemyMovement
+  fullName: SurvivorsMaker.Simulation.IEnemyMovement
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: How an enemy moves (step 5). The enemy system applies speed multipliers, knockback and arena clamping around it.
+  example: []
+  syntax:
+    content: public interface IEnemyMovement
+    content.vb: Public Interface IEnemyMovement
+  derivedClasses:
+  - SurvivorsMaker.Simulation.ChaseMovement
+  - SurvivorsMaker.Simulation.ChaseWithOffsetMovement
+  - SurvivorsMaker.Simulation.EnemyMovement
+  - SurvivorsMaker.Simulation.KeepDistanceMovement
+  - SurvivorsMaker.Simulation.WanderArenaMovement
+  - SurvivorsMaker.Simulation.WanderNearPlayerMovement
+- uid: SurvivorsMaker.Simulation.IEnemyMovement.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemyMovement.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  id: Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemyMovement
+  langs:
+  - csharp
+  - vb
+  name: Init(SimWorld, Enemy)
+  nameWithType: IEnemyMovement.Init(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemyMovement.Init(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'At spawn: fixed per-enemy values (offsets, preferred distance, first target).'
+  example: []
+  syntax:
+    content: void Init(SimWorld world, Enemy enemy)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub Init(world As SimWorld, enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.IEnemyMovement.Init*
+- uid: SurvivorsMaker.Simulation.IEnemyMovement.Step(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.IEnemyMovement.Step(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Single,System.Single)
+  id: Step(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Single,System.Single)
+  parent: SurvivorsMaker.Simulation.IEnemyMovement
+  langs:
+  - csharp
+  - vb
+  name: Step(SimWorld, Enemy, float, float)
+  nameWithType: IEnemyMovement.Step(SimWorld, Enemy, float, float)
+  fullName: SurvivorsMaker.Simulation.IEnemyMovement.Step(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The position the enemy wants to be at after this tick, before clamping.
+  example: []
+  syntax:
+    content: Vec2 Step(SimWorld world, Enemy enemy, float speed, float dt)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: speed
+      type: System.Single
+    - id: dt
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Function [Step](world As SimWorld, enemy As Enemy, speed As Single, dt As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.IEnemyMovement.Step*
+  nameWithType.vb: IEnemyMovement.Step(SimWorld, Enemy, Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.IEnemyMovement.Step(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    Single, Single)
+  name.vb: Step(SimWorld, Enemy, Single, Single)
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IEnemyMovement.Init*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemyMovement.Init
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyMovement.html#SurvivorsMaker_Simulation_IEnemyMovement_Init_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: Init
+  nameWithType: IEnemyMovement.Init
+  fullName: SurvivorsMaker.Simulation.IEnemyMovement.Init
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.IEnemyMovement.Step*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemyMovement.Step
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyMovement.html#SurvivorsMaker_Simulation_IEnemyMovement_Step_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Single_System_Single_
+  name: Step
+  nameWithType: IEnemyMovement.Step
+  fullName: SurvivorsMaker.Simulation.IEnemyMovement.Step
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.LinkedEffectInfo
+  commentId: T:SurvivorsMaker.Run.LinkedEffectInfo
+  id: LinkedEffectInfo
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.LinkedEffectInfo.Amount
+  - SurvivorsMaker.Run.LinkedEffectInfo.AppliedIndex
+  - SurvivorsMaker.Run.LinkedEffectInfo.EffectIndex
+  - SurvivorsMaker.Run.LinkedEffectInfo.ExternalSource
+  - SurvivorsMaker.Run.LinkedEffectInfo.InputSource
+  - SurvivorsMaker.Run.LinkedEffectInfo.InstanceId
+  - SurvivorsMaker.Run.LinkedEffectInfo.Method
+  - SurvivorsMaker.Run.LinkedEffectInfo.ReadLayer
+  - SurvivorsMaker.Run.LinkedEffectInfo.Source
+  - SurvivorsMaker.Run.LinkedEffectInfo.Summary
+  - SurvivorsMaker.Run.LinkedEffectInfo.Target
+  - SurvivorsMaker.Run.LinkedEffectInfo.Temporary
+  - SurvivorsMaker.Run.LinkedEffectInfo.Valid
+  langs:
+  - csharp
+  - vb
+  name: LinkedEffectInfo
+  nameWithType: LinkedEffectInfo
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Read-only link, conversion or dependent-limit recipe in a build explanation.
+  example: []
+  syntax:
+    content: public struct LinkedEffectInfo
+    content.vb: Public Structure LinkedEffectInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Source
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Source
+  id: Source
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: LinkedEffectInfo.Source
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Source
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Source
+    return:
+      type: System.String
+    content.vb: Public Source As String
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.InputSource
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.InputSource
+  id: InputSource
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: InputSource
+  nameWithType: LinkedEffectInfo.InputSource
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.InputSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string InputSource
+    return:
+      type: System.String
+    content.vb: Public InputSource As String
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Target
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Target
+  id: Target
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: LinkedEffectInfo.Target
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Target
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Target
+    return:
+      type: System.String
+    content.vb: Public Target As String
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.AppliedIndex
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.AppliedIndex
+  id: AppliedIndex
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: AppliedIndex
+  nameWithType: LinkedEffectInfo.AppliedIndex
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.AppliedIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int AppliedIndex
+    return:
+      type: System.Int32
+    content.vb: Public AppliedIndex As Integer
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.InstanceId
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.InstanceId
+  id: InstanceId
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: InstanceId
+  nameWithType: LinkedEffectInfo.InstanceId
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.InstanceId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long InstanceId
+    return:
+      type: System.Int64
+    content.vb: Public InstanceId As Long
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.EffectIndex
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.EffectIndex
+  id: EffectIndex
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: EffectIndex
+  nameWithType: LinkedEffectInfo.EffectIndex
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.EffectIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int EffectIndex
+    return:
+      type: System.Int32
+    content.vb: Public EffectIndex As Integer
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Method
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Method
+  id: Method
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: LinkedEffectInfo.Method
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Method
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public EffectMethod Method
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+    content.vb: Public Method As EffectMethod
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.ReadLayer
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.ReadLayer
+  id: ReadLayer
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: ReadLayer
+  nameWithType: LinkedEffectInfo.ReadLayer
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.ReadLayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public StatReadLayer ReadLayer
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+    content.vb: Public ReadLayer As StatReadLayer
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.ExternalSource
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.ExternalSource
+  id: ExternalSource
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: ExternalSource
+  nameWithType: LinkedEffectInfo.ExternalSource
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.ExternalSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool ExternalSource
+    return:
+      type: System.Boolean
+    content.vb: Public ExternalSource As Boolean
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Temporary
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Temporary
+  id: Temporary
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: LinkedEffectInfo.Temporary
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Temporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool Temporary
+    return:
+      type: System.Boolean
+    content.vb: Public Temporary As Boolean
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Amount
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Amount
+  id: Amount
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: LinkedEffectInfo.Amount
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float Amount
+    return:
+      type: System.Single
+    content.vb: Public Amount As Single
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Valid
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Valid
+  id: Valid
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Valid
+  nameWithType: LinkedEffectInfo.Valid
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Valid
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool Valid
+    return:
+      type: System.Boolean
+    content.vb: Public Valid As Boolean
+- uid: SurvivorsMaker.Run.LinkedEffectInfo.Summary
+  commentId: F:SurvivorsMaker.Run.LinkedEffectInfo.Summary
+  id: Summary
+  parent: SurvivorsMaker.Run.LinkedEffectInfo
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: LinkedEffectInfo.Summary
+  fullName: SurvivorsMaker.Run.LinkedEffectInfo.Summary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Summary
+    return:
+      type: System.String
+    content.vb: Public Summary As String
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatReadLayer.html
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

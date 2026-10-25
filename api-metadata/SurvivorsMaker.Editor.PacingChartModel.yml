@@ -1,0 +1,1180 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.PacingChartModel
+  commentId: T:SurvivorsMaker.Editor.PacingChartModel
+  id: PacingChartModel
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.PacingChartModel.#ctor
+  - SurvivorsMaker.Editor.PacingChartModel.BandColors
+  - SurvivorsMaker.Editor.PacingChartModel.BandCounts
+  - SurvivorsMaker.Editor.PacingChartModel.Bands
+  - SurvivorsMaker.Editor.PacingChartModel.Count
+  - SurvivorsMaker.Editor.PacingChartModel.CurrencyBalance
+  - SurvivorsMaker.Editor.PacingChartModel.CurrencyEarned
+  - SurvivorsMaker.Editor.PacingChartModel.CurrencySpent
+  - SurvivorsMaker.Editor.PacingChartModel.Experience
+  - SurvivorsMaker.Editor.PacingChartModel.From(SurvivorsMaker.Balance.PacingReport,SurvivorsMaker.Editor.PacingThresholds)
+  - SurvivorsMaker.Editor.PacingChartModel.Hardest(System.Int32)
+  - SurvivorsMaker.Editor.PacingChartModel.IncomingDps
+  - SurvivorsMaker.Editor.PacingChartModel.Labels
+  - SurvivorsMaker.Editor.PacingChartModel.Level
+  - SurvivorsMaker.Editor.PacingChartModel.MeanAlive
+  - SurvivorsMaker.Editor.PacingChartModel.PeakAlive
+  - SurvivorsMaker.Editor.PacingChartModel.PlayerDps
+  - SurvivorsMaker.Editor.PacingChartModel.Power
+  - SurvivorsMaker.Editor.PacingChartModel.PowerOf(SurvivorsMaker.Balance.WavePacing)
+  - SurvivorsMaker.Editor.PacingChartModel.Ratio
+  - SurvivorsMaker.Editor.PacingChartModel.RatioOf(SurvivorsMaker.Balance.WavePacing)
+  - SurvivorsMaker.Editor.PacingChartModel.ShopPrice
+  - SurvivorsMaker.Editor.PacingChartModel.Spawned
+  - SurvivorsMaker.Editor.PacingChartModel.SurvivalPercent
+  - SurvivorsMaker.Editor.PacingChartModel.Threat
+  - SurvivorsMaker.Editor.PacingChartModel.WaveNumbers
+  langs:
+  - csharp
+  - vb
+  name: PacingChartModel
+  nameWithType: PacingChartModel
+  fullName: SurvivorsMaker.Editor.PacingChartModel
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Series the Run Pacing window draws, derived from a <xref href="SurvivorsMaker.Balance.PacingReport" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public sealed class PacingChartModel
+    content.vb: Public NotInheritable Class PacingChartModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.PacingChartModel.Labels
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Labels
+  id: Labels
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Labels
+  nameWithType: PacingChartModel.Labels
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Labels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string[] Labels
+    return:
+      type: System.String[]
+    content.vb: Public Labels As String()
+- uid: SurvivorsMaker.Editor.PacingChartModel.WaveNumbers
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.WaveNumbers
+  id: WaveNumbers
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: WaveNumbers
+  nameWithType: PacingChartModel.WaveNumbers
+  fullName: SurvivorsMaker.Editor.PacingChartModel.WaveNumbers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public int[] WaveNumbers
+    return:
+      type: System.Int32[]
+    content.vb: Public WaveNumbers As Integer()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Threat
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Threat
+  id: Threat
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Threat
+  nameWithType: PacingChartModel.Threat
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Threat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Enemy health spawned per wave.
+  example: []
+  syntax:
+    content: public float[] Threat
+    return:
+      type: System.Single[]
+    content.vb: Public Threat As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Power
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Power
+  id: Power
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Power
+  nameWithType: PacingChartModel.Power
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Power
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Player damage the wave allows: DPS × duration (same unit as <xref href="SurvivorsMaker.Editor.PacingChartModel.Threat"
+    data-throw-if-not-resolved="false"></xref>).'
+  example: []
+  syntax:
+    content: public float[] Power
+    return:
+      type: System.Single[]
+    content.vb: Public Power As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.PlayerDps
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.PlayerDps
+  id: PlayerDps
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: PlayerDps
+  nameWithType: PacingChartModel.PlayerDps
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PlayerDps
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] PlayerDps
+    return:
+      type: System.Single[]
+    content.vb: Public PlayerDps As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Ratio
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Ratio
+  id: Ratio
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Ratio
+  nameWithType: PacingChartModel.Ratio
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Ratio
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] Ratio
+    return:
+      type: System.Single[]
+    content.vb: Public Ratio As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Bands
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Bands
+  id: Bands
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Bands
+  nameWithType: PacingChartModel.Bands
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Bands
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public PacingBand[] Bands
+    return:
+      type: SurvivorsMaker.Editor.PacingBand[]
+    content.vb: Public Bands As PacingBand()
+- uid: SurvivorsMaker.Editor.PacingChartModel.PeakAlive
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.PeakAlive
+  id: PeakAlive
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: PeakAlive
+  nameWithType: PacingChartModel.PeakAlive
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PeakAlive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] PeakAlive
+    return:
+      type: System.Single[]
+    content.vb: Public PeakAlive As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.MeanAlive
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.MeanAlive
+  id: MeanAlive
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: MeanAlive
+  nameWithType: PacingChartModel.MeanAlive
+  fullName: SurvivorsMaker.Editor.PacingChartModel.MeanAlive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] MeanAlive
+    return:
+      type: System.Single[]
+    content.vb: Public MeanAlive As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Spawned
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Spawned
+  id: Spawned
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Spawned
+  nameWithType: PacingChartModel.Spawned
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Spawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] Spawned
+    return:
+      type: System.Single[]
+    content.vb: Public Spawned As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.IncomingDps
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.IncomingDps
+  id: IncomingDps
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: IncomingDps
+  nameWithType: PacingChartModel.IncomingDps
+  fullName: SurvivorsMaker.Editor.PacingChartModel.IncomingDps
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] IncomingDps
+    return:
+      type: System.Single[]
+    content.vb: Public IncomingDps As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.SurvivalPercent
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.SurvivalPercent
+  id: SurvivalPercent
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: SurvivalPercent
+  nameWithType: PacingChartModel.SurvivalPercent
+  fullName: SurvivorsMaker.Editor.PacingChartModel.SurvivalPercent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] SurvivalPercent
+    return:
+      type: System.Single[]
+    content.vb: Public SurvivalPercent As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Level
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Level
+  id: Level
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: PacingChartModel.Level
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Level
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] Level
+    return:
+      type: System.Single[]
+    content.vb: Public Level As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Experience
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Experience
+  id: Experience
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: PacingChartModel.Experience
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] Experience
+    return:
+      type: System.Single[]
+    content.vb: Public Experience As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.CurrencyEarned
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.CurrencyEarned
+  id: CurrencyEarned
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: CurrencyEarned
+  nameWithType: PacingChartModel.CurrencyEarned
+  fullName: SurvivorsMaker.Editor.PacingChartModel.CurrencyEarned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] CurrencyEarned
+    return:
+      type: System.Single[]
+    content.vb: Public CurrencyEarned As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.CurrencySpent
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.CurrencySpent
+  id: CurrencySpent
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: CurrencySpent
+  nameWithType: PacingChartModel.CurrencySpent
+  fullName: SurvivorsMaker.Editor.PacingChartModel.CurrencySpent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] CurrencySpent
+    return:
+      type: System.Single[]
+    content.vb: Public CurrencySpent As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.ShopPrice
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.ShopPrice
+  id: ShopPrice
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: ShopPrice
+  nameWithType: PacingChartModel.ShopPrice
+  fullName: SurvivorsMaker.Editor.PacingChartModel.ShopPrice
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] ShopPrice
+    return:
+      type: System.Single[]
+    content.vb: Public ShopPrice As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.CurrencyBalance
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.CurrencyBalance
+  id: CurrencyBalance
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: CurrencyBalance
+  nameWithType: PacingChartModel.CurrencyBalance
+  fullName: SurvivorsMaker.Editor.PacingChartModel.CurrencyBalance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public float[] CurrencyBalance
+    return:
+      type: System.Single[]
+    content.vb: Public CurrencyBalance As Single()
+- uid: SurvivorsMaker.Editor.PacingChartModel.RatioOf(SurvivorsMaker.Balance.WavePacing)
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.RatioOf(SurvivorsMaker.Balance.WavePacing)
+  id: RatioOf(SurvivorsMaker.Balance.WavePacing)
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: RatioOf(WavePacing)
+  nameWithType: PacingChartModel.RatioOf(WavePacing)
+  fullName: SurvivorsMaker.Editor.PacingChartModel.RatioOf(SurvivorsMaker.Balance.WavePacing)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Threat ÷ power. Uses the report's value when present, else enemy health ÷ (DPS × duration).
+  example: []
+  syntax:
+    content: public static float RatioOf(WavePacing wave)
+    parameters:
+    - id: wave
+      type: SurvivorsMaker.Balance.WavePacing
+    return:
+      type: System.Single
+    content.vb: Public Shared Function RatioOf(wave As WavePacing) As Single
+  overload: SurvivorsMaker.Editor.PacingChartModel.RatioOf*
+- uid: SurvivorsMaker.Editor.PacingChartModel.PowerOf(SurvivorsMaker.Balance.WavePacing)
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.PowerOf(SurvivorsMaker.Balance.WavePacing)
+  id: PowerOf(SurvivorsMaker.Balance.WavePacing)
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: PowerOf(WavePacing)
+  nameWithType: PacingChartModel.PowerOf(WavePacing)
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PowerOf(SurvivorsMaker.Balance.WavePacing)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static float PowerOf(WavePacing wave)
+    parameters:
+    - id: wave
+      type: SurvivorsMaker.Balance.WavePacing
+    return:
+      type: System.Single
+    content.vb: Public Shared Function PowerOf(wave As WavePacing) As Single
+  overload: SurvivorsMaker.Editor.PacingChartModel.PowerOf*
+- uid: SurvivorsMaker.Editor.PacingChartModel.From(SurvivorsMaker.Balance.PacingReport,SurvivorsMaker.Editor.PacingThresholds)
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.From(SurvivorsMaker.Balance.PacingReport,SurvivorsMaker.Editor.PacingThresholds)
+  id: From(SurvivorsMaker.Balance.PacingReport,SurvivorsMaker.Editor.PacingThresholds)
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: From(PacingReport, PacingThresholds)
+  nameWithType: PacingChartModel.From(PacingReport, PacingThresholds)
+  fullName: SurvivorsMaker.Editor.PacingChartModel.From(SurvivorsMaker.Balance.PacingReport, SurvivorsMaker.Editor.PacingThresholds)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static PacingChartModel From(PacingReport report, PacingThresholds thresholds)
+    parameters:
+    - id: report
+      type: SurvivorsMaker.Balance.PacingReport
+    - id: thresholds
+      type: SurvivorsMaker.Editor.PacingThresholds
+    return:
+      type: SurvivorsMaker.Editor.PacingChartModel
+    content.vb: Public Shared Function From(report As PacingReport, thresholds As PacingThresholds) As PacingChartModel
+  overload: SurvivorsMaker.Editor.PacingChartModel.From*
+- uid: SurvivorsMaker.Editor.PacingChartModel.BandColors
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.BandColors
+  id: BandColors
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: BandColors()
+  nameWithType: PacingChartModel.BandColors()
+  fullName: SurvivorsMaker.Editor.PacingChartModel.BandColors()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Color[] BandColors()
+    return:
+      type: UnityEngine.Color[]
+    content.vb: Public Function BandColors() As Color()
+  overload: SurvivorsMaker.Editor.PacingChartModel.BandColors*
+- uid: SurvivorsMaker.Editor.PacingChartModel.Hardest(System.Int32)
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.Hardest(System.Int32)
+  id: Hardest(System.Int32)
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Hardest(int)
+  nameWithType: PacingChartModel.Hardest(int)
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Hardest(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Indices of the waves with the highest ratio (worst first), at most <code class="paramref">count</code>, known values
+    only.
+  example: []
+  syntax:
+    content: public List<int> Hardest(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Function Hardest(count As Integer) As List(Of Integer)
+  overload: SurvivorsMaker.Editor.PacingChartModel.Hardest*
+  nameWithType.vb: PacingChartModel.Hardest(Integer)
+  fullName.vb: SurvivorsMaker.Editor.PacingChartModel.Hardest(Integer)
+  name.vb: Hardest(Integer)
+- uid: SurvivorsMaker.Editor.PacingChartModel.BandCounts
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.BandCounts
+  id: BandCounts
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: BandCounts()
+  nameWithType: PacingChartModel.BandCounts()
+  fullName: SurvivorsMaker.Editor.PacingChartModel.BandCounts()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Count of waves per band (Unknown, OnTarget, Watch, Over).
+  example: []
+  syntax:
+    content: public int[] BandCounts()
+    return:
+      type: System.Int32[]
+    content.vb: Public Function BandCounts() As Integer()
+  overload: SurvivorsMaker.Editor.PacingChartModel.BandCounts*
+- uid: SurvivorsMaker.Editor.PacingChartModel.#ctor
+  commentId: M:SurvivorsMaker.Editor.PacingChartModel.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: PacingChartModel()
+  nameWithType: PacingChartModel.PacingChartModel()
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PacingChartModel()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public PacingChartModel()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.PacingChartModel.#ctor*
+  nameWithType.vb: PacingChartModel.New()
+  fullName.vb: SurvivorsMaker.Editor.PacingChartModel.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Editor.PacingChartModel.Count
+  commentId: P:SurvivorsMaker.Editor.PacingChartModel.Count
+  id: Count
+  parent: SurvivorsMaker.Editor.PacingChartModel
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: PacingChartModel.Count
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Count
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: SurvivorsMaker.Editor.PacingChartModel.Count*
+references:
+- uid: SurvivorsMaker.Balance.PacingReport
+  commentId: T:SurvivorsMaker.Balance.PacingReport
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.PacingReport.html
+  name: PacingReport
+  nameWithType: PacingReport
+  fullName: SurvivorsMaker.Balance.PacingReport
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.PacingChartModel.Threat
+  commentId: F:SurvivorsMaker.Editor.PacingChartModel.Threat
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_Threat
+  name: Threat
+  nameWithType: PacingChartModel.Threat
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Threat
+- uid: SurvivorsMaker.Editor.PacingBand[]
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingBand.html
+  name: PacingBand[]
+  nameWithType: PacingBand[]
+  fullName: SurvivorsMaker.Editor.PacingBand[]
+  nameWithType.vb: PacingBand()
+  fullName.vb: SurvivorsMaker.Editor.PacingBand()
+  name.vb: PacingBand()
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.PacingBand
+    name: PacingBand
+    isExternal: true
+    href: SurvivorsMaker.Editor.PacingBand.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.PacingBand
+    name: PacingBand
+    isExternal: true
+    href: SurvivorsMaker.Editor.PacingBand.html
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.PacingChartModel.RatioOf*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.RatioOf
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_RatioOf_SurvivorsMaker_Balance_WavePacing_
+  name: RatioOf
+  nameWithType: PacingChartModel.RatioOf
+  fullName: SurvivorsMaker.Editor.PacingChartModel.RatioOf
+- uid: SurvivorsMaker.Balance.WavePacing
+  commentId: T:SurvivorsMaker.Balance.WavePacing
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WavePacing.html
+  name: WavePacing
+  nameWithType: WavePacing
+  fullName: SurvivorsMaker.Balance.WavePacing
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Editor.PacingChartModel.PowerOf*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.PowerOf
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_PowerOf_SurvivorsMaker_Balance_WavePacing_
+  name: PowerOf
+  nameWithType: PacingChartModel.PowerOf
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PowerOf
+- uid: SurvivorsMaker.Editor.PacingChartModel.From*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.From
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_From_SurvivorsMaker_Balance_PacingReport_SurvivorsMaker_Editor_PacingThresholds_
+  name: From
+  nameWithType: PacingChartModel.From
+  fullName: SurvivorsMaker.Editor.PacingChartModel.From
+- uid: SurvivorsMaker.Editor.PacingThresholds
+  commentId: T:SurvivorsMaker.Editor.PacingThresholds
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingThresholds.html
+  name: PacingThresholds
+  nameWithType: PacingThresholds
+  fullName: SurvivorsMaker.Editor.PacingThresholds
+- uid: SurvivorsMaker.Editor.PacingChartModel
+  commentId: T:SurvivorsMaker.Editor.PacingChartModel
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html
+  name: PacingChartModel
+  nameWithType: PacingChartModel
+  fullName: SurvivorsMaker.Editor.PacingChartModel
+- uid: SurvivorsMaker.Editor.PacingChartModel.BandColors*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.BandColors
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_BandColors
+  name: BandColors
+  nameWithType: PacingChartModel.BandColors
+  fullName: SurvivorsMaker.Editor.PacingChartModel.BandColors
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.PacingChartModel.Hardest*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.Hardest
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_Hardest_System_Int32_
+  name: Hardest
+  nameWithType: PacingChartModel.Hardest
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Hardest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.PacingChartModel.BandCounts*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.BandCounts
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_BandCounts
+  name: BandCounts
+  nameWithType: PacingChartModel.BandCounts
+  fullName: SurvivorsMaker.Editor.PacingChartModel.BandCounts
+- uid: SurvivorsMaker.Editor.PacingChartModel.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel__ctor
+  name: PacingChartModel
+  nameWithType: PacingChartModel.PacingChartModel
+  fullName: SurvivorsMaker.Editor.PacingChartModel.PacingChartModel
+  nameWithType.vb: PacingChartModel.New
+  fullName.vb: SurvivorsMaker.Editor.PacingChartModel.New
+  name.vb: New
+- uid: SurvivorsMaker.Editor.PacingChartModel.Count*
+  commentId: Overload:SurvivorsMaker.Editor.PacingChartModel.Count
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingChartModel.html#SurvivorsMaker_Editor_PacingChartModel_Count
+  name: Count
+  nameWithType: PacingChartModel.Count
+  fullName: SurvivorsMaker.Editor.PacingChartModel.Count

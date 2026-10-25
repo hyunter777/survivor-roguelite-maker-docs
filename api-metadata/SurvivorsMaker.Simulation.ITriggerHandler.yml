@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ITriggerHandler
+  commentId: T:SurvivorsMaker.Simulation.ITriggerHandler
+  id: ITriggerHandler
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ITriggerHandler.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Simulation.Vec2)
+  langs:
+  - csharp
+  - vb
+  name: ITriggerHandler
+  nameWithType: ITriggerHandler
+  fullName: SurvivorsMaker.Simulation.ITriggerHandler
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Custom trigger actions (TriggerAction.Custom), registered by id like effect handlers.
+  example: []
+  syntax:
+    content: public interface ITriggerHandler
+    content.vb: Public Interface ITriggerHandler
+- uid: SurvivorsMaker.Simulation.ITriggerHandler.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.ITriggerHandler.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Simulation.Vec2)
+  id: Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.ITriggerHandler
+  langs:
+  - csharp
+  - vb
+  name: Fire(SimWorld, TriggerDef, Vec2)
+  nameWithType: ITriggerHandler.Fire(SimWorld, TriggerDef, Vec2)
+  fullName: SurvivorsMaker.Simulation.ITriggerHandler.Fire(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.TriggerDef,
+    SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Fire(SimWorld world, TriggerDef trigger, Vec2 position)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: trigger
+      type: SurvivorsMaker.Simulation.TriggerDef
+    - id: position
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Sub Fire(world As SimWorld, trigger As TriggerDef, position As Vec2)
+  overload: SurvivorsMaker.Simulation.ITriggerHandler.Fire*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ITriggerHandler.Fire*
+  commentId: Overload:SurvivorsMaker.Simulation.ITriggerHandler.Fire
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerHandler.html#SurvivorsMaker_Simulation_ITriggerHandler_Fire_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_TriggerDef_SurvivorsMaker_Simulation_Vec2_
+  name: Fire
+  nameWithType: ITriggerHandler.Fire
+  fullName: SurvivorsMaker.Simulation.ITriggerHandler.Fire
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2

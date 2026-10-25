@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.EffectLifetime
+  commentId: T:SurvivorsMaker.Core.EffectLifetime
+  id: EffectLifetime
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.EffectLifetime.Owned
+  - SurvivorsMaker.Core.EffectLifetime.Run
+  - SurvivorsMaker.Core.EffectLifetime.Wave
+  langs:
+  - csharp
+  - vb
+  name: EffectLifetime
+  nameWithType: EffectLifetime
+  fullName: SurvivorsMaker.Core.EffectLifetime
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Boundary at which an applied effect expires: ownership, wave or run.'
+  example: []
+  syntax:
+    content: public enum EffectLifetime
+    content.vb: Public Enum EffectLifetime
+- uid: SurvivorsMaker.Core.EffectLifetime.Owned
+  commentId: F:SurvivorsMaker.Core.EffectLifetime.Owned
+  id: Owned
+  parent: SurvivorsMaker.Core.EffectLifetime
+  langs:
+  - csharp
+  - vb
+  name: Owned
+  nameWithType: EffectLifetime.Owned
+  fullName: SurvivorsMaker.Core.EffectLifetime.Owned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Owned = 0
+    return:
+      type: SurvivorsMaker.Core.EffectLifetime
+- uid: SurvivorsMaker.Core.EffectLifetime.Wave
+  commentId: F:SurvivorsMaker.Core.EffectLifetime.Wave
+  id: Wave
+  parent: SurvivorsMaker.Core.EffectLifetime
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: EffectLifetime.Wave
+  fullName: SurvivorsMaker.Core.EffectLifetime.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Wave = 1
+    return:
+      type: SurvivorsMaker.Core.EffectLifetime
+- uid: SurvivorsMaker.Core.EffectLifetime.Run
+  commentId: F:SurvivorsMaker.Core.EffectLifetime.Run
+  id: Run
+  parent: SurvivorsMaker.Core.EffectLifetime
+  langs:
+  - csharp
+  - vb
+  name: Run
+  nameWithType: EffectLifetime.Run
+  fullName: SurvivorsMaker.Core.EffectLifetime.Run
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Run = 2
+    return:
+      type: SurvivorsMaker.Core.EffectLifetime
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.EffectLifetime
+  commentId: T:SurvivorsMaker.Core.EffectLifetime
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectLifetime.html
+  name: EffectLifetime
+  nameWithType: EffectLifetime
+  fullName: SurvivorsMaker.Core.EffectLifetime

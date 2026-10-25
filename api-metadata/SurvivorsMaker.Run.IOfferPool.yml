@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IOfferPool
+  commentId: T:SurvivorsMaker.Run.IOfferPool
+  id: IOfferPool
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IOfferPool.Generate(SurvivorsMaker.Run.OfferPoolRequest,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IOfferPool
+  nameWithType: IOfferPool
+  fullName: SurvivorsMaker.Run.IOfferPool
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Generates channel-specific candidates using the same eligibility rules as acquisition.
+  example: []
+  syntax:
+    content: public interface IOfferPool
+    content.vb: Public Interface IOfferPool
+  derivedClasses:
+  - SurvivorsMaker.Run.OfferPool
+- uid: SurvivorsMaker.Run.IOfferPool.Generate(SurvivorsMaker.Run.OfferPoolRequest,System.Boolean)
+  commentId: M:SurvivorsMaker.Run.IOfferPool.Generate(SurvivorsMaker.Run.OfferPoolRequest,System.Boolean)
+  id: Generate(SurvivorsMaker.Run.OfferPoolRequest,System.Boolean)
+  parent: SurvivorsMaker.Run.IOfferPool
+  langs:
+  - csharp
+  - vb
+  name: Generate(OfferPoolRequest, bool)
+  nameWithType: IOfferPool.Generate(OfferPoolRequest, bool)
+  fullName: SurvivorsMaker.Run.IOfferPool.Generate(SurvivorsMaker.Run.OfferPoolRequest, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Generates ordered offers using run.Random; preview evaluates on copied roll state and preserves the caller random
+    and guarantee state.
+  example: []
+  syntax:
+    content: OfferPoolResult Generate(OfferPoolRequest request, bool preview = false)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Run.OfferPoolRequest
+    - id: preview
+      type: System.Boolean
+    return:
+      type: SurvivorsMaker.Run.OfferPoolResult
+    content.vb: Function Generate(request As OfferPoolRequest, preview As Boolean = False) As OfferPoolResult
+  overload: SurvivorsMaker.Run.IOfferPool.Generate*
+  nameWithType.vb: IOfferPool.Generate(OfferPoolRequest, Boolean)
+  fullName.vb: SurvivorsMaker.Run.IOfferPool.Generate(SurvivorsMaker.Run.OfferPoolRequest, Boolean)
+  name.vb: Generate(OfferPoolRequest, Boolean)
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IOfferPool.Generate*
+  commentId: Overload:SurvivorsMaker.Run.IOfferPool.Generate
+  isExternal: true
+  href: SurvivorsMaker.Run.IOfferPool.html#SurvivorsMaker_Run_IOfferPool_Generate_SurvivorsMaker_Run_OfferPoolRequest_System_Boolean_
+  name: Generate
+  nameWithType: IOfferPool.Generate
+  fullName: SurvivorsMaker.Run.IOfferPool.Generate
+- uid: SurvivorsMaker.Run.OfferPoolRequest
+  commentId: T:SurvivorsMaker.Run.OfferPoolRequest
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolRequest.html
+  name: OfferPoolRequest
+  nameWithType: OfferPoolRequest
+  fullName: SurvivorsMaker.Run.OfferPoolRequest
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.OfferPoolResult
+  commentId: T:SurvivorsMaker.Run.OfferPoolResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolResult.html
+  name: OfferPoolResult
+  nameWithType: OfferPoolResult
+  fullName: SurvivorsMaker.Run.OfferPoolResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

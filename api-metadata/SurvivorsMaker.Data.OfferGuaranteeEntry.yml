@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry
+  commentId: T:SurvivorsMaker.Data.OfferGuaranteeEntry
+  id: OfferGuaranteeEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Channels
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.EndProgress
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.FixedTier
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.HasFixedTier
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Item
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Kind
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Lifetime
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.MinTier
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.MinimumCount
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Priority
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.RequiredTags
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.StartProgress
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
+  - SurvivorsMaker.Data.OfferGuaranteeEntry.Weapon
+  langs:
+  - csharp
+  - vb
+  name: OfferGuaranteeEntry
+  nameWithType: OfferGuaranteeEntry
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Asset-backed candidate guarantee with channel, tier, progress and lifetime filters.
+  example: []
+  syntax:
+    content: public sealed class OfferGuaranteeEntry
+    content.vb: Public NotInheritable Class OfferGuaranteeEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Channels
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Channels
+  id: Channels
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: OfferGuaranteeEntry.Channels
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Channels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Offer channels this rule affects; None means no matching channels.
+  example: []
+  syntax:
+    content: '[Tooltip("Offer channels this rule affects; None means no matching channels.")]
+
+      public OfferChannel Channels'
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+    content.vb: '<Tooltip("Offer channels this rule affects; None means no matching channels.")>
+
+      Public Channels As OfferChannel'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Offer channels this rule affects; None means no matching channels.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.StartProgress
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.StartProgress
+  id: StartProgress
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: StartProgress
+  nameWithType: OfferGuaranteeEntry.StartProgress
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.StartProgress
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: First matching wave or level, inclusive; interpretation follows the offer channel.
+  example: []
+  syntax:
+    content: '[Tooltip("First matching wave or level, inclusive; interpretation follows the offer channel.")]
+
+      public int StartProgress'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("First matching wave or level, inclusive; interpretation follows the offer channel.")>
+
+      Public StartProgress As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: First matching wave or level, inclusive; interpretation follows the offer channel.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.EndProgress
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.EndProgress
+  id: EndProgress
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: EndProgress
+  nameWithType: OfferGuaranteeEntry.EndProgress
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.EndProgress
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Last matching wave or level, inclusive; maximum integer means no upper cutoff.
+  example: []
+  syntax:
+    content: '[Tooltip("Last matching wave or level, inclusive; maximum integer means no upper cutoff.")]
+
+      public int EndProgress'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Last matching wave or level, inclusive; maximum integer means no upper cutoff.")>
+
+      Public EndProgress As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Last matching wave or level, inclusive; maximum integer means no upper cutoff.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.MinimumCount
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.MinimumCount
+  id: MinimumCount
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: MinimumCount
+  nameWithType: OfferGuaranteeEntry.MinimumCount
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.MinimumCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Minimum matching offers requested for this window; 0 guarantees none.
+  example: []
+  syntax:
+    content: '[Tooltip("Minimum matching offers requested for this window; 0 guarantees none.")]
+
+      public int MinimumCount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Minimum matching offers requested for this window; 0 guarantees none.")>
+
+      Public MinimumCount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum matching offers requested for this window; 0 guarantees none.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Priority
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Priority
+  id: Priority
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Priority
+  nameWithType: OfferGuaranteeEntry.Priority
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Priority
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Higher values reserve guarantee slots first; equal priorities keep authored order.
+  example: []
+  syntax:
+    content: '[Tooltip("Higher values reserve guarantee slots first; equal priorities keep authored order.")]
+
+      public int Priority'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Higher values reserve guarantee slots first; equal priorities keep authored order.")>
+
+      Public Priority As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Higher values reserve guarantee slots first; equal priorities keep authored order.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Kind
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Kind
+  id: Kind
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: OfferGuaranteeEntry.Kind
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Candidate category reserved by this guarantee.
+  example: []
+  syntax:
+    content: '[Tooltip("Candidate category reserved by this guarantee.")]
+
+      public OfferKind Kind'
+    return:
+      type: SurvivorsMaker.Run.OfferKind
+    content.vb: '<Tooltip("Candidate category reserved by this guarantee.")>
+
+      Public Kind As OfferKind'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Candidate category reserved by this guarantee.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Item
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Item
+  id: Item
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: OfferGuaranteeEntry.Item
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Optional exact item/upgrade to guarantee; empty permits a candidate search.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional exact item/upgrade to guarantee; empty permits a candidate search.")]
+
+      public ItemAsset Item'
+    return:
+      type: SurvivorsMaker.Data.ItemAsset
+    content.vb: '<Tooltip("Optional exact item/upgrade to guarantee; empty permits a candidate search.")>
+
+      Public Item As ItemAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional exact item/upgrade to guarantee; empty permits a candidate search.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Weapon
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: OfferGuaranteeEntry.Weapon
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Optional exact weapon to guarantee; empty permits a candidate search.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional exact weapon to guarantee; empty permits a candidate search.")]
+
+      public WeaponAsset Weapon'
+    return:
+      type: SurvivorsMaker.Data.WeaponAsset
+    content.vb: '<Tooltip("Optional exact weapon to guarantee; empty permits a candidate search.")>
+
+      Public Weapon As WeaponAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional exact weapon to guarantee; empty permits a candidate search.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.RequiredTags
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.RequiredTags
+  id: RequiredTags
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: RequiredTags
+  nameWithType: OfferGuaranteeEntry.RequiredTags
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.RequiredTags
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Every listed tag must be present on a guaranteed candidate. Empty = no tag filter.
+  example: []
+  syntax:
+    content: '[Tooltip("Every listed tag must be present on a guaranteed candidate. Empty = no tag filter.")]
+
+      public List<string> RequiredTags'
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: '<Tooltip("Every listed tag must be present on a guaranteed candidate. Empty = no tag filter.")>
+
+      Public RequiredTags As List(Of String)'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Every listed tag must be present on a guaranteed candidate. Empty = no tag filter.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.MinTier
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.MinTier
+  id: MinTier
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: MinTier
+  nameWithType: OfferGuaranteeEntry.MinTier
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.MinTier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Lowest eligible zero-based tier; 0 allows the lowest tier.
+  example: []
+  syntax:
+    content: '[Tooltip("Lowest eligible zero-based tier; 0 allows the lowest tier.")]
+
+      public int MinTier'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Lowest eligible zero-based tier; 0 allows the lowest tier.")>
+
+      Public MinTier As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lowest eligible zero-based tier; 0 allows the lowest tier.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.HasFixedTier
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.HasFixedTier
+  id: HasFixedTier
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: HasFixedTier
+  nameWithType: OfferGuaranteeEntry.HasFixedTier
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.HasFixedTier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Require Fixed Tier instead of rolling a tier for this guarantee.
+  example: []
+  syntax:
+    content: '[Tooltip("Require Fixed Tier instead of rolling a tier for this guarantee.")]
+
+      public bool HasFixedTier'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Require Fixed Tier instead of rolling a tier for this guarantee.")>
+
+      Public HasFixedTier As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Require Fixed Tier instead of rolling a tier for this guarantee.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.FixedTier
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.FixedTier
+  id: FixedTier
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: FixedTier
+  nameWithType: OfferGuaranteeEntry.FixedTier
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.FixedTier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Required zero-based tier when Has Fixed Tier is on.
+  example: []
+  syntax:
+    content: '[Tooltip("Required zero-based tier when Has Fixed Tier is on.")]
+
+      public int FixedTier'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Required zero-based tier when Has Fixed Tier is on.")>
+
+      Public FixedTier As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Required zero-based tier when Has Fixed Tier is on.
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.Lifetime
+  commentId: F:SurvivorsMaker.Data.OfferGuaranteeEntry.Lifetime
+  id: Lifetime
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: OfferGuaranteeEntry.Lifetime
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.Lifetime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'How often this guarantee may reserve slots: each window, once per wave, or once per run.'
+  example: []
+  syntax:
+    content: '[Tooltip("How often this guarantee may reserve slots: each window, once per wave, or once per run.")]
+
+      public GuaranteeLifetime Lifetime'
+    return:
+      type: SurvivorsMaker.Run.GuaranteeLifetime
+    content.vb: '<Tooltip("How often this guarantee may reserve slots: each window, once per wave, or once per run.")>
+
+      Public Lifetime As GuaranteeLifetime'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'How often this guarantee may reserve slots: each window, once per wave, or once per run.'
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
+  commentId: M:SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
+  id: ToDef
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: ToDef()
+  nameWithType: OfferGuaranteeEntry.ToDef()
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Converts this authoring entry to a runtime definition, resolving asset references through their caches.
+  example: []
+  syntax:
+    content: public OfferGuaranteeRule ToDef()
+    return:
+      type: SurvivorsMaker.Run.OfferGuaranteeRule
+    content.vb: Public Function ToDef() As OfferGuaranteeRule
+  overload: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef*
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.OfferGuaranteeEntry
+  langs:
+  - csharp
+  - vb
+  name: OfferGuaranteeEntry()
+  nameWithType: OfferGuaranteeEntry.OfferGuaranteeEntry()
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.OfferGuaranteeEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public OfferGuaranteeEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor*
+  nameWithType.vb: OfferGuaranteeEntry.New()
+  fullName.vb: SurvivorsMaker.Data.OfferGuaranteeEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferChannel.html
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.OfferKind
+  commentId: T:SurvivorsMaker.Run.OfferKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferKind.html
+  name: OfferKind
+  nameWithType: OfferKind
+  fullName: SurvivorsMaker.Run.OfferKind
+- uid: SurvivorsMaker.Data.ItemAsset
+  commentId: T:SurvivorsMaker.Data.ItemAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ItemAsset.html
+  name: ItemAsset
+  nameWithType: ItemAsset
+  fullName: SurvivorsMaker.Data.ItemAsset
+- uid: SurvivorsMaker.Data.WeaponAsset
+  commentId: T:SurvivorsMaker.Data.WeaponAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WeaponAsset.html
+  name: WeaponAsset
+  nameWithType: WeaponAsset
+  fullName: SurvivorsMaker.Data.WeaponAsset
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.GuaranteeLifetime
+  commentId: T:SurvivorsMaker.Run.GuaranteeLifetime
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.GuaranteeLifetime.html
+  name: GuaranteeLifetime
+  nameWithType: GuaranteeLifetime
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef*
+  commentId: Overload:SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
+  isExternal: true
+  href: SurvivorsMaker.Data.OfferGuaranteeEntry.html#SurvivorsMaker_Data_OfferGuaranteeEntry_ToDef
+  name: ToDef
+  nameWithType: OfferGuaranteeEntry.ToDef
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.ToDef
+- uid: SurvivorsMaker.Run.OfferGuaranteeRule
+  commentId: T:SurvivorsMaker.Run.OfferGuaranteeRule
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferGuaranteeRule.html
+  name: OfferGuaranteeRule
+  nameWithType: OfferGuaranteeRule
+  fullName: SurvivorsMaker.Run.OfferGuaranteeRule
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.OfferGuaranteeEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.OfferGuaranteeEntry.html#SurvivorsMaker_Data_OfferGuaranteeEntry__ctor
+  name: OfferGuaranteeEntry
+  nameWithType: OfferGuaranteeEntry.OfferGuaranteeEntry
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry.OfferGuaranteeEntry
+  nameWithType.vb: OfferGuaranteeEntry.New
+  fullName.vb: SurvivorsMaker.Data.OfferGuaranteeEntry.New
+  name.vb: New

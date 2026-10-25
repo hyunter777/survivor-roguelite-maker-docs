@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  id: StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.StatusEffectDef.#ctor
+  - SurvivorsMaker.Simulation.StatusEffectDef.Behaviour
+  - SurvivorsMaker.Simulation.StatusEffectDef.DurationSeconds
+  - SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  - SurvivorsMaker.Simulation.StatusEffectDef.Magnitude
+  - SurvivorsMaker.Simulation.StatusEffectDef.MaxStacks
+  - SurvivorsMaker.Simulation.StatusEffectDef.Parameters
+  - SurvivorsMaker.Simulation.StatusEffectDef.Stacking
+  - SurvivorsMaker.Simulation.StatusEffectDef.TickSeconds
+  langs:
+  - csharp
+  - vb
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class StatusEffectDef
+    content.vb: Public NotInheritable Class StatusEffectDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  id: Kind
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: StatusEffectDef.Kind
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatusKind Kind
+    return:
+      type: SurvivorsMaker.Simulation.StatusKind
+    content.vb: Public Kind As StatusKind
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Behaviour
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Behaviour
+  id: Behaviour
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Behaviour
+  nameWithType: StatusEffectDef.Behaviour
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Behaviour
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: "Registered status id (<xref href=\"SurvivorsMaker.Simulation.SimBehaviours.Statuses\" data-throw-if-not-resolved=\"false\"></xref>).
+    Empty = the built-in behaviour of <xref href=\"SurvivorsMaker.Simulation.StatusEffectDef.Kind\" data-throw-if-not-resolved=\"false\"></xref>.\n
+    \           An enemy holds at most one instance per behaviour id."
+  example: []
+  syntax:
+    content: public string Behaviour
+    return:
+      type: System.String
+    content.vb: Public Behaviour As String
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Parameters
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Parameters
+  id: Parameters
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: StatusEffectDef.Parameters
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Parameters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Values a custom status reads.
+  example: []
+  syntax:
+    content: public List<BehaviourParameter> Parameters
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    content.vb: Public Parameters As List(Of BehaviourParameter)
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.DurationSeconds
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.DurationSeconds
+  id: DurationSeconds
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: StatusEffectDef.DurationSeconds
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.DurationSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float DurationSeconds
+    return:
+      type: System.Single
+    content.vb: Public DurationSeconds As Single
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.TickSeconds
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.TickSeconds
+  id: TickSeconds
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: TickSeconds
+  nameWithType: StatusEffectDef.TickSeconds
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.TickSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Burn: seconds between damage ticks.'
+  example: []
+  syntax:
+    content: public float TickSeconds
+    return:
+      type: System.Single
+    content.vb: Public TickSeconds As Single
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Magnitude
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Magnitude
+  id: Magnitude
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: StatusEffectDef.Magnitude
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Magnitude
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Burn: damage per tick per stack. Slow: fraction 0–1. Stun: unused.'
+  example: []
+  syntax:
+    content: public float Magnitude
+    return:
+      type: System.Single
+    content.vb: Public Magnitude As Single
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Stacking
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Stacking
+  id: Stacking
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: Stacking
+  nameWithType: StatusEffectDef.Stacking
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Stacking
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StackRule Stacking
+    return:
+      type: SurvivorsMaker.Simulation.StackRule
+    content.vb: Public Stacking As StackRule
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.MaxStacks
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.MaxStacks
+  id: MaxStacks
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: MaxStacks
+  nameWithType: StatusEffectDef.MaxStacks
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.MaxStacks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int MaxStacks
+    return:
+      type: System.Int32
+    content.vb: Public MaxStacks As Integer
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.StatusEffectDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.StatusEffectDef
+  langs:
+  - csharp
+  - vb
+  name: StatusEffectDef()
+  nameWithType: StatusEffectDef.StatusEffectDef()
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.StatusEffectDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatusEffectDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.StatusEffectDef.#ctor*
+  nameWithType.vb: StatusEffectDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.StatusEffectDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.StatusKind
+  commentId: T:SurvivorsMaker.Simulation.StatusKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusKind.html
+  name: StatusKind
+  nameWithType: StatusKind
+  fullName: SurvivorsMaker.Simulation.StatusKind
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_Statuses
+  name: Statuses
+  nameWithType: SimBehaviours.Statuses
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Statuses
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.StatusEffectDef.Kind
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html#SurvivorsMaker_Simulation_StatusEffectDef_Kind
+  name: Kind
+  nameWithType: StatusEffectDef.Kind
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.Kind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BehaviourParameter>
+  nameWithType: List<BehaviourParameter>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>
+  nameWithType.vb: List(Of BehaviourParameter)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter)
+  name.vb: List(Of BehaviourParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.StackRule
+  commentId: T:SurvivorsMaker.Simulation.StackRule
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StackRule.html
+  name: StackRule
+  nameWithType: StackRule
+  fullName: SurvivorsMaker.Simulation.StackRule
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.StatusEffectDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.StatusEffectDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html#SurvivorsMaker_Simulation_StatusEffectDef__ctor
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef.StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef.StatusEffectDef
+  nameWithType.vb: StatusEffectDef.New
+  fullName.vb: SurvivorsMaker.Simulation.StatusEffectDef.New
+  name.vb: New

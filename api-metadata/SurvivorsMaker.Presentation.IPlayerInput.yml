@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.IPlayerInput
+  commentId: T:SurvivorsMaker.Presentation.IPlayerInput
+  id: IPlayerInput
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.IPlayerInput.Move
+  - SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+  langs:
+  - csharp
+  - vb
+  name: IPlayerInput
+  nameWithType: IPlayerInput
+  fullName: SurvivorsMaker.Presentation.IPlayerInput
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Player input for one tick. Replace to use another input source (AI, replay, network).
+  example: []
+  syntax:
+    content: public interface IPlayerInput
+    content.vb: Public Interface IPlayerInput
+  derivedClasses:
+  - SurvivorsMaker.Presentation.InputSystemPlayerInput
+- uid: SurvivorsMaker.Presentation.IPlayerInput.Move
+  commentId: P:SurvivorsMaker.Presentation.IPlayerInput.Move
+  id: Move
+  parent: SurvivorsMaker.Presentation.IPlayerInput
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: IPlayerInput.Move
+  fullName: SurvivorsMaker.Presentation.IPlayerInput.Move
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Movement, length 0–1.
+  example: []
+  syntax:
+    content: Vec2 Move { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: ReadOnly Property Move As Vec2
+  overload: SurvivorsMaker.Presentation.IPlayerInput.Move*
+- uid: SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+  commentId: P:SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+  id: PausePressed
+  parent: SurvivorsMaker.Presentation.IPlayerInput
+  langs:
+  - csharp
+  - vb
+  name: PausePressed
+  nameWithType: IPlayerInput.PausePressed
+  fullName: SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: True on the frame pause was pressed.
+  example: []
+  syntax:
+    content: bool PausePressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property PausePressed As Boolean
+  overload: SurvivorsMaker.Presentation.IPlayerInput.PausePressed*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.IPlayerInput.Move*
+  commentId: Overload:SurvivorsMaker.Presentation.IPlayerInput.Move
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IPlayerInput.html#SurvivorsMaker_Presentation_IPlayerInput_Move
+  name: Move
+  nameWithType: IPlayerInput.Move
+  fullName: SurvivorsMaker.Presentation.IPlayerInput.Move
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.IPlayerInput.PausePressed*
+  commentId: Overload:SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IPlayerInput.html#SurvivorsMaker_Presentation_IPlayerInput_PausePressed
+  name: PausePressed
+  nameWithType: IPlayerInput.PausePressed
+  fullName: SurvivorsMaker.Presentation.IPlayerInput.PausePressed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

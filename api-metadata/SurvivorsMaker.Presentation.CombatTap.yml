@@ -1,0 +1,1172 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.CombatTap
+  commentId: T:SurvivorsMaker.Presentation.CombatTap
+  id: CombatTap
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.CombatTap.#ctor(SurvivorsMaker.Simulation.ICombat)
+  - SurvivorsMaker.Presentation.CombatTap.AfterTick(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Presentation.CombatTap.BeginWave(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Presentation.CombatTap.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  - SurvivorsMaker.Presentation.CombatTap.EnemyIdOf(System.Int32)
+  - SurvivorsMaker.Presentation.CombatTap.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  - SurvivorsMaker.Presentation.CombatTap.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Presentation.CombatTap.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  - SurvivorsMaker.Presentation.CombatTap.Inner
+  - SurvivorsMaker.Presentation.CombatTap.Ledger
+  - SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+  langs:
+  - csharp
+  - vb
+  name: CombatTap
+  nameWithType: CombatTap
+  fullName: SurvivorsMaker.Presentation.CombatTap
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Read-only wrapper around the run''s <xref href="SurvivorsMaker.Simulation.ICombat" data-throw-if-not-resolved="false"></xref>:
+    forwards every call unchanged (same order, same random
+
+    numbers) and reports the damage actually applied to a <xref href="SurvivorsMaker.Presentation.CombatLedger" data-throw-if-not-resolved="false"></xref>,
+    attributed to the weapon from
+
+    <xref href="SurvivorsMaker.Simulation.SimWorld.HitSource" data-throw-if-not-resolved="false"></xref> or the hit''s slot.
+    Player damage is split into contact and enemy projectiles.'
+  example: []
+  syntax:
+    content: 'public sealed class CombatTap : ICombat'
+    content.vb: Public NotInheritable Class CombatTap Implements ICombat
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Simulation.ICombat
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.CombatTap.#ctor(SurvivorsMaker.Simulation.ICombat)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.#ctor(SurvivorsMaker.Simulation.ICombat)
+  id: '#ctor(SurvivorsMaker.Simulation.ICombat)'
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: CombatTap(ICombat)
+  nameWithType: CombatTap.CombatTap(ICombat)
+  fullName: SurvivorsMaker.Presentation.CombatTap.CombatTap(SurvivorsMaker.Simulation.ICombat)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public CombatTap(ICombat inner)
+    parameters:
+    - id: inner
+      type: SurvivorsMaker.Simulation.ICombat
+    content.vb: Public Sub New(inner As ICombat)
+  overload: SurvivorsMaker.Presentation.CombatTap.#ctor*
+  nameWithType.vb: CombatTap.New(ICombat)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.New(SurvivorsMaker.Simulation.ICombat)
+  name.vb: New(ICombat)
+- uid: SurvivorsMaker.Presentation.CombatTap.BeginWave(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.BeginWave(SurvivorsMaker.Simulation.SimWorld)
+  id: BeginWave(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: BeginWave(SimWorld)
+  nameWithType: CombatTap.BeginWave(SimWorld)
+  fullName: SurvivorsMaker.Presentation.CombatTap.BeginWave(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Forgets entity ids of the previous wave and learns the enemies already present.
+  example: []
+  syntax:
+    content: public void BeginWave(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub BeginWave(world As SimWorld)
+  overload: SurvivorsMaker.Presentation.CombatTap.BeginWave*
+- uid: SurvivorsMaker.Presentation.CombatTap.AfterTick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.AfterTick(SurvivorsMaker.Simulation.SimWorld)
+  id: AfterTick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: AfterTick(SimWorld)
+  nameWithType: CombatTap.AfterTick(SimWorld)
+  fullName: SurvivorsMaker.Presentation.CombatTap.AfterTick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'After a tick: learns the enemies that appeared, so damage from a dead shooter''s projectile keeps its source.'
+  example: []
+  syntax:
+    content: public void AfterTick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub AfterTick(world As SimWorld)
+  overload: SurvivorsMaker.Presentation.CombatTap.AfterTick*
+- uid: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.EnemyIdOf(System.Int32)
+  id: EnemyIdOf(System.Int32)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: EnemyIdOf(int)
+  nameWithType: CombatTap.EnemyIdOf(int)
+  fullName: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enemy definition id of an entity id seen this wave, or "".
+  example: []
+  syntax:
+    content: public string EnemyIdOf(int entityId)
+    parameters:
+    - id: entityId
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function EnemyIdOf(entityId As Integer) As String
+  overload: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf*
+  nameWithType.vb: CombatTap.EnemyIdOf(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf(Integer)
+  name.vb: EnemyIdOf(Integer)
+- uid: SurvivorsMaker.Presentation.CombatTap.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: HitEnemy(SimWorld, Enemy, int, bool, int, Vec2, float)
+  nameWithType: CombatTap.HitEnemy(SimWorld, Enemy, int, bool, int, Vec2, float)
+  fullName: SurvivorsMaker.Presentation.CombatTap.HitEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    int, bool, int, SurvivorsMaker.Simulation.Vec2, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'A weapon hit: applies damage, emits EnemyDamaged, rolls on-hit heal, applies knockback in
+
+    <code class="paramref">knockbackDirection</code>. Death is collected later in the tick.'
+  example: []
+  syntax:
+    content: public void HitEnemy(SimWorld world, Enemy target, int damage, bool crit, int slot, Vec2 knockbackDirection,
+      float knockback)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: target
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: damage
+      type: System.Int32
+    - id: crit
+      type: System.Boolean
+    - id: slot
+      type: System.Int32
+    - id: knockbackDirection
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: knockback
+      type: System.Single
+    content.vb: Public Sub HitEnemy(world As SimWorld, target As Enemy, damage As Integer, crit As Boolean, slot As Integer,
+      knockbackDirection As Vec2, knockback As Single)
+  overload: SurvivorsMaker.Presentation.CombatTap.HitEnemy*
+  implements:
+  - SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  nameWithType.vb: CombatTap.HitEnemy(SimWorld, Enemy, Integer, Boolean, Integer, Vec2, Single)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.HitEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    Integer, Boolean, Integer, SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: HitEnemy(SimWorld, Enemy, Integer, Boolean, Integer, Vec2, Single)
+- uid: SurvivorsMaker.Presentation.CombatTap.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  id: DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: DamageEnemy(SimWorld, Enemy, int, SimEventKind)
+  nameWithType: CombatTap.DamageEnemy(SimWorld, Enemy, int, SimEventKind)
+  fullName: SurvivorsMaker.Presentation.CombatTap.DamageEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    int, SurvivorsMaker.Simulation.SimEventKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Damage that is not a weapon hit (status ticks, explosions, chains, trigger effects): applies
+
+    damage (elite armor and boss invulnerability included) and emits <code class="paramref">kind</code>
+
+    (EnemyDamaged or StatusDamage). No on-hit heal, knockback, hit effects or OnHit triggers.
+
+    <xref href="SurvivorsMaker.Simulation.SimWorld.HitSource" data-throw-if-not-resolved="false"></xref> is set by the caller
+    when a weapon is behind it.'
+  example: []
+  syntax:
+    content: public void DamageEnemy(SimWorld world, Enemy target, int damage, SimEventKind kind)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: target
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: damage
+      type: System.Int32
+    - id: kind
+      type: SurvivorsMaker.Simulation.SimEventKind
+    content.vb: Public Sub DamageEnemy(world As SimWorld, target As Enemy, damage As Integer, kind As SimEventKind)
+  overload: SurvivorsMaker.Presentation.CombatTap.DamageEnemy*
+  implements:
+  - SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  nameWithType.vb: CombatTap.DamageEnemy(SimWorld, Enemy, Integer, SimEventKind)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.DamageEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    Integer, SurvivorsMaker.Simulation.SimEventKind)
+  name.vb: DamageEnemy(SimWorld, Enemy, Integer, SimEventKind)
+- uid: SurvivorsMaker.Presentation.CombatTap.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  id: HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: HitPlayer(SimWorld, int, int)
+  nameWithType: CombatTap.HitPlayer(SimWorld, int, int)
+  fullName: SurvivorsMaker.Presentation.CombatTap.HitPlayer(SurvivorsMaker.Simulation.SimWorld, int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Contact or enemy projectile: dodge roll, armor, damage, events. Raw ≤ 0 does nothing.'
+  example: []
+  syntax:
+    content: public void HitPlayer(SimWorld world, int rawDamage, int sourceId)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: rawDamage
+      type: System.Int32
+    - id: sourceId
+      type: System.Int32
+    content.vb: Public Sub HitPlayer(world As SimWorld, rawDamage As Integer, sourceId As Integer)
+  overload: SurvivorsMaker.Presentation.CombatTap.HitPlayer*
+  implements:
+  - SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  nameWithType.vb: CombatTap.HitPlayer(SimWorld, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.HitPlayer(SurvivorsMaker.Simulation.SimWorld, Integer, Integer)
+  name.vb: HitPlayer(SimWorld, Integer, Integer)
+- uid: SurvivorsMaker.Presentation.CombatTap.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.CombatTap.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  id: HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: HealPlayer(SimWorld, int)
+  nameWithType: CombatTap.HealPlayer(SimWorld, int)
+  fullName: SurvivorsMaker.Presentation.CombatTap.HealPlayer(SurvivorsMaker.Simulation.SimWorld, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Heals a living player up to max health. Returns the amount healed.
+  example: []
+  syntax:
+    content: public int HealPlayer(SimWorld world, int amount)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: amount
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function HealPlayer(world As SimWorld, amount As Integer) As Integer
+  overload: SurvivorsMaker.Presentation.CombatTap.HealPlayer*
+  implements:
+  - SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  nameWithType.vb: CombatTap.HealPlayer(SimWorld, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.HealPlayer(SurvivorsMaker.Simulation.SimWorld, Integer)
+  name.vb: HealPlayer(SimWorld, Integer)
+- uid: SurvivorsMaker.Presentation.CombatTap.Inner
+  commentId: P:SurvivorsMaker.Presentation.CombatTap.Inner
+  id: Inner
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: CombatTap.Inner
+  fullName: SurvivorsMaker.Presentation.CombatTap.Inner
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public ICombat Inner { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.ICombat
+    content.vb: Public ReadOnly Property Inner As ICombat
+  overload: SurvivorsMaker.Presentation.CombatTap.Inner*
+- uid: SurvivorsMaker.Presentation.CombatTap.Ledger
+  commentId: P:SurvivorsMaker.Presentation.CombatTap.Ledger
+  id: Ledger
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: Ledger
+  nameWithType: CombatTap.Ledger
+  fullName: SurvivorsMaker.Presentation.CombatTap.Ledger
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Where damage goes. Null = pass-through only.
+  example: []
+  syntax:
+    content: public CombatLedger Ledger { get; set; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Presentation.CombatLedger
+    content.vb: Public Property Ledger As CombatLedger
+  overload: SurvivorsMaker.Presentation.CombatTap.Ledger*
+- uid: SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+  commentId: P:SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+  id: WeaponIdOf
+  parent: SurvivorsMaker.Presentation.CombatTap
+  langs:
+  - csharp
+  - vb
+  name: WeaponIdOf
+  nameWithType: CombatTap.WeaponIdOf
+  fullName: SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Weapon definition → owned item id (for display names). Null = <xref href="SurvivorsMaker.Simulation.WeaponDef.Id"
+    data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Func<WeaponDef, string> WeaponIdOf { get; set; }
+    parameters: []
+    return:
+      type: System.Func{SurvivorsMaker.Simulation.WeaponDef,System.String}
+    content.vb: Public Property WeaponIdOf As Func(Of WeaponDef, String)
+  overload: SurvivorsMaker.Presentation.CombatTap.WeaponIdOf*
+references:
+- uid: SurvivorsMaker.Simulation.ICombat
+  commentId: T:SurvivorsMaker.Simulation.ICombat
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html
+  name: ICombat
+  nameWithType: ICombat
+  fullName: SurvivorsMaker.Simulation.ICombat
+- uid: SurvivorsMaker.Presentation.CombatLedger
+  commentId: T:SurvivorsMaker.Presentation.CombatLedger
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatLedger.html
+  name: CombatLedger
+  nameWithType: CombatLedger
+  fullName: SurvivorsMaker.Presentation.CombatLedger
+- uid: SurvivorsMaker.Simulation.SimWorld.HitSource
+  commentId: F:SurvivorsMaker.Simulation.SimWorld.HitSource
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html#SurvivorsMaker_Simulation_SimWorld_HitSource
+  name: HitSource
+  nameWithType: SimWorld.HitSource
+  fullName: SurvivorsMaker.Simulation.SimWorld.HitSource
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.CombatTap.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap__ctor_SurvivorsMaker_Simulation_ICombat_
+  name: CombatTap
+  nameWithType: CombatTap.CombatTap
+  fullName: SurvivorsMaker.Presentation.CombatTap.CombatTap
+  nameWithType.vb: CombatTap.New
+  fullName.vb: SurvivorsMaker.Presentation.CombatTap.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.CombatTap.BeginWave*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.BeginWave
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_BeginWave_SurvivorsMaker_Simulation_SimWorld_
+  name: BeginWave
+  nameWithType: CombatTap.BeginWave
+  fullName: SurvivorsMaker.Presentation.CombatTap.BeginWave
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Presentation.CombatTap.AfterTick*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.AfterTick
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_AfterTick_SurvivorsMaker_Simulation_SimWorld_
+  name: AfterTick
+  nameWithType: CombatTap.AfterTick
+  fullName: SurvivorsMaker.Presentation.CombatTap.AfterTick
+- uid: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.EnemyIdOf
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_EnemyIdOf_System_Int32_
+  name: EnemyIdOf
+  nameWithType: CombatTap.EnemyIdOf
+  fullName: SurvivorsMaker.Presentation.CombatTap.EnemyIdOf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.CombatTap.HitEnemy*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.HitEnemy
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_HitEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_System_Boolean_System_Int32_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: HitEnemy
+  nameWithType: CombatTap.HitEnemy
+  fullName: SurvivorsMaker.Presentation.CombatTap.HitEnemy
+- uid: SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.ICombat
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_System_Boolean_System_Int32_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: HitEnemy(SimWorld, Enemy, int, bool, int, Vec2, float)
+  nameWithType: ICombat.HitEnemy(SimWorld, Enemy, int, bool, int, Vec2, float)
+  fullName: SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    int, bool, int, SurvivorsMaker.Simulation.Vec2, float)
+  nameWithType.vb: ICombat.HitEnemy(SimWorld, Enemy, Integer, Boolean, Integer, Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    Integer, Boolean, Integer, SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: HitEnemy(SimWorld, Enemy, Integer, Boolean, Integer, Vec2, Single)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+    name: HitEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_System_Boolean_System_Int32_SurvivorsMaker_Simulation_Vec2_System_Single_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ICombat.HitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,System.Boolean,System.Int32,SurvivorsMaker.Simulation.Vec2,System.Single)
+    name: HitEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_System_Boolean_System_Int32_SurvivorsMaker_Simulation_Vec2_System_Single_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.CombatTap.DamageEnemy*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.DamageEnemy
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_DamageEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_SurvivorsMaker_Simulation_SimEventKind_
+  name: DamageEnemy
+  nameWithType: CombatTap.DamageEnemy
+  fullName: SurvivorsMaker.Presentation.CombatTap.DamageEnemy
+- uid: SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  commentId: M:SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+  parent: SurvivorsMaker.Simulation.ICombat
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_DamageEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_SurvivorsMaker_Simulation_SimEventKind_
+  name: DamageEnemy(SimWorld, Enemy, int, SimEventKind)
+  nameWithType: ICombat.DamageEnemy(SimWorld, Enemy, int, SimEventKind)
+  fullName: SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    int, SurvivorsMaker.Simulation.SimEventKind)
+  nameWithType.vb: ICombat.DamageEnemy(SimWorld, Enemy, Integer, SimEventKind)
+  fullName.vb: SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    Integer, SurvivorsMaker.Simulation.SimEventKind)
+  name.vb: DamageEnemy(SimWorld, Enemy, Integer, SimEventKind)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+    name: DamageEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_DamageEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_SurvivorsMaker_Simulation_SimEventKind_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimEventKind
+    name: SimEventKind
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimEventKind.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ICombat.DamageEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,System.Int32,SurvivorsMaker.Simulation.SimEventKind)
+    name: DamageEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_DamageEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_System_Int32_SurvivorsMaker_Simulation_SimEventKind_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimEventKind
+    name: SimEventKind
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimEventKind.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimEventKind
+  commentId: T:SurvivorsMaker.Simulation.SimEventKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEventKind.html
+  name: SimEventKind
+  nameWithType: SimEventKind
+  fullName: SurvivorsMaker.Simulation.SimEventKind
+- uid: SurvivorsMaker.Presentation.CombatTap.HitPlayer*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.HitPlayer
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_HitPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_System_Int32_
+  name: HitPlayer
+  nameWithType: CombatTap.HitPlayer
+  fullName: SurvivorsMaker.Presentation.CombatTap.HitPlayer
+- uid: SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.ICombat
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_System_Int32_
+  name: HitPlayer(SimWorld, int, int)
+  nameWithType: ICombat.HitPlayer(SimWorld, int, int)
+  fullName: SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld, int, int)
+  nameWithType.vb: ICombat.HitPlayer(SimWorld, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld, Integer, Integer)
+  name.vb: HitPlayer(SimWorld, Integer, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+    name: HitPlayer
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ICombat.HitPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32,System.Int32)
+    name: HitPlayer
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HitPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Presentation.CombatTap.HealPlayer*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.HealPlayer
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_HealPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  name: HealPlayer
+  nameWithType: CombatTap.HealPlayer
+  fullName: SurvivorsMaker.Presentation.CombatTap.HealPlayer
+- uid: SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  parent: SurvivorsMaker.Simulation.ICombat
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HealPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  name: HealPlayer(SimWorld, int)
+  nameWithType: ICombat.HealPlayer(SimWorld, int)
+  fullName: SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld, int)
+  nameWithType.vb: ICombat.HealPlayer(SimWorld, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld, Integer)
+  name.vb: HealPlayer(SimWorld, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+    name: HealPlayer
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HealPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ICombat.HealPlayer(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+    name: HealPlayer
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ICombat.html#SurvivorsMaker_Simulation_ICombat_HealPlayer_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Presentation.CombatTap.Inner*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.Inner
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_Inner
+  name: Inner
+  nameWithType: CombatTap.Inner
+  fullName: SurvivorsMaker.Presentation.CombatTap.Inner
+- uid: SurvivorsMaker.Presentation.CombatTap.Ledger*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.Ledger
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_Ledger
+  name: Ledger
+  nameWithType: CombatTap.Ledger
+  fullName: SurvivorsMaker.Presentation.CombatTap.Ledger
+- uid: SurvivorsMaker.Simulation.WeaponDef.Id
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Id
+  isExternal: true
+  name: Id
+  nameWithType: WeaponDef.Id
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Id
+- uid: SurvivorsMaker.Presentation.CombatTap.WeaponIdOf*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatTap.html#SurvivorsMaker_Presentation_CombatTap_WeaponIdOf
+  name: WeaponIdOf
+  nameWithType: CombatTap.WeaponIdOf
+  fullName: SurvivorsMaker.Presentation.CombatTap.WeaponIdOf
+- uid: System.Func{SurvivorsMaker.Simulation.WeaponDef,System.String}
+  commentId: T:System.Func{SurvivorsMaker.Simulation.WeaponDef,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<WeaponDef, string>
+  nameWithType: Func<WeaponDef, string>
+  fullName: System.Func<SurvivorsMaker.Simulation.WeaponDef, string>
+  nameWithType.vb: Func(Of WeaponDef, String)
+  fullName.vb: System.Func(Of SurvivorsMaker.Simulation.WeaponDef, String)
+  name.vb: Func(Of WeaponDef, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: )

@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerConditionRead
+  commentId: T:SurvivorsMaker.Simulation.TriggerConditionRead
+  id: TriggerConditionRead
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerConditionRead.AfterEvent
+  - SurvivorsMaker.Simulation.TriggerConditionRead.BeforeEvent
+  - SurvivorsMaker.Simulation.TriggerConditionRead.Current
+  langs:
+  - csharp
+  - vb
+  name: TriggerConditionRead
+  nameWithType: TriggerConditionRead
+  fullName: SurvivorsMaker.Simulation.TriggerConditionRead
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Which state snapshot supplies a trigger condition value.
+  example: []
+  syntax:
+    content: public enum TriggerConditionRead
+    content.vb: Public Enum TriggerConditionRead
+- uid: SurvivorsMaker.Simulation.TriggerConditionRead.Current
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionRead.Current
+  id: Current
+  parent: SurvivorsMaker.Simulation.TriggerConditionRead
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: TriggerConditionRead.Current
+  fullName: SurvivorsMaker.Simulation.TriggerConditionRead.Current
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Current = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionRead
+- uid: SurvivorsMaker.Simulation.TriggerConditionRead.BeforeEvent
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionRead.BeforeEvent
+  id: BeforeEvent
+  parent: SurvivorsMaker.Simulation.TriggerConditionRead
+  langs:
+  - csharp
+  - vb
+  name: BeforeEvent
+  nameWithType: TriggerConditionRead.BeforeEvent
+  fullName: SurvivorsMaker.Simulation.TriggerConditionRead.BeforeEvent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: BeforeEvent = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionRead
+- uid: SurvivorsMaker.Simulation.TriggerConditionRead.AfterEvent
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionRead.AfterEvent
+  id: AfterEvent
+  parent: SurvivorsMaker.Simulation.TriggerConditionRead
+  langs:
+  - csharp
+  - vb
+  name: AfterEvent
+  nameWithType: TriggerConditionRead.AfterEvent
+  fullName: SurvivorsMaker.Simulation.TriggerConditionRead.AfterEvent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: AfterEvent = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionRead
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerConditionRead
+  commentId: T:SurvivorsMaker.Simulation.TriggerConditionRead
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerConditionRead.html
+  name: TriggerConditionRead
+  nameWithType: TriggerConditionRead
+  fullName: SurvivorsMaker.Simulation.TriggerConditionRead

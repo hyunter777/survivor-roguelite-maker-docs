@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.Scaled
+  commentId: T:SurvivorsMaker.Simulation.Scaled
+  id: Scaled
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.Scaled.#ctor(System.Single,System.Single,System.Int32)
+  - SurvivorsMaker.Simulation.Scaled.At(System.Int32)
+  - SurvivorsMaker.Simulation.Scaled.Base
+  - SurvivorsMaker.Simulation.Scaled.Min
+  - SurvivorsMaker.Simulation.Scaled.PerWave
+  langs:
+  - csharp
+  - vb
+  name: Scaled
+  nameWithType: Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'A value that grows with the wave: Base + PerWave × wavesSinceFirst, rounded, at least Min.'
+  example: []
+  syntax:
+    content: public struct Scaled
+    content.vb: Public Structure Scaled
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.Scaled.Base
+  commentId: F:SurvivorsMaker.Simulation.Scaled.Base
+  id: Base
+  parent: SurvivorsMaker.Simulation.Scaled
+  langs:
+  - csharp
+  - vb
+  name: Base
+  nameWithType: Scaled.Base
+  fullName: SurvivorsMaker.Simulation.Scaled.Base
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Base
+    return:
+      type: System.Single
+    content.vb: Public Base As Single
+- uid: SurvivorsMaker.Simulation.Scaled.PerWave
+  commentId: F:SurvivorsMaker.Simulation.Scaled.PerWave
+  id: PerWave
+  parent: SurvivorsMaker.Simulation.Scaled
+  langs:
+  - csharp
+  - vb
+  name: PerWave
+  nameWithType: Scaled.PerWave
+  fullName: SurvivorsMaker.Simulation.Scaled.PerWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float PerWave
+    return:
+      type: System.Single
+    content.vb: Public PerWave As Single
+- uid: SurvivorsMaker.Simulation.Scaled.Min
+  commentId: F:SurvivorsMaker.Simulation.Scaled.Min
+  id: Min
+  parent: SurvivorsMaker.Simulation.Scaled
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: Scaled.Min
+  fullName: SurvivorsMaker.Simulation.Scaled.Min
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Min
+    return:
+      type: System.Int32
+    content.vb: Public Min As Integer
+- uid: SurvivorsMaker.Simulation.Scaled.#ctor(System.Single,System.Single,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.Scaled.#ctor(System.Single,System.Single,System.Int32)
+  id: '#ctor(System.Single,System.Single,System.Int32)'
+  parent: SurvivorsMaker.Simulation.Scaled
+  langs:
+  - csharp
+  - vb
+  name: Scaled(float, float, int)
+  nameWithType: Scaled.Scaled(float, float, int)
+  fullName: SurvivorsMaker.Simulation.Scaled.Scaled(float, float, int)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Scaled(float baseValue, float perWave = 0, int min = 0)
+    parameters:
+    - id: baseValue
+      type: System.Single
+    - id: perWave
+      type: System.Single
+    - id: min
+      type: System.Int32
+    content.vb: Public Sub New(baseValue As Single, perWave As Single = 0, min As Integer = 0)
+  overload: SurvivorsMaker.Simulation.Scaled.#ctor*
+  nameWithType.vb: Scaled.New(Single, Single, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.Scaled.New(Single, Single, Integer)
+  name.vb: New(Single, Single, Integer)
+- uid: SurvivorsMaker.Simulation.Scaled.At(System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.Scaled.At(System.Int32)
+  id: At(System.Int32)
+  parent: SurvivorsMaker.Simulation.Scaled
+  langs:
+  - csharp
+  - vb
+  name: At(int)
+  nameWithType: Scaled.At(int)
+  fullName: SurvivorsMaker.Simulation.Scaled.At(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int At(int wavesSinceFirst)
+    parameters:
+    - id: wavesSinceFirst
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function At(wavesSinceFirst As Integer) As Integer
+  overload: SurvivorsMaker.Simulation.Scaled.At*
+  nameWithType.vb: Scaled.At(Integer)
+  fullName.vb: SurvivorsMaker.Simulation.Scaled.At(Integer)
+  name.vb: At(Integer)
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.Scaled.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.Scaled.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html#SurvivorsMaker_Simulation_Scaled__ctor_System_Single_System_Single_System_Int32_
+  name: Scaled
+  nameWithType: Scaled.Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled.Scaled
+  nameWithType.vb: Scaled.New
+  fullName.vb: SurvivorsMaker.Simulation.Scaled.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.Scaled.At*
+  commentId: Overload:SurvivorsMaker.Simulation.Scaled.At
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html#SurvivorsMaker_Simulation_Scaled_At_System_Int32_
+  name: At
+  nameWithType: Scaled.At
+  fullName: SurvivorsMaker.Simulation.Scaled.At

@@ -1,0 +1,627 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.WeaponLabModel
+  commentId: T:SurvivorsMaker.Editor.WeaponLabModel
+  id: WeaponLabModel
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.WeaponLabModel.Dummies(System.Int32,System.Single)
+  - SurvivorsMaker.Editor.WeaponLabModel.Effective(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabStats,SurvivorsMaker.Simulation.SimSettings)
+  - SurvivorsMaker.Editor.WeaponLabModel.InReach(System.Collections.Generic.List{UnityEngine.Vector2},System.Single)
+  - SurvivorsMaker.Editor.WeaponLabModel.RoughDps(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabEffective,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: WeaponLabModel
+  nameWithType: WeaponLabModel
+  fullName: SurvivorsMaker.Editor.WeaponLabModel
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static class WeaponLabModel
+    content.vb: Public Module WeaponLabModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.WeaponLabModel.Effective(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabStats,SurvivorsMaker.Simulation.SimSettings)
+  commentId: M:SurvivorsMaker.Editor.WeaponLabModel.Effective(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabStats,SurvivorsMaker.Simulation.SimSettings)
+  id: Effective(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabStats,SurvivorsMaker.Simulation.SimSettings)
+  parent: SurvivorsMaker.Editor.WeaponLabModel
+  langs:
+  - csharp
+  - vb
+  name: Effective(WeaponDef, WeaponLabStats, SimSettings)
+  nameWithType: WeaponLabModel.Effective(WeaponDef, WeaponLabStats, SimSettings)
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.Effective(SurvivorsMaker.Simulation.WeaponDef, SurvivorsMaker.Editor.WeaponLabStats,
+    SurvivorsMaker.Simulation.SimSettings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Mirrors the built-in weapon rules closely enough for the preview: cooldown ÷ (1 + attack speed %, floored),
+
+    flat range bonus, flat extra projectiles for ranged weapons, percent damage bonus on base damage.'
+  example: []
+  syntax:
+    content: public static WeaponLabEffective Effective(WeaponDef def, WeaponLabStats stats, SimSettings sim)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.WeaponDef
+    - id: stats
+      type: SurvivorsMaker.Editor.WeaponLabStats
+    - id: sim
+      type: SurvivorsMaker.Simulation.SimSettings
+    return:
+      type: SurvivorsMaker.Editor.WeaponLabEffective
+    content.vb: Public Shared Function Effective(def As WeaponDef, stats As WeaponLabStats, sim As SimSettings) As WeaponLabEffective
+  overload: SurvivorsMaker.Editor.WeaponLabModel.Effective*
+- uid: SurvivorsMaker.Editor.WeaponLabModel.RoughDps(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabEffective,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.WeaponLabModel.RoughDps(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabEffective,System.Int32,System.Int32)
+  id: RoughDps(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Editor.WeaponLabEffective,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Editor.WeaponLabModel
+  langs:
+  - csharp
+  - vb
+  name: RoughDps(WeaponDef, WeaponLabEffective, int, int)
+  nameWithType: WeaponLabModel.RoughDps(WeaponDef, WeaponLabEffective, int, int)
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.RoughDps(SurvivorsMaker.Simulation.WeaponDef, SurvivorsMaker.Editor.WeaponLabEffective,
+    int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Back-of-envelope DPS against <code class="paramref">dummiesInReach</code> targets (ignores scaling stats, pierce
+
+    and travel time). The Weapon Lab result from the simulation is the number to trust.'
+  example: []
+  syntax:
+    content: public static float RoughDps(WeaponDef def, WeaponLabEffective e, int dummiesInReach, int ticksPerSecond)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.WeaponDef
+    - id: e
+      type: SurvivorsMaker.Editor.WeaponLabEffective
+    - id: dummiesInReach
+      type: System.Int32
+    - id: ticksPerSecond
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function RoughDps(def As WeaponDef, e As WeaponLabEffective, dummiesInReach As Integer, ticksPerSecond
+      As Integer) As Single
+  overload: SurvivorsMaker.Editor.WeaponLabModel.RoughDps*
+  nameWithType.vb: WeaponLabModel.RoughDps(WeaponDef, WeaponLabEffective, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Editor.WeaponLabModel.RoughDps(SurvivorsMaker.Simulation.WeaponDef, SurvivorsMaker.Editor.WeaponLabEffective,
+    Integer, Integer)
+  name.vb: RoughDps(WeaponDef, WeaponLabEffective, Integer, Integer)
+- uid: SurvivorsMaker.Editor.WeaponLabModel.Dummies(System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Editor.WeaponLabModel.Dummies(System.Int32,System.Single)
+  id: Dummies(System.Int32,System.Single)
+  parent: SurvivorsMaker.Editor.WeaponLabModel
+  langs:
+  - csharp
+  - vb
+  name: Dummies(int, float)
+  nameWithType: WeaponLabModel.Dummies(int, float)
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.Dummies(int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Dummy positions on the same single ring used by the headless weapon probe.
+  example: []
+  syntax:
+    content: public static List<Vector2> Dummies(int count, float ringRadius)
+    parameters:
+    - id: count
+      type: System.Int32
+    - id: ringRadius
+      type: System.Single
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    content.vb: Public Shared Function Dummies(count As Integer, ringRadius As Single) As List(Of Vector2)
+  overload: SurvivorsMaker.Editor.WeaponLabModel.Dummies*
+  nameWithType.vb: WeaponLabModel.Dummies(Integer, Single)
+  fullName.vb: SurvivorsMaker.Editor.WeaponLabModel.Dummies(Integer, Single)
+  name.vb: Dummies(Integer, Single)
+- uid: SurvivorsMaker.Editor.WeaponLabModel.InReach(System.Collections.Generic.List{UnityEngine.Vector2},System.Single)
+  commentId: M:SurvivorsMaker.Editor.WeaponLabModel.InReach(System.Collections.Generic.List{UnityEngine.Vector2},System.Single)
+  id: InReach(System.Collections.Generic.List{UnityEngine.Vector2},System.Single)
+  parent: SurvivorsMaker.Editor.WeaponLabModel
+  langs:
+  - csharp
+  - vb
+  name: InReach(List<Vector2>, float)
+  nameWithType: WeaponLabModel.InReach(List<Vector2>, float)
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.InReach(System.Collections.Generic.List<UnityEngine.Vector2>, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: How many dummies are within <code class="paramref">reach</code> of the origin.
+  example: []
+  syntax:
+    content: public static int InReach(List<Vector2> dummies, float reach)
+    parameters:
+    - id: dummies
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    - id: reach
+      type: System.Single
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function InReach(dummies As List(Of Vector2), reach As Single) As Integer
+  overload: SurvivorsMaker.Editor.WeaponLabModel.InReach*
+  nameWithType.vb: WeaponLabModel.InReach(List(Of Vector2), Single)
+  fullName.vb: SurvivorsMaker.Editor.WeaponLabModel.InReach(System.Collections.Generic.List(Of UnityEngine.Vector2), Single)
+  name.vb: InReach(List(Of Vector2), Single)
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.WeaponLabModel.Effective*
+  commentId: Overload:SurvivorsMaker.Editor.WeaponLabModel.Effective
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabModel.html#SurvivorsMaker_Editor_WeaponLabModel_Effective_SurvivorsMaker_Simulation_WeaponDef_SurvivorsMaker_Editor_WeaponLabStats_SurvivorsMaker_Simulation_SimSettings_
+  name: Effective
+  nameWithType: WeaponLabModel.Effective
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.Effective
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+- uid: SurvivorsMaker.Editor.WeaponLabStats
+  commentId: T:SurvivorsMaker.Editor.WeaponLabStats
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabStats.html
+  name: WeaponLabStats
+  nameWithType: WeaponLabStats
+  fullName: SurvivorsMaker.Editor.WeaponLabStats
+- uid: SurvivorsMaker.Simulation.SimSettings
+  commentId: T:SurvivorsMaker.Simulation.SimSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html
+  name: SimSettings
+  nameWithType: SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings
+- uid: SurvivorsMaker.Editor.WeaponLabEffective
+  commentId: T:SurvivorsMaker.Editor.WeaponLabEffective
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabEffective.html
+  name: WeaponLabEffective
+  nameWithType: WeaponLabEffective
+  fullName: SurvivorsMaker.Editor.WeaponLabEffective
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Editor.WeaponLabModel.RoughDps*
+  commentId: Overload:SurvivorsMaker.Editor.WeaponLabModel.RoughDps
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabModel.html#SurvivorsMaker_Editor_WeaponLabModel_RoughDps_SurvivorsMaker_Simulation_WeaponDef_SurvivorsMaker_Editor_WeaponLabEffective_System_Int32_System_Int32_
+  name: RoughDps
+  nameWithType: WeaponLabModel.RoughDps
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.RoughDps
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Editor.WeaponLabModel.Dummies*
+  commentId: Overload:SurvivorsMaker.Editor.WeaponLabModel.Dummies
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabModel.html#SurvivorsMaker_Editor_WeaponLabModel_Dummies_System_Int32_System_Single_
+  name: Dummies
+  nameWithType: WeaponLabModel.Dummies
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.Dummies
+- uid: System.Collections.Generic.List{UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.WeaponLabModel.InReach*
+  commentId: Overload:SurvivorsMaker.Editor.WeaponLabModel.InReach
+  isExternal: true
+  href: SurvivorsMaker.Editor.WeaponLabModel.html#SurvivorsMaker_Editor_WeaponLabModel_InReach_System_Collections_Generic_List_UnityEngine_Vector2__System_Single_
+  name: InReach
+  nameWithType: WeaponLabModel.InReach
+  fullName: SurvivorsMaker.Editor.WeaponLabModel.InReach

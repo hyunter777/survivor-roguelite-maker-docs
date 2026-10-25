@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  id: RunResult
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunResult.AtMaxOwned
+  - SurvivorsMaker.Run.RunResult.CannotMerge
+  - SurvivorsMaker.Run.RunResult.EmptySlot
+  - SurvivorsMaker.Run.RunResult.InvalidIndex
+  - SurvivorsMaker.Run.RunResult.LastWeapon
+  - SurvivorsMaker.Run.RunResult.NoWeaponSlot
+  - SurvivorsMaker.Run.RunResult.NotAllowed
+  - SurvivorsMaker.Run.RunResult.NotEnoughCurrency
+  - SurvivorsMaker.Run.RunResult.Ok
+  - SurvivorsMaker.Run.RunResult.WaveNotFinished
+  - SurvivorsMaker.Run.RunResult.WrongPhase
+  langs:
+  - csharp
+  - vb
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Outcome of a player action. Anything but Ok leaves the run unchanged.
+  example: []
+  syntax:
+    content: public enum RunResult
+    content.vb: Public Enum RunResult
+- uid: SurvivorsMaker.Run.RunResult.Ok
+  commentId: F:SurvivorsMaker.Run.RunResult.Ok
+  id: Ok
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: Ok
+  nameWithType: RunResult.Ok
+  fullName: SurvivorsMaker.Run.RunResult.Ok
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Ok = 0
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.WrongPhase
+  commentId: F:SurvivorsMaker.Run.RunResult.WrongPhase
+  id: WrongPhase
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: WrongPhase
+  nameWithType: RunResult.WrongPhase
+  fullName: SurvivorsMaker.Run.RunResult.WrongPhase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: WrongPhase = 1
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.InvalidIndex
+  commentId: F:SurvivorsMaker.Run.RunResult.InvalidIndex
+  id: InvalidIndex
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: InvalidIndex
+  nameWithType: RunResult.InvalidIndex
+  fullName: SurvivorsMaker.Run.RunResult.InvalidIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: InvalidIndex = 2
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.EmptySlot
+  commentId: F:SurvivorsMaker.Run.RunResult.EmptySlot
+  id: EmptySlot
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: EmptySlot
+  nameWithType: RunResult.EmptySlot
+  fullName: SurvivorsMaker.Run.RunResult.EmptySlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: EmptySlot = 3
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.NotEnoughCurrency
+  commentId: F:SurvivorsMaker.Run.RunResult.NotEnoughCurrency
+  id: NotEnoughCurrency
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: NotEnoughCurrency
+  nameWithType: RunResult.NotEnoughCurrency
+  fullName: SurvivorsMaker.Run.RunResult.NotEnoughCurrency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: NotEnoughCurrency = 4
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.NoWeaponSlot
+  commentId: F:SurvivorsMaker.Run.RunResult.NoWeaponSlot
+  id: NoWeaponSlot
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: NoWeaponSlot
+  nameWithType: RunResult.NoWeaponSlot
+  fullName: SurvivorsMaker.Run.RunResult.NoWeaponSlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: NoWeaponSlot = 5
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.AtMaxOwned
+  commentId: F:SurvivorsMaker.Run.RunResult.AtMaxOwned
+  id: AtMaxOwned
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: AtMaxOwned
+  nameWithType: RunResult.AtMaxOwned
+  fullName: SurvivorsMaker.Run.RunResult.AtMaxOwned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: AtMaxOwned = 6
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.LastWeapon
+  commentId: F:SurvivorsMaker.Run.RunResult.LastWeapon
+  id: LastWeapon
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: LastWeapon
+  nameWithType: RunResult.LastWeapon
+  fullName: SurvivorsMaker.Run.RunResult.LastWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: LastWeapon = 7
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.CannotMerge
+  commentId: F:SurvivorsMaker.Run.RunResult.CannotMerge
+  id: CannotMerge
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: CannotMerge
+  nameWithType: RunResult.CannotMerge
+  fullName: SurvivorsMaker.Run.RunResult.CannotMerge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: CannotMerge = 8
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.WaveNotFinished
+  commentId: F:SurvivorsMaker.Run.RunResult.WaveNotFinished
+  id: WaveNotFinished
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: WaveNotFinished
+  nameWithType: RunResult.WaveNotFinished
+  fullName: SurvivorsMaker.Run.RunResult.WaveNotFinished
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: WaveNotFinished = 9
+    return:
+      type: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunResult.NotAllowed
+  commentId: F:SurvivorsMaker.Run.RunResult.NotAllowed
+  id: NotAllowed
+  parent: SurvivorsMaker.Run.RunResult
+  langs:
+  - csharp
+  - vb
+  name: NotAllowed
+  nameWithType: RunResult.NotAllowed
+  fullName: SurvivorsMaker.Run.RunResult.NotAllowed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: NotAllowed = 10
+    return:
+      type: SurvivorsMaker.Run.RunResult
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult

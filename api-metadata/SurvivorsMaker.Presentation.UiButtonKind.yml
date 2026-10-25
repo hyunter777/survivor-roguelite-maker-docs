@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiButtonKind
+  commentId: T:SurvivorsMaker.Presentation.UiButtonKind
+  id: UiButtonKind
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiButtonKind.Danger
+  - SurvivorsMaker.Presentation.UiButtonKind.Primary
+  - SurvivorsMaker.Presentation.UiButtonKind.Secondary
+  langs:
+  - csharp
+  - vb
+  name: UiButtonKind
+  nameWithType: UiButtonKind
+  fullName: SurvivorsMaker.Presentation.UiButtonKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Semantic button colour role: primary action, secondary action or destructive action.'
+  example: []
+  syntax:
+    content: public enum UiButtonKind
+    content.vb: Public Enum UiButtonKind
+- uid: SurvivorsMaker.Presentation.UiButtonKind.Primary
+  commentId: F:SurvivorsMaker.Presentation.UiButtonKind.Primary
+  id: Primary
+  parent: SurvivorsMaker.Presentation.UiButtonKind
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: UiButtonKind.Primary
+  fullName: SurvivorsMaker.Presentation.UiButtonKind.Primary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The main action on a screen: filled with the accent colour.'
+  example: []
+  syntax:
+    content: Primary = 0
+    return:
+      type: SurvivorsMaker.Presentation.UiButtonKind
+- uid: SurvivorsMaker.Presentation.UiButtonKind.Secondary
+  commentId: F:SurvivorsMaker.Presentation.UiButtonKind.Secondary
+  id: Secondary
+  parent: SurvivorsMaker.Presentation.UiButtonKind
+  langs:
+  - csharp
+  - vb
+  name: Secondary
+  nameWithType: UiButtonKind.Secondary
+  fullName: SurvivorsMaker.Presentation.UiButtonKind.Secondary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Other actions: dark fill with a fine border.'
+  example: []
+  syntax:
+    content: Secondary = 1
+    return:
+      type: SurvivorsMaker.Presentation.UiButtonKind
+- uid: SurvivorsMaker.Presentation.UiButtonKind.Danger
+  commentId: F:SurvivorsMaker.Presentation.UiButtonKind.Danger
+  id: Danger
+  parent: SurvivorsMaker.Presentation.UiButtonKind
+  langs:
+  - csharp
+  - vb
+  name: Danger
+  nameWithType: UiButtonKind.Danger
+  fullName: SurvivorsMaker.Presentation.UiButtonKind.Danger
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Destructive actions (recycle): red.'
+  example: []
+  syntax:
+    content: Danger = 2
+    return:
+      type: SurvivorsMaker.Presentation.UiButtonKind
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiButtonKind
+  commentId: T:SurvivorsMaker.Presentation.UiButtonKind
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiButtonKind.html
+  name: UiButtonKind
+  nameWithType: UiButtonKind
+  fullName: SurvivorsMaker.Presentation.UiButtonKind

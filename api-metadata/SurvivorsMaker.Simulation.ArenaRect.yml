@@ -1,0 +1,653 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ArenaRect
+  commentId: T:SurvivorsMaker.Simulation.ArenaRect
+  id: ArenaRect
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ArenaRect.#ctor(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.ArenaRect.Center
+  - SurvivorsMaker.Simulation.ArenaRect.Centered(System.Single,System.Single)
+  - SurvivorsMaker.Simulation.ArenaRect.Clamp(SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Simulation.ArenaRect.Contains(SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.ArenaRect.Height
+  - SurvivorsMaker.Simulation.ArenaRect.Inset(System.Single)
+  - SurvivorsMaker.Simulation.ArenaRect.Max
+  - SurvivorsMaker.Simulation.ArenaRect.Min
+  - SurvivorsMaker.Simulation.ArenaRect.RandomPoint(SurvivorsMaker.Simulation.SimRandom)
+  - SurvivorsMaker.Simulation.ArenaRect.Width
+  langs:
+  - csharp
+  - vb
+  name: ArenaRect
+  nameWithType: ArenaRect
+  fullName: SurvivorsMaker.Simulation.ArenaRect
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Axis-aligned arena rectangle, centered on the origin unless built otherwise.
+  example: []
+  syntax:
+    content: public struct ArenaRect
+    content.vb: Public Structure ArenaRect
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.ArenaRect.Min
+  commentId: F:SurvivorsMaker.Simulation.ArenaRect.Min
+  id: Min
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: ArenaRect.Min
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Min
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 Min
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Min As Vec2
+- uid: SurvivorsMaker.Simulation.ArenaRect.Max
+  commentId: F:SurvivorsMaker.Simulation.ArenaRect.Max
+  id: Max
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: ArenaRect.Max
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Max
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 Max
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Max As Vec2
+- uid: SurvivorsMaker.Simulation.ArenaRect.#ctor(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.#ctor(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: '#ctor(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)'
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: ArenaRect(Vec2, Vec2)
+  nameWithType: ArenaRect.ArenaRect(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.ArenaRect(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ArenaRect(Vec2 min, Vec2 max)
+    parameters:
+    - id: min
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: max
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Sub New(min As Vec2, max As Vec2)
+  overload: SurvivorsMaker.Simulation.ArenaRect.#ctor*
+  nameWithType.vb: ArenaRect.New(Vec2, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.ArenaRect.New(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  name.vb: New(Vec2, Vec2)
+- uid: SurvivorsMaker.Simulation.ArenaRect.Centered(System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.Centered(System.Single,System.Single)
+  id: Centered(System.Single,System.Single)
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Centered(float, float)
+  nameWithType: ArenaRect.Centered(float, float)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Centered(float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static ArenaRect Centered(float width, float height)
+    parameters:
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.ArenaRect
+    content.vb: Public Shared Function Centered(width As Single, height As Single) As ArenaRect
+  overload: SurvivorsMaker.Simulation.ArenaRect.Centered*
+  nameWithType.vb: ArenaRect.Centered(Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.ArenaRect.Centered(Single, Single)
+  name.vb: Centered(Single, Single)
+- uid: SurvivorsMaker.Simulation.ArenaRect.Contains(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.Contains(SurvivorsMaker.Simulation.Vec2)
+  id: Contains(SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Contains(Vec2)
+  nameWithType: ArenaRect.Contains(Vec2)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Contains(SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Inclusive containment test.
+  example: []
+  syntax:
+    content: public bool Contains(Vec2 p)
+    parameters:
+    - id: p
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(p As Vec2) As Boolean
+  overload: SurvivorsMaker.Simulation.ArenaRect.Contains*
+- uid: SurvivorsMaker.Simulation.ArenaRect.Clamp(SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.Clamp(SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: Clamp(SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Clamp(Vec2, float)
+  nameWithType: ArenaRect.Clamp(Vec2, float)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Clamp(SurvivorsMaker.Simulation.Vec2, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Keeps a circle of <code class="paramref">radius</code> inside. If the arena is too small on an axis, uses its center.
+  example: []
+  syntax:
+    content: public Vec2 Clamp(Vec2 p, float radius = 0)
+    parameters:
+    - id: p
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: radius
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Function Clamp(p As Vec2, radius As Single = 0) As Vec2
+  overload: SurvivorsMaker.Simulation.ArenaRect.Clamp*
+  nameWithType.vb: ArenaRect.Clamp(Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.ArenaRect.Clamp(SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: Clamp(Vec2, Single)
+- uid: SurvivorsMaker.Simulation.ArenaRect.Inset(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.Inset(System.Single)
+  id: Inset(System.Single)
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Inset(float)
+  nameWithType: ArenaRect.Inset(float)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Inset(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Rectangle shrunk by <code class="paramref">margin</code> on every side (never inverted).
+  example: []
+  syntax:
+    content: public ArenaRect Inset(float margin)
+    parameters:
+    - id: margin
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.ArenaRect
+    content.vb: Public Function Inset(margin As Single) As ArenaRect
+  overload: SurvivorsMaker.Simulation.ArenaRect.Inset*
+  nameWithType.vb: ArenaRect.Inset(Single)
+  fullName.vb: SurvivorsMaker.Simulation.ArenaRect.Inset(Single)
+  name.vb: Inset(Single)
+- uid: SurvivorsMaker.Simulation.ArenaRect.RandomPoint(SurvivorsMaker.Simulation.SimRandom)
+  commentId: M:SurvivorsMaker.Simulation.ArenaRect.RandomPoint(SurvivorsMaker.Simulation.SimRandom)
+  id: RandomPoint(SurvivorsMaker.Simulation.SimRandom)
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: RandomPoint(SimRandom)
+  nameWithType: ArenaRect.RandomPoint(SimRandom)
+  fullName: SurvivorsMaker.Simulation.ArenaRect.RandomPoint(SurvivorsMaker.Simulation.SimRandom)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 RandomPoint(SimRandom random)
+    parameters:
+    - id: random
+      type: SurvivorsMaker.Simulation.SimRandom
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Function RandomPoint(random As SimRandom) As Vec2
+  overload: SurvivorsMaker.Simulation.ArenaRect.RandomPoint*
+- uid: SurvivorsMaker.Simulation.ArenaRect.Center
+  commentId: P:SurvivorsMaker.Simulation.ArenaRect.Center
+  id: Center
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: ArenaRect.Center
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Center
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 Center { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public ReadOnly Property Center As Vec2
+  overload: SurvivorsMaker.Simulation.ArenaRect.Center*
+- uid: SurvivorsMaker.Simulation.ArenaRect.Width
+  commentId: P:SurvivorsMaker.Simulation.ArenaRect.Width
+  id: Width
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: ArenaRect.Width
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Width
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Width { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Width As Single
+  overload: SurvivorsMaker.Simulation.ArenaRect.Width*
+- uid: SurvivorsMaker.Simulation.ArenaRect.Height
+  commentId: P:SurvivorsMaker.Simulation.ArenaRect.Height
+  id: Height
+  parent: SurvivorsMaker.Simulation.ArenaRect
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: ArenaRect.Height
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Height
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Height { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Height As Single
+  overload: SurvivorsMaker.Simulation.ArenaRect.Height*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.ArenaRect.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect__ctor_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: ArenaRect
+  nameWithType: ArenaRect.ArenaRect
+  fullName: SurvivorsMaker.Simulation.ArenaRect.ArenaRect
+  nameWithType.vb: ArenaRect.New
+  fullName.vb: SurvivorsMaker.Simulation.ArenaRect.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.ArenaRect.Centered*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Centered
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Centered_System_Single_System_Single_
+  name: Centered
+  nameWithType: ArenaRect.Centered
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Centered
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.ArenaRect
+  commentId: T:SurvivorsMaker.Simulation.ArenaRect
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html
+  name: ArenaRect
+  nameWithType: ArenaRect
+  fullName: SurvivorsMaker.Simulation.ArenaRect
+- uid: SurvivorsMaker.Simulation.ArenaRect.Contains*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Contains
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Contains_SurvivorsMaker_Simulation_Vec2_
+  name: Contains
+  nameWithType: ArenaRect.Contains
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.ArenaRect.Clamp*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Clamp
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Clamp_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: Clamp
+  nameWithType: ArenaRect.Clamp
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Clamp
+- uid: SurvivorsMaker.Simulation.ArenaRect.Inset*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Inset
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Inset_System_Single_
+  name: Inset
+  nameWithType: ArenaRect.Inset
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Inset
+- uid: SurvivorsMaker.Simulation.ArenaRect.RandomPoint*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.RandomPoint
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_RandomPoint_SurvivorsMaker_Simulation_SimRandom_
+  name: RandomPoint
+  nameWithType: ArenaRect.RandomPoint
+  fullName: SurvivorsMaker.Simulation.ArenaRect.RandomPoint
+- uid: SurvivorsMaker.Simulation.SimRandom
+  commentId: T:SurvivorsMaker.Simulation.SimRandom
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html
+  name: SimRandom
+  nameWithType: SimRandom
+  fullName: SurvivorsMaker.Simulation.SimRandom
+- uid: SurvivorsMaker.Simulation.ArenaRect.Center*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Center
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Center
+  name: Center
+  nameWithType: ArenaRect.Center
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Center
+- uid: SurvivorsMaker.Simulation.ArenaRect.Width*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Width
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Width
+  name: Width
+  nameWithType: ArenaRect.Width
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Width
+- uid: SurvivorsMaker.Simulation.ArenaRect.Height*
+  commentId: Overload:SurvivorsMaker.Simulation.ArenaRect.Height
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaRect.html#SurvivorsMaker_Simulation_ArenaRect_Height
+  name: Height
+  nameWithType: ArenaRect.Height
+  fullName: SurvivorsMaker.Simulation.ArenaRect.Height

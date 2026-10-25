@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IInventoryRules
+  commentId: T:SurvivorsMaker.Run.IInventoryRules
+  id: IInventoryRules
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus})
+  - SurvivorsMaker.Run.IInventoryRules.BuildStats(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  - SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IInventoryRules.Owned(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  langs:
+  - csharp
+  - vb
+  name: IInventoryRules
+  nameWithType: IInventoryRules
+  fullName: SurvivorsMaker.Run.IInventoryRules
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Progression: derived stats and starting loadout.'
+  example: []
+  syntax:
+    content: public interface IInventoryRules
+    content.vb: Public Interface IInventoryRules
+  derivedClasses:
+  - SurvivorsMaker.Run.InventoryRules
+- uid: SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout(SurvivorsMaker.Run.RunState)
+  id: GiveStartingLoadout(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IInventoryRules
+  langs:
+  - csharp
+  - vb
+  name: GiveStartingLoadout(RunState)
+  nameWithType: IInventoryRules.GiveStartingLoadout(RunState)
+  fullName: SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Starting weapon and items at run creation.
+  example: []
+  syntax:
+    content: void GiveStartingLoadout(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Sub GiveStartingLoadout(run As RunState)
+  overload: SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout*
+- uid: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  id: CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  parent: SurvivorsMaker.Run.IInventoryRules
+  langs:
+  - csharp
+  - vb
+  name: CollectEffects(RunState, List<Effect>)
+  nameWithType: IInventoryRules.CollectEffects(RunState, List<Effect>)
+  fullName: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState, System.Collections.Generic.List<SurvivorsMaker.Core.Effect>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Effects in apply order: character, items in gain order, then set bonuses by set Order.'
+  example: []
+  syntax:
+    content: void CollectEffects(RunState run, List<Effect> into)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: into
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+    content.vb: Sub CollectEffects(run As RunState, into As List(Of Effect))
+  overload: SurvivorsMaker.Run.IInventoryRules.CollectEffects*
+  nameWithType.vb: IInventoryRules.CollectEffects(RunState, List(Of Effect))
+  fullName.vb: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState, System.Collections.Generic.List(Of
+    SurvivorsMaker.Core.Effect))
+  name.vb: CollectEffects(RunState, List(Of Effect))
+- uid: SurvivorsMaker.Run.IInventoryRules.BuildStats(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.BuildStats(SurvivorsMaker.Run.RunState)
+  id: BuildStats(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IInventoryRules
+  langs:
+  - csharp
+  - vb
+  name: BuildStats(RunState)
+  nameWithType: IInventoryRules.BuildStats(RunState)
+  fullName: SurvivorsMaker.Run.IInventoryRules.BuildStats(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Stats outside a wave (for UI): a fresh build from <xref href="SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState%2cSystem.Collections.Generic.List%7bSurvivorsMaker.Core.Effect%7d)"
+    data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: StatBuild BuildStats(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: SurvivorsMaker.Core.StatBuild
+    content.vb: Function BuildStats(run As RunState) As StatBuild
+  overload: SurvivorsMaker.Run.IInventoryRules.BuildStats*
+- uid: SurvivorsMaker.Run.IInventoryRules.Owned(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.Owned(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  id: Owned(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  parent: SurvivorsMaker.Run.IInventoryRules
+  langs:
+  - csharp
+  - vb
+  name: Owned(RunState, ItemDef)
+  nameWithType: IInventoryRules.Owned(RunState, ItemDef)
+  fullName: SurvivorsMaker.Run.IInventoryRules.Owned(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.ItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: int Owned(RunState run, ItemDef item)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: item
+      type: SurvivorsMaker.Run.ItemDef
+    return:
+      type: System.Int32
+    content.vb: Function Owned(run As RunState, item As ItemDef) As Integer
+  overload: SurvivorsMaker.Run.IInventoryRules.Owned*
+- uid: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus})
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus})
+  id: ActiveSetBonuses(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus})
+  parent: SurvivorsMaker.Run.IInventoryRules
+  langs:
+  - csharp
+  - vb
+  name: ActiveSetBonuses(RunState, List<SetBonus>)
+  nameWithType: IInventoryRules.ActiveSetBonuses(RunState, List<SetBonus>)
+  fullName: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses(SurvivorsMaker.Run.RunState, System.Collections.Generic.List<SurvivorsMaker.Run.SetBonus>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Active set bonuses in apply order.
+  example: []
+  syntax:
+    content: void ActiveSetBonuses(RunState run, List<SetBonus> into)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: into
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus}
+    content.vb: Sub ActiveSetBonuses(run As RunState, into As List(Of SetBonus))
+  overload: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses*
+  nameWithType.vb: IInventoryRules.ActiveSetBonuses(RunState, List(Of SetBonus))
+  fullName.vb: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses(SurvivorsMaker.Run.RunState, System.Collections.Generic.List(Of
+    SurvivorsMaker.Run.SetBonus))
+  name.vb: ActiveSetBonuses(RunState, List(Of SetBonus))
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout*
+  commentId: Overload:SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_GiveStartingLoadout_SurvivorsMaker_Run_RunState_
+  name: GiveStartingLoadout
+  nameWithType: IInventoryRules.GiveStartingLoadout
+  fullName: SurvivorsMaker.Run.IInventoryRules.GiveStartingLoadout
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.IInventoryRules.CollectEffects*
+  commentId: Overload:SurvivorsMaker.Run.IInventoryRules.CollectEffects
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_CollectEffects_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_SurvivorsMaker_Core_Effect__
+  name: CollectEffects
+  nameWithType: IInventoryRules.CollectEffects
+  fullName: SurvivorsMaker.Run.IInventoryRules.CollectEffects
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Effect>
+  nameWithType: List<Effect>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: List(Of Effect)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.Effect)
+  name.vb: List(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  commentId: M:SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+  parent: SurvivorsMaker.Run.IInventoryRules
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_CollectEffects_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_SurvivorsMaker_Core_Effect__
+  name: CollectEffects(RunState, List<Effect>)
+  nameWithType: IInventoryRules.CollectEffects(RunState, List<Effect>)
+  fullName: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState, System.Collections.Generic.List<SurvivorsMaker.Core.Effect>)
+  nameWithType.vb: IInventoryRules.CollectEffects(RunState, List(Of Effect))
+  fullName.vb: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState, System.Collections.Generic.List(Of
+    SurvivorsMaker.Core.Effect))
+  name.vb: CollectEffects(RunState, List(Of Effect))
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+    name: CollectEffects
+    isExternal: true
+    href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_CollectEffects_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_SurvivorsMaker_Core_Effect__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IInventoryRules.CollectEffects(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{SurvivorsMaker.Core.Effect})
+    name: CollectEffects
+    isExternal: true
+    href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_CollectEffects_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_SurvivorsMaker_Core_Effect__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Run.IInventoryRules.BuildStats*
+  commentId: Overload:SurvivorsMaker.Run.IInventoryRules.BuildStats
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_BuildStats_SurvivorsMaker_Run_RunState_
+  name: BuildStats
+  nameWithType: IInventoryRules.BuildStats
+  fullName: SurvivorsMaker.Run.IInventoryRules.BuildStats
+- uid: SurvivorsMaker.Core.StatBuild
+  commentId: T:SurvivorsMaker.Core.StatBuild
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatBuild.html
+  name: StatBuild
+  nameWithType: StatBuild
+  fullName: SurvivorsMaker.Core.StatBuild
+- uid: SurvivorsMaker.Run.IInventoryRules
+  commentId: T:SurvivorsMaker.Run.IInventoryRules
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html
+  name: IInventoryRules
+  nameWithType: IInventoryRules
+  fullName: SurvivorsMaker.Run.IInventoryRules
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Run.IInventoryRules.Owned*
+  commentId: Overload:SurvivorsMaker.Run.IInventoryRules.Owned
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_Owned_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_ItemDef_
+  name: Owned
+  nameWithType: IInventoryRules.Owned
+  fullName: SurvivorsMaker.Run.IInventoryRules.Owned
+- uid: SurvivorsMaker.Run.ItemDef
+  commentId: T:SurvivorsMaker.Run.ItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ItemDef.html
+  name: ItemDef
+  nameWithType: ItemDef
+  fullName: SurvivorsMaker.Run.ItemDef
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses*
+  commentId: Overload:SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses
+  isExternal: true
+  href: SurvivorsMaker.Run.IInventoryRules.html#SurvivorsMaker_Run_IInventoryRules_ActiveSetBonuses_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_SurvivorsMaker_Run_SetBonus__
+  name: ActiveSetBonuses
+  nameWithType: IInventoryRules.ActiveSetBonuses
+  fullName: SurvivorsMaker.Run.IInventoryRules.ActiveSetBonuses
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.SetBonus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SetBonus>
+  nameWithType: List<SetBonus>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.SetBonus>
+  nameWithType.vb: List(Of SetBonus)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.SetBonus)
+  name.vb: List(Of SetBonus)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.SetBonus
+    name: SetBonus
+    isExternal: true
+    href: SurvivorsMaker.Run.SetBonus.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.SetBonus
+    name: SetBonus
+    isExternal: true
+    href: SurvivorsMaker.Run.SetBonus.html
+  - name: )

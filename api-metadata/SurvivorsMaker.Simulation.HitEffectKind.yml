@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.HitEffectKind
+  commentId: T:SurvivorsMaker.Simulation.HitEffectKind
+  id: HitEffectKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.HitEffectKind.ApplyStatus
+  - SurvivorsMaker.Simulation.HitEffectKind.Chain
+  - SurvivorsMaker.Simulation.HitEffectKind.Explode
+  langs:
+  - csharp
+  - vb
+  name: HitEffectKind
+  nameWithType: HitEffectKind
+  fullName: SurvivorsMaker.Simulation.HitEffectKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum HitEffectKind
+    content.vb: Public Enum HitEffectKind
+- uid: SurvivorsMaker.Simulation.HitEffectKind.Explode
+  commentId: F:SurvivorsMaker.Simulation.HitEffectKind.Explode
+  id: Explode
+  parent: SurvivorsMaker.Simulation.HitEffectKind
+  langs:
+  - csharp
+  - vb
+  name: Explode
+  nameWithType: HitEffectKind.Explode
+  fullName: SurvivorsMaker.Simulation.HitEffectKind.Explode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Damage all enemies within Radius of the hit target.
+  example: []
+  syntax:
+    content: Explode = 0
+    return:
+      type: SurvivorsMaker.Simulation.HitEffectKind
+- uid: SurvivorsMaker.Simulation.HitEffectKind.Chain
+  commentId: F:SurvivorsMaker.Simulation.HitEffectKind.Chain
+  id: Chain
+  parent: SurvivorsMaker.Simulation.HitEffectKind
+  langs:
+  - csharp
+  - vb
+  name: Chain
+  nameWithType: HitEffectKind.Chain
+  fullName: SurvivorsMaker.Simulation.HitEffectKind.Chain
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Jump to the nearest other enemy within Range, Count times, damage × Falloff each jump.
+  example: []
+  syntax:
+    content: Chain = 1
+    return:
+      type: SurvivorsMaker.Simulation.HitEffectKind
+- uid: SurvivorsMaker.Simulation.HitEffectKind.ApplyStatus
+  commentId: F:SurvivorsMaker.Simulation.HitEffectKind.ApplyStatus
+  id: ApplyStatus
+  parent: SurvivorsMaker.Simulation.HitEffectKind
+  langs:
+  - csharp
+  - vb
+  name: ApplyStatus
+  nameWithType: HitEffectKind.ApplyStatus
+  fullName: SurvivorsMaker.Simulation.HitEffectKind.ApplyStatus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Apply Status to the hit target.
+  example: []
+  syntax:
+    content: ApplyStatus = 2
+    return:
+      type: SurvivorsMaker.Simulation.HitEffectKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.HitEffectKind
+  commentId: T:SurvivorsMaker.Simulation.HitEffectKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HitEffectKind.html
+  name: HitEffectKind
+  nameWithType: HitEffectKind
+  fullName: SurvivorsMaker.Simulation.HitEffectKind

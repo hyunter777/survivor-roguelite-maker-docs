@@ -1,0 +1,420 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.ContentTextEntry
+  commentId: T:SurvivorsMaker.Data.ContentTextEntry
+  id: ContentTextEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.ContentTextEntry.#ctor
+  - SurvivorsMaker.Data.ContentTextEntry.Description
+  - SurvivorsMaker.Data.ContentTextEntry.DisplayName
+  - SurvivorsMaker.Data.ContentTextEntry.Id
+  - SurvivorsMaker.Data.ContentTextEntry.Key
+  - SurvivorsMaker.Data.ContentTextEntry.Kind
+  langs:
+  - csharp
+  - vb
+  name: ContentTextEntry
+  nameWithType: ContentTextEntry
+  fullName: SurvivorsMaker.Data.ContentTextEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Display name, description and localization key base of one definition.
+  example: []
+  syntax:
+    content: public sealed class ContentTextEntry
+    content.vb: Public NotInheritable Class ContentTextEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.ContentTextEntry.Kind
+  commentId: F:SurvivorsMaker.Data.ContentTextEntry.Kind
+  id: Kind
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: ContentTextEntry.Kind
+  fullName: SurvivorsMaker.Data.ContentTextEntry.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public ContentTextKind Kind
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+    content.vb: Public Kind As ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextEntry.Id
+  commentId: F:SurvivorsMaker.Data.ContentTextEntry.Id
+  id: Id
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ContentTextEntry.Id
+  fullName: SurvivorsMaker.Data.ContentTextEntry.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Data.ContentTextEntry.DisplayName
+  commentId: F:SurvivorsMaker.Data.ContentTextEntry.DisplayName
+  id: DisplayName
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: ContentTextEntry.DisplayName
+  fullName: SurvivorsMaker.Data.ContentTextEntry.DisplayName
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public string DisplayName
+    return:
+      type: System.String
+    content.vb: Public DisplayName As String
+- uid: SurvivorsMaker.Data.ContentTextEntry.Description
+  commentId: F:SurvivorsMaker.Data.ContentTextEntry.Description
+  id: Description
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ContentTextEntry.Description
+  fullName: SurvivorsMaker.Data.ContentTextEntry.Description
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public string Description
+    return:
+      type: System.String
+    content.vb: Public Description As String
+- uid: SurvivorsMaker.Data.ContentTextEntry.Key
+  commentId: F:SurvivorsMaker.Data.ContentTextEntry.Key
+  id: Key
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: ContentTextEntry.Key
+  fullName: SurvivorsMaker.Data.ContentTextEntry.Key
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Localization key base: the name is looked up as "&lt;Key&gt;.name", the description as "&lt;Key&gt;.description".'
+  example: []
+  syntax:
+    content: public string Key
+    return:
+      type: System.String
+    content.vb: Public Key As String
+- uid: SurvivorsMaker.Data.ContentTextEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.ContentTextEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.ContentTextEntry
+  langs:
+  - csharp
+  - vb
+  name: ContentTextEntry()
+  nameWithType: ContentTextEntry.ContentTextEntry()
+  fullName: SurvivorsMaker.Data.ContentTextEntry.ContentTextEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public ContentTextEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.ContentTextEntry.#ctor*
+  nameWithType.vb: ContentTextEntry.New()
+  fullName.vb: SurvivorsMaker.Data.ContentTextEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Data.ContentTextEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextEntry.html#SurvivorsMaker_Data_ContentTextEntry__ctor
+  name: ContentTextEntry
+  nameWithType: ContentTextEntry.ContentTextEntry
+  fullName: SurvivorsMaker.Data.ContentTextEntry.ContentTextEntry
+  nameWithType.vb: ContentTextEntry.New
+  fullName.vb: SurvivorsMaker.Data.ContentTextEntry.New
+  name.vb: New

@@ -1,0 +1,1232 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.SoundCueKeys
+  commentId: T:SurvivorsMaker.Presentation.SoundCueKeys
+  id: SoundCueKeys
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.SoundCueKeys.#ctor
+  - SurvivorsMaker.Presentation.SoundCueKeys.BossDefeat
+  - SurvivorsMaker.Presentation.SoundCueKeys.BossPhase
+  - SurvivorsMaker.Presentation.SoundCueKeys.BossSpawn
+  - SurvivorsMaker.Presentation.SoundCueKeys.ChainJump
+  - SurvivorsMaker.Presentation.SoundCueKeys.EliteSpawn
+  - SurvivorsMaker.Presentation.SoundCueKeys.EnemyDeath
+  - SurvivorsMaker.Presentation.SoundCueKeys.EnemySpawn
+  - SurvivorsMaker.Presentation.SoundCueKeys.EnemyWindup
+  - SurvivorsMaker.Presentation.SoundCueKeys.Explosion
+  - SurvivorsMaker.Presentation.SoundCueKeys.HitHeavy
+  - SurvivorsMaker.Presentation.SoundCueKeys.HitLight
+  - SurvivorsMaker.Presentation.SoundCueKeys.HordeStart
+  - SurvivorsMaker.Presentation.SoundCueKeys.LevelUp
+  - SurvivorsMaker.Presentation.SoundCueKeys.PickupCurrency
+  - SurvivorsMaker.Presentation.SoundCueKeys.PickupExperience
+  - SurvivorsMaker.Presentation.SoundCueKeys.PickupHeal
+  - SurvivorsMaker.Presentation.SoundCueKeys.PlayerDodge
+  - SurvivorsMaker.Presentation.SoundCueKeys.PlayerHurt
+  - SurvivorsMaker.Presentation.SoundCueKeys.RunDefeat
+  - SurvivorsMaker.Presentation.SoundCueKeys.RunVictory
+  - SurvivorsMaker.Presentation.SoundCueKeys.SpawnTelegraph
+  - SurvivorsMaker.Presentation.SoundCueKeys.StatusBurn
+  - SurvivorsMaker.Presentation.SoundCueKeys.StatusSlow
+  - SurvivorsMaker.Presentation.SoundCueKeys.StatusStun
+  - SurvivorsMaker.Presentation.SoundCueKeys.StatusTick
+  - SurvivorsMaker.Presentation.SoundCueKeys.TriggerHeal
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiBack
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiClick
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiError
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiLock
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiMerge
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiOpen
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiPurchase
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiRecycle
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiReroll
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiSelect
+  - SurvivorsMaker.Presentation.SoundCueKeys.UiSlider
+  - SurvivorsMaker.Presentation.SoundCueKeys.Unlock
+  - SurvivorsMaker.Presentation.SoundCueKeys.WaveClear
+  - SurvivorsMaker.Presentation.SoundCueKeys.WaveStart
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponAura
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponMagic
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponOrbit
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponShoot
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponSwing
+  - SurvivorsMaker.Presentation.SoundCueKeys.WeaponThrust
+  langs:
+  - csharp
+  - vb
+  name: SoundCueKeys
+  nameWithType: SoundCueKeys
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Cue key for every sound role. An empty key keeps that role silent.
+  example: []
+  syntax:
+    content: public sealed class SoundCueKeys
+    content.vb: Public NotInheritable Class SoundCueKeys
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponSwing
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponSwing
+  id: WeaponSwing
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponSwing
+  nameWithType: SoundCueKeys.WeaponSwing
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponSwing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponSwing
+    return:
+      type: System.String
+    content.vb: Public WeaponSwing As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponThrust
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponThrust
+  id: WeaponThrust
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponThrust
+  nameWithType: SoundCueKeys.WeaponThrust
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponThrust
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponThrust
+    return:
+      type: System.String
+    content.vb: Public WeaponThrust As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponShoot
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponShoot
+  id: WeaponShoot
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponShoot
+  nameWithType: SoundCueKeys.WeaponShoot
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponShoot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponShoot
+    return:
+      type: System.String
+    content.vb: Public WeaponShoot As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponMagic
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponMagic
+  id: WeaponMagic
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponMagic
+  nameWithType: SoundCueKeys.WeaponMagic
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponMagic
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponMagic
+    return:
+      type: System.String
+    content.vb: Public WeaponMagic As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponOrbit
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponOrbit
+  id: WeaponOrbit
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponOrbit
+  nameWithType: SoundCueKeys.WeaponOrbit
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponOrbit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponOrbit
+    return:
+      type: System.String
+    content.vb: Public WeaponOrbit As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WeaponAura
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WeaponAura
+  id: WeaponAura
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WeaponAura
+  nameWithType: SoundCueKeys.WeaponAura
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WeaponAura
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponAura
+    return:
+      type: System.String
+    content.vb: Public WeaponAura As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.HitLight
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.HitLight
+  id: HitLight
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: HitLight
+  nameWithType: SoundCueKeys.HitLight
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.HitLight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string HitLight
+    return:
+      type: System.String
+    content.vb: Public HitLight As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.HitHeavy
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.HitHeavy
+  id: HitHeavy
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: HitHeavy
+  nameWithType: SoundCueKeys.HitHeavy
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.HitHeavy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string HitHeavy
+    return:
+      type: System.String
+    content.vb: Public HitHeavy As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.EnemyDeath
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.EnemyDeath
+  id: EnemyDeath
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: EnemyDeath
+  nameWithType: SoundCueKeys.EnemyDeath
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.EnemyDeath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string EnemyDeath
+    return:
+      type: System.String
+    content.vb: Public EnemyDeath As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.PlayerHurt
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.PlayerHurt
+  id: PlayerHurt
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: PlayerHurt
+  nameWithType: SoundCueKeys.PlayerHurt
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.PlayerHurt
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string PlayerHurt
+    return:
+      type: System.String
+    content.vb: Public PlayerHurt As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.PlayerDodge
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.PlayerDodge
+  id: PlayerDodge
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: PlayerDodge
+  nameWithType: SoundCueKeys.PlayerDodge
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.PlayerDodge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string PlayerDodge
+    return:
+      type: System.String
+    content.vb: Public PlayerDodge As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.Explosion
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.Explosion
+  id: Explosion
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: Explosion
+  nameWithType: SoundCueKeys.Explosion
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.Explosion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string Explosion
+    return:
+      type: System.String
+    content.vb: Public Explosion As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.ChainJump
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.ChainJump
+  id: ChainJump
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: ChainJump
+  nameWithType: SoundCueKeys.ChainJump
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.ChainJump
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string ChainJump
+    return:
+      type: System.String
+    content.vb: Public ChainJump As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.StatusBurn
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.StatusBurn
+  id: StatusBurn
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: StatusBurn
+  nameWithType: SoundCueKeys.StatusBurn
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.StatusBurn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string StatusBurn
+    return:
+      type: System.String
+    content.vb: Public StatusBurn As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.StatusSlow
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.StatusSlow
+  id: StatusSlow
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: StatusSlow
+  nameWithType: SoundCueKeys.StatusSlow
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.StatusSlow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string StatusSlow
+    return:
+      type: System.String
+    content.vb: Public StatusSlow As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.StatusStun
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.StatusStun
+  id: StatusStun
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: StatusStun
+  nameWithType: SoundCueKeys.StatusStun
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.StatusStun
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string StatusStun
+    return:
+      type: System.String
+    content.vb: Public StatusStun As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.StatusTick
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.StatusTick
+  id: StatusTick
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: StatusTick
+  nameWithType: SoundCueKeys.StatusTick
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.StatusTick
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string StatusTick
+    return:
+      type: System.String
+    content.vb: Public StatusTick As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.PickupCurrency
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.PickupCurrency
+  id: PickupCurrency
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: PickupCurrency
+  nameWithType: SoundCueKeys.PickupCurrency
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.PickupCurrency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string PickupCurrency
+    return:
+      type: System.String
+    content.vb: Public PickupCurrency As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.PickupExperience
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.PickupExperience
+  id: PickupExperience
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: PickupExperience
+  nameWithType: SoundCueKeys.PickupExperience
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.PickupExperience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: No simulation event of its own; for custom pickups through <code>SoundPlayer.PlayCue</code>.
+  example: []
+  syntax:
+    content: public string PickupExperience
+    return:
+      type: System.String
+    content.vb: Public PickupExperience As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.PickupHeal
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.PickupHeal
+  id: PickupHeal
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: PickupHeal
+  nameWithType: SoundCueKeys.PickupHeal
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.PickupHeal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string PickupHeal
+    return:
+      type: System.String
+    content.vb: Public PickupHeal As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.TriggerHeal
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.TriggerHeal
+  id: TriggerHeal
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: TriggerHeal
+  nameWithType: SoundCueKeys.TriggerHeal
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.TriggerHeal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string TriggerHeal
+    return:
+      type: System.String
+    content.vb: Public TriggerHeal As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.LevelUp
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: SoundCueKeys.LevelUp
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string LevelUp
+    return:
+      type: System.String
+    content.vb: Public LevelUp As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.EnemyWindup
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.EnemyWindup
+  id: EnemyWindup
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: EnemyWindup
+  nameWithType: SoundCueKeys.EnemyWindup
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.EnemyWindup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string EnemyWindup
+    return:
+      type: System.String
+    content.vb: Public EnemyWindup As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.SpawnTelegraph
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.SpawnTelegraph
+  id: SpawnTelegraph
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: SpawnTelegraph
+  nameWithType: SoundCueKeys.SpawnTelegraph
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.SpawnTelegraph
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string SpawnTelegraph
+    return:
+      type: System.String
+    content.vb: Public SpawnTelegraph As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.EnemySpawn
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.EnemySpawn
+  id: EnemySpawn
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: EnemySpawn
+  nameWithType: SoundCueKeys.EnemySpawn
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.EnemySpawn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string EnemySpawn
+    return:
+      type: System.String
+    content.vb: Public EnemySpawn As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.EliteSpawn
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.EliteSpawn
+  id: EliteSpawn
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: EliteSpawn
+  nameWithType: SoundCueKeys.EliteSpawn
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.EliteSpawn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string EliteSpawn
+    return:
+      type: System.String
+    content.vb: Public EliteSpawn As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.BossSpawn
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.BossSpawn
+  id: BossSpawn
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: BossSpawn
+  nameWithType: SoundCueKeys.BossSpawn
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.BossSpawn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string BossSpawn
+    return:
+      type: System.String
+    content.vb: Public BossSpawn As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.BossPhase
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.BossPhase
+  id: BossPhase
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: BossPhase
+  nameWithType: SoundCueKeys.BossPhase
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.BossPhase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string BossPhase
+    return:
+      type: System.String
+    content.vb: Public BossPhase As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.BossDefeat
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.BossDefeat
+  id: BossDefeat
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: BossDefeat
+  nameWithType: SoundCueKeys.BossDefeat
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.BossDefeat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string BossDefeat
+    return:
+      type: System.String
+    content.vb: Public BossDefeat As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.HordeStart
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.HordeStart
+  id: HordeStart
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: HordeStart
+  nameWithType: SoundCueKeys.HordeStart
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.HordeStart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string HordeStart
+    return:
+      type: System.String
+    content.vb: Public HordeStart As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WaveStart
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WaveStart
+  id: WaveStart
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WaveStart
+  nameWithType: SoundCueKeys.WaveStart
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WaveStart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WaveStart
+    return:
+      type: System.String
+    content.vb: Public WaveStart As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.WaveClear
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.WaveClear
+  id: WaveClear
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: WaveClear
+  nameWithType: SoundCueKeys.WaveClear
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.WaveClear
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WaveClear
+    return:
+      type: System.String
+    content.vb: Public WaveClear As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.RunVictory
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.RunVictory
+  id: RunVictory
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: RunVictory
+  nameWithType: SoundCueKeys.RunVictory
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.RunVictory
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string RunVictory
+    return:
+      type: System.String
+    content.vb: Public RunVictory As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.RunDefeat
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.RunDefeat
+  id: RunDefeat
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: RunDefeat
+  nameWithType: SoundCueKeys.RunDefeat
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.RunDefeat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string RunDefeat
+    return:
+      type: System.String
+    content.vb: Public RunDefeat As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.Unlock
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.Unlock
+  id: Unlock
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: Unlock
+  nameWithType: SoundCueKeys.Unlock
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.Unlock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string Unlock
+    return:
+      type: System.String
+    content.vb: Public Unlock As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiClick
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiClick
+  id: UiClick
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiClick
+  nameWithType: SoundCueKeys.UiClick
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiClick
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiClick
+    return:
+      type: System.String
+    content.vb: Public UiClick As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiSelect
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiSelect
+  id: UiSelect
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiSelect
+  nameWithType: SoundCueKeys.UiSelect
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiSelect
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiSelect
+    return:
+      type: System.String
+    content.vb: Public UiSelect As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiBack
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiBack
+  id: UiBack
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiBack
+  nameWithType: SoundCueKeys.UiBack
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiBack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiBack
+    return:
+      type: System.String
+    content.vb: Public UiBack As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiError
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiError
+  id: UiError
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiError
+  nameWithType: SoundCueKeys.UiError
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiError
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiError
+    return:
+      type: System.String
+    content.vb: Public UiError As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiLock
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiLock
+  id: UiLock
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiLock
+  nameWithType: SoundCueKeys.UiLock
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiLock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiLock
+    return:
+      type: System.String
+    content.vb: Public UiLock As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiPurchase
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiPurchase
+  id: UiPurchase
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiPurchase
+  nameWithType: SoundCueKeys.UiPurchase
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiPurchase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiPurchase
+    return:
+      type: System.String
+    content.vb: Public UiPurchase As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiReroll
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiReroll
+  id: UiReroll
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiReroll
+  nameWithType: SoundCueKeys.UiReroll
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiReroll
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiReroll
+    return:
+      type: System.String
+    content.vb: Public UiReroll As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiOpen
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiOpen
+  id: UiOpen
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiOpen
+  nameWithType: SoundCueKeys.UiOpen
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiOpen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiOpen
+    return:
+      type: System.String
+    content.vb: Public UiOpen As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiSlider
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiSlider
+  id: UiSlider
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiSlider
+  nameWithType: SoundCueKeys.UiSlider
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiSlider
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiSlider
+    return:
+      type: System.String
+    content.vb: Public UiSlider As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiRecycle
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiRecycle
+  id: UiRecycle
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiRecycle
+  nameWithType: SoundCueKeys.UiRecycle
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiRecycle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiRecycle
+    return:
+      type: System.String
+    content.vb: Public UiRecycle As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.UiMerge
+  commentId: F:SurvivorsMaker.Presentation.SoundCueKeys.UiMerge
+  id: UiMerge
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: UiMerge
+  nameWithType: SoundCueKeys.UiMerge
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.UiMerge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string UiMerge
+    return:
+      type: System.String
+    content.vb: Public UiMerge As String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.#ctor
+  commentId: M:SurvivorsMaker.Presentation.SoundCueKeys.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.SoundCueKeys
+  langs:
+  - csharp
+  - vb
+  name: SoundCueKeys()
+  nameWithType: SoundCueKeys.SoundCueKeys()
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.SoundCueKeys()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public SoundCueKeys()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.SoundCueKeys.#ctor*
+  nameWithType.vb: SoundCueKeys.New()
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueKeys.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.SoundCueKeys.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueKeys.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueKeys.html#SurvivorsMaker_Presentation_SoundCueKeys__ctor
+  name: SoundCueKeys
+  nameWithType: SoundCueKeys.SoundCueKeys
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys.SoundCueKeys
+  nameWithType.vb: SoundCueKeys.New
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueKeys.New
+  name.vb: New

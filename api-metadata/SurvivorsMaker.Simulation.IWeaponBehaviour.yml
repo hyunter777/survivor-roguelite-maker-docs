@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IWeaponBehaviour
+  commentId: T:SurvivorsMaker.Simulation.IWeaponBehaviour
+  id: IWeaponBehaviour
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IWeaponBehaviour.Begin(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  - SurvivorsMaker.Simulation.IWeaponBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  langs:
+  - csharp
+  - vb
+  name: IWeaponBehaviour
+  nameWithType: IWeaponBehaviour
+  fullName: SurvivorsMaker.Simulation.IWeaponBehaviour
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A player weapon's attack logic (step 7). Friendly projectiles it creates are moved by the weapon system.
+  example: []
+  syntax:
+    content: public interface IWeaponBehaviour
+    content.vb: Public Interface IWeaponBehaviour
+- uid: SurvivorsMaker.Simulation.IWeaponBehaviour.Begin(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  commentId: M:SurvivorsMaker.Simulation.IWeaponBehaviour.Begin(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  id: Begin(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  parent: SurvivorsMaker.Simulation.IWeaponBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Begin(SimWorld, WeaponState)
+  nameWithType: IWeaponBehaviour.Begin(SimWorld, WeaponState)
+  fullName: SurvivorsMaker.Simulation.IWeaponBehaviour.Begin(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.WeaponState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: At wave start, once per weapon slot that uses this behaviour.
+  example: []
+  syntax:
+    content: void Begin(SimWorld world, WeaponState weapon)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: weapon
+      type: SurvivorsMaker.Simulation.WeaponState
+    content.vb: Sub Begin(world As SimWorld, weapon As WeaponState)
+  overload: SurvivorsMaker.Simulation.IWeaponBehaviour.Begin*
+- uid: SurvivorsMaker.Simulation.IWeaponBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  commentId: M:SurvivorsMaker.Simulation.IWeaponBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.WeaponState)
+  parent: SurvivorsMaker.Simulation.IWeaponBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld, WeaponState)
+  nameWithType: IWeaponBehaviour.Tick(SimWorld, WeaponState)
+  fullName: SurvivorsMaker.Simulation.IWeaponBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.WeaponState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Every tick in slot order: targeting, firing, cooldowns.'
+  example: []
+  syntax:
+    content: void Tick(SimWorld world, WeaponState weapon)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: weapon
+      type: SurvivorsMaker.Simulation.WeaponState
+    content.vb: Sub Tick(world As SimWorld, weapon As WeaponState)
+  overload: SurvivorsMaker.Simulation.IWeaponBehaviour.Tick*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IWeaponBehaviour.Begin*
+  commentId: Overload:SurvivorsMaker.Simulation.IWeaponBehaviour.Begin
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponBehaviour.html#SurvivorsMaker_Simulation_IWeaponBehaviour_Begin_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_WeaponState_
+  name: Begin
+  nameWithType: IWeaponBehaviour.Begin
+  fullName: SurvivorsMaker.Simulation.IWeaponBehaviour.Begin
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.WeaponState
+  commentId: T:SurvivorsMaker.Simulation.WeaponState
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponState.html
+  name: WeaponState
+  nameWithType: WeaponState
+  fullName: SurvivorsMaker.Simulation.WeaponState
+- uid: SurvivorsMaker.Simulation.IWeaponBehaviour.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.IWeaponBehaviour.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponBehaviour.html#SurvivorsMaker_Simulation_IWeaponBehaviour_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_WeaponState_
+  name: Tick
+  nameWithType: IWeaponBehaviour.Tick
+  fullName: SurvivorsMaker.Simulation.IWeaponBehaviour.Tick

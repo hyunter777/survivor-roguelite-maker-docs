@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.StatusKind
+  commentId: T:SurvivorsMaker.Simulation.StatusKind
+  id: StatusKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.StatusKind.Burn
+  - SurvivorsMaker.Simulation.StatusKind.Slow
+  - SurvivorsMaker.Simulation.StatusKind.Stun
+  langs:
+  - csharp
+  - vb
+  name: StatusKind
+  nameWithType: StatusKind
+  fullName: SurvivorsMaker.Simulation.StatusKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum StatusKind
+    content.vb: Public Enum StatusKind
+- uid: SurvivorsMaker.Simulation.StatusKind.Burn
+  commentId: F:SurvivorsMaker.Simulation.StatusKind.Burn
+  id: Burn
+  parent: SurvivorsMaker.Simulation.StatusKind
+  langs:
+  - csharp
+  - vb
+  name: Burn
+  nameWithType: StatusKind.Burn
+  fullName: SurvivorsMaker.Simulation.StatusKind.Burn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Damage every TickSeconds for the duration.
+  example: []
+  syntax:
+    content: Burn = 0
+    return:
+      type: SurvivorsMaker.Simulation.StatusKind
+- uid: SurvivorsMaker.Simulation.StatusKind.Slow
+  commentId: F:SurvivorsMaker.Simulation.StatusKind.Slow
+  id: Slow
+  parent: SurvivorsMaker.Simulation.StatusKind
+  langs:
+  - csharp
+  - vb
+  name: Slow
+  nameWithType: StatusKind.Slow
+  fullName: SurvivorsMaker.Simulation.StatusKind.Slow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Movement speed × (1 − Magnitude).
+  example: []
+  syntax:
+    content: Slow = 1
+    return:
+      type: SurvivorsMaker.Simulation.StatusKind
+- uid: SurvivorsMaker.Simulation.StatusKind.Stun
+  commentId: F:SurvivorsMaker.Simulation.StatusKind.Stun
+  id: Stun
+  parent: SurvivorsMaker.Simulation.StatusKind
+  langs:
+  - csharp
+  - vb
+  name: Stun
+  nameWithType: StatusKind.Stun
+  fullName: SurvivorsMaker.Simulation.StatusKind.Stun
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: No movement, attacks or contact damage.
+  example: []
+  syntax:
+    content: Stun = 2
+    return:
+      type: SurvivorsMaker.Simulation.StatusKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.StatusKind
+  commentId: T:SurvivorsMaker.Simulation.StatusKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusKind.html
+  name: StatusKind
+  nameWithType: StatusKind
+  fullName: SurvivorsMaker.Simulation.StatusKind

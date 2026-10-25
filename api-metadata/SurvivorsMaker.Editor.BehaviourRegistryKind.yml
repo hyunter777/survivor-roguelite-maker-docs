@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind
+  commentId: T:SurvivorsMaker.Editor.BehaviourRegistryKind
+  id: BehaviourRegistryKind
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.BehaviourRegistryKind.Attack
+  - SurvivorsMaker.Editor.BehaviourRegistryKind.Movement
+  - SurvivorsMaker.Editor.BehaviourRegistryKind.Pickup
+  - SurvivorsMaker.Editor.BehaviourRegistryKind.Status
+  - SurvivorsMaker.Editor.BehaviourRegistryKind.Weapon
+  langs:
+  - csharp
+  - vb
+  name: BehaviourRegistryKind
+  nameWithType: BehaviourRegistryKind
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum BehaviourRegistryKind
+    content.vb: Public Enum BehaviourRegistryKind
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind.Weapon
+  commentId: F:SurvivorsMaker.Editor.BehaviourRegistryKind.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Editor.BehaviourRegistryKind
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: BehaviourRegistryKind.Weapon
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Weapon = 0
+    return:
+      type: SurvivorsMaker.Editor.BehaviourRegistryKind
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind.Movement
+  commentId: F:SurvivorsMaker.Editor.BehaviourRegistryKind.Movement
+  id: Movement
+  parent: SurvivorsMaker.Editor.BehaviourRegistryKind
+  langs:
+  - csharp
+  - vb
+  name: Movement
+  nameWithType: BehaviourRegistryKind.Movement
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind.Movement
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Movement = 1
+    return:
+      type: SurvivorsMaker.Editor.BehaviourRegistryKind
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind.Attack
+  commentId: F:SurvivorsMaker.Editor.BehaviourRegistryKind.Attack
+  id: Attack
+  parent: SurvivorsMaker.Editor.BehaviourRegistryKind
+  langs:
+  - csharp
+  - vb
+  name: Attack
+  nameWithType: BehaviourRegistryKind.Attack
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind.Attack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Attack = 2
+    return:
+      type: SurvivorsMaker.Editor.BehaviourRegistryKind
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind.Status
+  commentId: F:SurvivorsMaker.Editor.BehaviourRegistryKind.Status
+  id: Status
+  parent: SurvivorsMaker.Editor.BehaviourRegistryKind
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: BehaviourRegistryKind.Status
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Status = 3
+    return:
+      type: SurvivorsMaker.Editor.BehaviourRegistryKind
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind.Pickup
+  commentId: F:SurvivorsMaker.Editor.BehaviourRegistryKind.Pickup
+  id: Pickup
+  parent: SurvivorsMaker.Editor.BehaviourRegistryKind
+  langs:
+  - csharp
+  - vb
+  name: Pickup
+  nameWithType: BehaviourRegistryKind.Pickup
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind.Pickup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Pickup = 4
+    return:
+      type: SurvivorsMaker.Editor.BehaviourRegistryKind
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.BehaviourRegistryKind
+  commentId: T:SurvivorsMaker.Editor.BehaviourRegistryKind
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.BehaviourRegistryKind.html
+  name: BehaviourRegistryKind
+  nameWithType: BehaviourRegistryKind
+  fullName: SurvivorsMaker.Editor.BehaviourRegistryKind

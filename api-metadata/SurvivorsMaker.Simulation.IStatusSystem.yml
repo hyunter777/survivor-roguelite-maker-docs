@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IStatusSystem
+  commentId: T:SurvivorsMaker.Simulation.IStatusSystem
+  id: IStatusSystem
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IStatusSystem.Apply(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusEffectDef,SurvivorsMaker.Simulation.WeaponDef)
+  - SurvivorsMaker.Simulation.IStatusSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: IStatusSystem
+  nameWithType: IStatusSystem
+  fullName: SurvivorsMaker.Simulation.IStatusSystem
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Status: burn, slow, stun and elite modifiers that act over time.'
+  example: []
+  syntax:
+    content: public interface IStatusSystem
+    content.vb: Public Interface IStatusSystem
+  derivedClasses:
+  - SurvivorsMaker.Simulation.StatusSystem
+- uid: SurvivorsMaker.Simulation.IStatusSystem.Apply(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusEffectDef,SurvivorsMaker.Simulation.WeaponDef)
+  commentId: M:SurvivorsMaker.Simulation.IStatusSystem.Apply(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusEffectDef,SurvivorsMaker.Simulation.WeaponDef)
+  id: Apply(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusEffectDef,SurvivorsMaker.Simulation.WeaponDef)
+  parent: SurvivorsMaker.Simulation.IStatusSystem
+  langs:
+  - csharp
+  - vb
+  name: Apply(SimWorld, Enemy, StatusEffectDef, WeaponDef)
+  nameWithType: IStatusSystem.Apply(SimWorld, Enemy, StatusEffectDef, WeaponDef)
+  fullName: SurvivorsMaker.Simulation.IStatusSystem.Apply(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.StatusEffectDef, SurvivorsMaker.Simulation.WeaponDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Applies or stacks a status unless the enemy is immune; emits StatusApplied.
+  example: []
+  syntax:
+    content: void Apply(SimWorld world, Enemy target, StatusEffectDef status, WeaponDef source)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: target
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusEffectDef
+    - id: source
+      type: SurvivorsMaker.Simulation.WeaponDef
+    content.vb: Sub Apply(world As SimWorld, target As Enemy, status As StatusEffectDef, source As WeaponDef)
+  overload: SurvivorsMaker.Simulation.IStatusSystem.Apply*
+- uid: SurvivorsMaker.Simulation.IStatusSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.IStatusSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.IStatusSystem
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: IStatusSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.IStatusSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: "Step 5a (before enemies act): ticks statuses (burn damage via ICombat.DamageEnemy),\n            elite regeneration,
+    and sets Enemy.SpeedMultiplier / Stunned."
+  example: []
+  syntax:
+    content: void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.IStatusSystem.Tick*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IStatusSystem.Apply*
+  commentId: Overload:SurvivorsMaker.Simulation.IStatusSystem.Apply
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusSystem.html#SurvivorsMaker_Simulation_IStatusSystem_Apply_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_StatusEffectDef_SurvivorsMaker_Simulation_WeaponDef_
+  name: Apply
+  nameWithType: IStatusSystem.Apply
+  fullName: SurvivorsMaker.Simulation.IStatusSystem.Apply
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+- uid: SurvivorsMaker.Simulation.IStatusSystem.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.IStatusSystem.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusSystem.html#SurvivorsMaker_Simulation_IStatusSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: IStatusSystem.Tick
+  fullName: SurvivorsMaker.Simulation.IStatusSystem.Tick

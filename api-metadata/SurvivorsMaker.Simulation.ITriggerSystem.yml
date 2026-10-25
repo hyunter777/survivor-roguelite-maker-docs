@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ITriggerSystem
+  commentId: T:SurvivorsMaker.Simulation.ITriggerSystem
+  id: ITriggerSystem
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  - SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: ITriggerSystem
+  nameWithType: ITriggerSystem
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'World: item and character triggers.'
+  example: []
+  syntax:
+    content: public interface ITriggerSystem
+    content.vb: Public Interface ITriggerSystem
+  derivedClasses:
+  - SurvivorsMaker.Simulation.TriggerSystem
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  commentId: M:SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  id: Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  parent: SurvivorsMaker.Simulation.ITriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  nameWithType: ITriggerSystem.Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'At wave start: builds world.Triggers from the request and fires OnWaveStart.'
+  example: []
+  syntax:
+    content: void Begin(SimWorld world, IReadOnlyList<TriggerDef> triggers)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: triggers
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+    content.vb: Sub Begin(world As SimWorld, triggers As IReadOnlyList(Of TriggerDef))
+  overload: SurvivorsMaker.Simulation.ITriggerSystem.Begin*
+  nameWithType.vb: ITriggerSystem.Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+  fullName.vb: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.TriggerDef))
+  name.vb: Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.ITriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: ITriggerSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: "Step 13a (after deaths are collected, before pickups): reacts to this tick's events\n            (EnemyKilled,
+    EnemyDamaged from weapons, PlayerDamaged, LevelUp), periodic timers and\n            temp buff expiry."
+  example: []
+  syntax:
+    content: void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.ITriggerSystem.Tick*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Begin*
+  commentId: Overload:SurvivorsMaker.Simulation.ITriggerSystem.Begin
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__
+  name: Begin
+  nameWithType: ITriggerSystem.Begin
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Begin
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerDef>
+  nameWithType: IReadOnlyList<TriggerDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>
+  nameWithType.vb: IReadOnlyList(Of TriggerDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerDef)
+  name.vb: IReadOnlyList(Of TriggerDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.ITriggerSystem.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: ITriggerSystem.Tick
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Tick

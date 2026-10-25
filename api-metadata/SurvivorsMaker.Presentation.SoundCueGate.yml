@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.SoundCueGate
+  commentId: T:SurvivorsMaker.Presentation.SoundCueGate
+  id: SoundCueGate
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.SoundCueGate.#ctor
+  - SurvivorsMaker.Presentation.SoundCueGate.CanStart(System.String,System.Single,System.Single,System.Int32)
+  - SurvivorsMaker.Presentation.SoundCueGate.Clear
+  - SurvivorsMaker.Presentation.SoundCueGate.Playing(System.String,System.Single)
+  - SurvivorsMaker.Presentation.SoundCueGate.Started(System.String,System.Single,System.Single)
+  - SurvivorsMaker.Presentation.SoundCueGate.TryStart(System.String,System.Single,System.Single,System.Int32,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: SoundCueGate
+  nameWithType: SoundCueGate
+  fullName: SurvivorsMaker.Presentation.SoundCueGate
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Per-cue cooldown and concurrency limit, so hundreds of hits in one tick do not stack into noise.
+
+    Times are any monotonic clock in seconds.'
+  example: []
+  syntax:
+    content: public sealed class SoundCueGate
+    content.vb: Public NotInheritable Class SoundCueGate
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.SoundCueGate.CanStart(System.String,System.Single,System.Single,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.CanStart(System.String,System.Single,System.Single,System.Int32)
+  id: CanStart(System.String,System.Single,System.Single,System.Int32)
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: CanStart(string, float, float, int)
+  nameWithType: SoundCueGate.CanStart(string, float, float, int)
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.CanStart(string, float, float, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: False while the cue is in its cooldown or already has <code class="paramref">maxConcurrent</code> voices (0 = no
+    limit).
+  example: []
+  syntax:
+    content: public bool CanStart(string key, float now, float cooldown, int maxConcurrent)
+    parameters:
+    - id: key
+      type: System.String
+    - id: now
+      type: System.Single
+    - id: cooldown
+      type: System.Single
+    - id: maxConcurrent
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanStart(key As String, now As Single, cooldown As Single, maxConcurrent As Integer) As Boolean
+  overload: SurvivorsMaker.Presentation.SoundCueGate.CanStart*
+  nameWithType.vb: SoundCueGate.CanStart(String, Single, Single, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.CanStart(String, Single, Single, Integer)
+  name.vb: CanStart(String, Single, Single, Integer)
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Started(System.String,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.Started(System.String,System.Single,System.Single)
+  id: Started(System.String,System.Single,System.Single)
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: Started(string, float, float)
+  nameWithType: SoundCueGate.Started(string, float, float)
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Started(string, float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Records a voice of <code class="paramref">key</code> that started at <code class="paramref">now</code> and lasts
+    <code class="paramref">duration</code> seconds.
+  example: []
+  syntax:
+    content: public void Started(string key, float now, float duration)
+    parameters:
+    - id: key
+      type: System.String
+    - id: now
+      type: System.Single
+    - id: duration
+      type: System.Single
+    content.vb: Public Sub Started(key As String, now As Single, duration As Single)
+  overload: SurvivorsMaker.Presentation.SoundCueGate.Started*
+  nameWithType.vb: SoundCueGate.Started(String, Single, Single)
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.Started(String, Single, Single)
+  name.vb: Started(String, Single, Single)
+- uid: SurvivorsMaker.Presentation.SoundCueGate.TryStart(System.String,System.Single,System.Single,System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.TryStart(System.String,System.Single,System.Single,System.Int32,System.Single)
+  id: TryStart(System.String,System.Single,System.Single,System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: TryStart(string, float, float, int, float)
+  nameWithType: SoundCueGate.TryStart(string, float, float, int, float)
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.TryStart(string, float, float, int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public bool TryStart(string key, float now, float cooldown, int maxConcurrent, float duration)
+    parameters:
+    - id: key
+      type: System.String
+    - id: now
+      type: System.Single
+    - id: cooldown
+      type: System.Single
+    - id: maxConcurrent
+      type: System.Int32
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryStart(key As String, now As Single, cooldown As Single, maxConcurrent As Integer, duration
+      As Single) As Boolean
+  overload: SurvivorsMaker.Presentation.SoundCueGate.TryStart*
+  nameWithType.vb: SoundCueGate.TryStart(String, Single, Single, Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.TryStart(String, Single, Single, Integer, Single)
+  name.vb: TryStart(String, Single, Single, Integer, Single)
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Playing(System.String,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.Playing(System.String,System.Single)
+  id: Playing(System.String,System.Single)
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: Playing(string, float)
+  nameWithType: SoundCueGate.Playing(string, float)
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Playing(string, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int Playing(string key, float now)
+    parameters:
+    - id: key
+      type: System.String
+    - id: now
+      type: System.Single
+    return:
+      type: System.Int32
+    content.vb: Public Function Playing(key As String, now As Single) As Integer
+  overload: SurvivorsMaker.Presentation.SoundCueGate.Playing*
+  nameWithType.vb: SoundCueGate.Playing(String, Single)
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.Playing(String, Single)
+  name.vb: Playing(String, Single)
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Clear
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.Clear
+  id: Clear
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: SoundCueGate.Clear()
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Clear()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: SurvivorsMaker.Presentation.SoundCueGate.Clear*
+- uid: SurvivorsMaker.Presentation.SoundCueGate.#ctor
+  commentId: M:SurvivorsMaker.Presentation.SoundCueGate.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.SoundCueGate
+  langs:
+  - csharp
+  - vb
+  name: SoundCueGate()
+  nameWithType: SoundCueGate.SoundCueGate()
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.SoundCueGate()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public SoundCueGate()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.SoundCueGate.#ctor*
+  nameWithType.vb: SoundCueGate.New()
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.SoundCueGate.CanStart*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.CanStart
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate_CanStart_System_String_System_Single_System_Single_System_Int32_
+  name: CanStart
+  nameWithType: SoundCueGate.CanStart
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.CanStart
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Started*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.Started
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate_Started_System_String_System_Single_System_Single_
+  name: Started
+  nameWithType: SoundCueGate.Started
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Started
+- uid: SurvivorsMaker.Presentation.SoundCueGate.TryStart*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.TryStart
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate_TryStart_System_String_System_Single_System_Single_System_Int32_System_Single_
+  name: TryStart
+  nameWithType: SoundCueGate.TryStart
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.TryStart
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Playing*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.Playing
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate_Playing_System_String_System_Single_
+  name: Playing
+  nameWithType: SoundCueGate.Playing
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Playing
+- uid: SurvivorsMaker.Presentation.SoundCueGate.Clear*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.Clear
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate_Clear
+  name: Clear
+  nameWithType: SoundCueGate.Clear
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.Clear
+- uid: SurvivorsMaker.Presentation.SoundCueGate.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.SoundCueGate.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueGate.html#SurvivorsMaker_Presentation_SoundCueGate__ctor
+  name: SoundCueGate
+  nameWithType: SoundCueGate.SoundCueGate
+  fullName: SurvivorsMaker.Presentation.SoundCueGate.SoundCueGate
+  nameWithType.vb: SoundCueGate.New
+  fullName.vb: SurvivorsMaker.Presentation.SoundCueGate.New
+  name.vb: New

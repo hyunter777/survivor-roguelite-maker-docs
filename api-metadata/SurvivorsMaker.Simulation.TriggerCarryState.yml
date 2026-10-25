@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerCarryState
+  commentId: T:SurvivorsMaker.Simulation.TriggerCarryState
+  id: TriggerCarryState
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerCarryState.CompletedThresholds
+  - SurvivorsMaker.Simulation.TriggerCarryState.Counter
+  - SurvivorsMaker.Simulation.TriggerCarryState.Definition
+  - SurvivorsMaker.Simulation.TriggerCarryState.Firings
+  - SurvivorsMaker.Simulation.TriggerCarryState.HasOwnerKey
+  - SurvivorsMaker.Simulation.TriggerCarryState.Index
+  - SurvivorsMaker.Simulation.TriggerCarryState.OwnerId
+  - SurvivorsMaker.Simulation.TriggerCarryState.OwnerTriggerIndex
+  langs:
+  - csharp
+  - vb
+  name: TriggerCarryState
+  nameWithType: TriggerCarryState
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Legacy trigger cooldown and count state carried across a wave boundary.
+  example: []
+  syntax:
+    content: public struct TriggerCarryState
+    content.vb: Public Structure TriggerCarryState
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.Index
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.Index
+  id: Index
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: TriggerCarryState.Index
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.Index
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Index
+    return:
+      type: System.Int32
+    content.vb: Public Index As Integer
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.Definition
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.Definition
+  id: Definition
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: Definition
+  nameWithType: TriggerCarryState.Definition
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.Definition
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Definition
+    return:
+      type: System.String
+    content.vb: Public Definition As String
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.Counter
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.Counter
+  id: Counter
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: Counter
+  nameWithType: TriggerCarryState.Counter
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.Counter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public long Counter
+    return:
+      type: System.Int64
+    content.vb: Public Counter As Long
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.CompletedThresholds
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.CompletedThresholds
+  id: CompletedThresholds
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: CompletedThresholds
+  nameWithType: TriggerCarryState.CompletedThresholds
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.CompletedThresholds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public long CompletedThresholds
+    return:
+      type: System.Int64
+    content.vb: Public CompletedThresholds As Long
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.Firings
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.Firings
+  id: Firings
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: Firings
+  nameWithType: TriggerCarryState.Firings
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.Firings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Firings
+    return:
+      type: System.Int32
+    content.vb: Public Firings As Integer
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.HasOwnerKey
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.HasOwnerKey
+  id: HasOwnerKey
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: HasOwnerKey
+  nameWithType: TriggerCarryState.HasOwnerKey
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.HasOwnerKey
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool HasOwnerKey
+    return:
+      type: System.Boolean
+    content.vb: Public HasOwnerKey As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.OwnerId
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.OwnerId
+  id: OwnerId
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: OwnerId
+  nameWithType: TriggerCarryState.OwnerId
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.OwnerId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public long OwnerId
+    return:
+      type: System.Int64
+    content.vb: Public OwnerId As Long
+- uid: SurvivorsMaker.Simulation.TriggerCarryState.OwnerTriggerIndex
+  commentId: F:SurvivorsMaker.Simulation.TriggerCarryState.OwnerTriggerIndex
+  id: OwnerTriggerIndex
+  parent: SurvivorsMaker.Simulation.TriggerCarryState
+  langs:
+  - csharp
+  - vb
+  name: OwnerTriggerIndex
+  nameWithType: TriggerCarryState.OwnerTriggerIndex
+  fullName: SurvivorsMaker.Simulation.TriggerCarryState.OwnerTriggerIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int OwnerTriggerIndex
+    return:
+      type: System.Int32
+    content.vb: Public OwnerTriggerIndex As Integer
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

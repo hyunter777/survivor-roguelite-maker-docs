@@ -1,0 +1,1019 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.AcquisitionValidator
+  commentId: T:SurvivorsMaker.Run.AcquisitionValidator
+  id: AcquisitionValidator
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.AcquisitionValidator.#ctor
+  - SurvivorsMaker.Run.AcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  - SurvivorsMaker.Run.AcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  - SurvivorsMaker.Run.AcquisitionValidator.Eligibility(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean)
+  - SurvivorsMaker.Run.AcquisitionValidator.Has(System.Collections.Generic.IReadOnlyList{System.String},System.String)
+  - SurvivorsMaker.Run.AcquisitionValidator.Intersects(System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{System.String})
+  - SurvivorsMaker.Run.AcquisitionValidator.Kind(SurvivorsMaker.Run.WeaponItemDef)
+  - SurvivorsMaker.Run.AcquisitionValidator.Result(SurvivorsMaker.Run.OfferFailure)
+  langs:
+  - csharp
+  - vb
+  name: AcquisitionValidator
+  nameWithType: AcquisitionValidator
+  fullName: SurvivorsMaker.Run.AcquisitionValidator
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Pure preflight shared by generation and execution. Definition identity stays reference based.
+  example: []
+  syntax:
+    content: 'public sealed class AcquisitionValidator : IAcquisitionValidator'
+    content.vb: Public NotInheritable Class AcquisitionValidator Implements IAcquisitionValidator
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Run.IAcquisitionValidator
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  id: Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out AcquisitionPlan)
+  nameWithType: AcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out
+    AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, bool, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.OfferCandidate>, out
+    SurvivorsMaker.Run.AcquisitionPlan)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Checks channel eligibility, bans, ownership and capacity without changing the run; returns a destination plan when
+    valid.
+  example: []
+  syntax:
+    content: public OfferFailure Check(RunState run, OfferCandidate candidate, OfferChannel channel, bool generating, IReadOnlyList<OfferCandidate>
+      reservations, out AcquisitionPlan plan)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: candidate
+      type: SurvivorsMaker.Run.OfferCandidate
+    - id: channel
+      type: SurvivorsMaker.Run.OfferChannel
+    - id: generating
+      type: System.Boolean
+    - id: reservations
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+    - id: plan
+      type: SurvivorsMaker.Run.AcquisitionPlan
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+    content.vb: Public Function Check(run As RunState, candidate As OfferCandidate, channel As OfferChannel, generating As
+      Boolean, reservations As IReadOnlyList(Of OfferCandidate), plan As AcquisitionPlan) As OfferFailure
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Check*
+  implements:
+  - SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  nameWithType.vb: AcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate),
+    AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, Boolean, System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.OfferCandidate),
+    SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate), AcquisitionPlan)
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Has(System.Collections.Generic.IReadOnlyList{System.String},System.String)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Has(System.Collections.Generic.IReadOnlyList{System.String},System.String)
+  id: Has(System.Collections.Generic.IReadOnlyList{System.String},System.String)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Has(IReadOnlyList<string>, string)
+  nameWithType: AcquisitionValidator.Has(IReadOnlyList<string>, string)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Has(System.Collections.Generic.IReadOnlyList<string>, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Tests exact string membership without allocating a candidate set.
+  example: []
+  syntax:
+    content: public static bool Has(IReadOnlyList<string> values, string value)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Has(values As IReadOnlyList(Of String), value As String) As Boolean
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Has*
+  nameWithType.vb: AcquisitionValidator.Has(IReadOnlyList(Of String), String)
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.Has(System.Collections.Generic.IReadOnlyList(Of String), String)
+  name.vb: Has(IReadOnlyList(Of String), String)
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Intersects(System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{System.String})
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Intersects(System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{System.String})
+  id: Intersects(System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IReadOnlyList{System.String})
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Intersects(IReadOnlyList<string>, IReadOnlyList<string>)
+  nameWithType: AcquisitionValidator.Intersects(IReadOnlyList<string>, IReadOnlyList<string>)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Intersects(System.Collections.Generic.IReadOnlyList<string>, System.Collections.Generic.IReadOnlyList<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Tests whether two lists share a nonempty case-sensitive value.
+  example: []
+  syntax:
+    content: public static bool Intersects(IReadOnlyList<string> first, IReadOnlyList<string> second)
+    parameters:
+    - id: first
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    - id: second
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Intersects(first As IReadOnlyList(Of String), second As IReadOnlyList(Of String)) As
+      Boolean
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Intersects*
+  nameWithType.vb: AcquisitionValidator.Intersects(IReadOnlyList(Of String), IReadOnlyList(Of String))
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.Intersects(System.Collections.Generic.IReadOnlyList(Of String), System.Collections.Generic.IReadOnlyList(Of
+    String))
+  name.vb: Intersects(IReadOnlyList(Of String), IReadOnlyList(Of String))
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Kind(SurvivorsMaker.Run.WeaponItemDef)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Kind(SurvivorsMaker.Run.WeaponItemDef)
+  id: Kind(SurvivorsMaker.Run.WeaponItemDef)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Kind(WeaponItemDef)
+  nameWithType: AcquisitionValidator.Kind(WeaponItemDef)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Kind(SurvivorsMaker.Run.WeaponItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Resolves a weapon pool kind from its explicit override or combat kind.
+  example: []
+  syntax:
+    content: public static WeaponPoolKind Kind(WeaponItemDef weapon)
+    parameters:
+    - id: weapon
+      type: SurvivorsMaker.Run.WeaponItemDef
+    return:
+      type: SurvivorsMaker.Run.WeaponPoolKind
+    content.vb: Public Shared Function Kind(weapon As WeaponItemDef) As WeaponPoolKind
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Kind*
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Eligibility(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Eligibility(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean)
+  id: Eligibility(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Eligibility(RunState, OfferCandidate, OfferChannel, bool)
+  nameWithType: AcquisitionValidator.Eligibility(RunState, OfferCandidate, OfferChannel, bool)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Eligibility(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Checks candidate channel, availability and bans without checking a destination or mutating the run.
+  example: []
+  syntax:
+    content: public static OfferFailure Eligibility(RunState run, OfferCandidate candidate, OfferChannel channel, bool legacyShopPurchase
+      = false)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: candidate
+      type: SurvivorsMaker.Run.OfferCandidate
+    - id: channel
+      type: SurvivorsMaker.Run.OfferChannel
+    - id: legacyShopPurchase
+      type: System.Boolean
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+    content.vb: Public Shared Function Eligibility(run As RunState, candidate As OfferCandidate, channel As OfferChannel,
+      legacyShopPurchase As Boolean = False) As OfferFailure
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Eligibility*
+  nameWithType.vb: AcquisitionValidator.Eligibility(RunState, OfferCandidate, OfferChannel, Boolean)
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.Eligibility(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, Boolean)
+  name.vb: Eligibility(RunState, OfferCandidate, OfferChannel, Boolean)
+- uid: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  id: CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: CheckMerge(RunState, int, int, out AcquisitionPlan)
+  nameWithType: AcquisitionValidator.CheckMerge(RunState, int, int, out AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, int, int, out SurvivorsMaker.Run.AcquisitionPlan)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Validates two owned weapon indices and their merge destination without changing inventory.
+  example: []
+  syntax:
+    content: public RunResult CheckMerge(RunState run, int first, int second, out AcquisitionPlan plan)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: first
+      type: System.Int32
+    - id: second
+      type: System.Int32
+    - id: plan
+      type: SurvivorsMaker.Run.AcquisitionPlan
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function CheckMerge(run As RunState, first As Integer, second As Integer, plan As AcquisitionPlan)
+      As RunResult
+  overload: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge*
+  implements:
+  - SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  nameWithType.vb: AcquisitionValidator.CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, Integer, Integer, SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Result(SurvivorsMaker.Run.OfferFailure)
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.Result(SurvivorsMaker.Run.OfferFailure)
+  id: Result(SurvivorsMaker.Run.OfferFailure)
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Result(OfferFailure)
+  nameWithType: AcquisitionValidator.Result(OfferFailure)
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Result(SurvivorsMaker.Run.OfferFailure)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Maps a pool rejection category to the public run-operation result.
+  example: []
+  syntax:
+    content: public static RunResult Result(OfferFailure failure)
+    parameters:
+    - id: failure
+      type: SurvivorsMaker.Run.OfferFailure
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Shared Function Result(failure As OfferFailure) As RunResult
+  overload: SurvivorsMaker.Run.AcquisitionValidator.Result*
+- uid: SurvivorsMaker.Run.AcquisitionValidator.#ctor
+  commentId: M:SurvivorsMaker.Run.AcquisitionValidator.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.AcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: AcquisitionValidator()
+  nameWithType: AcquisitionValidator.AcquisitionValidator()
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.AcquisitionValidator()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public AcquisitionValidator()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.AcquisitionValidator.#ctor*
+  nameWithType.vb: AcquisitionValidator.New()
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Run.IAcquisitionValidator
+  commentId: T:SurvivorsMaker.Run.IAcquisitionValidator
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IAcquisitionValidator.html
+  name: IAcquisitionValidator
+  nameWithType: IAcquisitionValidator
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Check*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Check
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Check_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Run_OfferCandidate__SurvivorsMaker_Run_AcquisitionPlan__
+  name: Check
+  nameWithType: AcquisitionValidator.Check
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Check
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.IAcquisitionValidator
+  isExternal: true
+  href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_Check_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Run_OfferCandidate__SurvivorsMaker_Run_AcquisitionPlan__
+  name: Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out AcquisitionPlan)
+  nameWithType: IAcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out
+    AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, bool, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.OfferCandidate>, out
+    SurvivorsMaker.Run.AcquisitionPlan)
+  nameWithType.vb: IAcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate),
+    AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, Boolean, System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.OfferCandidate),
+    SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate), AcquisitionPlan)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+    name: Check
+    isExternal: true
+    href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_Check_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Run_OfferCandidate__SurvivorsMaker_Run_AcquisitionPlan__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferChannel
+    name: OfferChannel
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferChannel.html
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - name: out
+  - name: ' '
+  - uid: SurvivorsMaker.Run.AcquisitionPlan
+    name: AcquisitionPlan
+    isExternal: true
+    href: SurvivorsMaker.Run.AcquisitionPlan.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+    name: Check
+    isExternal: true
+    href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_Check_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Run_OfferCandidate__SurvivorsMaker_Run_AcquisitionPlan__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferChannel
+    name: OfferChannel
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferChannel.html
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.AcquisitionPlan
+    name: AcquisitionPlan
+    isExternal: true
+    href: SurvivorsMaker.Run.AcquisitionPlan.html
+  - name: )
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.OfferCandidate
+  commentId: T:SurvivorsMaker.Run.OfferCandidate
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferCandidate.html
+  name: OfferCandidate
+  nameWithType: OfferCandidate
+  fullName: SurvivorsMaker.Run.OfferCandidate
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferChannel.html
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<OfferCandidate>
+  nameWithType: IReadOnlyList<OfferCandidate>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.OfferCandidate>
+  nameWithType.vb: IReadOnlyList(Of OfferCandidate)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.OfferCandidate)
+  name.vb: IReadOnlyList(Of OfferCandidate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: )
+- uid: SurvivorsMaker.Run.AcquisitionPlan
+  commentId: T:SurvivorsMaker.Run.AcquisitionPlan
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionPlan.html
+  name: AcquisitionPlan
+  nameWithType: AcquisitionPlan
+  fullName: SurvivorsMaker.Run.AcquisitionPlan
+- uid: SurvivorsMaker.Run.OfferFailure
+  commentId: T:SurvivorsMaker.Run.OfferFailure
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferFailure.html
+  name: OfferFailure
+  nameWithType: OfferFailure
+  fullName: SurvivorsMaker.Run.OfferFailure
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Has*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Has
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Has_System_Collections_Generic_IReadOnlyList_System_String__System_String_
+  name: Has
+  nameWithType: AcquisitionValidator.Has
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Has
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Intersects*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Intersects
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Intersects_System_Collections_Generic_IReadOnlyList_System_String__System_Collections_Generic_IReadOnlyList_System_String__
+  name: Intersects
+  nameWithType: AcquisitionValidator.Intersects
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Intersects
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Kind*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Kind
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Kind_SurvivorsMaker_Run_WeaponItemDef_
+  name: Kind
+  nameWithType: AcquisitionValidator.Kind
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Kind
+- uid: SurvivorsMaker.Run.WeaponItemDef
+  commentId: T:SurvivorsMaker.Run.WeaponItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponItemDef.html
+  name: WeaponItemDef
+  nameWithType: WeaponItemDef
+  fullName: SurvivorsMaker.Run.WeaponItemDef
+- uid: SurvivorsMaker.Run.WeaponPoolKind
+  commentId: T:SurvivorsMaker.Run.WeaponPoolKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponPoolKind.html
+  name: WeaponPoolKind
+  nameWithType: WeaponPoolKind
+  fullName: SurvivorsMaker.Run.WeaponPoolKind
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Eligibility*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Eligibility
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Eligibility_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_
+  name: Eligibility
+  nameWithType: AcquisitionValidator.Eligibility
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Eligibility
+- uid: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.CheckMerge
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_CheckMerge_SurvivorsMaker_Run_RunState_System_Int32_System_Int32_SurvivorsMaker_Run_AcquisitionPlan__
+  name: CheckMerge
+  nameWithType: AcquisitionValidator.CheckMerge
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.CheckMerge
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.IAcquisitionValidator
+  isExternal: true
+  href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_CheckMerge_SurvivorsMaker_Run_RunState_System_Int32_System_Int32_SurvivorsMaker_Run_AcquisitionPlan__
+  name: CheckMerge(RunState, int, int, out AcquisitionPlan)
+  nameWithType: IAcquisitionValidator.CheckMerge(RunState, int, int, out AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, int, int, out SurvivorsMaker.Run.AcquisitionPlan)
+  nameWithType.vb: IAcquisitionValidator.CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, Integer, Integer, SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+    name: CheckMerge
+    isExternal: true
+    href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_CheckMerge_SurvivorsMaker_Run_RunState_System_Int32_System_Int32_SurvivorsMaker_Run_AcquisitionPlan__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - name: out
+  - name: ' '
+  - uid: SurvivorsMaker.Run.AcquisitionPlan
+    name: AcquisitionPlan
+    isExternal: true
+    href: SurvivorsMaker.Run.AcquisitionPlan.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+    name: CheckMerge
+    isExternal: true
+    href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_CheckMerge_SurvivorsMaker_Run_RunState_System_Int32_System_Int32_SurvivorsMaker_Run_AcquisitionPlan__
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+    href: SurvivorsMaker.Run.RunState.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.AcquisitionPlan
+    name: AcquisitionPlan
+    isExternal: true
+    href: SurvivorsMaker.Run.AcquisitionPlan.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.AcquisitionValidator.Result*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.Result
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator_Result_SurvivorsMaker_Run_OfferFailure_
+  name: Result
+  nameWithType: AcquisitionValidator.Result
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.Result
+- uid: SurvivorsMaker.Run.AcquisitionValidator.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.AcquisitionValidator.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionValidator.html#SurvivorsMaker_Run_AcquisitionValidator__ctor
+  name: AcquisitionValidator
+  nameWithType: AcquisitionValidator.AcquisitionValidator
+  fullName: SurvivorsMaker.Run.AcquisitionValidator.AcquisitionValidator
+  nameWithType.vb: AcquisitionValidator.New
+  fullName.vb: SurvivorsMaker.Run.AcquisitionValidator.New
+  name.vb: New

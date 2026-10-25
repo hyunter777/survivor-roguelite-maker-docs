@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferFailure
+  commentId: T:SurvivorsMaker.Run.OfferFailure
+  id: OfferFailure
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferFailure.Banned
+  - SurvivorsMaker.Run.OfferFailure.Capacity
+  - SurvivorsMaker.Run.OfferFailure.Channel
+  - SurvivorsMaker.Run.OfferFailure.InvalidDefinition
+  - SurvivorsMaker.Run.OfferFailure.InvalidRequest
+  - SurvivorsMaker.Run.OfferFailure.NoCandidate
+  - SurvivorsMaker.Run.OfferFailure.None
+  - SurvivorsMaker.Run.OfferFailure.Ownership
+  - SurvivorsMaker.Run.OfferFailure.TierRange
+  - SurvivorsMaker.Run.OfferFailure.Unavailable
+  - SurvivorsMaker.Run.OfferFailure.Weight
+  langs:
+  - csharp
+  - vb
+  name: OfferFailure
+  nameWithType: OfferFailure
+  fullName: SurvivorsMaker.Run.OfferFailure
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Candidate rejection category returned by the shared acquisition validator.
+  example: []
+  syntax:
+    content: public enum OfferFailure
+    content.vb: Public Enum OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.None
+  commentId: F:SurvivorsMaker.Run.OfferFailure.None
+  id: None
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OfferFailure.None
+  fullName: SurvivorsMaker.Run.OfferFailure.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.InvalidRequest
+  commentId: F:SurvivorsMaker.Run.OfferFailure.InvalidRequest
+  id: InvalidRequest
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: InvalidRequest
+  nameWithType: OfferFailure.InvalidRequest
+  fullName: SurvivorsMaker.Run.OfferFailure.InvalidRequest
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: InvalidRequest = 1
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.NoCandidate
+  commentId: F:SurvivorsMaker.Run.OfferFailure.NoCandidate
+  id: NoCandidate
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: NoCandidate
+  nameWithType: OfferFailure.NoCandidate
+  fullName: SurvivorsMaker.Run.OfferFailure.NoCandidate
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: NoCandidate = 2
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.TierRange
+  commentId: F:SurvivorsMaker.Run.OfferFailure.TierRange
+  id: TierRange
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: TierRange
+  nameWithType: OfferFailure.TierRange
+  fullName: SurvivorsMaker.Run.OfferFailure.TierRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: TierRange = 3
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Channel
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Channel
+  id: Channel
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Channel
+  nameWithType: OfferFailure.Channel
+  fullName: SurvivorsMaker.Run.OfferFailure.Channel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Channel = 4
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Unavailable
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Unavailable
+  id: Unavailable
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Unavailable
+  nameWithType: OfferFailure.Unavailable
+  fullName: SurvivorsMaker.Run.OfferFailure.Unavailable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Unavailable = 5
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Banned
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Banned
+  id: Banned
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Banned
+  nameWithType: OfferFailure.Banned
+  fullName: SurvivorsMaker.Run.OfferFailure.Banned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Banned = 6
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Ownership
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Ownership
+  id: Ownership
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Ownership
+  nameWithType: OfferFailure.Ownership
+  fullName: SurvivorsMaker.Run.OfferFailure.Ownership
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Ownership = 7
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Capacity
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Capacity
+  id: Capacity
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: OfferFailure.Capacity
+  fullName: SurvivorsMaker.Run.OfferFailure.Capacity
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Capacity = 8
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.InvalidDefinition
+  commentId: F:SurvivorsMaker.Run.OfferFailure.InvalidDefinition
+  id: InvalidDefinition
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: InvalidDefinition
+  nameWithType: OfferFailure.InvalidDefinition
+  fullName: SurvivorsMaker.Run.OfferFailure.InvalidDefinition
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: InvalidDefinition = 9
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+- uid: SurvivorsMaker.Run.OfferFailure.Weight
+  commentId: F:SurvivorsMaker.Run.OfferFailure.Weight
+  id: Weight
+  parent: SurvivorsMaker.Run.OfferFailure
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: OfferFailure.Weight
+  fullName: SurvivorsMaker.Run.OfferFailure.Weight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Weight = 10
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.OfferFailure
+  commentId: T:SurvivorsMaker.Run.OfferFailure
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferFailure.html
+  name: OfferFailure
+  nameWithType: OfferFailure
+  fullName: SurvivorsMaker.Run.OfferFailure

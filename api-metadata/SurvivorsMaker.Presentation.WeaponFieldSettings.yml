@@ -1,0 +1,975 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings
+  commentId: T:SurvivorsMaker.Presentation.WeaponFieldSettings
+  id: WeaponFieldSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraFillColor
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseAlpha
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseSeconds
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRingColor
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRotateDegreesPerSecond
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.AuraSortingOrder
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowColor
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowScale
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeRotationOffset
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSortingOrder
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSpinDegreesPerSecond
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeTint
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.BladeVisualScale
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.Enabled
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.HideHeldWeapon
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.MinBladeSize
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.TrailAlpha
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.TrailGhosts
+  - SurvivorsMaker.Presentation.WeaponFieldSettings.TrailSpacingDegrees
+  langs:
+  - csharp
+  - vb
+  name: WeaponFieldSettings
+  nameWithType: WeaponFieldSettings
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Orbiting blades and aura rings drawn from weapon state.
+  example: []
+  syntax:
+    content: public sealed class WeaponFieldSettings
+    content.vb: Public NotInheritable Class WeaponFieldSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.Enabled
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.Enabled
+  id: Enabled
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: WeaponFieldSettings.Enabled
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.Enabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enable these visual effects; off skips this presentation feature without changing gameplay.
+  example: []
+  syntax:
+    content: '[Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")]
+
+      public bool Enabled'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")>
+
+      Public Enabled As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable these visual effects; off skips this presentation feature without changing gameplay.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.HideHeldWeapon
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.HideHeldWeapon
+  id: HideHeldWeapon
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: HideHeldWeapon
+  nameWithType: WeaponFieldSettings.HideHeldWeapon
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.HideHeldWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Orbit and aura weapons do not also draw the held weapon sprite.
+  example: []
+  syntax:
+    content: '[Tooltip("Hide the held sprite for orbit and aura weapons; their field visuals remain visible.")]
+
+      public bool HideHeldWeapon'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Hide the held sprite for orbit and aura weapons; their field visuals remain visible.")>
+
+      Public HideHeldWeapon As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Hide the held sprite for orbit and aura weapons; their field visuals remain visible.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeVisualScale
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeVisualScale
+  id: BladeVisualScale
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeVisualScale
+  nameWithType: WeaponFieldSettings.BladeVisualScale
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeVisualScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Procedural blade size relative to the blade's hit diameter.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade size relative to its hit diameter; 1 = hit diameter.")]
+
+      public float BladeVisualScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Blade size relative to its hit diameter; 1 = hit diameter.")>
+
+      Public BladeVisualScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade size relative to its hit diameter; 1 = hit diameter.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.MinBladeSize
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.MinBladeSize
+  id: MinBladeSize
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: MinBladeSize
+  nameWithType: WeaponFieldSettings.MinBladeSize
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.MinBladeSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Min Blade Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Min Blade Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float MinBladeSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Min Blade Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public MinBladeSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Min Blade Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeTint
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeTint
+  id: BladeTint
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeTint
+  nameWithType: WeaponFieldSettings.BladeTint
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Blade Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BladeTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Blade Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public BladeTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeRotationOffset
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeRotationOffset
+  id: BladeRotationOffset
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeRotationOffset
+  nameWithType: WeaponFieldSettings.BladeRotationOffset
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeRotationOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Added to the outward angle; sprites drawn pointing up use -90.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade Rotation Offset in world units; use nonnegative sizes and signed offsets.")]
+
+      public float BladeRotationOffset'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Blade Rotation Offset in world units; use nonnegative sizes and signed offsets.")>
+
+      Public BladeRotationOffset As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade Rotation Offset in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSpinDegreesPerSecond
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSpinDegreesPerSecond
+  id: BladeSpinDegreesPerSecond
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeSpinDegreesPerSecond
+  nameWithType: WeaponFieldSettings.BladeSpinDegreesPerSecond
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSpinDegreesPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Blade Spin Degrees Per Second; degrees per second, 0 = no rotation.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade Spin Degrees Per Second; degrees per second, 0 = no rotation.")]
+
+      public float BladeSpinDegreesPerSecond'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Blade Spin Degrees Per Second; degrees per second, 0 = no rotation.")>
+
+      Public BladeSpinDegreesPerSecond As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade Spin Degrees Per Second; degrees per second, 0 = no rotation.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowColor
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowColor
+  id: BladeGlowColor
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeGlowColor
+  nameWithType: WeaponFieldSettings.BladeGlowColor
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Blade Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BladeGlowColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Blade Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public BladeGlowColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowScale
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowScale
+  id: BladeGlowScale
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeGlowScale
+  nameWithType: WeaponFieldSettings.BladeGlowScale
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeGlowScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Glow size relative to the blade sprite; 1 = blade size.
+  example: []
+  syntax:
+    content: '[Tooltip("Glow size relative to the blade sprite; 1 = blade size.")]
+
+      public float BladeGlowScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Glow size relative to the blade sprite; 1 = blade size.")>
+
+      Public BladeGlowScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Glow size relative to the blade sprite; 1 = blade size.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailGhosts
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.TrailGhosts
+  id: TrailGhosts
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: TrailGhosts
+  nameWithType: WeaponFieldSettings.TrailGhosts
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailGhosts
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Trailing blade images per blade; nonnegative, 0 = no trail.
+  example: []
+  syntax:
+    content: '[Tooltip("Trailing blade images per blade; nonnegative, 0 = no trail.")]
+
+      public int TrailGhosts'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Trailing blade images per blade; nonnegative, 0 = no trail.")>
+
+      Public TrailGhosts As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trailing blade images per blade; nonnegative, 0 = no trail.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailSpacingDegrees
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.TrailSpacingDegrees
+  id: TrailSpacingDegrees
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: TrailSpacingDegrees
+  nameWithType: WeaponFieldSettings.TrailSpacingDegrees
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailSpacingDegrees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Trail Spacing Degrees; angle in degrees.
+  example: []
+  syntax:
+    content: '[Tooltip("Trail Spacing Degrees; angle in degrees.")]
+
+      public float TrailSpacingDegrees'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Trail Spacing Degrees; angle in degrees.")>
+
+      Public TrailSpacingDegrees As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trail Spacing Degrees; angle in degrees.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailAlpha
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.TrailAlpha
+  id: TrailAlpha
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: TrailAlpha
+  nameWithType: WeaponFieldSettings.TrailAlpha
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.TrailAlpha
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Trail opacity fraction from 0 to 1; 0 = invisible.
+  example: []
+  syntax:
+    content: '[Tooltip("Trail opacity fraction from 0 to 1; 0 = invisible.")]
+
+      [Range(0, 1)]
+
+      public float TrailAlpha'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Trail opacity fraction from 0 to 1; 0 = invisible.")>
+
+      <Range(0, 1)>
+
+      Public TrailAlpha As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trail opacity fraction from 0 to 1; 0 = invisible.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRingColor
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRingColor
+  id: AuraRingColor
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraRingColor
+  nameWithType: WeaponFieldSettings.AuraRingColor
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRingColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color AuraRingColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Aura Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public AuraRingColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraFillColor
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraFillColor
+  id: AuraFillColor
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraFillColor
+  nameWithType: WeaponFieldSettings.AuraFillColor
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraFillColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura Fill Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura Fill Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color AuraFillColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Aura Fill Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public AuraFillColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Fill Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRotateDegreesPerSecond
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRotateDegreesPerSecond
+  id: AuraRotateDegreesPerSecond
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraRotateDegreesPerSecond
+  nameWithType: WeaponFieldSettings.AuraRotateDegreesPerSecond
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraRotateDegreesPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura Rotate Degrees Per Second; degrees per second, 0 = no rotation.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura Rotate Degrees Per Second; degrees per second, 0 = no rotation.")]
+
+      public float AuraRotateDegreesPerSecond'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Aura Rotate Degrees Per Second; degrees per second, 0 = no rotation.")>
+
+      Public AuraRotateDegreesPerSecond As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Rotate Degrees Per Second; degrees per second, 0 = no rotation.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseSeconds
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseSeconds
+  id: AuraPulseSeconds
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraPulseSeconds
+  nameWithType: WeaponFieldSettings.AuraPulseSeconds
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura Pulse Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura Pulse Seconds in seconds; nonnegative.")]
+
+      public float AuraPulseSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Aura Pulse Seconds in seconds; nonnegative.")>
+
+      Public AuraPulseSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Pulse Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseAlpha
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseAlpha
+  id: AuraPulseAlpha
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraPulseAlpha
+  nameWithType: WeaponFieldSettings.AuraPulseAlpha
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraPulseAlpha
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura pulse opacity fraction from 0 to 1; 0 = invisible.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura pulse opacity fraction from 0 to 1; 0 = invisible.")]
+
+      [Range(0, 1)]
+
+      public float AuraPulseAlpha'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Aura pulse opacity fraction from 0 to 1; 0 = invisible.")>
+
+      <Range(0, 1)>
+
+      Public AuraPulseAlpha As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura pulse opacity fraction from 0 to 1; 0 = invisible.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraSortingOrder
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.AuraSortingOrder
+  id: AuraSortingOrder
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: AuraSortingOrder
+  nameWithType: WeaponFieldSettings.AuraSortingOrder
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.AuraSortingOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Aura Sorting Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Aura Sorting Order; sprite sorting order, higher draws in front.")]
+
+      public int AuraSortingOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Aura Sorting Order; sprite sorting order, higher draws in front.")>
+
+      Public AuraSortingOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aura Sorting Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSortingOrder
+  commentId: F:SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSortingOrder
+  id: BladeSortingOrder
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: BladeSortingOrder
+  nameWithType: WeaponFieldSettings.BladeSortingOrder
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.BladeSortingOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Blade Sorting Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Blade Sorting Order; sprite sorting order, higher draws in front.")]
+
+      public int BladeSortingOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Blade Sorting Order; sprite sorting order, higher draws in front.")>
+
+      Public BladeSortingOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Blade Sorting Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.WeaponFieldSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponFieldSettings()
+  nameWithType: WeaponFieldSettings.WeaponFieldSettings()
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.WeaponFieldSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public WeaponFieldSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor*
+  nameWithType.vb: WeaponFieldSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.WeaponFieldSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.WeaponFieldSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WeaponFieldSettings.html#SurvivorsMaker_Presentation_WeaponFieldSettings__ctor
+  name: WeaponFieldSettings
+  nameWithType: WeaponFieldSettings.WeaponFieldSettings
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings.WeaponFieldSettings
+  nameWithType.vb: WeaponFieldSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.WeaponFieldSettings.New
+  name.vb: New

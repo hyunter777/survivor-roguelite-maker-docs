@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiSpriteRole
+  commentId: T:SurvivorsMaker.Presentation.UiSpriteRole
+  id: UiSpriteRole
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiSpriteRole.Bar
+  - SurvivorsMaker.Presentation.UiSpriteRole.Border
+  - SurvivorsMaker.Presentation.UiSpriteRole.Button
+  - SurvivorsMaker.Presentation.UiSpriteRole.Focus
+  - SurvivorsMaker.Presentation.UiSpriteRole.None
+  - SurvivorsMaker.Presentation.UiSpriteRole.Panel
+  langs:
+  - csharp
+  - vb
+  name: UiSpriteRole
+  nameWithType: UiSpriteRole
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Semantic sprite role resolved from the active UI theme.
+  example: []
+  syntax:
+    content: public enum UiSpriteRole
+    content.vb: Public Enum UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.None
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.None
+  id: None
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UiSpriteRole.None
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.Panel
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.Panel
+  id: Panel
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: Panel
+  nameWithType: UiSpriteRole.Panel
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.Panel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Panel = 1
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.Button
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.Button
+  id: Button
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: Button
+  nameWithType: UiSpriteRole.Button
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.Button
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Button = 2
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.Border
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.Border
+  id: Border
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: Border
+  nameWithType: UiSpriteRole.Border
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.Border
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Border = 3
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.Bar
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.Bar
+  id: Bar
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: Bar
+  nameWithType: UiSpriteRole.Bar
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.Bar
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Bar = 4
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+- uid: SurvivorsMaker.Presentation.UiSpriteRole.Focus
+  commentId: F:SurvivorsMaker.Presentation.UiSpriteRole.Focus
+  id: Focus
+  parent: SurvivorsMaker.Presentation.UiSpriteRole
+  langs:
+  - csharp
+  - vb
+  name: Focus
+  nameWithType: UiSpriteRole.Focus
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole.Focus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Focus = 5
+    return:
+      type: SurvivorsMaker.Presentation.UiSpriteRole
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiSpriteRole
+  commentId: T:SurvivorsMaker.Presentation.UiSpriteRole
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiSpriteRole.html
+  name: UiSpriteRole
+  nameWithType: UiSpriteRole
+  fullName: SurvivorsMaker.Presentation.UiSpriteRole

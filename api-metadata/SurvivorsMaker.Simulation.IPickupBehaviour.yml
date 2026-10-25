@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IPickupBehaviour
+  commentId: T:SurvivorsMaker.Simulation.IPickupBehaviour
+  id: IPickupBehaviour
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IPickupBehaviour.Collect(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.PlayerState,SurvivorsMaker.Simulation.Pickup)
+  langs:
+  - csharp
+  - vb
+  name: IPickupBehaviour
+  nameWithType: IPickupBehaviour
+  fullName: SurvivorsMaker.Simulation.IPickupBehaviour
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: What happens when a player collects a pickup.
+  example: []
+  syntax:
+    content: public interface IPickupBehaviour
+    content.vb: Public Interface IPickupBehaviour
+- uid: SurvivorsMaker.Simulation.IPickupBehaviour.Collect(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.PlayerState,SurvivorsMaker.Simulation.Pickup)
+  commentId: M:SurvivorsMaker.Simulation.IPickupBehaviour.Collect(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.PlayerState,SurvivorsMaker.Simulation.Pickup)
+  id: Collect(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.PlayerState,SurvivorsMaker.Simulation.Pickup)
+  parent: SurvivorsMaker.Simulation.IPickupBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Collect(SimWorld, PlayerState, Pickup)
+  nameWithType: IPickupBehaviour.Collect(SimWorld, PlayerState, Pickup)
+  fullName: SurvivorsMaker.Simulation.IPickupBehaviour.Collect(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.PlayerState,
+    SurvivorsMaker.Simulation.Pickup)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Collect(SimWorld world, PlayerState player, Pickup pickup)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: player
+      type: SurvivorsMaker.Simulation.PlayerState
+    - id: pickup
+      type: SurvivorsMaker.Simulation.Pickup
+    content.vb: Sub Collect(world As SimWorld, player As PlayerState, pickup As Pickup)
+  overload: SurvivorsMaker.Simulation.IPickupBehaviour.Collect*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IPickupBehaviour.Collect*
+  commentId: Overload:SurvivorsMaker.Simulation.IPickupBehaviour.Collect
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IPickupBehaviour.html#SurvivorsMaker_Simulation_IPickupBehaviour_Collect_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_PlayerState_SurvivorsMaker_Simulation_Pickup_
+  name: Collect
+  nameWithType: IPickupBehaviour.Collect
+  fullName: SurvivorsMaker.Simulation.IPickupBehaviour.Collect
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.PlayerState
+  commentId: T:SurvivorsMaker.Simulation.PlayerState
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PlayerState.html
+  name: PlayerState
+  nameWithType: PlayerState
+  fullName: SurvivorsMaker.Simulation.PlayerState
+- uid: SurvivorsMaker.Simulation.Pickup
+  commentId: T:SurvivorsMaker.Simulation.Pickup
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Pickup.html
+  name: Pickup
+  nameWithType: Pickup
+  fullName: SurvivorsMaker.Simulation.Pickup

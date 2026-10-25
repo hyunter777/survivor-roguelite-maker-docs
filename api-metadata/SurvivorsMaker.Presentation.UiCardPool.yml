@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiCardPool
+  commentId: T:SurvivorsMaker.Presentation.UiCardPool
+  id: UiCardPool
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiCardPool.#ctor
+  - SurvivorsMaker.Presentation.UiCardPool.Content
+  - SurvivorsMaker.Presentation.UiCardPool.Get(System.Int32)
+  - SurvivorsMaker.Presentation.UiCardPool.Template
+  - SurvivorsMaker.Presentation.UiCardPool.Trim(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: UiCardPool
+  nameWithType: UiCardPool
+  fullName: SurvivorsMaker.Presentation.UiCardPool
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Reusable pool of UI cards that hides unused instances between refreshes.
+  example: []
+  syntax:
+    content: public sealed class UiCardPool
+    content.vb: Public NotInheritable Class UiCardPool
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.UiCardPool.Content
+  commentId: F:SurvivorsMaker.Presentation.UiCardPool.Content
+  id: Content
+  parent: SurvivorsMaker.Presentation.UiCardPool
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: UiCardPool.Content
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Content
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public RectTransform Content
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Content As RectTransform
+- uid: SurvivorsMaker.Presentation.UiCardPool.Template
+  commentId: F:SurvivorsMaker.Presentation.UiCardPool.Template
+  id: Template
+  parent: SurvivorsMaker.Presentation.UiCardPool
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: UiCardPool.Template
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Template
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public UiCard Template
+    return:
+      type: SurvivorsMaker.Presentation.UiCard
+    content.vb: Public Template As UiCard
+- uid: SurvivorsMaker.Presentation.UiCardPool.Get(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.UiCardPool.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: SurvivorsMaker.Presentation.UiCardPool
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: UiCardPool.Get(int)
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Get(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public UiCard Get(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Presentation.UiCard
+    content.vb: Public Function [Get](index As Integer) As UiCard
+  overload: SurvivorsMaker.Presentation.UiCardPool.Get*
+  nameWithType.vb: UiCardPool.Get(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.UiCardPool.Get(Integer)
+  name.vb: Get(Integer)
+- uid: SurvivorsMaker.Presentation.UiCardPool.Trim(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.UiCardPool.Trim(System.Int32)
+  id: Trim(System.Int32)
+  parent: SurvivorsMaker.Presentation.UiCardPool
+  langs:
+  - csharp
+  - vb
+  name: Trim(int)
+  nameWithType: UiCardPool.Trim(int)
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Trim(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Trim(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub Trim(count As Integer)
+  overload: SurvivorsMaker.Presentation.UiCardPool.Trim*
+  nameWithType.vb: UiCardPool.Trim(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.UiCardPool.Trim(Integer)
+  name.vb: Trim(Integer)
+- uid: SurvivorsMaker.Presentation.UiCardPool.#ctor
+  commentId: M:SurvivorsMaker.Presentation.UiCardPool.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.UiCardPool
+  langs:
+  - csharp
+  - vb
+  name: UiCardPool()
+  nameWithType: UiCardPool.UiCardPool()
+  fullName: SurvivorsMaker.Presentation.UiCardPool.UiCardPool()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public UiCardPool()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.UiCardPool.#ctor*
+  nameWithType.vb: UiCardPool.New()
+  fullName.vb: SurvivorsMaker.Presentation.UiCardPool.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.UiCard
+  commentId: T:SurvivorsMaker.Presentation.UiCard
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiCard.html
+  name: UiCard
+  nameWithType: UiCard
+  fullName: SurvivorsMaker.Presentation.UiCard
+- uid: SurvivorsMaker.Presentation.UiCardPool.Get*
+  commentId: Overload:SurvivorsMaker.Presentation.UiCardPool.Get
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiCardPool.html#SurvivorsMaker_Presentation_UiCardPool_Get_System_Int32_
+  name: Get
+  nameWithType: UiCardPool.Get
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Get
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.UiCardPool.Trim*
+  commentId: Overload:SurvivorsMaker.Presentation.UiCardPool.Trim
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiCardPool.html#SurvivorsMaker_Presentation_UiCardPool_Trim_System_Int32_
+  name: Trim
+  nameWithType: UiCardPool.Trim
+  fullName: SurvivorsMaker.Presentation.UiCardPool.Trim
+- uid: SurvivorsMaker.Presentation.UiCardPool.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.UiCardPool.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiCardPool.html#SurvivorsMaker_Presentation_UiCardPool__ctor
+  name: UiCardPool
+  nameWithType: UiCardPool.UiCardPool
+  fullName: SurvivorsMaker.Presentation.UiCardPool.UiCardPool
+  nameWithType.vb: UiCardPool.New
+  fullName.vb: SurvivorsMaker.Presentation.UiCardPool.New
+  name.vb: New

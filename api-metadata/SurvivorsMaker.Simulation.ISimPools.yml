@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ISimPools
+  commentId: T:SurvivorsMaker.Simulation.ISimPools
+  id: ISimPools
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  - SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  - SurvivorsMaker.Simulation.ISimPools.RentStatus
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  langs:
+  - csharp
+  - vb
+  name: ISimPools
+  nameWithType: ISimPools
+  fullName: SurvivorsMaker.Simulation.ISimPools
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Reuses projectile, enemy and status objects. Rent returns an object with every field at its
+
+    default; Return is called by whoever removes the object from its world list. Presentation must
+
+    not keep references to simulation objects across ticks (use ids).'
+  example: []
+  syntax:
+    content: public interface ISimPools
+    content.vb: Public Interface ISimPools
+  derivedClasses:
+  - SurvivorsMaker.Simulation.AllocatingPools
+  - SurvivorsMaker.Simulation.SimPools
+- uid: SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  id: RentProjectile
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: RentProjectile()
+  nameWithType: ISimPools.RentProjectile()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentProjectile()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Projectile RentProjectile()
+    return:
+      type: SurvivorsMaker.Simulation.Projectile
+    content.vb: Function RentProjectile() As Projectile
+  overload: SurvivorsMaker.Simulation.ISimPools.RentProjectile*
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  id: Return(SurvivorsMaker.Simulation.Projectile)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: Return(Projectile)
+  nameWithType: ISimPools.Return(Projectile)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Return(Projectile projectile)
+    parameters:
+    - id: projectile
+      type: SurvivorsMaker.Simulation.Projectile
+    content.vb: Sub [Return](projectile As Projectile)
+  overload: SurvivorsMaker.Simulation.ISimPools.Return*
+- uid: SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  id: RentEnemy
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: RentEnemy()
+  nameWithType: ISimPools.RentEnemy()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentEnemy()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Enemy RentEnemy()
+    return:
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Function RentEnemy() As Enemy
+  overload: SurvivorsMaker.Simulation.ISimPools.RentEnemy*
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  id: Return(SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: Return(Enemy)
+  nameWithType: ISimPools.Return(Enemy)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Return(Enemy enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub [Return](enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.ISimPools.Return*
+- uid: SurvivorsMaker.Simulation.ISimPools.RentStatus
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentStatus
+  id: RentStatus
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: RentStatus()
+  nameWithType: ISimPools.RentStatus()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentStatus()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: StatusInstance RentStatus()
+    return:
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Function RentStatus() As StatusInstance
+  overload: SurvivorsMaker.Simulation.ISimPools.RentStatus*
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  id: Return(SurvivorsMaker.Simulation.StatusInstance)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  langs:
+  - csharp
+  - vb
+  name: Return(StatusInstance)
+  nameWithType: ISimPools.Return(StatusInstance)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Return(StatusInstance status)
+    parameters:
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Sub [Return](status As StatusInstance)
+  overload: SurvivorsMaker.Simulation.ISimPools.Return*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ISimPools.RentProjectile*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentProjectile
+  name: RentProjectile
+  nameWithType: ISimPools.RentProjectile
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentProjectile
+- uid: SurvivorsMaker.Simulation.Projectile
+  commentId: T:SurvivorsMaker.Simulation.Projectile
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Projectile.html
+  name: Projectile
+  nameWithType: Projectile
+  fullName: SurvivorsMaker.Simulation.Projectile
+- uid: SurvivorsMaker.Simulation.ISimPools.Return*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimPools.Return
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Projectile_
+  name: Return
+  nameWithType: ISimPools.Return
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return
+- uid: SurvivorsMaker.Simulation.ISimPools.RentEnemy*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentEnemy
+  name: RentEnemy
+  nameWithType: ISimPools.RentEnemy
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentEnemy
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.ISimPools.RentStatus*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimPools.RentStatus
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentStatus
+  name: RentStatus
+  nameWithType: ISimPools.RentStatus
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentStatus
+- uid: SurvivorsMaker.Simulation.StatusInstance
+  commentId: T:SurvivorsMaker.Simulation.StatusInstance
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusInstance.html
+  name: StatusInstance
+  nameWithType: StatusInstance
+  fullName: SurvivorsMaker.Simulation.StatusInstance

@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ITintableVisual
+  commentId: T:SurvivorsMaker.Presentation.ITintableVisual
+  id: ITintableVisual
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ITintableVisual.SetOverlay(UnityEngine.Color,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ITintableVisual
+  nameWithType: ITintableVisual
+  fullName: SurvivorsMaker.Presentation.ITintableVisual
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Optional for <xref href="SurvivorsMaker.Presentation.ICharacterVisual" data-throw-if-not-resolved="false"></xref>
+    adapters: a colour wash the world view drives for statuses,
+
+    invulnerability and boss flashes. Amount 0 = untouched, 1 = fully the overlay colour (alpha is kept).'
+  example: []
+  syntax:
+    content: public interface ITintableVisual
+    content.vb: Public Interface ITintableVisual
+  derivedClasses:
+  - SurvivorsMaker.Presentation.SpriteCharacterVisual
+- uid: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay(UnityEngine.Color,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.ITintableVisual.SetOverlay(UnityEngine.Color,System.Single)
+  id: SetOverlay(UnityEngine.Color,System.Single)
+  parent: SurvivorsMaker.Presentation.ITintableVisual
+  langs:
+  - csharp
+  - vb
+  name: SetOverlay(Color, float)
+  nameWithType: ITintableVisual.SetOverlay(Color, float)
+  fullName: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay(UnityEngine.Color, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Blends the supplied overlay colour by amount from zero to one; zero restores the base appearance.
+  example: []
+  syntax:
+    content: void SetOverlay(Color color, float amount)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    - id: amount
+      type: System.Single
+    content.vb: Sub SetOverlay(color As Color, amount As Single)
+  overload: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay*
+  nameWithType.vb: ITintableVisual.SetOverlay(Color, Single)
+  fullName.vb: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay(UnityEngine.Color, Single)
+  name.vb: SetOverlay(Color, Single)
+references:
+- uid: SurvivorsMaker.Presentation.ICharacterVisual
+  commentId: T:SurvivorsMaker.Presentation.ICharacterVisual
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html
+  name: ICharacterVisual
+  nameWithType: ICharacterVisual
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay*
+  commentId: Overload:SurvivorsMaker.Presentation.ITintableVisual.SetOverlay
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ITintableVisual.html#SurvivorsMaker_Presentation_ITintableVisual_SetOverlay_UnityEngine_Color_System_Single_
+  name: SetOverlay
+  nameWithType: ITintableVisual.SetOverlay
+  fullName: SurvivorsMaker.Presentation.ITintableVisual.SetOverlay
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

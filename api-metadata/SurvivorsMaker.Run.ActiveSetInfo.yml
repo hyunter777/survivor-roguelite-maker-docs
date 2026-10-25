@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.ActiveSetInfo
+  commentId: T:SurvivorsMaker.Run.ActiveSetInfo
+  id: ActiveSetInfo
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.ActiveSetInfo.Effects
+  - SurvivorsMaker.Run.ActiveSetInfo.Order
+  - SurvivorsMaker.Run.ActiveSetInfo.Set
+  - SurvivorsMaker.Run.ActiveSetInfo.Source
+  - SurvivorsMaker.Run.ActiveSetInfo.Summary
+  - SurvivorsMaker.Run.ActiveSetInfo.Threshold
+  - SurvivorsMaker.Run.ActiveSetInfo.Weapons
+  langs:
+  - csharp
+  - vb
+  name: ActiveSetInfo
+  nameWithType: ActiveSetInfo
+  fullName: SurvivorsMaker.Run.ActiveSetInfo
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Reached weapon-set threshold and ownership count for a build explanation.
+  example: []
+  syntax:
+    content: public struct ActiveSetInfo
+    content.vb: Public Structure ActiveSetInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Source
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Source
+  id: Source
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: ActiveSetInfo.Source
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Source
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Source
+    return:
+      type: System.String
+    content.vb: Public Source As String
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Set
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Set
+  id: Set
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: ActiveSetInfo.Set
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Set
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Set
+    return:
+      type: System.String
+    content.vb: Public [Set] As String
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Weapons
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: ActiveSetInfo.Weapons
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Weapons
+    return:
+      type: System.Int32
+    content.vb: Public Weapons As Integer
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Threshold
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Threshold
+  id: Threshold
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Threshold
+  nameWithType: ActiveSetInfo.Threshold
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Threshold
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Threshold
+    return:
+      type: System.Int32
+    content.vb: Public Threshold As Integer
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Order
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Order
+  id: Order
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: ActiveSetInfo.Order
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Order
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Order
+    return:
+      type: System.Int32
+    content.vb: Public Order As Integer
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Effects
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Effects
+  id: Effects
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: ActiveSetInfo.Effects
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Effects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Effects
+    return:
+      type: System.Int32
+    content.vb: Public Effects As Integer
+- uid: SurvivorsMaker.Run.ActiveSetInfo.Summary
+  commentId: F:SurvivorsMaker.Run.ActiveSetInfo.Summary
+  id: Summary
+  parent: SurvivorsMaker.Run.ActiveSetInfo
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: ActiveSetInfo.Summary
+  fullName: SurvivorsMaker.Run.ActiveSetInfo.Summary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Summary
+    return:
+      type: System.String
+    content.vb: Public Summary As String
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

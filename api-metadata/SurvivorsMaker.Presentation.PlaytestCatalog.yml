@@ -1,0 +1,754 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog
+  commentId: T:SurvivorsMaker.Presentation.PlaytestCatalog
+  id: PlaytestCatalog
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.PlaytestCatalog.Enemies(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{System.String})
+  - SurvivorsMaker.Presentation.PlaytestCatalog.Filter(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry},System.String,System.Int32,System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry})
+  - SurvivorsMaker.Presentation.PlaytestCatalog.Items(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  - SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount(System.String,System.Int32,System.Int32,System.Int32)
+  - SurvivorsMaker.Presentation.PlaytestCatalog.Weapons(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  langs:
+  - csharp
+  - vb
+  name: PlaytestCatalog
+  nameWithType: PlaytestCatalog
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: What the playtest panel offers from the run content, and the search filter of its pickers.
+  example: []
+  syntax:
+    content: public static class PlaytestCatalog
+    content.vb: Public Module PlaytestCatalog
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCatalog.Weapons(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  id: Weapons(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Presentation.PlaytestCatalog
+  langs:
+  - csharp
+  - vb
+  name: Weapons(RunContent, List<string>)
+  nameWithType: PlaytestCatalog.Weapons(RunContent, List<string>)
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons(SurvivorsMaker.Run.RunContent, System.Collections.Generic.List<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Every weapon in content order, including locked ones (cheats ignore unlocks).
+  example: []
+  syntax:
+    content: public static void Weapons(RunContent content, List<string> into)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    - id: into
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Sub Weapons(content As RunContent, into As List(Of String))
+  overload: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons*
+  nameWithType.vb: PlaytestCatalog.Weapons(RunContent, List(Of String))
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons(SurvivorsMaker.Run.RunContent, System.Collections.Generic.List(Of
+    String))
+  name.vb: Weapons(RunContent, List(Of String))
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Items(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCatalog.Items(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  id: Items(SurvivorsMaker.Run.RunContent,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Presentation.PlaytestCatalog
+  langs:
+  - csharp
+  - vb
+  name: Items(RunContent, List<string>)
+  nameWithType: PlaytestCatalog.Items(RunContent, List<string>)
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Items(SurvivorsMaker.Run.RunContent, System.Collections.Generic.List<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Every item and upgrade in content order.
+  example: []
+  syntax:
+    content: public static void Items(RunContent content, List<string> into)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    - id: into
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Sub Items(content As RunContent, into As List(Of String))
+  overload: SurvivorsMaker.Presentation.PlaytestCatalog.Items*
+  nameWithType.vb: PlaytestCatalog.Items(RunContent, List(Of String))
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCatalog.Items(SurvivorsMaker.Run.RunContent, System.Collections.Generic.List(Of
+    String))
+  name.vb: Items(RunContent, List(Of String))
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCatalog.Enemies(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{System.String})
+  id: Enemies(SurvivorsMaker.Run.RunState,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Presentation.PlaytestCatalog
+  langs:
+  - csharp
+  - vb
+  name: Enemies(RunState, List<string>)
+  nameWithType: PlaytestCatalog.Enemies(RunState, List<string>)
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies(SurvivorsMaker.Run.RunState, System.Collections.Generic.List<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Enemy ids the run can spawn, in first-seen order: the run''s arena, then every content arena (wave and common
+
+    groups, hordes), following death spawns and summons. The same set the playtest spawn command accepts.'
+  example: []
+  syntax:
+    content: public static void Enemies(RunState run, List<string> into)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: into
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Sub Enemies(run As RunState, into As List(Of String))
+  overload: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies*
+  nameWithType.vb: PlaytestCatalog.Enemies(RunState, List(Of String))
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies(SurvivorsMaker.Run.RunState, System.Collections.Generic.List(Of
+    String))
+  name.vb: Enemies(RunState, List(Of String))
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Filter(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry},System.String,System.Int32,System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry})
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCatalog.Filter(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry},System.String,System.Int32,System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry})
+  id: Filter(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry},System.String,System.Int32,System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry})
+  parent: SurvivorsMaker.Presentation.PlaytestCatalog
+  langs:
+  - csharp
+  - vb
+  name: Filter(IReadOnlyList<PlaytestEntry>, string, int, List<PlaytestEntry>)
+  nameWithType: PlaytestCatalog.Filter(IReadOnlyList<PlaytestEntry>, string, int, List<PlaytestEntry>)
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Filter(System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.PlaytestEntry>,
+    string, int, System.Collections.Generic.List<SurvivorsMaker.Presentation.PlaytestEntry>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Entries whose name or id contains <code class="paramref">query</code> (case-insensitive; empty = all), in their
+    order,
+
+    at most <code class="paramref">max</code>. Returns how many matched in total (may exceed what was written).'
+  example: []
+  syntax:
+    content: public static int Filter(IReadOnlyList<PlaytestEntry> entries, string query, int max, List<PlaytestEntry> into)
+    parameters:
+    - id: entries
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry}
+    - id: query
+      type: System.String
+    - id: max
+      type: System.Int32
+    - id: into
+      type: System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry}
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Filter(entries As IReadOnlyList(Of PlaytestEntry), query As String, max As Integer,
+      into As List(Of PlaytestEntry)) As Integer
+  overload: SurvivorsMaker.Presentation.PlaytestCatalog.Filter*
+  nameWithType.vb: PlaytestCatalog.Filter(IReadOnlyList(Of PlaytestEntry), String, Integer, List(Of PlaytestEntry))
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCatalog.Filter(System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.PlaytestEntry),
+    String, Integer, System.Collections.Generic.List(Of SurvivorsMaker.Presentation.PlaytestEntry))
+  name.vb: Filter(IReadOnlyList(Of PlaytestEntry), String, Integer, List(Of PlaytestEntry))
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount(System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount(System.String,System.Int32,System.Int32,System.Int32)
+  id: ParseCount(System.String,System.Int32,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Presentation.PlaytestCatalog
+  langs:
+  - csharp
+  - vb
+  name: ParseCount(string, int, int, int)
+  nameWithType: PlaytestCatalog.ParseCount(string, int, int, int)
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount(string, int, int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A whole number from a text field, or <code class="paramref">fallback</code>.
+  example: []
+  syntax:
+    content: public static int ParseCount(string text, int fallback, int min, int max)
+    parameters:
+    - id: text
+      type: System.String
+    - id: fallback
+      type: System.Int32
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ParseCount(text As String, fallback As Integer, min As Integer, max As Integer) As
+      Integer
+  overload: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount*
+  nameWithType.vb: PlaytestCatalog.ParseCount(String, Integer, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount(String, Integer, Integer, Integer)
+  name.vb: ParseCount(String, Integer, Integer, Integer)
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCatalog.Weapons
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCatalog.html#SurvivorsMaker_Presentation_PlaytestCatalog_Weapons_SurvivorsMaker_Run_RunContent_System_Collections_Generic_List_System_String__
+  name: Weapons
+  nameWithType: PlaytestCatalog.Weapons
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Weapons
+- uid: SurvivorsMaker.Run.RunContent
+  commentId: T:SurvivorsMaker.Run.RunContent
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunContent.html
+  name: RunContent
+  nameWithType: RunContent
+  fullName: SurvivorsMaker.Run.RunContent
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Items*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCatalog.Items
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCatalog.html#SurvivorsMaker_Presentation_PlaytestCatalog_Items_SurvivorsMaker_Run_RunContent_System_Collections_Generic_List_System_String__
+  name: Items
+  nameWithType: PlaytestCatalog.Items
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Items
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCatalog.Enemies
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCatalog.html#SurvivorsMaker_Presentation_PlaytestCatalog_Enemies_SurvivorsMaker_Run_RunState_System_Collections_Generic_List_System_String__
+  name: Enemies
+  nameWithType: PlaytestCatalog.Enemies
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Enemies
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.Filter*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCatalog.Filter
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCatalog.html#SurvivorsMaker_Presentation_PlaytestCatalog_Filter_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_PlaytestEntry__System_String_System_Int32_System_Collections_Generic_List_SurvivorsMaker_Presentation_PlaytestEntry__
+  name: Filter
+  nameWithType: PlaytestCatalog.Filter
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.Filter
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.PlaytestEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<PlaytestEntry>
+  nameWithType: IReadOnlyList<PlaytestEntry>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.PlaytestEntry>
+  nameWithType.vb: IReadOnlyList(Of PlaytestEntry)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.PlaytestEntry)
+  name.vb: IReadOnlyList(Of PlaytestEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.PlaytestEntry
+    name: PlaytestEntry
+    isExternal: true
+    href: SurvivorsMaker.Presentation.PlaytestEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.PlaytestEntry
+    name: PlaytestEntry
+    isExternal: true
+    href: SurvivorsMaker.Presentation.PlaytestEntry.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Presentation.PlaytestEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PlaytestEntry>
+  nameWithType: List<PlaytestEntry>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Presentation.PlaytestEntry>
+  nameWithType.vb: List(Of PlaytestEntry)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Presentation.PlaytestEntry)
+  name.vb: List(Of PlaytestEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.PlaytestEntry
+    name: PlaytestEntry
+    isExternal: true
+    href: SurvivorsMaker.Presentation.PlaytestEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.PlaytestEntry
+    name: PlaytestEntry
+    isExternal: true
+    href: SurvivorsMaker.Presentation.PlaytestEntry.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCatalog.html#SurvivorsMaker_Presentation_PlaytestCatalog_ParseCount_System_String_System_Int32_System_Int32_System_Int32_
+  name: ParseCount
+  nameWithType: PlaytestCatalog.ParseCount
+  fullName: SurvivorsMaker.Presentation.PlaytestCatalog.ParseCount

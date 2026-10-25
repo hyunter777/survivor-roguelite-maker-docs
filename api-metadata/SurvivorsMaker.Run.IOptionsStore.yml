@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IOptionsStore
+  commentId: T:SurvivorsMaker.Run.IOptionsStore
+  id: IOptionsStore
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IOptionsStore.Load
+  - SurvivorsMaker.Run.IOptionsStore.Save(SurvivorsMaker.Run.OptionsState)
+  langs:
+  - csharp
+  - vb
+  name: IOptionsStore
+  nameWithType: IOptionsStore
+  fullName: SurvivorsMaker.Run.IOptionsStore
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Persistence boundary for user preferences; implementations own their storage and error handling.
+  example: []
+  syntax:
+    content: public interface IOptionsStore
+    content.vb: Public Interface IOptionsStore
+  derivedClasses:
+  - SurvivorsMaker.Presentation.JsonFileOptionsStore
+  - SurvivorsMaker.Run.MemoryOptionsStore
+- uid: SurvivorsMaker.Run.IOptionsStore.Load
+  commentId: M:SurvivorsMaker.Run.IOptionsStore.Load
+  id: Load
+  parent: SurvivorsMaker.Run.IOptionsStore
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: IOptionsStore.Load()
+  fullName: SurvivorsMaker.Run.IOptionsStore.Load()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Loads user preferences; implementations choose their fallback when no saved options exist.
+  example: []
+  syntax:
+    content: OptionsState Load()
+    return:
+      type: SurvivorsMaker.Run.OptionsState
+    content.vb: Function Load() As OptionsState
+  overload: SurvivorsMaker.Run.IOptionsStore.Load*
+- uid: SurvivorsMaker.Run.IOptionsStore.Save(SurvivorsMaker.Run.OptionsState)
+  commentId: M:SurvivorsMaker.Run.IOptionsStore.Save(SurvivorsMaker.Run.OptionsState)
+  id: Save(SurvivorsMaker.Run.OptionsState)
+  parent: SurvivorsMaker.Run.IOptionsStore
+  langs:
+  - csharp
+  - vb
+  name: Save(OptionsState)
+  nameWithType: IOptionsStore.Save(OptionsState)
+  fullName: SurvivorsMaker.Run.IOptionsStore.Save(SurvivorsMaker.Run.OptionsState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Stores user preferences without coupling them to progression or the saved run.
+  example: []
+  syntax:
+    content: void Save(OptionsState options)
+    parameters:
+    - id: options
+      type: SurvivorsMaker.Run.OptionsState
+    content.vb: Sub Save(options As OptionsState)
+  overload: SurvivorsMaker.Run.IOptionsStore.Save*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IOptionsStore.Load*
+  commentId: Overload:SurvivorsMaker.Run.IOptionsStore.Load
+  isExternal: true
+  href: SurvivorsMaker.Run.IOptionsStore.html#SurvivorsMaker_Run_IOptionsStore_Load
+  name: Load
+  nameWithType: IOptionsStore.Load
+  fullName: SurvivorsMaker.Run.IOptionsStore.Load
+- uid: SurvivorsMaker.Run.OptionsState
+  commentId: T:SurvivorsMaker.Run.OptionsState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OptionsState.html
+  name: OptionsState
+  nameWithType: OptionsState
+  fullName: SurvivorsMaker.Run.OptionsState
+- uid: SurvivorsMaker.Run.IOptionsStore.Save*
+  commentId: Overload:SurvivorsMaker.Run.IOptionsStore.Save
+  isExternal: true
+  href: SurvivorsMaker.Run.IOptionsStore.html#SurvivorsMaker_Run_IOptionsStore_Save_SurvivorsMaker_Run_OptionsState_
+  name: Save
+  nameWithType: IOptionsStore.Save
+  fullName: SurvivorsMaker.Run.IOptionsStore.Save

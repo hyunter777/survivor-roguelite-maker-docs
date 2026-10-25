@@ -1,0 +1,1163 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  id: Effect
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.Effect.#ctor
+  - SurvivorsMaker.Core.Effect.#ctor(System.String,System.Int32,SurvivorsMaker.Core.EffectMethod,System.String)
+  - SurvivorsMaker.Core.Effect.Add(System.String,System.Int32)
+  - SurvivorsMaker.Core.Effect.Amount
+  - SurvivorsMaker.Core.Effect.Buffer
+  - SurvivorsMaker.Core.Effect.ConversionFraction
+  - SurvivorsMaker.Core.Effect.ExternalSource
+  - SurvivorsMaker.Core.Effect.Handler
+  - SurvivorsMaker.Core.Effect.HasOutputMax
+  - SurvivorsMaker.Core.Effect.HasOutputMin
+  - SurvivorsMaker.Core.Effect.InputMax
+  - SurvivorsMaker.Core.Effect.InputMin
+  - SurvivorsMaker.Core.Effect.Invert
+  - SurvivorsMaker.Core.Effect.IsCustom
+  - SurvivorsMaker.Core.Effect.IsListMethod
+  - SurvivorsMaker.Core.Effect.IsMinimum
+  - SurvivorsMaker.Core.Effect.Lifetime
+  - SurvivorsMaker.Core.Effect.LifetimeTicks
+  - SurvivorsMaker.Core.Effect.LifetimeWaves
+  - SurvivorsMaker.Core.Effect.LimitMode
+  - SurvivorsMaker.Core.Effect.Linear
+  - SurvivorsMaker.Core.Effect.List
+  - SurvivorsMaker.Core.Effect.Method
+  - SurvivorsMaker.Core.Effect.OutputMax
+  - SurvivorsMaker.Core.Effect.OutputMin
+  - SurvivorsMaker.Core.Effect.ReadLayer
+  - SurvivorsMaker.Core.Effect.Rounding
+  - SurvivorsMaker.Core.Effect.Set(System.String,System.Int32)
+  - SurvivorsMaker.Core.Effect.Source
+  - SurvivorsMaker.Core.Effect.Target
+  - SurvivorsMaker.Core.Effect.Temporary
+  - SurvivorsMaker.Core.Effect.ToString
+  - SurvivorsMaker.Core.Effect.Unit
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'One effect: a target id, an amount and how they are stored. Items, characters, level-up
+
+    choices and buffs are lists of effects.'
+  example: []
+  syntax:
+    content: public sealed class Effect
+    content.vb: Public NotInheritable Class Effect
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.Effect.Target
+  commentId: F:SurvivorsMaker.Core.Effect.Target
+  id: Target
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: Effect.Target
+  fullName: SurvivorsMaker.Core.Effect.Target
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Stat id for <xref href="SurvivorsMaker.Core.EffectMethod.Add" data-throw-if-not-resolved="false"></xref>/<xref
+    href="SurvivorsMaker.Core.EffectMethod.Set" data-throw-if-not-resolved="false"></xref>; entry id for list methods.
+  example: []
+  syntax:
+    content: public string Target
+    return:
+      type: System.String
+    content.vb: Public Target As String
+- uid: SurvivorsMaker.Core.Effect.Amount
+  commentId: F:SurvivorsMaker.Core.Effect.Amount
+  id: Amount
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: Effect.Amount
+  fullName: SurvivorsMaker.Core.Effect.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int Amount
+    return:
+      type: System.Int32
+    content.vb: Public Amount As Integer
+- uid: SurvivorsMaker.Core.Effect.Method
+  commentId: F:SurvivorsMaker.Core.Effect.Method
+  id: Method
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: Effect.Method
+  fullName: SurvivorsMaker.Core.Effect.Method
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public EffectMethod Method
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+    content.vb: Public Method As EffectMethod
+- uid: SurvivorsMaker.Core.Effect.List
+  commentId: F:SurvivorsMaker.Core.Effect.List
+  id: List
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: List
+  nameWithType: Effect.List
+  fullName: SurvivorsMaker.Core.Effect.List
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Name of the list the list methods write to, e.g. "loadout" or "on_wave_start".
+  example: []
+  syntax:
+    content: public string List
+    return:
+      type: System.String
+    content.vb: Public List As String
+- uid: SurvivorsMaker.Core.Effect.Handler
+  commentId: F:SurvivorsMaker.Core.Effect.Handler
+  id: Handler
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Handler
+  nameWithType: Effect.Handler
+  fullName: SurvivorsMaker.Core.Effect.Handler
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Id of a custom <xref href="SurvivorsMaker.Core.IEffectHandler" data-throw-if-not-resolved="false"></xref>. Empty
+    means the built-in rules of <xref href="SurvivorsMaker.Core.Effect.Method" data-throw-if-not-resolved="false"></xref>
+    apply.
+  example: []
+  syntax:
+    content: public string Handler
+    return:
+      type: System.String
+    content.vb: Public Handler As String
+- uid: SurvivorsMaker.Core.Effect.Source
+  commentId: F:SurvivorsMaker.Core.Effect.Source
+  id: Source
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: Effect.Source
+  fullName: SurvivorsMaker.Core.Effect.Source
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Stat id, or external key when ExternalSource is true.
+  example: []
+  syntax:
+    content: public string Source
+    return:
+      type: System.String
+    content.vb: Public Source As String
+- uid: SurvivorsMaker.Core.Effect.ExternalSource
+  commentId: F:SurvivorsMaker.Core.Effect.ExternalSource
+  id: ExternalSource
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: ExternalSource
+  nameWithType: Effect.ExternalSource
+  fullName: SurvivorsMaker.Core.Effect.ExternalSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool ExternalSource
+    return:
+      type: System.Boolean
+    content.vb: Public ExternalSource As Boolean
+- uid: SurvivorsMaker.Core.Effect.ReadLayer
+  commentId: F:SurvivorsMaker.Core.Effect.ReadLayer
+  id: ReadLayer
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: ReadLayer
+  nameWithType: Effect.ReadLayer
+  fullName: SurvivorsMaker.Core.Effect.ReadLayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatReadLayer ReadLayer
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+    content.vb: Public ReadLayer As StatReadLayer
+- uid: SurvivorsMaker.Core.Effect.Unit
+  commentId: F:SurvivorsMaker.Core.Effect.Unit
+  id: Unit
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: Effect.Unit
+  fullName: SurvivorsMaker.Core.Effect.Unit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float Unit
+    return:
+      type: System.Single
+    content.vb: Public Unit As Single
+- uid: SurvivorsMaker.Core.Effect.Rounding
+  commentId: F:SurvivorsMaker.Core.Effect.Rounding
+  id: Rounding
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Rounding
+  nameWithType: Effect.Rounding
+  fullName: SurvivorsMaker.Core.Effect.Rounding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public EffectRounding Rounding
+    return:
+      type: SurvivorsMaker.Core.EffectRounding
+    content.vb: Public Rounding As EffectRounding
+- uid: SurvivorsMaker.Core.Effect.HasOutputMin
+  commentId: F:SurvivorsMaker.Core.Effect.HasOutputMin
+  id: HasOutputMin
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: HasOutputMin
+  nameWithType: Effect.HasOutputMin
+  fullName: SurvivorsMaker.Core.Effect.HasOutputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool HasOutputMin
+    return:
+      type: System.Boolean
+    content.vb: Public HasOutputMin As Boolean
+- uid: SurvivorsMaker.Core.Effect.OutputMin
+  commentId: F:SurvivorsMaker.Core.Effect.OutputMin
+  id: OutputMin
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: OutputMin
+  nameWithType: Effect.OutputMin
+  fullName: SurvivorsMaker.Core.Effect.OutputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float OutputMin
+    return:
+      type: System.Single
+    content.vb: Public OutputMin As Single
+- uid: SurvivorsMaker.Core.Effect.HasOutputMax
+  commentId: F:SurvivorsMaker.Core.Effect.HasOutputMax
+  id: HasOutputMax
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: HasOutputMax
+  nameWithType: Effect.HasOutputMax
+  fullName: SurvivorsMaker.Core.Effect.HasOutputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool HasOutputMax
+    return:
+      type: System.Boolean
+    content.vb: Public HasOutputMax As Boolean
+- uid: SurvivorsMaker.Core.Effect.OutputMax
+  commentId: F:SurvivorsMaker.Core.Effect.OutputMax
+  id: OutputMax
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: OutputMax
+  nameWithType: Effect.OutputMax
+  fullName: SurvivorsMaker.Core.Effect.OutputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float OutputMax
+    return:
+      type: System.Single
+    content.vb: Public OutputMax As Single
+- uid: SurvivorsMaker.Core.Effect.Linear
+  commentId: F:SurvivorsMaker.Core.Effect.Linear
+  id: Linear
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: Effect.Linear
+  fullName: SurvivorsMaker.Core.Effect.Linear
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Map [InputMin + Buffer, InputMax] to [OutputMin, OutputMax], clamped.
+  example: []
+  syntax:
+    content: public bool Linear
+    return:
+      type: System.Boolean
+    content.vb: Public Linear As Boolean
+- uid: SurvivorsMaker.Core.Effect.InputMin
+  commentId: F:SurvivorsMaker.Core.Effect.InputMin
+  id: InputMin
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: InputMin
+  nameWithType: Effect.InputMin
+  fullName: SurvivorsMaker.Core.Effect.InputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float InputMin
+    return:
+      type: System.Single
+    content.vb: Public InputMin As Single
+- uid: SurvivorsMaker.Core.Effect.InputMax
+  commentId: F:SurvivorsMaker.Core.Effect.InputMax
+  id: InputMax
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: InputMax
+  nameWithType: Effect.InputMax
+  fullName: SurvivorsMaker.Core.Effect.InputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float InputMax
+    return:
+      type: System.Single
+    content.vb: Public InputMax As Single
+- uid: SurvivorsMaker.Core.Effect.Buffer
+  commentId: F:SurvivorsMaker.Core.Effect.Buffer
+  id: Buffer
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Buffer
+  nameWithType: Effect.Buffer
+  fullName: SurvivorsMaker.Core.Effect.Buffer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float Buffer
+    return:
+      type: System.Single
+    content.vb: Public Buffer As Single
+- uid: SurvivorsMaker.Core.Effect.Invert
+  commentId: F:SurvivorsMaker.Core.Effect.Invert
+  id: Invert
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Invert
+  nameWithType: Effect.Invert
+  fullName: SurvivorsMaker.Core.Effect.Invert
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool Invert
+    return:
+      type: System.Boolean
+    content.vb: Public Invert As Boolean
+- uid: SurvivorsMaker.Core.Effect.LimitMode
+  commentId: F:SurvivorsMaker.Core.Effect.LimitMode
+  id: LimitMode
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: LimitMode
+  nameWithType: Effect.LimitMode
+  fullName: SurvivorsMaker.Core.Effect.LimitMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatLimitMode LimitMode
+    return:
+      type: SurvivorsMaker.Core.StatLimitMode
+    content.vb: Public LimitMode As StatLimitMode
+- uid: SurvivorsMaker.Core.Effect.IsMinimum
+  commentId: F:SurvivorsMaker.Core.Effect.IsMinimum
+  id: IsMinimum
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: IsMinimum
+  nameWithType: Effect.IsMinimum
+  fullName: SurvivorsMaker.Core.Effect.IsMinimum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool IsMinimum
+    return:
+      type: System.Boolean
+    content.vb: Public IsMinimum As Boolean
+- uid: SurvivorsMaker.Core.Effect.ConversionFraction
+  commentId: F:SurvivorsMaker.Core.Effect.ConversionFraction
+  id: ConversionFraction
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: ConversionFraction
+  nameWithType: Effect.ConversionFraction
+  fullName: SurvivorsMaker.Core.Effect.ConversionFraction
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public float ConversionFraction
+    return:
+      type: System.Single
+    content.vb: Public ConversionFraction As Single
+- uid: SurvivorsMaker.Core.Effect.Lifetime
+  commentId: F:SurvivorsMaker.Core.Effect.Lifetime
+  id: Lifetime
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: Effect.Lifetime
+  fullName: SurvivorsMaker.Core.Effect.Lifetime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public EffectLifetime Lifetime
+    return:
+      type: SurvivorsMaker.Core.EffectLifetime
+    content.vb: Public Lifetime As EffectLifetime
+- uid: SurvivorsMaker.Core.Effect.LifetimeWaves
+  commentId: F:SurvivorsMaker.Core.Effect.LifetimeWaves
+  id: LifetimeWaves
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: LifetimeWaves
+  nameWithType: Effect.LifetimeWaves
+  fullName: SurvivorsMaker.Core.Effect.LifetimeWaves
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Zero means no wave expiry. Active on acquisition wave through start + N - 1.
+  example: []
+  syntax:
+    content: public int LifetimeWaves
+    return:
+      type: System.Int32
+    content.vb: Public LifetimeWaves As Integer
+- uid: SurvivorsMaker.Core.Effect.LifetimeTicks
+  commentId: F:SurvivorsMaker.Core.Effect.LifetimeTicks
+  id: LifetimeTicks
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: LifetimeTicks
+  nameWithType: Effect.LifetimeTicks
+  fullName: SurvivorsMaker.Core.Effect.LifetimeTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Zero means no tick expiry. AdvanceCombatTicks is called only during combat.
+  example: []
+  syntax:
+    content: public int LifetimeTicks
+    return:
+      type: System.Int32
+    content.vb: Public LifetimeTicks As Integer
+- uid: SurvivorsMaker.Core.Effect.Temporary
+  commentId: F:SurvivorsMaker.Core.Effect.Temporary
+  id: Temporary
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: Effect.Temporary
+  fullName: SurvivorsMaker.Core.Effect.Temporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool Temporary
+    return:
+      type: System.Boolean
+    content.vb: Public Temporary As Boolean
+- uid: SurvivorsMaker.Core.Effect.#ctor
+  commentId: M:SurvivorsMaker.Core.Effect.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Effect()
+  nameWithType: Effect.Effect()
+  fullName: SurvivorsMaker.Core.Effect.Effect()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public Effect()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Core.Effect.#ctor*
+  nameWithType.vb: Effect.New()
+  fullName.vb: SurvivorsMaker.Core.Effect.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Core.Effect.#ctor(System.String,System.Int32,SurvivorsMaker.Core.EffectMethod,System.String)
+  commentId: M:SurvivorsMaker.Core.Effect.#ctor(System.String,System.Int32,SurvivorsMaker.Core.EffectMethod,System.String)
+  id: '#ctor(System.String,System.Int32,SurvivorsMaker.Core.EffectMethod,System.String)'
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Effect(string, int, EffectMethod, string)
+  nameWithType: Effect.Effect(string, int, EffectMethod, string)
+  fullName: SurvivorsMaker.Core.Effect.Effect(string, int, SurvivorsMaker.Core.EffectMethod, string)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public Effect(string target, int amount, EffectMethod method = EffectMethod.Add, string list = "")
+    parameters:
+    - id: target
+      type: System.String
+    - id: amount
+      type: System.Int32
+    - id: method
+      type: SurvivorsMaker.Core.EffectMethod
+    - id: list
+      type: System.String
+    content.vb: Public Sub New(target As String, amount As Integer, method As EffectMethod = EffectMethod.Add, list As String
+      = "")
+  overload: SurvivorsMaker.Core.Effect.#ctor*
+  nameWithType.vb: Effect.New(String, Integer, EffectMethod, String)
+  fullName.vb: SurvivorsMaker.Core.Effect.New(String, Integer, SurvivorsMaker.Core.EffectMethod, String)
+  name.vb: New(String, Integer, EffectMethod, String)
+- uid: SurvivorsMaker.Core.Effect.Add(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Core.Effect.Add(System.String,System.Int32)
+  id: Add(System.String,System.Int32)
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Add(string, int)
+  nameWithType: Effect.Add(string, int)
+  fullName: SurvivorsMaker.Core.Effect.Add(string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Creates a built-in additive stat effect in integer stat points.
+  example: []
+  syntax:
+    content: public static Effect Add(string stat, int amount)
+    parameters:
+    - id: stat
+      type: System.String
+    - id: amount
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Core.Effect
+    content.vb: Public Shared Function Add(stat As String, amount As Integer) As Effect
+  overload: SurvivorsMaker.Core.Effect.Add*
+  nameWithType.vb: Effect.Add(String, Integer)
+  fullName.vb: SurvivorsMaker.Core.Effect.Add(String, Integer)
+  name.vb: Add(String, Integer)
+- uid: SurvivorsMaker.Core.Effect.Set(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Core.Effect.Set(System.String,System.Int32)
+  id: Set(System.String,System.Int32)
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: Set(string, int)
+  nameWithType: Effect.Set(string, int)
+  fullName: SurvivorsMaker.Core.Effect.Set(string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Creates a built-in stat assignment effect.
+  example: []
+  syntax:
+    content: public static Effect Set(string stat, int value)
+    parameters:
+    - id: stat
+      type: System.String
+    - id: value
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Core.Effect
+    content.vb: Public Shared Function [Set](stat As String, value As Integer) As Effect
+  overload: SurvivorsMaker.Core.Effect.Set*
+  nameWithType.vb: Effect.Set(String, Integer)
+  fullName.vb: SurvivorsMaker.Core.Effect.Set(String, Integer)
+  name.vb: Set(String, Integer)
+- uid: SurvivorsMaker.Core.Effect.ToString
+  commentId: M:SurvivorsMaker.Core.Effect.ToString
+  id: ToString
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Effect.ToString()
+  fullName: SurvivorsMaker.Core.Effect.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SurvivorsMaker.Core.Effect.ToString*
+- uid: SurvivorsMaker.Core.Effect.IsCustom
+  commentId: P:SurvivorsMaker.Core.Effect.IsCustom
+  id: IsCustom
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: IsCustom
+  nameWithType: Effect.IsCustom
+  fullName: SurvivorsMaker.Core.Effect.IsCustom
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool IsCustom { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCustom As Boolean
+  overload: SurvivorsMaker.Core.Effect.IsCustom*
+- uid: SurvivorsMaker.Core.Effect.IsListMethod
+  commentId: P:SurvivorsMaker.Core.Effect.IsListMethod
+  id: IsListMethod
+  parent: SurvivorsMaker.Core.Effect
+  langs:
+  - csharp
+  - vb
+  name: IsListMethod
+  nameWithType: Effect.IsListMethod
+  fullName: SurvivorsMaker.Core.Effect.IsListMethod
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: True for methods that write to <xref href="SurvivorsMaker.Core.Effect.List" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool IsListMethod { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsListMethod As Boolean
+  overload: SurvivorsMaker.Core.Effect.IsListMethod*
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.EffectMethod.Add
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Add
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Add
+  name: Add
+  nameWithType: EffectMethod.Add
+  fullName: SurvivorsMaker.Core.EffectMethod.Add
+- uid: SurvivorsMaker.Core.EffectMethod.Set
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Set
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Set
+  name: Set
+  nameWithType: EffectMethod.Set
+  fullName: SurvivorsMaker.Core.EffectMethod.Set
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.IEffectHandler
+  commentId: T:SurvivorsMaker.Core.IEffectHandler
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.IEffectHandler.html
+  name: IEffectHandler
+  nameWithType: IEffectHandler
+  fullName: SurvivorsMaker.Core.IEffectHandler
+- uid: SurvivorsMaker.Core.Effect.Method
+  commentId: F:SurvivorsMaker.Core.Effect.Method
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_Method
+  name: Method
+  nameWithType: Effect.Method
+  fullName: SurvivorsMaker.Core.Effect.Method
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatReadLayer.html
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Core.EffectRounding
+  commentId: T:SurvivorsMaker.Core.EffectRounding
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectRounding.html
+  name: EffectRounding
+  nameWithType: EffectRounding
+  fullName: SurvivorsMaker.Core.EffectRounding
+- uid: SurvivorsMaker.Core.StatLimitMode
+  commentId: T:SurvivorsMaker.Core.StatLimitMode
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatLimitMode.html
+  name: StatLimitMode
+  nameWithType: StatLimitMode
+  fullName: SurvivorsMaker.Core.StatLimitMode
+- uid: SurvivorsMaker.Core.EffectLifetime
+  commentId: T:SurvivorsMaker.Core.EffectLifetime
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectLifetime.html
+  name: EffectLifetime
+  nameWithType: EffectLifetime
+  fullName: SurvivorsMaker.Core.EffectLifetime
+- uid: SurvivorsMaker.Core.Effect.#ctor*
+  commentId: Overload:SurvivorsMaker.Core.Effect.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect__ctor
+  name: Effect
+  nameWithType: Effect.Effect
+  fullName: SurvivorsMaker.Core.Effect.Effect
+  nameWithType.vb: Effect.New
+  fullName.vb: SurvivorsMaker.Core.Effect.New
+  name.vb: New
+- uid: SurvivorsMaker.Core.Effect.Add*
+  commentId: Overload:SurvivorsMaker.Core.Effect.Add
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_Add_System_String_System_Int32_
+  name: Add
+  nameWithType: Effect.Add
+  fullName: SurvivorsMaker.Core.Effect.Add
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Core.Effect.Set*
+  commentId: Overload:SurvivorsMaker.Core.Effect.Set
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_Set_System_String_System_Int32_
+  name: Set
+  nameWithType: Effect.Set
+  fullName: SurvivorsMaker.Core.Effect.Set
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Core.Effect.ToString*
+  commentId: Overload:SurvivorsMaker.Core.Effect.ToString
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_ToString
+  name: ToString
+  nameWithType: Effect.ToString
+  fullName: SurvivorsMaker.Core.Effect.ToString
+- uid: SurvivorsMaker.Core.Effect.IsCustom*
+  commentId: Overload:SurvivorsMaker.Core.Effect.IsCustom
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_IsCustom
+  name: IsCustom
+  nameWithType: Effect.IsCustom
+  fullName: SurvivorsMaker.Core.Effect.IsCustom
+- uid: SurvivorsMaker.Core.Effect.List
+  commentId: F:SurvivorsMaker.Core.Effect.List
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_List
+  name: List
+  nameWithType: Effect.List
+  fullName: SurvivorsMaker.Core.Effect.List
+- uid: SurvivorsMaker.Core.Effect.IsListMethod*
+  commentId: Overload:SurvivorsMaker.Core.Effect.IsListMethod
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_IsListMethod
+  name: IsListMethod
+  nameWithType: Effect.IsListMethod
+  fullName: SurvivorsMaker.Core.Effect.IsListMethod

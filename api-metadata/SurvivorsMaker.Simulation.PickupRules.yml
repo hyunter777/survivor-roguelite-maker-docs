@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.PickupRules
+  commentId: T:SurvivorsMaker.Simulation.PickupRules
+  id: PickupRules
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.PickupRules.#ctor
+  - SurvivorsMaker.Simulation.PickupRules.CollectDeaths(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.PickupRules.Settle(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.PickupRules.Spawn(SurvivorsMaker.Simulation.SimWorld,System.String,SurvivorsMaker.Simulation.Vec2,System.Int32)
+  - SurvivorsMaker.Simulation.PickupRules.Tick(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: PickupRules
+  nameWithType: PickupRules
+  fullName: SurvivorsMaker.Simulation.PickupRules
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Reusable pickup storage plus death rewards, progression and collection.
+  example: []
+  syntax:
+    content: public class PickupRules
+    content.vb: Public Class PickupRules
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.PickupRules.CollectDeaths(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.PickupRules.CollectDeaths(SurvivorsMaker.Simulation.SimWorld)
+  id: CollectDeaths(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.PickupRules
+  langs:
+  - csharp
+  - vb
+  name: CollectDeaths(SimWorld)
+  nameWithType: PickupRules.CollectDeaths(SimWorld)
+  fullName: SurvivorsMaker.Simulation.PickupRules.CollectDeaths(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public virtual void CollectDeaths(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Overridable Sub CollectDeaths(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.PickupRules.CollectDeaths*
+- uid: SurvivorsMaker.Simulation.PickupRules.Spawn(SurvivorsMaker.Simulation.SimWorld,System.String,SurvivorsMaker.Simulation.Vec2,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.PickupRules.Spawn(SurvivorsMaker.Simulation.SimWorld,System.String,SurvivorsMaker.Simulation.Vec2,System.Int32)
+  id: Spawn(SurvivorsMaker.Simulation.SimWorld,System.String,SurvivorsMaker.Simulation.Vec2,System.Int32)
+  parent: SurvivorsMaker.Simulation.PickupRules
+  langs:
+  - csharp
+  - vb
+  name: Spawn(SimWorld, string, Vec2, int)
+  nameWithType: PickupRules.Spawn(SimWorld, string, Vec2, int)
+  fullName: SurvivorsMaker.Simulation.PickupRules.Spawn(SurvivorsMaker.Simulation.SimWorld, string, SurvivorsMaker.Simulation.Vec2,
+    int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Creates a pickup dispatched by its behaviour id and adds it to the world at the requested position.
+  example: []
+  syntax:
+    content: public virtual Pickup Spawn(SimWorld world, string behaviourId, Vec2 position, int value)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: behaviourId
+      type: System.String
+    - id: position
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: value
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Simulation.Pickup
+    content.vb: Public Overridable Function Spawn(world As SimWorld, behaviourId As String, position As Vec2, value As Integer)
+      As Pickup
+  overload: SurvivorsMaker.Simulation.PickupRules.Spawn*
+  nameWithType.vb: PickupRules.Spawn(SimWorld, String, Vec2, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.PickupRules.Spawn(SurvivorsMaker.Simulation.SimWorld, String, SurvivorsMaker.Simulation.Vec2,
+    Integer)
+  name.vb: Spawn(SimWorld, String, Vec2, Integer)
+- uid: SurvivorsMaker.Simulation.PickupRules.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.PickupRules.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.PickupRules
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: PickupRules.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.PickupRules.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public virtual void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Overridable Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.PickupRules.Tick*
+- uid: SurvivorsMaker.Simulation.PickupRules.Settle(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.PickupRules.Settle(SurvivorsMaker.Simulation.SimWorld)
+  id: Settle(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.PickupRules
+  langs:
+  - csharp
+  - vb
+  name: Settle(SimWorld)
+  nameWithType: PickupRules.Settle(SimWorld)
+  fullName: SurvivorsMaker.Simulation.PickupRules.Settle(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public virtual void Settle(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Overridable Sub Settle(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.PickupRules.Settle*
+- uid: SurvivorsMaker.Simulation.PickupRules.#ctor
+  commentId: M:SurvivorsMaker.Simulation.PickupRules.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.PickupRules
+  langs:
+  - csharp
+  - vb
+  name: PickupRules()
+  nameWithType: PickupRules.PickupRules()
+  fullName: SurvivorsMaker.Simulation.PickupRules.PickupRules()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public PickupRules()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.PickupRules.#ctor*
+  nameWithType.vb: PickupRules.New()
+  fullName.vb: SurvivorsMaker.Simulation.PickupRules.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.PickupRules.CollectDeaths*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupRules.CollectDeaths
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html#SurvivorsMaker_Simulation_PickupRules_CollectDeaths_SurvivorsMaker_Simulation_SimWorld_
+  name: CollectDeaths
+  nameWithType: PickupRules.CollectDeaths
+  fullName: SurvivorsMaker.Simulation.PickupRules.CollectDeaths
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.PickupRules.Spawn*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupRules.Spawn
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html#SurvivorsMaker_Simulation_PickupRules_Spawn_SurvivorsMaker_Simulation_SimWorld_System_String_SurvivorsMaker_Simulation_Vec2_System_Int32_
+  name: Spawn
+  nameWithType: PickupRules.Spawn
+  fullName: SurvivorsMaker.Simulation.PickupRules.Spawn
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.Pickup
+  commentId: T:SurvivorsMaker.Simulation.Pickup
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Pickup.html
+  name: Pickup
+  nameWithType: Pickup
+  fullName: SurvivorsMaker.Simulation.Pickup
+- uid: SurvivorsMaker.Simulation.PickupRules.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupRules.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html#SurvivorsMaker_Simulation_PickupRules_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: PickupRules.Tick
+  fullName: SurvivorsMaker.Simulation.PickupRules.Tick
+- uid: SurvivorsMaker.Simulation.PickupRules.Settle*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupRules.Settle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html#SurvivorsMaker_Simulation_PickupRules_Settle_SurvivorsMaker_Simulation_SimWorld_
+  name: Settle
+  nameWithType: PickupRules.Settle
+  fullName: SurvivorsMaker.Simulation.PickupRules.Settle
+- uid: SurvivorsMaker.Simulation.PickupRules.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupRules.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html#SurvivorsMaker_Simulation_PickupRules__ctor
+  name: PickupRules
+  nameWithType: PickupRules.PickupRules
+  fullName: SurvivorsMaker.Simulation.PickupRules.PickupRules
+  nameWithType.vb: PickupRules.New
+  fullName.vb: SurvivorsMaker.Simulation.PickupRules.New
+  name.vb: New

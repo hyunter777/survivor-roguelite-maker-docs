@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ICharacterVisual
+  commentId: T:SurvivorsMaker.Presentation.ICharacterVisual
+  id: ICharacterVisual
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack
+  - SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath(System.Action)
+  - SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt
+  - SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual
+  - SurvivorsMaker.Presentation.ICharacterVisual.SetFacing(System.Single)
+  - SurvivorsMaker.Presentation.ICharacterVisual.SetMotion(UnityEngine.Vector2)
+  langs:
+  - csharp
+  - vb
+  name: ICharacterVisual
+  nameWithType: ICharacterVisual
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Animation hooks for a character or enemy body. The default is a sprite with simple tweens;
+
+    adapters for character kits (e.g. layered sprite rigs) implement this on their own prefab.'
+  example: []
+  syntax:
+    content: public interface ICharacterVisual
+    content.vb: Public Interface ICharacterVisual
+  derivedClasses:
+  - SurvivorsMaker.Presentation.SpriteCharacterVisual
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.SetMotion(UnityEngine.Vector2)
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.SetMotion(UnityEngine.Vector2)
+  id: SetMotion(UnityEngine.Vector2)
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: SetMotion(Vector2)
+  nameWithType: ICharacterVisual.SetMotion(Vector2)
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.SetMotion(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Velocity in world units per second; zero = idle.
+  example: []
+  syntax:
+    content: void SetMotion(Vector2 velocity)
+    parameters:
+    - id: velocity
+      type: UnityEngine.Vector2
+    content.vb: Sub SetMotion(velocity As Vector2)
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.SetMotion*
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing(System.Single)
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.SetFacing(System.Single)
+  id: SetFacing(System.Single)
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: SetFacing(float)
+  nameWithType: ICharacterVisual.SetFacing(float)
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Negative = facing left, positive = right.
+  example: []
+  syntax:
+    content: void SetFacing(float x)
+    parameters:
+    - id: x
+      type: System.Single
+    content.vb: Sub SetFacing(x As Single)
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing*
+  nameWithType.vb: ICharacterVisual.SetFacing(Single)
+  fullName.vb: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing(Single)
+  name.vb: SetFacing(Single)
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack
+  id: PlayAttack
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: PlayAttack()
+  nameWithType: ICharacterVisual.PlayAttack()
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: void PlayAttack()
+    content.vb: Sub PlayAttack()
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack*
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt
+  id: PlayHurt
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: PlayHurt()
+  nameWithType: ICharacterVisual.PlayHurt()
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: void PlayHurt()
+    content.vb: Sub PlayHurt()
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt*
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath(System.Action)
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath(System.Action)
+  id: PlayDeath(System.Action)
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: PlayDeath(Action)
+  nameWithType: ICharacterVisual.PlayDeath(Action)
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath(System.Action)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Calls <code class="paramref">done</code> when the death animation finished (or at once).
+  example: []
+  syntax:
+    content: void PlayDeath(Action done)
+    parameters:
+    - id: done
+      type: System.Action
+    content.vb: Sub PlayDeath(done As Action)
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath*
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual
+  commentId: M:SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual
+  id: ResetVisual
+  parent: SurvivorsMaker.Presentation.ICharacterVisual
+  langs:
+  - csharp
+  - vb
+  name: ResetVisual()
+  nameWithType: ICharacterVisual.ResetVisual()
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Back to the spawn state when taken from a pool.
+  example: []
+  syntax:
+    content: void ResetVisual()
+    content.vb: Sub ResetVisual()
+  overload: SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.SetMotion*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.SetMotion
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_SetMotion_UnityEngine_Vector2_
+  name: SetMotion
+  nameWithType: ICharacterVisual.SetMotion
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.SetMotion
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.SetFacing
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_SetFacing_System_Single_
+  name: SetFacing
+  nameWithType: ICharacterVisual.SetFacing
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.SetFacing
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_PlayAttack
+  name: PlayAttack
+  nameWithType: ICharacterVisual.PlayAttack
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayAttack
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_PlayHurt
+  name: PlayHurt
+  nameWithType: ICharacterVisual.PlayHurt
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayHurt
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_PlayDeath_System_Action_
+  name: PlayDeath
+  nameWithType: ICharacterVisual.PlayDeath
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.PlayDeath
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual*
+  commentId: Overload:SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html#SurvivorsMaker_Presentation_ICharacterVisual_ResetVisual
+  name: ResetVisual
+  nameWithType: ICharacterVisual.ResetVisual
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual.ResetVisual

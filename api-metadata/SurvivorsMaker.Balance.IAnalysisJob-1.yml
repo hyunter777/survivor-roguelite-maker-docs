@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob`1
+  id: IAnalysisJob`1
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.IAnalysisJob`1.Cancel
+  - SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled
+  - SurvivorsMaker.Balance.IAnalysisJob`1.Progress
+  - SurvivorsMaker.Balance.IAnalysisJob`1.Result
+  - SurvivorsMaker.Balance.IAnalysisJob`1.Step(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IAnalysisJob<TResult>
+  nameWithType: IAnalysisJob<TResult>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: A long headless job the editor can advance in slices and cancel.
+  example: []
+  syntax:
+    content: public interface IAnalysisJob<TResult>
+    typeParameters:
+    - id: TResult
+    content.vb: Public Interface IAnalysisJob(Of TResult)
+  derivedClasses:
+  - SurvivorsMaker.Balance.WavePlaybackJob
+  - SurvivorsMaker.Editor.AnalysisTaskJob`1
+  nameWithType.vb: IAnalysisJob(Of TResult)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult)
+  name.vb: IAnalysisJob(Of TResult)
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Step(System.Double)
+  commentId: M:SurvivorsMaker.Balance.IAnalysisJob`1.Step(System.Double)
+  id: Step(System.Double)
+  parent: SurvivorsMaker.Balance.IAnalysisJob`1
+  langs:
+  - csharp
+  - vb
+  name: Step(double)
+  nameWithType: IAnalysisJob<TResult>.Step(double)
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Step(double)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Does up to <code class="paramref">budgetMilliseconds</code> of work. Returns true when finished.
+  example: []
+  syntax:
+    content: bool Step(double budgetMilliseconds)
+    parameters:
+    - id: budgetMilliseconds
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Function [Step](budgetMilliseconds As Double) As Boolean
+  overload: SurvivorsMaker.Balance.IAnalysisJob`1.Step*
+  nameWithType.vb: IAnalysisJob(Of TResult).Step(Double)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Step(Double)
+  name.vb: Step(Double)
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Cancel
+  commentId: M:SurvivorsMaker.Balance.IAnalysisJob`1.Cancel
+  id: Cancel
+  parent: SurvivorsMaker.Balance.IAnalysisJob`1
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: IAnalysisJob<TResult>.Cancel()
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Cancel()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: void Cancel()
+    content.vb: Sub Cancel()
+  overload: SurvivorsMaker.Balance.IAnalysisJob`1.Cancel*
+  nameWithType.vb: IAnalysisJob(Of TResult).Cancel()
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Cancel()
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Progress
+  commentId: P:SurvivorsMaker.Balance.IAnalysisJob`1.Progress
+  id: Progress
+  parent: SurvivorsMaker.Balance.IAnalysisJob`1
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: IAnalysisJob<TResult>.Progress
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Progress
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: 0–1.
+  example: []
+  syntax:
+    content: float Progress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property Progress As Single
+  overload: SurvivorsMaker.Balance.IAnalysisJob`1.Progress*
+  nameWithType.vb: IAnalysisJob(Of TResult).Progress
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Progress
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled
+  commentId: P:SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled
+  id: Cancelled
+  parent: SurvivorsMaker.Balance.IAnalysisJob`1
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: IAnalysisJob<TResult>.Cancelled
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Cancelled
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: bool Cancelled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Cancelled As Boolean
+  overload: SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled*
+  nameWithType.vb: IAnalysisJob(Of TResult).Cancelled
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Cancelled
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Result
+  commentId: P:SurvivorsMaker.Balance.IAnalysisJob`1.Result
+  id: Result
+  parent: SurvivorsMaker.Balance.IAnalysisJob`1
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: IAnalysisJob<TResult>.Result
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Result
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Valid once Step returned true (partial when cancelled).
+  example: []
+  syntax:
+    content: TResult Result { get; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: ReadOnly Property Result As TResult
+  overload: SurvivorsMaker.Balance.IAnalysisJob`1.Result*
+  nameWithType.vb: IAnalysisJob(Of TResult).Result
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Result
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Step*
+  commentId: Overload:SurvivorsMaker.Balance.IAnalysisJob`1.Step
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html#SurvivorsMaker_Balance_IAnalysisJob_1_Step_System_Double_
+  name: Step
+  nameWithType: IAnalysisJob<TResult>.Step
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Step
+  nameWithType.vb: IAnalysisJob(Of TResult).Step
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Step
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Cancel*
+  commentId: Overload:SurvivorsMaker.Balance.IAnalysisJob`1.Cancel
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html#SurvivorsMaker_Balance_IAnalysisJob_1_Cancel
+  name: Cancel
+  nameWithType: IAnalysisJob<TResult>.Cancel
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Cancel
+  nameWithType.vb: IAnalysisJob(Of TResult).Cancel
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Cancel
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Progress*
+  commentId: Overload:SurvivorsMaker.Balance.IAnalysisJob`1.Progress
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html#SurvivorsMaker_Balance_IAnalysisJob_1_Progress
+  name: Progress
+  nameWithType: IAnalysisJob<TResult>.Progress
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Progress
+  nameWithType.vb: IAnalysisJob(Of TResult).Progress
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Progress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled*
+  commentId: Overload:SurvivorsMaker.Balance.IAnalysisJob`1.Cancelled
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html#SurvivorsMaker_Balance_IAnalysisJob_1_Cancelled
+  name: Cancelled
+  nameWithType: IAnalysisJob<TResult>.Cancelled
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Cancelled
+  nameWithType.vb: IAnalysisJob(Of TResult).Cancelled
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Cancelled
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1.Result*
+  commentId: Overload:SurvivorsMaker.Balance.IAnalysisJob`1.Result
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html#SurvivorsMaker_Balance_IAnalysisJob_1_Result
+  name: Result
+  nameWithType: IAnalysisJob<TResult>.Result
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>.Result
+  nameWithType.vb: IAnalysisJob(Of TResult).Result
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult).Result
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  commentId: '!:TResult'
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult

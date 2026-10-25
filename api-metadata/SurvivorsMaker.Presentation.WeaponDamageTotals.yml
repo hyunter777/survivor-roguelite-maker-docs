@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals
+  commentId: T:SurvivorsMaker.Presentation.WeaponDamageTotals
+  id: WeaponDamageTotals
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Crits
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Direct
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Effect
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Hits
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Kills
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Of(SurvivorsMaker.Presentation.DamageChannel)
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Status
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.TicksEquipped
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.Total
+  - SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponId
+  langs:
+  - csharp
+  - vb
+  name: WeaponDamageTotals
+  nameWithType: WeaponDamageTotals
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Damage one weapon (by item id) did over the run. Copies of the same weapon add up.
+  example: []
+  syntax:
+    content: public sealed class WeaponDamageTotals
+    content.vb: Public NotInheritable Class WeaponDamageTotals
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponId
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponId
+  id: WeaponId
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: WeaponId
+  nameWithType: WeaponDamageTotals.WeaponId
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string WeaponId
+    return:
+      type: System.String
+    content.vb: Public WeaponId As String
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Direct
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Direct
+  id: Direct
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Direct
+  nameWithType: WeaponDamageTotals.Direct
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Direct
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Direct
+    return:
+      type: System.Int64
+    content.vb: Public Direct As Long
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Effect
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Effect
+  id: Effect
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: WeaponDamageTotals.Effect
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Effect
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Effect
+    return:
+      type: System.Int64
+    content.vb: Public Effect As Long
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Status
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Status
+  id: Status
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: WeaponDamageTotals.Status
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Status
+    return:
+      type: System.Int64
+    content.vb: Public Status As Long
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Hits
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Hits
+  id: Hits
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Hits
+  nameWithType: WeaponDamageTotals.Hits
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Hits
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int Hits
+    return:
+      type: System.Int32
+    content.vb: Public Hits As Integer
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Crits
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Crits
+  id: Crits
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Crits
+  nameWithType: WeaponDamageTotals.Crits
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Crits
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int Crits
+    return:
+      type: System.Int32
+    content.vb: Public Crits As Integer
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Kills
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.Kills
+  id: Kills
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: WeaponDamageTotals.Kills
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Kills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int Kills
+    return:
+      type: System.Int32
+    content.vb: Public Kills As Integer
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.TicksEquipped
+  commentId: F:SurvivorsMaker.Presentation.WeaponDamageTotals.TicksEquipped
+  id: TicksEquipped
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: TicksEquipped
+  nameWithType: WeaponDamageTotals.TicksEquipped
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.TicksEquipped
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Ticks this weapon was equipped during waves (one per copy).
+  example: []
+  syntax:
+    content: public int TicksEquipped
+    return:
+      type: System.Int32
+    content.vb: Public TicksEquipped As Integer
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Of(SurvivorsMaker.Presentation.DamageChannel)
+  commentId: M:SurvivorsMaker.Presentation.WeaponDamageTotals.Of(SurvivorsMaker.Presentation.DamageChannel)
+  id: Of(SurvivorsMaker.Presentation.DamageChannel)
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Of(DamageChannel)
+  nameWithType: WeaponDamageTotals.Of(DamageChannel)
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Of(SurvivorsMaker.Presentation.DamageChannel)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Of(DamageChannel channel)
+    parameters:
+    - id: channel
+      type: SurvivorsMaker.Presentation.DamageChannel
+    return:
+      type: System.Int64
+    content.vb: Public Function [Of](channel As DamageChannel) As Long
+  overload: SurvivorsMaker.Presentation.WeaponDamageTotals.Of*
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor
+  commentId: M:SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: WeaponDamageTotals()
+  nameWithType: WeaponDamageTotals.WeaponDamageTotals()
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponDamageTotals()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public WeaponDamageTotals()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor*
+  nameWithType.vb: WeaponDamageTotals.New()
+  fullName.vb: SurvivorsMaker.Presentation.WeaponDamageTotals.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Total
+  commentId: P:SurvivorsMaker.Presentation.WeaponDamageTotals.Total
+  id: Total
+  parent: SurvivorsMaker.Presentation.WeaponDamageTotals
+  langs:
+  - csharp
+  - vb
+  name: Total
+  nameWithType: WeaponDamageTotals.Total
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Total
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Total { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Total As Long
+  overload: SurvivorsMaker.Presentation.WeaponDamageTotals.Total*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Of*
+  commentId: Overload:SurvivorsMaker.Presentation.WeaponDamageTotals.Of
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WeaponDamageTotals.html#SurvivorsMaker_Presentation_WeaponDamageTotals_Of_SurvivorsMaker_Presentation_DamageChannel_
+  name: Of
+  nameWithType: WeaponDamageTotals.Of
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Of
+- uid: SurvivorsMaker.Presentation.DamageChannel
+  commentId: T:SurvivorsMaker.Presentation.DamageChannel
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DamageChannel.html
+  name: DamageChannel
+  nameWithType: DamageChannel
+  fullName: SurvivorsMaker.Presentation.DamageChannel
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.WeaponDamageTotals.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WeaponDamageTotals.html#SurvivorsMaker_Presentation_WeaponDamageTotals__ctor
+  name: WeaponDamageTotals
+  nameWithType: WeaponDamageTotals.WeaponDamageTotals
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.WeaponDamageTotals
+  nameWithType.vb: WeaponDamageTotals.New
+  fullName.vb: SurvivorsMaker.Presentation.WeaponDamageTotals.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.WeaponDamageTotals.Total*
+  commentId: Overload:SurvivorsMaker.Presentation.WeaponDamageTotals.Total
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WeaponDamageTotals.html#SurvivorsMaker_Presentation_WeaponDamageTotals_Total
+  name: Total
+  nameWithType: WeaponDamageTotals.Total
+  fullName: SurvivorsMaker.Presentation.WeaponDamageTotals.Total

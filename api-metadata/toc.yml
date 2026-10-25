@@ -1,0 +1,1819 @@
+### YamlMime:TableOfContent
+items:
+- uid: SurvivorsMaker.Balance
+  name: SurvivorsMaker.Balance
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Balance.BalanceCsv
+    name: BalanceCsv
+    type: Class
+  - uid: SurvivorsMaker.Balance.BalanceReport
+    name: BalanceReport
+    type: Class
+  - uid: SurvivorsMaker.Balance.BalanceRequest
+    name: BalanceRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.BalanceRunner
+    name: BalanceRunner
+    type: Class
+  - uid: SurvivorsMaker.Balance.BalanceSummary
+    name: BalanceSummary
+    type: Class
+  - uid: SurvivorsMaker.Balance.BuildReport
+    name: BuildReport
+    type: Class
+  - uid: SurvivorsMaker.Balance.BuildSpec
+    name: BuildSpec
+    type: Class
+  - uid: SurvivorsMaker.Balance.BuildTrialRequest
+    name: BuildTrialRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.BuildTrialResult
+    name: BuildTrialResult
+    type: Class
+  - uid: SurvivorsMaker.Balance.DpsProbe
+    name: DpsProbe
+    type: Class
+  - uid: SurvivorsMaker.Balance.DpsProbeRequest
+    name: DpsProbeRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.DpsProbeResult
+    name: DpsProbeResult
+    type: Struct
+  - uid: SurvivorsMaker.Balance.EnemySummary
+    name: EnemySummary
+    type: Struct
+  - uid: SurvivorsMaker.Balance.GreedyBot
+    name: GreedyBot
+    type: Class
+  - uid: SurvivorsMaker.Balance.GreedyBotSettings
+    name: GreedyBotSettings
+    type: Class
+  - uid: SurvivorsMaker.Balance.GroupSummary
+    name: GroupSummary
+    type: Struct
+  - uid: SurvivorsMaker.Balance.HeadlessBenchmark
+    name: HeadlessBenchmark
+    type: Class
+  - uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+    name: HeadlessBenchmarkRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+    name: HeadlessBenchmarkResult
+    type: Struct
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob<TResult>
+    type: Interface
+  - uid: SurvivorsMaker.Balance.IMakerAnalysis
+    name: IMakerAnalysis
+    type: Interface
+  - uid: SurvivorsMaker.Balance.IRunBot
+    name: IRunBot
+    type: Interface
+  - uid: SurvivorsMaker.Balance.MakerAnalysis
+    name: MakerAnalysis
+    type: Class
+  - uid: SurvivorsMaker.Balance.MakerAnalysisSettings
+    name: MakerAnalysisSettings
+    type: Class
+  - uid: SurvivorsMaker.Balance.OfferOdds
+    name: OfferOdds
+    type: Class
+  - uid: SurvivorsMaker.Balance.OfferOddsReport
+    name: OfferOddsReport
+    type: Class
+  - uid: SurvivorsMaker.Balance.OfferOddsRequest
+    name: OfferOddsRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.PacingReport
+    name: PacingReport
+    type: Class
+  - uid: SurvivorsMaker.Balance.PacingRequest
+    name: PacingRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.RandomBot
+    name: RandomBot
+    type: Class
+  - uid: SurvivorsMaker.Balance.RandomBotSettings
+    name: RandomBotSettings
+    type: Class
+  - uid: SurvivorsMaker.Balance.RunRecord
+    name: RunRecord
+    type: Class
+  - uid: SurvivorsMaker.Balance.StatContribution
+    name: StatContribution
+    type: Struct
+  - uid: SurvivorsMaker.Balance.WaveFrame
+    name: WaveFrame
+    type: Class
+  - uid: SurvivorsMaker.Balance.WavePacing
+    name: WavePacing
+    type: Class
+  - uid: SurvivorsMaker.Balance.WavePlayback
+    name: WavePlayback
+    type: Class
+  - uid: SurvivorsMaker.Balance.WavePlaybackJob
+    name: WavePlaybackJob
+    type: Class
+  - uid: SurvivorsMaker.Balance.WavePlaybackRequest
+    name: WavePlaybackRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.WaveRecord
+    name: WaveRecord
+    type: Class
+  - uid: SurvivorsMaker.Balance.WaveSummary
+    name: WaveSummary
+    type: Struct
+  - uid: SurvivorsMaker.Balance.WeaponLabRequest
+    name: WeaponLabRequest
+    type: Class
+  - uid: SurvivorsMaker.Balance.WeaponLabResult
+    name: WeaponLabResult
+    type: Class
+  - uid: SurvivorsMaker.Balance.WeaponPower
+    name: WeaponPower
+    type: Class
+  - uid: SurvivorsMaker.Balance.WeaponSummary
+    name: WeaponSummary
+    type: Struct
+- uid: SurvivorsMaker.Core
+  name: SurvivorsMaker.Core
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Core.AppliedEffect
+    name: AppliedEffect
+    type: Class
+  - uid: SurvivorsMaker.Core.ConversionOutcome
+    name: ConversionOutcome
+    type: Class
+  - uid: SurvivorsMaker.Core.DamageFormula
+    name: DamageFormula
+    type: Class
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectDiagnostic
+    name: EffectDiagnostic
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectEngine
+    name: EffectEngine
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectEvaluationSettings
+    name: EffectEvaluationSettings
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectHandlers
+    name: EffectHandlers
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectLeaseState
+    name: EffectLeaseState
+    type: Class
+  - uid: SurvivorsMaker.Core.EffectLifetime
+    name: EffectLifetime
+    type: Enum
+  - uid: SurvivorsMaker.Core.EffectMethod
+    name: EffectMethod
+    type: Enum
+  - uid: SurvivorsMaker.Core.EffectRounding
+    name: EffectRounding
+    type: Enum
+  - uid: SurvivorsMaker.Core.EffectStore
+    name: EffectStore
+    type: Class
+  - uid: SurvivorsMaker.Core.IEffectHandler
+    name: IEffectHandler
+    type: Interface
+  - uid: SurvivorsMaker.Core.IStatDebitSource
+    name: IStatDebitSource
+    type: Interface
+  - uid: SurvivorsMaker.Core.IStatSource
+    name: IStatSource
+    type: Interface
+  - uid: SurvivorsMaker.Core.IStatSourceDependencies
+    name: IStatSourceDependencies
+    type: Interface
+  - uid: SurvivorsMaker.Core.StarterStats
+    name: StarterStats
+    type: Class
+  - uid: SurvivorsMaker.Core.StatBuild
+    name: StatBuild
+    type: Class
+  - uid: SurvivorsMaker.Core.StatCatalog
+    name: StatCatalog
+    type: Class
+  - uid: SurvivorsMaker.Core.StatContributionDetail
+    name: StatContributionDetail
+    type: Struct
+  - uid: SurvivorsMaker.Core.StatContributionLayer
+    name: StatContributionLayer
+    type: Enum
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    type: Class
+  - uid: SurvivorsMaker.Core.StatEfficiencyBinding
+    name: StatEfficiencyBinding
+    type: Class
+  - uid: SurvivorsMaker.Core.StatExplanation
+    name: StatExplanation
+    type: Class
+  - uid: SurvivorsMaker.Core.StatLimitMode
+    name: StatLimitMode
+    type: Enum
+  - uid: SurvivorsMaker.Core.StatReadLayer
+    name: StatReadLayer
+    type: Enum
+  - uid: SurvivorsMaker.Core.StatScaling
+    name: StatScaling
+    type: Struct
+  - uid: SurvivorsMaker.Core.StatValue
+    name: StatValue
+    type: Class
+  - uid: SurvivorsMaker.Core.StatWallet
+    name: StatWallet
+    type: Class
+  - uid: SurvivorsMaker.Core.SurvivorsMakerInfo
+    name: SurvivorsMakerInfo
+    type: Class
+  - uid: SurvivorsMaker.Core.WeaponMath
+    name: WeaponMath
+    type: Class
+- uid: SurvivorsMaker.Data
+  name: SurvivorsMaker.Data
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Data.ArenaAsset
+    name: ArenaAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.BossPhaseEntry
+    name: BossPhaseEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.CharacterAsset
+    name: CharacterAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.ContentAsset
+    name: ContentAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.ContentAssetBase
+    name: ContentAssetBase
+    type: Class
+  - uid: SurvivorsMaker.Data.ContentDefinitionAsset`1
+    name: ContentDefinitionAsset<T>
+    type: Class
+  - uid: SurvivorsMaker.Data.ContentTextEntry
+    name: ContentTextEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    type: Enum
+  - uid: SurvivorsMaker.Data.ContentTextTable
+    name: ContentTextTable
+    type: Class
+  - uid: SurvivorsMaker.Data.EffectEntry
+    name: EffectEntry
+    type: Struct
+  - uid: SurvivorsMaker.Data.EliteAsset
+    name: EliteAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.EnemyAsset
+    name: EnemyAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.EnemyAttackEntry
+    name: EnemyAttackEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+    name: EnemyDeathSpawnEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.GameSettingsAsset
+    name: GameSettingsAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.HordeEventEntry
+    name: HordeEventEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.IContentTextSource
+    name: IContentTextSource
+    type: Interface
+  - uid: SurvivorsMaker.Data.ItemAsset
+    name: ItemAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.OfferBanEntry
+    name: OfferBanEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.OfferGuaranteeEntry
+    name: OfferGuaranteeEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.SetAsset
+    name: SetAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.SetBonusEntry
+    name: SetBonusEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.SpawnEnemyEntry
+    name: SpawnEnemyEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.SpawnGroupEntry
+    name: SpawnGroupEntry
+    type: Class
+  - uid: SurvivorsMaker.Data.StatCatalogAsset
+    name: StatCatalogAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.WaveAsset
+    name: WaveAsset
+    type: Class
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    type: Class
+- uid: SurvivorsMaker.Editor
+  name: SurvivorsMaker.Editor
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Editor.AnalysisJobDriver`1
+    name: AnalysisJobDriver<T>
+    type: Class
+  - uid: SurvivorsMaker.Editor.AnalysisTaskJob`1
+    name: AnalysisTaskJob<T>
+    type: Class
+  - uid: SurvivorsMaker.Editor.BalanceReportExport
+    name: BalanceReportExport
+    type: Class
+  - uid: SurvivorsMaker.Editor.BalanceWindow
+    name: BalanceWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.BehaviourIdField
+    name: BehaviourIdField
+    type: Class
+  - uid: SurvivorsMaker.Editor.BehaviourIds
+    name: BehaviourIds
+    type: Class
+  - uid: SurvivorsMaker.Editor.BehaviourParameterDrawer
+    name: BehaviourParameterDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.BehaviourRegistryKind
+    name: BehaviourRegistryKind
+    type: Enum
+  - uid: SurvivorsMaker.Editor.BossPhaseBar
+    name: BossPhaseBar
+    type: Class
+  - uid: SurvivorsMaker.Editor.BrowserContentKind
+    name: BrowserContentKind
+    type: Enum
+  - uid: SurvivorsMaker.Editor.BuildLabChoices
+    name: BuildLabChoices
+    type: Class
+  - uid: SurvivorsMaker.Editor.BuildLabModel
+    name: BuildLabModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.BuildLabPanel
+    name: BuildLabPanel
+    type: Class
+  - uid: SurvivorsMaker.Editor.BuildLabPresets
+    name: BuildLabPresets
+    type: Class
+  - uid: SurvivorsMaker.Editor.BuildLabWindow
+    name: BuildLabWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.BuildStatDiff
+    name: BuildStatDiff
+    type: Struct
+  - uid: SurvivorsMaker.Editor.CharacterAssetEditor
+    name: CharacterAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.ChartSeries
+    name: ChartSeries
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentBrowserActions
+    name: ContentBrowserActions
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentBrowserIssue
+    name: ContentBrowserIssue
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentBrowserModel
+    name: ContentBrowserModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentBrowserNode
+    name: ContentBrowserNode
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentBrowserWindow
+    name: ContentBrowserWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentCatalogChecks
+    name: ContentCatalogChecks
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableBaseline
+    name: ContentTableBaseline
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableChange
+    name: ContentTableChange
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableColumn
+    name: ContentTableColumn
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableCsv
+    name: ContentTableCsv
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableImport
+    name: ContentTableImport
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableKind
+    name: ContentTableKind
+    type: Enum
+  - uid: SurvivorsMaker.Editor.ContentTableModel
+    name: ContentTableModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTableWindow
+    name: ContentTableWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTemplate
+    name: ContentTemplate
+    type: Enum
+  - uid: SurvivorsMaker.Editor.ContentTemplates
+    name: ContentTemplates
+    type: Class
+  - uid: SurvivorsMaker.Editor.ContentTextSection
+    name: ContentTextSection
+    type: Class
+  - uid: SurvivorsMaker.Editor.CounterTransferRuleDrawer
+    name: CounterTransferRuleDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.CustomEventEffectDrawer
+    name: CustomEventEffectDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.CustomEventSoundDrawer
+    name: CustomEventSoundDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.EditorAssetContext
+    name: EditorAssetContext
+    type: Class
+  - uid: SurvivorsMaker.Editor.EditorStatContext
+    name: EditorStatContext
+    type: Class
+  - uid: SurvivorsMaker.Editor.EffectEntryDrawer
+    name: EffectEntryDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.EffectPreview
+    name: EffectPreview
+    type: Class
+  - uid: SurvivorsMaker.Editor.EliteAssetEditor
+    name: EliteAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.EliteDefDrawer
+    name: EliteDefDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.EliteLayout
+    name: EliteLayout
+    type: Class
+  - uid: SurvivorsMaker.Editor.EliteModifierDrawer
+    name: EliteModifierDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.EnemyAssetEditor
+    name: EnemyAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.EnemyBossSection
+    name: EnemyBossSection
+    type: Class
+  - uid: SurvivorsMaker.Editor.FeaturePreview
+    name: FeaturePreview
+    type: Class
+  - uid: SurvivorsMaker.Editor.GameSceneOptions
+    name: GameSceneOptions
+    type: Class
+  - uid: SurvivorsMaker.Editor.GameSceneResult
+    name: GameSceneResult
+    type: Class
+  - uid: SurvivorsMaker.Editor.GameSceneWizard
+    name: GameSceneWizard
+    type: Class
+  - uid: SurvivorsMaker.Editor.GameSettingsAssetEditor
+    name: GameSettingsAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.HitEffectDefDrawer
+    name: HitEffectDefDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.HordeArenaView
+    name: HordeArenaView
+    type: Class
+  - uid: SurvivorsMaker.Editor.HordeHeatmap
+    name: HordeHeatmap
+    type: Enum
+  - uid: SurvivorsMaker.Editor.HordePlaybackModel
+    name: HordePlaybackModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.HordePreviewWindow
+    name: HordePreviewWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.IMakerJobProgress
+    name: IMakerJobProgress
+    type: Interface
+  - uid: SurvivorsMaker.Editor.ItemAssetEditor
+    name: ItemAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.LocalizedTextAssetEditor
+    name: LocalizedTextAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerAnalysisProvider
+    name: MakerAnalysisProvider
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerAssetEditor
+    name: MakerAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerChartPalette
+    name: MakerChartPalette
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerChartScale
+    name: MakerChartScale
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerEditorUi
+    name: MakerEditorUi
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerJobBar
+    name: MakerJobBar
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerLineChart
+    name: MakerLineChart
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerMenus
+    name: MakerMenus
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerResultMetadata
+    name: MakerResultMetadata
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerSnapshot
+    name: MakerSnapshot
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerToolContext
+    name: MakerToolContext
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerToolLinks
+    name: MakerToolLinks
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerToolUi
+    name: MakerToolUi
+    type: Class
+  - uid: SurvivorsMaker.Editor.MakerToolWindow
+    name: MakerToolWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.NewGameProjectOptions
+    name: NewGameProjectOptions
+    type: Class
+  - uid: SurvivorsMaker.Editor.NewGameProjectResult
+    name: NewGameProjectResult
+    type: Class
+  - uid: SurvivorsMaker.Editor.NewGameProjectWizard
+    name: NewGameProjectWizard
+    type: Class
+  - uid: SurvivorsMaker.Editor.NextTierCreationSettings
+    name: NextTierCreationSettings
+    type: Class
+  - uid: SurvivorsMaker.Editor.OfferBanEntryDrawer
+    name: OfferBanEntryDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.OfferGuaranteeEntryDrawer
+    name: OfferGuaranteeEntryDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.OfferOddsCompare
+    name: OfferOddsCompare
+    type: Enum
+  - uid: SurvivorsMaker.Editor.OfferOddsModel
+    name: OfferOddsModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.OfferOddsRow
+    name: OfferOddsRow
+    type: Class
+  - uid: SurvivorsMaker.Editor.OfferOddsWindow
+    name: OfferOddsWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.OptionalCountDrawer
+    name: OptionalCountDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.PacingBand
+    name: PacingBand
+    type: Enum
+  - uid: SurvivorsMaker.Editor.PacingChartModel
+    name: PacingChartModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.PacingThresholds
+    name: PacingThresholds
+    type: Class
+  - uid: SurvivorsMaker.Editor.PlaceholderArt
+    name: PlaceholderArt
+    type: Class
+  - uid: SurvivorsMaker.Editor.PlaceholderShape
+    name: PlaceholderShape
+    type: Enum
+  - uid: SurvivorsMaker.Editor.RowDrawer
+    name: RowDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.RunPacingWindow
+    name: RunPacingWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.ScaledDrawer
+    name: ScaledDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.SerializedRead
+    name: SerializedRead
+    type: Class
+  - uid: SurvivorsMaker.Editor.SetAssetEditor
+    name: SetAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.SoundCatalogAssetEditor
+    name: SoundCatalogAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.StatContributionGroup
+    name: StatContributionGroup
+    type: Class
+  - uid: SurvivorsMaker.Editor.StatEfficiencyBindingDrawer
+    name: StatEfficiencyBindingDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.StatPicker
+    name: StatPicker
+    type: Class
+  - uid: SurvivorsMaker.Editor.StatScalingDrawer
+    name: StatScalingDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.StatusEffectDefDrawer
+    name: StatusEffectDefDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.TagLimitDrawer
+    name: TagLimitDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.TagWeightDrawer
+    name: TagWeightDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.TickSecondsField
+    name: TickSecondsField
+    type: Class
+  - uid: SurvivorsMaker.Editor.TriggerConditionDrawer
+    name: TriggerConditionDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.TriggerDefDrawer
+    name: TriggerDefDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.UiPrefabBuilder
+    name: UiPrefabBuilder
+    type: Class
+  - uid: SurvivorsMaker.Editor.UnlockDefDrawer
+    name: UnlockDefDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.ViewCatalogAssetEditor
+    name: ViewCatalogAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.ViewEntryDrawer
+    name: ViewEntryDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.WaveEditorWindow
+    name: WaveEditorWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.WaveSchedulePreview
+    name: WaveSchedulePreview
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponAssetEditor
+    name: WeaponAssetEditor
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponKindLimitDrawer
+    name: WeaponKindLimitDrawer
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponLabEffective
+    name: WeaponLabEffective
+    type: Struct
+  - uid: SurvivorsMaker.Editor.WeaponLabModel
+    name: WeaponLabModel
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponLabStats
+    name: WeaponLabStats
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponLabWindow
+    name: WeaponLabWindow
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponPatternView
+    name: WeaponPatternView
+    type: Class
+  - uid: SurvivorsMaker.Editor.WeaponTierTools
+    name: WeaponTierTools
+    type: Class
+- uid: SurvivorsMaker.Presentation
+  name: SurvivorsMaker.Presentation
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Presentation.AccessibilitySettings
+    name: AccessibilitySettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.AudioCueRules
+    name: AudioCueRules
+    type: Class
+  - uid: SurvivorsMaker.Presentation.AuthoredTextProvider
+    name: AuthoredTextProvider
+    type: Class
+  - uid: SurvivorsMaker.Presentation.BossVisualSettings
+    name: BossVisualSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CameraFollow
+    name: CameraFollow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CameraFollowSettings
+    name: CameraFollowSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CharacterVisualSettings
+    name: CharacterVisualSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatAlertsPanel
+    name: CombatAlertsPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatEffectSettings
+    name: CombatEffectSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatEffects
+    name: CombatEffects
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatLedger
+    name: CombatLedger
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatRecordSettings
+    name: CombatRecordSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CombatTap
+    name: CombatTap
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CustomEffectStyle
+    name: CustomEffectStyle
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.CustomEventEffect
+    name: CustomEventEffect
+    type: Class
+  - uid: SurvivorsMaker.Presentation.CustomEventSound
+    name: CustomEventSound
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DamageChannel
+    name: DamageChannel
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.DamageNumberSettings
+    name: DamageNumberSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DamageTakenTotals
+    name: DamageTakenTotals
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DeathEffectSettings
+    name: DeathEffectSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DefaultUiLanguageProvider
+    name: DefaultUiLanguageProvider
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DevToolsNames
+    name: DevToolsNames
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DevToolsOptions
+    name: DevToolsOptions
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DpsMeterModel
+    name: DpsMeterModel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DpsMeterPanel
+    name: DpsMeterPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.DpsWindow
+    name: DpsWindow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.EffectText
+    name: EffectText
+    type: Class
+  - uid: SurvivorsMaker.Presentation.EliteVisualSettings
+    name: EliteVisualSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.FxCatalogIds
+    name: FxCatalogIds
+    type: Class
+  - uid: SurvivorsMaker.Presentation.GainMark
+    name: GainMark
+    type: Struct
+  - uid: SurvivorsMaker.Presentation.GainSource
+    name: GainSource
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.GameLoopSettings
+    name: GameLoopSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.GameOptions
+    name: GameOptions
+    type: Class
+  - uid: SurvivorsMaker.Presentation.GameOverPanel
+    name: GameOverPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.GameProfile
+    name: GameProfile
+    type: Class
+  - uid: SurvivorsMaker.Presentation.GameUiRoot
+    name: GameUiRoot
+    type: Class
+  - uid: SurvivorsMaker.Presentation.HudPanel
+    name: HudPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ICharacterVisual
+    name: ICharacterVisual
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.ICustomEventView
+    name: ICustomEventView
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.IGameSession
+    name: IGameSession
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.IOptionsApplicator
+    name: IOptionsApplicator
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.IPlayerInput
+    name: IPlayerInput
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension
+    name: ISceneBootstrapExtension
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.ITextProvider
+    name: ITextProvider
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.ITintableVisual
+    name: ITintableVisual
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.IUiLanguageProvider
+    name: IUiLanguageProvider
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.IWaveView
+    name: IWaveView
+    type: Interface
+  - uid: SurvivorsMaker.Presentation.InputSystemPlayerInput
+    name: InputSystemPlayerInput
+    type: Class
+  - uid: SurvivorsMaker.Presentation.JsonEnvelopeFile
+    name: JsonEnvelopeFile
+    type: Class
+  - uid: SurvivorsMaker.Presentation.JsonFileOptionsStore
+    name: JsonFileOptionsStore
+    type: Class
+  - uid: SurvivorsMaker.Presentation.JsonFileProfileStore
+    name: JsonFileProfileStore
+    type: Class
+  - uid: SurvivorsMaker.Presentation.JsonFileRunStore
+    name: JsonFileRunStore
+    type: Class
+  - uid: SurvivorsMaker.Presentation.LevelMark
+    name: LevelMark
+    type: Struct
+  - uid: SurvivorsMaker.Presentation.LevelUpPanel
+    name: LevelUpPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.LocalizedLanguage
+    name: LocalizedLanguage
+    type: Class
+  - uid: SurvivorsMaker.Presentation.LocalizedTextAsset
+    name: LocalizedTextAsset
+    type: Class
+  - uid: SurvivorsMaker.Presentation.MainMenu
+    name: MainMenu
+    type: Class
+  - uid: SurvivorsMaker.Presentation.MusicContext
+    name: MusicContext
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.MusicDuckSettings
+    name: MusicDuckSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.MusicPlayer
+    name: MusicPlayer
+    type: Class
+  - uid: SurvivorsMaker.Presentation.MusicRules
+    name: MusicRules
+    type: Class
+  - uid: SurvivorsMaker.Presentation.MusicTrack
+    name: MusicTrack
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PausePanel
+    name: PausePanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PlaytestCatalog
+    name: PlaytestCatalog
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PlaytestCheatState
+    name: PlaytestCheatState
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PlaytestEntry
+    name: PlaytestEntry
+    type: Struct
+  - uid: SurvivorsMaker.Presentation.PlaytestPanel
+    name: PlaytestPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PlaytestSpeed
+    name: PlaytestSpeed
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PresentationInfo
+    name: PresentationInfo
+    type: Class
+  - uid: SurvivorsMaker.Presentation.PresentationSettings
+    name: PresentationSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ProceduralArt
+    name: ProceduralArt
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ProceduralShape
+    name: ProceduralShape
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.RecordRow
+    name: RecordRow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RecordsPanel
+    name: RecordsPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunGainTracker
+    name: RunGainTracker
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummary
+    name: RunSummary
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummary.TakenRow
+    name: RunSummary.TakenRow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummary.WaveGains
+    name: RunSummary.WaveGains
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummary.WaveLevels
+    name: RunSummary.WaveLevels
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummary.WeaponRow
+    name: RunSummary.WeaponRow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.RunSummaryPanel
+    name: RunSummaryPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SaveFileSet
+    name: SaveFileSet
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ScreenShake
+    name: ScreenShake
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ScreenShakeSettings
+    name: ScreenShakeSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SessionPanel
+    name: SessionPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SettingsPanel
+    name: SettingsPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ShopPanel
+    name: ShopPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundBus
+    name: SoundBus
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.SoundCatalogAsset
+    name: SoundCatalogAsset
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundCue
+    name: SoundCue
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundCueGate
+    name: SoundCueGate
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundCueKeys
+    name: SoundCueKeys
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundPlaybackSettings
+    name: SoundPlaybackSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SoundPlayer
+    name: SoundPlayer
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SpriteCharacterVisual
+    name: SpriteCharacterVisual
+    type: Class
+  - uid: SurvivorsMaker.Presentation.StatusVisualSettings
+    name: StatusVisualSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SurvivorsGame
+    name: SurvivorsGame
+    type: Class
+  - uid: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap
+    name: SurvivorsSceneBootstrap
+    type: Class
+  - uid: SurvivorsMaker.Presentation.TakenChannel
+    name: TakenChannel
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.TextProviderLanguages
+    name: TextProviderLanguages
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiButtonKind
+    name: UiButtonKind
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.UiButtonSize
+    name: UiButtonSize
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiButtonVisual
+    name: UiButtonVisual
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiCard
+    name: UiCard
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiCardPool
+    name: UiCardPool
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiColorRole
+    name: UiColorRole
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.UiFontRole
+    name: UiFontRole
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.UiGridFit
+    name: UiGridFit
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiKit
+    name: UiKit
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiLanguages
+    name: UiLanguages
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiPrefabFactory
+    name: UiPrefabFactory
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiScreen
+    name: UiScreen
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.UiSoundBinder
+    name: UiSoundBinder
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiSoundButton
+    name: UiSoundButton
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiSoundSlider
+    name: UiSoundSlider
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiSpriteRole
+    name: UiSpriteRole
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.UiSprites
+    name: UiSprites
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiStringEntry
+    name: UiStringEntry
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiStrings
+    name: UiStrings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiStyle
+    name: UiStyle
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiText
+    name: UiText
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiTextBinding
+    name: UiTextBinding
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UiTheme
+    name: UiTheme
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UnityOptionsApplicator
+    name: UnityOptionsApplicator
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UnlockPanel
+    name: UnlockPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.UnlockRow
+    name: UnlockRow
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ViewCatalogAsset
+    name: ViewCatalogAsset
+    type: Class
+  - uid: SurvivorsMaker.Presentation.ViewEntry
+    name: ViewEntry
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WaveFeedback
+    name: WaveFeedback
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WaveResultDisplay
+    name: WaveResultDisplay
+    type: Struct
+  - uid: SurvivorsMaker.Presentation.WaveResultPanel
+    name: WaveResultPanel
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WeaponDamageTotals
+    name: WeaponDamageTotals
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WeaponFieldSettings
+    name: WeaponFieldSettings
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WeaponSoundOverride
+    name: WeaponSoundOverride
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WorldView
+    name: WorldView
+    type: Class
+  - uid: SurvivorsMaker.Presentation.WorldViewKind
+    name: WorldViewKind
+    type: Enum
+  - uid: SurvivorsMaker.Presentation.WorldViewSettings
+    name: WorldViewSettings
+    type: Class
+- uid: SurvivorsMaker.Run
+  name: SurvivorsMaker.Run
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Run.AcquisitionPlan
+    name: AcquisitionPlan
+    type: Struct
+  - uid: SurvivorsMaker.Run.AcquisitionPolicy
+    name: AcquisitionPolicy
+    type: Class
+  - uid: SurvivorsMaker.Run.AcquisitionValidator
+    name: AcquisitionValidator
+    type: Class
+  - uid: SurvivorsMaker.Run.ActiveSetInfo
+    name: ActiveSetInfo
+    type: Struct
+  - uid: SurvivorsMaker.Run.BuildSynergyReport
+    name: BuildSynergyReport
+    type: Class
+  - uid: SurvivorsMaker.Run.BuildTagCount
+    name: BuildTagCount
+    type: Struct
+  - uid: SurvivorsMaker.Run.CharacterDef
+    name: CharacterDef
+    type: Class
+  - uid: SurvivorsMaker.Run.CharacterPoolConstraints
+    name: CharacterPoolConstraints
+    type: Class
+  - uid: SurvivorsMaker.Run.CharacterRecord
+    name: CharacterRecord
+    type: Class
+  - uid: SurvivorsMaker.Run.CounterTransfer
+    name: CounterTransfer
+    type: Enum
+  - uid: SurvivorsMaker.Run.CounterTransferRule
+    name: CounterTransferRule
+    type: Class
+  - uid: SurvivorsMaker.Run.GuaranteeLifetime
+    name: GuaranteeLifetime
+    type: Enum
+  - uid: SurvivorsMaker.Run.GuaranteeUse
+    name: GuaranteeUse
+    type: Struct
+  - uid: SurvivorsMaker.Run.IAcquisitionValidator
+    name: IAcquisitionValidator
+    type: Interface
+  - uid: SurvivorsMaker.Run.IInventoryRules
+    name: IInventoryRules
+    type: Interface
+  - uid: SurvivorsMaker.Run.ILevelUpRules
+    name: ILevelUpRules
+    type: Interface
+  - uid: SurvivorsMaker.Run.IOfferPool
+    name: IOfferPool
+    type: Interface
+  - uid: SurvivorsMaker.Run.IOptionsStore
+    name: IOptionsStore
+    type: Interface
+  - uid: SurvivorsMaker.Run.IPlaytestCommands
+    name: IPlaytestCommands
+    type: Interface
+  - uid: SurvivorsMaker.Run.IProfileStore
+    name: IProfileStore
+    type: Interface
+  - uid: SurvivorsMaker.Run.IProgressionRules
+    name: IProgressionRules
+    type: Interface
+  - uid: SurvivorsMaker.Run.IRunSaves
+    name: IRunSaves
+    type: Interface
+  - uid: SurvivorsMaker.Run.IRunStore
+    name: IRunStore
+    type: Interface
+  - uid: SurvivorsMaker.Run.IRunTriggerHandler
+    name: IRunTriggerHandler
+    type: Interface
+  - uid: SurvivorsMaker.Run.ISaveMigration
+    name: ISaveMigration
+    type: Interface
+  - uid: SurvivorsMaker.Run.IShopRules
+    name: IShopRules
+    type: Interface
+  - uid: SurvivorsMaker.Run.ITierRollPolicy
+    name: ITierRollPolicy
+    type: Interface
+  - uid: SurvivorsMaker.Run.InstanceCounter
+    name: InstanceCounter
+    type: Class
+  - uid: SurvivorsMaker.Run.InstanceTransferSettings
+    name: InstanceTransferSettings
+    type: Class
+  - uid: SurvivorsMaker.Run.InventoryAnalysis
+    name: InventoryAnalysis
+    type: Class
+  - uid: SurvivorsMaker.Run.InventoryRules
+    name: InventoryRules
+    type: Class
+  - uid: SurvivorsMaker.Run.ItemDef
+    name: ItemDef
+    type: Class
+  - uid: SurvivorsMaker.Run.ItemKind
+    name: ItemKind
+    type: Enum
+  - uid: SurvivorsMaker.Run.LegacySaveImport
+    name: LegacySaveImport
+    type: Class
+  - uid: SurvivorsMaker.Run.LevelUpChoice
+    name: LevelUpChoice
+    type: Class
+  - uid: SurvivorsMaker.Run.LevelUpRules
+    name: LevelUpRules
+    type: Class
+  - uid: SurvivorsMaker.Run.LevelUpSettings
+    name: LevelUpSettings
+    type: Class
+  - uid: SurvivorsMaker.Run.LinkedEffectInfo
+    name: LinkedEffectInfo
+    type: Struct
+  - uid: SurvivorsMaker.Run.LuckTierRollPolicy
+    name: LuckTierRollPolicy
+    type: Class
+  - uid: SurvivorsMaker.Run.MemoryOptionsStore
+    name: MemoryOptionsStore
+    type: Class
+  - uid: SurvivorsMaker.Run.MemoryProfileStore
+    name: MemoryProfileStore
+    type: Class
+  - uid: SurvivorsMaker.Run.MemoryRunStore
+    name: MemoryRunStore
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferBanRule
+    name: OfferBanRule
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    type: Struct
+  - uid: SurvivorsMaker.Run.OfferChannel
+    name: OfferChannel
+    type: Enum
+  - uid: SurvivorsMaker.Run.OfferDiagnostic
+    name: OfferDiagnostic
+    type: Struct
+  - uid: SurvivorsMaker.Run.OfferFailure
+    name: OfferFailure
+    type: Enum
+  - uid: SurvivorsMaker.Run.OfferGuaranteeRule
+    name: OfferGuaranteeRule
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferKind
+    name: OfferKind
+    type: Enum
+  - uid: SurvivorsMaker.Run.OfferPath
+    name: OfferPath
+    type: Enum
+  - uid: SurvivorsMaker.Run.OfferPool
+    name: OfferPool
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferPoolRequest
+    name: OfferPoolRequest
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferPoolResult
+    name: OfferPoolResult
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferPoolSettings
+    name: OfferPoolSettings
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferPoolState
+    name: OfferPoolState
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferSelection
+    name: OfferSelection
+    type: Struct
+  - uid: SurvivorsMaker.Run.OfferSnapshot
+    name: OfferSnapshot
+    type: Class
+  - uid: SurvivorsMaker.Run.OfferWeights
+    name: OfferWeights
+    type: Class
+  - uid: SurvivorsMaker.Run.OptionalCount
+    name: OptionalCount
+    type: Struct
+  - uid: SurvivorsMaker.Run.OptionsState
+    name: OptionsState
+    type: Class
+  - uid: SurvivorsMaker.Run.OwnedItemSnapshot
+    name: OwnedItemSnapshot
+    type: Class
+  - uid: SurvivorsMaker.Run.OwnedItemState
+    name: OwnedItemState
+    type: Class
+  - uid: SurvivorsMaker.Run.ProfileState
+    name: ProfileState
+    type: Class
+  - uid: SurvivorsMaker.Run.ProgressionRules
+    name: ProgressionRules
+    type: Class
+  - uid: SurvivorsMaker.Run.RunContent
+    name: RunContent
+    type: Class
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    type: Class
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions
+    name: RunControllerPoolExtensions
+    type: Class
+  - uid: SurvivorsMaker.Run.RunInfo
+    name: RunInfo
+    type: Class
+  - uid: SurvivorsMaker.Run.RunMode
+    name: RunMode
+    type: Enum
+  - uid: SurvivorsMaker.Run.RunPhase
+    name: RunPhase
+    type: Enum
+  - uid: SurvivorsMaker.Run.RunRequest
+    name: RunRequest
+    type: Class
+  - uid: SurvivorsMaker.Run.RunResult
+    name: RunResult
+    type: Enum
+  - uid: SurvivorsMaker.Run.RunSaves
+    name: RunSaves
+    type: Class
+  - uid: SurvivorsMaker.Run.RunSettings
+    name: RunSettings
+    type: Class
+  - uid: SurvivorsMaker.Run.RunSnapshot
+    name: RunSnapshot
+    type: Class
+  - uid: SurvivorsMaker.Run.RunStatSource
+    name: RunStatSource
+    type: Class
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    type: Class
+  - uid: SurvivorsMaker.Run.RunSystems
+    name: RunSystems
+    type: Class
+  - uid: SurvivorsMaker.Run.RunTriggerFact
+    name: RunTriggerFact
+    type: Struct
+  - uid: SurvivorsMaker.Run.RunTriggerRules
+    name: RunTriggerRules
+    type: Class
+  - uid: SurvivorsMaker.Run.SaveDomain
+    name: SaveDomain
+    type: Enum
+  - uid: SurvivorsMaker.Run.SaveEnvelope
+    name: SaveEnvelope
+    type: Class
+  - uid: SurvivorsMaker.Run.SaveMigrationRegistry
+    name: SaveMigrationRegistry
+    type: Class
+  - uid: SurvivorsMaker.Run.SaveReadResult
+    name: SaveReadResult
+    type: Class
+  - uid: SurvivorsMaker.Run.SaveReadStatus
+    name: SaveReadStatus
+    type: Enum
+  - uid: SurvivorsMaker.Run.SetBonus
+    name: SetBonus
+    type: Class
+  - uid: SurvivorsMaker.Run.SetDef
+    name: SetDef
+    type: Class
+  - uid: SurvivorsMaker.Run.ShopOffer
+    name: ShopOffer
+    type: Class
+  - uid: SurvivorsMaker.Run.ShopRules
+    name: ShopRules
+    type: Class
+  - uid: SurvivorsMaker.Run.ShopSettings
+    name: ShopSettings
+    type: Class
+  - uid: SurvivorsMaker.Run.TagLimit
+    name: TagLimit
+    type: Class
+  - uid: SurvivorsMaker.Run.TagWeight
+    name: TagWeight
+    type: Class
+  - uid: SurvivorsMaker.Run.TagWeightMode
+    name: TagWeightMode
+    type: Enum
+  - uid: SurvivorsMaker.Run.TierOddsMode
+    name: TierOddsMode
+    type: Enum
+  - uid: SurvivorsMaker.Run.TierTable
+    name: TierTable
+    type: Class
+  - uid: SurvivorsMaker.Run.TierWeight
+    name: TierWeight
+    type: Struct
+  - uid: SurvivorsMaker.Run.TriggerCounterSnapshot
+    name: TriggerCounterSnapshot
+    type: Class
+  - uid: SurvivorsMaker.Run.UnlockCondition
+    name: UnlockCondition
+    type: Enum
+  - uid: SurvivorsMaker.Run.UnlockDef
+    name: UnlockDef
+    type: Class
+  - uid: SurvivorsMaker.Run.UnlockTarget
+    name: UnlockTarget
+    type: Enum
+  - uid: SurvivorsMaker.Run.WeaponItemDef
+    name: WeaponItemDef
+    type: Class
+  - uid: SurvivorsMaker.Run.WeaponKindLimit
+    name: WeaponKindLimit
+    type: Class
+  - uid: SurvivorsMaker.Run.WeaponPoolKind
+    name: WeaponPoolKind
+    type: Enum
+  - uid: SurvivorsMaker.Run.WindowMode
+    name: WindowMode
+    type: Enum
+- uid: SurvivorsMaker.Simulation
+  name: SurvivorsMaker.Simulation
+  type: Namespace
+  items:
+  - uid: SurvivorsMaker.Simulation.AllocatingPools
+    name: AllocatingPools
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ArenaDef
+    name: ArenaDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ArenaRect
+    name: ArenaRect
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry<T>
+    type: Class
+  - uid: SurvivorsMaker.Simulation.BossPhaseDef
+    name: BossPhaseDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.BuiltInBehaviours
+    name: BuiltInBehaviours
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ChargeEnemyAttack
+    name: ChargeEnemyAttack
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ChargeTarget
+    name: ChargeTarget
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.ChaseMovement
+    name: ChaseMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ChaseWithOffsetMovement
+    name: ChaseWithOffsetMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.CombatRules
+    name: CombatRules
+    type: Class
+  - uid: SurvivorsMaker.Simulation.DeathSpawnDef
+    name: DeathSpawnDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EaseOut
+    name: EaseOut
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EffectHandlerPersistence
+    name: EffectHandlerPersistence
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EliteDef
+    name: EliteDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EliteModifier
+    name: EliteModifier
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.EliteModifierKind
+    name: EliteModifierKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EnemyDef
+    name: EnemyDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EnemyMovement
+    name: EnemyMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EnemySettings
+    name: EnemySettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.EnemySystem
+    name: EnemySystem
+    type: Class
+  - uid: SurvivorsMaker.Simulation.HitEffectDef
+    name: HitEffectDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.HitEffectKind
+    name: HitEffectKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.HordeEventDef
+    name: HordeEventDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.HordePattern
+    name: HordePattern
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.HyperbolicDefense
+    name: HyperbolicDefense
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ICombat
+    name: ICombat
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IDefenseFormula
+    name: IDefenseFormula
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IEffectStatePersistence
+    name: IEffectStatePersistence
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IEnemyAttack
+    name: IEnemyAttack
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IEnemyMovement
+    name: IEnemyMovement
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IEnemySystem
+    name: IEnemySystem
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ILevelCurve
+    name: ILevelCurve
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IPickupBehaviour
+    name: IPickupBehaviour
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IPickupSettlementBehaviour
+    name: IPickupSettlementBehaviour
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ISimModule
+    name: ISimModule
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ISimPools
+    name: ISimPools
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ISpatialIndex
+    name: ISpatialIndex
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ISpawnSystem
+    name: ISpawnSystem
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IStatusBehaviour
+    name: IStatusBehaviour
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IStatusSystem
+    name: IStatusSystem
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ITriggerHandler
+    name: ITriggerHandler
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.ITriggerSystem
+    name: ITriggerSystem
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IWeaponBehaviour
+    name: IWeaponBehaviour
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+    name: IWeaponLoadoutUpdater
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem
+    name: IWeaponSystem
+    type: Interface
+  - uid: SurvivorsMaker.Simulation.KeepDistanceMovement
+    name: KeepDistanceMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.KnockbackSettings
+    name: KnockbackSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.LinearSpatialIndex
+    name: LinearSpatialIndex
+    type: Class
+  - uid: SurvivorsMaker.Simulation.MeleePhase
+    name: MeleePhase
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.MeleeStyle
+    name: MeleeStyle
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.MovementDef
+    name: MovementDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.MovementKind
+    name: MovementKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.Pickup
+    name: Pickup
+    type: Class
+  - uid: SurvivorsMaker.Simulation.PickupKind
+    name: PickupKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.PickupRules
+    name: PickupRules
+    type: Class
+  - uid: SurvivorsMaker.Simulation.PickupSettings
+    name: PickupSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.PlayerSettings
+    name: PlayerSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.PlayerState
+    name: PlayerState
+    type: Class
+  - uid: SurvivorsMaker.Simulation.PolynomialLevelCurve
+    name: PolynomialLevelCurve
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ProgressionSettings
+    name: ProgressionSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.Projectile
+    name: Projectile
+    type: Class
+  - uid: SurvivorsMaker.Simulation.Scaled
+    name: Scaled
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.ScheduledGroup
+    name: ScheduledGroup
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ShootEnemyAttack
+    name: ShootEnemyAttack
+    type: Class
+  - uid: SurvivorsMaker.Simulation.ShotOrigin
+    name: ShotOrigin
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.SimBehaviours
+    name: SimBehaviours
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimEvent
+    name: SimEvent
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.SimEventKind
+    name: SimEventKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.SimMath
+    name: SimMath
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimModulePhase
+    name: SimModulePhase
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.SimPools
+    name: SimPools
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimRandom
+    name: SimRandom
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimSettings
+    name: SimSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimStatKeys
+    name: SimStatKeys
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimStatSource
+    name: SimStatSource
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimSystems
+    name: SimSystems
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SimulationInfo
+    name: SimulationInfo
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpawnEntryDef
+    name: SpawnEntryDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpawnGroupDef
+    name: SpawnGroupDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpawnRequest
+    name: SpawnRequest
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.SpawnSettings
+    name: SpawnSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpawnSystem
+    name: SpawnSystem
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpecialAttackDef
+    name: SpecialAttackDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SpecialAttackKind
+    name: SpecialAttackKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.SpecialPhase
+    name: SpecialPhase
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.StackRule
+    name: StackRule
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.StatBindings
+    name: StatBindings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.StatusEffectDef
+    name: StatusEffectDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.StatusInstance
+    name: StatusInstance
+    type: Class
+  - uid: SurvivorsMaker.Simulation.StatusKind
+    name: StatusKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.StatusSystem
+    name: StatusSystem
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SummonEnemyAttack
+    name: SummonEnemyAttack
+    type: Class
+  - uid: SurvivorsMaker.Simulation.SupportDef
+    name: SupportDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.Telegraph
+    name: Telegraph
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TempBuff
+    name: TempBuff
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack
+    name: TimedEnemyAttack
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TriggerAction
+    name: TriggerAction
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerBinding
+    name: TriggerBinding
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.TriggerCarryState
+    name: TriggerCarryState
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.TriggerComparison
+    name: TriggerComparison
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerCondition
+    name: TriggerCondition
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TriggerConditionKind
+    name: TriggerConditionKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerConditionRead
+    name: TriggerConditionRead
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerCounterReset
+    name: TriggerCounterReset
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TriggerEvent
+    name: TriggerEvent
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.TriggerFact
+    name: TriggerFact
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.TriggerState
+    name: TriggerState
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TriggerSystem
+    name: TriggerSystem
+    type: Class
+  - uid: SurvivorsMaker.Simulation.TriggerWhen
+    name: TriggerWhen
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.UniformGridSpatialIndex
+    name: UniformGridSpatialIndex
+    type: Class
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    type: Struct
+  - uid: SurvivorsMaker.Simulation.WanderArenaMovement
+    name: WanderArenaMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WanderNearPlayerMovement
+    name: WanderNearPlayerMovement
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveDef
+    name: WaveDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveEffectLease
+    name: WaveEffectLease
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveEffectLoadout
+    name: WaveEffectLoadout
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveEffectOwner
+    name: WaveEffectOwner
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.WavePhase
+    name: WavePhase
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.WaveProgress
+    name: WaveProgress
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveRequest
+    name: WaveRequest
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WaveSimulation
+    name: WaveSimulation
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WeaponKind
+    name: WeaponKind
+    type: Enum
+  - uid: SurvivorsMaker.Simulation.WeaponSettings
+    name: WeaponSettings
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WeaponState
+    name: WeaponState
+    type: Class
+  - uid: SurvivorsMaker.Simulation.WeaponSystem
+    name: WeaponSystem
+    type: Class
+memberLayout: SamePage

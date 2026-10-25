@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.WorldViewKind
+  commentId: T:SurvivorsMaker.Presentation.WorldViewKind
+  id: WorldViewKind
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.WorldViewKind.Enemy
+  - SurvivorsMaker.Presentation.WorldViewKind.EnemyProjectile
+  - SurvivorsMaker.Presentation.WorldViewKind.FriendlyProjectile
+  - SurvivorsMaker.Presentation.WorldViewKind.Pickup
+  - SurvivorsMaker.Presentation.WorldViewKind.Player
+  - SurvivorsMaker.Presentation.WorldViewKind.Telegraph
+  - SurvivorsMaker.Presentation.WorldViewKind.Weapon
+  langs:
+  - csharp
+  - vb
+  name: WorldViewKind
+  nameWithType: WorldViewKind
+  fullName: SurvivorsMaker.Presentation.WorldViewKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Entity category used to resolve and pool a world visual.
+  example: []
+  syntax:
+    content: public enum WorldViewKind
+    content.vb: Public Enum WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.Enemy
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.Enemy
+  id: Enemy
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: WorldViewKind.Enemy
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.Enemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Enemy = 0
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.Telegraph
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.Telegraph
+  id: Telegraph
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: Telegraph
+  nameWithType: WorldViewKind.Telegraph
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.Telegraph
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Telegraph = 1
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.FriendlyProjectile
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.FriendlyProjectile
+  id: FriendlyProjectile
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: FriendlyProjectile
+  nameWithType: WorldViewKind.FriendlyProjectile
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.FriendlyProjectile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: FriendlyProjectile = 2
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.EnemyProjectile
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.EnemyProjectile
+  id: EnemyProjectile
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: EnemyProjectile
+  nameWithType: WorldViewKind.EnemyProjectile
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.EnemyProjectile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: EnemyProjectile = 3
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.Pickup
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.Pickup
+  id: Pickup
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: Pickup
+  nameWithType: WorldViewKind.Pickup
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.Pickup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Pickup = 4
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.Player
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.Player
+  id: Player
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: WorldViewKind.Player
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.Player
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Player = 5
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+- uid: SurvivorsMaker.Presentation.WorldViewKind.Weapon
+  commentId: F:SurvivorsMaker.Presentation.WorldViewKind.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Presentation.WorldViewKind
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: WorldViewKind.Weapon
+  fullName: SurvivorsMaker.Presentation.WorldViewKind.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Weapon = 6
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewKind
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.WorldViewKind
+  commentId: T:SurvivorsMaker.Presentation.WorldViewKind
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WorldViewKind.html
+  name: WorldViewKind
+  nameWithType: WorldViewKind
+  fullName: SurvivorsMaker.Presentation.WorldViewKind

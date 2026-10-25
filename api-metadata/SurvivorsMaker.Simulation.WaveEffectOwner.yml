@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectOwner
+  id: WaveEffectOwner
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WaveEffectOwner.Character
+  - SurvivorsMaker.Simulation.WaveEffectOwner.Grant
+  - SurvivorsMaker.Simulation.WaveEffectOwner.Item
+  - SurvivorsMaker.Simulation.WaveEffectOwner.Other
+  langs:
+  - csharp
+  - vb
+  name: WaveEffectOwner
+  nameWithType: WaveEffectOwner
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Ownership category used to reconnect a combat effect lease to its run source.
+  example: []
+  syntax:
+    content: public enum WaveEffectOwner
+    content.vb: Public Enum WaveEffectOwner
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner.Other
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectOwner.Other
+  id: Other
+  parent: SurvivorsMaker.Simulation.WaveEffectOwner
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: WaveEffectOwner.Other
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner.Other
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Other = 0
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectOwner
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner.Character
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectOwner.Character
+  id: Character
+  parent: SurvivorsMaker.Simulation.WaveEffectOwner
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: WaveEffectOwner.Character
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Character = 1
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectOwner
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner.Item
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectOwner.Item
+  id: Item
+  parent: SurvivorsMaker.Simulation.WaveEffectOwner
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: WaveEffectOwner.Item
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Item = 2
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectOwner
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner.Grant
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectOwner.Grant
+  id: Grant
+  parent: SurvivorsMaker.Simulation.WaveEffectOwner
+  langs:
+  - csharp
+  - vb
+  name: Grant
+  nameWithType: WaveEffectOwner.Grant
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner.Grant
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Grant = 3
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectOwner
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectOwner
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectOwner.html
+  name: WaveEffectOwner
+  nameWithType: WaveEffectOwner
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner

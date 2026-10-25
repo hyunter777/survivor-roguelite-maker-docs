@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.UnlockCondition
+  commentId: T:SurvivorsMaker.Run.UnlockCondition
+  id: UnlockCondition
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.UnlockCondition.ReachWave
+  - SurvivorsMaker.Run.UnlockCondition.TotalKills
+  - SurvivorsMaker.Run.UnlockCondition.TotalWins
+  - SurvivorsMaker.Run.UnlockCondition.WinInMode
+  - SurvivorsMaker.Run.UnlockCondition.WinWithCharacter
+  langs:
+  - csharp
+  - vb
+  name: UnlockCondition
+  nameWithType: UnlockCondition
+  fullName: SurvivorsMaker.Run.UnlockCondition
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public enum UnlockCondition
+    content.vb: Public Enum UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockCondition.WinWithCharacter
+  commentId: F:SurvivorsMaker.Run.UnlockCondition.WinWithCharacter
+  id: WinWithCharacter
+  parent: SurvivorsMaker.Run.UnlockCondition
+  langs:
+  - csharp
+  - vb
+  name: WinWithCharacter
+  nameWithType: UnlockCondition.WinWithCharacter
+  fullName: SurvivorsMaker.Run.UnlockCondition.WinWithCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Win a run with the character Param (empty = any).
+  example: []
+  syntax:
+    content: WinWithCharacter = 0
+    return:
+      type: SurvivorsMaker.Run.UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockCondition.ReachWave
+  commentId: F:SurvivorsMaker.Run.UnlockCondition.ReachWave
+  id: ReachWave
+  parent: SurvivorsMaker.Run.UnlockCondition
+  langs:
+  - csharp
+  - vb
+  name: ReachWave
+  nameWithType: UnlockCondition.ReachWave
+  fullName: SurvivorsMaker.Run.UnlockCondition.ReachWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Reach wave Value (survive Value − 1 waves) in any run.
+  example: []
+  syntax:
+    content: ReachWave = 1
+    return:
+      type: SurvivorsMaker.Run.UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockCondition.TotalKills
+  commentId: F:SurvivorsMaker.Run.UnlockCondition.TotalKills
+  id: TotalKills
+  parent: SurvivorsMaker.Run.UnlockCondition
+  langs:
+  - csharp
+  - vb
+  name: TotalKills
+  nameWithType: UnlockCondition.TotalKills
+  fullName: SurvivorsMaker.Run.UnlockCondition.TotalKills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Total kills across all runs ≥ Value.
+  example: []
+  syntax:
+    content: TotalKills = 2
+    return:
+      type: SurvivorsMaker.Run.UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockCondition.TotalWins
+  commentId: F:SurvivorsMaker.Run.UnlockCondition.TotalWins
+  id: TotalWins
+  parent: SurvivorsMaker.Run.UnlockCondition
+  langs:
+  - csharp
+  - vb
+  name: TotalWins
+  nameWithType: UnlockCondition.TotalWins
+  fullName: SurvivorsMaker.Run.UnlockCondition.TotalWins
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Total wins ≥ Value.
+  example: []
+  syntax:
+    content: TotalWins = 3
+    return:
+      type: SurvivorsMaker.Run.UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockCondition.WinInMode
+  commentId: F:SurvivorsMaker.Run.UnlockCondition.WinInMode
+  id: WinInMode
+  parent: SurvivorsMaker.Run.UnlockCondition
+  langs:
+  - csharp
+  - vb
+  name: WinInMode
+  nameWithType: UnlockCondition.WinInMode
+  fullName: SurvivorsMaker.Run.UnlockCondition.WinInMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Win a run in mode Param ("Arena" / "Field").
+  example: []
+  syntax:
+    content: WinInMode = 4
+    return:
+      type: SurvivorsMaker.Run.UnlockCondition
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.UnlockCondition
+  commentId: T:SurvivorsMaker.Run.UnlockCondition
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.UnlockCondition.html
+  name: UnlockCondition
+  nameWithType: UnlockCondition
+  fullName: SurvivorsMaker.Run.UnlockCondition

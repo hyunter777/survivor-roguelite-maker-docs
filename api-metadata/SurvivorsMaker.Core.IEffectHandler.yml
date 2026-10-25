@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.IEffectHandler
+  commentId: T:SurvivorsMaker.Core.IEffectHandler
+  id: IEffectHandler
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.IEffectHandler.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  - SurvivorsMaker.Core.IEffectHandler.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  langs:
+  - csharp
+  - vb
+  name: IEffectHandler
+  nameWithType: IEffectHandler
+  fullName: SurvivorsMaker.Core.IEffectHandler
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Rules for an effect the built-in methods cannot express, e.g. "+1 armor for every 5 max health".
+
+    Register it in <xref href="SurvivorsMaker.Core.EffectHandlers" data-throw-if-not-resolved="false"></xref> under the id
+    effects put in <xref href="SurvivorsMaker.Core.Effect.Handler" data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public interface IEffectHandler
+    content.vb: Public Interface IEffectHandler
+- uid: SurvivorsMaker.Core.IEffectHandler.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  commentId: M:SurvivorsMaker.Core.IEffectHandler.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  id: Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  parent: SurvivorsMaker.Core.IEffectHandler
+  langs:
+  - csharp
+  - vb
+  name: Apply(Effect, EffectStore)
+  nameWithType: IEffectHandler.Apply(Effect, EffectStore)
+  fullName: SurvivorsMaker.Core.IEffectHandler.Apply(SurvivorsMaker.Core.Effect, SurvivorsMaker.Core.EffectStore)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Applies the effect. Return a record with <code>handler: this</code> so undo comes back here.'
+  example: []
+  syntax:
+    content: AppliedEffect Apply(Effect effect, EffectStore store)
+    parameters:
+    - id: effect
+      type: SurvivorsMaker.Core.Effect
+    - id: store
+      type: SurvivorsMaker.Core.EffectStore
+    return:
+      type: SurvivorsMaker.Core.AppliedEffect
+    content.vb: Function Apply(effect As Effect, store As EffectStore) As AppliedEffect
+  overload: SurvivorsMaker.Core.IEffectHandler.Apply*
+- uid: SurvivorsMaker.Core.IEffectHandler.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  commentId: M:SurvivorsMaker.Core.IEffectHandler.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  id: Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  parent: SurvivorsMaker.Core.IEffectHandler
+  langs:
+  - csharp
+  - vb
+  name: Undo(AppliedEffect, EffectStore)
+  nameWithType: IEffectHandler.Undo(AppliedEffect, EffectStore)
+  fullName: SurvivorsMaker.Core.IEffectHandler.Undo(SurvivorsMaker.Core.AppliedEffect, SurvivorsMaker.Core.EffectStore)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Reverses this application using its captured token; do not recalculate from current unrelated state.
+  example: []
+  syntax:
+    content: void Undo(AppliedEffect applied, EffectStore store)
+    parameters:
+    - id: applied
+      type: SurvivorsMaker.Core.AppliedEffect
+    - id: store
+      type: SurvivorsMaker.Core.EffectStore
+    content.vb: Sub Undo(applied As AppliedEffect, store As EffectStore)
+  overload: SurvivorsMaker.Core.IEffectHandler.Undo*
+references:
+- uid: SurvivorsMaker.Core.EffectHandlers
+  commentId: T:SurvivorsMaker.Core.EffectHandlers
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectHandlers.html
+  name: EffectHandlers
+  nameWithType: EffectHandlers
+  fullName: SurvivorsMaker.Core.EffectHandlers
+- uid: SurvivorsMaker.Core.Effect.Handler
+  commentId: F:SurvivorsMaker.Core.Effect.Handler
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_Handler
+  name: Handler
+  nameWithType: Effect.Handler
+  fullName: SurvivorsMaker.Core.Effect.Handler
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.IEffectHandler.Apply*
+  commentId: Overload:SurvivorsMaker.Core.IEffectHandler.Apply
+  isExternal: true
+  href: SurvivorsMaker.Core.IEffectHandler.html#SurvivorsMaker_Core_IEffectHandler_Apply_SurvivorsMaker_Core_Effect_SurvivorsMaker_Core_EffectStore_
+  name: Apply
+  nameWithType: IEffectHandler.Apply
+  fullName: SurvivorsMaker.Core.IEffectHandler.Apply
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Core.EffectStore
+  commentId: T:SurvivorsMaker.Core.EffectStore
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html
+  name: EffectStore
+  nameWithType: EffectStore
+  fullName: SurvivorsMaker.Core.EffectStore
+- uid: SurvivorsMaker.Core.AppliedEffect
+  commentId: T:SurvivorsMaker.Core.AppliedEffect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.AppliedEffect.html
+  name: AppliedEffect
+  nameWithType: AppliedEffect
+  fullName: SurvivorsMaker.Core.AppliedEffect
+- uid: SurvivorsMaker.Core.IEffectHandler.Undo*
+  commentId: Overload:SurvivorsMaker.Core.IEffectHandler.Undo
+  isExternal: true
+  href: SurvivorsMaker.Core.IEffectHandler.html#SurvivorsMaker_Core_IEffectHandler_Undo_SurvivorsMaker_Core_AppliedEffect_SurvivorsMaker_Core_EffectStore_
+  name: Undo
+  nameWithType: IEffectHandler.Undo
+  fullName: SurvivorsMaker.Core.IEffectHandler.Undo

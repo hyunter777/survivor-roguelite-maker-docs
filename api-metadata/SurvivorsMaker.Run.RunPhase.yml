@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunPhase
+  commentId: T:SurvivorsMaker.Run.RunPhase
+  id: RunPhase
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunPhase.LevelUp
+  - SurvivorsMaker.Run.RunPhase.Lost
+  - SurvivorsMaker.Run.RunPhase.Shop
+  - SurvivorsMaker.Run.RunPhase.Wave
+  - SurvivorsMaker.Run.RunPhase.Won
+  langs:
+  - csharp
+  - vb
+  name: RunPhase
+  nameWithType: RunPhase
+  fullName: SurvivorsMaker.Run.RunPhase
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public enum RunPhase
+    content.vb: Public Enum RunPhase
+- uid: SurvivorsMaker.Run.RunPhase.Wave
+  commentId: F:SurvivorsMaker.Run.RunPhase.Wave
+  id: Wave
+  parent: SurvivorsMaker.Run.RunPhase
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: RunPhase.Wave
+  fullName: SurvivorsMaker.Run.RunPhase.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Wave = 0
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+- uid: SurvivorsMaker.Run.RunPhase.LevelUp
+  commentId: F:SurvivorsMaker.Run.RunPhase.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Run.RunPhase
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: RunPhase.LevelUp
+  fullName: SurvivorsMaker.Run.RunPhase.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: LevelUp = 1
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+- uid: SurvivorsMaker.Run.RunPhase.Shop
+  commentId: F:SurvivorsMaker.Run.RunPhase.Shop
+  id: Shop
+  parent: SurvivorsMaker.Run.RunPhase
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: RunPhase.Shop
+  fullName: SurvivorsMaker.Run.RunPhase.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Shop = 2
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+- uid: SurvivorsMaker.Run.RunPhase.Won
+  commentId: F:SurvivorsMaker.Run.RunPhase.Won
+  id: Won
+  parent: SurvivorsMaker.Run.RunPhase
+  langs:
+  - csharp
+  - vb
+  name: Won
+  nameWithType: RunPhase.Won
+  fullName: SurvivorsMaker.Run.RunPhase.Won
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Won = 3
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+- uid: SurvivorsMaker.Run.RunPhase.Lost
+  commentId: F:SurvivorsMaker.Run.RunPhase.Lost
+  id: Lost
+  parent: SurvivorsMaker.Run.RunPhase
+  langs:
+  - csharp
+  - vb
+  name: Lost
+  nameWithType: RunPhase.Lost
+  fullName: SurvivorsMaker.Run.RunPhase.Lost
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Lost = 4
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunPhase
+  commentId: T:SurvivorsMaker.Run.RunPhase
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunPhase.html
+  name: RunPhase
+  nameWithType: RunPhase
+  fullName: SurvivorsMaker.Run.RunPhase

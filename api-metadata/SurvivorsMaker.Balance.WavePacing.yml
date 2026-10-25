@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.WavePacing
+  commentId: T:SurvivorsMaker.Balance.WavePacing
+  id: WavePacing
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.WavePacing.#ctor
+  - SurvivorsMaker.Balance.WavePacing.CurrencyEarned
+  - SurvivorsMaker.Balance.WavePacing.CurrencySpent
+  - SurvivorsMaker.Balance.WavePacing.DurationSeconds
+  - SurvivorsMaker.Balance.WavePacing.EnemiesSpawned
+  - SurvivorsMaker.Balance.WavePacing.EnemyHealthSpawned
+  - SurvivorsMaker.Balance.WavePacing.ExperienceGained
+  - SurvivorsMaker.Balance.WavePacing.IncomingDamagePerSecond
+  - SurvivorsMaker.Balance.WavePacing.MeanAlive
+  - SurvivorsMaker.Balance.WavePacing.MeanLevelAtStart
+  - SurvivorsMaker.Balance.WavePacing.MeanShopPrice
+  - SurvivorsMaker.Balance.WavePacing.PeakAlive
+  - SurvivorsMaker.Balance.WavePacing.PlayerDamagePerSecond
+  - SurvivorsMaker.Balance.WavePacing.RunsEntered
+  - SurvivorsMaker.Balance.WavePacing.Survival
+  - SurvivorsMaker.Balance.WavePacing.ThreatToPower
+  - SurvivorsMaker.Balance.WavePacing.Wave
+  langs:
+  - csharp
+  - vb
+  name: WavePacing
+  nameWithType: WavePacing
+  fullName: SurvivorsMaker.Balance.WavePacing
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: One wave of the forecast. Threat comes from the wave data and the simulation; power from the bots that reached
+    it.
+  example: []
+  syntax:
+    content: public sealed class WavePacing
+    content.vb: Public NotInheritable Class WavePacing
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Balance.WavePacing.Wave
+  commentId: F:SurvivorsMaker.Balance.WavePacing.Wave
+  id: Wave
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: WavePacing.Wave
+  fullName: SurvivorsMaker.Balance.WavePacing.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Wave
+    return:
+      type: System.Int32
+    content.vb: Public Wave As Integer
+- uid: SurvivorsMaker.Balance.WavePacing.DurationSeconds
+  commentId: F:SurvivorsMaker.Balance.WavePacing.DurationSeconds
+  id: DurationSeconds
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: WavePacing.DurationSeconds
+  fullName: SurvivorsMaker.Balance.WavePacing.DurationSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float DurationSeconds
+    return:
+      type: System.Single
+    content.vb: Public DurationSeconds As Single
+- uid: SurvivorsMaker.Balance.WavePacing.EnemiesSpawned
+  commentId: F:SurvivorsMaker.Balance.WavePacing.EnemiesSpawned
+  id: EnemiesSpawned
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: EnemiesSpawned
+  nameWithType: WavePacing.EnemiesSpawned
+  fullName: SurvivorsMaker.Balance.WavePacing.EnemiesSpawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Expected enemies spawned (wave data, mean over runs).
+  example: []
+  syntax:
+    content: public float EnemiesSpawned
+    return:
+      type: System.Single
+    content.vb: Public EnemiesSpawned As Single
+- uid: SurvivorsMaker.Balance.WavePacing.EnemyHealthSpawned
+  commentId: F:SurvivorsMaker.Balance.WavePacing.EnemyHealthSpawned
+  id: EnemyHealthSpawned
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: EnemyHealthSpawned
+  nameWithType: WavePacing.EnemyHealthSpawned
+  fullName: SurvivorsMaker.Balance.WavePacing.EnemyHealthSpawned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Total enemy health spawned during the wave.
+  example: []
+  syntax:
+    content: public float EnemyHealthSpawned
+    return:
+      type: System.Single
+    content.vb: Public EnemyHealthSpawned As Single
+- uid: SurvivorsMaker.Balance.WavePacing.MeanAlive
+  commentId: F:SurvivorsMaker.Balance.WavePacing.MeanAlive
+  id: MeanAlive
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: MeanAlive
+  nameWithType: WavePacing.MeanAlive
+  fullName: SurvivorsMaker.Balance.WavePacing.MeanAlive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Mean and peak enemies alive at once.
+  example: []
+  syntax:
+    content: public float MeanAlive
+    return:
+      type: System.Single
+    content.vb: Public MeanAlive As Single
+- uid: SurvivorsMaker.Balance.WavePacing.PeakAlive
+  commentId: F:SurvivorsMaker.Balance.WavePacing.PeakAlive
+  id: PeakAlive
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: PeakAlive
+  nameWithType: WavePacing.PeakAlive
+  fullName: SurvivorsMaker.Balance.WavePacing.PeakAlive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Mean and peak enemies alive at once.
+  example: []
+  syntax:
+    content: public float PeakAlive
+    return:
+      type: System.Single
+    content.vb: Public PeakAlive As Single
+- uid: SurvivorsMaker.Balance.WavePacing.IncomingDamagePerSecond
+  commentId: F:SurvivorsMaker.Balance.WavePacing.IncomingDamagePerSecond
+  id: IncomingDamagePerSecond
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: IncomingDamagePerSecond
+  nameWithType: WavePacing.IncomingDamagePerSecond
+  fullName: SurvivorsMaker.Balance.WavePacing.IncomingDamagePerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Damage the player took per second (mean over runs that entered the wave).
+  example: []
+  syntax:
+    content: public float IncomingDamagePerSecond
+    return:
+      type: System.Single
+    content.vb: Public IncomingDamagePerSecond As Single
+- uid: SurvivorsMaker.Balance.WavePacing.PlayerDamagePerSecond
+  commentId: F:SurvivorsMaker.Balance.WavePacing.PlayerDamagePerSecond
+  id: PlayerDamagePerSecond
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: PlayerDamagePerSecond
+  nameWithType: WavePacing.PlayerDamagePerSecond
+  fullName: SurvivorsMaker.Balance.WavePacing.PlayerDamagePerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Player damage dealt per second.
+  example: []
+  syntax:
+    content: public float PlayerDamagePerSecond
+    return:
+      type: System.Single
+    content.vb: Public PlayerDamagePerSecond As Single
+- uid: SurvivorsMaker.Balance.WavePacing.ThreatToPower
+  commentId: F:SurvivorsMaker.Balance.WavePacing.ThreatToPower
+  id: ThreatToPower
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: ThreatToPower
+  nameWithType: WavePacing.ThreatToPower
+  fullName: SurvivorsMaker.Balance.WavePacing.ThreatToPower
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Enemy health spawned ÷ (player DPS × duration). Above 1 the wave outpaces the player.
+  example: []
+  syntax:
+    content: public float ThreatToPower
+    return:
+      type: System.Single
+    content.vb: Public ThreatToPower As Single
+- uid: SurvivorsMaker.Balance.WavePacing.Survival
+  commentId: F:SurvivorsMaker.Balance.WavePacing.Survival
+  id: Survival
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: Survival
+  nameWithType: WavePacing.Survival
+  fullName: SurvivorsMaker.Balance.WavePacing.Survival
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Fraction of runs that entered the wave and survived it.
+  example: []
+  syntax:
+    content: public float Survival
+    return:
+      type: System.Single
+    content.vb: Public Survival As Single
+- uid: SurvivorsMaker.Balance.WavePacing.MeanLevelAtStart
+  commentId: F:SurvivorsMaker.Balance.WavePacing.MeanLevelAtStart
+  id: MeanLevelAtStart
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: MeanLevelAtStart
+  nameWithType: WavePacing.MeanLevelAtStart
+  fullName: SurvivorsMaker.Balance.WavePacing.MeanLevelAtStart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanLevelAtStart
+    return:
+      type: System.Single
+    content.vb: Public MeanLevelAtStart As Single
+- uid: SurvivorsMaker.Balance.WavePacing.ExperienceGained
+  commentId: F:SurvivorsMaker.Balance.WavePacing.ExperienceGained
+  id: ExperienceGained
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: ExperienceGained
+  nameWithType: WavePacing.ExperienceGained
+  fullName: SurvivorsMaker.Balance.WavePacing.ExperienceGained
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ExperienceGained
+    return:
+      type: System.Single
+    content.vb: Public ExperienceGained As Single
+- uid: SurvivorsMaker.Balance.WavePacing.CurrencyEarned
+  commentId: F:SurvivorsMaker.Balance.WavePacing.CurrencyEarned
+  id: CurrencyEarned
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: CurrencyEarned
+  nameWithType: WavePacing.CurrencyEarned
+  fullName: SurvivorsMaker.Balance.WavePacing.CurrencyEarned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float CurrencyEarned
+    return:
+      type: System.Single
+    content.vb: Public CurrencyEarned As Single
+- uid: SurvivorsMaker.Balance.WavePacing.CurrencySpent
+  commentId: F:SurvivorsMaker.Balance.WavePacing.CurrencySpent
+  id: CurrencySpent
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: CurrencySpent
+  nameWithType: WavePacing.CurrencySpent
+  fullName: SurvivorsMaker.Balance.WavePacing.CurrencySpent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float CurrencySpent
+    return:
+      type: System.Single
+    content.vb: Public CurrencySpent As Single
+- uid: SurvivorsMaker.Balance.WavePacing.MeanShopPrice
+  commentId: F:SurvivorsMaker.Balance.WavePacing.MeanShopPrice
+  id: MeanShopPrice
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: MeanShopPrice
+  nameWithType: WavePacing.MeanShopPrice
+  fullName: SurvivorsMaker.Balance.WavePacing.MeanShopPrice
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanShopPrice
+    return:
+      type: System.Single
+    content.vb: Public MeanShopPrice As Single
+- uid: SurvivorsMaker.Balance.WavePacing.RunsEntered
+  commentId: F:SurvivorsMaker.Balance.WavePacing.RunsEntered
+  id: RunsEntered
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: RunsEntered
+  nameWithType: WavePacing.RunsEntered
+  fullName: SurvivorsMaker.Balance.WavePacing.RunsEntered
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int RunsEntered
+    return:
+      type: System.Int32
+    content.vb: Public RunsEntered As Integer
+- uid: SurvivorsMaker.Balance.WavePacing.#ctor
+  commentId: M:SurvivorsMaker.Balance.WavePacing.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Balance.WavePacing
+  langs:
+  - csharp
+  - vb
+  name: WavePacing()
+  nameWithType: WavePacing.WavePacing()
+  fullName: SurvivorsMaker.Balance.WavePacing.WavePacing()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public WavePacing()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Balance.WavePacing.#ctor*
+  nameWithType.vb: WavePacing.New()
+  fullName.vb: SurvivorsMaker.Balance.WavePacing.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Balance.WavePacing.#ctor*
+  commentId: Overload:SurvivorsMaker.Balance.WavePacing.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Balance.WavePacing.html#SurvivorsMaker_Balance_WavePacing__ctor
+  name: WavePacing
+  nameWithType: WavePacing.WavePacing
+  fullName: SurvivorsMaker.Balance.WavePacing.WavePacing
+  nameWithType.vb: WavePacing.New
+  fullName.vb: SurvivorsMaker.Balance.WavePacing.New
+  name.vb: New

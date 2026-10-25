@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.IMakerAnalysis
+  commentId: T:SurvivorsMaker.Balance.IMakerAnalysis
+  id: IMakerAnalysis
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  - SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds(SurvivorsMaker.Balance.OfferOddsRequest)
+  - SurvivorsMaker.Balance.IMakerAnalysis.Pacing(SurvivorsMaker.Balance.PacingRequest)
+  - SurvivorsMaker.Balance.IMakerAnalysis.PlayWave(SurvivorsMaker.Balance.WavePlaybackRequest)
+  - SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  - SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab(SurvivorsMaker.Balance.WeaponLabRequest)
+  langs:
+  - csharp
+  - vb
+  name: IMakerAnalysis
+  nameWithType: IMakerAnalysis
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Entry points the maker tools use. Balance/ implements the default.
+  example: []
+  syntax:
+    content: public interface IMakerAnalysis
+    content.vb: Public Interface IMakerAnalysis
+  derivedClasses:
+  - SurvivorsMaker.Balance.MakerAnalysis
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.Pacing(SurvivorsMaker.Balance.PacingRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.Pacing(SurvivorsMaker.Balance.PacingRequest)
+  id: Pacing(SurvivorsMaker.Balance.PacingRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: Pacing(PacingRequest)
+  nameWithType: IMakerAnalysis.Pacing(PacingRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.Pacing(SurvivorsMaker.Balance.PacingRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: IAnalysisJob<PacingReport> Pacing(PacingRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.PacingRequest
+    return:
+      type: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.PacingReport}
+    content.vb: Function Pacing(request As PacingRequest) As IAnalysisJob(Of PacingReport)
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.Pacing*
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  id: EvaluateBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: EvaluateBuild(BuildTrialRequest)
+  nameWithType: IMakerAnalysis.EvaluateBuild(BuildTrialRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: BuildReport EvaluateBuild(BuildTrialRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.BuildTrialRequest
+    return:
+      type: SurvivorsMaker.Balance.BuildReport
+    content.vb: Function EvaluateBuild(request As BuildTrialRequest) As BuildReport
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild*
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  id: TrialBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: TrialBuild(BuildTrialRequest)
+  nameWithType: IMakerAnalysis.TrialBuild(BuildTrialRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild(SurvivorsMaker.Balance.BuildTrialRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: IAnalysisJob<BuildTrialResult> TrialBuild(BuildTrialRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.BuildTrialRequest
+    return:
+      type: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.BuildTrialResult}
+    content.vb: Function TrialBuild(request As BuildTrialRequest) As IAnalysisJob(Of BuildTrialResult)
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild*
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.PlayWave(SurvivorsMaker.Balance.WavePlaybackRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.PlayWave(SurvivorsMaker.Balance.WavePlaybackRequest)
+  id: PlayWave(SurvivorsMaker.Balance.WavePlaybackRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: PlayWave(WavePlaybackRequest)
+  nameWithType: IMakerAnalysis.PlayWave(WavePlaybackRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.PlayWave(SurvivorsMaker.Balance.WavePlaybackRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: IAnalysisJob<WavePlayback> PlayWave(WavePlaybackRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.WavePlaybackRequest
+    return:
+      type: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.WavePlayback}
+    content.vb: Function PlayWave(request As WavePlaybackRequest) As IAnalysisJob(Of WavePlayback)
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.PlayWave*
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab(SurvivorsMaker.Balance.WeaponLabRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab(SurvivorsMaker.Balance.WeaponLabRequest)
+  id: WeaponLab(SurvivorsMaker.Balance.WeaponLabRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: WeaponLab(WeaponLabRequest)
+  nameWithType: IMakerAnalysis.WeaponLab(WeaponLabRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab(SurvivorsMaker.Balance.WeaponLabRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: WeaponLabResult WeaponLab(WeaponLabRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.WeaponLabRequest
+    return:
+      type: SurvivorsMaker.Balance.WeaponLabResult
+    content.vb: Function WeaponLab(request As WeaponLabRequest) As WeaponLabResult
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab*
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds(SurvivorsMaker.Balance.OfferOddsRequest)
+  commentId: M:SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds(SurvivorsMaker.Balance.OfferOddsRequest)
+  id: OfferOdds(SurvivorsMaker.Balance.OfferOddsRequest)
+  parent: SurvivorsMaker.Balance.IMakerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: OfferOdds(OfferOddsRequest)
+  nameWithType: IMakerAnalysis.OfferOdds(OfferOddsRequest)
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds(SurvivorsMaker.Balance.OfferOddsRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: IAnalysisJob<OfferOddsReport> OfferOdds(OfferOddsRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Balance.OfferOddsRequest
+    return:
+      type: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.OfferOddsReport}
+    content.vb: Function OfferOdds(request As OfferOddsRequest) As IAnalysisJob(Of OfferOddsReport)
+  overload: SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds*
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.Pacing*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.Pacing
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_Pacing_SurvivorsMaker_Balance_PacingRequest_
+  name: Pacing
+  nameWithType: IMakerAnalysis.Pacing
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.Pacing
+- uid: SurvivorsMaker.Balance.PacingRequest
+  commentId: T:SurvivorsMaker.Balance.PacingRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.PacingRequest.html
+  name: PacingRequest
+  nameWithType: PacingRequest
+  fullName: SurvivorsMaker.Balance.PacingRequest
+- uid: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.PacingReport}
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.PacingReport}
+  parent: SurvivorsMaker.Balance
+  definition: SurvivorsMaker.Balance.IAnalysisJob`1
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<PacingReport>
+  nameWithType: IAnalysisJob<PacingReport>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<SurvivorsMaker.Balance.PacingReport>
+  nameWithType.vb: IAnalysisJob(Of PacingReport)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of SurvivorsMaker.Balance.PacingReport)
+  name.vb: IAnalysisJob(Of PacingReport)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - uid: SurvivorsMaker.Balance.PacingReport
+    name: PacingReport
+    isExternal: true
+    href: SurvivorsMaker.Balance.PacingReport.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.PacingReport
+    name: PacingReport
+    isExternal: true
+    href: SurvivorsMaker.Balance.PacingReport.html
+  - name: )
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob`1
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<TResult>
+  nameWithType: IAnalysisJob<TResult>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>
+  nameWithType.vb: IAnalysisJob(Of TResult)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult)
+  name.vb: IAnalysisJob(Of TResult)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_EvaluateBuild_SurvivorsMaker_Balance_BuildTrialRequest_
+  name: EvaluateBuild
+  nameWithType: IMakerAnalysis.EvaluateBuild
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.EvaluateBuild
+- uid: SurvivorsMaker.Balance.BuildTrialRequest
+  commentId: T:SurvivorsMaker.Balance.BuildTrialRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.BuildTrialRequest.html
+  name: BuildTrialRequest
+  nameWithType: BuildTrialRequest
+  fullName: SurvivorsMaker.Balance.BuildTrialRequest
+- uid: SurvivorsMaker.Balance.BuildReport
+  commentId: T:SurvivorsMaker.Balance.BuildReport
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.BuildReport.html
+  name: BuildReport
+  nameWithType: BuildReport
+  fullName: SurvivorsMaker.Balance.BuildReport
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_TrialBuild_SurvivorsMaker_Balance_BuildTrialRequest_
+  name: TrialBuild
+  nameWithType: IMakerAnalysis.TrialBuild
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.TrialBuild
+- uid: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.BuildTrialResult}
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.BuildTrialResult}
+  parent: SurvivorsMaker.Balance
+  definition: SurvivorsMaker.Balance.IAnalysisJob`1
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<BuildTrialResult>
+  nameWithType: IAnalysisJob<BuildTrialResult>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<SurvivorsMaker.Balance.BuildTrialResult>
+  nameWithType.vb: IAnalysisJob(Of BuildTrialResult)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of SurvivorsMaker.Balance.BuildTrialResult)
+  name.vb: IAnalysisJob(Of BuildTrialResult)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - uid: SurvivorsMaker.Balance.BuildTrialResult
+    name: BuildTrialResult
+    isExternal: true
+    href: SurvivorsMaker.Balance.BuildTrialResult.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.BuildTrialResult
+    name: BuildTrialResult
+    isExternal: true
+    href: SurvivorsMaker.Balance.BuildTrialResult.html
+  - name: )
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.PlayWave*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.PlayWave
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_PlayWave_SurvivorsMaker_Balance_WavePlaybackRequest_
+  name: PlayWave
+  nameWithType: IMakerAnalysis.PlayWave
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.PlayWave
+- uid: SurvivorsMaker.Balance.WavePlaybackRequest
+  commentId: T:SurvivorsMaker.Balance.WavePlaybackRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WavePlaybackRequest.html
+  name: WavePlaybackRequest
+  nameWithType: WavePlaybackRequest
+  fullName: SurvivorsMaker.Balance.WavePlaybackRequest
+- uid: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.WavePlayback}
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.WavePlayback}
+  parent: SurvivorsMaker.Balance
+  definition: SurvivorsMaker.Balance.IAnalysisJob`1
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<WavePlayback>
+  nameWithType: IAnalysisJob<WavePlayback>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<SurvivorsMaker.Balance.WavePlayback>
+  nameWithType.vb: IAnalysisJob(Of WavePlayback)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of SurvivorsMaker.Balance.WavePlayback)
+  name.vb: IAnalysisJob(Of WavePlayback)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - uid: SurvivorsMaker.Balance.WavePlayback
+    name: WavePlayback
+    isExternal: true
+    href: SurvivorsMaker.Balance.WavePlayback.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.WavePlayback
+    name: WavePlayback
+    isExternal: true
+    href: SurvivorsMaker.Balance.WavePlayback.html
+  - name: )
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_WeaponLab_SurvivorsMaker_Balance_WeaponLabRequest_
+  name: WeaponLab
+  nameWithType: IMakerAnalysis.WeaponLab
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.WeaponLab
+- uid: SurvivorsMaker.Balance.WeaponLabRequest
+  commentId: T:SurvivorsMaker.Balance.WeaponLabRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WeaponLabRequest.html
+  name: WeaponLabRequest
+  nameWithType: WeaponLabRequest
+  fullName: SurvivorsMaker.Balance.WeaponLabRequest
+- uid: SurvivorsMaker.Balance.WeaponLabResult
+  commentId: T:SurvivorsMaker.Balance.WeaponLabResult
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.WeaponLabResult.html
+  name: WeaponLabResult
+  nameWithType: WeaponLabResult
+  fullName: SurvivorsMaker.Balance.WeaponLabResult
+- uid: SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds*
+  commentId: Overload:SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds
+  isExternal: true
+  href: SurvivorsMaker.Balance.IMakerAnalysis.html#SurvivorsMaker_Balance_IMakerAnalysis_OfferOdds_SurvivorsMaker_Balance_OfferOddsRequest_
+  name: OfferOdds
+  nameWithType: IMakerAnalysis.OfferOdds
+  fullName: SurvivorsMaker.Balance.IMakerAnalysis.OfferOdds
+- uid: SurvivorsMaker.Balance.OfferOddsRequest
+  commentId: T:SurvivorsMaker.Balance.OfferOddsRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.OfferOddsRequest.html
+  name: OfferOddsRequest
+  nameWithType: OfferOddsRequest
+  fullName: SurvivorsMaker.Balance.OfferOddsRequest
+- uid: SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.OfferOddsReport}
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob{SurvivorsMaker.Balance.OfferOddsReport}
+  parent: SurvivorsMaker.Balance
+  definition: SurvivorsMaker.Balance.IAnalysisJob`1
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<OfferOddsReport>
+  nameWithType: IAnalysisJob<OfferOddsReport>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<SurvivorsMaker.Balance.OfferOddsReport>
+  nameWithType.vb: IAnalysisJob(Of OfferOddsReport)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of SurvivorsMaker.Balance.OfferOddsReport)
+  name.vb: IAnalysisJob(Of OfferOddsReport)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - uid: SurvivorsMaker.Balance.OfferOddsReport
+    name: OfferOddsReport
+    isExternal: true
+    href: SurvivorsMaker.Balance.OfferOddsReport.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.OfferOddsReport
+    name: OfferOddsReport
+    isExternal: true
+    href: SurvivorsMaker.Balance.OfferOddsReport.html
+  - name: )

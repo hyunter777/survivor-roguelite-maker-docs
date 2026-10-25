@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatLimitMode
+  commentId: T:SurvivorsMaker.Core.StatLimitMode
+  id: StatLimitMode
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatLimitMode.Captured
+  - SurvivorsMaker.Core.StatLimitMode.Fixed
+  - SurvivorsMaker.Core.StatLimitMode.Following
+  langs:
+  - csharp
+  - vb
+  name: StatLimitMode
+  nameWithType: StatLimitMode
+  fullName: SurvivorsMaker.Core.StatLimitMode
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Whether a stat bound is fixed, captured on application or follows a live input.
+  example: []
+  syntax:
+    content: public enum StatLimitMode
+    content.vb: Public Enum StatLimitMode
+- uid: SurvivorsMaker.Core.StatLimitMode.Fixed
+  commentId: F:SurvivorsMaker.Core.StatLimitMode.Fixed
+  id: Fixed
+  parent: SurvivorsMaker.Core.StatLimitMode
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: StatLimitMode.Fixed
+  fullName: SurvivorsMaker.Core.StatLimitMode.Fixed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Fixed = 0
+    return:
+      type: SurvivorsMaker.Core.StatLimitMode
+- uid: SurvivorsMaker.Core.StatLimitMode.Captured
+  commentId: F:SurvivorsMaker.Core.StatLimitMode.Captured
+  id: Captured
+  parent: SurvivorsMaker.Core.StatLimitMode
+  langs:
+  - csharp
+  - vb
+  name: Captured
+  nameWithType: StatLimitMode.Captured
+  fullName: SurvivorsMaker.Core.StatLimitMode.Captured
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Captured = 1
+    return:
+      type: SurvivorsMaker.Core.StatLimitMode
+- uid: SurvivorsMaker.Core.StatLimitMode.Following
+  commentId: F:SurvivorsMaker.Core.StatLimitMode.Following
+  id: Following
+  parent: SurvivorsMaker.Core.StatLimitMode
+  langs:
+  - csharp
+  - vb
+  name: Following
+  nameWithType: StatLimitMode.Following
+  fullName: SurvivorsMaker.Core.StatLimitMode.Following
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Following = 2
+    return:
+      type: SurvivorsMaker.Core.StatLimitMode
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.StatLimitMode
+  commentId: T:SurvivorsMaker.Core.StatLimitMode
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatLimitMode.html
+  name: StatLimitMode
+  nameWithType: StatLimitMode
+  fullName: SurvivorsMaker.Core.StatLimitMode

@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  id: EffectMethod
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.EffectMethod.Add
+  - SurvivorsMaker.Core.EffectMethod.Append
+  - SurvivorsMaker.Core.EffectMethod.AppendUnique
+  - SurvivorsMaker.Core.EffectMethod.Convert
+  - SurvivorsMaker.Core.EffectMethod.Limit
+  - SurvivorsMaker.Core.EffectMethod.Link
+  - SurvivorsMaker.Core.EffectMethod.Set
+  - SurvivorsMaker.Core.EffectMethod.Tally
+  langs:
+  - csharp
+  - vb
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: How an effect writes into an <xref href="SurvivorsMaker.Core.EffectStore" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public enum EffectMethod
+    content.vb: Public Enum EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Add
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Add
+  id: Add
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: EffectMethod.Add
+  fullName: SurvivorsMaker.Core.EffectMethod.Add
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Adds <xref href="SurvivorsMaker.Core.Effect.Amount" data-throw-if-not-resolved="false"></xref> to the target's
+    value. Undo subtracts it.
+  example: []
+  syntax:
+    content: Add = 0
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Set
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Set
+  id: Set
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: EffectMethod.Set
+  fullName: SurvivorsMaker.Core.EffectMethod.Set
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Overwrites the target's value. Undo restores the value seen at apply time.
+  example: []
+  syntax:
+    content: Set = 1
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Tally
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Tally
+  id: Tally
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Tally
+  nameWithType: EffectMethod.Tally
+  fullName: SurvivorsMaker.Core.EffectMethod.Tally
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Keeps one (target, total) entry in <xref href="SurvivorsMaker.Core.Effect.List" data-throw-if-not-resolved="false"></xref>
+    and adds to its total. Undo subtracts; the entry goes at zero.
+  example: []
+  syntax:
+    content: Tally = 2
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.AppendUnique
+  commentId: F:SurvivorsMaker.Core.EffectMethod.AppendUnique
+  id: AppendUnique
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: AppendUnique
+  nameWithType: EffectMethod.AppendUnique
+  fullName: SurvivorsMaker.Core.EffectMethod.AppendUnique
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Adds the target id to <xref href="SurvivorsMaker.Core.Effect.List" data-throw-if-not-resolved="false"></xref> once.
+    Undo removes it.
+  example: []
+  syntax:
+    content: AppendUnique = 3
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Append
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Append
+  id: Append
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Append
+  nameWithType: EffectMethod.Append
+  fullName: SurvivorsMaker.Core.EffectMethod.Append
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Appends a (target, amount) entry to <xref href="SurvivorsMaker.Core.Effect.List" data-throw-if-not-resolved="false"></xref>,
+    duplicates allowed. Undo removes one matching entry.
+  example: []
+  syntax:
+    content: Append = 4
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Link
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Link
+  id: Link
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: EffectMethod.Link
+  fullName: SurvivorsMaker.Core.EffectMethod.Link
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Link = 5
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Convert
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Convert
+  id: Convert
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Convert
+  nameWithType: EffectMethod.Convert
+  fullName: SurvivorsMaker.Core.EffectMethod.Convert
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Convert = 6
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.EffectMethod.Limit
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Limit
+  id: Limit
+  parent: SurvivorsMaker.Core.EffectMethod
+  langs:
+  - csharp
+  - vb
+  name: Limit
+  nameWithType: EffectMethod.Limit
+  fullName: SurvivorsMaker.Core.EffectMethod.Limit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Limit = 7
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+references:
+- uid: SurvivorsMaker.Core.EffectStore
+  commentId: T:SurvivorsMaker.Core.EffectStore
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html
+  name: EffectStore
+  nameWithType: EffectStore
+  fullName: SurvivorsMaker.Core.EffectStore
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.Effect.Amount
+  commentId: F:SurvivorsMaker.Core.Effect.Amount
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_Amount
+  name: Amount
+  nameWithType: Effect.Amount
+  fullName: SurvivorsMaker.Core.Effect.Amount
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.Effect.List
+  commentId: F:SurvivorsMaker.Core.Effect.List
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html#SurvivorsMaker_Core_Effect_List
+  name: List
+  nameWithType: Effect.List
+  fullName: SurvivorsMaker.Core.Effect.List

@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentTableChange
+  commentId: T:SurvivorsMaker.Editor.ContentTableChange
+  id: ContentTableChange
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentTableChange.#ctor
+  - SurvivorsMaker.Editor.ContentTableChange.Asset
+  - SurvivorsMaker.Editor.ContentTableChange.Id
+  - SurvivorsMaker.Editor.ContentTableChange.Key
+  - SurvivorsMaker.Editor.ContentTableChange.New
+  - SurvivorsMaker.Editor.ContentTableChange.Old
+  - SurvivorsMaker.Editor.ContentTableChange.ToString
+  langs:
+  - csharp
+  - vb
+  name: ContentTableChange
+  nameWithType: ContentTableChange
+  fullName: SurvivorsMaker.Editor.ContentTableChange
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: One cell an import would change.
+  example: []
+  syntax:
+    content: public sealed class ContentTableChange
+    content.vb: Public NotInheritable Class ContentTableChange
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.ContentTableChange.Asset
+  commentId: F:SurvivorsMaker.Editor.ContentTableChange.Asset
+  id: Asset
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: Asset
+  nameWithType: ContentTableChange.Asset
+  fullName: SurvivorsMaker.Editor.ContentTableChange.Asset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Object Asset
+    return:
+      type: UnityEngine.Object
+    content.vb: Public Asset As [Object]
+- uid: SurvivorsMaker.Editor.ContentTableChange.Id
+  commentId: F:SurvivorsMaker.Editor.ContentTableChange.Id
+  id: Id
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ContentTableChange.Id
+  fullName: SurvivorsMaker.Editor.ContentTableChange.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Editor.ContentTableChange.Key
+  commentId: F:SurvivorsMaker.Editor.ContentTableChange.Key
+  id: Key
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: ContentTableChange.Key
+  fullName: SurvivorsMaker.Editor.ContentTableChange.Key
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string Key
+    return:
+      type: System.String
+    content.vb: Public Key As String
+- uid: SurvivorsMaker.Editor.ContentTableChange.Old
+  commentId: F:SurvivorsMaker.Editor.ContentTableChange.Old
+  id: Old
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: Old
+  nameWithType: ContentTableChange.Old
+  fullName: SurvivorsMaker.Editor.ContentTableChange.Old
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string Old
+    return:
+      type: System.String
+    content.vb: Public Old As String
+- uid: SurvivorsMaker.Editor.ContentTableChange.New
+  commentId: F:SurvivorsMaker.Editor.ContentTableChange.New
+  id: New
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: New
+  nameWithType: ContentTableChange.New
+  fullName: SurvivorsMaker.Editor.ContentTableChange.New
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string New
+    return:
+      type: System.String
+    content.vb: Public [New] As String
+- uid: SurvivorsMaker.Editor.ContentTableChange.ToString
+  commentId: M:SurvivorsMaker.Editor.ContentTableChange.ToString
+  id: ToString
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ContentTableChange.ToString()
+  fullName: SurvivorsMaker.Editor.ContentTableChange.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SurvivorsMaker.Editor.ContentTableChange.ToString*
+- uid: SurvivorsMaker.Editor.ContentTableChange.#ctor
+  commentId: M:SurvivorsMaker.Editor.ContentTableChange.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.ContentTableChange
+  langs:
+  - csharp
+  - vb
+  name: ContentTableChange()
+  nameWithType: ContentTableChange.ContentTableChange()
+  fullName: SurvivorsMaker.Editor.ContentTableChange.ContentTableChange()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ContentTableChange()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.ContentTableChange.#ctor*
+  nameWithType.vb: ContentTableChange.New()
+  fullName.vb: SurvivorsMaker.Editor.ContentTableChange.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.ContentTableChange.ToString*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableChange.ToString
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableChange.html#SurvivorsMaker_Editor_ContentTableChange_ToString
+  name: ToString
+  nameWithType: ContentTableChange.ToString
+  fullName: SurvivorsMaker.Editor.ContentTableChange.ToString
+- uid: SurvivorsMaker.Editor.ContentTableChange.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableChange.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableChange.html#SurvivorsMaker_Editor_ContentTableChange__ctor
+  name: ContentTableChange
+  nameWithType: ContentTableChange.ContentTableChange
+  fullName: SurvivorsMaker.Editor.ContentTableChange.ContentTableChange
+  nameWithType.vb: ContentTableChange.New
+  fullName.vb: SurvivorsMaker.Editor.ContentTableChange.New
+  name.vb: New

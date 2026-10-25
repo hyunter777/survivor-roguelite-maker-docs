@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  commentId: T:SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  id: EnemyDeathSpawnEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry.Count
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry.Enemy
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry.Radius
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef
+  langs:
+  - csharp
+  - vb
+  name: EnemyDeathSpawnEntry
+  nameWithType: EnemyDeathSpawnEntry
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy-asset reference, count and placement radius used for death spawning.
+  example: []
+  syntax:
+    content: public sealed class EnemyDeathSpawnEntry
+    content.vb: Public NotInheritable Class EnemyDeathSpawnEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Enemy
+  commentId: F:SurvivorsMaker.Data.EnemyDeathSpawnEntry.Enemy
+  id: Enemy
+  parent: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: EnemyDeathSpawnEntry.Enemy
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Enemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy asset to spawn; required for an enabled spawn request.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy asset to spawn; required for an enabled spawn request.")]
+
+      public EnemyAsset Enemy'
+    return:
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: '<Tooltip("Enemy asset to spawn; required for an enabled spawn request.")>
+
+      Public Enemy As EnemyAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy asset to spawn; required for an enabled spawn request.
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Count
+  commentId: F:SurvivorsMaker.Data.EnemyDeathSpawnEntry.Count
+  id: Count
+  parent: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: EnemyDeathSpawnEntry.Count
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Count
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Nonnegative number of enemies to create; 0 creates none.
+  example: []
+  syntax:
+    content: '[Tooltip("Nonnegative number of enemies to create; 0 creates none.")]
+
+      public int Count'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Nonnegative number of enemies to create; 0 creates none.")>
+
+      Public Count As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Nonnegative number of enemies to create; 0 creates none.
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Radius
+  commentId: F:SurvivorsMaker.Data.EnemyDeathSpawnEntry.Radius
+  id: Radius
+  parent: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: EnemyDeathSpawnEntry.Radius
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.Radius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Placement radius in world units; nonnegative, 0 uses the centre.
+  example: []
+  syntax:
+    content: '[Tooltip("Placement radius in world units; nonnegative, 0 uses the centre.")]
+
+      public float Radius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Placement radius in world units; nonnegative, 0 uses the centre.")>
+
+      Public Radius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Placement radius in world units; nonnegative, 0 uses the centre.
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef
+  commentId: M:SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef
+  id: ToDef
+  parent: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  langs:
+  - csharp
+  - vb
+  name: ToDef()
+  nameWithType: EnemyDeathSpawnEntry.ToDef()
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Converts this authoring entry to a runtime definition, resolving asset references through their caches.
+  example: []
+  syntax:
+    content: public DeathSpawnDef ToDef()
+    return:
+      type: SurvivorsMaker.Simulation.DeathSpawnDef
+    content.vb: Public Function ToDef() As DeathSpawnDef
+  overload: SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef*
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  langs:
+  - csharp
+  - vb
+  name: EnemyDeathSpawnEntry()
+  nameWithType: EnemyDeathSpawnEntry.EnemyDeathSpawnEntry()
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.EnemyDeathSpawnEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public EnemyDeathSpawnEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor*
+  nameWithType.vb: EnemyDeathSpawnEntry.New()
+  fullName.vb: SurvivorsMaker.Data.EnemyDeathSpawnEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef*
+  commentId: Overload:SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyDeathSpawnEntry.html#SurvivorsMaker_Data_EnemyDeathSpawnEntry_ToDef
+  name: ToDef
+  nameWithType: EnemyDeathSpawnEntry.ToDef
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.ToDef
+- uid: SurvivorsMaker.Simulation.DeathSpawnDef
+  commentId: T:SurvivorsMaker.Simulation.DeathSpawnDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.DeathSpawnDef.html
+  name: DeathSpawnDef
+  nameWithType: DeathSpawnDef
+  fullName: SurvivorsMaker.Simulation.DeathSpawnDef
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.EnemyDeathSpawnEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyDeathSpawnEntry.html#SurvivorsMaker_Data_EnemyDeathSpawnEntry__ctor
+  name: EnemyDeathSpawnEntry
+  nameWithType: EnemyDeathSpawnEntry.EnemyDeathSpawnEntry
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry.EnemyDeathSpawnEntry
+  nameWithType.vb: EnemyDeathSpawnEntry.New
+  fullName.vb: SurvivorsMaker.Data.EnemyDeathSpawnEntry.New
+  name.vb: New

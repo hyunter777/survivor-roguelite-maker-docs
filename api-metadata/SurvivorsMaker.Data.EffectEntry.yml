@@ -1,0 +1,1505 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.EffectEntry
+  commentId: T:SurvivorsMaker.Data.EffectEntry
+  id: EffectEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.EffectEntry.Amount
+  - SurvivorsMaker.Data.EffectEntry.Buffer
+  - SurvivorsMaker.Data.EffectEntry.ConversionFraction
+  - SurvivorsMaker.Data.EffectEntry.ExternalSource
+  - SurvivorsMaker.Data.EffectEntry.Handler
+  - SurvivorsMaker.Data.EffectEntry.HasOutputMax
+  - SurvivorsMaker.Data.EffectEntry.HasOutputMin
+  - SurvivorsMaker.Data.EffectEntry.InputMax
+  - SurvivorsMaker.Data.EffectEntry.InputMin
+  - SurvivorsMaker.Data.EffectEntry.Invert
+  - SurvivorsMaker.Data.EffectEntry.IsMinimum
+  - SurvivorsMaker.Data.EffectEntry.Lifetime
+  - SurvivorsMaker.Data.EffectEntry.LifetimeTicks
+  - SurvivorsMaker.Data.EffectEntry.LifetimeWaves
+  - SurvivorsMaker.Data.EffectEntry.LimitMode
+  - SurvivorsMaker.Data.EffectEntry.Linear
+  - SurvivorsMaker.Data.EffectEntry.List
+  - SurvivorsMaker.Data.EffectEntry.Method
+  - SurvivorsMaker.Data.EffectEntry.OutputMax
+  - SurvivorsMaker.Data.EffectEntry.OutputMin
+  - SurvivorsMaker.Data.EffectEntry.ReadLayer
+  - SurvivorsMaker.Data.EffectEntry.Rounding
+  - SurvivorsMaker.Data.EffectEntry.Source
+  - SurvivorsMaker.Data.EffectEntry.Target
+  - SurvivorsMaker.Data.EffectEntry.Temporary
+  - SurvivorsMaker.Data.EffectEntry.ToEffect
+  - SurvivorsMaker.Data.EffectEntry.ToEffects(System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry})
+  - SurvivorsMaker.Data.EffectEntry.Unit
+  - SurvivorsMaker.Data.EffectEntry.Validate
+  langs:
+  - csharp
+  - vb
+  name: EffectEntry
+  nameWithType: EffectEntry
+  fullName: SurvivorsMaker.Data.EffectEntry
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: An effect as authored on an item, character or upgrade asset.
+  example: []
+  syntax:
+    content: public struct EffectEntry
+    content.vb: Public Structure EffectEntry
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Data.EffectEntry.Target
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Target
+  id: Target
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: EffectEntry.Target
+  fullName: SurvivorsMaker.Data.EffectEntry.Target
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Target stat id; required for stat-changing methods.
+  example: []
+  syntax:
+    content: '[Tooltip("Target stat id; required for stat-changing methods.")]
+
+      public string Target'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Target stat id; required for stat-changing methods.")>
+
+      Public Target As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Target stat id; required for stat-changing methods.
+- uid: SurvivorsMaker.Data.EffectEntry.Amount
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Amount
+  id: Amount
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: EffectEntry.Amount
+  fullName: SurvivorsMaker.Data.EffectEntry.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Signed stat points or method operand; percentage stats use percentage points.
+  example: []
+  syntax:
+    content: '[Tooltip("Signed stat points or method operand; percentage stats use percentage points.")]
+
+      public int Amount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Signed stat points or method operand; percentage stats use percentage points.")>
+
+      Public Amount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Signed stat points or method operand; percentage stats use percentage points.
+- uid: SurvivorsMaker.Data.EffectEntry.Method
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Method
+  id: Method
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: EffectEntry.Method
+  fullName: SurvivorsMaker.Data.EffectEntry.Method
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Operation applied to the target; Add is the default operation.
+  example: []
+  syntax:
+    content: '[Tooltip("Operation applied to the target; Add is the default operation.")]
+
+      public EffectMethod Method'
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+    content.vb: '<Tooltip("Operation applied to the target; Add is the default operation.")>
+
+      Public Method As EffectMethod'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Operation applied to the target; Add is the default operation.
+- uid: SurvivorsMaker.Data.EffectEntry.List
+  commentId: F:SurvivorsMaker.Data.EffectEntry.List
+  id: List
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: List
+  nameWithType: EffectEntry.List
+  fullName: SurvivorsMaker.Data.EffectEntry.List
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Named entry/id list used by list operations. Empty is unused for ordinary stat effects.
+  example: []
+  syntax:
+    content: '[Tooltip("Named entry/id list used by list operations. Empty is unused for ordinary stat effects.")]
+
+      public string List'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Named entry/id list used by list operations. Empty is unused for ordinary stat effects.")>
+
+      Public List As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Named entry/id list used by list operations. Empty is unused for ordinary stat effects.
+- uid: SurvivorsMaker.Data.EffectEntry.Handler
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Handler
+  id: Handler
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Handler
+  nameWithType: EffectEntry.Handler
+  fullName: SurvivorsMaker.Data.EffectEntry.Handler
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Registered custom effect handler id; empty uses the built-in method.
+  example: []
+  syntax:
+    content: '[Tooltip("Registered custom effect handler id; empty uses the built-in method.")]
+
+      public string Handler'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Registered custom effect handler id; empty uses the built-in method.")>
+
+      Public Handler As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Registered custom effect handler id; empty uses the built-in method.
+- uid: SurvivorsMaker.Data.EffectEntry.Source
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Source
+  id: Source
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: EffectEntry.Source
+  fullName: SurvivorsMaker.Data.EffectEntry.Source
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Input stat id, or external source key when External Source is on.
+  example: []
+  syntax:
+    content: '[Tooltip("Input stat id, or external source key when External Source is on.")]
+
+      public string Source'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Input stat id, or external source key when External Source is on.")>
+
+      Public Source As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Input stat id, or external source key when External Source is on.
+- uid: SurvivorsMaker.Data.EffectEntry.ExternalSource
+  commentId: F:SurvivorsMaker.Data.EffectEntry.ExternalSource
+  id: ExternalSource
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: ExternalSource
+  nameWithType: EffectEntry.ExternalSource
+  fullName: SurvivorsMaker.Data.EffectEntry.ExternalSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Read Source through IStatSource instead of the stat catalog.
+  example: []
+  syntax:
+    content: '[Tooltip("Read Source through IStatSource instead of the stat catalog.")]
+
+      public bool ExternalSource'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Read Source through IStatSource instead of the stat catalog.")>
+
+      Public ExternalSource As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Read Source through IStatSource instead of the stat catalog.
+- uid: SurvivorsMaker.Data.EffectEntry.ReadLayer
+  commentId: F:SurvivorsMaker.Data.EffectEntry.ReadLayer
+  id: ReadLayer
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: ReadLayer
+  nameWithType: EffectEntry.ReadLayer
+  fullName: SurvivorsMaker.Data.EffectEntry.ReadLayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Input evaluation layer: permanent, with temporary effects, or final.'
+  example: []
+  syntax:
+    content: '[Tooltip("Input evaluation layer: permanent, with temporary effects, or final.")]
+
+      public StatReadLayer ReadLayer'
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+    content.vb: '<Tooltip("Input evaluation layer: permanent, with temporary effects, or final.")>
+
+      Public ReadLayer As StatReadLayer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'Input evaluation layer: permanent, with temporary effects, or final.'
+- uid: SurvivorsMaker.Data.EffectEntry.Unit
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Unit
+  id: Unit
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: EffectEntry.Unit
+  fullName: SurvivorsMaker.Data.EffectEntry.Unit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Positive input units per output bundle; legacy methods treat omitted 0 as the runtime default.
+  example: []
+  syntax:
+    content: '[Tooltip("Positive input units per output bundle; legacy methods treat omitted 0 as the runtime default.")]
+
+      public float Unit'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Positive input units per output bundle; legacy methods treat omitted 0 as the runtime default.")>
+
+      Public Unit As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Positive input units per output bundle; legacy methods treat omitted 0 as the runtime default.
+- uid: SurvivorsMaker.Data.EffectEntry.Rounding
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Rounding
+  id: Rounding
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Rounding
+  nameWithType: EffectEntry.Rounding
+  fullName: SurvivorsMaker.Data.EffectEntry.Rounding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: How linked or converted input is reduced to output bundles.
+  example: []
+  syntax:
+    content: '[Tooltip("How linked or converted input is reduced to output bundles.")]
+
+      public EffectRounding Rounding'
+    return:
+      type: SurvivorsMaker.Core.EffectRounding
+    content.vb: '<Tooltip("How linked or converted input is reduced to output bundles.")>
+
+      Public Rounding As EffectRounding'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: How linked or converted input is reduced to output bundles.
+- uid: SurvivorsMaker.Data.EffectEntry.HasOutputMin
+  commentId: F:SurvivorsMaker.Data.EffectEntry.HasOutputMin
+  id: HasOutputMin
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: HasOutputMin
+  nameWithType: EffectEntry.HasOutputMin
+  fullName: SurvivorsMaker.Data.EffectEntry.HasOutputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Apply Output Min after transformation; off leaves the lower output unbounded.
+  example: []
+  syntax:
+    content: '[Tooltip("Apply Output Min after transformation; off leaves the lower output unbounded.")]
+
+      public bool HasOutputMin'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Apply Output Min after transformation; off leaves the lower output unbounded.")>
+
+      Public HasOutputMin As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Apply Output Min after transformation; off leaves the lower output unbounded.
+- uid: SurvivorsMaker.Data.EffectEntry.OutputMin
+  commentId: F:SurvivorsMaker.Data.EffectEntry.OutputMin
+  id: OutputMin
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: OutputMin
+  nameWithType: EffectEntry.OutputMin
+  fullName: SurvivorsMaker.Data.EffectEntry.OutputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Lower output bound in target stat units, used when enabled or by linear mapping.
+  example: []
+  syntax:
+    content: '[Tooltip("Lower output bound in target stat units, used when enabled or by linear mapping.")]
+
+      public float OutputMin'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Lower output bound in target stat units, used when enabled or by linear mapping.")>
+
+      Public OutputMin As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lower output bound in target stat units, used when enabled or by linear mapping.
+- uid: SurvivorsMaker.Data.EffectEntry.HasOutputMax
+  commentId: F:SurvivorsMaker.Data.EffectEntry.HasOutputMax
+  id: HasOutputMax
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: HasOutputMax
+  nameWithType: EffectEntry.HasOutputMax
+  fullName: SurvivorsMaker.Data.EffectEntry.HasOutputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Apply Output Max after transformation; off leaves the upper output unbounded.
+  example: []
+  syntax:
+    content: '[Tooltip("Apply Output Max after transformation; off leaves the upper output unbounded.")]
+
+      public bool HasOutputMax'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Apply Output Max after transformation; off leaves the upper output unbounded.")>
+
+      Public HasOutputMax As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Apply Output Max after transformation; off leaves the upper output unbounded.
+- uid: SurvivorsMaker.Data.EffectEntry.OutputMax
+  commentId: F:SurvivorsMaker.Data.EffectEntry.OutputMax
+  id: OutputMax
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: OutputMax
+  nameWithType: EffectEntry.OutputMax
+  fullName: SurvivorsMaker.Data.EffectEntry.OutputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Upper output bound in target stat units, used when enabled or by linear mapping.
+  example: []
+  syntax:
+    content: '[Tooltip("Upper output bound in target stat units, used when enabled or by linear mapping.")]
+
+      public float OutputMax'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Upper output bound in target stat units, used when enabled or by linear mapping.")>
+
+      Public OutputMax As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Upper output bound in target stat units, used when enabled or by linear mapping.
+- uid: SurvivorsMaker.Data.EffectEntry.Linear
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Linear
+  id: Linear
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: EffectEntry.Linear
+  fullName: SurvivorsMaker.Data.EffectEntry.Linear
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Map the input interval to the output interval instead of using bundle scaling.
+  example: []
+  syntax:
+    content: '[Tooltip("Map the input interval to the output interval instead of using bundle scaling.")]
+
+      public bool Linear'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Map the input interval to the output interval instead of using bundle scaling.")>
+
+      Public Linear As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Map the input interval to the output interval instead of using bundle scaling.
+- uid: SurvivorsMaker.Data.EffectEntry.InputMin
+  commentId: F:SurvivorsMaker.Data.EffectEntry.InputMin
+  id: InputMin
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: InputMin
+  nameWithType: EffectEntry.InputMin
+  fullName: SurvivorsMaker.Data.EffectEntry.InputMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Lower input reference in source units; Buffer shifts the effective start.
+  example: []
+  syntax:
+    content: '[Tooltip("Lower input reference in source units; Buffer shifts the effective start.")]
+
+      public float InputMin'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Lower input reference in source units; Buffer shifts the effective start.")>
+
+      Public InputMin As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lower input reference in source units; Buffer shifts the effective start.
+- uid: SurvivorsMaker.Data.EffectEntry.InputMax
+  commentId: F:SurvivorsMaker.Data.EffectEntry.InputMax
+  id: InputMax
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: InputMax
+  nameWithType: EffectEntry.InputMax
+  fullName: SurvivorsMaker.Data.EffectEntry.InputMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Upper input reference in source units; must exceed Input Min plus Buffer for linear mapping.
+  example: []
+  syntax:
+    content: '[Tooltip("Upper input reference in source units; must exceed Input Min plus Buffer for linear mapping.")]
+
+      public float InputMax'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Upper input reference in source units; must exceed Input Min plus Buffer for linear mapping.")>
+
+      Public InputMax As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Upper input reference in source units; must exceed Input Min plus Buffer for linear mapping.
+- uid: SurvivorsMaker.Data.EffectEntry.Buffer
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Buffer
+  id: Buffer
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Buffer
+  nameWithType: EffectEntry.Buffer
+  fullName: SurvivorsMaker.Data.EffectEntry.Buffer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Input offset added to Input Min before evaluating linear progress.
+  example: []
+  syntax:
+    content: '[Tooltip("Input offset added to Input Min before evaluating linear progress.")]
+
+      public float Buffer'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Input offset added to Input Min before evaluating linear progress.")>
+
+      Public Buffer As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Input offset added to Input Min before evaluating linear progress.
+- uid: SurvivorsMaker.Data.EffectEntry.Invert
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Invert
+  id: Invert
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Invert
+  nameWithType: EffectEntry.Invert
+  fullName: SurvivorsMaker.Data.EffectEntry.Invert
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Reverse the normalized linear progress before mapping to output.
+  example: []
+  syntax:
+    content: '[Tooltip("Reverse the normalized linear progress before mapping to output.")]
+
+      public bool Invert'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Reverse the normalized linear progress before mapping to output.")>
+
+      Public Invert As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Reverse the normalized linear progress before mapping to output.
+- uid: SurvivorsMaker.Data.EffectEntry.LimitMode
+  commentId: F:SurvivorsMaker.Data.EffectEntry.LimitMode
+  id: LimitMode
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: LimitMode
+  nameWithType: EffectEntry.LimitMode
+  fullName: SurvivorsMaker.Data.EffectEntry.LimitMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Limit source policy: fixed, captured once, or following the current input.'
+  example: []
+  syntax:
+    content: '[Tooltip("Limit source policy: fixed, captured once, or following the current input.")]
+
+      public StatLimitMode LimitMode'
+    return:
+      type: SurvivorsMaker.Core.StatLimitMode
+    content.vb: '<Tooltip("Limit source policy: fixed, captured once, or following the current input.")>
+
+      Public LimitMode As StatLimitMode'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'Limit source policy: fixed, captured once, or following the current input.'
+- uid: SurvivorsMaker.Data.EffectEntry.IsMinimum
+  commentId: F:SurvivorsMaker.Data.EffectEntry.IsMinimum
+  id: IsMinimum
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: IsMinimum
+  nameWithType: EffectEntry.IsMinimum
+  fullName: SurvivorsMaker.Data.EffectEntry.IsMinimum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Set a lower bound rather than an upper bound for Limit effects.
+  example: []
+  syntax:
+    content: '[Tooltip("Set a lower bound rather than an upper bound for Limit effects.")]
+
+      public bool IsMinimum'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Set a lower bound rather than an upper bound for Limit effects.")>
+
+      Public IsMinimum As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Set a lower bound rather than an upper bound for Limit effects.
+- uid: SurvivorsMaker.Data.EffectEntry.ConversionFraction
+  commentId: F:SurvivorsMaker.Data.EffectEntry.ConversionFraction
+  id: ConversionFraction
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: ConversionFraction
+  nameWithType: EffectEntry.ConversionFraction
+  fullName: SurvivorsMaker.Data.EffectEntry.ConversionFraction
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Fraction of available input converted, from 0 to 1; legacy omitted 0 uses the runtime default.
+  example: []
+  syntax:
+    content: '[Tooltip("Fraction of available input converted, from 0 to 1; legacy omitted 0 uses the runtime default.")]
+
+      public float ConversionFraction'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Fraction of available input converted, from 0 to 1; legacy omitted 0 uses the runtime default.")>
+
+      Public ConversionFraction As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fraction of available input converted, from 0 to 1; legacy omitted 0 uses the runtime default.
+- uid: SurvivorsMaker.Data.EffectEntry.Lifetime
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Lifetime
+  id: Lifetime
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: EffectEntry.Lifetime
+  fullName: SurvivorsMaker.Data.EffectEntry.Lifetime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Effect lifetime boundary: owned, wave, or run; Owned is the default.'
+  example: []
+  syntax:
+    content: '[Tooltip("Effect lifetime boundary: owned, wave, or run; Owned is the default.")]
+
+      public EffectLifetime Lifetime'
+    return:
+      type: SurvivorsMaker.Core.EffectLifetime
+    content.vb: '<Tooltip("Effect lifetime boundary: owned, wave, or run; Owned is the default.")>
+
+      Public Lifetime As EffectLifetime'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'Effect lifetime boundary: owned, wave, or run; Owned is the default.'
+- uid: SurvivorsMaker.Data.EffectEntry.LifetimeWaves
+  commentId: F:SurvivorsMaker.Data.EffectEntry.LifetimeWaves
+  id: LifetimeWaves
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: LifetimeWaves
+  nameWithType: EffectEntry.LifetimeWaves
+  fullName: SurvivorsMaker.Data.EffectEntry.LifetimeWaves
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Active wave count including acquisition wave; 0 = no wave expiry.
+  example: []
+  syntax:
+    content: '[Tooltip("Active wave count including acquisition wave; 0 = no wave expiry.")]
+
+      public int LifetimeWaves'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Active wave count including acquisition wave; 0 = no wave expiry.")>
+
+      Public LifetimeWaves As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Active wave count including acquisition wave; 0 = no wave expiry.
+- uid: SurvivorsMaker.Data.EffectEntry.LifetimeTicks
+  commentId: F:SurvivorsMaker.Data.EffectEntry.LifetimeTicks
+  id: LifetimeTicks
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: LifetimeTicks
+  nameWithType: EffectEntry.LifetimeTicks
+  fullName: SurvivorsMaker.Data.EffectEntry.LifetimeTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Combat ticks until expiry; 0 = no tick expiry. Paused time does not count.
+  example: []
+  syntax:
+    content: '[Tooltip("Combat ticks until expiry; 0 = no tick expiry. Paused time does not count.")]
+
+      public int LifetimeTicks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Combat ticks until expiry; 0 = no tick expiry. Paused time does not count.")>
+
+      Public LifetimeTicks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Combat ticks until expiry; 0 = no tick expiry. Paused time does not count.
+- uid: SurvivorsMaker.Data.EffectEntry.Temporary
+  commentId: F:SurvivorsMaker.Data.EffectEntry.Temporary
+  id: Temporary
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: EffectEntry.Temporary
+  fullName: SurvivorsMaker.Data.EffectEntry.Temporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Evaluate this effect in the temporary layer; off uses the permanent layer.
+  example: []
+  syntax:
+    content: '[Tooltip("Evaluate this effect in the temporary layer; off uses the permanent layer.")]
+
+      public bool Temporary'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Evaluate this effect in the temporary layer; off uses the permanent layer.")>
+
+      Public Temporary As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Evaluate this effect in the temporary layer; off uses the permanent layer.
+- uid: SurvivorsMaker.Data.EffectEntry.ToEffect
+  commentId: M:SurvivorsMaker.Data.EffectEntry.ToEffect
+  id: ToEffect
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: ToEffect()
+  nameWithType: EffectEntry.ToEffect()
+  fullName: SurvivorsMaker.Data.EffectEntry.ToEffect()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public Effect ToEffect()
+    return:
+      type: SurvivorsMaker.Core.Effect
+    content.vb: Public Function ToEffect() As Effect
+  overload: SurvivorsMaker.Data.EffectEntry.ToEffect*
+- uid: SurvivorsMaker.Data.EffectEntry.Validate
+  commentId: M:SurvivorsMaker.Data.EffectEntry.Validate
+  id: Validate
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: EffectEntry.Validate()
+  fullName: SurvivorsMaker.Data.EffectEntry.Validate()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Returns authoring problems without repairing or changing serialized fields; an empty list means valid.
+  example: []
+  syntax:
+    content: public List<string> Validate()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function Validate() As List(Of String)
+  overload: SurvivorsMaker.Data.EffectEntry.Validate*
+- uid: SurvivorsMaker.Data.EffectEntry.ToEffects(System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry})
+  commentId: M:SurvivorsMaker.Data.EffectEntry.ToEffects(System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry})
+  id: ToEffects(System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry})
+  parent: SurvivorsMaker.Data.EffectEntry
+  langs:
+  - csharp
+  - vb
+  name: ToEffects(IEnumerable<EffectEntry>)
+  nameWithType: EffectEntry.ToEffects(IEnumerable<EffectEntry>)
+  fullName: SurvivorsMaker.Data.EffectEntry.ToEffects(System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.EffectEntry>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public static List<Effect> ToEffects(IEnumerable<EffectEntry> entries)
+    parameters:
+    - id: entries
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry}
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+    content.vb: Public Shared Function ToEffects(entries As IEnumerable(Of EffectEntry)) As List(Of Effect)
+  overload: SurvivorsMaker.Data.EffectEntry.ToEffects*
+  nameWithType.vb: EffectEntry.ToEffects(IEnumerable(Of EffectEntry))
+  fullName.vb: SurvivorsMaker.Data.EffectEntry.ToEffects(System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Data.EffectEntry))
+  name.vb: ToEffects(IEnumerable(Of EffectEntry))
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatReadLayer.html
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Core.EffectRounding
+  commentId: T:SurvivorsMaker.Core.EffectRounding
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectRounding.html
+  name: EffectRounding
+  nameWithType: EffectRounding
+  fullName: SurvivorsMaker.Core.EffectRounding
+- uid: SurvivorsMaker.Core.StatLimitMode
+  commentId: T:SurvivorsMaker.Core.StatLimitMode
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatLimitMode.html
+  name: StatLimitMode
+  nameWithType: StatLimitMode
+  fullName: SurvivorsMaker.Core.StatLimitMode
+- uid: SurvivorsMaker.Core.EffectLifetime
+  commentId: T:SurvivorsMaker.Core.EffectLifetime
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectLifetime.html
+  name: EffectLifetime
+  nameWithType: EffectLifetime
+  fullName: SurvivorsMaker.Core.EffectLifetime
+- uid: SurvivorsMaker.Data.EffectEntry.ToEffect*
+  commentId: Overload:SurvivorsMaker.Data.EffectEntry.ToEffect
+  isExternal: true
+  href: SurvivorsMaker.Data.EffectEntry.html#SurvivorsMaker_Data_EffectEntry_ToEffect
+  name: ToEffect
+  nameWithType: EffectEntry.ToEffect
+  fullName: SurvivorsMaker.Data.EffectEntry.ToEffect
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Data.EffectEntry.Validate*
+  commentId: Overload:SurvivorsMaker.Data.EffectEntry.Validate
+  isExternal: true
+  href: SurvivorsMaker.Data.EffectEntry.html#SurvivorsMaker_Data_EffectEntry_Validate
+  name: Validate
+  nameWithType: EffectEntry.Validate
+  fullName: SurvivorsMaker.Data.EffectEntry.Validate
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Data.EffectEntry.ToEffects*
+  commentId: Overload:SurvivorsMaker.Data.EffectEntry.ToEffects
+  isExternal: true
+  href: SurvivorsMaker.Data.EffectEntry.html#SurvivorsMaker_Data_EffectEntry_ToEffects_System_Collections_Generic_IEnumerable_SurvivorsMaker_Data_EffectEntry__
+  name: ToEffects
+  nameWithType: EffectEntry.ToEffects
+  fullName: SurvivorsMaker.Data.EffectEntry.ToEffects
+- uid: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry}
+  commentId: T:System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.EffectEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EffectEntry>
+  nameWithType: IEnumerable<EffectEntry>
+  fullName: System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.EffectEntry>
+  nameWithType.vb: IEnumerable(Of EffectEntry)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Data.EffectEntry)
+  name.vb: IEnumerable(Of EffectEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SurvivorsMaker.Data.EffectEntry
+    name: EffectEntry
+    isExternal: true
+    href: SurvivorsMaker.Data.EffectEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.EffectEntry
+    name: EffectEntry
+    isExternal: true
+    href: SurvivorsMaker.Data.EffectEntry.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Effect>
+  nameWithType: List<Effect>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: List(Of Effect)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.Effect)
+  name.vb: List(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )

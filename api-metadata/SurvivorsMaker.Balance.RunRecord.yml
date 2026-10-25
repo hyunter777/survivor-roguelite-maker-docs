@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.RunRecord
+  commentId: T:SurvivorsMaker.Balance.RunRecord
+  id: RunRecord
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.RunRecord.#ctor
+  - SurvivorsMaker.Balance.RunRecord.Bot
+  - SurvivorsMaker.Balance.RunRecord.Character
+  - SurvivorsMaker.Balance.RunRecord.CurrencyEarned
+  - SurvivorsMaker.Balance.RunRecord.End
+  - SurvivorsMaker.Balance.RunRecord.Error
+  - SurvivorsMaker.Balance.RunRecord.Kills
+  - SurvivorsMaker.Balance.RunRecord.Level
+  - SurvivorsMaker.Balance.RunRecord.Seed
+  - SurvivorsMaker.Balance.RunRecord.StartingWeapon
+  - SurvivorsMaker.Balance.RunRecord.Waves
+  - SurvivorsMaker.Balance.RunRecord.WavesSurvived
+  langs:
+  - csharp
+  - vb
+  name: RunRecord
+  nameWithType: RunRecord
+  fullName: SurvivorsMaker.Balance.RunRecord
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: One simulated run, one row per wave entered.
+  example: []
+  syntax:
+    content: public sealed class RunRecord
+    content.vb: Public NotInheritable Class RunRecord
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Balance.RunRecord.Seed
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Seed
+  id: Seed
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: RunRecord.Seed
+  fullName: SurvivorsMaker.Balance.RunRecord.Seed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public uint Seed
+    return:
+      type: System.UInt32
+    content.vb: Public Seed As UInteger
+- uid: SurvivorsMaker.Balance.RunRecord.Character
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Character
+  id: Character
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: RunRecord.Character
+  fullName: SurvivorsMaker.Balance.RunRecord.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public string Character
+    return:
+      type: System.String
+    content.vb: Public Character As String
+- uid: SurvivorsMaker.Balance.RunRecord.StartingWeapon
+  commentId: F:SurvivorsMaker.Balance.RunRecord.StartingWeapon
+  id: StartingWeapon
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: StartingWeapon
+  nameWithType: RunRecord.StartingWeapon
+  fullName: SurvivorsMaker.Balance.RunRecord.StartingWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public string StartingWeapon
+    return:
+      type: System.String
+    content.vb: Public StartingWeapon As String
+- uid: SurvivorsMaker.Balance.RunRecord.Bot
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Bot
+  id: Bot
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Bot
+  nameWithType: RunRecord.Bot
+  fullName: SurvivorsMaker.Balance.RunRecord.Bot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public string Bot
+    return:
+      type: System.String
+    content.vb: Public Bot As String
+- uid: SurvivorsMaker.Balance.RunRecord.End
+  commentId: F:SurvivorsMaker.Balance.RunRecord.End
+  id: End
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: RunRecord.End
+  fullName: SurvivorsMaker.Balance.RunRecord.End
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public RunPhase End
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+    content.vb: Public [End] As RunPhase
+- uid: SurvivorsMaker.Balance.RunRecord.WavesSurvived
+  commentId: F:SurvivorsMaker.Balance.RunRecord.WavesSurvived
+  id: WavesSurvived
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: WavesSurvived
+  nameWithType: RunRecord.WavesSurvived
+  fullName: SurvivorsMaker.Balance.RunRecord.WavesSurvived
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int WavesSurvived
+    return:
+      type: System.Int32
+    content.vb: Public WavesSurvived As Integer
+- uid: SurvivorsMaker.Balance.RunRecord.Level
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Level
+  id: Level
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: RunRecord.Level
+  fullName: SurvivorsMaker.Balance.RunRecord.Level
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+- uid: SurvivorsMaker.Balance.RunRecord.Kills
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Kills
+  id: Kills
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: RunRecord.Kills
+  fullName: SurvivorsMaker.Balance.RunRecord.Kills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Kills
+    return:
+      type: System.Int32
+    content.vb: Public Kills As Integer
+- uid: SurvivorsMaker.Balance.RunRecord.CurrencyEarned
+  commentId: F:SurvivorsMaker.Balance.RunRecord.CurrencyEarned
+  id: CurrencyEarned
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: CurrencyEarned
+  nameWithType: RunRecord.CurrencyEarned
+  fullName: SurvivorsMaker.Balance.RunRecord.CurrencyEarned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int CurrencyEarned
+    return:
+      type: System.Int32
+    content.vb: Public CurrencyEarned As Integer
+- uid: SurvivorsMaker.Balance.RunRecord.Error
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Error
+  id: Error
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: RunRecord.Error
+  fullName: SurvivorsMaker.Balance.RunRecord.Error
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Non-empty when the run failed (exception or action limit).
+  example: []
+  syntax:
+    content: public string Error
+    return:
+      type: System.String
+    content.vb: Public [Error] As String
+- uid: SurvivorsMaker.Balance.RunRecord.Waves
+  commentId: F:SurvivorsMaker.Balance.RunRecord.Waves
+  id: Waves
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: Waves
+  nameWithType: RunRecord.Waves
+  fullName: SurvivorsMaker.Balance.RunRecord.Waves
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public readonly List<WaveRecord> Waves
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Balance.WaveRecord}
+    content.vb: Public ReadOnly Waves As List(Of WaveRecord)
+- uid: SurvivorsMaker.Balance.RunRecord.#ctor
+  commentId: M:SurvivorsMaker.Balance.RunRecord.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Balance.RunRecord
+  langs:
+  - csharp
+  - vb
+  name: RunRecord()
+  nameWithType: RunRecord.RunRecord()
+  fullName: SurvivorsMaker.Balance.RunRecord.RunRecord()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public RunRecord()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Balance.RunRecord.#ctor*
+  nameWithType.vb: RunRecord.New()
+  fullName.vb: SurvivorsMaker.Balance.RunRecord.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.RunPhase
+  commentId: T:SurvivorsMaker.Run.RunPhase
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunPhase.html
+  name: RunPhase
+  nameWithType: RunPhase
+  fullName: SurvivorsMaker.Run.RunPhase
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{SurvivorsMaker.Balance.WaveRecord}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Balance.WaveRecord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WaveRecord>
+  nameWithType: List<WaveRecord>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Balance.WaveRecord>
+  nameWithType.vb: List(Of WaveRecord)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Balance.WaveRecord)
+  name.vb: List(Of WaveRecord)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Balance.WaveRecord
+    name: WaveRecord
+    isExternal: true
+    href: SurvivorsMaker.Balance.WaveRecord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Balance.WaveRecord
+    name: WaveRecord
+    isExternal: true
+    href: SurvivorsMaker.Balance.WaveRecord.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Balance.RunRecord.#ctor*
+  commentId: Overload:SurvivorsMaker.Balance.RunRecord.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Balance.RunRecord.html#SurvivorsMaker_Balance_RunRecord__ctor
+  name: RunRecord
+  nameWithType: RunRecord.RunRecord
+  fullName: SurvivorsMaker.Balance.RunRecord.RunRecord
+  nameWithType.vb: RunRecord.New
+  fullName.vb: SurvivorsMaker.Balance.RunRecord.New
+  name.vb: New

@@ -1,0 +1,946 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  commentId: T:SurvivorsMaker.Editor.AnalysisJobDriver`1
+  id: AnalysisJobDriver`1
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.BudgetMilliseconds
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Label
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd(System.Int32)
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Running
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Start(SurvivorsMaker.Balance.IAnalysisJob{`0},System.String,System.Action{`0,System.Boolean},System.Action{System.Exception})
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce(System.Double)
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop
+  langs:
+  - csharp
+  - vb
+  name: AnalysisJobDriver<T>
+  nameWithType: AnalysisJobDriver<T>
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Advances an <xref href="SurvivorsMaker.Balance.IAnalysisJob%601" data-throw-if-not-resolved="false"></xref> from
+    EditorApplication.update in time slices so the editor
+
+    stays responsive. Cancel asks the job to stop; the partial result is delivered with cancelled = true.'
+  example: []
+  syntax:
+    content: 'public sealed class AnalysisJobDriver<T> : IMakerJobProgress'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class AnalysisJobDriver(Of T) Implements IMakerJobProgress
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Editor.IMakerJobProgress
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: AnalysisJobDriver(Of T)
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T)
+  name.vb: AnalysisJobDriver(Of T)
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.BudgetMilliseconds
+  commentId: F:SurvivorsMaker.Editor.AnalysisJobDriver`1.BudgetMilliseconds
+  id: BudgetMilliseconds
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: BudgetMilliseconds
+  nameWithType: AnalysisJobDriver<T>.BudgetMilliseconds
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.BudgetMilliseconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Milliseconds of work per editor update.
+  example: []
+  syntax:
+    content: public double BudgetMilliseconds
+    return:
+      type: System.Double
+    content.vb: Public BudgetMilliseconds As Double
+  nameWithType.vb: AnalysisJobDriver(Of T).BudgetMilliseconds
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).BudgetMilliseconds
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Start(SurvivorsMaker.Balance.IAnalysisJob{`0},System.String,System.Action{`0,System.Boolean},System.Action{System.Exception})
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.Start(SurvivorsMaker.Balance.IAnalysisJob{`0},System.String,System.Action{`0,System.Boolean},System.Action{System.Exception})
+  id: Start(SurvivorsMaker.Balance.IAnalysisJob{`0},System.String,System.Action{`0,System.Boolean},System.Action{System.Exception})
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Start(IAnalysisJob<T>, string, Action<T, bool>, Action<Exception>)
+  nameWithType: AnalysisJobDriver<T>.Start(IAnalysisJob<T>, string, Action<T, bool>, Action<Exception>)
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Start(SurvivorsMaker.Balance.IAnalysisJob<T>, string, System.Action<T,
+    bool>, System.Action<System.Exception>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public void Start(IAnalysisJob<T> job, string label, Action<T, bool> done, Action<Exception> failed)
+    parameters:
+    - id: job
+      type: SurvivorsMaker.Balance.IAnalysisJob{{T}}
+    - id: label
+      type: System.String
+    - id: done
+      type: System.Action{{T},System.Boolean}
+    - id: failed
+      type: System.Action{System.Exception}
+    content.vb: Public Sub Start(job As IAnalysisJob(Of T), label As String, done As Action(Of T, Boolean), failed As Action(Of
+      Exception))
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Start*
+  nameWithType.vb: AnalysisJobDriver(Of T).Start(IAnalysisJob(Of T), String, Action(Of T, Boolean), Action(Of Exception))
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Start(SurvivorsMaker.Balance.IAnalysisJob(Of T), String, System.Action(Of
+    T, Boolean), System.Action(Of System.Exception))
+  name.vb: Start(IAnalysisJob(Of T), String, Action(Of T, Boolean), Action(Of Exception))
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel
+  id: Cancel
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: AnalysisJobDriver<T>.Cancel()
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Cancel()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel*
+  implements:
+  - SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  nameWithType.vb: AnalysisJobDriver(Of T).Cancel()
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Cancel()
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop
+  id: Stop
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: AnalysisJobDriver<T>.Stop()
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Stop()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Detaches without callbacks (window closed). The job is cancelled.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop*
+  nameWithType.vb: AnalysisJobDriver(Of T).Stop()
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Stop()
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce(System.Double)
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce(System.Double)
+  id: StepOnce(System.Double)
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: StepOnce(double)
+  nameWithType: AnalysisJobDriver<T>.StepOnce(double)
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.StepOnce(double)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Runs one slice now; true when the job finished (tests and synchronous callers).
+  example: []
+  syntax:
+    content: public bool StepOnce(double budgetMilliseconds)
+    parameters:
+    - id: budgetMilliseconds
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function StepOnce(budgetMilliseconds As Double) As Boolean
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce*
+  nameWithType.vb: AnalysisJobDriver(Of T).StepOnce(Double)
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).StepOnce(Double)
+  name.vb: StepOnce(Double)
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd(System.Int32)
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd(System.Int32)
+  id: RunToEnd(System.Int32)
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: RunToEnd(int)
+  nameWithType: AnalysisJobDriver<T>.RunToEnd(int)
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.RunToEnd(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Runs the whole job synchronously (bounded by <code class="paramref">maxSlices</code>).
+  example: []
+  syntax:
+    content: public void RunToEnd(int maxSlices = 100000)
+    parameters:
+    - id: maxSlices
+      type: System.Int32
+    content.vb: Public Sub RunToEnd(maxSlices As Integer = 100000)
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd*
+  nameWithType.vb: AnalysisJobDriver(Of T).RunToEnd(Integer)
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).RunToEnd(Integer)
+  name.vb: RunToEnd(Integer)
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor
+  commentId: M:SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: AnalysisJobDriver()
+  nameWithType: AnalysisJobDriver<T>.AnalysisJobDriver()
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.AnalysisJobDriver()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public AnalysisJobDriver()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor*
+  nameWithType.vb: AnalysisJobDriver(Of T).New()
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).New()
+  name.vb: New()
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Label
+  commentId: P:SurvivorsMaker.Editor.AnalysisJobDriver`1.Label
+  id: Label
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: AnalysisJobDriver<T>.Label
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Label
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public string Label { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Label As String
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Label*
+  implements:
+  - SurvivorsMaker.Editor.IMakerJobProgress.Label
+  nameWithType.vb: AnalysisJobDriver(Of T).Label
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Label
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Running
+  commentId: P:SurvivorsMaker.Editor.AnalysisJobDriver`1.Running
+  id: Running
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: AnalysisJobDriver<T>.Running
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Running
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public bool Running { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Running As Boolean
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Running*
+  implements:
+  - SurvivorsMaker.Editor.IMakerJobProgress.Running
+  nameWithType.vb: AnalysisJobDriver(Of T).Running
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Running
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress
+  commentId: P:SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress
+  id: Progress
+  parent: SurvivorsMaker.Editor.AnalysisJobDriver`1
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: AnalysisJobDriver<T>.Progress
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Progress
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public float Progress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Progress As Single
+  overload: SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress*
+  implements:
+  - SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  nameWithType.vb: AnalysisJobDriver(Of T).Progress
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Progress
+references:
+- uid: SurvivorsMaker.Balance.IAnalysisJob`1
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob`1
+  isExternal: true
+  href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  name: IAnalysisJob<TResult>
+  nameWithType: IAnalysisJob<TResult>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<TResult>
+  nameWithType.vb: IAnalysisJob(Of TResult)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of TResult)
+  name.vb: IAnalysisJob(Of TResult)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+    href: SurvivorsMaker.Balance.IAnalysisJob-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Editor.IMakerJobProgress
+  commentId: T:SurvivorsMaker.Editor.IMakerJobProgress
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html
+  name: IMakerJobProgress
+  nameWithType: IMakerJobProgress
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Start*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Start
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Start_SurvivorsMaker_Balance_IAnalysisJob__0__System_String_System_Action__0_System_Boolean__System_Action_System_Exception__
+  name: Start
+  nameWithType: AnalysisJobDriver<T>.Start
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Start
+  nameWithType.vb: AnalysisJobDriver(Of T).Start
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Start
+- uid: SurvivorsMaker.Balance.IAnalysisJob{{T}}
+  commentId: T:SurvivorsMaker.Balance.IAnalysisJob{`0}
+  parent: SurvivorsMaker.Balance
+  definition: SurvivorsMaker.Balance.IAnalysisJob`1
+  name: IAnalysisJob<T>
+  nameWithType: IAnalysisJob<T>
+  fullName: SurvivorsMaker.Balance.IAnalysisJob<T>
+  nameWithType.vb: IAnalysisJob(Of T)
+  fullName.vb: SurvivorsMaker.Balance.IAnalysisJob(Of T)
+  name.vb: IAnalysisJob(Of T)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IAnalysisJob`1
+    name: IAnalysisJob
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{{T},System.Boolean}
+  commentId: T:System.Action{`0,System.Boolean}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T, bool>
+  nameWithType: Action<T, bool>
+  fullName: System.Action<T, bool>
+  nameWithType.vb: Action(Of T, Boolean)
+  fullName.vb: System.Action(Of T, Boolean)
+  name.vb: Action(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action{System.Exception}
+  commentId: T:System.Action{System.Exception}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Exception>
+  nameWithType: Action<Exception>
+  fullName: System.Action<System.Exception>
+  nameWithType.vb: Action(Of Exception)
+  fullName.vb: System.Action(Of System.Exception)
+  name.vb: Action(Of Exception)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Cancel
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Cancel
+  name: Cancel
+  nameWithType: AnalysisJobDriver<T>.Cancel
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Cancel
+  nameWithType.vb: AnalysisJobDriver(Of T).Cancel
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Cancel
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  commentId: M:SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Cancel
+  name: Cancel()
+  nameWithType: IMakerJobProgress.Cancel()
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Cancel()
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+    name: Cancel
+    isExternal: true
+    href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Cancel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+    name: Cancel
+    isExternal: true
+    href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Cancel
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Stop
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Stop
+  name: Stop
+  nameWithType: AnalysisJobDriver<T>.Stop
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Stop
+  nameWithType.vb: AnalysisJobDriver(Of T).Stop
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Stop
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.StepOnce
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_StepOnce_System_Double_
+  name: StepOnce
+  nameWithType: AnalysisJobDriver<T>.StepOnce
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.StepOnce
+  nameWithType.vb: AnalysisJobDriver(Of T).StepOnce
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).StepOnce
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.RunToEnd
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_RunToEnd_System_Int32_
+  name: RunToEnd
+  nameWithType: AnalysisJobDriver<T>.RunToEnd
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.RunToEnd
+  nameWithType.vb: AnalysisJobDriver(Of T).RunToEnd
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).RunToEnd
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1__ctor
+  name: AnalysisJobDriver
+  nameWithType: AnalysisJobDriver<T>.AnalysisJobDriver
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.AnalysisJobDriver
+  nameWithType.vb: AnalysisJobDriver(Of T).New
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).New
+  name.vb: New
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Label*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Label
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Label
+  name: Label
+  nameWithType: AnalysisJobDriver<T>.Label
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Label
+  nameWithType.vb: AnalysisJobDriver(Of T).Label
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Label
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Label
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Label
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Label
+  name: Label
+  nameWithType: IMakerJobProgress.Label
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Label
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Running*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Running
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Running
+  name: Running
+  nameWithType: AnalysisJobDriver<T>.Running
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Running
+  nameWithType.vb: AnalysisJobDriver(Of T).Running
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Running
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Running
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Running
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Running
+  name: Running
+  nameWithType: IMakerJobProgress.Running
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Running
+- uid: SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress*
+  commentId: Overload:SurvivorsMaker.Editor.AnalysisJobDriver`1.Progress
+  isExternal: true
+  href: SurvivorsMaker.Editor.AnalysisJobDriver-1.html#SurvivorsMaker_Editor_AnalysisJobDriver_1_Progress
+  name: Progress
+  nameWithType: AnalysisJobDriver<T>.Progress
+  fullName: SurvivorsMaker.Editor.AnalysisJobDriver<T>.Progress
+  nameWithType.vb: AnalysisJobDriver(Of T).Progress
+  fullName.vb: SurvivorsMaker.Editor.AnalysisJobDriver(Of T).Progress
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Progress
+  name: Progress
+  nameWithType: IMakerJobProgress.Progress
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Progress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

@@ -1,0 +1,1178 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.StatusVisualSettings
+  id: StatusVisualSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.StatusVisualSettings.#ctor
+  - SurvivorsMaker.Presentation.StatusVisualSettings.BurnColor
+  - SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerDepth
+  - SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerFrequency
+  - SurvivorsMaker.Presentation.StatusVisualSettings.Enabled
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconBob
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconBobFrequency
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconGap
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconMaxStackGrowth
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconSize
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconSpacing
+  - SurvivorsMaker.Presentation.StatusVisualSettings.IconStackGrowth
+  - SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableColor
+  - SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableFrequency
+  - SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableStrength
+  - SurvivorsMaker.Presentation.StatusVisualSettings.OverlayOrder
+  - SurvivorsMaker.Presentation.StatusVisualSettings.ShowIcons
+  - SurvivorsMaker.Presentation.StatusVisualSettings.SlowColor
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunColor
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunStarDegreesPerSecond
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunStarRadius
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunStarSize
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunStars
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleDegrees
+  - SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleFrequency
+  - SurvivorsMaker.Presentation.StatusVisualSettings.TintStrength
+  langs:
+  - csharp
+  - vb
+  name: StatusVisualSettings
+  nameWithType: StatusVisualSettings
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Status tints, icons above enemies and the stun star ring.
+  example: []
+  syntax:
+    content: public sealed class StatusVisualSettings
+    content.vb: Public NotInheritable Class StatusVisualSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.Enabled
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.Enabled
+  id: Enabled
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: StatusVisualSettings.Enabled
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.Enabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enable these visual effects; off skips this presentation feature without changing gameplay.
+  example: []
+  syntax:
+    content: '[Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")]
+
+      public bool Enabled'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")>
+
+      Public Enabled As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable these visual effects; off skips this presentation feature without changing gameplay.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.BurnColor
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.BurnColor
+  id: BurnColor
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BurnColor
+  nameWithType: StatusVisualSettings.BurnColor
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.BurnColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burn Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Burn Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BurnColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Burn Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public BurnColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burn Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.SlowColor
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.SlowColor
+  id: SlowColor
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: SlowColor
+  nameWithType: StatusVisualSettings.SlowColor
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.SlowColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Slow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Slow Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color SlowColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Slow Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public SlowColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Slow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunColor
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunColor
+  id: StunColor
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunColor
+  nameWithType: StatusVisualSettings.StunColor
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color StunColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Stun Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public StunColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.TintStrength
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.TintStrength
+  id: TintStrength
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: TintStrength
+  nameWithType: StatusVisualSettings.TintStrength
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.TintStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Tint blend fraction from 0 to 1; 0 = original colour, 1 = full status colour.
+  example: []
+  syntax:
+    content: '[Tooltip("Tint blend fraction from 0 to 1; 0 = original colour, 1 = full status colour.")]
+
+      [Range(0, 1)]
+
+      public float TintStrength'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Tint blend fraction from 0 to 1; 0 = original colour, 1 = full status colour.")>
+
+      <Range(0, 1)>
+
+      Public TintStrength As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Tint blend fraction from 0 to 1; 0 = original colour, 1 = full status colour.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerFrequency
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerFrequency
+  id: BurnFlickerFrequency
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BurnFlickerFrequency
+  nameWithType: StatusVisualSettings.BurnFlickerFrequency
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burn Flicker Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Burn Flicker Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float BurnFlickerFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Burn Flicker Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public BurnFlickerFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burn Flicker Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerDepth
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerDepth
+  id: BurnFlickerDepth
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BurnFlickerDepth
+  nameWithType: StatusVisualSettings.BurnFlickerDepth
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.BurnFlickerDepth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burn flicker amplitude fraction from 0 to 1; 0 = steady tint.
+  example: []
+  syntax:
+    content: '[Tooltip("Burn flicker amplitude fraction from 0 to 1; 0 = steady tint.")]
+
+      [Range(0, 1)]
+
+      public float BurnFlickerDepth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Burn flicker amplitude fraction from 0 to 1; 0 = steady tint.")>
+
+      <Range(0, 1)>
+
+      Public BurnFlickerDepth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burn flicker amplitude fraction from 0 to 1; 0 = steady tint.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.ShowIcons
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.ShowIcons
+  id: ShowIcons
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: ShowIcons
+  nameWithType: StatusVisualSettings.ShowIcons
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.ShowIcons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Show status icons above enemies; off keeps only the status tint.
+  example: []
+  syntax:
+    content: '[Tooltip("Show status icons above enemies; off keeps only the status tint.")]
+
+      public bool ShowIcons'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Show status icons above enemies; off keeps only the status tint.")>
+
+      Public ShowIcons As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show status icons above enemies; off keeps only the status tint.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconSize
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconSize
+  id: IconSize
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconSize
+  nameWithType: StatusVisualSettings.IconSize
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Icon Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Icon Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float IconSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Icon Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public IconSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Icon Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconSpacing
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconSpacing
+  id: IconSpacing
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconSpacing
+  nameWithType: StatusVisualSettings.IconSpacing
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconSpacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Icon Spacing in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Icon Spacing in world units; use nonnegative sizes and signed offsets.")]
+
+      public float IconSpacing'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Icon Spacing in world units; use nonnegative sizes and signed offsets.")>
+
+      Public IconSpacing As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Icon Spacing in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconGap
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconGap
+  id: IconGap
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconGap
+  nameWithType: StatusVisualSettings.IconGap
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconGap
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Gap between the top of the body sprite and the icon row.
+  example: []
+  syntax:
+    content: '[Tooltip("World-unit gap above the top of the body sprite for the status icon row.")]
+
+      public float IconGap'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("World-unit gap above the top of the body sprite for the status icon row.")>
+
+      Public IconGap As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: World-unit gap above the top of the body sprite for the status icon row.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconBob
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconBob
+  id: IconBob
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconBob
+  nameWithType: StatusVisualSettings.IconBob
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconBob
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Icon Bob in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Icon Bob in world units; use nonnegative sizes and signed offsets.")]
+
+      public float IconBob'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Icon Bob in world units; use nonnegative sizes and signed offsets.")>
+
+      Public IconBob As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Icon Bob in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconBobFrequency
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconBobFrequency
+  id: IconBobFrequency
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconBobFrequency
+  nameWithType: StatusVisualSettings.IconBobFrequency
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconBobFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Icon Bob Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Icon Bob Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float IconBobFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Icon Bob Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public IconBobFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Icon Bob Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconStackGrowth
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconStackGrowth
+  id: IconStackGrowth
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconStackGrowth
+  nameWithType: StatusVisualSettings.IconStackGrowth
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconStackGrowth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Extra icon scale per stack beyond the first, capped by IconMaxStackGrowth.
+  example: []
+  syntax:
+    content: '[Tooltip("Extra scale per status stack beyond the first; 0 = fixed icon scale.")]
+
+      public float IconStackGrowth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Extra scale per status stack beyond the first; 0 = fixed icon scale.")>
+
+      Public IconStackGrowth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extra scale per status stack beyond the first; 0 = fixed icon scale.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.IconMaxStackGrowth
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.IconMaxStackGrowth
+  id: IconMaxStackGrowth
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: IconMaxStackGrowth
+  nameWithType: StatusVisualSettings.IconMaxStackGrowth
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.IconMaxStackGrowth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Maximum additional icon scale from stacks; 0 disables stack growth.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum additional icon scale from stacks; 0 disables stack growth.")]
+
+      public float IconMaxStackGrowth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Maximum additional icon scale from stacks; 0 disables stack growth.")>
+
+      Public IconMaxStackGrowth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum additional icon scale from stacks; 0 disables stack growth.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunStars
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunStars
+  id: StunStars
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunStars
+  nameWithType: StatusVisualSettings.StunStars
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunStars
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Number of stars in the stun ring; nonnegative, 0 hides the stars.
+  example: []
+  syntax:
+    content: '[Tooltip("Number of stars in the stun ring; nonnegative, 0 hides the stars.")]
+
+      public int StunStars'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Number of stars in the stun ring; nonnegative, 0 hides the stars.")>
+
+      Public StunStars As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Number of stars in the stun ring; nonnegative, 0 hides the stars.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarRadius
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunStarRadius
+  id: StunStarRadius
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunStarRadius
+  nameWithType: StatusVisualSettings.StunStarRadius
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Star Radius in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Star Radius in world units; use nonnegative sizes and signed offsets.")]
+
+      public float StunStarRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Stun Star Radius in world units; use nonnegative sizes and signed offsets.")>
+
+      Public StunStarRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Star Radius in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarSize
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunStarSize
+  id: StunStarSize
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunStarSize
+  nameWithType: StatusVisualSettings.StunStarSize
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Star Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Star Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float StunStarSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Stun Star Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public StunStarSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Star Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarDegreesPerSecond
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunStarDegreesPerSecond
+  id: StunStarDegreesPerSecond
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunStarDegreesPerSecond
+  nameWithType: StatusVisualSettings.StunStarDegreesPerSecond
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunStarDegreesPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Star Degrees Per Second; degrees per second, 0 = no rotation.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Star Degrees Per Second; degrees per second, 0 = no rotation.")]
+
+      public float StunStarDegreesPerSecond'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Stun Star Degrees Per Second; degrees per second, 0 = no rotation.")>
+
+      Public StunStarDegreesPerSecond As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Star Degrees Per Second; degrees per second, 0 = no rotation.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleDegrees
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleDegrees
+  id: StunWobbleDegrees
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunWobbleDegrees
+  nameWithType: StatusVisualSettings.StunWobbleDegrees
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleDegrees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Wobble Degrees; angle in degrees.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Wobble Degrees; angle in degrees.")]
+
+      public float StunWobbleDegrees'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Stun Wobble Degrees; angle in degrees.")>
+
+      Public StunWobbleDegrees As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Wobble Degrees; angle in degrees.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleFrequency
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleFrequency
+  id: StunWobbleFrequency
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StunWobbleFrequency
+  nameWithType: StatusVisualSettings.StunWobbleFrequency
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StunWobbleFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stun Wobble Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Stun Wobble Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float StunWobbleFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Stun Wobble Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public StunWobbleFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Stun Wobble Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableColor
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableColor
+  id: InvulnerableColor
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: InvulnerableColor
+  nameWithType: StatusVisualSettings.InvulnerableColor
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Invulnerable Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Invulnerable Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color InvulnerableColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Invulnerable Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public InvulnerableColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Invulnerable Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableFrequency
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableFrequency
+  id: InvulnerableFrequency
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: InvulnerableFrequency
+  nameWithType: StatusVisualSettings.InvulnerableFrequency
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Invulnerable Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Invulnerable Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float InvulnerableFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Invulnerable Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public InvulnerableFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Invulnerable Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableStrength
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableStrength
+  id: InvulnerableStrength
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: InvulnerableStrength
+  nameWithType: StatusVisualSettings.InvulnerableStrength
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.InvulnerableStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Invulnerability tint blend fraction from 0 to 1; 0 = no tint.
+  example: []
+  syntax:
+    content: '[Tooltip("Invulnerability tint blend fraction from 0 to 1; 0 = no tint.")]
+
+      [Range(0, 1)]
+
+      public float InvulnerableStrength'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Invulnerability tint blend fraction from 0 to 1; 0 = no tint.")>
+
+      <Range(0, 1)>
+
+      Public InvulnerableStrength As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Invulnerability tint blend fraction from 0 to 1; 0 = no tint.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.OverlayOrder
+  commentId: F:SurvivorsMaker.Presentation.StatusVisualSettings.OverlayOrder
+  id: OverlayOrder
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: OverlayOrder
+  nameWithType: StatusVisualSettings.OverlayOrder
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.OverlayOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sorting offset above the enemy body for icons and stars.
+  example: []
+  syntax:
+    content: '[Tooltip("Sorting offset above the enemy body for status overlays.")]
+
+      public int OverlayOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Sorting offset above the enemy body for status overlays.")>
+
+      Public OverlayOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sorting offset above the enemy body for status overlays.
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.StatusVisualSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.StatusVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: StatusVisualSettings()
+  nameWithType: StatusVisualSettings.StatusVisualSettings()
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StatusVisualSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public StatusVisualSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.StatusVisualSettings.#ctor*
+  nameWithType.vb: StatusVisualSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.StatusVisualSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.StatusVisualSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.StatusVisualSettings.html#SurvivorsMaker_Presentation_StatusVisualSettings__ctor
+  name: StatusVisualSettings
+  nameWithType: StatusVisualSettings.StatusVisualSettings
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings.StatusVisualSettings
+  nameWithType.vb: StatusVisualSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.StatusVisualSettings.New
+  name.vb: New

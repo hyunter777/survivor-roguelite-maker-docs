@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerAction
+  commentId: T:SurvivorsMaker.Simulation.TriggerAction
+  id: TriggerAction
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerAction.ApplyStatus
+  - SurvivorsMaker.Simulation.TriggerAction.Currency
+  - SurvivorsMaker.Simulation.TriggerAction.Custom
+  - SurvivorsMaker.Simulation.TriggerAction.Explosion
+  - SurvivorsMaker.Simulation.TriggerAction.Heal
+  - SurvivorsMaker.Simulation.TriggerAction.Nova
+  - SurvivorsMaker.Simulation.TriggerAction.TempStat
+  langs:
+  - csharp
+  - vb
+  name: TriggerAction
+  nameWithType: TriggerAction
+  fullName: SurvivorsMaker.Simulation.TriggerAction
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum TriggerAction
+    content.vb: Public Enum TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.Heal
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.Heal
+  id: Heal
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: Heal
+  nameWithType: TriggerAction.Heal
+  fullName: SurvivorsMaker.Simulation.TriggerAction.Heal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Heal = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.Currency
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.Currency
+  id: Currency
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: TriggerAction.Currency
+  fullName: SurvivorsMaker.Simulation.TriggerAction.Currency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Currency = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.TempStat
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.TempStat
+  id: TempStat
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: TempStat
+  nameWithType: TriggerAction.TempStat
+  fullName: SurvivorsMaker.Simulation.TriggerAction.TempStat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Adds Amount to Stat for DurationSeconds.
+  example: []
+  syntax:
+    content: TempStat = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.Explosion
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.Explosion
+  id: Explosion
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: Explosion
+  nameWithType: TriggerAction.Explosion
+  fullName: SurvivorsMaker.Simulation.TriggerAction.Explosion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Damage Amount to enemies within Radius of the event position (player for player events).
+  example: []
+  syntax:
+    content: Explosion = 3
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.Nova
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.Nova
+  id: Nova
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: Nova
+  nameWithType: TriggerAction.Nova
+  fullName: SurvivorsMaker.Simulation.TriggerAction.Nova
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Fires Count projectiles in a ring from the player, Amount damage each.
+  example: []
+  syntax:
+    content: Nova = 4
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.Custom
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.Custom
+  id: Custom
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: TriggerAction.Custom
+  fullName: SurvivorsMaker.Simulation.TriggerAction.Custom
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Calls the custom ITriggerHandler registered as Handler.
+  example: []
+  syntax:
+    content: Custom = 5
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerAction.ApplyStatus
+  commentId: F:SurvivorsMaker.Simulation.TriggerAction.ApplyStatus
+  id: ApplyStatus
+  parent: SurvivorsMaker.Simulation.TriggerAction
+  langs:
+  - csharp
+  - vb
+  name: ApplyStatus
+  nameWithType: TriggerAction.ApplyStatus
+  fullName: SurvivorsMaker.Simulation.TriggerAction.ApplyStatus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Applies Status to the event''s enemy (OnHit, OnKill: the enemy hit/killed) or to enemies within Radius of the
+    player for other events.'
+  example: []
+  syntax:
+    content: ApplyStatus = 6
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerAction
+  commentId: T:SurvivorsMaker.Simulation.TriggerAction
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerAction.html
+  name: TriggerAction
+  nameWithType: TriggerAction
+  fullName: SurvivorsMaker.Simulation.TriggerAction

@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  commentId: T:SurvivorsMaker.Presentation.RunSummary.TakenRow
+  id: RunSummary.TakenRow
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.Channel
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.Damage
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.Hits
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.Share
+  - SurvivorsMaker.Presentation.RunSummary.TakenRow.SourceId
+  langs:
+  - csharp
+  - vb
+  name: RunSummary.TakenRow
+  nameWithType: RunSummary.TakenRow
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Taken Row measurements used by the read-only run summary.
+  example: []
+  syntax:
+    content: public sealed class RunSummary.TakenRow
+    content.vb: Public NotInheritable Class RunSummary.TakenRow
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.SourceId
+  commentId: F:SurvivorsMaker.Presentation.RunSummary.TakenRow.SourceId
+  id: SourceId
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: SourceId
+  nameWithType: RunSummary.TakenRow.SourceId
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.SourceId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string SourceId
+    return:
+      type: System.String
+    content.vb: Public SourceId As String
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.Channel
+  commentId: F:SurvivorsMaker.Presentation.RunSummary.TakenRow.Channel
+  id: Channel
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: Channel
+  nameWithType: RunSummary.TakenRow.Channel
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.Channel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public TakenChannel Channel
+    return:
+      type: SurvivorsMaker.Presentation.TakenChannel
+    content.vb: Public Channel As TakenChannel
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.Damage
+  commentId: F:SurvivorsMaker.Presentation.RunSummary.TakenRow.Damage
+  id: Damage
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: RunSummary.TakenRow.Damage
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.Damage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public long Damage
+    return:
+      type: System.Int64
+    content.vb: Public Damage As Long
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.Hits
+  commentId: F:SurvivorsMaker.Presentation.RunSummary.TakenRow.Hits
+  id: Hits
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: Hits
+  nameWithType: RunSummary.TakenRow.Hits
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.Hits
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int Hits
+    return:
+      type: System.Int32
+    content.vb: Public Hits As Integer
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.Share
+  commentId: F:SurvivorsMaker.Presentation.RunSummary.TakenRow.Share
+  id: Share
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: Share
+  nameWithType: RunSummary.TakenRow.Share
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.Share
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float Share
+    return:
+      type: System.Single
+    content.vb: Public Share As Single
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor
+  commentId: M:SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.RunSummary.TakenRow
+  langs:
+  - csharp
+  - vb
+  name: TakenRow()
+  nameWithType: RunSummary.TakenRow.TakenRow()
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.TakenRow()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public TakenRow()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor*
+  nameWithType.vb: RunSummary.TakenRow.New()
+  fullName.vb: SurvivorsMaker.Presentation.RunSummary.TakenRow.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.TakenChannel
+  commentId: T:SurvivorsMaker.Presentation.TakenChannel
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TakenChannel.html
+  name: TakenChannel
+  nameWithType: TakenChannel
+  fullName: SurvivorsMaker.Presentation.TakenChannel
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.RunSummary.TakenRow.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.RunSummary.TakenRow.html#SurvivorsMaker_Presentation_RunSummary_TakenRow__ctor
+  name: TakenRow
+  nameWithType: RunSummary.TakenRow.TakenRow
+  fullName: SurvivorsMaker.Presentation.RunSummary.TakenRow.TakenRow
+  nameWithType.vb: RunSummary.TakenRow.New
+  fullName.vb: SurvivorsMaker.Presentation.RunSummary.TakenRow.New
+  name.vb: New

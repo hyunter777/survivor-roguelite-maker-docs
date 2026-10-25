@@ -1,0 +1,872 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  commentId: T:SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  id: HeadlessBenchmarkRequest
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaHeight
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaWidth
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Enemies
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyColumns
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyHealth
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyRadius
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpacing
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpeed
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Percentile
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileDistance
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileOrigin
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRadius
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRows
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpacing
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpeed
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileTravel
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Projectiles
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SampleTicks
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Seed
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationMaxNeighbours
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationRadiusScale
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationStrength
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Spatial
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.TargetMeanMilliseconds
+  - SurvivorsMaker.Balance.HeadlessBenchmarkRequest.WarmupTicks
+  langs:
+  - csharp
+  - vb
+  name: HeadlessBenchmarkRequest
+  nameWithType: HeadlessBenchmarkRequest
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Self-authored load fixture, separate from demo content and gameplay defaults.
+  example: []
+  syntax:
+    content: public sealed class HeadlessBenchmarkRequest
+    content.vb: Public NotInheritable Class HeadlessBenchmarkRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Enemies
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: HeadlessBenchmarkRequest.Enemies
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Enemies
+    return:
+      type: System.Int32
+    content.vb: Public Enemies As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Projectiles
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Projectiles
+  id: Projectiles
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: Projectiles
+  nameWithType: HeadlessBenchmarkRequest.Projectiles
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Projectiles
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Projectiles
+    return:
+      type: System.Int32
+    content.vb: Public Projectiles As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.WarmupTicks
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.WarmupTicks
+  id: WarmupTicks
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: WarmupTicks
+  nameWithType: HeadlessBenchmarkRequest.WarmupTicks
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.WarmupTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int WarmupTicks
+    return:
+      type: System.Int32
+    content.vb: Public WarmupTicks As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SampleTicks
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SampleTicks
+  id: SampleTicks
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: SampleTicks
+  nameWithType: HeadlessBenchmarkRequest.SampleTicks
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SampleTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int SampleTicks
+    return:
+      type: System.Int32
+    content.vb: Public SampleTicks As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Seed
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Seed
+  id: Seed
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: HeadlessBenchmarkRequest.Seed
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Seed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public uint Seed
+    return:
+      type: System.UInt32
+    content.vb: Public Seed As UInteger
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Percentile
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Percentile
+  id: Percentile
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: Percentile
+  nameWithType: HeadlessBenchmarkRequest.Percentile
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Percentile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float Percentile
+    return:
+      type: System.Single
+    content.vb: Public Percentile As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.TargetMeanMilliseconds
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.TargetMeanMilliseconds
+  id: TargetMeanMilliseconds
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: TargetMeanMilliseconds
+  nameWithType: HeadlessBenchmarkRequest.TargetMeanMilliseconds
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.TargetMeanMilliseconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float TargetMeanMilliseconds
+    return:
+      type: System.Single
+    content.vb: Public TargetMeanMilliseconds As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaWidth
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaWidth
+  id: ArenaWidth
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ArenaWidth
+  nameWithType: HeadlessBenchmarkRequest.ArenaWidth
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ArenaWidth
+    return:
+      type: System.Single
+    content.vb: Public ArenaWidth As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaHeight
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaHeight
+  id: ArenaHeight
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ArenaHeight
+  nameWithType: HeadlessBenchmarkRequest.ArenaHeight
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ArenaHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ArenaHeight
+    return:
+      type: System.Single
+    content.vb: Public ArenaHeight As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyColumns
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyColumns
+  id: EnemyColumns
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: EnemyColumns
+  nameWithType: HeadlessBenchmarkRequest.EnemyColumns
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyColumns
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int EnemyColumns
+    return:
+      type: System.Int32
+    content.vb: Public EnemyColumns As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpacing
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpacing
+  id: EnemySpacing
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: EnemySpacing
+  nameWithType: HeadlessBenchmarkRequest.EnemySpacing
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float EnemySpacing
+    return:
+      type: System.Single
+    content.vb: Public EnemySpacing As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyRadius
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyRadius
+  id: EnemyRadius
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: EnemyRadius
+  nameWithType: HeadlessBenchmarkRequest.EnemyRadius
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float EnemyRadius
+    return:
+      type: System.Single
+    content.vb: Public EnemyRadius As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpeed
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpeed
+  id: EnemySpeed
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: EnemySpeed
+  nameWithType: HeadlessBenchmarkRequest.EnemySpeed
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemySpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float EnemySpeed
+    return:
+      type: System.Single
+    content.vb: Public EnemySpeed As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyHealth
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyHealth
+  id: EnemyHealth
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: EnemyHealth
+  nameWithType: HeadlessBenchmarkRequest.EnemyHealth
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.EnemyHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int EnemyHealth
+    return:
+      type: System.Int32
+    content.vb: Public EnemyHealth As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationStrength
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationStrength
+  id: SeparationStrength
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: SeparationStrength
+  nameWithType: HeadlessBenchmarkRequest.SeparationStrength
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float SeparationStrength
+    return:
+      type: System.Single
+    content.vb: Public SeparationStrength As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationRadiusScale
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationRadiusScale
+  id: SeparationRadiusScale
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: SeparationRadiusScale
+  nameWithType: HeadlessBenchmarkRequest.SeparationRadiusScale
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationRadiusScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float SeparationRadiusScale
+    return:
+      type: System.Single
+    content.vb: Public SeparationRadiusScale As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationMaxNeighbours
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationMaxNeighbours
+  id: SeparationMaxNeighbours
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: SeparationMaxNeighbours
+  nameWithType: HeadlessBenchmarkRequest.SeparationMaxNeighbours
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.SeparationMaxNeighbours
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int SeparationMaxNeighbours
+    return:
+      type: System.Int32
+    content.vb: Public SeparationMaxNeighbours As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileOrigin
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileOrigin
+  id: ProjectileOrigin
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileOrigin
+  nameWithType: HeadlessBenchmarkRequest.ProjectileOrigin
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileOrigin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public Vec2 ProjectileOrigin
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public ProjectileOrigin As Vec2
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRows
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRows
+  id: ProjectileRows
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRows
+  nameWithType: HeadlessBenchmarkRequest.ProjectileRows
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRows
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int ProjectileRows
+    return:
+      type: System.Int32
+    content.vb: Public ProjectileRows As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpacing
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpacing
+  id: ProjectileSpacing
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpacing
+  nameWithType: HeadlessBenchmarkRequest.ProjectileSpacing
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ProjectileSpacing
+    return:
+      type: System.Single
+    content.vb: Public ProjectileSpacing As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileTravel
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileTravel
+  id: ProjectileTravel
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileTravel
+  nameWithType: HeadlessBenchmarkRequest.ProjectileTravel
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileTravel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ProjectileTravel
+    return:
+      type: System.Single
+    content.vb: Public ProjectileTravel As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpeed
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpeed
+  id: ProjectileSpeed
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpeed
+  nameWithType: HeadlessBenchmarkRequest.ProjectileSpeed
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ProjectileSpeed
+    return:
+      type: System.Single
+    content.vb: Public ProjectileSpeed As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRadius
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRadius
+  id: ProjectileRadius
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRadius
+  nameWithType: HeadlessBenchmarkRequest.ProjectileRadius
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ProjectileRadius
+    return:
+      type: System.Single
+    content.vb: Public ProjectileRadius As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileDistance
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileDistance
+  id: ProjectileDistance
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: ProjectileDistance
+  nameWithType: HeadlessBenchmarkRequest.ProjectileDistance
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.ProjectileDistance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float ProjectileDistance
+    return:
+      type: System.Single
+    content.vb: Public ProjectileDistance As Single
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Spatial
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Spatial
+  id: Spatial
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: Spatial
+  nameWithType: HeadlessBenchmarkRequest.Spatial
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.Spatial
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Null uses WaveSimulation's default. Set LinearSpatialIndex for a repeatable reference baseline.
+  example: []
+  syntax:
+    content: public ISpatialIndex Spatial
+    return:
+      type: SurvivorsMaker.Simulation.ISpatialIndex
+    content.vb: Public Spatial As ISpatialIndex
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor
+  commentId: M:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkRequest
+  langs:
+  - csharp
+  - vb
+  name: HeadlessBenchmarkRequest()
+  nameWithType: HeadlessBenchmarkRequest.HeadlessBenchmarkRequest()
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.HeadlessBenchmarkRequest()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public HeadlessBenchmarkRequest()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor*
+  nameWithType.vb: HeadlessBenchmarkRequest.New()
+  fullName.vb: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ISpatialIndex
+  commentId: T:SurvivorsMaker.Simulation.ISpatialIndex
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISpatialIndex.html
+  name: ISpatialIndex
+  nameWithType: ISpatialIndex
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor*
+  commentId: Overload:SurvivorsMaker.Balance.HeadlessBenchmarkRequest.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.html#SurvivorsMaker_Balance_HeadlessBenchmarkRequest__ctor
+  name: HeadlessBenchmarkRequest
+  nameWithType: HeadlessBenchmarkRequest.HeadlessBenchmarkRequest
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.HeadlessBenchmarkRequest
+  nameWithType.vb: HeadlessBenchmarkRequest.New
+  fullName.vb: SurvivorsMaker.Balance.HeadlessBenchmarkRequest.New
+  name.vb: New

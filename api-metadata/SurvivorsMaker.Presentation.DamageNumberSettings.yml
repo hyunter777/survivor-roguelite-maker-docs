@@ -1,0 +1,1087 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings
+  commentId: T:SurvivorsMaker.Presentation.DamageNumberSettings
+  id: DamageNumberSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.DamageNumberSettings.#ctor
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Bounds
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Color
+  - SurvivorsMaker.Presentation.DamageNumberSettings.CritColor
+  - SurvivorsMaker.Presentation.DamageNumberSettings.CritScale
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Enabled
+  - SurvivorsMaker.Presentation.DamageNumberSettings.FadeStart
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Font
+  - SurvivorsMaker.Presentation.DamageNumberSettings.FontSize
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Lifetime
+  - SurvivorsMaker.Presentation.DamageNumberSettings.MaxActive
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Offset
+  - SurvivorsMaker.Presentation.DamageNumberSettings.OutlineColor
+  - SurvivorsMaker.Presentation.DamageNumberSettings.OutlineWidth
+  - SurvivorsMaker.Presentation.DamageNumberSettings.PlayerColor
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Prewarm
+  - SurvivorsMaker.Presentation.DamageNumberSettings.RiseSpeed
+  - SurvivorsMaker.Presentation.DamageNumberSettings.Shadow
+  - SurvivorsMaker.Presentation.DamageNumberSettings.ShadowColor
+  - SurvivorsMaker.Presentation.DamageNumberSettings.ShadowOffset
+  - SurvivorsMaker.Presentation.DamageNumberSettings.SideDrift
+  - SurvivorsMaker.Presentation.DamageNumberSettings.SortingOrder
+  - SurvivorsMaker.Presentation.DamageNumberSettings.StatusScale
+  langs:
+  - csharp
+  - vb
+  name: DamageNumberSettings
+  nameWithType: DamageNumberSettings
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Damage Number tuning; defaults are defined by the field initializers and can be overridden per game.
+  example: []
+  syntax:
+    content: public sealed class DamageNumberSettings
+    content.vb: Public NotInheritable Class DamageNumberSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Enabled
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Enabled
+  id: Enabled
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: DamageNumberSettings.Enabled
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Enabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enable these visual effects; off skips this presentation feature without changing gameplay.
+  example: []
+  syntax:
+    content: '[Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")]
+
+      public bool Enabled'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")>
+
+      Public Enabled As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable these visual effects; off skips this presentation feature without changing gameplay.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Font
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Font
+  id: Font
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Font
+  nameWithType: DamageNumberSettings.Font
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Font
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font asset; unassigned uses the available default font.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font asset; unassigned uses the available default font.")]
+
+      public TMP_FontAsset Font'
+    return:
+      type: TMPro.TMP_FontAsset
+    content.vb: '<Tooltip("TextMeshPro font asset; unassigned uses the available default font.")>
+
+      Public Font As TMP_FontAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font asset; unassigned uses the available default font.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Prewarm
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Prewarm
+  id: Prewarm
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Prewarm
+  nameWithType: DamageNumberSettings.Prewarm
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Prewarm
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.
+  example: []
+  syntax:
+    content: '[Tooltip("Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.")]
+
+      public int Prewarm'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.")>
+
+      Public Prewarm As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.MaxActive
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.MaxActive
+  id: MaxActive
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: MaxActive
+  nameWithType: DamageNumberSettings.MaxActive
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.MaxActive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Maximum simultaneous visual instances; nonnegative, 0 disables new instances.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum simultaneous visual instances; nonnegative, 0 disables new instances.")]
+
+      public int MaxActive'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Maximum simultaneous visual instances; nonnegative, 0 disables new instances.")>
+
+      Public MaxActive As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum simultaneous visual instances; nonnegative, 0 disables new instances.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Lifetime
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Lifetime
+  id: Lifetime
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Lifetime
+  nameWithType: DamageNumberSettings.Lifetime
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Lifetime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Lifetime in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Lifetime in seconds; nonnegative.")]
+
+      public float Lifetime'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Lifetime in seconds; nonnegative.")>
+
+      Public Lifetime As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lifetime in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.FontSize
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.FontSize
+  id: FontSize
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: FontSize
+  nameWithType: DamageNumberSettings.FontSize
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.FontSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font size for world-space damage numbers; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font size for world-space damage numbers; positive.")]
+
+      public float FontSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("TextMeshPro font size for world-space damage numbers; positive.")>
+
+      Public FontSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font size for world-space damage numbers; positive.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.CritScale
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.CritScale
+  id: CritScale
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: CritScale
+  nameWithType: DamageNumberSettings.CritScale
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.CritScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Damage-number scale multiplier for critical hits; 1 = ordinary size.
+  example: []
+  syntax:
+    content: '[Tooltip("Damage-number scale multiplier for critical hits; 1 = ordinary size.")]
+
+      public float CritScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Damage-number scale multiplier for critical hits; 1 = ordinary size.")>
+
+      Public CritScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Damage-number scale multiplier for critical hits; 1 = ordinary size.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.StatusScale
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.StatusScale
+  id: StatusScale
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: StatusScale
+  nameWithType: DamageNumberSettings.StatusScale
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.StatusScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Status damage (burn ticks) is drawn smaller, in the status colour.
+  example: []
+  syntax:
+    content: '[Tooltip("Damage-number scale multiplier for status ticks; 1 = ordinary size.")]
+
+      public float StatusScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Damage-number scale multiplier for status ticks; 1 = ordinary size.")>
+
+      Public StatusScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Damage-number scale multiplier for status ticks; 1 = ordinary size.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.OutlineWidth
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.OutlineWidth
+  id: OutlineWidth
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: OutlineWidth
+  nameWithType: DamageNumberSettings.OutlineWidth
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.OutlineWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: SDF outline (0–1 of the glyph's padding); keeps numbers readable over any background. 0 = off.
+  example: []
+  syntax:
+    content: '[Tooltip("SDF outline width fraction from 0 to 1; 0 = no outline.")]
+
+      [Range(0, 1)]
+
+      public float OutlineWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("SDF outline width fraction from 0 to 1; 0 = no outline.")>
+
+      <Range(0, 1)>
+
+      Public OutlineWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SDF outline width fraction from 0 to 1; 0 = no outline.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.OutlineColor
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.OutlineColor
+  id: OutlineColor
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: OutlineColor
+  nameWithType: DamageNumberSettings.OutlineColor
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.OutlineColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Outline Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Outline Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color OutlineColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Outline Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public OutlineColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Outline Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Shadow
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Shadow
+  id: Shadow
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Shadow
+  nameWithType: DamageNumberSettings.Shadow
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Shadow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Draw a shadow behind damage numbers; off omits the shadow.
+  example: []
+  syntax:
+    content: '[Tooltip("Draw a shadow behind damage numbers; off omits the shadow.")]
+
+      public bool Shadow'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Draw a shadow behind damage numbers; off omits the shadow.")>
+
+      Public Shadow As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Draw a shadow behind damage numbers; off omits the shadow.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.ShadowColor
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.ShadowColor
+  id: ShadowColor
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: ShadowColor
+  nameWithType: DamageNumberSettings.ShadowColor
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.ShadowColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ShadowColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ShadowColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.ShadowOffset
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.ShadowOffset
+  id: ShadowOffset
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: ShadowOffset
+  nameWithType: DamageNumberSettings.ShadowOffset
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.ShadowOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shadow Offset in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Shadow Offset in world units; use nonnegative sizes and signed offsets.")]
+
+      public Vector2 ShadowOffset'
+    return:
+      type: UnityEngine.Vector2
+    content.vb: '<Tooltip("Shadow Offset in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ShadowOffset As Vector2'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shadow Offset in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Color
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Color
+  id: Color
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: DamageNumberSettings.Color
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Color
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Color'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public Color As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.CritColor
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.CritColor
+  id: CritColor
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: CritColor
+  nameWithType: DamageNumberSettings.CritColor
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.CritColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Crit Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Crit Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color CritColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Crit Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public CritColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Crit Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.PlayerColor
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.PlayerColor
+  id: PlayerColor
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: PlayerColor
+  nameWithType: DamageNumberSettings.PlayerColor
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.PlayerColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Player Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Player Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color PlayerColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Player Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public PlayerColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Player Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Offset
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Offset
+  id: Offset
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: DamageNumberSettings.Offset
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Offset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Offset in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Offset in world units; use nonnegative sizes and signed offsets.")]
+
+      public Vector3 Offset'
+    return:
+      type: UnityEngine.Vector3
+    content.vb: '<Tooltip("Offset in world units; use nonnegative sizes and signed offsets.")>
+
+      Public Offset As Vector3'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Offset in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.RiseSpeed
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.RiseSpeed
+  id: RiseSpeed
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: RiseSpeed
+  nameWithType: DamageNumberSettings.RiseSpeed
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.RiseSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Rise Speed in world units per second; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Rise Speed in world units per second; nonnegative.")]
+
+      public float RiseSpeed'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Rise Speed in world units per second; nonnegative.")>
+
+      Public RiseSpeed As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Rise Speed in world units per second; nonnegative.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.SideDrift
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.SideDrift
+  id: SideDrift
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: SideDrift
+  nameWithType: DamageNumberSettings.SideDrift
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.SideDrift
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Side Drift in world units per second; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Side Drift in world units per second; nonnegative.")]
+
+      public float SideDrift'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Side Drift in world units per second; nonnegative.")>
+
+      Public SideDrift As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Side Drift in world units per second; nonnegative.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.FadeStart
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.FadeStart
+  id: FadeStart
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: FadeStart
+  nameWithType: DamageNumberSettings.FadeStart
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.FadeStart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Fraction of number lifetime before fading starts, from 0 to 1.
+  example: []
+  syntax:
+    content: '[Tooltip("Fraction of number lifetime before fading starts, from 0 to 1.")]
+
+      public float FadeStart'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Fraction of number lifetime before fading starts, from 0 to 1.")>
+
+      Public FadeStart As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fraction of number lifetime before fading starts, from 0 to 1.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.Bounds
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.Bounds
+  id: Bounds
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: DamageNumberSettings.Bounds
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.Bounds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: World-space text rectangle width and height; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("World-space text rectangle width and height; positive.")]
+
+      public Vector2 Bounds'
+    return:
+      type: UnityEngine.Vector2
+    content.vb: '<Tooltip("World-space text rectangle width and height; positive.")>
+
+      Public Bounds As Vector2'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: World-space text rectangle width and height; positive.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.SortingOrder
+  commentId: F:SurvivorsMaker.Presentation.DamageNumberSettings.SortingOrder
+  id: SortingOrder
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: SortingOrder
+  nameWithType: DamageNumberSettings.SortingOrder
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.SortingOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sprite sorting order; larger values draw in front within the sorting layer.
+  example: []
+  syntax:
+    content: '[Tooltip("Sprite sorting order; larger values draw in front within the sorting layer.")]
+
+      public int SortingOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Sprite sorting order; larger values draw in front within the sorting layer.")>
+
+      Public SortingOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sprite sorting order; larger values draw in front within the sorting layer.
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.DamageNumberSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.DamageNumberSettings
+  langs:
+  - csharp
+  - vb
+  name: DamageNumberSettings()
+  nameWithType: DamageNumberSettings.DamageNumberSettings()
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.DamageNumberSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public DamageNumberSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.DamageNumberSettings.#ctor*
+  nameWithType.vb: DamageNumberSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.DamageNumberSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TMPro.TMP_FontAsset
+  commentId: T:TMPro.TMP_FontAsset
+  parent: TMPro
+  isExternal: true
+  name: TMP_FontAsset
+  nameWithType: TMP_FontAsset
+  fullName: TMPro.TMP_FontAsset
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.DamageNumberSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DamageNumberSettings.html#SurvivorsMaker_Presentation_DamageNumberSettings__ctor
+  name: DamageNumberSettings
+  nameWithType: DamageNumberSettings.DamageNumberSettings
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings.DamageNumberSettings
+  nameWithType.vb: DamageNumberSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.DamageNumberSettings.New
+  name.vb: New

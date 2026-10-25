@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.MusicContext
+  commentId: T:SurvivorsMaker.Presentation.MusicContext
+  id: MusicContext
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.MusicContext.Arena
+  - SurvivorsMaker.Presentation.MusicContext.Boss
+  - SurvivorsMaker.Presentation.MusicContext.Field
+  - SurvivorsMaker.Presentation.MusicContext.Menu
+  - SurvivorsMaker.Presentation.MusicContext.None
+  - SurvivorsMaker.Presentation.MusicContext.Shop
+  langs:
+  - csharp
+  - vb
+  name: MusicContext
+  nameWithType: MusicContext
+  fullName: SurvivorsMaker.Presentation.MusicContext
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: What kind of music should play. Each maps to one track in the sound catalog.
+  example: []
+  syntax:
+    content: public enum MusicContext
+    content.vb: Public Enum MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.None
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.None
+  id: None
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MusicContext.None
+  fullName: SurvivorsMaker.Presentation.MusicContext.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.Menu
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.Menu
+  id: Menu
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: Menu
+  nameWithType: MusicContext.Menu
+  fullName: SurvivorsMaker.Presentation.MusicContext.Menu
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Menu = 1
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.Arena
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.Arena
+  id: Arena
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: MusicContext.Arena
+  fullName: SurvivorsMaker.Presentation.MusicContext.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arena-mode waves.
+  example: []
+  syntax:
+    content: Arena = 2
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.Field
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.Field
+  id: Field
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: Field
+  nameWithType: MusicContext.Field
+  fullName: SurvivorsMaker.Presentation.MusicContext.Field
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Field-mode waves.
+  example: []
+  syntax:
+    content: Field = 3
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.Shop
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.Shop
+  id: Shop
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: MusicContext.Shop
+  fullName: SurvivorsMaker.Presentation.MusicContext.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Between waves: shop and level-up choices.'
+  example: []
+  syntax:
+    content: Shop = 4
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+- uid: SurvivorsMaker.Presentation.MusicContext.Boss
+  commentId: F:SurvivorsMaker.Presentation.MusicContext.Boss
+  id: Boss
+  parent: SurvivorsMaker.Presentation.MusicContext
+  langs:
+  - csharp
+  - vb
+  name: Boss
+  nameWithType: MusicContext.Boss
+  fullName: SurvivorsMaker.Presentation.MusicContext.Boss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: While a boss is alive.
+  example: []
+  syntax:
+    content: Boss = 5
+    return:
+      type: SurvivorsMaker.Presentation.MusicContext
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.MusicContext
+  commentId: T:SurvivorsMaker.Presentation.MusicContext
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.MusicContext.html
+  name: MusicContext
+  nameWithType: MusicContext
+  fullName: SurvivorsMaker.Presentation.MusicContext

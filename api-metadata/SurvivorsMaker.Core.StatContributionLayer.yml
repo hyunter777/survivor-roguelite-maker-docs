@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatContributionLayer
+  commentId: T:SurvivorsMaker.Core.StatContributionLayer
+  id: StatContributionLayer
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatContributionLayer.Base
+  - SurvivorsMaker.Core.StatContributionLayer.Conversion
+  - SurvivorsMaker.Core.StatContributionLayer.Limit
+  - SurvivorsMaker.Core.StatContributionLayer.Linked
+  - SurvivorsMaker.Core.StatContributionLayer.Permanent
+  - SurvivorsMaker.Core.StatContributionLayer.Rounding
+  - SurvivorsMaker.Core.StatContributionLayer.Temporary
+  - SurvivorsMaker.Core.StatContributionLayer.Unattributed
+  langs:
+  - csharp
+  - vb
+  name: StatContributionLayer
+  nameWithType: StatContributionLayer
+  fullName: SurvivorsMaker.Core.StatContributionLayer
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: The evaluation stage of an explanation entry, independent of its input read layer.
+  example: []
+  syntax:
+    content: public enum StatContributionLayer
+    content.vb: Public Enum StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Base
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Base
+  id: Base
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Base
+  nameWithType: StatContributionLayer.Base
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Base
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Base = 0
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Permanent
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Permanent
+  id: Permanent
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Permanent
+  nameWithType: StatContributionLayer.Permanent
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Permanent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Permanent = 1
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Temporary
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Temporary
+  id: Temporary
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: StatContributionLayer.Temporary
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Temporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Temporary = 2
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Linked
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Linked
+  id: Linked
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Linked
+  nameWithType: StatContributionLayer.Linked
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Linked
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Linked = 3
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Limit
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Limit
+  id: Limit
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Limit
+  nameWithType: StatContributionLayer.Limit
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Limit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Limit = 4
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Conversion
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Conversion
+  id: Conversion
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Conversion
+  nameWithType: StatContributionLayer.Conversion
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Conversion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Conversion = 5
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Unattributed
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Unattributed
+  id: Unattributed
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Unattributed
+  nameWithType: StatContributionLayer.Unattributed
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Unattributed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Unattributed = 6
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionLayer.Rounding
+  commentId: F:SurvivorsMaker.Core.StatContributionLayer.Rounding
+  id: Rounding
+  parent: SurvivorsMaker.Core.StatContributionLayer
+  langs:
+  - csharp
+  - vb
+  name: Rounding
+  nameWithType: StatContributionLayer.Rounding
+  fullName: SurvivorsMaker.Core.StatContributionLayer.Rounding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Rounding = 7
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.StatContributionLayer
+  commentId: T:SurvivorsMaker.Core.StatContributionLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatContributionLayer.html
+  name: StatContributionLayer
+  nameWithType: StatContributionLayer
+  fullName: SurvivorsMaker.Core.StatContributionLayer

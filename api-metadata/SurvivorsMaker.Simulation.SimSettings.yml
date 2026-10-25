@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimSettings
+  commentId: T:SurvivorsMaker.Simulation.SimSettings
+  id: SimSettings
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimSettings.#ctor
+  - SurvivorsMaker.Simulation.SimSettings.Enemies
+  - SurvivorsMaker.Simulation.SimSettings.Knockback
+  - SurvivorsMaker.Simulation.SimSettings.Pickups
+  - SurvivorsMaker.Simulation.SimSettings.Player
+  - SurvivorsMaker.Simulation.SimSettings.Progression
+  - SurvivorsMaker.Simulation.SimSettings.RandomContractVersion
+  - SurvivorsMaker.Simulation.SimSettings.Spawning
+  - SurvivorsMaker.Simulation.SimSettings.Stats
+  - SurvivorsMaker.Simulation.SimSettings.TickSeconds
+  - SurvivorsMaker.Simulation.SimSettings.Ticks(System.Single,System.Int32)
+  - SurvivorsMaker.Simulation.SimSettings.TicksPerSecond
+  - SurvivorsMaker.Simulation.SimSettings.Weapons
+  langs:
+  - csharp
+  - vb
+  name: SimSettings
+  nameWithType: SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: All simulation settings. One instance can be shared by many runs; do not change it mid-run.
+  example: []
+  syntax:
+    content: public sealed class SimSettings
+    content.vb: Public NotInheritable Class SimSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimSettings.TicksPerSecond
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.TicksPerSecond
+  id: TicksPerSecond
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: TicksPerSecond
+  nameWithType: SimSettings.TicksPerSecond
+  fullName: SurvivorsMaker.Simulation.SimSettings.TicksPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int TicksPerSecond
+    return:
+      type: System.Int32
+    content.vb: Public TicksPerSecond As Integer
+- uid: SurvivorsMaker.Simulation.SimSettings.RandomContractVersion
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.RandomContractVersion
+  id: RandomContractVersion
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: RandomContractVersion
+  nameWithType: SimSettings.RandomContractVersion
+  fullName: SurvivorsMaker.Simulation.SimSettings.RandomContractVersion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Changes when the random sequence or its use changes, so old replays can be rejected.
+  example: []
+  syntax:
+    content: public const int RandomContractVersion = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const RandomContractVersion As Integer = 1
+- uid: SurvivorsMaker.Simulation.SimSettings.Stats
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Stats
+  id: Stats
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: SimSettings.Stats
+  fullName: SurvivorsMaker.Simulation.SimSettings.Stats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatBindings Stats
+    return:
+      type: SurvivorsMaker.Simulation.StatBindings
+    content.vb: Public Stats As StatBindings
+- uid: SurvivorsMaker.Simulation.SimSettings.Player
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Player
+  id: Player
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: SimSettings.Player
+  fullName: SurvivorsMaker.Simulation.SimSettings.Player
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public PlayerSettings Player
+    return:
+      type: SurvivorsMaker.Simulation.PlayerSettings
+    content.vb: Public Player As PlayerSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Enemies
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: SimSettings.Enemies
+  fullName: SurvivorsMaker.Simulation.SimSettings.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EnemySettings Enemies
+    return:
+      type: SurvivorsMaker.Simulation.EnemySettings
+    content.vb: Public Enemies As EnemySettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Spawning
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Spawning
+  id: Spawning
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Spawning
+  nameWithType: SimSettings.Spawning
+  fullName: SurvivorsMaker.Simulation.SimSettings.Spawning
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SpawnSettings Spawning
+    return:
+      type: SurvivorsMaker.Simulation.SpawnSettings
+    content.vb: Public Spawning As SpawnSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Weapons
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: SimSettings.Weapons
+  fullName: SurvivorsMaker.Simulation.SimSettings.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WeaponSettings Weapons
+    return:
+      type: SurvivorsMaker.Simulation.WeaponSettings
+    content.vb: Public Weapons As WeaponSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Knockback
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Knockback
+  id: Knockback
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Knockback
+  nameWithType: SimSettings.Knockback
+  fullName: SurvivorsMaker.Simulation.SimSettings.Knockback
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public KnockbackSettings Knockback
+    return:
+      type: SurvivorsMaker.Simulation.KnockbackSettings
+    content.vb: Public Knockback As KnockbackSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Pickups
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Pickups
+  id: Pickups
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Pickups
+  nameWithType: SimSettings.Pickups
+  fullName: SurvivorsMaker.Simulation.SimSettings.Pickups
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public PickupSettings Pickups
+    return:
+      type: SurvivorsMaker.Simulation.PickupSettings
+    content.vb: Public Pickups As PickupSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Progression
+  commentId: F:SurvivorsMaker.Simulation.SimSettings.Progression
+  id: Progression
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Progression
+  nameWithType: SimSettings.Progression
+  fullName: SurvivorsMaker.Simulation.SimSettings.Progression
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ProgressionSettings Progression
+    return:
+      type: SurvivorsMaker.Simulation.ProgressionSettings
+    content.vb: Public Progression As ProgressionSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Ticks(System.Single,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.SimSettings.Ticks(System.Single,System.Int32)
+  id: Ticks(System.Single,System.Int32)
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: Ticks(float, int)
+  nameWithType: SimSettings.Ticks(float, int)
+  fullName: SurvivorsMaker.Simulation.SimSettings.Ticks(float, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Ticks(float seconds, int minTicks = 1)
+    parameters:
+    - id: seconds
+      type: System.Single
+    - id: minTicks
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Ticks(seconds As Single, minTicks As Integer = 1) As Integer
+  overload: SurvivorsMaker.Simulation.SimSettings.Ticks*
+  nameWithType.vb: SimSettings.Ticks(Single, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.SimSettings.Ticks(Single, Integer)
+  name.vb: Ticks(Single, Integer)
+- uid: SurvivorsMaker.Simulation.SimSettings.#ctor
+  commentId: M:SurvivorsMaker.Simulation.SimSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: SimSettings()
+  nameWithType: SimSettings.SimSettings()
+  fullName: SurvivorsMaker.Simulation.SimSettings.SimSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.SimSettings.#ctor*
+  nameWithType.vb: SimSettings.New()
+  fullName.vb: SurvivorsMaker.Simulation.SimSettings.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Simulation.SimSettings.TickSeconds
+  commentId: P:SurvivorsMaker.Simulation.SimSettings.TickSeconds
+  id: TickSeconds
+  parent: SurvivorsMaker.Simulation.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: TickSeconds
+  nameWithType: SimSettings.TickSeconds
+  fullName: SurvivorsMaker.Simulation.SimSettings.TickSeconds
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float TickSeconds { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property TickSeconds As Single
+  overload: SurvivorsMaker.Simulation.SimSettings.TickSeconds*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.StatBindings
+  commentId: T:SurvivorsMaker.Simulation.StatBindings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatBindings.html
+  name: StatBindings
+  nameWithType: StatBindings
+  fullName: SurvivorsMaker.Simulation.StatBindings
+- uid: SurvivorsMaker.Simulation.PlayerSettings
+  commentId: T:SurvivorsMaker.Simulation.PlayerSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PlayerSettings.html
+  name: PlayerSettings
+  nameWithType: PlayerSettings
+  fullName: SurvivorsMaker.Simulation.PlayerSettings
+- uid: SurvivorsMaker.Simulation.EnemySettings
+  commentId: T:SurvivorsMaker.Simulation.EnemySettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EnemySettings.html
+  name: EnemySettings
+  nameWithType: EnemySettings
+  fullName: SurvivorsMaker.Simulation.EnemySettings
+- uid: SurvivorsMaker.Simulation.SpawnSettings
+  commentId: T:SurvivorsMaker.Simulation.SpawnSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpawnSettings.html
+  name: SpawnSettings
+  nameWithType: SpawnSettings
+  fullName: SurvivorsMaker.Simulation.SpawnSettings
+- uid: SurvivorsMaker.Simulation.WeaponSettings
+  commentId: T:SurvivorsMaker.Simulation.WeaponSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSettings.html
+  name: WeaponSettings
+  nameWithType: WeaponSettings
+  fullName: SurvivorsMaker.Simulation.WeaponSettings
+- uid: SurvivorsMaker.Simulation.KnockbackSettings
+  commentId: T:SurvivorsMaker.Simulation.KnockbackSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.KnockbackSettings.html
+  name: KnockbackSettings
+  nameWithType: KnockbackSettings
+  fullName: SurvivorsMaker.Simulation.KnockbackSettings
+- uid: SurvivorsMaker.Simulation.PickupSettings
+  commentId: T:SurvivorsMaker.Simulation.PickupSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupSettings.html
+  name: PickupSettings
+  nameWithType: PickupSettings
+  fullName: SurvivorsMaker.Simulation.PickupSettings
+- uid: SurvivorsMaker.Simulation.ProgressionSettings
+  commentId: T:SurvivorsMaker.Simulation.ProgressionSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ProgressionSettings.html
+  name: ProgressionSettings
+  nameWithType: ProgressionSettings
+  fullName: SurvivorsMaker.Simulation.ProgressionSettings
+- uid: SurvivorsMaker.Simulation.SimSettings.Ticks*
+  commentId: Overload:SurvivorsMaker.Simulation.SimSettings.Ticks
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html#SurvivorsMaker_Simulation_SimSettings_Ticks_System_Single_System_Int32_
+  name: Ticks
+  nameWithType: SimSettings.Ticks
+  fullName: SurvivorsMaker.Simulation.SimSettings.Ticks
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.SimSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SimSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html#SurvivorsMaker_Simulation_SimSettings__ctor
+  name: SimSettings
+  nameWithType: SimSettings.SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings.SimSettings
+  nameWithType.vb: SimSettings.New
+  fullName.vb: SurvivorsMaker.Simulation.SimSettings.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.SimSettings.TickSeconds*
+  commentId: Overload:SurvivorsMaker.Simulation.SimSettings.TickSeconds
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html#SurvivorsMaker_Simulation_SimSettings_TickSeconds
+  name: TickSeconds
+  nameWithType: SimSettings.TickSeconds
+  fullName: SurvivorsMaker.Simulation.SimSettings.TickSeconds

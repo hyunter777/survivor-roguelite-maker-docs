@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IShopRules
+  commentId: T:SurvivorsMaker.Run.IShopRules
+  id: IShopRules
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IShopRules.AddWeapon(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  - SurvivorsMaker.Run.IShopRules.Buy(SurvivorsMaker.Run.RunState,System.Int32)
+  - SurvivorsMaker.Run.IShopRules.CanAccept(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  - SurvivorsMaker.Run.IShopRules.Merge(SurvivorsMaker.Run.RunState,System.Int32)
+  - SurvivorsMaker.Run.IShopRules.Price(SurvivorsMaker.Run.RunState,System.Int32)
+  - SurvivorsMaker.Run.IShopRules.Recycle(SurvivorsMaker.Run.RunState,System.Int32)
+  - SurvivorsMaker.Run.IShopRules.RecycleRefund(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  - SurvivorsMaker.Run.IShopRules.Reroll(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IShopRules.RerollCost(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IShopRules.Restock(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IShopRules.ToggleLock(SurvivorsMaker.Run.RunState,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IShopRules
+  nameWithType: IShopRules
+  fullName: SurvivorsMaker.Run.IShopRules
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Shop offers, purchases, and weapon management.
+  example: []
+  syntax:
+    content: public interface IShopRules
+    content.vb: Public Interface IShopRules
+  derivedClasses:
+  - SurvivorsMaker.Run.ShopRules
+- uid: SurvivorsMaker.Run.IShopRules.Restock(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Restock(SurvivorsMaker.Run.RunState)
+  id: Restock(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Restock(RunState)
+  nameWithType: IShopRules.Restock(RunState)
+  fullName: SurvivorsMaker.Run.IShopRules.Restock(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Fills unlocked slots (resizing the slot list to Settings.Shop.Slots). Free.
+  example: []
+  syntax:
+    content: void Restock(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Sub Restock(run As RunState)
+  overload: SurvivorsMaker.Run.IShopRules.Restock*
+- uid: SurvivorsMaker.Run.IShopRules.Price(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Price(SurvivorsMaker.Run.RunState,System.Int32)
+  id: Price(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Price(RunState, int)
+  nameWithType: IShopRules.Price(RunState, int)
+  fullName: SurvivorsMaker.Run.IShopRules.Price(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: int Price(RunState run, int basePrice)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: basePrice
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Price(run As RunState, basePrice As Integer) As Integer
+  overload: SurvivorsMaker.Run.IShopRules.Price*
+  nameWithType.vb: IShopRules.Price(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.IShopRules.Price(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: Price(RunState, Integer)
+- uid: SurvivorsMaker.Run.IShopRules.RerollCost(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IShopRules.RerollCost(SurvivorsMaker.Run.RunState)
+  id: RerollCost(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: RerollCost(RunState)
+  nameWithType: IShopRules.RerollCost(RunState)
+  fullName: SurvivorsMaker.Run.IShopRules.RerollCost(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: int RerollCost(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: System.Int32
+    content.vb: Function RerollCost(run As RunState) As Integer
+  overload: SurvivorsMaker.Run.IShopRules.RerollCost*
+- uid: SurvivorsMaker.Run.IShopRules.RecycleRefund(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  commentId: M:SurvivorsMaker.Run.IShopRules.RecycleRefund(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  id: RecycleRefund(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: RecycleRefund(RunState, WeaponItemDef)
+  nameWithType: IShopRules.RecycleRefund(RunState, WeaponItemDef)
+  fullName: SurvivorsMaker.Run.IShopRules.RecycleRefund(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.WeaponItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: int RecycleRefund(RunState run, WeaponItemDef weapon)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weapon
+      type: SurvivorsMaker.Run.WeaponItemDef
+    return:
+      type: System.Int32
+    content.vb: Function RecycleRefund(run As RunState, weapon As WeaponItemDef) As Integer
+  overload: SurvivorsMaker.Run.IShopRules.RecycleRefund*
+- uid: SurvivorsMaker.Run.IShopRules.Reroll(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Reroll(SurvivorsMaker.Run.RunState)
+  id: Reroll(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Reroll(RunState)
+  nameWithType: IShopRules.Reroll(RunState)
+  fullName: SurvivorsMaker.Run.IShopRules.Reroll(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: RunResult Reroll(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function Reroll(run As RunState) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.Reroll*
+- uid: SurvivorsMaker.Run.IShopRules.ToggleLock(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IShopRules.ToggleLock(SurvivorsMaker.Run.RunState,System.Int32)
+  id: ToggleLock(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: ToggleLock(RunState, int)
+  nameWithType: IShopRules.ToggleLock(RunState, int)
+  fullName: SurvivorsMaker.Run.IShopRules.ToggleLock(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: RunResult ToggleLock(RunState run, int slot)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function ToggleLock(run As RunState, slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.ToggleLock*
+  nameWithType.vb: IShopRules.ToggleLock(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.IShopRules.ToggleLock(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: ToggleLock(RunState, Integer)
+- uid: SurvivorsMaker.Run.IShopRules.Buy(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Buy(SurvivorsMaker.Run.RunState,System.Int32)
+  id: Buy(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Buy(RunState, int)
+  nameWithType: IShopRules.Buy(RunState, int)
+  fullName: SurvivorsMaker.Run.IShopRules.Buy(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: RunResult Buy(RunState run, int slot)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function Buy(run As RunState, slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.Buy*
+  nameWithType.vb: IShopRules.Buy(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.IShopRules.Buy(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: Buy(RunState, Integer)
+- uid: SurvivorsMaker.Run.IShopRules.Merge(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Merge(SurvivorsMaker.Run.RunState,System.Int32)
+  id: Merge(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Merge(RunState, int)
+  nameWithType: IShopRules.Merge(RunState, int)
+  fullName: SurvivorsMaker.Run.IShopRules.Merge(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Merges the weapon at <code class="paramref">weaponIndex</code> with the first other copy into its next tier.
+  example: []
+  syntax:
+    content: RunResult Merge(RunState run, int weaponIndex)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weaponIndex
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function Merge(run As RunState, weaponIndex As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.Merge*
+  nameWithType.vb: IShopRules.Merge(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.IShopRules.Merge(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: Merge(RunState, Integer)
+- uid: SurvivorsMaker.Run.IShopRules.Recycle(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IShopRules.Recycle(SurvivorsMaker.Run.RunState,System.Int32)
+  id: Recycle(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: Recycle(RunState, int)
+  nameWithType: IShopRules.Recycle(RunState, int)
+  fullName: SurvivorsMaker.Run.IShopRules.Recycle(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: RunResult Recycle(RunState run, int weaponIndex)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weaponIndex
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function Recycle(run As RunState, weaponIndex As Integer) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.Recycle*
+  nameWithType.vb: IShopRules.Recycle(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.IShopRules.Recycle(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: Recycle(RunState, Integer)
+- uid: SurvivorsMaker.Run.IShopRules.CanAccept(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  commentId: M:SurvivorsMaker.Run.IShopRules.CanAccept(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  id: CanAccept(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: CanAccept(RunState, WeaponItemDef)
+  nameWithType: IShopRules.CanAccept(RunState, WeaponItemDef)
+  fullName: SurvivorsMaker.Run.IShopRules.CanAccept(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.WeaponItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: True if the weapon could be added now (free slot, or full slots with a merge partner).
+  example: []
+  syntax:
+    content: bool CanAccept(RunState run, WeaponItemDef weapon)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weapon
+      type: SurvivorsMaker.Run.WeaponItemDef
+    return:
+      type: System.Boolean
+    content.vb: Function CanAccept(run As RunState, weapon As WeaponItemDef) As Boolean
+  overload: SurvivorsMaker.Run.IShopRules.CanAccept*
+- uid: SurvivorsMaker.Run.IShopRules.AddWeapon(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  commentId: M:SurvivorsMaker.Run.IShopRules.AddWeapon(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  id: AddWeapon(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  parent: SurvivorsMaker.Run.IShopRules
+  langs:
+  - csharp
+  - vb
+  name: AddWeapon(RunState, WeaponItemDef)
+  nameWithType: IShopRules.AddWeapon(RunState, WeaponItemDef)
+  fullName: SurvivorsMaker.Run.IShopRules.AddWeapon(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.WeaponItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Adds a weapon following the slot/merge rules. Used by buying and field-mode choices.
+  example: []
+  syntax:
+    content: RunResult AddWeapon(RunState run, WeaponItemDef weapon)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weapon
+      type: SurvivorsMaker.Run.WeaponItemDef
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function AddWeapon(run As RunState, weapon As WeaponItemDef) As RunResult
+  overload: SurvivorsMaker.Run.IShopRules.AddWeapon*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IShopRules.Restock*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Restock
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Restock_SurvivorsMaker_Run_RunState_
+  name: Restock
+  nameWithType: IShopRules.Restock
+  fullName: SurvivorsMaker.Run.IShopRules.Restock
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.IShopRules.Price*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Price
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Price_SurvivorsMaker_Run_RunState_System_Int32_
+  name: Price
+  nameWithType: IShopRules.Price
+  fullName: SurvivorsMaker.Run.IShopRules.Price
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.IShopRules.RerollCost*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.RerollCost
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_RerollCost_SurvivorsMaker_Run_RunState_
+  name: RerollCost
+  nameWithType: IShopRules.RerollCost
+  fullName: SurvivorsMaker.Run.IShopRules.RerollCost
+- uid: SurvivorsMaker.Run.IShopRules.RecycleRefund*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.RecycleRefund
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_RecycleRefund_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_WeaponItemDef_
+  name: RecycleRefund
+  nameWithType: IShopRules.RecycleRefund
+  fullName: SurvivorsMaker.Run.IShopRules.RecycleRefund
+- uid: SurvivorsMaker.Run.WeaponItemDef
+  commentId: T:SurvivorsMaker.Run.WeaponItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponItemDef.html
+  name: WeaponItemDef
+  nameWithType: WeaponItemDef
+  fullName: SurvivorsMaker.Run.WeaponItemDef
+- uid: SurvivorsMaker.Run.IShopRules.Reroll*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Reroll
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Reroll_SurvivorsMaker_Run_RunState_
+  name: Reroll
+  nameWithType: IShopRules.Reroll
+  fullName: SurvivorsMaker.Run.IShopRules.Reroll
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.IShopRules.ToggleLock*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.ToggleLock
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_ToggleLock_SurvivorsMaker_Run_RunState_System_Int32_
+  name: ToggleLock
+  nameWithType: IShopRules.ToggleLock
+  fullName: SurvivorsMaker.Run.IShopRules.ToggleLock
+- uid: SurvivorsMaker.Run.IShopRules.Buy*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Buy
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Buy_SurvivorsMaker_Run_RunState_System_Int32_
+  name: Buy
+  nameWithType: IShopRules.Buy
+  fullName: SurvivorsMaker.Run.IShopRules.Buy
+- uid: SurvivorsMaker.Run.IShopRules.Merge*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Merge
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Merge_SurvivorsMaker_Run_RunState_System_Int32_
+  name: Merge
+  nameWithType: IShopRules.Merge
+  fullName: SurvivorsMaker.Run.IShopRules.Merge
+- uid: SurvivorsMaker.Run.IShopRules.Recycle*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.Recycle
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_Recycle_SurvivorsMaker_Run_RunState_System_Int32_
+  name: Recycle
+  nameWithType: IShopRules.Recycle
+  fullName: SurvivorsMaker.Run.IShopRules.Recycle
+- uid: SurvivorsMaker.Run.IShopRules.CanAccept*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.CanAccept
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_CanAccept_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_WeaponItemDef_
+  name: CanAccept
+  nameWithType: IShopRules.CanAccept
+  fullName: SurvivorsMaker.Run.IShopRules.CanAccept
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.IShopRules.AddWeapon*
+  commentId: Overload:SurvivorsMaker.Run.IShopRules.AddWeapon
+  isExternal: true
+  href: SurvivorsMaker.Run.IShopRules.html#SurvivorsMaker_Run_IShopRules_AddWeapon_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_WeaponItemDef_
+  name: AddWeapon
+  nameWithType: IShopRules.AddWeapon
+  fullName: SurvivorsMaker.Run.IShopRules.AddWeapon

@@ -1,0 +1,711 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ViewEntry
+  commentId: T:SurvivorsMaker.Presentation.ViewEntry
+  id: ViewEntry
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ViewEntry.#ctor
+  - SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale
+  - SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+  - SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+  - SurvivorsMaker.Presentation.ViewEntry.Icon
+  - SurvivorsMaker.Presentation.ViewEntry.Id
+  - SurvivorsMaker.Presentation.ViewEntry.Prefab
+  - SurvivorsMaker.Presentation.ViewEntry.ProjectilePrefab
+  - SurvivorsMaker.Presentation.ViewEntry.ProjectileScale
+  - SurvivorsMaker.Presentation.ViewEntry.ProjectileSprite
+  - SurvivorsMaker.Presentation.ViewEntry.ProjectileTint
+  - SurvivorsMaker.Presentation.ViewEntry.Scale
+  - SurvivorsMaker.Presentation.ViewEntry.Sprite
+  - SurvivorsMaker.Presentation.ViewEntry.Tint
+  langs:
+  - csharp
+  - vb
+  name: ViewEntry
+  nameWithType: ViewEntry
+  fullName: SurvivorsMaker.Presentation.ViewEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: How one definition id looks. Either a prefab, or a sprite the default view renders.
+  example: []
+  syntax:
+    content: public sealed class ViewEntry
+    content.vb: Public NotInheritable Class ViewEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.ViewEntry.Id
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Id
+  id: Id
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ViewEntry.Id
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Definition id: EnemyDef.Id, WeaponDef.Id, ItemDef.Id, CharacterDef.Id, or a pickup key.'
+  example: []
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Presentation.ViewEntry.Prefab
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Prefab
+  id: Prefab
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Prefab
+  nameWithType: ViewEntry.Prefab
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Prefab
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Optional prefab; may carry an <xref href="SurvivorsMaker.Presentation.ICharacterVisual" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public GameObject Prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Prefab As GameObject
+- uid: SurvivorsMaker.Presentation.ViewEntry.Sprite
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Sprite
+  id: Sprite
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Sprite
+  nameWithType: ViewEntry.Sprite
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Sprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite Sprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Sprite As Sprite
+- uid: SurvivorsMaker.Presentation.ViewEntry.Icon
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Icon
+  id: Icon
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Icon
+  nameWithType: ViewEntry.Icon
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Icon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Icon for UI (shop, level-up, inventory). Falls back to Sprite.
+  example: []
+  syntax:
+    content: public Sprite Icon
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Icon As Sprite
+- uid: SurvivorsMaker.Presentation.ViewEntry.Tint
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Tint
+  id: Tint
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Tint
+  nameWithType: ViewEntry.Tint
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Tint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Color Tint
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Tint As Color
+- uid: SurvivorsMaker.Presentation.ViewEntry.Scale
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.Scale
+  id: Scale
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: ViewEntry.Scale
+  fullName: SurvivorsMaker.Presentation.ViewEntry.Scale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float Scale
+    return:
+      type: System.Single
+    content.vb: Public Scale As Single
+- uid: SurvivorsMaker.Presentation.ViewEntry.ProjectilePrefab
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.ProjectilePrefab
+  id: ProjectilePrefab
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectilePrefab
+  nameWithType: ViewEntry.ProjectilePrefab
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ProjectilePrefab
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Header("Projectile (weapons)")]
+
+      [Tooltip("Optional bullet prefab for this weapon''s projectiles. Empty = Projectile Sprite, else the weapon''s own look.")]
+
+      public GameObject ProjectilePrefab'
+    return:
+      type: UnityEngine.GameObject
+    content.vb: '<Header("Projectile (weapons)")>
+
+      <Tooltip("Optional bullet prefab for this weapon''s projectiles. Empty = Projectile Sprite, else the weapon''s own look.")>
+
+      Public ProjectilePrefab As GameObject'
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Projectile (weapons)
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional bullet prefab for this weapon's projectiles. Empty = Projectile Sprite, else the weapon's own look.
+- uid: SurvivorsMaker.Presentation.ViewEntry.ProjectileSprite
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.ProjectileSprite
+  id: ProjectileSprite
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSprite
+  nameWithType: ViewEntry.ProjectileSprite
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ProjectileSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Optional bullet sprite for this weapon''s projectiles.")]
+
+      public Sprite ProjectileSprite'
+    return:
+      type: UnityEngine.Sprite
+    content.vb: '<Tooltip("Optional bullet sprite for this weapon''s projectiles.")>
+
+      Public ProjectileSprite As Sprite'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional bullet sprite for this weapon's projectiles.
+- uid: SurvivorsMaker.Presentation.ViewEntry.ProjectileTint
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.ProjectileTint
+  id: ProjectileTint
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileTint
+  nameWithType: ViewEntry.ProjectileTint
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ProjectileTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Bullet tint. Alpha 0 = use Tint.")]
+
+      public Color ProjectileTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Bullet tint. Alpha 0 = use Tint.")>
+
+      Public ProjectileTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Bullet tint. Alpha 0 = use Tint.
+- uid: SurvivorsMaker.Presentation.ViewEntry.ProjectileScale
+  commentId: F:SurvivorsMaker.Presentation.ViewEntry.ProjectileScale
+  id: ProjectileScale
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileScale
+  nameWithType: ViewEntry.ProjectileScale
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ProjectileScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Bullet scale. 0 = use Scale.")]
+
+      public float ProjectileScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Bullet scale. 0 = use Scale.")>
+
+      Public ProjectileScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Bullet scale. 0 = use Scale.
+- uid: SurvivorsMaker.Presentation.ViewEntry.#ctor
+  commentId: M:SurvivorsMaker.Presentation.ViewEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: ViewEntry()
+  nameWithType: ViewEntry.ViewEntry()
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ViewEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public ViewEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.ViewEntry.#ctor*
+  nameWithType.vb: ViewEntry.New()
+  fullName.vb: SurvivorsMaker.Presentation.ViewEntry.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+  commentId: P:SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+  id: HasProjectileVisual
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: HasProjectileVisual
+  nameWithType: ViewEntry.HasProjectileVisual
+  fullName: SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: True when projectiles of this id have a look of their own.
+  example: []
+  syntax:
+    content: public bool HasProjectileVisual { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasProjectileVisual As Boolean
+  overload: SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual*
+- uid: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+  commentId: P:SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+  id: EffectiveProjectileTint
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: EffectiveProjectileTint
+  nameWithType: ViewEntry.EffectiveProjectileTint
+  fullName: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Color EffectiveProjectileTint { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public ReadOnly Property EffectiveProjectileTint As Color
+  overload: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint*
+- uid: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale
+  commentId: P:SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale
+  id: EffectiveProjectileScale
+  parent: SurvivorsMaker.Presentation.ViewEntry
+  langs:
+  - csharp
+  - vb
+  name: EffectiveProjectileScale
+  nameWithType: ViewEntry.EffectiveProjectileScale
+  fullName: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float EffectiveProjectileScale { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property EffectiveProjectileScale As Single
+  overload: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.ICharacterVisual
+  commentId: T:SurvivorsMaker.Presentation.ICharacterVisual
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICharacterVisual.html
+  name: ICharacterVisual
+  nameWithType: ICharacterVisual
+  fullName: SurvivorsMaker.Presentation.ICharacterVisual
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.ViewEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.ViewEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewEntry.html#SurvivorsMaker_Presentation_ViewEntry__ctor
+  name: ViewEntry
+  nameWithType: ViewEntry.ViewEntry
+  fullName: SurvivorsMaker.Presentation.ViewEntry.ViewEntry
+  nameWithType.vb: ViewEntry.New
+  fullName.vb: SurvivorsMaker.Presentation.ViewEntry.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual*
+  commentId: Overload:SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewEntry.html#SurvivorsMaker_Presentation_ViewEntry_HasProjectileVisual
+  name: HasProjectileVisual
+  nameWithType: ViewEntry.HasProjectileVisual
+  fullName: SurvivorsMaker.Presentation.ViewEntry.HasProjectileVisual
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint*
+  commentId: Overload:SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewEntry.html#SurvivorsMaker_Presentation_ViewEntry_EffectiveProjectileTint
+  name: EffectiveProjectileTint
+  nameWithType: ViewEntry.EffectiveProjectileTint
+  fullName: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileTint
+- uid: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale*
+  commentId: Overload:SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewEntry.html#SurvivorsMaker_Presentation_ViewEntry_EffectiveProjectileScale
+  name: EffectiveProjectileScale
+  nameWithType: ViewEntry.EffectiveProjectileScale
+  fullName: SurvivorsMaker.Presentation.ViewEntry.EffectiveProjectileScale

@@ -1,0 +1,718 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.MakerMenus
+  commentId: T:SurvivorsMaker.Editor.MakerMenus
+  id: MakerMenus
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.MakerMenus.About
+  - SurvivorsMaker.Editor.MakerMenus.BalanceSimulator
+  - SurvivorsMaker.Editor.MakerMenus.BuildLab
+  - SurvivorsMaker.Editor.MakerMenus.BuildUiPrefabs
+  - SurvivorsMaker.Editor.MakerMenus.ContentBrowser
+  - SurvivorsMaker.Editor.MakerMenus.ContentTable
+  - SurvivorsMaker.Editor.MakerMenus.Create
+  - SurvivorsMaker.Editor.MakerMenus.CreateGameScene
+  - SurvivorsMaker.Editor.MakerMenus.HordePreview
+  - SurvivorsMaker.Editor.MakerMenus.NewGameProject
+  - SurvivorsMaker.Editor.MakerMenus.OfferOdds
+  - SurvivorsMaker.Editor.MakerMenus.Product
+  - SurvivorsMaker.Editor.MakerMenus.RunPacing
+  - SurvivorsMaker.Editor.MakerMenus.Templates
+  - SurvivorsMaker.Editor.MakerMenus.Tools
+  - SurvivorsMaker.Editor.MakerMenus.UtilityPriority
+  - SurvivorsMaker.Editor.MakerMenus.WaveEditor
+  - SurvivorsMaker.Editor.MakerMenus.WeaponLab
+  - SurvivorsMaker.Editor.MakerMenus.WindowPriority
+  - SurvivorsMaker.Editor.MakerMenus.WizardPriority
+  langs:
+  - csharp
+  - vb
+  name: MakerMenus
+  nameWithType: MakerMenus
+  fullName: SurvivorsMaker.Editor.MakerMenus
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Menu paths of the package's editor tools. The product name is shown here; code namespaces stay SurvivorsMaker.
+  example: []
+  syntax:
+    content: public static class MakerMenus
+    content.vb: Public Module MakerMenus
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.MakerMenus.Product
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.Product
+  id: Product
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: Product
+  nameWithType: MakerMenus.Product
+  fullName: SurvivorsMaker.Editor.MakerMenus.Product
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string Product = "Survivor Roguelite Maker"
+    return:
+      type: System.String
+    content.vb: Public Const Product As String = "Survivor Roguelite Maker"
+- uid: SurvivorsMaker.Editor.MakerMenus.Tools
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.Tools
+  id: Tools
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: Tools
+  nameWithType: MakerMenus.Tools
+  fullName: SurvivorsMaker.Editor.MakerMenus.Tools
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Tools menu root, e.g. "Tools/Survivor Roguelite Maker/Content Browser".
+  example: []
+  syntax:
+    content: public const string Tools = "Tools/Survivor Roguelite Maker/"
+    return:
+      type: System.String
+    content.vb: Public Const Tools As String = "Tools/Survivor Roguelite Maker/"
+- uid: SurvivorsMaker.Editor.MakerMenus.Create
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.Create
+  id: Create
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: Create
+  nameWithType: MakerMenus.Create
+  fullName: SurvivorsMaker.Editor.MakerMenus.Create
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Project window create menu root.
+  example: []
+  syntax:
+    content: public const string Create = "Assets/Create/Survivor Roguelite Maker/"
+    return:
+      type: System.String
+    content.vb: Public Const Create As String = "Assets/Create/Survivor Roguelite Maker/"
+- uid: SurvivorsMaker.Editor.MakerMenus.Templates
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.Templates
+  id: Templates
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: Templates
+  nameWithType: MakerMenus.Templates
+  fullName: SurvivorsMaker.Editor.MakerMenus.Templates
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string Templates = "Assets/Create/Survivor Roguelite Maker/Templates/"
+    return:
+      type: System.String
+    content.vb: Public Const Templates As String = "Assets/Create/Survivor Roguelite Maker/Templates/"
+- uid: SurvivorsMaker.Editor.MakerMenus.NewGameProject
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.NewGameProject
+  id: NewGameProject
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: NewGameProject
+  nameWithType: MakerMenus.NewGameProject
+  fullName: SurvivorsMaker.Editor.MakerMenus.NewGameProject
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string NewGameProject = "Tools/Survivor Roguelite Maker/New Game Project..."
+    return:
+      type: System.String
+    content.vb: Public Const NewGameProject As String = "Tools/Survivor Roguelite Maker/New Game Project..."
+- uid: SurvivorsMaker.Editor.MakerMenus.CreateGameScene
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.CreateGameScene
+  id: CreateGameScene
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: CreateGameScene
+  nameWithType: MakerMenus.CreateGameScene
+  fullName: SurvivorsMaker.Editor.MakerMenus.CreateGameScene
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string CreateGameScene = "Tools/Survivor Roguelite Maker/Create Game Scene..."
+    return:
+      type: System.String
+    content.vb: Public Const CreateGameScene As String = "Tools/Survivor Roguelite Maker/Create Game Scene..."
+- uid: SurvivorsMaker.Editor.MakerMenus.ContentBrowser
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.ContentBrowser
+  id: ContentBrowser
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: ContentBrowser
+  nameWithType: MakerMenus.ContentBrowser
+  fullName: SurvivorsMaker.Editor.MakerMenus.ContentBrowser
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string ContentBrowser = "Tools/Survivor Roguelite Maker/Content Browser"
+    return:
+      type: System.String
+    content.vb: Public Const ContentBrowser As String = "Tools/Survivor Roguelite Maker/Content Browser"
+- uid: SurvivorsMaker.Editor.MakerMenus.WaveEditor
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.WaveEditor
+  id: WaveEditor
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: WaveEditor
+  nameWithType: MakerMenus.WaveEditor
+  fullName: SurvivorsMaker.Editor.MakerMenus.WaveEditor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string WaveEditor = "Tools/Survivor Roguelite Maker/Wave Editor"
+    return:
+      type: System.String
+    content.vb: Public Const WaveEditor As String = "Tools/Survivor Roguelite Maker/Wave Editor"
+- uid: SurvivorsMaker.Editor.MakerMenus.BalanceSimulator
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.BalanceSimulator
+  id: BalanceSimulator
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: BalanceSimulator
+  nameWithType: MakerMenus.BalanceSimulator
+  fullName: SurvivorsMaker.Editor.MakerMenus.BalanceSimulator
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string BalanceSimulator = "Tools/Survivor Roguelite Maker/Balance Simulator"
+    return:
+      type: System.String
+    content.vb: Public Const BalanceSimulator As String = "Tools/Survivor Roguelite Maker/Balance Simulator"
+- uid: SurvivorsMaker.Editor.MakerMenus.RunPacing
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.RunPacing
+  id: RunPacing
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: RunPacing
+  nameWithType: MakerMenus.RunPacing
+  fullName: SurvivorsMaker.Editor.MakerMenus.RunPacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string RunPacing = "Tools/Survivor Roguelite Maker/Run Pacing"
+    return:
+      type: System.String
+    content.vb: Public Const RunPacing As String = "Tools/Survivor Roguelite Maker/Run Pacing"
+- uid: SurvivorsMaker.Editor.MakerMenus.BuildLab
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.BuildLab
+  id: BuildLab
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: BuildLab
+  nameWithType: MakerMenus.BuildLab
+  fullName: SurvivorsMaker.Editor.MakerMenus.BuildLab
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string BuildLab = "Tools/Survivor Roguelite Maker/Build Lab"
+    return:
+      type: System.String
+    content.vb: Public Const BuildLab As String = "Tools/Survivor Roguelite Maker/Build Lab"
+- uid: SurvivorsMaker.Editor.MakerMenus.HordePreview
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.HordePreview
+  id: HordePreview
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: HordePreview
+  nameWithType: MakerMenus.HordePreview
+  fullName: SurvivorsMaker.Editor.MakerMenus.HordePreview
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string HordePreview = "Tools/Survivor Roguelite Maker/Horde Preview"
+    return:
+      type: System.String
+    content.vb: Public Const HordePreview As String = "Tools/Survivor Roguelite Maker/Horde Preview"
+- uid: SurvivorsMaker.Editor.MakerMenus.WeaponLab
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.WeaponLab
+  id: WeaponLab
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: WeaponLab
+  nameWithType: MakerMenus.WeaponLab
+  fullName: SurvivorsMaker.Editor.MakerMenus.WeaponLab
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string WeaponLab = "Tools/Survivor Roguelite Maker/Weapon Lab"
+    return:
+      type: System.String
+    content.vb: Public Const WeaponLab As String = "Tools/Survivor Roguelite Maker/Weapon Lab"
+- uid: SurvivorsMaker.Editor.MakerMenus.OfferOdds
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.OfferOdds
+  id: OfferOdds
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: OfferOdds
+  nameWithType: MakerMenus.OfferOdds
+  fullName: SurvivorsMaker.Editor.MakerMenus.OfferOdds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string OfferOdds = "Tools/Survivor Roguelite Maker/Offer Odds"
+    return:
+      type: System.String
+    content.vb: Public Const OfferOdds As String = "Tools/Survivor Roguelite Maker/Offer Odds"
+- uid: SurvivorsMaker.Editor.MakerMenus.ContentTable
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.ContentTable
+  id: ContentTable
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: ContentTable
+  nameWithType: MakerMenus.ContentTable
+  fullName: SurvivorsMaker.Editor.MakerMenus.ContentTable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string ContentTable = "Tools/Survivor Roguelite Maker/Content Table"
+    return:
+      type: System.String
+    content.vb: Public Const ContentTable As String = "Tools/Survivor Roguelite Maker/Content Table"
+- uid: SurvivorsMaker.Editor.MakerMenus.BuildUiPrefabs
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.BuildUiPrefabs
+  id: BuildUiPrefabs
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: BuildUiPrefabs
+  nameWithType: MakerMenus.BuildUiPrefabs
+  fullName: SurvivorsMaker.Editor.MakerMenus.BuildUiPrefabs
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string BuildUiPrefabs = "Tools/Survivor Roguelite Maker/Build UI Prefabs"
+    return:
+      type: System.String
+    content.vb: Public Const BuildUiPrefabs As String = "Tools/Survivor Roguelite Maker/Build UI Prefabs"
+- uid: SurvivorsMaker.Editor.MakerMenus.About
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.About
+  id: About
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: About
+  nameWithType: MakerMenus.About
+  fullName: SurvivorsMaker.Editor.MakerMenus.About
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string About = "Tools/Survivor Roguelite Maker/About"
+    return:
+      type: System.String
+    content.vb: Public Const About As String = "Tools/Survivor Roguelite Maker/About"
+- uid: SurvivorsMaker.Editor.MakerMenus.WizardPriority
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.WizardPriority
+  id: WizardPriority
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: WizardPriority
+  nameWithType: MakerMenus.WizardPriority
+  fullName: SurvivorsMaker.Editor.MakerMenus.WizardPriority
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int WizardPriority = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const WizardPriority As Integer = 0
+- uid: SurvivorsMaker.Editor.MakerMenus.WindowPriority
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.WindowPriority
+  id: WindowPriority
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: WindowPriority
+  nameWithType: MakerMenus.WindowPriority
+  fullName: SurvivorsMaker.Editor.MakerMenus.WindowPriority
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int WindowPriority = 20
+    return:
+      type: System.Int32
+    content.vb: Public Const WindowPriority As Integer = 20
+- uid: SurvivorsMaker.Editor.MakerMenus.UtilityPriority
+  commentId: F:SurvivorsMaker.Editor.MakerMenus.UtilityPriority
+  id: UtilityPriority
+  parent: SurvivorsMaker.Editor.MakerMenus
+  langs:
+  - csharp
+  - vb
+  name: UtilityPriority
+  nameWithType: MakerMenus.UtilityPriority
+  fullName: SurvivorsMaker.Editor.MakerMenus.UtilityPriority
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int UtilityPriority = 40
+    return:
+      type: System.Int32
+    content.vb: Public Const UtilityPriority As Integer = 40
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,831 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  commentId: T:SurvivorsMaker.Presentation.JsonEnvelopeFile
+  id: JsonEnvelopeFile
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor(System.String,SurvivorsMaker.Run.SaveDomain)
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.CorruptSuffix
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete(System.Boolean)
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.IncompatibleSuffix
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.Read(SurvivorsMaker.Run.SaveMigrationRegistry)
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.TemporarySuffix
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.Write(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveMigrationRegistry)
+  - SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+  langs:
+  - csharp
+  - vb
+  name: JsonEnvelopeFile
+  nameWithType: JsonEnvelopeFile
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'One save domain (options, profile or run) in one JSON file, written as a <xref href="SurvivorsMaker.Run.SaveEnvelope"
+    data-throw-if-not-resolved="false"></xref> with
+
+    JsonUtility and read through <xref href="SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope%2cSurvivorsMaker.Run.SaveDomain)"
+    data-throw-if-not-resolved="false"></xref>.
+
+
+    <ul><li>Writes go to a temporary file that is read back and then swapped in with <xref href="System.IO.File.Replace(System.String%2cSystem.String%2cSystem.String)"
+    data-throw-if-not-resolved="false"></xref>
+
+    (a plain copy only where the platform has no replace).</li><li>A corrupt or incompatible file is moved aside (<code>*.corrupt</code>
+    / <code>*.incompatible</code>) and kept; the store then
+
+    starts from defaults.</li><li>A file from a newer schema, or one that cannot be read at all, is left untouched and the
+    store refuses to write
+
+    over it for the rest of the session.</li></ul>'
+  example: []
+  syntax:
+    content: public sealed class JsonEnvelopeFile
+    content.vb: Public NotInheritable Class JsonEnvelopeFile
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.TemporarySuffix
+  commentId: F:SurvivorsMaker.Presentation.JsonEnvelopeFile.TemporarySuffix
+  id: TemporarySuffix
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: TemporarySuffix
+  nameWithType: JsonEnvelopeFile.TemporarySuffix
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.TemporarySuffix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string TemporarySuffix = ".tmp"
+    return:
+      type: System.String
+    content.vb: Public Const TemporarySuffix As String = ".tmp"
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.CorruptSuffix
+  commentId: F:SurvivorsMaker.Presentation.JsonEnvelopeFile.CorruptSuffix
+  id: CorruptSuffix
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: CorruptSuffix
+  nameWithType: JsonEnvelopeFile.CorruptSuffix
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.CorruptSuffix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string CorruptSuffix = ".corrupt"
+    return:
+      type: System.String
+    content.vb: Public Const CorruptSuffix As String = ".corrupt"
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.IncompatibleSuffix
+  commentId: F:SurvivorsMaker.Presentation.JsonEnvelopeFile.IncompatibleSuffix
+  id: IncompatibleSuffix
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: IncompatibleSuffix
+  nameWithType: JsonEnvelopeFile.IncompatibleSuffix
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.IncompatibleSuffix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string IncompatibleSuffix = ".incompatible"
+    return:
+      type: System.String
+    content.vb: Public Const IncompatibleSuffix As String = ".incompatible"
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor(System.String,SurvivorsMaker.Run.SaveDomain)
+  commentId: M:SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor(System.String,SurvivorsMaker.Run.SaveDomain)
+  id: '#ctor(System.String,SurvivorsMaker.Run.SaveDomain)'
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: JsonEnvelopeFile(string, SaveDomain)
+  nameWithType: JsonEnvelopeFile.JsonEnvelopeFile(string, SaveDomain)
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.JsonEnvelopeFile(string, SurvivorsMaker.Run.SaveDomain)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public JsonEnvelopeFile(string path, SaveDomain domain)
+    parameters:
+    - id: path
+      type: System.String
+    - id: domain
+      type: SurvivorsMaker.Run.SaveDomain
+    content.vb: Public Sub New(path As String, domain As SaveDomain)
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor*
+  nameWithType.vb: JsonEnvelopeFile.New(String, SaveDomain)
+  fullName.vb: SurvivorsMaker.Presentation.JsonEnvelopeFile.New(String, SurvivorsMaker.Run.SaveDomain)
+  name.vb: New(String, SaveDomain)
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Read(SurvivorsMaker.Run.SaveMigrationRegistry)
+  commentId: M:SurvivorsMaker.Presentation.JsonEnvelopeFile.Read(SurvivorsMaker.Run.SaveMigrationRegistry)
+  id: Read(SurvivorsMaker.Run.SaveMigrationRegistry)
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: Read(SaveMigrationRegistry)
+  nameWithType: JsonEnvelopeFile.Read(SaveMigrationRegistry)
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Read(SurvivorsMaker.Run.SaveMigrationRegistry)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Reads, validates and migrates the file. Never throws for file or data problems.
+  example: []
+  syntax:
+    content: public SaveReadResult Read(SaveMigrationRegistry migrations)
+    parameters:
+    - id: migrations
+      type: SurvivorsMaker.Run.SaveMigrationRegistry
+    return:
+      type: SurvivorsMaker.Run.SaveReadResult
+    content.vb: Public Function Read(migrations As SaveMigrationRegistry) As SaveReadResult
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.Read*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Write(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveMigrationRegistry)
+  commentId: M:SurvivorsMaker.Presentation.JsonEnvelopeFile.Write(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveMigrationRegistry)
+  id: Write(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveMigrationRegistry)
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: Write(SaveEnvelope, SaveMigrationRegistry)
+  nameWithType: JsonEnvelopeFile.Write(SaveEnvelope, SaveMigrationRegistry)
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Write(SurvivorsMaker.Run.SaveEnvelope, SurvivorsMaker.Run.SaveMigrationRegistry)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Writes <code class="paramref">envelope</code> as the next generation. False when blocked or the write failed.
+  example: []
+  syntax:
+    content: public bool Write(SaveEnvelope envelope, SaveMigrationRegistry migrationsForFirstRead)
+    parameters:
+    - id: envelope
+      type: SurvivorsMaker.Run.SaveEnvelope
+    - id: migrationsForFirstRead
+      type: SurvivorsMaker.Run.SaveMigrationRegistry
+    return:
+      type: System.Boolean
+    content.vb: Public Function Write(envelope As SaveEnvelope, migrationsForFirstRead As SaveMigrationRegistry) As Boolean
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.Write*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete(System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete(System.Boolean)
+  id: Delete(System.Boolean)
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: Delete(bool)
+  nameWithType: JsonEnvelopeFile.Delete(bool)
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete(bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Removes the file (an empty run slot). Blocked files are kept unless <code class="paramref">force</code> (an explicit
+    reset).
+  example: []
+  syntax:
+    content: public bool Delete(bool force = false)
+    parameters:
+    - id: force
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function Delete(force As Boolean = False) As Boolean
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete*
+  nameWithType.vb: JsonEnvelopeFile.Delete(Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete(Boolean)
+  name.vb: Delete(Boolean)
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+  id: Path
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: JsonEnvelopeFile.Path
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Path As String
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.Path*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+  id: Domain
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: JsonEnvelopeFile.Domain
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public SaveDomain Domain { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.SaveDomain
+    content.vb: Public ReadOnly Property Domain As SaveDomain
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+  id: LastRead
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: LastRead
+  nameWithType: JsonEnvelopeFile.LastRead
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Result of the last read (Missing before the first one).
+  example: []
+  syntax:
+    content: public SaveReadResult LastRead { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.SaveReadResult
+    content.vb: Public ReadOnly Property LastRead As SaveReadResult
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+  id: WriteBlocked
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: WriteBlocked
+  nameWithType: JsonEnvelopeFile.WriteBlocked
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: True when the file on disk must be preserved as it is (newer schema, unreadable).
+  example: []
+  syntax:
+    content: public bool WriteBlocked { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property WriteBlocked As Boolean
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+  id: PreservedPath
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: PreservedPath
+  nameWithType: JsonEnvelopeFile.PreservedPath
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Where a corrupt or incompatible file was moved, or empty.
+  example: []
+  syntax:
+    content: public string PreservedPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PreservedPath As String
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath*
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead
+  commentId: P:SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead
+  id: HasRead
+  parent: SurvivorsMaker.Presentation.JsonEnvelopeFile
+  langs:
+  - csharp
+  - vb
+  name: HasRead
+  nameWithType: JsonEnvelopeFile.HasRead
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public bool HasRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasRead As Boolean
+  overload: SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead*
+references:
+- uid: SurvivorsMaker.Run.SaveEnvelope
+  commentId: T:SurvivorsMaker.Run.SaveEnvelope
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveEnvelope.html
+  name: SaveEnvelope
+  nameWithType: SaveEnvelope
+  fullName: SurvivorsMaker.Run.SaveEnvelope
+- uid: SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveDomain)
+  commentId: M:SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveDomain)
+  isExternal: true
+  name: Read(SaveEnvelope, SaveDomain)
+  nameWithType: SaveMigrationRegistry.Read(SaveEnvelope, SaveDomain)
+  fullName: SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope, SurvivorsMaker.Run.SaveDomain)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveDomain)
+    name: Read
+    isExternal: true
+  - name: (
+  - uid: SurvivorsMaker.Run.SaveEnvelope
+    name: SaveEnvelope
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.SaveDomain
+    name: SaveDomain
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.SaveMigrationRegistry.Read(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.SaveDomain)
+    name: Read
+    isExternal: true
+  - name: (
+  - uid: SurvivorsMaker.Run.SaveEnvelope
+    name: SaveEnvelope
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.SaveDomain
+    name: SaveDomain
+    isExternal: true
+  - name: )
+- uid: System.IO.File.Replace(System.String,System.String,System.String)
+  commentId: M:System.IO.File.Replace(System.String,System.String,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.file.replace#system-io-file-replace(system-string-system-string-system-string)
+  name: Replace(string, string, string)
+  nameWithType: File.Replace(string, string, string)
+  fullName: System.IO.File.Replace(string, string, string)
+  nameWithType.vb: File.Replace(String, String, String)
+  fullName.vb: System.IO.File.Replace(String, String, String)
+  name.vb: Replace(String, String, String)
+  spec.csharp:
+  - uid: System.IO.File.Replace(System.String,System.String,System.String)
+    name: Replace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.file.replace#system-io-file-replace(system-string-system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.IO.File.Replace(System.String,System.String,System.String)
+    name: Replace
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.file.replace#system-io-file-replace(system-string-system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile__ctor_System_String_SurvivorsMaker_Run_SaveDomain_
+  name: JsonEnvelopeFile
+  nameWithType: JsonEnvelopeFile.JsonEnvelopeFile
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.JsonEnvelopeFile
+  nameWithType.vb: JsonEnvelopeFile.New
+  fullName.vb: SurvivorsMaker.Presentation.JsonEnvelopeFile.New
+  name.vb: New
+- uid: SurvivorsMaker.Run.SaveDomain
+  commentId: T:SurvivorsMaker.Run.SaveDomain
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveDomain.html
+  name: SaveDomain
+  nameWithType: SaveDomain
+  fullName: SurvivorsMaker.Run.SaveDomain
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Read*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.Read
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_Read_SurvivorsMaker_Run_SaveMigrationRegistry_
+  name: Read
+  nameWithType: JsonEnvelopeFile.Read
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Read
+- uid: SurvivorsMaker.Run.SaveMigrationRegistry
+  commentId: T:SurvivorsMaker.Run.SaveMigrationRegistry
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveMigrationRegistry.html
+  name: SaveMigrationRegistry
+  nameWithType: SaveMigrationRegistry
+  fullName: SurvivorsMaker.Run.SaveMigrationRegistry
+- uid: SurvivorsMaker.Run.SaveReadResult
+  commentId: T:SurvivorsMaker.Run.SaveReadResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveReadResult.html
+  name: SaveReadResult
+  nameWithType: SaveReadResult
+  fullName: SurvivorsMaker.Run.SaveReadResult
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Write*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.Write
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_Write_SurvivorsMaker_Run_SaveEnvelope_SurvivorsMaker_Run_SaveMigrationRegistry_
+  name: Write
+  nameWithType: JsonEnvelopeFile.Write
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Write
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_Delete_System_Boolean_
+  name: Delete
+  nameWithType: JsonEnvelopeFile.Delete
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Delete
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Path*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_Path
+  name: Path
+  nameWithType: JsonEnvelopeFile.Path
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Path
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_Domain
+  name: Domain
+  nameWithType: JsonEnvelopeFile.Domain
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.Domain
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_LastRead
+  name: LastRead
+  nameWithType: JsonEnvelopeFile.LastRead
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.LastRead
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_WriteBlocked
+  name: WriteBlocked
+  nameWithType: JsonEnvelopeFile.WriteBlocked
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.WriteBlocked
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_PreservedPath
+  name: PreservedPath
+  nameWithType: JsonEnvelopeFile.PreservedPath
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.PreservedPath
+- uid: SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead*
+  commentId: Overload:SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead
+  isExternal: true
+  href: SurvivorsMaker.Presentation.JsonEnvelopeFile.html#SurvivorsMaker_Presentation_JsonEnvelopeFile_HasRead
+  name: HasRead
+  nameWithType: JsonEnvelopeFile.HasRead
+  fullName: SurvivorsMaker.Presentation.JsonEnvelopeFile.HasRead

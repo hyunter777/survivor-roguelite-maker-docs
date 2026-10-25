@@ -1,0 +1,712 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentTableCsv
+  commentId: T:SurvivorsMaker.Editor.ContentTableCsv
+  id: ContentTableCsv
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  - SurvivorsMaker.Editor.ContentTableCsv.Diff(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase},System.String)
+  - SurvivorsMaker.Editor.ContentTableCsv.Export(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase})
+  - SurvivorsMaker.Editor.ContentTableCsv.Parse(System.String)
+  - SurvivorsMaker.Editor.ContentTableCsv.Quote(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ContentTableCsv
+  nameWithType: ContentTableCsv
+  fullName: SurvivorsMaker.Editor.ContentTableCsv
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'CSV for the Content Table, made to round-trip through spreadsheets: header = field keys (titles are also
+
+    accepted on import), invariant numbers, RFC 4180 quoting, CRLF rows. Import matches rows by Id and previews
+
+    the changes; nothing is written until <xref href="SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)"
+    data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public static class ContentTableCsv
+    content.vb: Public Module ContentTableCsv
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Export(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase})
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Export(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase})
+  id: Export(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase})
+  parent: SurvivorsMaker.Editor.ContentTableCsv
+  langs:
+  - csharp
+  - vb
+  name: Export(ContentTableKind, IEnumerable<ContentAssetBase>)
+  nameWithType: ContentTableCsv.Export(ContentTableKind, IEnumerable<ContentAssetBase>)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Export(SurvivorsMaker.Editor.ContentTableKind, System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.ContentAssetBase>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Export(ContentTableKind kind, IEnumerable<ContentAssetBase> assets)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Editor.ContentTableKind
+    - id: assets
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase}
+    return:
+      type: System.String
+    content.vb: Public Shared Function Export(kind As ContentTableKind, assets As IEnumerable(Of ContentAssetBase)) As String
+  overload: SurvivorsMaker.Editor.ContentTableCsv.Export*
+  nameWithType.vb: ContentTableCsv.Export(ContentTableKind, IEnumerable(Of ContentAssetBase))
+  fullName.vb: SurvivorsMaker.Editor.ContentTableCsv.Export(SurvivorsMaker.Editor.ContentTableKind, System.Collections.Generic.IEnumerable(Of
+    SurvivorsMaker.Data.ContentAssetBase))
+  name.vb: Export(ContentTableKind, IEnumerable(Of ContentAssetBase))
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Quote(System.String)
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Quote(System.String)
+  id: Quote(System.String)
+  parent: SurvivorsMaker.Editor.ContentTableCsv
+  langs:
+  - csharp
+  - vb
+  name: Quote(string)
+  nameWithType: ContentTableCsv.Quote(string)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Quote(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Quote(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Quote(value As String) As String
+  overload: SurvivorsMaker.Editor.ContentTableCsv.Quote*
+  nameWithType.vb: ContentTableCsv.Quote(String)
+  fullName.vb: SurvivorsMaker.Editor.ContentTableCsv.Quote(String)
+  name.vb: Quote(String)
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Parse(System.String)
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Parse(System.String)
+  id: Parse(System.String)
+  parent: SurvivorsMaker.Editor.ContentTableCsv
+  langs:
+  - csharp
+  - vb
+  name: Parse(string)
+  nameWithType: ContentTableCsv.Parse(string)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Parse(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Parses CSV text (comma or, when the header has none, semicolon/tab separated) into rows of cells.
+  example: []
+  syntax:
+    content: public static List<string[]> Parse(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String[]}
+    content.vb: Public Shared Function Parse(text As String) As List(Of String())
+  overload: SurvivorsMaker.Editor.ContentTableCsv.Parse*
+  nameWithType.vb: ContentTableCsv.Parse(String)
+  fullName.vb: SurvivorsMaker.Editor.ContentTableCsv.Parse(String)
+  name.vb: Parse(String)
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Diff(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase},System.String)
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Diff(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase},System.String)
+  id: Diff(SurvivorsMaker.Editor.ContentTableKind,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase},System.String)
+  parent: SurvivorsMaker.Editor.ContentTableCsv
+  langs:
+  - csharp
+  - vb
+  name: Diff(ContentTableKind, IEnumerable<ContentAssetBase>, string)
+  nameWithType: ContentTableCsv.Diff(ContentTableKind, IEnumerable<ContentAssetBase>, string)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Diff(SurvivorsMaker.Editor.ContentTableKind, System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.ContentAssetBase>,
+    string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Compares CSV rows with the assets by Id. Only editable, known columns are compared.
+  example: []
+  syntax:
+    content: public static ContentTableImport Diff(ContentTableKind kind, IEnumerable<ContentAssetBase> assets, string csv)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Editor.ContentTableKind
+    - id: assets
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase}
+    - id: csv
+      type: System.String
+    return:
+      type: SurvivorsMaker.Editor.ContentTableImport
+    content.vb: Public Shared Function Diff(kind As ContentTableKind, assets As IEnumerable(Of ContentAssetBase), csv As String)
+      As ContentTableImport
+  overload: SurvivorsMaker.Editor.ContentTableCsv.Diff*
+  nameWithType.vb: ContentTableCsv.Diff(ContentTableKind, IEnumerable(Of ContentAssetBase), String)
+  fullName.vb: SurvivorsMaker.Editor.ContentTableCsv.Diff(SurvivorsMaker.Editor.ContentTableKind, System.Collections.Generic.IEnumerable(Of
+    SurvivorsMaker.Data.ContentAssetBase), String)
+  name.vb: Diff(ContentTableKind, IEnumerable(Of ContentAssetBase), String)
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  id: Apply(SurvivorsMaker.Editor.ContentTableImport)
+  parent: SurvivorsMaker.Editor.ContentTableCsv
+  langs:
+  - csharp
+  - vb
+  name: Apply(ContentTableImport)
+  nameWithType: ContentTableCsv.Apply(ContentTableImport)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Applies the previewed changes as one Undo step. Returns cells changed.
+  example: []
+  syntax:
+    content: public static int Apply(ContentTableImport import)
+    parameters:
+    - id: import
+      type: SurvivorsMaker.Editor.ContentTableImport
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Apply(import As ContentTableImport) As Integer
+  overload: SurvivorsMaker.Editor.ContentTableCsv.Apply*
+references:
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  commentId: M:SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Apply_SurvivorsMaker_Editor_ContentTableImport_
+  name: Apply(ContentTableImport)
+  nameWithType: ContentTableCsv.Apply(ContentTableImport)
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+    name: Apply
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Apply_SurvivorsMaker_Editor_ContentTableImport_
+  - name: (
+  - uid: SurvivorsMaker.Editor.ContentTableImport
+    name: ContentTableImport
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTableImport.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.ContentTableCsv.Apply(SurvivorsMaker.Editor.ContentTableImport)
+    name: Apply
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Apply_SurvivorsMaker_Editor_ContentTableImport_
+  - name: (
+  - uid: SurvivorsMaker.Editor.ContentTableImport
+    name: ContentTableImport
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTableImport.html
+  - name: )
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Export*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableCsv.Export
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Export_SurvivorsMaker_Editor_ContentTableKind_System_Collections_Generic_IEnumerable_SurvivorsMaker_Data_ContentAssetBase__
+  name: Export
+  nameWithType: ContentTableCsv.Export
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Export
+- uid: SurvivorsMaker.Editor.ContentTableKind
+  commentId: T:SurvivorsMaker.Editor.ContentTableKind
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableKind.html
+  name: ContentTableKind
+  nameWithType: ContentTableKind
+  fullName: SurvivorsMaker.Editor.ContentTableKind
+- uid: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase}
+  commentId: T:System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.ContentAssetBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ContentAssetBase>
+  nameWithType: IEnumerable<ContentAssetBase>
+  fullName: System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.ContentAssetBase>
+  nameWithType.vb: IEnumerable(Of ContentAssetBase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Data.ContentAssetBase)
+  name.vb: IEnumerable(Of ContentAssetBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SurvivorsMaker.Data.ContentAssetBase
+    name: ContentAssetBase
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.ContentAssetBase
+    name: ContentAssetBase
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Quote*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableCsv.Quote
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Quote_System_String_
+  name: Quote
+  nameWithType: ContentTableCsv.Quote
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Quote
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Parse*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableCsv.Parse
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Parse_System_String_
+  name: Parse
+  nameWithType: ContentTableCsv.Parse
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Parse
+- uid: System.Collections.Generic.List{System.String[]}
+  commentId: T:System.Collections.Generic.List{System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string[]>
+  nameWithType: List<string[]>
+  fullName: System.Collections.Generic.List<string[]>
+  nameWithType.vb: List(Of String())
+  fullName.vb: System.Collections.Generic.List(Of String())
+  name.vb: List(Of String())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Diff*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableCsv.Diff
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Diff_SurvivorsMaker_Editor_ContentTableKind_System_Collections_Generic_IEnumerable_SurvivorsMaker_Data_ContentAssetBase__System_String_
+  name: Diff
+  nameWithType: ContentTableCsv.Diff
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Diff
+- uid: SurvivorsMaker.Editor.ContentTableImport
+  commentId: T:SurvivorsMaker.Editor.ContentTableImport
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableImport.html
+  name: ContentTableImport
+  nameWithType: ContentTableImport
+  fullName: SurvivorsMaker.Editor.ContentTableImport
+- uid: SurvivorsMaker.Editor.ContentTableCsv.Apply*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTableCsv.Apply
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableCsv.html#SurvivorsMaker_Editor_ContentTableCsv_Apply_SurvivorsMaker_Editor_ContentTableImport_
+  name: Apply
+  nameWithType: ContentTableCsv.Apply
+  fullName: SurvivorsMaker.Editor.ContentTableCsv.Apply
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

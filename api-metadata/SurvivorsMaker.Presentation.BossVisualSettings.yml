@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.BossVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.BossVisualSettings
+  id: BossVisualSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.BossVisualSettings.#ctor
+  - SurvivorsMaker.Presentation.BossVisualSettings.BurstColor
+  - SurvivorsMaker.Presentation.BossVisualSettings.BurstRadius
+  - SurvivorsMaker.Presentation.BossVisualSettings.DefeatShake
+  - SurvivorsMaker.Presentation.BossVisualSettings.Enabled
+  - SurvivorsMaker.Presentation.BossVisualSettings.FlashColor
+  - SurvivorsMaker.Presentation.BossVisualSettings.FlashSeconds
+  - SurvivorsMaker.Presentation.BossVisualSettings.GlowColor
+  - SurvivorsMaker.Presentation.BossVisualSettings.GlowPulseFrequency
+  - SurvivorsMaker.Presentation.BossVisualSettings.GlowScale
+  - SurvivorsMaker.Presentation.BossVisualSettings.PhaseShake
+  - SurvivorsMaker.Presentation.BossVisualSettings.PunchScale
+  - SurvivorsMaker.Presentation.BossVisualSettings.PunchSeconds
+  - SurvivorsMaker.Presentation.BossVisualSettings.Scale
+  - SurvivorsMaker.Presentation.BossVisualSettings.ShadowColor
+  - SurvivorsMaker.Presentation.BossVisualSettings.ShadowSize
+  - SurvivorsMaker.Presentation.BossVisualSettings.SpawnShake
+  langs:
+  - csharp
+  - vb
+  name: BossVisualSettings
+  nameWithType: BossVisualSettings
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss Visual tuning; defaults are defined by the field initializers and can be overridden per game.
+  example: []
+  syntax:
+    content: public sealed class BossVisualSettings
+    content.vb: Public NotInheritable Class BossVisualSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.Enabled
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.Enabled
+  id: Enabled
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: BossVisualSettings.Enabled
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.Enabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enable these visual effects; off skips this presentation feature without changing gameplay.
+  example: []
+  syntax:
+    content: '[Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")]
+
+      public bool Enabled'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")>
+
+      Public Enabled As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable these visual effects; off skips this presentation feature without changing gameplay.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.Scale
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.Scale
+  id: Scale
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: BossVisualSettings.Scale
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.Scale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Visual scale on top of the catalog scale and the elite scale.
+  example: []
+  syntax:
+    content: '[Tooltip("Additional visual scale multiplier; 1 = unchanged. Does not change collision radii.")]
+
+      public float Scale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Additional visual scale multiplier; 1 = unchanged. Does not change collision radii.")>
+
+      Public Scale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Additional visual scale multiplier; 1 = unchanged. Does not change collision radii.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.ShadowColor
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.ShadowColor
+  id: ShadowColor
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: ShadowColor
+  nameWithType: BossVisualSettings.ShadowColor
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.ShadowColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ShadowColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ShadowColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shadow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.ShadowSize
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.ShadowSize
+  id: ShadowSize
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: ShadowSize
+  nameWithType: BossVisualSettings.ShadowSize
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.ShadowSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shadow size relative to the body sprite's width.
+  example: []
+  syntax:
+    content: '[Tooltip("Shadow width and height relative to body width; nonnegative scale factors.")]
+
+      public Vector2 ShadowSize'
+    return:
+      type: UnityEngine.Vector2
+    content.vb: '<Tooltip("Shadow width and height relative to body width; nonnegative scale factors.")>
+
+      Public ShadowSize As Vector2'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shadow width and height relative to body width; nonnegative scale factors.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.GlowColor
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.GlowColor
+  id: GlowColor
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: GlowColor
+  nameWithType: BossVisualSettings.GlowColor
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.GlowColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color GlowColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public GlowColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Glow Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.GlowScale
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.GlowScale
+  id: GlowScale
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: GlowScale
+  nameWithType: BossVisualSettings.GlowScale
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.GlowScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Glow size relative to body width; 1 = body width.
+  example: []
+  syntax:
+    content: '[Tooltip("Glow size relative to body width; 1 = body width.")]
+
+      public float GlowScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Glow size relative to body width; 1 = body width.")>
+
+      Public GlowScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Glow size relative to body width; 1 = body width.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.GlowPulseFrequency
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.GlowPulseFrequency
+  id: GlowPulseFrequency
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: GlowPulseFrequency
+  nameWithType: BossVisualSettings.GlowPulseFrequency
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.GlowPulseFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Glow Pulse Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Glow Pulse Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float GlowPulseFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Glow Pulse Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public GlowPulseFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Glow Pulse Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.FlashSeconds
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.FlashSeconds
+  id: FlashSeconds
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: FlashSeconds
+  nameWithType: BossVisualSettings.FlashSeconds
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.FlashSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Flash Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Flash Seconds in seconds; nonnegative.")]
+
+      public float FlashSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Flash Seconds in seconds; nonnegative.")>
+
+      Public FlashSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Flash Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.FlashColor
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.FlashColor
+  id: FlashColor
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: FlashColor
+  nameWithType: BossVisualSettings.FlashColor
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.FlashColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color FlashColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public FlashColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.PunchScale
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.PunchScale
+  id: PunchScale
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: PunchScale
+  nameWithType: BossVisualSettings.PunchScale
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.PunchScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Additional boss sprite scale during a hit punch; 0 = no punch.
+  example: []
+  syntax:
+    content: '[Tooltip("Additional boss sprite scale during a hit punch; 0 = no punch.")]
+
+      public float PunchScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Additional boss sprite scale during a hit punch; 0 = no punch.")>
+
+      Public PunchScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Additional boss sprite scale during a hit punch; 0 = no punch.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.PunchSeconds
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.PunchSeconds
+  id: PunchSeconds
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: PunchSeconds
+  nameWithType: BossVisualSettings.PunchSeconds
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.PunchSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Punch Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Punch Seconds in seconds; nonnegative.")]
+
+      public float PunchSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Punch Seconds in seconds; nonnegative.")>
+
+      Public PunchSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Punch Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.SpawnShake
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.SpawnShake
+  id: SpawnShake
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: SpawnShake
+  nameWithType: BossVisualSettings.SpawnShake
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.SpawnShake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Camera shake strength for boss spawn; 0 = none.
+  example: []
+  syntax:
+    content: '[Tooltip("Camera shake strength for boss spawn; 0 = none.")]
+
+      public float SpawnShake'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Camera shake strength for boss spawn; 0 = none.")>
+
+      Public SpawnShake As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Camera shake strength for boss spawn; 0 = none.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.PhaseShake
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.PhaseShake
+  id: PhaseShake
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: PhaseShake
+  nameWithType: BossVisualSettings.PhaseShake
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.PhaseShake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Camera shake strength for a boss phase change; 0 = none.
+  example: []
+  syntax:
+    content: '[Tooltip("Camera shake strength for a boss phase change; 0 = none.")]
+
+      public float PhaseShake'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Camera shake strength for a boss phase change; 0 = none.")>
+
+      Public PhaseShake As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Camera shake strength for a boss phase change; 0 = none.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.DefeatShake
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.DefeatShake
+  id: DefeatShake
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: DefeatShake
+  nameWithType: BossVisualSettings.DefeatShake
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.DefeatShake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Camera shake strength for boss defeat; 0 = none.
+  example: []
+  syntax:
+    content: '[Tooltip("Camera shake strength for boss defeat; 0 = none.")]
+
+      public float DefeatShake'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Camera shake strength for boss defeat; 0 = none.")>
+
+      Public DefeatShake As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Camera shake strength for boss defeat; 0 = none.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.BurstRadius
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.BurstRadius
+  id: BurstRadius
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BurstRadius
+  nameWithType: BossVisualSettings.BurstRadius
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.BurstRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burst Radius in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Burst Radius in world units; use nonnegative sizes and signed offsets.")]
+
+      public float BurstRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Burst Radius in world units; use nonnegative sizes and signed offsets.")>
+
+      Public BurstRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burst Radius in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.BurstColor
+  commentId: F:SurvivorsMaker.Presentation.BossVisualSettings.BurstColor
+  id: BurstColor
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BurstColor
+  nameWithType: BossVisualSettings.BurstColor
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.BurstColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burst Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Burst Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BurstColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Burst Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public BurstColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burst Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.BossVisualSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.BossVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: BossVisualSettings()
+  nameWithType: BossVisualSettings.BossVisualSettings()
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.BossVisualSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public BossVisualSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.BossVisualSettings.#ctor*
+  nameWithType.vb: BossVisualSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.BossVisualSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: SurvivorsMaker.Presentation.BossVisualSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.BossVisualSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.BossVisualSettings.html#SurvivorsMaker_Presentation_BossVisualSettings__ctor
+  name: BossVisualSettings
+  nameWithType: BossVisualSettings.BossVisualSettings
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings.BossVisualSettings
+  nameWithType.vb: BossVisualSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.BossVisualSettings.New
+  name.vb: New

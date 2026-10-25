@@ -1,0 +1,434 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.RunGainTracker
+  commentId: T:SurvivorsMaker.Presentation.RunGainTracker
+  id: RunGainTracker
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.RunGainTracker.#ctor
+  - SurvivorsMaker.Presentation.RunGainTracker.Observe(SurvivorsMaker.Run.RunState,System.Int32,SurvivorsMaker.Presentation.GainSource,SurvivorsMaker.Presentation.CombatLedger)
+  - SurvivorsMaker.Presentation.RunGainTracker.Reset(SurvivorsMaker.Run.RunState)
+  langs:
+  - csharp
+  - vb
+  name: RunGainTracker
+  nameWithType: RunGainTracker
+  fullName: SurvivorsMaker.Presentation.RunGainTracker
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Notices items and weapons added to a run between two observations (by definition reference and count, so
+
+    merges and recycles never count as gains) and writes them to a <xref href="SurvivorsMaker.Presentation.CombatLedger" data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public sealed class RunGainTracker
+    content.vb: Public NotInheritable Class RunGainTracker
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.RunGainTracker.Reset(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Presentation.RunGainTracker.Reset(SurvivorsMaker.Run.RunState)
+  id: Reset(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Presentation.RunGainTracker
+  langs:
+  - csharp
+  - vb
+  name: Reset(RunState)
+  nameWithType: RunGainTracker.Reset(RunState)
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.Reset(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Takes <code class="paramref">run</code> as the baseline without recording anything.
+  example: []
+  syntax:
+    content: public void Reset(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Sub Reset(run As RunState)
+  overload: SurvivorsMaker.Presentation.RunGainTracker.Reset*
+- uid: SurvivorsMaker.Presentation.RunGainTracker.Observe(SurvivorsMaker.Run.RunState,System.Int32,SurvivorsMaker.Presentation.GainSource,SurvivorsMaker.Presentation.CombatLedger)
+  commentId: M:SurvivorsMaker.Presentation.RunGainTracker.Observe(SurvivorsMaker.Run.RunState,System.Int32,SurvivorsMaker.Presentation.GainSource,SurvivorsMaker.Presentation.CombatLedger)
+  id: Observe(SurvivorsMaker.Run.RunState,System.Int32,SurvivorsMaker.Presentation.GainSource,SurvivorsMaker.Presentation.CombatLedger)
+  parent: SurvivorsMaker.Presentation.RunGainTracker
+  langs:
+  - csharp
+  - vb
+  name: Observe(RunState, int, GainSource, CombatLedger)
+  nameWithType: RunGainTracker.Observe(RunState, int, GainSource, CombatLedger)
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.Observe(SurvivorsMaker.Run.RunState, int, SurvivorsMaker.Presentation.GainSource,
+    SurvivorsMaker.Presentation.CombatLedger)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Records what was added since the last call; returns how many gains were recorded.
+  example: []
+  syntax:
+    content: public int Observe(RunState run, int wave, GainSource source, CombatLedger ledger)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: wave
+      type: System.Int32
+    - id: source
+      type: SurvivorsMaker.Presentation.GainSource
+    - id: ledger
+      type: SurvivorsMaker.Presentation.CombatLedger
+    return:
+      type: System.Int32
+    content.vb: Public Function Observe(run As RunState, wave As Integer, source As GainSource, ledger As CombatLedger) As
+      Integer
+  overload: SurvivorsMaker.Presentation.RunGainTracker.Observe*
+  nameWithType.vb: RunGainTracker.Observe(RunState, Integer, GainSource, CombatLedger)
+  fullName.vb: SurvivorsMaker.Presentation.RunGainTracker.Observe(SurvivorsMaker.Run.RunState, Integer, SurvivorsMaker.Presentation.GainSource,
+    SurvivorsMaker.Presentation.CombatLedger)
+  name.vb: Observe(RunState, Integer, GainSource, CombatLedger)
+- uid: SurvivorsMaker.Presentation.RunGainTracker.#ctor
+  commentId: M:SurvivorsMaker.Presentation.RunGainTracker.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.RunGainTracker
+  langs:
+  - csharp
+  - vb
+  name: RunGainTracker()
+  nameWithType: RunGainTracker.RunGainTracker()
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.RunGainTracker()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public RunGainTracker()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.RunGainTracker.#ctor*
+  nameWithType.vb: RunGainTracker.New()
+  fullName.vb: SurvivorsMaker.Presentation.RunGainTracker.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation.CombatLedger
+  commentId: T:SurvivorsMaker.Presentation.CombatLedger
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatLedger.html
+  name: CombatLedger
+  nameWithType: CombatLedger
+  fullName: SurvivorsMaker.Presentation.CombatLedger
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.RunGainTracker.Reset*
+  commentId: Overload:SurvivorsMaker.Presentation.RunGainTracker.Reset
+  isExternal: true
+  href: SurvivorsMaker.Presentation.RunGainTracker.html#SurvivorsMaker_Presentation_RunGainTracker_Reset_SurvivorsMaker_Run_RunState_
+  name: Reset
+  nameWithType: RunGainTracker.Reset
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.Reset
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.RunGainTracker.Observe*
+  commentId: Overload:SurvivorsMaker.Presentation.RunGainTracker.Observe
+  isExternal: true
+  href: SurvivorsMaker.Presentation.RunGainTracker.html#SurvivorsMaker_Presentation_RunGainTracker_Observe_SurvivorsMaker_Run_RunState_System_Int32_SurvivorsMaker_Presentation_GainSource_SurvivorsMaker_Presentation_CombatLedger_
+  name: Observe
+  nameWithType: RunGainTracker.Observe
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.Observe
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.GainSource
+  commentId: T:SurvivorsMaker.Presentation.GainSource
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.GainSource.html
+  name: GainSource
+  nameWithType: GainSource
+  fullName: SurvivorsMaker.Presentation.GainSource
+- uid: SurvivorsMaker.Presentation.RunGainTracker.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.RunGainTracker.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.RunGainTracker.html#SurvivorsMaker_Presentation_RunGainTracker__ctor
+  name: RunGainTracker
+  nameWithType: RunGainTracker.RunGainTracker
+  fullName: SurvivorsMaker.Presentation.RunGainTracker.RunGainTracker
+  nameWithType.vb: RunGainTracker.New
+  fullName.vb: SurvivorsMaker.Presentation.RunGainTracker.New
+  name.vb: New

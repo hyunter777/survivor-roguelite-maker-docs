@@ -1,0 +1,1241 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings
+  commentId: T:SurvivorsMaker.Presentation.CombatEffectSettings
+  id: CombatEffectSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.CombatEffectSettings.#ctor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.BurstSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreWidth
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainJitter
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainRejitterSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainSegments
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ChainWidth
+  - SurvivorsMaker.Presentation.CombatEffectSettings.Enabled
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionRingColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionShake
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSize
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSpeed
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparks
+  - SurvivorsMaker.Presentation.CombatEffectSettings.HordeBurstRadius
+  - SurvivorsMaker.Presentation.CombatEffectSettings.HordeColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.ImpactSize
+  - SurvivorsMaker.Presentation.CombatEffectSettings.MaxActive
+  - SurvivorsMaker.Presentation.CombatEffectSettings.MaxChains
+  - SurvivorsMaker.Presentation.CombatEffectSettings.Prewarm
+  - SurvivorsMaker.Presentation.CombatEffectSettings.SortingOrder
+  - SurvivorsMaker.Presentation.CombatEffectSettings.SparkleColor
+  - SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSeconds
+  - SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSize
+  langs:
+  - csharp
+  - vb
+  name: CombatEffectSettings
+  nameWithType: CombatEffectSettings
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Pooled one-shot effects: explosions, chain lightning, sparkles and ring bursts.'
+  example: []
+  syntax:
+    content: public sealed class CombatEffectSettings
+    content.vb: Public NotInheritable Class CombatEffectSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.Enabled
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.Enabled
+  id: Enabled
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: CombatEffectSettings.Enabled
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.Enabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enable these visual effects; off skips this presentation feature without changing gameplay.
+  example: []
+  syntax:
+    content: '[Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")]
+
+      public bool Enabled'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Enable these visual effects; off skips this presentation feature without changing gameplay.")>
+
+      Public Enabled As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable these visual effects; off skips this presentation feature without changing gameplay.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.Prewarm
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.Prewarm
+  id: Prewarm
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: Prewarm
+  nameWithType: CombatEffectSettings.Prewarm
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.Prewarm
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.
+  example: []
+  syntax:
+    content: '[Tooltip("Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.")]
+
+      public int Prewarm'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.")>
+
+      Public Prewarm As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Objects created before use to reduce allocations; nonnegative, 0 = no prewarming.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.MaxActive
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.MaxActive
+  id: MaxActive
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: MaxActive
+  nameWithType: CombatEffectSettings.MaxActive
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.MaxActive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Maximum simultaneous visual instances; nonnegative, 0 disables new instances.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum simultaneous visual instances; nonnegative, 0 disables new instances.")]
+
+      public int MaxActive'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Maximum simultaneous visual instances; nonnegative, 0 disables new instances.")>
+
+      Public MaxActive As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum simultaneous visual instances; nonnegative, 0 disables new instances.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.SortingOrder
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.SortingOrder
+  id: SortingOrder
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: SortingOrder
+  nameWithType: CombatEffectSettings.SortingOrder
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.SortingOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sprite sorting order; larger values draw in front within the sorting layer.
+  example: []
+  syntax:
+    content: '[Tooltip("Sprite sorting order; larger values draw in front within the sorting layer.")]
+
+      public int SortingOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Sprite sorting order; larger values draw in front within the sorting layer.")>
+
+      Public SortingOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sprite sorting order; larger values draw in front within the sorting layer.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSeconds
+  id: ExplosionSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionSeconds
+  nameWithType: CombatEffectSettings.ExplosionSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Seconds in seconds; nonnegative.")]
+
+      public float ExplosionSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Explosion Seconds in seconds; nonnegative.")>
+
+      Public ExplosionSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionRingColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionRingColor
+  id: ExplosionRingColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionRingColor
+  nameWithType: CombatEffectSettings.ExplosionRingColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionRingColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ExplosionRingColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Explosion Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ExplosionRingColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Ring Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashColor
+  id: ExplosionFlashColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionFlashColor
+  nameWithType: CombatEffectSettings.ExplosionFlashColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ExplosionFlashColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Explosion Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ExplosionFlashColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Flash Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashSeconds
+  id: ExplosionFlashSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionFlashSeconds
+  nameWithType: CombatEffectSettings.ExplosionFlashSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionFlashSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Flash Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Flash Seconds in seconds; nonnegative.")]
+
+      public float ExplosionFlashSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Explosion Flash Seconds in seconds; nonnegative.")>
+
+      Public ExplosionFlashSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Flash Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparks
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparks
+  id: ExplosionSparks
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionSparks
+  nameWithType: CombatEffectSettings.ExplosionSparks
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Spark count per explosion; nonnegative, 0 = no sparks.
+  example: []
+  syntax:
+    content: '[Tooltip("Spark count per explosion; nonnegative, 0 = no sparks.")]
+
+      public int ExplosionSparks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Spark count per explosion; nonnegative, 0 = no sparks.")>
+
+      Public ExplosionSparks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Spark count per explosion; nonnegative, 0 = no sparks.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSpeed
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSpeed
+  id: ExplosionSparkSpeed
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionSparkSpeed
+  nameWithType: CombatEffectSettings.ExplosionSparkSpeed
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Spark Speed in world units per second; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Spark Speed in world units per second; nonnegative.")]
+
+      public float ExplosionSparkSpeed'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Explosion Spark Speed in world units per second; nonnegative.")>
+
+      Public ExplosionSparkSpeed As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Spark Speed in world units per second; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSize
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSize
+  id: ExplosionSparkSize
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionSparkSize
+  nameWithType: CombatEffectSettings.ExplosionSparkSize
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionSparkSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Explosion Spark Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Explosion Spark Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float ExplosionSparkSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Explosion Spark Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ExplosionSparkSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion Spark Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionShake
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionShake
+  id: ExplosionShake
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ExplosionShake
+  nameWithType: CombatEffectSettings.ExplosionShake
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ExplosionShake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Camera shake strength per explosion; 0 = none.
+  example: []
+  syntax:
+    content: '[Tooltip("Camera shake strength per explosion; 0 = none.")]
+
+      public float ExplosionShake'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Camera shake strength per explosion; 0 = none.")>
+
+      Public ExplosionShake As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Camera shake strength per explosion; 0 = none.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainSeconds
+  id: ChainSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainSeconds
+  nameWithType: CombatEffectSettings.ChainSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Seconds in seconds; nonnegative.")]
+
+      public float ChainSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Chain Seconds in seconds; nonnegative.")>
+
+      Public ChainSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainWidth
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainWidth
+  id: ChainWidth
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainWidth
+  nameWithType: CombatEffectSettings.ChainWidth
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Width in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Width in world units; use nonnegative sizes and signed offsets.")]
+
+      public float ChainWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Chain Width in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ChainWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Width in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreWidth
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreWidth
+  id: ChainCoreWidth
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainCoreWidth
+  nameWithType: CombatEffectSettings.ChainCoreWidth
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Core Width in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Core Width in world units; use nonnegative sizes and signed offsets.")]
+
+      public float ChainCoreWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Chain Core Width in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ChainCoreWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Core Width in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainSegments
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainSegments
+  id: ChainSegments
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainSegments
+  nameWithType: CombatEffectSettings.ChainSegments
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainSegments
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Lightning line segment count; larger values add detail.
+  example: []
+  syntax:
+    content: '[Tooltip("Lightning line segment count; larger values add detail.")]
+
+      public int ChainSegments'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Lightning line segment count; larger values add detail.")>
+
+      Public ChainSegments As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lightning line segment count; larger values add detail.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainJitter
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainJitter
+  id: ChainJitter
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainJitter
+  nameWithType: CombatEffectSettings.ChainJitter
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainJitter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Jitter in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Jitter in world units; use nonnegative sizes and signed offsets.")]
+
+      public float ChainJitter'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Chain Jitter in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ChainJitter As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Jitter in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainRejitterSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainRejitterSeconds
+  id: ChainRejitterSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainRejitterSeconds
+  nameWithType: CombatEffectSettings.ChainRejitterSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainRejitterSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Rejitter Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Rejitter Seconds in seconds; nonnegative.")]
+
+      public float ChainRejitterSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Chain Rejitter Seconds in seconds; nonnegative.")>
+
+      Public ChainRejitterSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Rejitter Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainColor
+  id: ChainColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainColor
+  nameWithType: CombatEffectSettings.ChainColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ChainColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Chain Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ChainColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreColor
+  id: ChainCoreColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ChainCoreColor
+  nameWithType: CombatEffectSettings.ChainCoreColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ChainCoreColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Chain Core Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Chain Core Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color ChainCoreColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Chain Core Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public ChainCoreColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chain Core Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.MaxChains
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.MaxChains
+  id: MaxChains
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: MaxChains
+  nameWithType: CombatEffectSettings.MaxChains
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.MaxChains
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Maximum simultaneous lightning chains; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum simultaneous lightning chains; nonnegative.")]
+
+      public int MaxChains'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Maximum simultaneous lightning chains; nonnegative.")>
+
+      Public MaxChains As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum simultaneous lightning chains; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.ImpactSize
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.ImpactSize
+  id: ImpactSize
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: ImpactSize
+  nameWithType: CombatEffectSettings.ImpactSize
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.ImpactSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Impact Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Impact Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float ImpactSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Impact Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public ImpactSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Impact Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSeconds
+  id: SparkleSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: SparkleSeconds
+  nameWithType: CombatEffectSettings.SparkleSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sparkle Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Sparkle Seconds in seconds; nonnegative.")]
+
+      public float SparkleSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Sparkle Seconds in seconds; nonnegative.")>
+
+      Public SparkleSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sparkle Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSize
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSize
+  id: SparkleSize
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: SparkleSize
+  nameWithType: CombatEffectSettings.SparkleSize
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sparkle Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Sparkle Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float SparkleSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Sparkle Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public SparkleSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sparkle Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.SparkleColor
+  id: SparkleColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: SparkleColor
+  nameWithType: CombatEffectSettings.SparkleColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.SparkleColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sparkle Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Sparkle Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color SparkleColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Sparkle Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public SparkleColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sparkle Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.BurstSeconds
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.BurstSeconds
+  id: BurstSeconds
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: BurstSeconds
+  nameWithType: CombatEffectSettings.BurstSeconds
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.BurstSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Burst Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Burst Seconds in seconds; nonnegative.")]
+
+      public float BurstSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Burst Seconds in seconds; nonnegative.")>
+
+      Public BurstSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Burst Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.HordeColor
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.HordeColor
+  id: HordeColor
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: HordeColor
+  nameWithType: CombatEffectSettings.HordeColor
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.HordeColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Horde Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Horde Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color HordeColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Horde Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public HordeColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Horde Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.HordeBurstRadius
+  commentId: F:SurvivorsMaker.Presentation.CombatEffectSettings.HordeBurstRadius
+  id: HordeBurstRadius
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: HordeBurstRadius
+  nameWithType: CombatEffectSettings.HordeBurstRadius
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.HordeBurstRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Horde Burst Radius in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Horde Burst Radius in world units; use nonnegative sizes and signed offsets.")]
+
+      public float HordeBurstRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Horde Burst Radius in world units; use nonnegative sizes and signed offsets.")>
+
+      Public HordeBurstRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Horde Burst Radius in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.CombatEffectSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.CombatEffectSettings
+  langs:
+  - csharp
+  - vb
+  name: CombatEffectSettings()
+  nameWithType: CombatEffectSettings.CombatEffectSettings()
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.CombatEffectSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public CombatEffectSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.CombatEffectSettings.#ctor*
+  nameWithType.vb: CombatEffectSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.CombatEffectSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.CombatEffectSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatEffectSettings.html#SurvivorsMaker_Presentation_CombatEffectSettings__ctor
+  name: CombatEffectSettings
+  nameWithType: CombatEffectSettings.CombatEffectSettings
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings.CombatEffectSettings
+  nameWithType.vb: CombatEffectSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.CombatEffectSettings.New
+  name.vb: New

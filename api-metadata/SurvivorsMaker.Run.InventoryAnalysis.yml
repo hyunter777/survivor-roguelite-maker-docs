@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.InventoryAnalysis
+  commentId: T:SurvivorsMaker.Run.InventoryAnalysis
+  id: InventoryAnalysis
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild)
+  - SurvivorsMaker.Run.InventoryAnalysis.ExplainStat(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild,System.String)
+  - SurvivorsMaker.Run.InventoryAnalysis.SourceKey(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.AppliedEffect)
+  langs:
+  - csharp
+  - vb
+  name: InventoryAnalysis
+  nameWithType: InventoryAnalysis
+  fullName: SurvivorsMaker.Run.InventoryAnalysis
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: On-demand Build Lab inspection; no work is added to run or simulation ticks.
+  example: []
+  syntax:
+    content: public static class InventoryAnalysis
+    content.vb: Public Module InventoryAnalysis
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.InventoryAnalysis.SourceKey(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.AppliedEffect)
+  commentId: M:SurvivorsMaker.Run.InventoryAnalysis.SourceKey(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.AppliedEffect)
+  id: SourceKey(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.AppliedEffect)
+  parent: SurvivorsMaker.Run.InventoryAnalysis
+  langs:
+  - csharp
+  - vb
+  name: SourceKey(RunState, AppliedEffect)
+  nameWithType: InventoryAnalysis.SourceKey(RunState, AppliedEffect)
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.SourceKey(SurvivorsMaker.Run.RunState, SurvivorsMaker.Core.AppliedEffect)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: "Provider keys use item:id / set:id like RunStatSource; input keys remain verbatim.\n            character:id,
+    grant:carryId and effect:index identify providers, not external count queries."
+  example: []
+  syntax:
+    content: public static string SourceKey(RunState run, AppliedEffect token)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: token
+      type: SurvivorsMaker.Core.AppliedEffect
+    return:
+      type: System.String
+    content.vb: Public Shared Function SourceKey(run As RunState, token As AppliedEffect) As String
+  overload: SurvivorsMaker.Run.InventoryAnalysis.SourceKey*
+- uid: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild,System.String)
+  commentId: M:SurvivorsMaker.Run.InventoryAnalysis.ExplainStat(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild,System.String)
+  id: ExplainStat(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild,System.String)
+  parent: SurvivorsMaker.Run.InventoryAnalysis
+  langs:
+  - csharp
+  - vb
+  name: ExplainStat(RunState, StatBuild, string)
+  nameWithType: InventoryAnalysis.ExplainStat(RunState, StatBuild, string)
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat(SurvivorsMaker.Run.RunState, SurvivorsMaker.Core.StatBuild, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Explains a stat with build-provider keys. The supplied build is never reapplied.
+  example: []
+  syntax:
+    content: public static StatExplanation ExplainStat(RunState run, StatBuild build, string stat)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: build
+      type: SurvivorsMaker.Core.StatBuild
+    - id: stat
+      type: System.String
+    return:
+      type: SurvivorsMaker.Core.StatExplanation
+    content.vb: Public Shared Function ExplainStat(run As RunState, build As StatBuild, stat As String) As StatExplanation
+  overload: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat*
+  nameWithType.vb: InventoryAnalysis.ExplainStat(RunState, StatBuild, String)
+  fullName.vb: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat(SurvivorsMaker.Run.RunState, SurvivorsMaker.Core.StatBuild,
+    String)
+  name.vb: ExplainStat(RunState, StatBuild, String)
+- uid: SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild)
+  commentId: M:SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild)
+  id: DescribeBuild(SurvivorsMaker.Run.RunState,SurvivorsMaker.Core.StatBuild)
+  parent: SurvivorsMaker.Run.InventoryAnalysis
+  langs:
+  - csharp
+  - vb
+  name: DescribeBuild(RunState, StatBuild)
+  nameWithType: InventoryAnalysis.DescribeBuild(RunState, StatBuild)
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild(SurvivorsMaker.Run.RunState, SurvivorsMaker.Core.StatBuild)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Returns active set thresholds, owned tag counts and active Link/Convert/dependent Limit
+
+    recipes, with English invariant-culture summaries. Order: sets by Order/first encounter,
+
+    tags by first item then weapon encounter, links by applied order. Character preference
+
+    and ban tags are policy, not owned tags. Item/weapon tags count current owned entries;
+
+    item expiry removal belongs to the run lifecycle, not this read-only inspection.'
+  example: []
+  syntax:
+    content: public static BuildSynergyReport DescribeBuild(RunState run, StatBuild build = null)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: build
+      type: SurvivorsMaker.Core.StatBuild
+    return:
+      type: SurvivorsMaker.Run.BuildSynergyReport
+    content.vb: Public Shared Function DescribeBuild(run As RunState, build As StatBuild = Nothing) As BuildSynergyReport
+  overload: SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.InventoryAnalysis.SourceKey*
+  commentId: Overload:SurvivorsMaker.Run.InventoryAnalysis.SourceKey
+  isExternal: true
+  href: SurvivorsMaker.Run.InventoryAnalysis.html#SurvivorsMaker_Run_InventoryAnalysis_SourceKey_SurvivorsMaker_Run_RunState_SurvivorsMaker_Core_AppliedEffect_
+  name: SourceKey
+  nameWithType: InventoryAnalysis.SourceKey
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.SourceKey
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Core.AppliedEffect
+  commentId: T:SurvivorsMaker.Core.AppliedEffect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.AppliedEffect.html
+  name: AppliedEffect
+  nameWithType: AppliedEffect
+  fullName: SurvivorsMaker.Core.AppliedEffect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat*
+  commentId: Overload:SurvivorsMaker.Run.InventoryAnalysis.ExplainStat
+  isExternal: true
+  href: SurvivorsMaker.Run.InventoryAnalysis.html#SurvivorsMaker_Run_InventoryAnalysis_ExplainStat_SurvivorsMaker_Run_RunState_SurvivorsMaker_Core_StatBuild_System_String_
+  name: ExplainStat
+  nameWithType: InventoryAnalysis.ExplainStat
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.ExplainStat
+- uid: SurvivorsMaker.Core.StatBuild
+  commentId: T:SurvivorsMaker.Core.StatBuild
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatBuild.html
+  name: StatBuild
+  nameWithType: StatBuild
+  fullName: SurvivorsMaker.Core.StatBuild
+- uid: SurvivorsMaker.Core.StatExplanation
+  commentId: T:SurvivorsMaker.Core.StatExplanation
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatExplanation.html
+  name: StatExplanation
+  nameWithType: StatExplanation
+  fullName: SurvivorsMaker.Core.StatExplanation
+- uid: SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild*
+  commentId: Overload:SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild
+  isExternal: true
+  href: SurvivorsMaker.Run.InventoryAnalysis.html#SurvivorsMaker_Run_InventoryAnalysis_DescribeBuild_SurvivorsMaker_Run_RunState_SurvivorsMaker_Core_StatBuild_
+  name: DescribeBuild
+  nameWithType: InventoryAnalysis.DescribeBuild
+  fullName: SurvivorsMaker.Run.InventoryAnalysis.DescribeBuild
+- uid: SurvivorsMaker.Run.BuildSynergyReport
+  commentId: T:SurvivorsMaker.Run.BuildSynergyReport
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.BuildSynergyReport.html
+  name: BuildSynergyReport
+  nameWithType: BuildSynergyReport
+  fullName: SurvivorsMaker.Run.BuildSynergyReport

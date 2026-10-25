@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WeaponSettings
+  commentId: T:SurvivorsMaker.Simulation.WeaponSettings
+  id: WeaponSettings
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WeaponSettings.#ctor
+  - SurvivorsMaker.Simulation.WeaponSettings.AimEpsilon
+  - SurvivorsMaker.Simulation.WeaponSettings.AnchorOffset
+  - SurvivorsMaker.Simulation.WeaponSettings.AttackSpeedFloorPercent
+  - SurvivorsMaker.Simulation.WeaponSettings.Damage
+  - SurvivorsMaker.Simulation.WeaponSettings.DefaultAim
+  - SurvivorsMaker.Simulation.WeaponSettings.DefaultHitboxHalfExtents
+  - SurvivorsMaker.Simulation.WeaponSettings.MeleeEase
+  - SurvivorsMaker.Simulation.WeaponSettings.MeleePhaseSeconds
+  - SurvivorsMaker.Simulation.WeaponSettings.MeleeReachSlack
+  - SurvivorsMaker.Simulation.WeaponSettings.MinCooldownTicks
+  - SurvivorsMaker.Simulation.WeaponSettings.ProjectileRadius
+  - SurvivorsMaker.Simulation.WeaponSettings.SlotAnchors
+  - SurvivorsMaker.Simulation.WeaponSettings.SwingHalfArc
+  langs:
+  - csharp
+  - vb
+  name: WeaponSettings
+  nameWithType: WeaponSettings
+  fullName: SurvivorsMaker.Simulation.WeaponSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class WeaponSettings
+    content.vb: Public NotInheritable Class WeaponSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WeaponSettings.Damage
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.Damage
+  id: Damage
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: WeaponSettings.Damage
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.Damage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public DamageFormula Damage
+    return:
+      type: SurvivorsMaker.Core.DamageFormula
+    content.vb: Public Damage As DamageFormula
+- uid: SurvivorsMaker.Simulation.WeaponSettings.AttackSpeedFloorPercent
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.AttackSpeedFloorPercent
+  id: AttackSpeedFloorPercent
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: AttackSpeedFloorPercent
+  nameWithType: WeaponSettings.AttackSpeedFloorPercent
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.AttackSpeedFloorPercent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Attack speed bonus is clamped to at least this percent.
+  example: []
+  syntax:
+    content: public int AttackSpeedFloorPercent
+    return:
+      type: System.Int32
+    content.vb: Public AttackSpeedFloorPercent As Integer
+- uid: SurvivorsMaker.Simulation.WeaponSettings.MinCooldownTicks
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.MinCooldownTicks
+  id: MinCooldownTicks
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: MinCooldownTicks
+  nameWithType: WeaponSettings.MinCooldownTicks
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.MinCooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int MinCooldownTicks
+    return:
+      type: System.Int32
+    content.vb: Public MinCooldownTicks As Integer
+- uid: SurvivorsMaker.Simulation.WeaponSettings.ProjectileRadius
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.ProjectileRadius
+  id: ProjectileRadius
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRadius
+  nameWithType: WeaponSettings.ProjectileRadius
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.ProjectileRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileRadius
+    return:
+      type: System.Single
+    content.vb: Public ProjectileRadius As Single
+- uid: SurvivorsMaker.Simulation.WeaponSettings.MeleeReachSlack
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.MeleeReachSlack
+  id: MeleeReachSlack
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: MeleeReachSlack
+  nameWithType: WeaponSettings.MeleeReachSlack
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.MeleeReachSlack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Melee targets may be this much farther than the weapon's reach.
+  example: []
+  syntax:
+    content: public float MeleeReachSlack
+    return:
+      type: System.Single
+    content.vb: Public MeleeReachSlack As Single
+- uid: SurvivorsMaker.Simulation.WeaponSettings.MeleePhaseSeconds
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.MeleePhaseSeconds
+  id: MeleePhaseSeconds
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: MeleePhaseSeconds
+  nameWithType: WeaponSettings.MeleePhaseSeconds
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.MeleePhaseSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Duration of the melee strike and of the return, each, at 0 % attack speed.
+  example: []
+  syntax:
+    content: public float MeleePhaseSeconds
+    return:
+      type: System.Single
+    content.vb: Public MeleePhaseSeconds As Single
+- uid: SurvivorsMaker.Simulation.WeaponSettings.SwingHalfArc
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.SwingHalfArc
+  id: SwingHalfArc
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: SwingHalfArc
+  nameWithType: WeaponSettings.SwingHalfArc
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.SwingHalfArc
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Swing goes from −SwingHalfArc to +SwingHalfArc radians around the aim.
+  example: []
+  syntax:
+    content: public float SwingHalfArc
+    return:
+      type: System.Single
+    content.vb: Public SwingHalfArc As Single
+- uid: SurvivorsMaker.Simulation.WeaponSettings.MeleeEase
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.MeleeEase
+  id: MeleeEase
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: MeleeEase
+  nameWithType: WeaponSettings.MeleeEase
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.MeleeEase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EaseOut MeleeEase
+    return:
+      type: SurvivorsMaker.Simulation.EaseOut
+    content.vb: Public MeleeEase As EaseOut
+- uid: SurvivorsMaker.Simulation.WeaponSettings.DefaultHitboxHalfExtents
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.DefaultHitboxHalfExtents
+  id: DefaultHitboxHalfExtents
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultHitboxHalfExtents
+  nameWithType: WeaponSettings.DefaultHitboxHalfExtents
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.DefaultHitboxHalfExtents
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 DefaultHitboxHalfExtents
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public DefaultHitboxHalfExtents As Vec2
+- uid: SurvivorsMaker.Simulation.WeaponSettings.DefaultAim
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.DefaultAim
+  id: DefaultAim
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultAim
+  nameWithType: WeaponSettings.DefaultAim
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.DefaultAim
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 DefaultAim
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public DefaultAim As Vec2
+- uid: SurvivorsMaker.Simulation.WeaponSettings.AimEpsilon
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.AimEpsilon
+  id: AimEpsilon
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: AimEpsilon
+  nameWithType: WeaponSettings.AimEpsilon
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.AimEpsilon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float AimEpsilon
+    return:
+      type: System.Single
+    content.vb: Public AimEpsilon As Single
+- uid: SurvivorsMaker.Simulation.WeaponSettings.AnchorOffset
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.AnchorOffset
+  id: AnchorOffset
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: AnchorOffset
+  nameWithType: WeaponSettings.AnchorOffset
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.AnchorOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Anchor offset shared by all slots (applied only when SlotAnchors has a layout for the weapon count).
+  example: []
+  syntax:
+    content: public Vec2 AnchorOffset
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public AnchorOffset As Vec2
+- uid: SurvivorsMaker.Simulation.WeaponSettings.SlotAnchors
+  commentId: F:SurvivorsMaker.Simulation.WeaponSettings.SlotAnchors
+  id: SlotAnchors
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: SlotAnchors
+  nameWithType: WeaponSettings.SlotAnchors
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.SlotAnchors
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: SlotAnchors[n − 1] = anchor offsets for n weapons. Missing layout = all at the player.
+  example: []
+  syntax:
+    content: public Vec2[][] SlotAnchors
+    return:
+      type: SurvivorsMaker.Simulation.Vec2[][]
+    content.vb: Public SlotAnchors As Vec2()()
+- uid: SurvivorsMaker.Simulation.WeaponSettings.#ctor
+  commentId: M:SurvivorsMaker.Simulation.WeaponSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.WeaponSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponSettings()
+  nameWithType: WeaponSettings.WeaponSettings()
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.WeaponSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WeaponSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.WeaponSettings.#ctor*
+  nameWithType.vb: WeaponSettings.New()
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.DamageFormula
+  commentId: T:SurvivorsMaker.Core.DamageFormula
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.DamageFormula.html
+  name: DamageFormula
+  nameWithType: DamageFormula
+  fullName: SurvivorsMaker.Core.DamageFormula
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.EaseOut
+  commentId: T:SurvivorsMaker.Simulation.EaseOut
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EaseOut.html
+  name: EaseOut
+  nameWithType: EaseOut
+  fullName: SurvivorsMaker.Simulation.EaseOut
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.Vec2[][]
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2[][]
+  nameWithType: Vec2[][]
+  fullName: SurvivorsMaker.Simulation.Vec2[][]
+  nameWithType.vb: Vec2()()
+  fullName.vb: SurvivorsMaker.Simulation.Vec2()()
+  name.vb: Vec2()()
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSettings.html#SurvivorsMaker_Simulation_WeaponSettings__ctor
+  name: WeaponSettings
+  nameWithType: WeaponSettings.WeaponSettings
+  fullName: SurvivorsMaker.Simulation.WeaponSettings.WeaponSettings
+  nameWithType.vb: WeaponSettings.New
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSettings.New
+  name.vb: New

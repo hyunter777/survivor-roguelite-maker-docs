@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.PickupSettings
+  commentId: T:SurvivorsMaker.Simulation.PickupSettings
+  id: PickupSettings
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.PickupSettings.#ctor
+  - SurvivorsMaker.Simulation.PickupSettings.AttractRadius
+  - SurvivorsMaker.Simulation.PickupSettings.AttractSpeed
+  - SurvivorsMaker.Simulation.PickupSettings.HealAmount
+  - SurvivorsMaker.Simulation.PickupSettings.HealDropChance
+  langs:
+  - csharp
+  - vb
+  name: PickupSettings
+  nameWithType: PickupSettings
+  fullName: SurvivorsMaker.Simulation.PickupSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class PickupSettings
+    content.vb: Public NotInheritable Class PickupSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.PickupSettings.AttractRadius
+  commentId: F:SurvivorsMaker.Simulation.PickupSettings.AttractRadius
+  id: AttractRadius
+  parent: SurvivorsMaker.Simulation.PickupSettings
+  langs:
+  - csharp
+  - vb
+  name: AttractRadius
+  nameWithType: PickupSettings.AttractRadius
+  fullName: SurvivorsMaker.Simulation.PickupSettings.AttractRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float AttractRadius
+    return:
+      type: System.Single
+    content.vb: Public AttractRadius As Single
+- uid: SurvivorsMaker.Simulation.PickupSettings.AttractSpeed
+  commentId: F:SurvivorsMaker.Simulation.PickupSettings.AttractSpeed
+  id: AttractSpeed
+  parent: SurvivorsMaker.Simulation.PickupSettings
+  langs:
+  - csharp
+  - vb
+  name: AttractSpeed
+  nameWithType: PickupSettings.AttractSpeed
+  fullName: SurvivorsMaker.Simulation.PickupSettings.AttractSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float AttractSpeed
+    return:
+      type: System.Single
+    content.vb: Public AttractSpeed As Single
+- uid: SurvivorsMaker.Simulation.PickupSettings.HealAmount
+  commentId: F:SurvivorsMaker.Simulation.PickupSettings.HealAmount
+  id: HealAmount
+  parent: SurvivorsMaker.Simulation.PickupSettings
+  langs:
+  - csharp
+  - vb
+  name: HealAmount
+  nameWithType: PickupSettings.HealAmount
+  fullName: SurvivorsMaker.Simulation.PickupSettings.HealAmount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int HealAmount
+    return:
+      type: System.Int32
+    content.vb: Public HealAmount As Integer
+- uid: SurvivorsMaker.Simulation.PickupSettings.HealDropChance
+  commentId: F:SurvivorsMaker.Simulation.PickupSettings.HealDropChance
+  id: HealDropChance
+  parent: SurvivorsMaker.Simulation.PickupSettings
+  langs:
+  - csharp
+  - vb
+  name: HealDropChance
+  nameWithType: PickupSettings.HealDropChance
+  fullName: SurvivorsMaker.Simulation.PickupSettings.HealDropChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Base chance (0–1) that a non-neutral enemy drops a heal; scaled by (1 + luck %).
+  example: []
+  syntax:
+    content: public float HealDropChance
+    return:
+      type: System.Single
+    content.vb: Public HealDropChance As Single
+- uid: SurvivorsMaker.Simulation.PickupSettings.#ctor
+  commentId: M:SurvivorsMaker.Simulation.PickupSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.PickupSettings
+  langs:
+  - csharp
+  - vb
+  name: PickupSettings()
+  nameWithType: PickupSettings.PickupSettings()
+  fullName: SurvivorsMaker.Simulation.PickupSettings.PickupSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public PickupSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.PickupSettings.#ctor*
+  nameWithType.vb: PickupSettings.New()
+  fullName.vb: SurvivorsMaker.Simulation.PickupSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.PickupSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.PickupSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupSettings.html#SurvivorsMaker_Simulation_PickupSettings__ctor
+  name: PickupSettings
+  nameWithType: PickupSettings.PickupSettings
+  fullName: SurvivorsMaker.Simulation.PickupSettings.PickupSettings
+  nameWithType.vb: PickupSettings.New
+  fullName.vb: SurvivorsMaker.Simulation.PickupSettings.New
+  name.vb: New

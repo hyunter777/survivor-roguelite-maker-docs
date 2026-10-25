@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.ILevelUpRules
+  commentId: T:SurvivorsMaker.Run.ILevelUpRules
+  id: ILevelUpRules
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.ILevelUpRules.Choose(SurvivorsMaker.Run.RunState,System.Int32)
+  - SurvivorsMaker.Run.ILevelUpRules.Roll(SurvivorsMaker.Run.RunState)
+  langs:
+  - csharp
+  - vb
+  name: ILevelUpRules
+  nameWithType: ILevelUpRules
+  fullName: SurvivorsMaker.Run.ILevelUpRules
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Progression: level-up choices.'
+  example: []
+  syntax:
+    content: public interface ILevelUpRules
+    content.vb: Public Interface ILevelUpRules
+  derivedClasses:
+  - SurvivorsMaker.Run.LevelUpRules
+- uid: SurvivorsMaker.Run.ILevelUpRules.Roll(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.ILevelUpRules.Roll(SurvivorsMaker.Run.RunState)
+  id: Roll(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.ILevelUpRules
+  langs:
+  - csharp
+  - vb
+  name: Roll(RunState)
+  nameWithType: ILevelUpRules.Roll(RunState)
+  fullName: SurvivorsMaker.Run.ILevelUpRules.Roll(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Replaces <xref href="SurvivorsMaker.Run.RunState.Choices" data-throw-if-not-resolved="false"></xref> with a new
+    window.
+  example: []
+  syntax:
+    content: void Roll(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Sub Roll(run As RunState)
+  overload: SurvivorsMaker.Run.ILevelUpRules.Roll*
+- uid: SurvivorsMaker.Run.ILevelUpRules.Choose(SurvivorsMaker.Run.RunState,System.Int32)
+  commentId: M:SurvivorsMaker.Run.ILevelUpRules.Choose(SurvivorsMaker.Run.RunState,System.Int32)
+  id: Choose(SurvivorsMaker.Run.RunState,System.Int32)
+  parent: SurvivorsMaker.Run.ILevelUpRules
+  langs:
+  - csharp
+  - vb
+  name: Choose(RunState, int)
+  nameWithType: ILevelUpRules.Choose(RunState, int)
+  fullName: SurvivorsMaker.Run.ILevelUpRules.Choose(SurvivorsMaker.Run.RunState, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Takes a choice; consumes one pending level-up. Does not change the phase.
+  example: []
+  syntax:
+    content: RunResult Choose(RunState run, int index)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function Choose(run As RunState, index As Integer) As RunResult
+  overload: SurvivorsMaker.Run.ILevelUpRules.Choose*
+  nameWithType.vb: ILevelUpRules.Choose(RunState, Integer)
+  fullName.vb: SurvivorsMaker.Run.ILevelUpRules.Choose(SurvivorsMaker.Run.RunState, Integer)
+  name.vb: Choose(RunState, Integer)
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunState.Choices
+  commentId: F:SurvivorsMaker.Run.RunState.Choices
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html#SurvivorsMaker_Run_RunState_Choices
+  name: Choices
+  nameWithType: RunState.Choices
+  fullName: SurvivorsMaker.Run.RunState.Choices
+- uid: SurvivorsMaker.Run.ILevelUpRules.Roll*
+  commentId: Overload:SurvivorsMaker.Run.ILevelUpRules.Roll
+  isExternal: true
+  href: SurvivorsMaker.Run.ILevelUpRules.html#SurvivorsMaker_Run_ILevelUpRules_Roll_SurvivorsMaker_Run_RunState_
+  name: Roll
+  nameWithType: ILevelUpRules.Roll
+  fullName: SurvivorsMaker.Run.ILevelUpRules.Roll
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.ILevelUpRules.Choose*
+  commentId: Overload:SurvivorsMaker.Run.ILevelUpRules.Choose
+  isExternal: true
+  href: SurvivorsMaker.Run.ILevelUpRules.html#SurvivorsMaker_Run_ILevelUpRules_Choose_SurvivorsMaker_Run_RunState_System_Int32_
+  name: Choose
+  nameWithType: ILevelUpRules.Choose
+  fullName: SurvivorsMaker.Run.ILevelUpRules.Choose
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

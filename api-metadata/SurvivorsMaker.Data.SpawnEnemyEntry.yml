@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry
+  commentId: T:SurvivorsMaker.Data.SpawnEnemyEntry
+  id: SpawnEnemyEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.SpawnEnemyEntry.#ctor
+  - SurvivorsMaker.Data.SpawnEnemyEntry.Chance
+  - SurvivorsMaker.Data.SpawnEnemyEntry.Elite
+  - SurvivorsMaker.Data.SpawnEnemyEntry.EliteChance
+  - SurvivorsMaker.Data.SpawnEnemyEntry.Enemy
+  - SurvivorsMaker.Data.SpawnEnemyEntry.MaxCount
+  - SurvivorsMaker.Data.SpawnEnemyEntry.MinCount
+  - SurvivorsMaker.Data.SpawnEnemyEntry.ToDef
+  langs:
+  - csharp
+  - vb
+  name: SpawnEnemyEntry
+  nameWithType: SpawnEnemyEntry
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy-asset reference and independent count, probability and elite-roll authoring data.
+  example: []
+  syntax:
+    content: public sealed class SpawnEnemyEntry
+    content.vb: Public NotInheritable Class SpawnEnemyEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.Enemy
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.Enemy
+  id: Enemy
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: SpawnEnemyEntry.Enemy
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.Enemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy asset to spawn; required for an enabled spawn request.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy asset to spawn; required for an enabled spawn request.")]
+
+      public EnemyAsset Enemy'
+    return:
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: '<Tooltip("Enemy asset to spawn; required for an enabled spawn request.")>
+
+      Public Enemy As EnemyAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy asset to spawn; required for an enabled spawn request.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.Chance
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.Chance
+  id: Chance
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: Chance
+  nameWithType: SpawnEnemyEntry.Chance
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.Chance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Activation probability from 0 to 1; 0 = never, 1 = always.
+  example: []
+  syntax:
+    content: '[Tooltip("Activation probability from 0 to 1; 0 = never, 1 = always.")]
+
+      public float Chance'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Activation probability from 0 to 1; 0 = never, 1 = always.")>
+
+      Public Chance As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Activation probability from 0 to 1; 0 = never, 1 = always.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.MinCount
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.MinCount
+  id: MinCount
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: MinCount
+  nameWithType: SpawnEnemyEntry.MinCount
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.MinCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Inclusive minimum enemy count; must be nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Inclusive minimum enemy count; must be nonnegative.")]
+
+      public int MinCount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Inclusive minimum enemy count; must be nonnegative.")>
+
+      Public MinCount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Inclusive minimum enemy count; must be nonnegative.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.MaxCount
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.MaxCount
+  id: MaxCount
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: MaxCount
+  nameWithType: SpawnEnemyEntry.MaxCount
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.MaxCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Inclusive maximum enemy count; must be at least Min Count.
+  example: []
+  syntax:
+    content: '[Tooltip("Inclusive maximum enemy count; must be at least Min Count.")]
+
+      public int MaxCount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Inclusive maximum enemy count; must be at least Min Count.")>
+
+      Public MaxCount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Inclusive maximum enemy count; must be at least Min Count.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.EliteChance
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.EliteChance
+  id: EliteChance
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: EliteChance
+  nameWithType: SpawnEnemyEntry.EliteChance
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.EliteChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Elite roll probability per enemy, from 0 to 1; 0 = ordinary enemies.
+  example: []
+  syntax:
+    content: '[Tooltip("Elite roll probability per enemy, from 0 to 1; 0 = ordinary enemies.")]
+
+      public float EliteChance'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Elite roll probability per enemy, from 0 to 1; 0 = ordinary enemies.")>
+
+      Public EliteChance As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elite roll probability per enemy, from 0 to 1; 0 = ordinary enemies.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.Elite
+  commentId: F:SurvivorsMaker.Data.SpawnEnemyEntry.Elite
+  id: Elite
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: Elite
+  nameWithType: SpawnEnemyEntry.Elite
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.Elite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Elite definition used when the elite roll succeeds; optional when chance is 0.
+  example: []
+  syntax:
+    content: '[Tooltip("Elite definition used when the elite roll succeeds; optional when chance is 0.")]
+
+      public EliteAsset Elite'
+    return:
+      type: SurvivorsMaker.Data.EliteAsset
+    content.vb: '<Tooltip("Elite definition used when the elite roll succeeds; optional when chance is 0.")>
+
+      Public Elite As EliteAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elite definition used when the elite roll succeeds; optional when chance is 0.
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.ToDef
+  commentId: M:SurvivorsMaker.Data.SpawnEnemyEntry.ToDef
+  id: ToDef
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: ToDef()
+  nameWithType: SpawnEnemyEntry.ToDef()
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.ToDef()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Converts this authoring entry to a runtime definition, resolving asset references through their caches.
+  example: []
+  syntax:
+    content: public SpawnEntryDef ToDef()
+    return:
+      type: SurvivorsMaker.Simulation.SpawnEntryDef
+    content.vb: Public Function ToDef() As SpawnEntryDef
+  overload: SurvivorsMaker.Data.SpawnEnemyEntry.ToDef*
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.SpawnEnemyEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.SpawnEnemyEntry
+  langs:
+  - csharp
+  - vb
+  name: SpawnEnemyEntry()
+  nameWithType: SpawnEnemyEntry.SpawnEnemyEntry()
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.SpawnEnemyEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public SpawnEnemyEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.SpawnEnemyEntry.#ctor*
+  nameWithType.vb: SpawnEnemyEntry.New()
+  fullName.vb: SurvivorsMaker.Data.SpawnEnemyEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Data.EliteAsset
+  commentId: T:SurvivorsMaker.Data.EliteAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EliteAsset.html
+  name: EliteAsset
+  nameWithType: EliteAsset
+  fullName: SurvivorsMaker.Data.EliteAsset
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.ToDef*
+  commentId: Overload:SurvivorsMaker.Data.SpawnEnemyEntry.ToDef
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnEnemyEntry.html#SurvivorsMaker_Data_SpawnEnemyEntry_ToDef
+  name: ToDef
+  nameWithType: SpawnEnemyEntry.ToDef
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.ToDef
+- uid: SurvivorsMaker.Simulation.SpawnEntryDef
+  commentId: T:SurvivorsMaker.Simulation.SpawnEntryDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpawnEntryDef.html
+  name: SpawnEntryDef
+  nameWithType: SpawnEntryDef
+  fullName: SurvivorsMaker.Simulation.SpawnEntryDef
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.SpawnEnemyEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnEnemyEntry.html#SurvivorsMaker_Data_SpawnEnemyEntry__ctor
+  name: SpawnEnemyEntry
+  nameWithType: SpawnEnemyEntry.SpawnEnemyEntry
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry.SpawnEnemyEntry
+  nameWithType.vb: SpawnEnemyEntry.New
+  fullName.vb: SurvivorsMaker.Data.SpawnEnemyEntry.New
+  name.vb: New

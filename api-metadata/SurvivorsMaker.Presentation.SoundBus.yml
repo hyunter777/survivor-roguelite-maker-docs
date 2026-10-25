@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.SoundBus
+  commentId: T:SurvivorsMaker.Presentation.SoundBus
+  id: SoundBus
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.SoundBus.Effects
+  - SurvivorsMaker.Presentation.SoundBus.Ui
+  langs:
+  - csharp
+  - vb
+  name: SoundBus
+  nameWithType: SoundBus
+  fullName: SurvivorsMaker.Presentation.SoundBus
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Which optional mixer group a cue plays through.
+  example: []
+  syntax:
+    content: public enum SoundBus
+    content.vb: Public Enum SoundBus
+- uid: SurvivorsMaker.Presentation.SoundBus.Effects
+  commentId: F:SurvivorsMaker.Presentation.SoundBus.Effects
+  id: Effects
+  parent: SurvivorsMaker.Presentation.SoundBus
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: SoundBus.Effects
+  fullName: SurvivorsMaker.Presentation.SoundBus.Effects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Effects = 0
+    return:
+      type: SurvivorsMaker.Presentation.SoundBus
+- uid: SurvivorsMaker.Presentation.SoundBus.Ui
+  commentId: F:SurvivorsMaker.Presentation.SoundBus.Ui
+  id: Ui
+  parent: SurvivorsMaker.Presentation.SoundBus
+  langs:
+  - csharp
+  - vb
+  name: Ui
+  nameWithType: SoundBus.Ui
+  fullName: SurvivorsMaker.Presentation.SoundBus.Ui
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Ui = 1
+    return:
+      type: SurvivorsMaker.Presentation.SoundBus
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.SoundBus
+  commentId: T:SurvivorsMaker.Presentation.SoundBus
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundBus.html
+  name: SoundBus
+  nameWithType: SoundBus
+  fullName: SurvivorsMaker.Presentation.SoundBus

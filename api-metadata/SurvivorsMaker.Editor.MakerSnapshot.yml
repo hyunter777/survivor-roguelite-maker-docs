@@ -1,0 +1,613 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.MakerSnapshot
+  commentId: T:SurvivorsMaker.Editor.MakerSnapshot
+  id: MakerSnapshot
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.MakerSnapshot.#ctor
+  - SurvivorsMaker.Editor.MakerSnapshot.Arena
+  - SurvivorsMaker.Editor.MakerSnapshot.ArenaAsset
+  - SurvivorsMaker.Editor.MakerSnapshot.ArenaIndex
+  - SurvivorsMaker.Editor.MakerSnapshot.Balance
+  - SurvivorsMaker.Editor.MakerSnapshot.Content
+  - SurvivorsMaker.Editor.MakerSnapshot.Settings
+  - SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+  langs:
+  - csharp
+  - vb
+  name: MakerSnapshot
+  nameWithType: MakerSnapshot
+  fullName: SurvivorsMaker.Editor.MakerSnapshot
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Converted inputs for one analysis call, taken on the editor thread.
+  example: []
+  syntax:
+    content: public sealed class MakerSnapshot
+    content.vb: Public NotInheritable Class MakerSnapshot
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Balance
+  commentId: F:SurvivorsMaker.Editor.MakerSnapshot.Balance
+  id: Balance
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Balance
+  nameWithType: MakerSnapshot.Balance
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Balance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public BalanceRequest Balance
+    return:
+      type: SurvivorsMaker.Balance.BalanceRequest
+    content.vb: Public Balance As BalanceRequest
+- uid: SurvivorsMaker.Editor.MakerSnapshot.ArenaAsset
+  commentId: F:SurvivorsMaker.Editor.MakerSnapshot.ArenaAsset
+  id: ArenaAsset
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ArenaAsset
+  nameWithType: MakerSnapshot.ArenaAsset
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.ArenaAsset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ArenaAsset ArenaAsset
+    return:
+      type: SurvivorsMaker.Data.ArenaAsset
+    content.vb: Public ArenaAsset As ArenaAsset
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Arena
+  commentId: F:SurvivorsMaker.Editor.MakerSnapshot.Arena
+  id: Arena
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: MakerSnapshot.Arena
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ArenaDef Arena
+    return:
+      type: SurvivorsMaker.Simulation.ArenaDef
+    content.vb: Public Arena As ArenaDef
+- uid: SurvivorsMaker.Editor.MakerSnapshot.ArenaIndex
+  commentId: F:SurvivorsMaker.Editor.MakerSnapshot.ArenaIndex
+  id: ArenaIndex
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ArenaIndex
+  nameWithType: MakerSnapshot.ArenaIndex
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.ArenaIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public int ArenaIndex
+    return:
+      type: System.Int32
+    content.vb: Public ArenaIndex As Integer
+- uid: SurvivorsMaker.Editor.MakerSnapshot.#ctor
+  commentId: M:SurvivorsMaker.Editor.MakerSnapshot.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: MakerSnapshot()
+  nameWithType: MakerSnapshot.MakerSnapshot()
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.MakerSnapshot()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public MakerSnapshot()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.MakerSnapshot.#ctor*
+  nameWithType.vb: MakerSnapshot.New()
+  fullName.vb: SurvivorsMaker.Editor.MakerSnapshot.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Content
+  commentId: P:SurvivorsMaker.Editor.MakerSnapshot.Content
+  id: Content
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: MakerSnapshot.Content
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Content
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public RunContent Content { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.RunContent
+    content.vb: Public ReadOnly Property Content As RunContent
+  overload: SurvivorsMaker.Editor.MakerSnapshot.Content*
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Settings
+  commentId: P:SurvivorsMaker.Editor.MakerSnapshot.Settings
+  id: Settings
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: MakerSnapshot.Settings
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Settings
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public RunSettings Settings { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.RunSettings
+    content.vb: Public ReadOnly Property Settings As RunSettings
+  overload: SurvivorsMaker.Editor.MakerSnapshot.Settings*
+- uid: SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+  commentId: P:SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+  id: SimSettings
+  parent: SurvivorsMaker.Editor.MakerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: SimSettings
+  nameWithType: MakerSnapshot.SimSettings
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public SimSettings SimSettings { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.SimSettings
+    content.vb: Public ReadOnly Property SimSettings As SimSettings
+  overload: SurvivorsMaker.Editor.MakerSnapshot.SimSettings*
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.BalanceRequest
+  commentId: T:SurvivorsMaker.Balance.BalanceRequest
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.BalanceRequest.html
+  name: BalanceRequest
+  nameWithType: BalanceRequest
+  fullName: SurvivorsMaker.Balance.BalanceRequest
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: SurvivorsMaker.Data.ArenaAsset
+  commentId: T:SurvivorsMaker.Data.ArenaAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ArenaAsset.html
+  name: ArenaAsset
+  nameWithType: ArenaAsset
+  fullName: SurvivorsMaker.Data.ArenaAsset
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ArenaDef
+  commentId: T:SurvivorsMaker.Simulation.ArenaDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaDef.html
+  name: ArenaDef
+  nameWithType: ArenaDef
+  fullName: SurvivorsMaker.Simulation.ArenaDef
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.MakerSnapshot.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.MakerSnapshot.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerSnapshot.html#SurvivorsMaker_Editor_MakerSnapshot__ctor
+  name: MakerSnapshot
+  nameWithType: MakerSnapshot.MakerSnapshot
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.MakerSnapshot
+  nameWithType.vb: MakerSnapshot.New
+  fullName.vb: SurvivorsMaker.Editor.MakerSnapshot.New
+  name.vb: New
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Content*
+  commentId: Overload:SurvivorsMaker.Editor.MakerSnapshot.Content
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerSnapshot.html#SurvivorsMaker_Editor_MakerSnapshot_Content
+  name: Content
+  nameWithType: MakerSnapshot.Content
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Content
+- uid: SurvivorsMaker.Run.RunContent
+  commentId: T:SurvivorsMaker.Run.RunContent
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunContent.html
+  name: RunContent
+  nameWithType: RunContent
+  fullName: SurvivorsMaker.Run.RunContent
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerSnapshot.Settings*
+  commentId: Overload:SurvivorsMaker.Editor.MakerSnapshot.Settings
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerSnapshot.html#SurvivorsMaker_Editor_MakerSnapshot_Settings
+  name: Settings
+  nameWithType: MakerSnapshot.Settings
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.Settings
+- uid: SurvivorsMaker.Run.RunSettings
+  commentId: T:SurvivorsMaker.Run.RunSettings
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSettings.html
+  name: RunSettings
+  nameWithType: RunSettings
+  fullName: SurvivorsMaker.Run.RunSettings
+- uid: SurvivorsMaker.Editor.MakerSnapshot.SimSettings*
+  commentId: Overload:SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerSnapshot.html#SurvivorsMaker_Editor_MakerSnapshot_SimSettings
+  name: SimSettings
+  nameWithType: MakerSnapshot.SimSettings
+  fullName: SurvivorsMaker.Editor.MakerSnapshot.SimSettings
+- uid: SurvivorsMaker.Simulation.SimSettings
+  commentId: T:SurvivorsMaker.Simulation.SimSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html
+  name: SimSettings
+  nameWithType: SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings

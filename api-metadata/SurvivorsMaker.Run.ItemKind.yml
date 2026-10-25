@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.ItemKind
+  commentId: T:SurvivorsMaker.Run.ItemKind
+  id: ItemKind
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.ItemKind.Item
+  - SurvivorsMaker.Run.ItemKind.Upgrade
+  langs:
+  - csharp
+  - vb
+  name: ItemKind
+  nameWithType: ItemKind
+  fullName: SurvivorsMaker.Run.ItemKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public enum ItemKind
+    content.vb: Public Enum ItemKind
+- uid: SurvivorsMaker.Run.ItemKind.Item
+  commentId: F:SurvivorsMaker.Run.ItemKind.Item
+  id: Item
+  parent: SurvivorsMaker.Run.ItemKind
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: ItemKind.Item
+  fullName: SurvivorsMaker.Run.ItemKind.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Sold in the shop.
+  example: []
+  syntax:
+    content: Item = 0
+    return:
+      type: SurvivorsMaker.Run.ItemKind
+- uid: SurvivorsMaker.Run.ItemKind.Upgrade
+  commentId: F:SurvivorsMaker.Run.ItemKind.Upgrade
+  id: Upgrade
+  parent: SurvivorsMaker.Run.ItemKind
+  langs:
+  - csharp
+  - vb
+  name: Upgrade
+  nameWithType: ItemKind.Upgrade
+  fullName: SurvivorsMaker.Run.ItemKind.Upgrade
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Offered on level-up (and, in field mode, alongside weapons).
+  example: []
+  syntax:
+    content: Upgrade = 1
+    return:
+      type: SurvivorsMaker.Run.ItemKind
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.ItemKind
+  commentId: T:SurvivorsMaker.Run.ItemKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ItemKind.html
+  name: ItemKind
+  nameWithType: ItemKind
+  fullName: SurvivorsMaker.Run.ItemKind

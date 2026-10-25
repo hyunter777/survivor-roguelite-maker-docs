@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiSprites
+  commentId: T:SurvivorsMaker.Presentation.UiSprites
+  id: UiSprites
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiSprites.Fill(System.Single)
+  - SurvivorsMaker.Presentation.UiSprites.Outline(System.Single,System.Single)
+  - SurvivorsMaker.Presentation.UiSprites.PixelsPerUnit
+  langs:
+  - csharp
+  - vb
+  name: UiSprites
+  nameWithType: UiSprites
+  fullName: SurvivorsMaker.Presentation.UiSprites
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The default UI look needs no art: anti-aliased rounded rectangles drawn once at runtime and used as
+
+    9-slice sprites (white, so images tint them). Assign theme sprites to replace them.'
+  example: []
+  syntax:
+    content: public static class UiSprites
+    content.vb: Public Module UiSprites
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.UiSprites.PixelsPerUnit
+  commentId: F:SurvivorsMaker.Presentation.UiSprites.PixelsPerUnit
+  id: PixelsPerUnit
+  parent: SurvivorsMaker.Presentation.UiSprites
+  langs:
+  - csharp
+  - vb
+  name: PixelsPerUnit
+  nameWithType: UiSprites.PixelsPerUnit
+  fullName: SurvivorsMaker.Presentation.UiSprites.PixelsPerUnit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Generated sprites use 100 pixels per unit, the canvas default, so slices map 1:1 to UI units.
+  example: []
+  syntax:
+    content: public const float PixelsPerUnit = 100
+    return:
+      type: System.Single
+    content.vb: Public Const PixelsPerUnit As Single = 100
+- uid: SurvivorsMaker.Presentation.UiSprites.Fill(System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiSprites.Fill(System.Single)
+  id: Fill(System.Single)
+  parent: SurvivorsMaker.Presentation.UiSprites
+  langs:
+  - csharp
+  - vb
+  name: Fill(float)
+  nameWithType: UiSprites.Fill(float)
+  fullName: SurvivorsMaker.Presentation.UiSprites.Fill(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Solid rounded rectangle.
+  example: []
+  syntax:
+    content: public static Sprite Fill(float radius)
+    parameters:
+    - id: radius
+      type: System.Single
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Shared Function Fill(radius As Single) As Sprite
+  overload: SurvivorsMaker.Presentation.UiSprites.Fill*
+  nameWithType.vb: UiSprites.Fill(Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiSprites.Fill(Single)
+  name.vb: Fill(Single)
+- uid: SurvivorsMaker.Presentation.UiSprites.Outline(System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiSprites.Outline(System.Single,System.Single)
+  id: Outline(System.Single,System.Single)
+  parent: SurvivorsMaker.Presentation.UiSprites
+  langs:
+  - csharp
+  - vb
+  name: Outline(float, float)
+  nameWithType: UiSprites.Outline(float, float)
+  fullName: SurvivorsMaker.Presentation.UiSprites.Outline(float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Rounded outline of <code class="paramref">thickness</code> pixels, drawn just inside the edge.
+  example: []
+  syntax:
+    content: public static Sprite Outline(float radius, float thickness)
+    parameters:
+    - id: radius
+      type: System.Single
+    - id: thickness
+      type: System.Single
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Shared Function Outline(radius As Single, thickness As Single) As Sprite
+  overload: SurvivorsMaker.Presentation.UiSprites.Outline*
+  nameWithType.vb: UiSprites.Outline(Single, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiSprites.Outline(Single, Single)
+  name.vb: Outline(Single, Single)
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.UiSprites.Fill*
+  commentId: Overload:SurvivorsMaker.Presentation.UiSprites.Fill
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiSprites.html#SurvivorsMaker_Presentation_UiSprites_Fill_System_Single_
+  name: Fill
+  nameWithType: UiSprites.Fill
+  fullName: SurvivorsMaker.Presentation.UiSprites.Fill
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.UiSprites.Outline*
+  commentId: Overload:SurvivorsMaker.Presentation.UiSprites.Outline
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiSprites.html#SurvivorsMaker_Presentation_UiSprites_Outline_System_Single_System_Single_
+  name: Outline
+  nameWithType: UiSprites.Outline
+  fullName: SurvivorsMaker.Presentation.UiSprites.Outline

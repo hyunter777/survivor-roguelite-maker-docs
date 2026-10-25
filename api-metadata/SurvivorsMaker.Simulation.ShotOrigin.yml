@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ShotOrigin
+  commentId: T:SurvivorsMaker.Simulation.ShotOrigin
+  id: ShotOrigin
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ShotOrigin.AroundPlayer
+  - SurvivorsMaker.Simulation.ShotOrigin.Self
+  langs:
+  - csharp
+  - vb
+  name: ShotOrigin
+  nameWithType: ShotOrigin
+  fullName: SurvivorsMaker.Simulation.ShotOrigin
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum ShotOrigin
+    content.vb: Public Enum ShotOrigin
+- uid: SurvivorsMaker.Simulation.ShotOrigin.Self
+  commentId: F:SurvivorsMaker.Simulation.ShotOrigin.Self
+  id: Self
+  parent: SurvivorsMaker.Simulation.ShotOrigin
+  langs:
+  - csharp
+  - vb
+  name: Self
+  nameWithType: ShotOrigin.Self
+  fullName: SurvivorsMaker.Simulation.ShotOrigin.Self
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: From the shooter.
+  example: []
+  syntax:
+    content: Self = 0
+    return:
+      type: SurvivorsMaker.Simulation.ShotOrigin
+- uid: SurvivorsMaker.Simulation.ShotOrigin.AroundPlayer
+  commentId: F:SurvivorsMaker.Simulation.ShotOrigin.AroundPlayer
+  id: AroundPlayer
+  parent: SurvivorsMaker.Simulation.ShotOrigin
+  langs:
+  - csharp
+  - vb
+  name: AroundPlayer
+  nameWithType: ShotOrigin.AroundPlayer
+  fullName: SurvivorsMaker.Simulation.ShotOrigin.AroundPlayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Each projectile from its own random point in a disc around the player.
+  example: []
+  syntax:
+    content: AroundPlayer = 1
+    return:
+      type: SurvivorsMaker.Simulation.ShotOrigin
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ShotOrigin
+  commentId: T:SurvivorsMaker.Simulation.ShotOrigin
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ShotOrigin.html
+  name: ShotOrigin
+  nameWithType: ShotOrigin
+  fullName: SurvivorsMaker.Simulation.ShotOrigin

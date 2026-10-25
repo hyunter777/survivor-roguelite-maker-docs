@@ -1,0 +1,5384 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset
+  commentId: T:SurvivorsMaker.Presentation.LocalizedTextAsset
+  id: LocalizedTextAsset
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.DefaultLanguage
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.Get(System.String,System.String)
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.Set(System.String,System.String,System.String)
+  - SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  langs:
+  - csharp
+  - vb
+  name: LocalizedTextAsset
+  nameWithType: LocalizedTextAsset
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'A ready-made <xref href="SurvivorsMaker.Presentation.ITextProvider" data-throw-if-not-resolved="false"></xref>:
+    translation tables per language. The authored text counts as
+
+    <xref href="SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage" data-throw-if-not-resolved="false"></xref>;
+    keys a language does not list fall back to it. Assign to
+
+    <xref href="SurvivorsMaker.Presentation.GameUiRoot.TextSource" data-throw-if-not-resolved="false"></xref> or <xref href="SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.Text"
+    data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: '[CreateAssetMenu(menuName = "Survivor Roguelite Maker/Localized Text", fileName = "LocalizedText", order = 22)]
+
+      public sealed class LocalizedTextAsset : ScriptableObject, ITextProvider'
+    content.vb: '<CreateAssetMenu(menuName:="Survivor Roguelite Maker/Localized Text", fileName:="LocalizedText", order:=22)>
+
+      Public NotInheritable Class LocalizedTextAsset Inherits ScriptableObject Implements ITextProvider'
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  implements:
+  - SurvivorsMaker.Presentation.ITextProvider
+  inheritedMembers:
+  - UnityEngine.ScriptableObject.SetDirty
+  - UnityEngine.ScriptableObject.CreateInstance(System.String)
+  - UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  - UnityEngine.ScriptableObject.CreateInstance``1
+  - UnityEngine.Object.GetEntityId
+  - UnityEngine.Object.GetInstanceID
+  - UnityEngine.Object.GetHashCode
+  - UnityEngine.Object.Equals(System.Object)
+  - UnityEngine.Object.InstantiateAsync``1({T})
+  - UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Transform)
+  - UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  - UnityEngine.Object.InstantiateAsync``1({T},System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.SceneManagement.Scene)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.InstantiateParameters)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Instantiate``1({T})
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.Destroy(UnityEngine.Object)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  - UnityEngine.Object.FindObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  - UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  - UnityEngine.Object.FindObjectsOfType``1
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectOfType``1
+  - UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType``1
+  - UnityEngine.Object.FindAnyObjectByType``1
+  - UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.ToString
+  - UnityEngine.Object.name
+  - UnityEngine.Object.hideFlags
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Survivor Roguelite Maker/Localized Text
+    - name: fileName
+      type: System.String
+      value: LocalizedText
+    - name: order
+      type: System.Int32
+      value: 22
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  commentId: F:SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  id: AuthoredLanguage
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: AuthoredLanguage
+  nameWithType: LocalizedTextAsset.AuthoredLanguage
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Code of the language the UI string table and the content assets are written in. Empty = not offered.")]
+
+      public string AuthoredLanguage'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Code of the language the UI string table and the content assets are written in. Empty = not offered.")>
+
+      Public AuthoredLanguage As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Code of the language the UI string table and the content assets are written in. Empty = not offered.
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.DefaultLanguage
+  commentId: F:SurvivorsMaker.Presentation.LocalizedTextAsset.DefaultLanguage
+  id: DefaultLanguage
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: DefaultLanguage
+  nameWithType: LocalizedTextAsset.DefaultLanguage
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.DefaultLanguage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Offered first when the player has not chosen. Empty = the authored language.")]
+
+      public string DefaultLanguage'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Offered first when the player has not chosen. Empty = the authored language.")>
+
+      Public DefaultLanguage As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Offered first when the player has not chosen. Empty = the authored language.
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  commentId: F:SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  id: Translations
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: Translations
+  nameWithType: LocalizedTextAsset.Translations
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public List<LocalizedLanguage> Translations
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Presentation.LocalizedLanguage}
+    content.vb: Public Translations As List(Of LocalizedLanguage)
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Get(System.String,System.String)
+  commentId: M:SurvivorsMaker.Presentation.LocalizedTextAsset.Get(System.String,System.String)
+  id: Get(System.String,System.String)
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: Get(string, string)
+  nameWithType: LocalizedTextAsset.Get(string, string)
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Get(string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The translation of <code class="paramref">key</code>, or null (authored text).
+  example: []
+  syntax:
+    content: public string Get(string key, string language)
+    parameters:
+    - id: key
+      type: System.String
+    - id: language
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function [Get](key As String, language As String) As String
+  overload: SurvivorsMaker.Presentation.LocalizedTextAsset.Get*
+  implements:
+  - SurvivorsMaker.Presentation.ITextProvider.Get(System.String,System.String)
+  nameWithType.vb: LocalizedTextAsset.Get(String, String)
+  fullName.vb: SurvivorsMaker.Presentation.LocalizedTextAsset.Get(String, String)
+  name.vb: Get(String, String)
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Set(System.String,System.String,System.String)
+  commentId: M:SurvivorsMaker.Presentation.LocalizedTextAsset.Set(System.String,System.String,System.String)
+  id: Set(System.String,System.String,System.String)
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: Set(string, string, string)
+  nameWithType: LocalizedTextAsset.Set(string, string, string)
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Set(string, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Adds or replaces one translation from code (the lookup is rebuilt; no <xref href="SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate"
+    data-throw-if-not-resolved="false"></xref> call needed).
+  example: []
+  syntax:
+    content: public void Set(string language, string key, string value)
+    parameters:
+    - id: language
+      type: System.String
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub [Set](language As String, key As String, value As String)
+  overload: SurvivorsMaker.Presentation.LocalizedTextAsset.Set*
+  nameWithType.vb: LocalizedTextAsset.Set(String, String, String)
+  fullName.vb: SurvivorsMaker.Presentation.LocalizedTextAsset.Set(String, String, String)
+  name.vb: Set(String, String, String)
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  commentId: M:SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  id: Invalidate
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: Invalidate()
+  nameWithType: LocalizedTextAsset.Invalidate()
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Call after editing <xref href="SurvivorsMaker.Presentation.LocalizedTextAsset.Translations" data-throw-if-not-resolved="false"></xref>
+    from code.
+  example: []
+  syntax:
+    content: public void Invalidate()
+    content.vb: Public Sub Invalidate()
+  overload: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate*
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor
+  commentId: M:SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.LocalizedTextAsset
+  langs:
+  - csharp
+  - vb
+  name: LocalizedTextAsset()
+  nameWithType: LocalizedTextAsset.LocalizedTextAsset()
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.LocalizedTextAsset()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public LocalizedTextAsset()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor*
+  nameWithType.vb: LocalizedTextAsset.New()
+  fullName.vb: SurvivorsMaker.Presentation.LocalizedTextAsset.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation.ITextProvider
+  commentId: T:SurvivorsMaker.Presentation.ITextProvider
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ITextProvider.html
+  name: ITextProvider
+  nameWithType: ITextProvider
+  fullName: SurvivorsMaker.Presentation.ITextProvider
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  commentId: F:SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_AuthoredLanguage
+  name: AuthoredLanguage
+  nameWithType: LocalizedTextAsset.AuthoredLanguage
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.AuthoredLanguage
+- uid: SurvivorsMaker.Presentation.GameUiRoot.TextSource
+  commentId: F:SurvivorsMaker.Presentation.GameUiRoot.TextSource
+  isExternal: true
+  href: SurvivorsMaker.Presentation.GameUiRoot.html#SurvivorsMaker_Presentation_GameUiRoot_TextSource
+  name: TextSource
+  nameWithType: GameUiRoot.TextSource
+  fullName: SurvivorsMaker.Presentation.GameUiRoot.TextSource
+- uid: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.Text
+  commentId: F:SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.Text
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.html#SurvivorsMaker_Presentation_SurvivorsSceneBootstrap_Text
+  name: Text
+  nameWithType: SurvivorsSceneBootstrap.Text
+  fullName: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.Text
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.ScriptableObject.SetDirty
+  commentId: M:UnityEngine.ScriptableObject.SetDirty
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: SetDirty()
+  nameWithType: ScriptableObject.SetDirty()
+  fullName: UnityEngine.ScriptableObject.SetDirty()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.String)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CreateInstance(string)
+  nameWithType: ScriptableObject.CreateInstance(string)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(string)
+  nameWithType.vb: ScriptableObject.CreateInstance(String)
+  fullName.vb: UnityEngine.ScriptableObject.CreateInstance(String)
+  name.vb: CreateInstance(String)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: CreateInstance(Type)
+  nameWithType: ScriptableObject.CreateInstance(Type)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance``1
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance``1
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: CreateInstance<T>()
+  nameWithType: ScriptableObject.CreateInstance<T>()
+  fullName: UnityEngine.ScriptableObject.CreateInstance<T>()
+  nameWithType.vb: ScriptableObject.CreateInstance(Of T)()
+  fullName.vb: UnityEngine.ScriptableObject.CreateInstance(Of T)()
+  name.vb: CreateInstance(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.GetEntityId
+  commentId: M:UnityEngine.Object.GetEntityId
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetEntityId()
+  nameWithType: Object.GetEntityId()
+  fullName: UnityEngine.Object.GetEntityId()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetEntityId
+    name: GetEntityId
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetEntityId
+    name: GetEntityId
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.GetInstanceID
+  commentId: M:UnityEngine.Object.GetInstanceID
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetInstanceID()
+  nameWithType: Object.GetInstanceID()
+  fullName: UnityEngine.Object.GetInstanceID()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.GetHashCode
+  commentId: M:UnityEngine.Object.GetHashCode
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: UnityEngine.Object.GetHashCode()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.Equals(System.Object)
+  commentId: M:UnityEngine.Object.Equals(System.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: Object.Equals(object)
+  fullName: UnityEngine.Object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: UnityEngine.Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T})
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0)
+  name: InstantiateAsync<T>(T)
+  nameWithType: Object.InstantiateAsync<T>(T)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T)
+  name.vb: InstantiateAsync(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+  name: InstantiateAsync<T>(T, Transform)
+  nameWithType: Object.InstantiateAsync<T>(T, Transform)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Transform)
+  name.vb: InstantiateAsync(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: InstantiateAsync<T>(T, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: InstantiateAsync<T>(T, Transform, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, Transform, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Transform, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Transform, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int)
+  nameWithType: Object.InstantiateAsync<T>(T, int)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer)
+  name.vb: InstantiateAsync(Of T)(T, Integer)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  nameWithType: Object.InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, System.ReadOnlySpan<UnityEngine.Vector3>, System.ReadOnlySpan<UnityEngine.Quaternion>)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, System.ReadOnlySpan(Of UnityEngine.Vector3), System.ReadOnlySpan(Of
+    UnityEngine.Quaternion))
+  name.vb: InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, System.ReadOnlySpan<UnityEngine.Vector3>,
+    System.ReadOnlySpan<UnityEngine.Quaternion>)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, System.ReadOnlySpan(Of UnityEngine.Vector3),
+    System.ReadOnlySpan(Of UnityEngine.Quaternion))
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, System.ReadOnlySpan<UnityEngine.Vector3>,
+    System.ReadOnlySpan<UnityEngine.Quaternion>, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion),
+    CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, System.ReadOnlySpan(Of UnityEngine.Vector3),
+    System.ReadOnlySpan(Of UnityEngine.Quaternion), System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: InstantiateAsync<T>(T, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: InstantiateAsync<T>(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1({T},System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, InstantiateParameters,
+    CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, System.ReadOnlySpan<UnityEngine.Vector3>, System.ReadOnlySpan<UnityEngine.Quaternion>,
+    UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), InstantiateParameters,
+    CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, System.ReadOnlySpan(Of UnityEngine.Vector3), System.ReadOnlySpan(Of
+    UnityEngine.Quaternion), UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), InstantiateParameters,
+    CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object)
+  nameWithType: Object.Instantiate(Object)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.SceneManagement.Scene)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.SceneManagement.Scene)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Scene)
+  nameWithType: Object.Instantiate(Object, Scene)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.SceneManagement.Scene)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.SceneManagement.Scene)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.SceneManagement.Scene)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.InstantiateParameters)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+  name: Instantiate<T>(T, InstantiateParameters)
+  nameWithType: Object.Instantiate<T>(T, InstantiateParameters)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.InstantiateParameters)
+  nameWithType.vb: Object.Instantiate(Of T)(T, InstantiateParameters)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.InstantiateParameters)
+  name.vb: Instantiate(Of T)(T, InstantiateParameters)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  name: Instantiate<T>(T, Vector3, Quaternion, InstantiateParameters)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, InstantiateParameters)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, InstantiateParameters)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, InstantiateParameters)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Transform)
+  nameWithType: Object.Instantiate(Object, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate(Object, Transform, bool)
+  nameWithType: Object.Instantiate(Object, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Object, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Object, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T})
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0)
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate<T>(T, Transform, bool)
+  nameWithType: Object.Instantiate<T>(T, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Destroy(Object, float)
+  nameWithType: Object.Destroy(Object, float)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object, float)
+  nameWithType.vb: Object.Destroy(Object, Single)
+  fullName.vb: UnityEngine.Object.Destroy(UnityEngine.Object, Single)
+  name.vb: Destroy(Object, Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Destroy(Object)
+  nameWithType: Object.Destroy(Object)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: DestroyImmediate(Object, bool)
+  nameWithType: Object.DestroyImmediate(Object, bool)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object, bool)
+  nameWithType.vb: Object.DestroyImmediate(Object, Boolean)
+  fullName.vb: UnityEngine.Object.DestroyImmediate(UnityEngine.Object, Boolean)
+  name.vb: DestroyImmediate(Object, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyImmediate(Object)
+  nameWithType: Object.DestroyImmediate(Object)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfType(Type)
+  nameWithType: Object.FindObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfType(Type, bool)
+  nameWithType: Object.FindObjectsOfType(Type, bool)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type, bool)
+  nameWithType.vb: Object.FindObjectsOfType(Type, Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(System.Type, Boolean)
+  name.vb: FindObjectsOfType(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DontDestroyOnLoad(Object)
+  nameWithType: Object.DontDestroyOnLoad(Object)
+  fullName: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DestroyObject(Object, float)
+  nameWithType: Object.DestroyObject(Object, float)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object, float)
+  nameWithType.vb: Object.DestroyObject(Object, Single)
+  fullName.vb: UnityEngine.Object.DestroyObject(UnityEngine.Object, Single)
+  name.vb: DestroyObject(Object, Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyObject(Object)
+  nameWithType: Object.DestroyObject(Object)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindSceneObjectsOfType(Type)
+  nameWithType: Object.FindSceneObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfTypeIncludingAssets(Type)
+  nameWithType: Object.FindObjectsOfTypeIncludingAssets(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType``1
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType<T>()
+  nameWithType: Object.FindObjectsOfType<T>()
+  fullName: UnityEngine.Object.FindObjectsOfType<T>()
+  nameWithType.vb: Object.FindObjectsOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)()
+  name.vb: FindObjectsOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: FindObjectsOfType<T>(bool)
+  nameWithType: Object.FindObjectsOfType<T>(bool)
+  fullName: UnityEngine.Object.FindObjectsOfType<T>(bool)
+  nameWithType.vb: Object.FindObjectsOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)(Boolean)
+  name.vb: FindObjectsOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType``1
+  commentId: M:UnityEngine.Object.FindObjectOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType<T>()
+  nameWithType: Object.FindObjectOfType<T>()
+  fullName: UnityEngine.Object.FindObjectOfType<T>()
+  nameWithType.vb: Object.FindObjectOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)()
+  name.vb: FindObjectOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: FindObjectOfType<T>(bool)
+  nameWithType: Object.FindObjectOfType<T>(bool)
+  fullName: UnityEngine.Object.FindObjectOfType<T>(bool)
+  nameWithType.vb: Object.FindObjectOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)(Boolean)
+  name.vb: FindObjectOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>()
+  nameWithType: Object.FindFirstObjectByType<T>()
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>()
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)()
+  name.vb: FindFirstObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>()
+  nameWithType: Object.FindAnyObjectByType<T>()
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>()
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)()
+  name.vb: FindAnyObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindFirstObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindAnyObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfTypeAll(Type)
+  nameWithType: Object.FindObjectsOfTypeAll(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectOfType(Type)
+  nameWithType: Object.FindObjectOfType(Type)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type)
+  nameWithType: Object.FindFirstObjectByType(Type)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type)
+  nameWithType: Object.FindAnyObjectByType(Type)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectOfType(Type, bool)
+  nameWithType: Object.FindObjectOfType(Type, bool)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type, bool)
+  nameWithType.vb: Object.FindObjectOfType(Type, Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectOfType(System.Type, Boolean)
+  name.vb: FindObjectOfType(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.ToString
+  commentId: M:UnityEngine.Object.ToString
+  parent: UnityEngine.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: UnityEngine.Object.ToString()
+  spec.csharp:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.name
+  commentId: P:UnityEngine.Object.name
+  parent: UnityEngine.Object
+  isExternal: true
+  name: name
+  nameWithType: Object.name
+  fullName: UnityEngine.Object.name
+- uid: UnityEngine.Object.hideFlags
+  commentId: P:UnityEngine.Object.hideFlags
+  parent: UnityEngine.Object
+  isExternal: true
+  name: hideFlags
+  nameWithType: Object.hideFlags
+  fullName: UnityEngine.Object.hideFlags
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Object.InstantiateAsync``1(``0)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0)
+  isExternal: true
+  name: InstantiateAsync<T>(T)
+  nameWithType: Object.InstantiateAsync<T>(T)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T)
+  name.vb: InstantiateAsync(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+  isExternal: true
+  name: InstantiateAsync<T>(T, Transform)
+  nameWithType: Object.InstantiateAsync<T>(T, Transform)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Transform)
+  name.vb: InstantiateAsync(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: InstantiateAsync<T>(T, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: InstantiateAsync<T>(T, Transform, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, Transform, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Transform, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Transform, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int)
+  nameWithType: Object.InstantiateAsync<T>(T, int)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer)
+  name.vb: InstantiateAsync(Of T)(T, Integer)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  nameWithType: Object.InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, System.ReadOnlySpan<UnityEngine.Vector3>, System.ReadOnlySpan<UnityEngine.Quaternion>)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, System.ReadOnlySpan(Of UnityEngine.Vector3), System.ReadOnlySpan(Of
+    UnityEngine.Quaternion))
+  name.vb: InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, Vector3, Quaternion, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, UnityEngine.Vector3, UnityEngine.Quaternion,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, Vector3, Quaternion, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, System.ReadOnlySpan<UnityEngine.Vector3>,
+    System.ReadOnlySpan<UnityEngine.Quaternion>)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, System.ReadOnlySpan(Of UnityEngine.Vector3),
+    System.ReadOnlySpan(Of UnityEngine.Quaternion))
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion))
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion})
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Transform, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Transform, System.ReadOnlySpan<UnityEngine.Vector3>,
+    System.ReadOnlySpan<UnityEngine.Quaternion>, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion),
+    CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Transform, System.ReadOnlySpan(Of UnityEngine.Vector3),
+    System.ReadOnlySpan(Of UnityEngine.Quaternion), System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Transform, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Transform,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: InstantiateAsync<T>(T, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: InstantiateAsync<T>(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters,
+    System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, Vector3, Quaternion, InstantiateParameters, CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  commentId: M:UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, InstantiateParameters, CancellationToken)
+  nameWithType: Object.InstantiateAsync<T>(T, int, ReadOnlySpan<Vector3>, ReadOnlySpan<Quaternion>, InstantiateParameters,
+    CancellationToken)
+  fullName: UnityEngine.Object.InstantiateAsync<T>(T, int, System.ReadOnlySpan<UnityEngine.Vector3>, System.ReadOnlySpan<UnityEngine.Quaternion>,
+    UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  nameWithType.vb: Object.InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), InstantiateParameters,
+    CancellationToken)
+  fullName.vb: UnityEngine.Object.InstantiateAsync(Of T)(T, Integer, System.ReadOnlySpan(Of UnityEngine.Vector3), System.ReadOnlySpan(Of
+    UnityEngine.Quaternion), UnityEngine.InstantiateParameters, System.Threading.CancellationToken)
+  name.vb: InstantiateAsync(Of T)(T, Integer, ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Quaternion), InstantiateParameters,
+    CancellationToken)
+  spec.csharp:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.InstantiateAsync``1(``0,System.Int32,System.ReadOnlySpan{UnityEngine.Vector3},System.ReadOnlySpan{UnityEngine.Quaternion},UnityEngine.InstantiateParameters,System.Threading.CancellationToken)
+    name: InstantiateAsync
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+  isExternal: true
+  name: Instantiate<T>(T, InstantiateParameters)
+  nameWithType: Object.Instantiate<T>(T, InstantiateParameters)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.InstantiateParameters)
+  nameWithType.vb: Object.Instantiate(Of T)(T, InstantiateParameters)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.InstantiateParameters)
+  name.vb: Instantiate(Of T)(T, InstantiateParameters)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion, InstantiateParameters)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, InstantiateParameters)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, InstantiateParameters)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.InstantiateParameters)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, InstantiateParameters)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.InstantiateParameters)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.InstantiateParameters
+    name: InstantiateParameters
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  isExternal: true
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate<T>(T, Transform, bool)
+  nameWithType: Object.Instantiate<T>(T, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: ' '
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{SurvivorsMaker.Presentation.LocalizedLanguage}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Presentation.LocalizedLanguage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LocalizedLanguage>
+  nameWithType: List<LocalizedLanguage>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Presentation.LocalizedLanguage>
+  nameWithType.vb: List(Of LocalizedLanguage)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Presentation.LocalizedLanguage)
+  name.vb: List(Of LocalizedLanguage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.LocalizedLanguage
+    name: LocalizedLanguage
+    isExternal: true
+    href: SurvivorsMaker.Presentation.LocalizedLanguage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.LocalizedLanguage
+    name: LocalizedLanguage
+    isExternal: true
+    href: SurvivorsMaker.Presentation.LocalizedLanguage.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Get*
+  commentId: Overload:SurvivorsMaker.Presentation.LocalizedTextAsset.Get
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Get_System_String_System_String_
+  name: Get
+  nameWithType: LocalizedTextAsset.Get
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Get
+- uid: SurvivorsMaker.Presentation.ITextProvider.Get(System.String,System.String)
+  commentId: M:SurvivorsMaker.Presentation.ITextProvider.Get(System.String,System.String)
+  parent: SurvivorsMaker.Presentation.ITextProvider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ITextProvider.html#SurvivorsMaker_Presentation_ITextProvider_Get_System_String_System_String_
+  name: Get(string, string)
+  nameWithType: ITextProvider.Get(string, string)
+  fullName: SurvivorsMaker.Presentation.ITextProvider.Get(string, string)
+  nameWithType.vb: ITextProvider.Get(String, String)
+  fullName.vb: SurvivorsMaker.Presentation.ITextProvider.Get(String, String)
+  name.vb: Get(String, String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.ITextProvider.Get(System.String,System.String)
+    name: Get
+    isExternal: true
+    href: SurvivorsMaker.Presentation.ITextProvider.html#SurvivorsMaker_Presentation_ITextProvider_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.ITextProvider.Get(System.String,System.String)
+    name: Get
+    isExternal: true
+    href: SurvivorsMaker.Presentation.ITextProvider.html#SurvivorsMaker_Presentation_ITextProvider_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  commentId: M:SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Invalidate
+  name: Invalidate()
+  nameWithType: LocalizedTextAsset.Invalidate()
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate()
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+    name: Invalidate
+    isExternal: true
+    href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Invalidate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+    name: Invalidate
+    isExternal: true
+    href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Invalidate
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Set*
+  commentId: Overload:SurvivorsMaker.Presentation.LocalizedTextAsset.Set
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Set_System_String_System_String_System_String_
+  name: Set
+  nameWithType: LocalizedTextAsset.Set
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Set
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  commentId: F:SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Translations
+  name: Translations
+  nameWithType: LocalizedTextAsset.Translations
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Translations
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate*
+  commentId: Overload:SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset_Invalidate
+  name: Invalidate
+  nameWithType: LocalizedTextAsset.Invalidate
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.Invalidate
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.LocalizedTextAsset.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html#SurvivorsMaker_Presentation_LocalizedTextAsset__ctor
+  name: LocalizedTextAsset
+  nameWithType: LocalizedTextAsset.LocalizedTextAsset
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset.LocalizedTextAsset
+  nameWithType.vb: LocalizedTextAsset.New
+  fullName.vb: SurvivorsMaker.Presentation.LocalizedTextAsset.New
+  name.vb: New

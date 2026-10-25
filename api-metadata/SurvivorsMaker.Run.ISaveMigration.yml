@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.ISaveMigration
+  commentId: T:SurvivorsMaker.Run.ISaveMigration
+  id: ISaveMigration
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.ISaveMigration.Domain
+  - SurvivorsMaker.Run.ISaveMigration.FromVersion
+  - SurvivorsMaker.Run.ISaveMigration.Migrate(SurvivorsMaker.Run.SaveEnvelope)
+  - SurvivorsMaker.Run.ISaveMigration.ToVersion
+  langs:
+  - csharp
+  - vb
+  name: ISaveMigration
+  nameWithType: ISaveMigration
+  fullName: SurvivorsMaker.Run.ISaveMigration
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: One explicit source-to-target schema migration; must preserve the supplied source envelope.
+  example: []
+  syntax:
+    content: public interface ISaveMigration
+    content.vb: Public Interface ISaveMigration
+- uid: SurvivorsMaker.Run.ISaveMigration.Migrate(SurvivorsMaker.Run.SaveEnvelope)
+  commentId: M:SurvivorsMaker.Run.ISaveMigration.Migrate(SurvivorsMaker.Run.SaveEnvelope)
+  id: Migrate(SurvivorsMaker.Run.SaveEnvelope)
+  parent: SurvivorsMaker.Run.ISaveMigration
+  langs:
+  - csharp
+  - vb
+  name: Migrate(SaveEnvelope)
+  nameWithType: ISaveMigration.Migrate(SaveEnvelope)
+  fullName: SurvivorsMaker.Run.ISaveMigration.Migrate(SurvivorsMaker.Run.SaveEnvelope)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Returns the next-schema envelope without modifying the supplied source; preserve domain and ownership metadata.
+  example: []
+  syntax:
+    content: SaveEnvelope Migrate(SaveEnvelope source)
+    parameters:
+    - id: source
+      type: SurvivorsMaker.Run.SaveEnvelope
+    return:
+      type: SurvivorsMaker.Run.SaveEnvelope
+    content.vb: Function Migrate(source As SaveEnvelope) As SaveEnvelope
+  overload: SurvivorsMaker.Run.ISaveMigration.Migrate*
+- uid: SurvivorsMaker.Run.ISaveMigration.Domain
+  commentId: P:SurvivorsMaker.Run.ISaveMigration.Domain
+  id: Domain
+  parent: SurvivorsMaker.Run.ISaveMigration
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: ISaveMigration.Domain
+  fullName: SurvivorsMaker.Run.ISaveMigration.Domain
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Save domain accepted by this migration.
+  example: []
+  syntax:
+    content: SaveDomain Domain { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.SaveDomain
+    content.vb: ReadOnly Property Domain As SaveDomain
+  overload: SurvivorsMaker.Run.ISaveMigration.Domain*
+- uid: SurvivorsMaker.Run.ISaveMigration.FromVersion
+  commentId: P:SurvivorsMaker.Run.ISaveMigration.FromVersion
+  id: FromVersion
+  parent: SurvivorsMaker.Run.ISaveMigration
+  langs:
+  - csharp
+  - vb
+  name: FromVersion
+  nameWithType: ISaveMigration.FromVersion
+  fullName: SurvivorsMaker.Run.ISaveMigration.FromVersion
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Exact source schema version accepted by this migration.
+  example: []
+  syntax:
+    content: int FromVersion { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property FromVersion As Integer
+  overload: SurvivorsMaker.Run.ISaveMigration.FromVersion*
+- uid: SurvivorsMaker.Run.ISaveMigration.ToVersion
+  commentId: P:SurvivorsMaker.Run.ISaveMigration.ToVersion
+  id: ToVersion
+  parent: SurvivorsMaker.Run.ISaveMigration
+  langs:
+  - csharp
+  - vb
+  name: ToVersion
+  nameWithType: ISaveMigration.ToVersion
+  fullName: SurvivorsMaker.Run.ISaveMigration.ToVersion
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Target schema version produced by this migration.
+  example: []
+  syntax:
+    content: int ToVersion { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ToVersion As Integer
+  overload: SurvivorsMaker.Run.ISaveMigration.ToVersion*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.ISaveMigration.Migrate*
+  commentId: Overload:SurvivorsMaker.Run.ISaveMigration.Migrate
+  isExternal: true
+  href: SurvivorsMaker.Run.ISaveMigration.html#SurvivorsMaker_Run_ISaveMigration_Migrate_SurvivorsMaker_Run_SaveEnvelope_
+  name: Migrate
+  nameWithType: ISaveMigration.Migrate
+  fullName: SurvivorsMaker.Run.ISaveMigration.Migrate
+- uid: SurvivorsMaker.Run.SaveEnvelope
+  commentId: T:SurvivorsMaker.Run.SaveEnvelope
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveEnvelope.html
+  name: SaveEnvelope
+  nameWithType: SaveEnvelope
+  fullName: SurvivorsMaker.Run.SaveEnvelope
+- uid: SurvivorsMaker.Run.ISaveMigration.Domain*
+  commentId: Overload:SurvivorsMaker.Run.ISaveMigration.Domain
+  isExternal: true
+  href: SurvivorsMaker.Run.ISaveMigration.html#SurvivorsMaker_Run_ISaveMigration_Domain
+  name: Domain
+  nameWithType: ISaveMigration.Domain
+  fullName: SurvivorsMaker.Run.ISaveMigration.Domain
+- uid: SurvivorsMaker.Run.SaveDomain
+  commentId: T:SurvivorsMaker.Run.SaveDomain
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveDomain.html
+  name: SaveDomain
+  nameWithType: SaveDomain
+  fullName: SurvivorsMaker.Run.SaveDomain
+- uid: SurvivorsMaker.Run.ISaveMigration.FromVersion*
+  commentId: Overload:SurvivorsMaker.Run.ISaveMigration.FromVersion
+  isExternal: true
+  href: SurvivorsMaker.Run.ISaveMigration.html#SurvivorsMaker_Run_ISaveMigration_FromVersion
+  name: FromVersion
+  nameWithType: ISaveMigration.FromVersion
+  fullName: SurvivorsMaker.Run.ISaveMigration.FromVersion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.ISaveMigration.ToVersion*
+  commentId: Overload:SurvivorsMaker.Run.ISaveMigration.ToVersion
+  isExternal: true
+  href: SurvivorsMaker.Run.ISaveMigration.html#SurvivorsMaker_Run_ISaveMigration_ToVersion
+  name: ToVersion
+  nameWithType: ISaveMigration.ToVersion
+  fullName: SurvivorsMaker.Run.ISaveMigration.ToVersion

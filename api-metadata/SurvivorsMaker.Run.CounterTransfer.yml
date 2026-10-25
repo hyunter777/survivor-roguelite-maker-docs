@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.CounterTransfer
+  commentId: T:SurvivorsMaker.Run.CounterTransfer
+  id: CounterTransfer
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.CounterTransfer.First
+  - SurvivorsMaker.Run.CounterTransfer.Maximum
+  - SurvivorsMaker.Run.CounterTransfer.Reset
+  - SurvivorsMaker.Run.CounterTransfer.Sum
+  langs:
+  - csharp
+  - vb
+  name: CounterTransfer
+  nameWithType: CounterTransfer
+  fullName: SurvivorsMaker.Run.CounterTransfer
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Policy for carrying per-instance counters when items merge or are replaced.
+  example: []
+  syntax:
+    content: public enum CounterTransfer
+    content.vb: Public Enum CounterTransfer
+- uid: SurvivorsMaker.Run.CounterTransfer.Reset
+  commentId: F:SurvivorsMaker.Run.CounterTransfer.Reset
+  id: Reset
+  parent: SurvivorsMaker.Run.CounterTransfer
+  langs:
+  - csharp
+  - vb
+  name: Reset
+  nameWithType: CounterTransfer.Reset
+  fullName: SurvivorsMaker.Run.CounterTransfer.Reset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Reset = 0
+    return:
+      type: SurvivorsMaker.Run.CounterTransfer
+- uid: SurvivorsMaker.Run.CounterTransfer.Sum
+  commentId: F:SurvivorsMaker.Run.CounterTransfer.Sum
+  id: Sum
+  parent: SurvivorsMaker.Run.CounterTransfer
+  langs:
+  - csharp
+  - vb
+  name: Sum
+  nameWithType: CounterTransfer.Sum
+  fullName: SurvivorsMaker.Run.CounterTransfer.Sum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Sum = 1
+    return:
+      type: SurvivorsMaker.Run.CounterTransfer
+- uid: SurvivorsMaker.Run.CounterTransfer.Maximum
+  commentId: F:SurvivorsMaker.Run.CounterTransfer.Maximum
+  id: Maximum
+  parent: SurvivorsMaker.Run.CounterTransfer
+  langs:
+  - csharp
+  - vb
+  name: Maximum
+  nameWithType: CounterTransfer.Maximum
+  fullName: SurvivorsMaker.Run.CounterTransfer.Maximum
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Maximum = 2
+    return:
+      type: SurvivorsMaker.Run.CounterTransfer
+- uid: SurvivorsMaker.Run.CounterTransfer.First
+  commentId: F:SurvivorsMaker.Run.CounterTransfer.First
+  id: First
+  parent: SurvivorsMaker.Run.CounterTransfer
+  langs:
+  - csharp
+  - vb
+  name: First
+  nameWithType: CounterTransfer.First
+  fullName: SurvivorsMaker.Run.CounterTransfer.First
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: First = 3
+    return:
+      type: SurvivorsMaker.Run.CounterTransfer
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.CounterTransfer
+  commentId: T:SurvivorsMaker.Run.CounterTransfer
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.CounterTransfer.html
+  name: CounterTransfer
+  nameWithType: CounterTransfer
+  fullName: SurvivorsMaker.Run.CounterTransfer

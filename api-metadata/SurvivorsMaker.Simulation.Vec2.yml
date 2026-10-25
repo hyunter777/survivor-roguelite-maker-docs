@@ -1,0 +1,1453 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  id: Vec2
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.Vec2.#ctor(System.Single,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.Angle
+  - SurvivorsMaker.Simulation.Vec2.ClampLength(System.Single)
+  - SurvivorsMaker.Simulation.Vec2.Distance(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.DistanceSquared(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.Dot(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.Equals(SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.Equals(System.Object)
+  - SurvivorsMaker.Simulation.Vec2.FromAngle(System.Single,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.GetHashCode
+  - SurvivorsMaker.Simulation.Vec2.Length
+  - SurvivorsMaker.Simulation.Vec2.LengthSquared
+  - SurvivorsMaker.Simulation.Vec2.Lerp(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.MoveTowards(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.Normalized
+  - SurvivorsMaker.Simulation.Vec2.Right
+  - SurvivorsMaker.Simulation.Vec2.Rotated(System.Single)
+  - SurvivorsMaker.Simulation.Vec2.ToString
+  - SurvivorsMaker.Simulation.Vec2.Up
+  - SurvivorsMaker.Simulation.Vec2.X
+  - SurvivorsMaker.Simulation.Vec2.Y
+  - SurvivorsMaker.Simulation.Vec2.Zero
+  - SurvivorsMaker.Simulation.Vec2.op_Addition(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.op_Division(SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.op_Equality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.op_Inequality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.op_Multiply(SurvivorsMaker.Simulation.Vec2,System.Single)
+  - SurvivorsMaker.Simulation.Vec2.op_Multiply(System.Single,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.op_Subtraction(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.Vec2.op_UnaryNegation(SurvivorsMaker.Simulation.Vec2)
+  langs:
+  - csharp
+  - vb
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 2D vector for the simulation, which cannot reference UnityEngine. Presentation converts to Vector2.
+  example: []
+  syntax:
+    content: 'public struct Vec2 : IEquatable<Vec2>'
+    content.vb: Public Structure Vec2 Implements IEquatable(Of Vec2)
+  implements:
+  - System.IEquatable{SurvivorsMaker.Simulation.Vec2}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.Vec2.X
+  commentId: F:SurvivorsMaker.Simulation.Vec2.X
+  id: X
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Vec2.X
+  fullName: SurvivorsMaker.Simulation.Vec2.X
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float X
+    return:
+      type: System.Single
+    content.vb: Public X As Single
+- uid: SurvivorsMaker.Simulation.Vec2.Y
+  commentId: F:SurvivorsMaker.Simulation.Vec2.Y
+  id: Y
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Vec2.Y
+  fullName: SurvivorsMaker.Simulation.Vec2.Y
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Y
+    return:
+      type: System.Single
+    content.vb: Public Y As Single
+- uid: SurvivorsMaker.Simulation.Vec2.Zero
+  commentId: F:SurvivorsMaker.Simulation.Vec2.Zero
+  id: Zero
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Vec2.Zero
+  fullName: SurvivorsMaker.Simulation.Vec2.Zero
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static readonly Vec2 Zero
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared ReadOnly Zero As Vec2
+- uid: SurvivorsMaker.Simulation.Vec2.Right
+  commentId: F:SurvivorsMaker.Simulation.Vec2.Right
+  id: Right
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Vec2.Right
+  fullName: SurvivorsMaker.Simulation.Vec2.Right
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static readonly Vec2 Right
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared ReadOnly Right As Vec2
+- uid: SurvivorsMaker.Simulation.Vec2.Up
+  commentId: F:SurvivorsMaker.Simulation.Vec2.Up
+  id: Up
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: Vec2.Up
+  fullName: SurvivorsMaker.Simulation.Vec2.Up
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static readonly Vec2 Up
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared ReadOnly Up As Vec2
+- uid: SurvivorsMaker.Simulation.Vec2.#ctor(System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Vec2(float, float)
+  nameWithType: Vec2.Vec2(float, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.Vec2(float, float)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2(float x, float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single)
+  overload: SurvivorsMaker.Simulation.Vec2.#ctor*
+  nameWithType.vb: Vec2.New(Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: SurvivorsMaker.Simulation.Vec2.FromAngle(System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.FromAngle(System.Single,System.Single)
+  id: FromAngle(System.Single,System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: FromAngle(float, float)
+  nameWithType: Vec2.FromAngle(float, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.FromAngle(float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 FromAngle(float radians, float length = 1)
+    parameters:
+    - id: radians
+      type: System.Single
+    - id: length
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Function FromAngle(radians As Single, length As Single = 1) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.FromAngle*
+  nameWithType.vb: Vec2.FromAngle(Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.FromAngle(Single, Single)
+  name.vb: FromAngle(Single, Single)
+- uid: SurvivorsMaker.Simulation.Vec2.Dot(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Dot(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: Dot(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Dot(Vec2, Vec2)
+  nameWithType: Vec2.Dot(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.Dot(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static float Dot(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(a As Vec2, b As Vec2) As Single
+  overload: SurvivorsMaker.Simulation.Vec2.Dot*
+- uid: SurvivorsMaker.Simulation.Vec2.DistanceSquared(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.DistanceSquared(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: DistanceSquared(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: DistanceSquared(Vec2, Vec2)
+  nameWithType: Vec2.DistanceSquared(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.DistanceSquared(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static float DistanceSquared(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function DistanceSquared(a As Vec2, b As Vec2) As Single
+  overload: SurvivorsMaker.Simulation.Vec2.DistanceSquared*
+- uid: SurvivorsMaker.Simulation.Vec2.Distance(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Distance(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: Distance(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Distance(Vec2, Vec2)
+  nameWithType: Vec2.Distance(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.Distance(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static float Distance(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Vec2, b As Vec2) As Single
+  overload: SurvivorsMaker.Simulation.Vec2.Distance*
+- uid: SurvivorsMaker.Simulation.Vec2.Lerp(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Lerp(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: Lerp(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Lerp(Vec2, Vec2, float)
+  nameWithType: Vec2.Lerp(Vec2, Vec2, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.Lerp(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 Lerp(Vec2 a, Vec2 b, float t)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: t
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Function Lerp(a As Vec2, b As Vec2, t As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.Lerp*
+  nameWithType.vb: Vec2.Lerp(Vec2, Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.Lerp(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: Lerp(Vec2, Vec2, Single)
+- uid: SurvivorsMaker.Simulation.Vec2.MoveTowards(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.MoveTowards(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: MoveTowards(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: MoveTowards(Vec2, Vec2, float)
+  nameWithType: Vec2.MoveTowards(Vec2, Vec2, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.MoveTowards(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Moves toward a target by at most <code class="paramref">maxStep</code> without overshooting.
+  example: []
+  syntax:
+    content: public static Vec2 MoveTowards(Vec2 from, Vec2 to, float maxStep)
+    parameters:
+    - id: from
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: to
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: maxStep
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Function MoveTowards(from As Vec2, [to] As Vec2, maxStep As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.MoveTowards*
+  nameWithType.vb: Vec2.MoveTowards(Vec2, Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.MoveTowards(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2,
+    Single)
+  name.vb: MoveTowards(Vec2, Vec2, Single)
+- uid: SurvivorsMaker.Simulation.Vec2.Rotated(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Rotated(System.Single)
+  id: Rotated(System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Rotated(float)
+  nameWithType: Vec2.Rotated(float)
+  fullName: SurvivorsMaker.Simulation.Vec2.Rotated(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 Rotated(float radians)
+    parameters:
+    - id: radians
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Function Rotated(radians As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.Rotated*
+  nameWithType.vb: Vec2.Rotated(Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.Rotated(Single)
+  name.vb: Rotated(Single)
+- uid: SurvivorsMaker.Simulation.Vec2.ClampLength(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.ClampLength(System.Single)
+  id: ClampLength(System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: ClampLength(float)
+  nameWithType: Vec2.ClampLength(float)
+  fullName: SurvivorsMaker.Simulation.Vec2.ClampLength(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Same direction, length at most <code class="paramref">max</code>.
+  example: []
+  syntax:
+    content: public Vec2 ClampLength(float max)
+    parameters:
+    - id: max
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Function ClampLength(max As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.ClampLength*
+  nameWithType.vb: Vec2.ClampLength(Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.ClampLength(Single)
+  name.vb: ClampLength(Single)
+- uid: SurvivorsMaker.Simulation.Vec2.op_Addition(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Addition(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: op_Addition(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator +(Vec2, Vec2)
+  nameWithType: Vec2.operator +(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator +(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator +(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator +(a As Vec2, b As Vec2) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_Addition*
+  nameWithType.vb: Vec2.+(Vec2, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.+(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  name.vb: +(Vec2, Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.op_Subtraction(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Subtraction(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: op_Subtraction(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator -(Vec2, Vec2)
+  nameWithType: Vec2.operator -(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator -(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator -(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator -(a As Vec2, b As Vec2) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_Subtraction*
+  nameWithType.vb: Vec2.-(Vec2, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.-(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  name.vb: -(Vec2, Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.op_UnaryNegation(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_UnaryNegation(SurvivorsMaker.Simulation.Vec2)
+  id: op_UnaryNegation(SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator -(Vec2)
+  nameWithType: Vec2.operator -(Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator -(SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator -(Vec2 a)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator -(a As Vec2) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_UnaryNegation*
+  nameWithType.vb: Vec2.-(Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.-(SurvivorsMaker.Simulation.Vec2)
+  name.vb: -(Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.op_Multiply(SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Multiply(SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: op_Multiply(SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vec2, float)
+  nameWithType: Vec2.operator *(Vec2, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator *(SurvivorsMaker.Simulation.Vec2, float)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator *(Vec2 a, float s)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: s
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator *(a As Vec2, s As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_Multiply*
+  nameWithType.vb: Vec2.*(Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.*(SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: '*(Vec2, Single)'
+- uid: SurvivorsMaker.Simulation.Vec2.op_Multiply(System.Single,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Multiply(System.Single,SurvivorsMaker.Simulation.Vec2)
+  id: op_Multiply(System.Single,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator *(float, Vec2)
+  nameWithType: Vec2.operator *(float, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator *(float, SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator *(float s, Vec2 a)
+    parameters:
+    - id: s
+      type: System.Single
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator *(s As Single, a As Vec2) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_Multiply*
+  nameWithType.vb: Vec2.*(Single, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.*(Single, SurvivorsMaker.Simulation.Vec2)
+  name.vb: '*(Single, Vec2)'
+- uid: SurvivorsMaker.Simulation.Vec2.op_Division(SurvivorsMaker.Simulation.Vec2,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Division(SurvivorsMaker.Simulation.Vec2,System.Single)
+  id: op_Division(SurvivorsMaker.Simulation.Vec2,System.Single)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator /(Vec2, float)
+  nameWithType: Vec2.operator /(Vec2, float)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator /(SurvivorsMaker.Simulation.Vec2, float)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static Vec2 operator /(Vec2 a, float s)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: s
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Shared Operator /(a As Vec2, s As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.op_Division*
+  nameWithType.vb: Vec2./(Vec2, Single)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2./(SurvivorsMaker.Simulation.Vec2, Single)
+  name.vb: /(Vec2, Single)
+- uid: SurvivorsMaker.Simulation.Vec2.op_Equality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Equality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: op_Equality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Vec2, Vec2)
+  nameWithType: Vec2.operator ==(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator ==(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static bool operator ==(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Vec2, b As Vec2) As Boolean
+  overload: SurvivorsMaker.Simulation.Vec2.op_Equality*
+  nameWithType.vb: Vec2.=(Vec2, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.=(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  name.vb: =(Vec2, Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.op_Inequality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.op_Inequality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  id: op_Inequality(SurvivorsMaker.Simulation.Vec2,SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Vec2, Vec2)
+  nameWithType: Vec2.operator !=(Vec2, Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.operator !=(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  type: Operator
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static bool operator !=(Vec2 a, Vec2 b)
+    parameters:
+    - id: a
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: b
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Vec2, b As Vec2) As Boolean
+  overload: SurvivorsMaker.Simulation.Vec2.op_Inequality*
+  nameWithType.vb: Vec2.<>(Vec2, Vec2)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.<>(SurvivorsMaker.Simulation.Vec2, SurvivorsMaker.Simulation.Vec2)
+  name.vb: <>(Vec2, Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.Equals(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Equals(SurvivorsMaker.Simulation.Vec2)
+  id: Equals(SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vec2)
+  nameWithType: Vec2.Equals(Vec2)
+  fullName: SurvivorsMaker.Simulation.Vec2.Equals(SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public bool Equals(Vec2 other)
+    parameters:
+    - id: other
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Vec2) As Boolean
+  overload: SurvivorsMaker.Simulation.Vec2.Equals*
+  implements:
+  - System.IEquatable{SurvivorsMaker.Simulation.Vec2}.Equals(SurvivorsMaker.Simulation.Vec2)
+- uid: SurvivorsMaker.Simulation.Vec2.Equals(System.Object)
+  commentId: M:SurvivorsMaker.Simulation.Vec2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Vec2.Equals(object)
+  fullName: SurvivorsMaker.Simulation.Vec2.Equals(object)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: SurvivorsMaker.Simulation.Vec2.Equals*
+  nameWithType.vb: Vec2.Equals(Object)
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SurvivorsMaker.Simulation.Vec2.GetHashCode
+  commentId: M:SurvivorsMaker.Simulation.Vec2.GetHashCode
+  id: GetHashCode
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Vec2.GetHashCode()
+  fullName: SurvivorsMaker.Simulation.Vec2.GetHashCode()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: SurvivorsMaker.Simulation.Vec2.GetHashCode*
+- uid: SurvivorsMaker.Simulation.Vec2.ToString
+  commentId: M:SurvivorsMaker.Simulation.Vec2.ToString
+  id: ToString
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Vec2.ToString()
+  fullName: SurvivorsMaker.Simulation.Vec2.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: SurvivorsMaker.Simulation.Vec2.ToString*
+- uid: SurvivorsMaker.Simulation.Vec2.LengthSquared
+  commentId: P:SurvivorsMaker.Simulation.Vec2.LengthSquared
+  id: LengthSquared
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared
+  nameWithType: Vec2.LengthSquared
+  fullName: SurvivorsMaker.Simulation.Vec2.LengthSquared
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float LengthSquared { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property LengthSquared As Single
+  overload: SurvivorsMaker.Simulation.Vec2.LengthSquared*
+- uid: SurvivorsMaker.Simulation.Vec2.Length
+  commentId: P:SurvivorsMaker.Simulation.Vec2.Length
+  id: Length
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: Vec2.Length
+  fullName: SurvivorsMaker.Simulation.Vec2.Length
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Length { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Length As Single
+  overload: SurvivorsMaker.Simulation.Vec2.Length*
+- uid: SurvivorsMaker.Simulation.Vec2.Normalized
+  commentId: P:SurvivorsMaker.Simulation.Vec2.Normalized
+  id: Normalized
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Normalized
+  nameWithType: Vec2.Normalized
+  fullName: SurvivorsMaker.Simulation.Vec2.Normalized
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Unit vector in the same direction, or zero for a zero vector.
+  example: []
+  syntax:
+    content: public Vec2 Normalized { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public ReadOnly Property Normalized As Vec2
+  overload: SurvivorsMaker.Simulation.Vec2.Normalized*
+- uid: SurvivorsMaker.Simulation.Vec2.Angle
+  commentId: P:SurvivorsMaker.Simulation.Vec2.Angle
+  id: Angle
+  parent: SurvivorsMaker.Simulation.Vec2
+  langs:
+  - csharp
+  - vb
+  name: Angle
+  nameWithType: Vec2.Angle
+  fullName: SurvivorsMaker.Simulation.Vec2.Angle
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Angle from +X in radians, −π..π.
+  example: []
+  syntax:
+    content: public float Angle { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Angle As Single
+  overload: SurvivorsMaker.Simulation.Vec2.Angle*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.IEquatable{SurvivorsMaker.Simulation.Vec2}
+  commentId: T:System.IEquatable{SurvivorsMaker.Simulation.Vec2}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vec2>
+  nameWithType: IEquatable<Vec2>
+  fullName: System.IEquatable<SurvivorsMaker.Simulation.Vec2>
+  nameWithType.vb: IEquatable(Of Vec2)
+  fullName.vb: System.IEquatable(Of SurvivorsMaker.Simulation.Vec2)
+  name.vb: IEquatable(Of Vec2)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.Vec2.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2__ctor_System_Single_System_Single_
+  name: Vec2
+  nameWithType: Vec2.Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2.Vec2
+  nameWithType.vb: Vec2.New
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.Vec2.FromAngle*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.FromAngle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_FromAngle_System_Single_System_Single_
+  name: FromAngle
+  nameWithType: Vec2.FromAngle
+  fullName: SurvivorsMaker.Simulation.Vec2.FromAngle
+- uid: SurvivorsMaker.Simulation.Vec2.Dot*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Dot
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Dot_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: Dot
+  nameWithType: Vec2.Dot
+  fullName: SurvivorsMaker.Simulation.Vec2.Dot
+- uid: SurvivorsMaker.Simulation.Vec2.DistanceSquared*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.DistanceSquared
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_DistanceSquared_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: DistanceSquared
+  nameWithType: Vec2.DistanceSquared
+  fullName: SurvivorsMaker.Simulation.Vec2.DistanceSquared
+- uid: SurvivorsMaker.Simulation.Vec2.Distance*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Distance
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Distance_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: Distance
+  nameWithType: Vec2.Distance
+  fullName: SurvivorsMaker.Simulation.Vec2.Distance
+- uid: SurvivorsMaker.Simulation.Vec2.Lerp*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Lerp
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Lerp_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: Lerp
+  nameWithType: Vec2.Lerp
+  fullName: SurvivorsMaker.Simulation.Vec2.Lerp
+- uid: SurvivorsMaker.Simulation.Vec2.MoveTowards*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.MoveTowards
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_MoveTowards_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: MoveTowards
+  nameWithType: Vec2.MoveTowards
+  fullName: SurvivorsMaker.Simulation.Vec2.MoveTowards
+- uid: SurvivorsMaker.Simulation.Vec2.Rotated*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Rotated
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Rotated_System_Single_
+  name: Rotated
+  nameWithType: Vec2.Rotated
+  fullName: SurvivorsMaker.Simulation.Vec2.Rotated
+- uid: SurvivorsMaker.Simulation.Vec2.ClampLength*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.ClampLength
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_ClampLength_System_Single_
+  name: ClampLength
+  nameWithType: Vec2.ClampLength
+  fullName: SurvivorsMaker.Simulation.Vec2.ClampLength
+- uid: SurvivorsMaker.Simulation.Vec2.op_Addition*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Addition
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Addition_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: operator +
+  nameWithType: Vec2.operator +
+  fullName: SurvivorsMaker.Simulation.Vec2.operator +
+  nameWithType.vb: Vec2.+
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Addition*
+    name: +
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Addition_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+- uid: SurvivorsMaker.Simulation.Vec2.op_Subtraction*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Subtraction
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Subtraction_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: operator -
+  nameWithType: Vec2.operator -
+  fullName: SurvivorsMaker.Simulation.Vec2.operator -
+  nameWithType.vb: Vec2.-
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Subtraction_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+- uid: SurvivorsMaker.Simulation.Vec2.op_UnaryNegation*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_UnaryNegation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_UnaryNegation_SurvivorsMaker_Simulation_Vec2_
+  name: operator -
+  nameWithType: Vec2.operator -
+  fullName: SurvivorsMaker.Simulation.Vec2.operator -
+  nameWithType.vb: Vec2.-
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_UnaryNegation*
+    name: '-'
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_UnaryNegation_SurvivorsMaker_Simulation_Vec2_
+- uid: SurvivorsMaker.Simulation.Vec2.op_Multiply*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Multiply
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Multiply_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: operator *
+  nameWithType: Vec2.operator *
+  fullName: SurvivorsMaker.Simulation.Vec2.operator *
+  nameWithType.vb: Vec2.*
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Multiply_SurvivorsMaker_Simulation_Vec2_System_Single_
+- uid: SurvivorsMaker.Simulation.Vec2.op_Division*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Division
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Division_SurvivorsMaker_Simulation_Vec2_System_Single_
+  name: operator /
+  nameWithType: Vec2.operator /
+  fullName: SurvivorsMaker.Simulation.Vec2.operator /
+  nameWithType.vb: Vec2./
+  fullName.vb: SurvivorsMaker.Simulation.Vec2./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Division*
+    name: /
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Division_SurvivorsMaker_Simulation_Vec2_System_Single_
+- uid: SurvivorsMaker.Simulation.Vec2.op_Equality*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Equality
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Equality_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: operator ==
+  nameWithType: Vec2.operator ==
+  fullName: SurvivorsMaker.Simulation.Vec2.operator ==
+  nameWithType.vb: Vec2.=
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.=
+  name.vb: '='
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Equality*
+    name: ==
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Equality_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.Vec2.op_Inequality*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.op_Inequality
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Inequality_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+  name: operator !=
+  nameWithType: Vec2.operator !=
+  fullName: SurvivorsMaker.Simulation.Vec2.operator !=
+  nameWithType.vb: Vec2.<>
+  fullName.vb: SurvivorsMaker.Simulation.Vec2.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_op_Inequality_SurvivorsMaker_Simulation_Vec2_SurvivorsMaker_Simulation_Vec2_
+- uid: SurvivorsMaker.Simulation.Vec2.Equals*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Equals
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Equals_SurvivorsMaker_Simulation_Vec2_
+  name: Equals
+  nameWithType: Vec2.Equals
+  fullName: SurvivorsMaker.Simulation.Vec2.Equals
+- uid: System.IEquatable{SurvivorsMaker.Simulation.Vec2}.Equals(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:System.IEquatable{SurvivorsMaker.Simulation.Vec2}.Equals(SurvivorsMaker.Simulation.Vec2)
+  parent: System.IEquatable{SurvivorsMaker.Simulation.Vec2}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vec2)
+  nameWithType: IEquatable<Vec2>.Equals(Vec2)
+  fullName: System.IEquatable<SurvivorsMaker.Simulation.Vec2>.Equals(SurvivorsMaker.Simulation.Vec2)
+  nameWithType.vb: IEquatable(Of Vec2).Equals(Vec2)
+  fullName.vb: System.IEquatable(Of SurvivorsMaker.Simulation.Vec2).Equals(SurvivorsMaker.Simulation.Vec2)
+  spec.csharp:
+  - uid: System.IEquatable{SurvivorsMaker.Simulation.Vec2}.Equals(SurvivorsMaker.Simulation.Vec2)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{SurvivorsMaker.Simulation.Vec2}.Equals(SurvivorsMaker.Simulation.Vec2)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.Vec2.GetHashCode*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.GetHashCode
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_GetHashCode
+  name: GetHashCode
+  nameWithType: Vec2.GetHashCode
+  fullName: SurvivorsMaker.Simulation.Vec2.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.Vec2.ToString*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.ToString
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_ToString
+  name: ToString
+  nameWithType: Vec2.ToString
+  fullName: SurvivorsMaker.Simulation.Vec2.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.Vec2.LengthSquared*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.LengthSquared
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_LengthSquared
+  name: LengthSquared
+  nameWithType: Vec2.LengthSquared
+  fullName: SurvivorsMaker.Simulation.Vec2.LengthSquared
+- uid: SurvivorsMaker.Simulation.Vec2.Length*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Length
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Length
+  name: Length
+  nameWithType: Vec2.Length
+  fullName: SurvivorsMaker.Simulation.Vec2.Length
+- uid: SurvivorsMaker.Simulation.Vec2.Normalized*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Normalized
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Normalized
+  name: Normalized
+  nameWithType: Vec2.Normalized
+  fullName: SurvivorsMaker.Simulation.Vec2.Normalized
+- uid: SurvivorsMaker.Simulation.Vec2.Angle*
+  commentId: Overload:SurvivorsMaker.Simulation.Vec2.Angle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html#SurvivorsMaker_Simulation_Vec2_Angle
+  name: Angle
+  nameWithType: Vec2.Angle
+  fullName: SurvivorsMaker.Simulation.Vec2.Angle

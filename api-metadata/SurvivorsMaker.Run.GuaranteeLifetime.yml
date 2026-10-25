@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.GuaranteeLifetime
+  commentId: T:SurvivorsMaker.Run.GuaranteeLifetime
+  id: GuaranteeLifetime
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.GuaranteeLifetime.EveryRoll
+  - SurvivorsMaker.Run.GuaranteeLifetime.OncePerRun
+  - SurvivorsMaker.Run.GuaranteeLifetime.OncePerWave
+  langs:
+  - csharp
+  - vb
+  name: GuaranteeLifetime
+  nameWithType: GuaranteeLifetime
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Scope in which a guarantee may be consumed: every roll, once per wave or once per run.'
+  example: []
+  syntax:
+    content: public enum GuaranteeLifetime
+    content.vb: Public Enum GuaranteeLifetime
+- uid: SurvivorsMaker.Run.GuaranteeLifetime.EveryRoll
+  commentId: F:SurvivorsMaker.Run.GuaranteeLifetime.EveryRoll
+  id: EveryRoll
+  parent: SurvivorsMaker.Run.GuaranteeLifetime
+  langs:
+  - csharp
+  - vb
+  name: EveryRoll
+  nameWithType: GuaranteeLifetime.EveryRoll
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime.EveryRoll
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: EveryRoll = 0
+    return:
+      type: SurvivorsMaker.Run.GuaranteeLifetime
+- uid: SurvivorsMaker.Run.GuaranteeLifetime.OncePerWave
+  commentId: F:SurvivorsMaker.Run.GuaranteeLifetime.OncePerWave
+  id: OncePerWave
+  parent: SurvivorsMaker.Run.GuaranteeLifetime
+  langs:
+  - csharp
+  - vb
+  name: OncePerWave
+  nameWithType: GuaranteeLifetime.OncePerWave
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime.OncePerWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: OncePerWave = 1
+    return:
+      type: SurvivorsMaker.Run.GuaranteeLifetime
+- uid: SurvivorsMaker.Run.GuaranteeLifetime.OncePerRun
+  commentId: F:SurvivorsMaker.Run.GuaranteeLifetime.OncePerRun
+  id: OncePerRun
+  parent: SurvivorsMaker.Run.GuaranteeLifetime
+  langs:
+  - csharp
+  - vb
+  name: OncePerRun
+  nameWithType: GuaranteeLifetime.OncePerRun
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime.OncePerRun
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: OncePerRun = 2
+    return:
+      type: SurvivorsMaker.Run.GuaranteeLifetime
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.GuaranteeLifetime
+  commentId: T:SurvivorsMaker.Run.GuaranteeLifetime
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.GuaranteeLifetime.html
+  name: GuaranteeLifetime
+  nameWithType: GuaranteeLifetime
+  fullName: SurvivorsMaker.Run.GuaranteeLifetime

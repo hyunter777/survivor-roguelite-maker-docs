@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle
+  commentId: T:SurvivorsMaker.Presentation.CustomEffectStyle
+  id: CustomEffectStyle
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.CustomEffectStyle.Burst
+  - SurvivorsMaker.Presentation.CustomEffectStyle.Explosion
+  - SurvivorsMaker.Presentation.CustomEffectStyle.None
+  - SurvivorsMaker.Presentation.CustomEffectStyle.Sparkle
+  langs:
+  - csharp
+  - vb
+  name: CustomEffectStyle
+  nameWithType: CustomEffectStyle
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: How a <xref href="SurvivorsMaker.Presentation.CustomEventEffect" data-throw-if-not-resolved="false"></xref> looks.
+  example: []
+  syntax:
+    content: public enum CustomEffectStyle
+    content.vb: Public Enum CustomEffectStyle
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle.None
+  commentId: F:SurvivorsMaker.Presentation.CustomEffectStyle.None
+  id: None
+  parent: SurvivorsMaker.Presentation.CustomEffectStyle
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CustomEffectStyle.None
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Presentation.CustomEffectStyle
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle.Burst
+  commentId: F:SurvivorsMaker.Presentation.CustomEffectStyle.Burst
+  id: Burst
+  parent: SurvivorsMaker.Presentation.CustomEffectStyle
+  langs:
+  - csharp
+  - vb
+  name: Burst
+  nameWithType: CustomEffectStyle.Burst
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle.Burst
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Burst = 1
+    return:
+      type: SurvivorsMaker.Presentation.CustomEffectStyle
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle.Sparkle
+  commentId: F:SurvivorsMaker.Presentation.CustomEffectStyle.Sparkle
+  id: Sparkle
+  parent: SurvivorsMaker.Presentation.CustomEffectStyle
+  langs:
+  - csharp
+  - vb
+  name: Sparkle
+  nameWithType: CustomEffectStyle.Sparkle
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle.Sparkle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Sparkle = 2
+    return:
+      type: SurvivorsMaker.Presentation.CustomEffectStyle
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle.Explosion
+  commentId: F:SurvivorsMaker.Presentation.CustomEffectStyle.Explosion
+  id: Explosion
+  parent: SurvivorsMaker.Presentation.CustomEffectStyle
+  langs:
+  - csharp
+  - vb
+  name: Explosion
+  nameWithType: CustomEffectStyle.Explosion
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle.Explosion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Explosion = 3
+    return:
+      type: SurvivorsMaker.Presentation.CustomEffectStyle
+references:
+- uid: SurvivorsMaker.Presentation.CustomEventEffect
+  commentId: T:SurvivorsMaker.Presentation.CustomEventEffect
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CustomEventEffect.html
+  name: CustomEventEffect
+  nameWithType: CustomEventEffect
+  fullName: SurvivorsMaker.Presentation.CustomEventEffect
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.CustomEffectStyle
+  commentId: T:SurvivorsMaker.Presentation.CustomEffectStyle
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CustomEffectStyle.html
+  name: CustomEffectStyle
+  nameWithType: CustomEffectStyle
+  fullName: SurvivorsMaker.Presentation.CustomEffectStyle

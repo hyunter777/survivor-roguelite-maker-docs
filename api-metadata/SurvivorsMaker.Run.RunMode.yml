@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunMode
+  commentId: T:SurvivorsMaker.Run.RunMode
+  id: RunMode
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunMode.Arena
+  - SurvivorsMaker.Run.RunMode.Field
+  langs:
+  - csharp
+  - vb
+  name: RunMode
+  nameWithType: RunMode
+  fullName: SurvivorsMaker.Run.RunMode
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public enum RunMode
+    content.vb: Public Enum RunMode
+- uid: SurvivorsMaker.Run.RunMode.Arena
+  commentId: F:SurvivorsMaker.Run.RunMode.Arena
+  id: Arena
+  parent: SurvivorsMaker.Run.RunMode
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: RunMode.Arena
+  fullName: SurvivorsMaker.Run.RunMode.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Timed waves; level-up choices and a shop between waves.
+  example: []
+  syntax:
+    content: Arena = 0
+    return:
+      type: SurvivorsMaker.Run.RunMode
+- uid: SurvivorsMaker.Run.RunMode.Field
+  commentId: F:SurvivorsMaker.Run.RunMode.Field
+  id: Field
+  parent: SurvivorsMaker.Run.RunMode
+  langs:
+  - csharp
+  - vb
+  name: Field
+  nameWithType: RunMode.Field
+  fullName: SurvivorsMaker.Run.RunMode.Field
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Continuous waves without a shop; level-up choices pause the wave when they happen.
+  example: []
+  syntax:
+    content: Field = 1
+    return:
+      type: SurvivorsMaker.Run.RunMode
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunMode
+  commentId: T:SurvivorsMaker.Run.RunMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunMode.html
+  name: RunMode
+  nameWithType: RunMode
+  fullName: SurvivorsMaker.Run.RunMode

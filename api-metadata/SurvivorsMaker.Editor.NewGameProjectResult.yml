@@ -1,0 +1,1103 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.NewGameProjectResult
+  commentId: T:SurvivorsMaker.Editor.NewGameProjectResult
+  id: NewGameProjectResult
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.NewGameProjectResult.#ctor
+  - SurvivorsMaker.Editor.NewGameProjectResult.Arena
+  - SurvivorsMaker.Editor.NewGameProjectResult.Boss
+  - SurvivorsMaker.Editor.NewGameProjectResult.Character
+  - SurvivorsMaker.Editor.NewGameProjectResult.Content
+  - SurvivorsMaker.Editor.NewGameProjectResult.Created
+  - SurvivorsMaker.Editor.NewGameProjectResult.Elite
+  - SurvivorsMaker.Editor.NewGameProjectResult.Enemies
+  - SurvivorsMaker.Editor.NewGameProjectResult.Folder
+  - SurvivorsMaker.Editor.NewGameProjectResult.Issues
+  - SurvivorsMaker.Editor.NewGameProjectResult.Items
+  - SurvivorsMaker.Editor.NewGameProjectResult.Scene
+  - SurvivorsMaker.Editor.NewGameProjectResult.Settings
+  - SurvivorsMaker.Editor.NewGameProjectResult.Sounds
+  - SurvivorsMaker.Editor.NewGameProjectResult.Stats
+  - SurvivorsMaker.Editor.NewGameProjectResult.Views
+  - SurvivorsMaker.Editor.NewGameProjectResult.Waves
+  - SurvivorsMaker.Editor.NewGameProjectResult.WeaponRoots
+  - SurvivorsMaker.Editor.NewGameProjectResult.Weapons
+  langs:
+  - csharp
+  - vb
+  name: NewGameProjectResult
+  nameWithType: NewGameProjectResult
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Everything <xref href="SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)"
+    data-throw-if-not-resolved="false"></xref> made, already linked together.
+  example: []
+  syntax:
+    content: public sealed class NewGameProjectResult
+    content.vb: Public NotInheritable Class NewGameProjectResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Folder
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Folder
+  id: Folder
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: NewGameProjectResult.Folder
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Folder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string Folder
+    return:
+      type: System.String
+    content.vb: Public Folder As String
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Stats
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Stats
+  id: Stats
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: NewGameProjectResult.Stats
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Stats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public StatCatalogAsset Stats
+    return:
+      type: SurvivorsMaker.Data.StatCatalogAsset
+    content.vb: Public Stats As StatCatalogAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Settings
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Settings
+  id: Settings
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: NewGameProjectResult.Settings
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Settings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public GameSettingsAsset Settings
+    return:
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    content.vb: Public Settings As GameSettingsAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Content
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Content
+  id: Content
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: NewGameProjectResult.Content
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Content
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ContentAsset Content
+    return:
+      type: SurvivorsMaker.Data.ContentAsset
+    content.vb: Public Content As ContentAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Character
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Character
+  id: Character
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: NewGameProjectResult.Character
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public CharacterAsset Character
+    return:
+      type: SurvivorsMaker.Data.CharacterAsset
+    content.vb: Public Character As CharacterAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.WeaponRoots
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.WeaponRoots
+  id: WeaponRoots
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: WeaponRoots
+  nameWithType: NewGameProjectResult.WeaponRoots
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.WeaponRoots
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'First tier of each weapon kind: ranged, melee, orbit, aura.'
+  example: []
+  syntax:
+    content: public readonly List<WeaponAsset> WeaponRoots
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+    content.vb: Public ReadOnly WeaponRoots As List(Of WeaponAsset)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Weapons
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: NewGameProjectResult.Weapons
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Every tier of every weapon, in content order.
+  example: []
+  syntax:
+    content: public readonly List<WeaponAsset> Weapons
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+    content.vb: Public ReadOnly Weapons As List(Of WeaponAsset)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Items
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Items
+  id: Items
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: NewGameProjectResult.Items
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Items
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<ItemAsset> Items
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.ItemAsset}
+    content.vb: Public ReadOnly Items As List(Of ItemAsset)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Enemies
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: NewGameProjectResult.Enemies
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<EnemyAsset> Enemies
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+    content.vb: Public ReadOnly Enemies As List(Of EnemyAsset)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Boss
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Boss
+  id: Boss
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Boss
+  nameWithType: NewGameProjectResult.Boss
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Boss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public EnemyAsset Boss
+    return:
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Boss As EnemyAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Elite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Elite
+  id: Elite
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Elite
+  nameWithType: NewGameProjectResult.Elite
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Elite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public EliteAsset Elite
+    return:
+      type: SurvivorsMaker.Data.EliteAsset
+    content.vb: Public Elite As EliteAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Waves
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Waves
+  id: Waves
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Waves
+  nameWithType: NewGameProjectResult.Waves
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Waves
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<WaveAsset> Waves
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.WaveAsset}
+    content.vb: Public ReadOnly Waves As List(Of WaveAsset)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Arena
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Arena
+  id: Arena
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: NewGameProjectResult.Arena
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ArenaAsset Arena
+    return:
+      type: SurvivorsMaker.Data.ArenaAsset
+    content.vb: Public Arena As ArenaAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Views
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Views
+  id: Views
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Views
+  nameWithType: NewGameProjectResult.Views
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Views
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ViewCatalogAsset Views
+    return:
+      type: SurvivorsMaker.Presentation.ViewCatalogAsset
+    content.vb: Public Views As ViewCatalogAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Sounds
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Sounds
+  id: Sounds
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Sounds
+  nameWithType: NewGameProjectResult.Sounds
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Sounds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public SoundCatalogAsset Sounds
+    return:
+      type: SurvivorsMaker.Presentation.SoundCatalogAsset
+    content.vb: Public Sounds As SoundCatalogAsset
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Scene
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Scene
+  id: Scene
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: NewGameProjectResult.Scene
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Scene
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public GameSceneResult Scene
+    return:
+      type: SurvivorsMaker.Editor.GameSceneResult
+    content.vb: Public Scene As GameSceneResult
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Issues
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Issues
+  id: Issues
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Issues
+  nameWithType: NewGameProjectResult.Issues
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Issues
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Content validation issues (expected empty).
+  example: []
+  syntax:
+    content: public readonly List<string> Issues
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Issues As List(Of String)
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.Created
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectResult.Created
+  id: Created
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: Created
+  nameWithType: NewGameProjectResult.Created
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.Created
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<Object> Created
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Object}
+    content.vb: Public ReadOnly Created As List(Of [Object])
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.#ctor
+  commentId: M:SurvivorsMaker.Editor.NewGameProjectResult.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.NewGameProjectResult
+  langs:
+  - csharp
+  - vb
+  name: NewGameProjectResult()
+  nameWithType: NewGameProjectResult.NewGameProjectResult()
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.NewGameProjectResult()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public NewGameProjectResult()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.NewGameProjectResult.#ctor*
+  nameWithType.vb: NewGameProjectResult.New()
+  fullName.vb: SurvivorsMaker.Editor.NewGameProjectResult.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  commentId: M:SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  isExternal: true
+  href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  name: Create(NewGameProjectOptions)
+  nameWithType: NewGameProjectWizard.Create(NewGameProjectOptions)
+  fullName: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.NewGameProjectOptions
+    name: NewGameProjectOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectOptions.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.NewGameProjectOptions
+    name: NewGameProjectOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectOptions.html
+  - name: )
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Data.StatCatalogAsset
+  commentId: T:SurvivorsMaker.Data.StatCatalogAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.StatCatalogAsset.html
+  name: StatCatalogAsset
+  nameWithType: StatCatalogAsset
+  fullName: SurvivorsMaker.Data.StatCatalogAsset
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Data.GameSettingsAsset
+  commentId: T:SurvivorsMaker.Data.GameSettingsAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.GameSettingsAsset.html
+  name: GameSettingsAsset
+  nameWithType: GameSettingsAsset
+  fullName: SurvivorsMaker.Data.GameSettingsAsset
+- uid: SurvivorsMaker.Data.ContentAsset
+  commentId: T:SurvivorsMaker.Data.ContentAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAsset.html
+  name: ContentAsset
+  nameWithType: ContentAsset
+  fullName: SurvivorsMaker.Data.ContentAsset
+- uid: SurvivorsMaker.Data.CharacterAsset
+  commentId: T:SurvivorsMaker.Data.CharacterAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.CharacterAsset.html
+  name: CharacterAsset
+  nameWithType: CharacterAsset
+  fullName: SurvivorsMaker.Data.CharacterAsset
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WeaponAsset>
+  nameWithType: List<WeaponAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.WeaponAsset>
+  nameWithType.vb: List(Of WeaponAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.WeaponAsset)
+  name.vb: List(Of WeaponAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WeaponAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WeaponAsset.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.ItemAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.ItemAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ItemAsset>
+  nameWithType: List<ItemAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.ItemAsset>
+  nameWithType.vb: List(Of ItemAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.ItemAsset)
+  name.vb: List(Of ItemAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.ItemAsset
+    name: ItemAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.ItemAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.ItemAsset
+    name: ItemAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.ItemAsset.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EnemyAsset>
+  nameWithType: List<EnemyAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.EnemyAsset>
+  nameWithType.vb: List(Of EnemyAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.EnemyAsset)
+  name.vb: List(Of EnemyAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.EnemyAsset
+    name: EnemyAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.EnemyAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.EnemyAsset
+    name: EnemyAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.EnemyAsset.html
+  - name: )
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: SurvivorsMaker.Data.EliteAsset
+  commentId: T:SurvivorsMaker.Data.EliteAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EliteAsset.html
+  name: EliteAsset
+  nameWithType: EliteAsset
+  fullName: SurvivorsMaker.Data.EliteAsset
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.WaveAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.WaveAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WaveAsset>
+  nameWithType: List<WaveAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.WaveAsset>
+  nameWithType.vb: List(Of WaveAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.WaveAsset)
+  name.vb: List(Of WaveAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.WaveAsset
+    name: WaveAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WaveAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.WaveAsset
+    name: WaveAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WaveAsset.html
+  - name: )
+- uid: SurvivorsMaker.Data.ArenaAsset
+  commentId: T:SurvivorsMaker.Data.ArenaAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ArenaAsset.html
+  name: ArenaAsset
+  nameWithType: ArenaAsset
+  fullName: SurvivorsMaker.Data.ArenaAsset
+- uid: SurvivorsMaker.Presentation.ViewCatalogAsset
+  commentId: T:SurvivorsMaker.Presentation.ViewCatalogAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewCatalogAsset.html
+  name: ViewCatalogAsset
+  nameWithType: ViewCatalogAsset
+  fullName: SurvivorsMaker.Presentation.ViewCatalogAsset
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.SoundCatalogAsset
+  commentId: T:SurvivorsMaker.Presentation.SoundCatalogAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCatalogAsset.html
+  name: SoundCatalogAsset
+  nameWithType: SoundCatalogAsset
+  fullName: SurvivorsMaker.Presentation.SoundCatalogAsset
+- uid: SurvivorsMaker.Editor.GameSceneResult
+  commentId: T:SurvivorsMaker.Editor.GameSceneResult
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.GameSceneResult.html
+  name: GameSceneResult
+  nameWithType: GameSceneResult
+  fullName: SurvivorsMaker.Editor.GameSceneResult
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List{UnityEngine.Object}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: System.Collections.Generic.List<UnityEngine.Object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Editor.NewGameProjectResult.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.NewGameProjectResult.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.NewGameProjectResult.html#SurvivorsMaker_Editor_NewGameProjectResult__ctor
+  name: NewGameProjectResult
+  nameWithType: NewGameProjectResult.NewGameProjectResult
+  fullName: SurvivorsMaker.Editor.NewGameProjectResult.NewGameProjectResult
+  nameWithType.vb: NewGameProjectResult.New
+  fullName.vb: SurvivorsMaker.Editor.NewGameProjectResult.New
+  name.vb: New

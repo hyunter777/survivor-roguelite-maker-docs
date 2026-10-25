@@ -1,0 +1,808 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.GameSceneOptions
+  commentId: T:SurvivorsMaker.Editor.GameSceneOptions
+  id: GameSceneOptions
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.GameSceneOptions.#ctor
+  - SurvivorsMaker.Editor.GameSceneOptions.AddToBuildSettings
+  - SurvivorsMaker.Editor.GameSceneOptions.Additive
+  - SurvivorsMaker.Editor.GameSceneOptions.ArenaSettings
+  - SurvivorsMaker.Editor.GameSceneOptions.Content
+  - SurvivorsMaker.Editor.GameSceneOptions.CreateMissingCatalogs
+  - SurvivorsMaker.Editor.GameSceneOptions.FieldSettings
+  - SurvivorsMaker.Editor.GameSceneOptions.FloorSprite
+  - SurvivorsMaker.Editor.GameSceneOptions.FloorTint
+  - SurvivorsMaker.Editor.GameSceneOptions.Mode
+  - SurvivorsMaker.Editor.GameSceneOptions.NewScene
+  - SurvivorsMaker.Editor.GameSceneOptions.ScenePath
+  - SurvivorsMaker.Editor.GameSceneOptions.Sounds
+  - SurvivorsMaker.Editor.GameSceneOptions.Text
+  - SurvivorsMaker.Editor.GameSceneOptions.TileSize
+  - SurvivorsMaker.Editor.GameSceneOptions.Views
+  langs:
+  - csharp
+  - vb
+  name: GameSceneOptions
+  nameWithType: GameSceneOptions
+  fullName: SurvivorsMaker.Editor.GameSceneOptions
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: What <xref href="SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)" data-throw-if-not-resolved="false"></xref>
+    builds.
+  example: []
+  syntax:
+    content: public sealed class GameSceneOptions
+    content.vb: Public NotInheritable Class GameSceneOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Content
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Content
+  id: Content
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: GameSceneOptions.Content
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Content
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ContentAsset Content
+    return:
+      type: SurvivorsMaker.Data.ContentAsset
+    content.vb: Public Content As ContentAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.ArenaSettings
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.ArenaSettings
+  id: ArenaSettings
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: ArenaSettings
+  nameWithType: GameSceneOptions.ArenaSettings
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.ArenaSettings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public GameSettingsAsset ArenaSettings
+    return:
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    content.vb: Public ArenaSettings As GameSettingsAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.FieldSettings
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.FieldSettings
+  id: FieldSettings
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: FieldSettings
+  nameWithType: GameSceneOptions.FieldSettings
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.FieldSettings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public GameSettingsAsset FieldSettings
+    return:
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    content.vb: Public FieldSettings As GameSettingsAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Views
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Views
+  id: Views
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Views
+  nameWithType: GameSceneOptions.Views
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Views
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ViewCatalogAsset Views
+    return:
+      type: SurvivorsMaker.Presentation.ViewCatalogAsset
+    content.vb: Public Views As ViewCatalogAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Sounds
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Sounds
+  id: Sounds
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Sounds
+  nameWithType: GameSceneOptions.Sounds
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Sounds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public SoundCatalogAsset Sounds
+    return:
+      type: SurvivorsMaker.Presentation.SoundCatalogAsset
+    content.vb: Public Sounds As SoundCatalogAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Text
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Text
+  id: Text
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: GameSceneOptions.Text
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Text
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public LocalizedTextAsset Text
+    return:
+      type: SurvivorsMaker.Presentation.LocalizedTextAsset
+    content.vb: Public Text As LocalizedTextAsset
+- uid: SurvivorsMaker.Editor.GameSceneOptions.CreateMissingCatalogs
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.CreateMissingCatalogs
+  id: CreateMissingCatalogs
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: CreateMissingCatalogs
+  nameWithType: GameSceneOptions.CreateMissingCatalogs
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.CreateMissingCatalogs
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Create an empty view and sound catalog next to the content when none is given.
+  example: []
+  syntax:
+    content: public bool CreateMissingCatalogs
+    return:
+      type: System.Boolean
+    content.vb: Public CreateMissingCatalogs As Boolean
+- uid: SurvivorsMaker.Editor.GameSceneOptions.FloorSprite
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.FloorSprite
+  id: FloorSprite
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: FloorSprite
+  nameWithType: GameSceneOptions.FloorSprite
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.FloorSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Floor tile. Null = a generated checker tile saved next to the content.
+  example: []
+  syntax:
+    content: public Sprite FloorSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public FloorSprite As Sprite
+- uid: SurvivorsMaker.Editor.GameSceneOptions.TileSize
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.TileSize
+  id: TileSize
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: TileSize
+  nameWithType: GameSceneOptions.TileSize
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.TileSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: World size of one floor tile.
+  example: []
+  syntax:
+    content: public float TileSize
+    return:
+      type: System.Single
+    content.vb: Public TileSize As Single
+- uid: SurvivorsMaker.Editor.GameSceneOptions.FloorTint
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.FloorTint
+  id: FloorTint
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: FloorTint
+  nameWithType: GameSceneOptions.FloorTint
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.FloorTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Color FloorTint
+    return:
+      type: UnityEngine.Color
+    content.vb: Public FloorTint As Color
+- uid: SurvivorsMaker.Editor.GameSceneOptions.ScenePath
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.ScenePath
+  id: ScenePath
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: ScenePath
+  nameWithType: GameSceneOptions.ScenePath
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.ScenePath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Where to save the scene ("Assets/…/Name.unity"). Empty = do not save.
+  example: []
+  syntax:
+    content: public string ScenePath
+    return:
+      type: System.String
+    content.vb: Public ScenePath As String
+- uid: SurvivorsMaker.Editor.GameSceneOptions.NewScene
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.NewScene
+  id: NewScene
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: NewScene
+  nameWithType: GameSceneOptions.NewScene
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.NewScene
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'True: a new scene. False: set up the active scene (undoable).'
+  example: []
+  syntax:
+    content: public bool NewScene
+    return:
+      type: System.Boolean
+    content.vb: Public NewScene As Boolean
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Additive
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Additive
+  id: Additive
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Additive
+  nameWithType: GameSceneOptions.Additive
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Additive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Open the new scene next to the current ones instead of replacing them (used by tests).
+  example: []
+  syntax:
+    content: public bool Additive
+    return:
+      type: System.Boolean
+    content.vb: Public Additive As Boolean
+- uid: SurvivorsMaker.Editor.GameSceneOptions.AddToBuildSettings
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.AddToBuildSettings
+  id: AddToBuildSettings
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: AddToBuildSettings
+  nameWithType: GameSceneOptions.AddToBuildSettings
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.AddToBuildSettings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public bool AddToBuildSettings
+    return:
+      type: System.Boolean
+    content.vb: Public AddToBuildSettings As Boolean
+- uid: SurvivorsMaker.Editor.GameSceneOptions.Mode
+  commentId: F:SurvivorsMaker.Editor.GameSceneOptions.Mode
+  id: Mode
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: GameSceneOptions.Mode
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.Mode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public RunMode Mode
+    return:
+      type: SurvivorsMaker.Run.RunMode
+    content.vb: Public Mode As RunMode
+- uid: SurvivorsMaker.Editor.GameSceneOptions.#ctor
+  commentId: M:SurvivorsMaker.Editor.GameSceneOptions.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.GameSceneOptions
+  langs:
+  - csharp
+  - vb
+  name: GameSceneOptions()
+  nameWithType: GameSceneOptions.GameSceneOptions()
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.GameSceneOptions()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public GameSceneOptions()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.GameSceneOptions.#ctor*
+  nameWithType.vb: GameSceneOptions.New()
+  fullName.vb: SurvivorsMaker.Editor.GameSceneOptions.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)
+  commentId: M:SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)
+  isExternal: true
+  href: SurvivorsMaker.Editor.GameSceneWizard.html#SurvivorsMaker_Editor_GameSceneWizard_Create_SurvivorsMaker_Editor_GameSceneOptions_
+  name: Create(GameSceneOptions)
+  nameWithType: GameSceneWizard.Create(GameSceneOptions)
+  fullName: SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.GameSceneWizard.html#SurvivorsMaker_Editor_GameSceneWizard_Create_SurvivorsMaker_Editor_GameSceneOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.GameSceneOptions
+    name: GameSceneOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.GameSceneOptions.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.GameSceneWizard.Create(SurvivorsMaker.Editor.GameSceneOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.GameSceneWizard.html#SurvivorsMaker_Editor_GameSceneWizard_Create_SurvivorsMaker_Editor_GameSceneOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.GameSceneOptions
+    name: GameSceneOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.GameSceneOptions.html
+  - name: )
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Data.ContentAsset
+  commentId: T:SurvivorsMaker.Data.ContentAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAsset.html
+  name: ContentAsset
+  nameWithType: ContentAsset
+  fullName: SurvivorsMaker.Data.ContentAsset
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Data.GameSettingsAsset
+  commentId: T:SurvivorsMaker.Data.GameSettingsAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.GameSettingsAsset.html
+  name: GameSettingsAsset
+  nameWithType: GameSettingsAsset
+  fullName: SurvivorsMaker.Data.GameSettingsAsset
+- uid: SurvivorsMaker.Presentation.ViewCatalogAsset
+  commentId: T:SurvivorsMaker.Presentation.ViewCatalogAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewCatalogAsset.html
+  name: ViewCatalogAsset
+  nameWithType: ViewCatalogAsset
+  fullName: SurvivorsMaker.Presentation.ViewCatalogAsset
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.SoundCatalogAsset
+  commentId: T:SurvivorsMaker.Presentation.SoundCatalogAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCatalogAsset.html
+  name: SoundCatalogAsset
+  nameWithType: SoundCatalogAsset
+  fullName: SurvivorsMaker.Presentation.SoundCatalogAsset
+- uid: SurvivorsMaker.Presentation.LocalizedTextAsset
+  commentId: T:SurvivorsMaker.Presentation.LocalizedTextAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.LocalizedTextAsset.html
+  name: LocalizedTextAsset
+  nameWithType: LocalizedTextAsset
+  fullName: SurvivorsMaker.Presentation.LocalizedTextAsset
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.RunMode
+  commentId: T:SurvivorsMaker.Run.RunMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunMode.html
+  name: RunMode
+  nameWithType: RunMode
+  fullName: SurvivorsMaker.Run.RunMode
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Editor.GameSceneOptions.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.GameSceneOptions.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.GameSceneOptions.html#SurvivorsMaker_Editor_GameSceneOptions__ctor
+  name: GameSceneOptions
+  nameWithType: GameSceneOptions.GameSceneOptions
+  fullName: SurvivorsMaker.Editor.GameSceneOptions.GameSceneOptions
+  nameWithType.vb: GameSceneOptions.New
+  fullName.vb: SurvivorsMaker.Editor.GameSceneOptions.New
+  name.vb: New

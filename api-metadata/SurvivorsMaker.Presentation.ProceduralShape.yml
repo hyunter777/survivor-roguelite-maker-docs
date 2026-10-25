@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ProceduralShape
+  commentId: T:SurvivorsMaker.Presentation.ProceduralShape
+  id: ProceduralShape
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ProceduralShape.Arrow
+  - SurvivorsMaker.Presentation.ProceduralShape.Blade
+  - SurvivorsMaker.Presentation.ProceduralShape.Crown
+  - SurvivorsMaker.Presentation.ProceduralShape.DashedRing
+  - SurvivorsMaker.Presentation.ProceduralShape.Disc
+  - SurvivorsMaker.Presentation.ProceduralShape.Flame
+  - SurvivorsMaker.Presentation.ProceduralShape.Lock
+  - SurvivorsMaker.Presentation.ProceduralShape.Ring
+  - SurvivorsMaker.Presentation.ProceduralShape.Shockwave
+  - SurvivorsMaker.Presentation.ProceduralShape.Snowflake
+  - SurvivorsMaker.Presentation.ProceduralShape.SoftDisc
+  - SurvivorsMaker.Presentation.ProceduralShape.Sparkle
+  - SurvivorsMaker.Presentation.ProceduralShape.Star
+  - SurvivorsMaker.Presentation.ProceduralShape.Trophy
+  - SurvivorsMaker.Presentation.ProceduralShape.Unlock
+  langs:
+  - csharp
+  - vb
+  name: ProceduralShape
+  nameWithType: ProceduralShape
+  fullName: SurvivorsMaker.Presentation.ProceduralShape
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Built-in fallback shapes, drawn once at runtime and shared. Every shape is white so renderers tint it.
+  example: []
+  syntax:
+    content: public enum ProceduralShape
+    content.vb: Public Enum ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.SoftDisc
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.SoftDisc
+  id: SoftDisc
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: SoftDisc
+  nameWithType: ProceduralShape.SoftDisc
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.SoftDisc
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Soft radial glow, 1 world unit across.
+  example: []
+  syntax:
+    content: SoftDisc = 0
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Disc
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Disc
+  id: Disc
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Disc
+  nameWithType: ProceduralShape.Disc
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Disc
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Solid disc with an anti-aliased edge.
+  example: []
+  syntax:
+    content: Disc = 1
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Ring
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Ring
+  id: Ring
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Ring
+  nameWithType: ProceduralShape.Ring
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Ring
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Thin ring at the edge.
+  example: []
+  syntax:
+    content: Ring = 2
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.DashedRing
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.DashedRing
+  id: DashedRing
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: DashedRing
+  nameWithType: ProceduralShape.DashedRing
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.DashedRing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Thin ring with dashes, so rotation is visible.
+  example: []
+  syntax:
+    content: DashedRing = 3
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Shockwave
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Shockwave
+  id: Shockwave
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Shockwave
+  nameWithType: ProceduralShape.Shockwave
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Shockwave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Bright edge fading inward, for blast waves.
+  example: []
+  syntax:
+    content: Shockwave = 4
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Sparkle
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Sparkle
+  id: Sparkle
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Sparkle
+  nameWithType: ProceduralShape.Sparkle
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Sparkle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Four-pointed twinkle.
+  example: []
+  syntax:
+    content: Sparkle = 5
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Flame
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Flame
+  id: Flame
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Flame
+  nameWithType: ProceduralShape.Flame
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Flame
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Flame = 6
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Snowflake
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Snowflake
+  id: Snowflake
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Snowflake
+  nameWithType: ProceduralShape.Snowflake
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Snowflake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Snowflake = 7
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Star
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Star
+  id: Star
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Star
+  nameWithType: ProceduralShape.Star
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Star
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Star = 8
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Crown
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Crown
+  id: Crown
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Crown
+  nameWithType: ProceduralShape.Crown
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Crown
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Crown = 9
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Lock
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Lock
+  id: Lock
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Lock
+  nameWithType: ProceduralShape.Lock
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Lock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Lock = 10
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Unlock
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Unlock
+  id: Unlock
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Unlock
+  nameWithType: ProceduralShape.Unlock
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Unlock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Unlock = 11
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Trophy
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Trophy
+  id: Trophy
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Trophy
+  nameWithType: ProceduralShape.Trophy
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Trophy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Trophy = 12
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Arrow
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Arrow
+  id: Arrow
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Arrow
+  nameWithType: ProceduralShape.Arrow
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Arrow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Arrow = 13
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+- uid: SurvivorsMaker.Presentation.ProceduralShape.Blade
+  commentId: F:SurvivorsMaker.Presentation.ProceduralShape.Blade
+  id: Blade
+  parent: SurvivorsMaker.Presentation.ProceduralShape
+  langs:
+  - csharp
+  - vb
+  name: Blade
+  nameWithType: ProceduralShape.Blade
+  fullName: SurvivorsMaker.Presentation.ProceduralShape.Blade
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Blade = 14
+    return:
+      type: SurvivorsMaker.Presentation.ProceduralShape
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ProceduralShape
+  commentId: T:SurvivorsMaker.Presentation.ProceduralShape
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ProceduralShape.html
+  name: ProceduralShape
+  nameWithType: ProceduralShape
+  fullName: SurvivorsMaker.Presentation.ProceduralShape

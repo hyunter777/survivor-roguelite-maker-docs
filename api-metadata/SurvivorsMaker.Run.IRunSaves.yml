@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IRunSaves
+  commentId: T:SurvivorsMaker.Run.IRunSaves
+  id: IRunSaves
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  langs:
+  - csharp
+  - vb
+  name: IRunSaves
+  nameWithType: IRunSaves
+  fullName: SurvivorsMaker.Run.IRunSaves
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Progress: snapshots of a run between waves.'
+  example: []
+  syntax:
+    content: public interface IRunSaves
+    content.vb: Public Interface IRunSaves
+  derivedClasses:
+  - SurvivorsMaker.Run.RunSaves
+- uid: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  id: Capture(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IRunSaves
+  langs:
+  - csharp
+  - vb
+  name: Capture(RunState)
+  nameWithType: IRunSaves.Capture(RunState)
+  fullName: SurvivorsMaker.Run.IRunSaves.Capture(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Null when the run is in a phase that cannot be saved (a wave is running, or it ended).
+  example: []
+  syntax:
+    content: RunSnapshot Capture(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Function Capture(run As RunState) As RunSnapshot
+  overload: SurvivorsMaker.Run.IRunSaves.Capture*
+- uid: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  commentId: M:SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  id: Restore(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  parent: SurvivorsMaker.Run.IRunSaves
+  langs:
+  - csharp
+  - vb
+  name: Restore(RunSnapshot, RunRequest)
+  nameWithType: IRunSaves.Restore(RunSnapshot, RunRequest)
+  fullName: SurvivorsMaker.Run.IRunSaves.Restore(SurvivorsMaker.Run.RunSnapshot, SurvivorsMaker.Run.RunRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Rebuilds a run. Throws ArgumentException naming the first unknown id.
+  example: []
+  syntax:
+    content: RunState Restore(RunSnapshot snapshot, RunRequest request)
+    parameters:
+    - id: snapshot
+      type: SurvivorsMaker.Run.RunSnapshot
+    - id: request
+      type: SurvivorsMaker.Run.RunRequest
+    return:
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Function Restore(snapshot As RunSnapshot, request As RunRequest) As RunState
+  overload: SurvivorsMaker.Run.IRunSaves.Restore*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IRunSaves.Capture*
+  commentId: Overload:SurvivorsMaker.Run.IRunSaves.Capture
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Capture_SurvivorsMaker_Run_RunState_
+  name: Capture
+  nameWithType: IRunSaves.Capture
+  fullName: SurvivorsMaker.Run.IRunSaves.Capture
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+- uid: SurvivorsMaker.Run.IRunSaves.Restore*
+  commentId: Overload:SurvivorsMaker.Run.IRunSaves.Restore
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunSaves.html#SurvivorsMaker_Run_IRunSaves_Restore_SurvivorsMaker_Run_RunSnapshot_SurvivorsMaker_Run_RunRequest_
+  name: Restore
+  nameWithType: IRunSaves.Restore
+  fullName: SurvivorsMaker.Run.IRunSaves.Restore
+- uid: SurvivorsMaker.Run.RunRequest
+  commentId: T:SurvivorsMaker.Run.RunRequest
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunRequest.html
+  name: RunRequest
+  nameWithType: RunRequest
+  fullName: SurvivorsMaker.Run.RunRequest

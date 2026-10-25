@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.PickupKind
+  commentId: T:SurvivorsMaker.Simulation.PickupKind
+  id: PickupKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.PickupKind.Currency
+  - SurvivorsMaker.Simulation.PickupKind.Heal
+  langs:
+  - csharp
+  - vb
+  name: PickupKind
+  nameWithType: PickupKind
+  fullName: SurvivorsMaker.Simulation.PickupKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum PickupKind
+    content.vb: Public Enum PickupKind
+- uid: SurvivorsMaker.Simulation.PickupKind.Currency
+  commentId: F:SurvivorsMaker.Simulation.PickupKind.Currency
+  id: Currency
+  parent: SurvivorsMaker.Simulation.PickupKind
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: PickupKind.Currency
+  fullName: SurvivorsMaker.Simulation.PickupKind.Currency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Currency = 0
+    return:
+      type: SurvivorsMaker.Simulation.PickupKind
+- uid: SurvivorsMaker.Simulation.PickupKind.Heal
+  commentId: F:SurvivorsMaker.Simulation.PickupKind.Heal
+  id: Heal
+  parent: SurvivorsMaker.Simulation.PickupKind
+  langs:
+  - csharp
+  - vb
+  name: Heal
+  nameWithType: PickupKind.Heal
+  fullName: SurvivorsMaker.Simulation.PickupKind.Heal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Heal = 1
+    return:
+      type: SurvivorsMaker.Simulation.PickupKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.PickupKind
+  commentId: T:SurvivorsMaker.Simulation.PickupKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupKind.html
+  name: PickupKind
+  nameWithType: PickupKind
+  fullName: SurvivorsMaker.Simulation.PickupKind

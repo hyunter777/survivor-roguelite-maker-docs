@@ -1,0 +1,965 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WaveRequest
+  commentId: T:SurvivorsMaker.Simulation.WaveRequest
+  id: WaveRequest
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WaveRequest.#ctor
+  - SurvivorsMaker.Simulation.WaveRequest.Arena
+  - SurvivorsMaker.Simulation.WaveRequest.Difficulty
+  - SurvivorsMaker.Simulation.WaveRequest.EffectHandlers
+  - SurvivorsMaker.Simulation.WaveRequest.Effects
+  - SurvivorsMaker.Simulation.WaveRequest.Experience
+  - SurvivorsMaker.Simulation.WaveRequest.Level
+  - SurvivorsMaker.Simulation.WaveRequest.Seed
+  - SurvivorsMaker.Simulation.WaveRequest.Settings
+  - SurvivorsMaker.Simulation.WaveRequest.StartHealth
+  - SurvivorsMaker.Simulation.WaveRequest.Stats
+  - SurvivorsMaker.Simulation.WaveRequest.TriggerHandlers
+  - SurvivorsMaker.Simulation.WaveRequest.Triggers
+  - SurvivorsMaker.Simulation.WaveRequest.WaveIndex
+  - SurvivorsMaker.Simulation.WaveRequest.WavesSinceFirst
+  - SurvivorsMaker.Simulation.WaveRequest.Weapons
+  langs:
+  - csharp
+  - vb
+  name: WaveRequest
+  nameWithType: WaveRequest
+  fullName: SurvivorsMaker.Simulation.WaveRequest
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Everything needed to start one wave. Effects are applied in order to build the player's stats.
+  example: []
+  syntax:
+    content: public sealed class WaveRequest
+    content.vb: Public NotInheritable Class WaveRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WaveRequest.Arena
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Arena
+  id: Arena
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: WaveRequest.Arena
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ArenaDef Arena
+    return:
+      type: SurvivorsMaker.Simulation.ArenaDef
+    content.vb: Public Arena As ArenaDef
+- uid: SurvivorsMaker.Simulation.WaveRequest.WaveIndex
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.WaveIndex
+  id: WaveIndex
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: WaveIndex
+  nameWithType: WaveRequest.WaveIndex
+  fullName: SurvivorsMaker.Simulation.WaveRequest.WaveIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 0-based index into <xref href="SurvivorsMaker.Simulation.ArenaDef.Waves" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int WaveIndex
+    return:
+      type: System.Int32
+    content.vb: Public WaveIndex As Integer
+- uid: SurvivorsMaker.Simulation.WaveRequest.WavesSinceFirst
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.WavesSinceFirst
+  id: WavesSinceFirst
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: WavesSinceFirst
+  nameWithType: WaveRequest.WavesSinceFirst
+  fullName: SurvivorsMaker.Simulation.WaveRequest.WavesSinceFirst
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Waves since the first wave of the run, for <xref href="SurvivorsMaker.Simulation.Scaled" data-throw-if-not-resolved="false"></xref>
+    values. Defaults to WaveIndex.
+  example: []
+  syntax:
+    content: public int WavesSinceFirst
+    return:
+      type: System.Int32
+    content.vb: Public WavesSinceFirst As Integer
+- uid: SurvivorsMaker.Simulation.WaveRequest.Difficulty
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Difficulty
+  id: Difficulty
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Difficulty
+  nameWithType: WaveRequest.Difficulty
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Difficulty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Difficulty
+    return:
+      type: System.Int32
+    content.vb: Public Difficulty As Integer
+- uid: SurvivorsMaker.Simulation.WaveRequest.Seed
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Seed
+  id: Seed
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: WaveRequest.Seed
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Seed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public uint Seed
+    return:
+      type: System.UInt32
+    content.vb: Public Seed As UInteger
+- uid: SurvivorsMaker.Simulation.WaveRequest.Stats
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Stats
+  id: Stats
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: WaveRequest.Stats
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Stats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatCatalog Stats
+    return:
+      type: SurvivorsMaker.Core.StatCatalog
+    content.vb: Public Stats As StatCatalog
+- uid: SurvivorsMaker.Simulation.WaveRequest.EffectHandlers
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.EffectHandlers
+  id: EffectHandlers
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: EffectHandlers
+  nameWithType: WaveRequest.EffectHandlers
+  fullName: SurvivorsMaker.Simulation.WaveRequest.EffectHandlers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EffectHandlers EffectHandlers
+    return:
+      type: SurvivorsMaker.Core.EffectHandlers
+    content.vb: Public EffectHandlers As EffectHandlers
+- uid: SurvivorsMaker.Simulation.WaveRequest.Effects
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Effects
+  id: Effects
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: WaveRequest.Effects
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Effects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public List<Effect> Effects
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+    content.vb: Public Effects As List(Of Effect)
+- uid: SurvivorsMaker.Simulation.WaveRequest.Weapons
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: WaveRequest.Weapons
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Weapons in slot order. Null entries are skipped.
+  example: []
+  syntax:
+    content: public List<WeaponDef> Weapons
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.WeaponDef}
+    content.vb: Public Weapons As List(Of WeaponDef)
+- uid: SurvivorsMaker.Simulation.WaveRequest.Level
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Level
+  id: Level
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: WaveRequest.Level
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Level
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+- uid: SurvivorsMaker.Simulation.WaveRequest.Experience
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Experience
+  id: Experience
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: WaveRequest.Experience
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Experience
+    return:
+      type: System.Single
+    content.vb: Public Experience As Single
+- uid: SurvivorsMaker.Simulation.WaveRequest.StartHealth
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.StartHealth
+  id: StartHealth
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: StartHealth
+  nameWithType: WaveRequest.StartHealth
+  fullName: SurvivorsMaker.Simulation.WaveRequest.StartHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Health to start with, capped at max health. 0 or less = full.
+  example: []
+  syntax:
+    content: public int StartHealth
+    return:
+      type: System.Int32
+    content.vb: Public StartHealth As Integer
+- uid: SurvivorsMaker.Simulation.WaveRequest.Triggers
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Triggers
+  id: Triggers
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Triggers
+  nameWithType: WaveRequest.Triggers
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Triggers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Triggers from the character, items and upgrades, in apply order.
+  example: []
+  syntax:
+    content: public List<TriggerDef> Triggers
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+    content.vb: Public Triggers As List(Of TriggerDef)
+- uid: SurvivorsMaker.Simulation.WaveRequest.TriggerHandlers
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.TriggerHandlers
+  id: TriggerHandlers
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: TriggerHandlers
+  nameWithType: WaveRequest.TriggerHandlers
+  fullName: SurvivorsMaker.Simulation.WaveRequest.TriggerHandlers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Handlers for TriggerAction.Custom by TriggerDef.Handler id.
+  example: []
+  syntax:
+    content: public Dictionary<string, ITriggerHandler> TriggerHandlers
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+    content.vb: Public TriggerHandlers As Dictionary(Of String, ITriggerHandler)
+- uid: SurvivorsMaker.Simulation.WaveRequest.Settings
+  commentId: F:SurvivorsMaker.Simulation.WaveRequest.Settings
+  id: Settings
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: WaveRequest.Settings
+  fullName: SurvivorsMaker.Simulation.WaveRequest.Settings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimSettings Settings
+    return:
+      type: SurvivorsMaker.Simulation.SimSettings
+    content.vb: Public Settings As SimSettings
+- uid: SurvivorsMaker.Simulation.WaveRequest.#ctor
+  commentId: M:SurvivorsMaker.Simulation.WaveRequest.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.WaveRequest
+  langs:
+  - csharp
+  - vb
+  name: WaveRequest()
+  nameWithType: WaveRequest.WaveRequest()
+  fullName: SurvivorsMaker.Simulation.WaveRequest.WaveRequest()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WaveRequest()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.WaveRequest.#ctor*
+  nameWithType.vb: WaveRequest.New()
+  fullName.vb: SurvivorsMaker.Simulation.WaveRequest.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.ArenaDef
+  commentId: T:SurvivorsMaker.Simulation.ArenaDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaDef.html
+  name: ArenaDef
+  nameWithType: ArenaDef
+  fullName: SurvivorsMaker.Simulation.ArenaDef
+- uid: SurvivorsMaker.Simulation.ArenaDef.Waves
+  commentId: F:SurvivorsMaker.Simulation.ArenaDef.Waves
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ArenaDef.html#SurvivorsMaker_Simulation_ArenaDef_Waves
+  name: Waves
+  nameWithType: ArenaDef.Waves
+  fullName: SurvivorsMaker.Simulation.ArenaDef.Waves
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.Scaled
+  commentId: T:SurvivorsMaker.Simulation.Scaled
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html
+  name: Scaled
+  nameWithType: Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SurvivorsMaker.Core.StatCatalog
+  commentId: T:SurvivorsMaker.Core.StatCatalog
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html
+  name: StatCatalog
+  nameWithType: StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.EffectHandlers
+  commentId: T:SurvivorsMaker.Core.EffectHandlers
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectHandlers.html
+  name: EffectHandlers
+  nameWithType: EffectHandlers
+  fullName: SurvivorsMaker.Core.EffectHandlers
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Effect>
+  nameWithType: List<Effect>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: List(Of Effect)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.Effect)
+  name.vb: List(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.WeaponDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.WeaponDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WeaponDef>
+  nameWithType: List<WeaponDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.WeaponDef>
+  nameWithType.vb: List(Of WeaponDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.WeaponDef)
+  name.vb: List(Of WeaponDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TriggerDef>
+  nameWithType: List<TriggerDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.TriggerDef>
+  nameWithType.vb: List(Of TriggerDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.TriggerDef)
+  name.vb: List(Of TriggerDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, ITriggerHandler>
+  nameWithType: Dictionary<string, ITriggerHandler>
+  fullName: System.Collections.Generic.Dictionary<string, SurvivorsMaker.Simulation.ITriggerHandler>
+  nameWithType.vb: Dictionary(Of String, ITriggerHandler)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SurvivorsMaker.Simulation.ITriggerHandler)
+  name.vb: Dictionary(Of String, ITriggerHandler)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.ITriggerHandler
+    name: ITriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.ITriggerHandler
+    name: ITriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerHandler.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimSettings
+  commentId: T:SurvivorsMaker.Simulation.SimSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html
+  name: SimSettings
+  nameWithType: SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings
+- uid: SurvivorsMaker.Simulation.WaveRequest.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveRequest.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveRequest.html#SurvivorsMaker_Simulation_WaveRequest__ctor
+  name: WaveRequest
+  nameWithType: WaveRequest.WaveRequest
+  fullName: SurvivorsMaker.Simulation.WaveRequest.WaveRequest
+  nameWithType.vb: WaveRequest.New
+  fullName.vb: SurvivorsMaker.Simulation.WaveRequest.New
+  name.vb: New

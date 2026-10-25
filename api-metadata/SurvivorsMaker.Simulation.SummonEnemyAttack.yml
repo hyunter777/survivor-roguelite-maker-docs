@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack
+  commentId: T:SurvivorsMaker.Simulation.SummonEnemyAttack
+  id: SummonEnemyAttack
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor
+  - SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  - SurvivorsMaker.Simulation.SummonEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  langs:
+  - csharp
+  - vb
+  name: SummonEnemyAttack
+  nameWithType: SummonEnemyAttack
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Built-in special attack that queues child enemies through the spawn system.
+  example: []
+  syntax:
+    content: 'public sealed class SummonEnemyAttack : TimedEnemyAttack, IEnemyAttack'
+    content.vb: Public NotInheritable Class SummonEnemyAttack Inherits TimedEnemyAttack Implements IEnemyAttack
+  inheritance:
+  - System.Object
+  - SurvivorsMaker.Simulation.TimedEnemyAttack
+  implements:
+  - SurvivorsMaker.Simulation.IEnemyAttack
+  inheritedMembers:
+  - SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  commentId: M:SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  id: CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  parent: SurvivorsMaker.Simulation.SummonEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: CanStart(SimWorld, Enemy, SpecialAttackDef)
+  nameWithType: SummonEnemyAttack.CanStart(SimWorld, Enemy, SpecialAttackDef)
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.SpecialAttackDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Additional eligibility hook; false prevents this attack from firing.
+  example: []
+  syntax:
+    content: protected override bool CanStart(SimWorld world, Enemy enemy, SpecialAttackDef attack)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: attack
+      type: SurvivorsMaker.Simulation.SpecialAttackDef
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function CanStart(world As SimWorld, enemy As Enemy, attack As SpecialAttackDef) As Boolean
+  overridden: SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  overload: SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart*
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  commentId: M:SurvivorsMaker.Simulation.SummonEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  id: Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  parent: SurvivorsMaker.Simulation.SummonEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: Fire(SimWorld, Enemy, SpecialAttackDef)
+  nameWithType: SummonEnemyAttack.Fire(SimWorld, Enemy, SpecialAttackDef)
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.SpecialAttackDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Performs one eligible special attack; use world.Random and queue spawned entities through world-owned systems.
+  example: []
+  syntax:
+    content: protected override void Fire(SimWorld world, Enemy enemy, SpecialAttackDef attack)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: attack
+      type: SurvivorsMaker.Simulation.SpecialAttackDef
+    content.vb: Protected Overrides Sub Fire(world As SimWorld, enemy As Enemy, attack As SpecialAttackDef)
+  overridden: SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  overload: SurvivorsMaker.Simulation.SummonEnemyAttack.Fire*
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor
+  commentId: M:SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.SummonEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: SummonEnemyAttack()
+  nameWithType: SummonEnemyAttack.SummonEnemyAttack()
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.SummonEnemyAttack()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SummonEnemyAttack()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor*
+  nameWithType.vb: SummonEnemyAttack.New()
+  fullName.vb: SurvivorsMaker.Simulation.SummonEnemyAttack.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack
+  commentId: T:SurvivorsMaker.Simulation.TimedEnemyAttack
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html
+  name: TimedEnemyAttack
+  nameWithType: TimedEnemyAttack
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack
+- uid: SurvivorsMaker.Simulation.IEnemyAttack
+  commentId: T:SurvivorsMaker.Simulation.IEnemyAttack
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyAttack.html
+  name: IEnemyAttack
+  nameWithType: IEnemyAttack
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.TimedEnemyAttack
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Init_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: Init(SimWorld, Enemy)
+  nameWithType: TimedEnemyAttack.Init(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+    name: Init
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Init_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+    name: Init
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Init_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.TimedEnemyAttack
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_OverridesMovement_SurvivorsMaker_Simulation_Enemy_
+  name: OverridesMovement(Enemy)
+  nameWithType: TimedEnemyAttack.OverridesMovement(Enemy)
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+    name: OverridesMovement
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_OverridesMovement_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+    name: OverridesMovement
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_OverridesMovement_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.TimedEnemyAttack
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: Tick(SimWorld, Enemy)
+  nameWithType: TimedEnemyAttack.Tick(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  commentId: M:SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  parent: SurvivorsMaker.Simulation.TimedEnemyAttack
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_CanStart_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  name: CanStart(SimWorld, Enemy, SpecialAttackDef)
+  nameWithType: TimedEnemyAttack.CanStart(SimWorld, Enemy, SpecialAttackDef)
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.SpecialAttackDef)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+    name: CanStart
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_CanStart_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SpecialAttackDef
+    name: SpecialAttackDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.CanStart(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+    name: CanStart
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_CanStart_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SpecialAttackDef
+    name: SpecialAttackDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart*
+  commentId: Overload:SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SummonEnemyAttack.html#SurvivorsMaker_Simulation_SummonEnemyAttack_CanStart_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  name: CanStart
+  nameWithType: SummonEnemyAttack.CanStart
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.CanStart
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  commentId: M:SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+  parent: SurvivorsMaker.Simulation.TimedEnemyAttack
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Fire_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  name: Fire(SimWorld, Enemy, SpecialAttackDef)
+  nameWithType: TimedEnemyAttack.Fire(SimWorld, Enemy, SpecialAttackDef)
+  fullName: SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.SpecialAttackDef)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+    name: Fire
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Fire_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SpecialAttackDef
+    name: SpecialAttackDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.TimedEnemyAttack.Fire(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.SpecialAttackDef)
+    name: Fire
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TimedEnemyAttack.html#SurvivorsMaker_Simulation_TimedEnemyAttack_Fire_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SpecialAttackDef
+    name: SpecialAttackDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.Fire*
+  commentId: Overload:SurvivorsMaker.Simulation.SummonEnemyAttack.Fire
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SummonEnemyAttack.html#SurvivorsMaker_Simulation_SummonEnemyAttack_Fire_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_SpecialAttackDef_
+  name: Fire
+  nameWithType: SummonEnemyAttack.Fire
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.Fire
+- uid: SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SummonEnemyAttack.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SummonEnemyAttack.html#SurvivorsMaker_Simulation_SummonEnemyAttack__ctor
+  name: SummonEnemyAttack
+  nameWithType: SummonEnemyAttack.SummonEnemyAttack
+  fullName: SurvivorsMaker.Simulation.SummonEnemyAttack.SummonEnemyAttack
+  nameWithType.vb: SummonEnemyAttack.New
+  fullName.vb: SurvivorsMaker.Simulation.SummonEnemyAttack.New
+  name.vb: New

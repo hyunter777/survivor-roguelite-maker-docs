@@ -1,0 +1,1010 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimRandom
+  commentId: T:SurvivorsMaker.Simulation.SimRandom
+  id: SimRandom
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimRandom.#ctor(System.UInt32)
+  - SurvivorsMaker.Simulation.SimRandom.Chance(System.Single)
+  - SurvivorsMaker.Simulation.SimRandom.InsideCircle(System.Single)
+  - SurvivorsMaker.Simulation.SimRandom.NextFloat
+  - SurvivorsMaker.Simulation.SimRandom.NextUInt
+  - SurvivorsMaker.Simulation.SimRandom.PickWeighted(System.Collections.Generic.IReadOnlyList{System.Single})
+  - SurvivorsMaker.Simulation.SimRandom.Pick``1(System.Collections.Generic.IReadOnlyList{``0})
+  - SurvivorsMaker.Simulation.SimRandom.Range(System.Int32,System.Int32)
+  - SurvivorsMaker.Simulation.SimRandom.Range(System.Single,System.Single)
+  - SurvivorsMaker.Simulation.SimRandom.Reseed(System.UInt32)
+  - SurvivorsMaker.Simulation.SimRandom.Shuffle``1(System.Collections.Generic.IList{``0})
+  - SurvivorsMaker.Simulation.SimRandom.State
+  langs:
+  - csharp
+  - vb
+  name: SimRandom
+  nameWithType: SimRandom
+  fullName: SurvivorsMaker.Simulation.SimRandom
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Seeded random numbers that give the same sequence on every platform (xoshiro128**,
+
+    seeded with splitmix32). The simulation uses only this, never System.Random or UnityEngine.Random.'
+  example: []
+  syntax:
+    content: public sealed class SimRandom
+    content.vb: Public NotInheritable Class SimRandom
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimRandom.#ctor(System.UInt32)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.#ctor(System.UInt32)
+  id: '#ctor(System.UInt32)'
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: SimRandom(uint)
+  nameWithType: SimRandom.SimRandom(uint)
+  fullName: SurvivorsMaker.Simulation.SimRandom.SimRandom(uint)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimRandom(uint seed)
+    parameters:
+    - id: seed
+      type: System.UInt32
+    content.vb: Public Sub New(seed As UInteger)
+  overload: SurvivorsMaker.Simulation.SimRandom.#ctor*
+  nameWithType.vb: SimRandom.New(UInteger)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.New(UInteger)
+  name.vb: New(UInteger)
+- uid: SurvivorsMaker.Simulation.SimRandom.Reseed(System.UInt32)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Reseed(System.UInt32)
+  id: Reseed(System.UInt32)
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Reseed(uint)
+  nameWithType: SimRandom.Reseed(uint)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Reseed(uint)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public void Reseed(uint seed)
+    parameters:
+    - id: seed
+      type: System.UInt32
+    content.vb: Public Sub Reseed(seed As UInteger)
+  overload: SurvivorsMaker.Simulation.SimRandom.Reseed*
+  nameWithType.vb: SimRandom.Reseed(UInteger)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Reseed(UInteger)
+  name.vb: Reseed(UInteger)
+- uid: SurvivorsMaker.Simulation.SimRandom.NextUInt
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.NextUInt
+  id: NextUInt
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: NextUInt()
+  nameWithType: SimRandom.NextUInt()
+  fullName: SurvivorsMaker.Simulation.SimRandom.NextUInt()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public uint NextUInt()
+    return:
+      type: System.UInt32
+    content.vb: Public Function NextUInt() As UInteger
+  overload: SurvivorsMaker.Simulation.SimRandom.NextUInt*
+- uid: SurvivorsMaker.Simulation.SimRandom.NextFloat
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.NextFloat
+  id: NextFloat
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: NextFloat()
+  nameWithType: SimRandom.NextFloat()
+  fullName: SurvivorsMaker.Simulation.SimRandom.NextFloat()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 0 (inclusive) to 1 (exclusive), 24-bit resolution.
+  example: []
+  syntax:
+    content: public float NextFloat()
+    return:
+      type: System.Single
+    content.vb: Public Function NextFloat() As Single
+  overload: SurvivorsMaker.Simulation.SimRandom.NextFloat*
+- uid: SurvivorsMaker.Simulation.SimRandom.Range(System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Range(System.Single,System.Single)
+  id: Range(System.Single,System.Single)
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(float, float)
+  nameWithType: SimRandom.Range(float, float)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Range(float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: min (inclusive) to max (exclusive).
+  example: []
+  syntax:
+    content: public float Range(float min, float max)
+    parameters:
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function Range(min As Single, max As Single) As Single
+  overload: SurvivorsMaker.Simulation.SimRandom.Range*
+  nameWithType.vb: SimRandom.Range(Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Range(Single, Single)
+  name.vb: Range(Single, Single)
+- uid: SurvivorsMaker.Simulation.SimRandom.Range(System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Range(System.Int32,System.Int32)
+  id: Range(System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(int, int)
+  nameWithType: SimRandom.Range(int, int)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Range(int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: min (inclusive) to max (exclusive). Returns min when max ≤ min.
+  example: []
+  syntax:
+    content: public int Range(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Range(min As Integer, max As Integer) As Integer
+  overload: SurvivorsMaker.Simulation.SimRandom.Range*
+  nameWithType.vb: SimRandom.Range(Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Range(Integer, Integer)
+  name.vb: Range(Integer, Integer)
+- uid: SurvivorsMaker.Simulation.SimRandom.Chance(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Chance(System.Single)
+  id: Chance(System.Single)
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Chance(float)
+  nameWithType: SimRandom.Chance(float)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Chance(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: True with the given probability (0–1).
+  example: []
+  syntax:
+    content: public bool Chance(float probability)
+    parameters:
+    - id: probability
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function Chance(probability As Single) As Boolean
+  overload: SurvivorsMaker.Simulation.SimRandom.Chance*
+  nameWithType.vb: SimRandom.Chance(Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Chance(Single)
+  name.vb: Chance(Single)
+- uid: SurvivorsMaker.Simulation.SimRandom.InsideCircle(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.InsideCircle(System.Single)
+  id: InsideCircle(System.Single)
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: InsideCircle(float)
+  nameWithType: SimRandom.InsideCircle(float)
+  fullName: SurvivorsMaker.Simulation.SimRandom.InsideCircle(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 InsideCircle(float radius)
+    parameters:
+    - id: radius
+      type: System.Single
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Function InsideCircle(radius As Single) As Vec2
+  overload: SurvivorsMaker.Simulation.SimRandom.InsideCircle*
+  nameWithType.vb: SimRandom.InsideCircle(Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.InsideCircle(Single)
+  name.vb: InsideCircle(Single)
+- uid: SurvivorsMaker.Simulation.SimRandom.Pick``1(System.Collections.Generic.IReadOnlyList{``0})
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Pick``1(System.Collections.Generic.IReadOnlyList{``0})
+  id: Pick``1(System.Collections.Generic.IReadOnlyList{``0})
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Pick<T>(IReadOnlyList<T>)
+  nameWithType: SimRandom.Pick<T>(IReadOnlyList<T>)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Pick<T>(System.Collections.Generic.IReadOnlyList<T>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public T Pick<T>(IReadOnlyList<T> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IReadOnlyList{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function Pick(Of T)(items As IReadOnlyList(Of T)) As T
+  overload: SurvivorsMaker.Simulation.SimRandom.Pick*
+  nameWithType.vb: SimRandom.Pick(Of T)(IReadOnlyList(Of T))
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Pick(Of T)(System.Collections.Generic.IReadOnlyList(Of T))
+  name.vb: Pick(Of T)(IReadOnlyList(Of T))
+- uid: SurvivorsMaker.Simulation.SimRandom.PickWeighted(System.Collections.Generic.IReadOnlyList{System.Single})
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.PickWeighted(System.Collections.Generic.IReadOnlyList{System.Single})
+  id: PickWeighted(System.Collections.Generic.IReadOnlyList{System.Single})
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: PickWeighted(IReadOnlyList<float>)
+  nameWithType: SimRandom.PickWeighted(IReadOnlyList<float>)
+  fullName: SurvivorsMaker.Simulation.SimRandom.PickWeighted(System.Collections.Generic.IReadOnlyList<float>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Index chosen in proportion to the weights. Returns -1 when all weights are ≤ 0.
+  example: []
+  syntax:
+    content: public int PickWeighted(IReadOnlyList<float> weights)
+    parameters:
+    - id: weights
+      type: System.Collections.Generic.IReadOnlyList{System.Single}
+    return:
+      type: System.Int32
+    content.vb: Public Function PickWeighted(weights As IReadOnlyList(Of Single)) As Integer
+  overload: SurvivorsMaker.Simulation.SimRandom.PickWeighted*
+  nameWithType.vb: SimRandom.PickWeighted(IReadOnlyList(Of Single))
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.PickWeighted(System.Collections.Generic.IReadOnlyList(Of Single))
+  name.vb: PickWeighted(IReadOnlyList(Of Single))
+- uid: SurvivorsMaker.Simulation.SimRandom.Shuffle``1(System.Collections.Generic.IList{``0})
+  commentId: M:SurvivorsMaker.Simulation.SimRandom.Shuffle``1(System.Collections.Generic.IList{``0})
+  id: Shuffle``1(System.Collections.Generic.IList{``0})
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IList<T>)
+  nameWithType: SimRandom.Shuffle<T>(IList<T>)
+  fullName: SurvivorsMaker.Simulation.SimRandom.Shuffle<T>(System.Collections.Generic.IList<T>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public void Shuffle<T>(IList<T> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IList{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Sub Shuffle(Of T)(items As IList(Of T))
+  overload: SurvivorsMaker.Simulation.SimRandom.Shuffle*
+  nameWithType.vb: SimRandom.Shuffle(Of T)(IList(Of T))
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.Shuffle(Of T)(System.Collections.Generic.IList(Of T))
+  name.vb: Shuffle(Of T)(IList(Of T))
+- uid: SurvivorsMaker.Simulation.SimRandom.State
+  commentId: P:SurvivorsMaker.Simulation.SimRandom.State
+  id: State
+  parent: SurvivorsMaker.Simulation.SimRandom
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: SimRandom.State
+  fullName: SurvivorsMaker.Simulation.SimRandom.State
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Snapshot for save/replay.
+  example: []
+  syntax:
+    content: public (uint, uint, uint, uint) State { get; set; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.UInt32,System.UInt32,System.UInt32,System.UInt32}
+    content.vb: Public Property State As (UInteger, UInteger, UInteger, UInteger)
+  overload: SurvivorsMaker.Simulation.SimRandom.State*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.SimRandom.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom__ctor_System_UInt32_
+  name: SimRandom
+  nameWithType: SimRandom.SimRandom
+  fullName: SurvivorsMaker.Simulation.SimRandom.SimRandom
+  nameWithType.vb: SimRandom.New
+  fullName.vb: SurvivorsMaker.Simulation.SimRandom.New
+  name.vb: New
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SurvivorsMaker.Simulation.SimRandom.Reseed*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.Reseed
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_Reseed_System_UInt32_
+  name: Reseed
+  nameWithType: SimRandom.Reseed
+  fullName: SurvivorsMaker.Simulation.SimRandom.Reseed
+- uid: SurvivorsMaker.Simulation.SimRandom.NextUInt*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.NextUInt
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_NextUInt
+  name: NextUInt
+  nameWithType: SimRandom.NextUInt
+  fullName: SurvivorsMaker.Simulation.SimRandom.NextUInt
+- uid: SurvivorsMaker.Simulation.SimRandom.NextFloat*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.NextFloat
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_NextFloat
+  name: NextFloat
+  nameWithType: SimRandom.NextFloat
+  fullName: SurvivorsMaker.Simulation.SimRandom.NextFloat
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.SimRandom.Range*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.Range
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_Range_System_Single_System_Single_
+  name: Range
+  nameWithType: SimRandom.Range
+  fullName: SurvivorsMaker.Simulation.SimRandom.Range
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.SimRandom.Chance*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.Chance
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_Chance_System_Single_
+  name: Chance
+  nameWithType: SimRandom.Chance
+  fullName: SurvivorsMaker.Simulation.SimRandom.Chance
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.SimRandom.InsideCircle*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.InsideCircle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_InsideCircle_System_Single_
+  name: InsideCircle
+  nameWithType: SimRandom.InsideCircle
+  fullName: SurvivorsMaker.Simulation.SimRandom.InsideCircle
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.SimRandom.Pick*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.Pick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_Pick__1_System_Collections_Generic_IReadOnlyList___0__
+  name: Pick
+  nameWithType: SimRandom.Pick
+  fullName: SurvivorsMaker.Simulation.SimRandom.Pick
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SurvivorsMaker.Simulation.SimRandom.PickWeighted*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.PickWeighted
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_PickWeighted_System_Collections_Generic_IReadOnlyList_System_Single__
+  name: PickWeighted
+  nameWithType: SimRandom.PickWeighted
+  fullName: SurvivorsMaker.Simulation.SimRandom.PickWeighted
+- uid: System.Collections.Generic.IReadOnlyList{System.Single}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<float>
+  nameWithType: IReadOnlyList<float>
+  fullName: System.Collections.Generic.IReadOnlyList<float>
+  nameWithType.vb: IReadOnlyList(Of Single)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Single)
+  name.vb: IReadOnlyList(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimRandom.Shuffle*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.Shuffle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_Shuffle__1_System_Collections_Generic_IList___0__
+  name: Shuffle
+  nameWithType: SimRandom.Shuffle
+  fullName: SurvivorsMaker.Simulation.SimRandom.Shuffle
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimRandom.State*
+  commentId: Overload:SurvivorsMaker.Simulation.SimRandom.State
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html#SurvivorsMaker_Simulation_SimRandom_State
+  name: State
+  nameWithType: SimRandom.State
+  fullName: SurvivorsMaker.Simulation.SimRandom.State
+- uid: System.ValueTuple{System.UInt32,System.UInt32,System.UInt32,System.UInt32}
+  commentId: T:System.ValueTuple{System.UInt32,System.UInt32,System.UInt32,System.UInt32}
+  parent: System
+  definition: System.ValueTuple`4
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: (uint, uint, uint, uint)
+  nameWithType: (uint, uint, uint, uint)
+  fullName: (uint, uint, uint, uint)
+  nameWithType.vb: (UInteger, UInteger, UInteger, UInteger)
+  fullName.vb: (UInteger, UInteger, UInteger, UInteger)
+  name.vb: (UInteger, UInteger, UInteger, UInteger)
+  spec.csharp:
+  - name: (
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: ' '
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: System.ValueTuple`4
+  commentId: T:System.ValueTuple`4
+  name: (T1, T2, T3, T4)
+  nameWithType: (T1, T2, T3, T4)
+  fullName: (T1, T2, T3, T4)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: ','
+  - name: ' '
+  - name: T3
+  - name: ','
+  - name: ' '
+  - name: T4
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: ','
+  - name: ' '
+  - name: T3
+  - name: ','
+  - name: ' '
+  - name: T4
+  - name: )

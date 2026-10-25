@@ -1,0 +1,392 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.EffectEngine
+  commentId: T:SurvivorsMaker.Core.EffectEngine
+  id: EffectEngine
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.EffectEngine.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  - SurvivorsMaker.Core.EffectEngine.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  langs:
+  - csharp
+  - vb
+  name: EffectEngine
+  nameWithType: EffectEngine
+  fullName: SurvivorsMaker.Core.EffectEngine
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Built-in apply/undo rules for each <xref href="SurvivorsMaker.Core.EffectMethod" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class EffectEngine
+    content.vb: Public Module EffectEngine
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.EffectEngine.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  commentId: M:SurvivorsMaker.Core.EffectEngine.Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  id: Apply(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.EffectStore)
+  parent: SurvivorsMaker.Core.EffectEngine
+  langs:
+  - csharp
+  - vb
+  name: Apply(Effect, EffectStore)
+  nameWithType: EffectEngine.Apply(Effect, EffectStore)
+  fullName: SurvivorsMaker.Core.EffectEngine.Apply(SurvivorsMaker.Core.Effect, SurvivorsMaker.Core.EffectStore)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Applies one built-in effect to a store and returns the captured undo token.
+  example: []
+  syntax:
+    content: public static AppliedEffect Apply(Effect effect, EffectStore store)
+    parameters:
+    - id: effect
+      type: SurvivorsMaker.Core.Effect
+    - id: store
+      type: SurvivorsMaker.Core.EffectStore
+    return:
+      type: SurvivorsMaker.Core.AppliedEffect
+    content.vb: Public Shared Function Apply(effect As Effect, store As EffectStore) As AppliedEffect
+  overload: SurvivorsMaker.Core.EffectEngine.Apply*
+- uid: SurvivorsMaker.Core.EffectEngine.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  commentId: M:SurvivorsMaker.Core.EffectEngine.Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  id: Undo(SurvivorsMaker.Core.AppliedEffect,SurvivorsMaker.Core.EffectStore)
+  parent: SurvivorsMaker.Core.EffectEngine
+  langs:
+  - csharp
+  - vb
+  name: Undo(AppliedEffect, EffectStore)
+  nameWithType: EffectEngine.Undo(AppliedEffect, EffectStore)
+  fullName: SurvivorsMaker.Core.EffectEngine.Undo(SurvivorsMaker.Core.AppliedEffect, SurvivorsMaker.Core.EffectStore)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Reverses a prior application from its token rather than reevaluating the original effect.
+  example: []
+  syntax:
+    content: public static void Undo(AppliedEffect applied, EffectStore store)
+    parameters:
+    - id: applied
+      type: SurvivorsMaker.Core.AppliedEffect
+    - id: store
+      type: SurvivorsMaker.Core.EffectStore
+    content.vb: Public Shared Sub Undo(applied As AppliedEffect, store As EffectStore)
+  overload: SurvivorsMaker.Core.EffectEngine.Undo*
+references:
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.EffectEngine.Apply*
+  commentId: Overload:SurvivorsMaker.Core.EffectEngine.Apply
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectEngine.html#SurvivorsMaker_Core_EffectEngine_Apply_SurvivorsMaker_Core_Effect_SurvivorsMaker_Core_EffectStore_
+  name: Apply
+  nameWithType: EffectEngine.Apply
+  fullName: SurvivorsMaker.Core.EffectEngine.Apply
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Core.EffectStore
+  commentId: T:SurvivorsMaker.Core.EffectStore
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html
+  name: EffectStore
+  nameWithType: EffectStore
+  fullName: SurvivorsMaker.Core.EffectStore
+- uid: SurvivorsMaker.Core.AppliedEffect
+  commentId: T:SurvivorsMaker.Core.AppliedEffect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.AppliedEffect.html
+  name: AppliedEffect
+  nameWithType: AppliedEffect
+  fullName: SurvivorsMaker.Core.AppliedEffect
+- uid: SurvivorsMaker.Core.EffectEngine.Undo*
+  commentId: Overload:SurvivorsMaker.Core.EffectEngine.Undo
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectEngine.html#SurvivorsMaker_Core_EffectEngine_Undo_SurvivorsMaker_Core_AppliedEffect_SurvivorsMaker_Core_EffectStore_
+  name: Undo
+  nameWithType: EffectEngine.Undo
+  fullName: SurvivorsMaker.Core.EffectEngine.Undo

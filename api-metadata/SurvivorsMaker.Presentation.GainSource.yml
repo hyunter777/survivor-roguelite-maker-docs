@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.GainSource
+  commentId: T:SurvivorsMaker.Presentation.GainSource
+  id: GainSource
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.GainSource.Cheat
+  - SurvivorsMaker.Presentation.GainSource.LevelUp
+  - SurvivorsMaker.Presentation.GainSource.Other
+  - SurvivorsMaker.Presentation.GainSource.Shop
+  - SurvivorsMaker.Presentation.GainSource.Start
+  langs:
+  - csharp
+  - vb
+  name: GainSource
+  nameWithType: GainSource
+  fullName: SurvivorsMaker.Presentation.GainSource
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Where an item or weapon came from.
+  example: []
+  syntax:
+    content: public enum GainSource
+    content.vb: Public Enum GainSource
+- uid: SurvivorsMaker.Presentation.GainSource.Start
+  commentId: F:SurvivorsMaker.Presentation.GainSource.Start
+  id: Start
+  parent: SurvivorsMaker.Presentation.GainSource
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: GainSource.Start
+  fullName: SurvivorsMaker.Presentation.GainSource.Start
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Start = 0
+    return:
+      type: SurvivorsMaker.Presentation.GainSource
+- uid: SurvivorsMaker.Presentation.GainSource.Shop
+  commentId: F:SurvivorsMaker.Presentation.GainSource.Shop
+  id: Shop
+  parent: SurvivorsMaker.Presentation.GainSource
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: GainSource.Shop
+  fullName: SurvivorsMaker.Presentation.GainSource.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Shop = 1
+    return:
+      type: SurvivorsMaker.Presentation.GainSource
+- uid: SurvivorsMaker.Presentation.GainSource.LevelUp
+  commentId: F:SurvivorsMaker.Presentation.GainSource.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Presentation.GainSource
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: GainSource.LevelUp
+  fullName: SurvivorsMaker.Presentation.GainSource.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: LevelUp = 2
+    return:
+      type: SurvivorsMaker.Presentation.GainSource
+- uid: SurvivorsMaker.Presentation.GainSource.Cheat
+  commentId: F:SurvivorsMaker.Presentation.GainSource.Cheat
+  id: Cheat
+  parent: SurvivorsMaker.Presentation.GainSource
+  langs:
+  - csharp
+  - vb
+  name: Cheat
+  nameWithType: GainSource.Cheat
+  fullName: SurvivorsMaker.Presentation.GainSource.Cheat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Cheat = 3
+    return:
+      type: SurvivorsMaker.Presentation.GainSource
+- uid: SurvivorsMaker.Presentation.GainSource.Other
+  commentId: F:SurvivorsMaker.Presentation.GainSource.Other
+  id: Other
+  parent: SurvivorsMaker.Presentation.GainSource
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: GainSource.Other
+  fullName: SurvivorsMaker.Presentation.GainSource.Other
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Other = 4
+    return:
+      type: SurvivorsMaker.Presentation.GainSource
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.GainSource
+  commentId: T:SurvivorsMaker.Presentation.GainSource
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.GainSource.html
+  name: GainSource
+  nameWithType: GainSource
+  fullName: SurvivorsMaker.Presentation.GainSource

@@ -1,0 +1,823 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StarterStats
+  commentId: T:SurvivorsMaker.Core.StarterStats
+  id: StarterStats
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StarterStats.AcquisitionEfficiency
+  - SurvivorsMaker.Core.StarterStats.Area
+  - SurvivorsMaker.Core.StarterStats.Armor
+  - SurvivorsMaker.Core.StarterStats.AttackSpeed
+  - SurvivorsMaker.Core.StarterStats.Create
+  - SurvivorsMaker.Core.StarterStats.CreateCatalog
+  - SurvivorsMaker.Core.StarterStats.CritChance
+  - SurvivorsMaker.Core.StarterStats.Damage
+  - SurvivorsMaker.Core.StarterStats.Dodge
+  - SurvivorsMaker.Core.StarterStats.Duration
+  - SurvivorsMaker.Core.StarterStats.GrowthThresholdMultiplier
+  - SurvivorsMaker.Core.StarterStats.HealingMultiplier
+  - SurvivorsMaker.Core.StarterStats.HealthRegen
+  - SurvivorsMaker.Core.StarterStats.Income
+  - SurvivorsMaker.Core.StarterStats.LifeSteal
+  - SurvivorsMaker.Core.StarterStats.Luck
+  - SurvivorsMaker.Core.StarterStats.MaxHealth
+  - SurvivorsMaker.Core.StarterStats.MoveSpeed
+  - SurvivorsMaker.Core.StarterStats.PickupRange
+  - SurvivorsMaker.Core.StarterStats.ProjectileCount
+  - SurvivorsMaker.Core.StarterStats.Range
+  - SurvivorsMaker.Core.StarterStats.RegenMultiplier
+  - SurvivorsMaker.Core.StarterStats.XpGain
+  langs:
+  - csharp
+  - vb
+  name: StarterStats
+  nameWithType: StarterStats
+  fullName: SurvivorsMaker.Core.StarterStats
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Ids of the starter stat set. Games are free to rename, drop or add stats; nothing in Core
+
+    depends on these ids except the default of <xref href="SurvivorsMaker.Core.DamageFormula.PercentStat" data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public static class StarterStats
+    content.vb: Public Module StarterStats
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.StarterStats.MaxHealth
+  commentId: F:SurvivorsMaker.Core.StarterStats.MaxHealth
+  id: MaxHealth
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: MaxHealth
+  nameWithType: StarterStats.MaxHealth
+  fullName: SurvivorsMaker.Core.StarterStats.MaxHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string MaxHealth = "max_health"
+    return:
+      type: System.String
+    content.vb: Public Const MaxHealth As String = "max_health"
+- uid: SurvivorsMaker.Core.StarterStats.HealthRegen
+  commentId: F:SurvivorsMaker.Core.StarterStats.HealthRegen
+  id: HealthRegen
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: HealthRegen
+  nameWithType: StarterStats.HealthRegen
+  fullName: SurvivorsMaker.Core.StarterStats.HealthRegen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string HealthRegen = "health_regen"
+    return:
+      type: System.String
+    content.vb: Public Const HealthRegen As String = "health_regen"
+- uid: SurvivorsMaker.Core.StarterStats.LifeSteal
+  commentId: F:SurvivorsMaker.Core.StarterStats.LifeSteal
+  id: LifeSteal
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: LifeSteal
+  nameWithType: StarterStats.LifeSteal
+  fullName: SurvivorsMaker.Core.StarterStats.LifeSteal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string LifeSteal = "life_steal"
+    return:
+      type: System.String
+    content.vb: Public Const LifeSteal As String = "life_steal"
+- uid: SurvivorsMaker.Core.StarterStats.Armor
+  commentId: F:SurvivorsMaker.Core.StarterStats.Armor
+  id: Armor
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Armor
+  nameWithType: StarterStats.Armor
+  fullName: SurvivorsMaker.Core.StarterStats.Armor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Armor = "armor"
+    return:
+      type: System.String
+    content.vb: Public Const Armor As String = "armor"
+- uid: SurvivorsMaker.Core.StarterStats.Dodge
+  commentId: F:SurvivorsMaker.Core.StarterStats.Dodge
+  id: Dodge
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Dodge
+  nameWithType: StarterStats.Dodge
+  fullName: SurvivorsMaker.Core.StarterStats.Dodge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Dodge = "dodge"
+    return:
+      type: System.String
+    content.vb: Public Const Dodge As String = "dodge"
+- uid: SurvivorsMaker.Core.StarterStats.MoveSpeed
+  commentId: F:SurvivorsMaker.Core.StarterStats.MoveSpeed
+  id: MoveSpeed
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: MoveSpeed
+  nameWithType: StarterStats.MoveSpeed
+  fullName: SurvivorsMaker.Core.StarterStats.MoveSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string MoveSpeed = "move_speed"
+    return:
+      type: System.String
+    content.vb: Public Const MoveSpeed As String = "move_speed"
+- uid: SurvivorsMaker.Core.StarterStats.Damage
+  commentId: F:SurvivorsMaker.Core.StarterStats.Damage
+  id: Damage
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: StarterStats.Damage
+  fullName: SurvivorsMaker.Core.StarterStats.Damage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Damage = "damage"
+    return:
+      type: System.String
+    content.vb: Public Const Damage As String = "damage"
+- uid: SurvivorsMaker.Core.StarterStats.Area
+  commentId: F:SurvivorsMaker.Core.StarterStats.Area
+  id: Area
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: StarterStats.Area
+  fullName: SurvivorsMaker.Core.StarterStats.Area
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Area = "area"
+    return:
+      type: System.String
+    content.vb: Public Const Area As String = "area"
+- uid: SurvivorsMaker.Core.StarterStats.Duration
+  commentId: F:SurvivorsMaker.Core.StarterStats.Duration
+  id: Duration
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: StarterStats.Duration
+  fullName: SurvivorsMaker.Core.StarterStats.Duration
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Duration = "duration"
+    return:
+      type: System.String
+    content.vb: Public Const Duration As String = "duration"
+- uid: SurvivorsMaker.Core.StarterStats.AttackSpeed
+  commentId: F:SurvivorsMaker.Core.StarterStats.AttackSpeed
+  id: AttackSpeed
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: AttackSpeed
+  nameWithType: StarterStats.AttackSpeed
+  fullName: SurvivorsMaker.Core.StarterStats.AttackSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string AttackSpeed = "attack_speed"
+    return:
+      type: System.String
+    content.vb: Public Const AttackSpeed As String = "attack_speed"
+- uid: SurvivorsMaker.Core.StarterStats.CritChance
+  commentId: F:SurvivorsMaker.Core.StarterStats.CritChance
+  id: CritChance
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: CritChance
+  nameWithType: StarterStats.CritChance
+  fullName: SurvivorsMaker.Core.StarterStats.CritChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string CritChance = "crit_chance"
+    return:
+      type: System.String
+    content.vb: Public Const CritChance As String = "crit_chance"
+- uid: SurvivorsMaker.Core.StarterStats.Range
+  commentId: F:SurvivorsMaker.Core.StarterStats.Range
+  id: Range
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: StarterStats.Range
+  fullName: SurvivorsMaker.Core.StarterStats.Range
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Range = "range"
+    return:
+      type: System.String
+    content.vb: Public Const Range As String = "range"
+- uid: SurvivorsMaker.Core.StarterStats.ProjectileCount
+  commentId: F:SurvivorsMaker.Core.StarterStats.ProjectileCount
+  id: ProjectileCount
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: ProjectileCount
+  nameWithType: StarterStats.ProjectileCount
+  fullName: SurvivorsMaker.Core.StarterStats.ProjectileCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string ProjectileCount = "projectile_count"
+    return:
+      type: System.String
+    content.vb: Public Const ProjectileCount As String = "projectile_count"
+- uid: SurvivorsMaker.Core.StarterStats.PickupRange
+  commentId: F:SurvivorsMaker.Core.StarterStats.PickupRange
+  id: PickupRange
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: PickupRange
+  nameWithType: StarterStats.PickupRange
+  fullName: SurvivorsMaker.Core.StarterStats.PickupRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string PickupRange = "pickup_range"
+    return:
+      type: System.String
+    content.vb: Public Const PickupRange As String = "pickup_range"
+- uid: SurvivorsMaker.Core.StarterStats.Luck
+  commentId: F:SurvivorsMaker.Core.StarterStats.Luck
+  id: Luck
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Luck
+  nameWithType: StarterStats.Luck
+  fullName: SurvivorsMaker.Core.StarterStats.Luck
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Luck = "luck"
+    return:
+      type: System.String
+    content.vb: Public Const Luck As String = "luck"
+- uid: SurvivorsMaker.Core.StarterStats.XpGain
+  commentId: F:SurvivorsMaker.Core.StarterStats.XpGain
+  id: XpGain
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: XpGain
+  nameWithType: StarterStats.XpGain
+  fullName: SurvivorsMaker.Core.StarterStats.XpGain
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string XpGain = "xp_gain"
+    return:
+      type: System.String
+    content.vb: Public Const XpGain As String = "xp_gain"
+- uid: SurvivorsMaker.Core.StarterStats.Income
+  commentId: F:SurvivorsMaker.Core.StarterStats.Income
+  id: Income
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Income
+  nameWithType: StarterStats.Income
+  fullName: SurvivorsMaker.Core.StarterStats.Income
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string Income = "income"
+    return:
+      type: System.String
+    content.vb: Public Const Income As String = "income"
+- uid: SurvivorsMaker.Core.StarterStats.AcquisitionEfficiency
+  commentId: F:SurvivorsMaker.Core.StarterStats.AcquisitionEfficiency
+  id: AcquisitionEfficiency
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: AcquisitionEfficiency
+  nameWithType: StarterStats.AcquisitionEfficiency
+  fullName: SurvivorsMaker.Core.StarterStats.AcquisitionEfficiency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string AcquisitionEfficiency = "acquisition_efficiency"
+    return:
+      type: System.String
+    content.vb: Public Const AcquisitionEfficiency As String = "acquisition_efficiency"
+- uid: SurvivorsMaker.Core.StarterStats.HealingMultiplier
+  commentId: F:SurvivorsMaker.Core.StarterStats.HealingMultiplier
+  id: HealingMultiplier
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: HealingMultiplier
+  nameWithType: StarterStats.HealingMultiplier
+  fullName: SurvivorsMaker.Core.StarterStats.HealingMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string HealingMultiplier = "healing_multiplier"
+    return:
+      type: System.String
+    content.vb: Public Const HealingMultiplier As String = "healing_multiplier"
+- uid: SurvivorsMaker.Core.StarterStats.RegenMultiplier
+  commentId: F:SurvivorsMaker.Core.StarterStats.RegenMultiplier
+  id: RegenMultiplier
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: RegenMultiplier
+  nameWithType: StarterStats.RegenMultiplier
+  fullName: SurvivorsMaker.Core.StarterStats.RegenMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string RegenMultiplier = "regen_multiplier"
+    return:
+      type: System.String
+    content.vb: Public Const RegenMultiplier As String = "regen_multiplier"
+- uid: SurvivorsMaker.Core.StarterStats.GrowthThresholdMultiplier
+  commentId: F:SurvivorsMaker.Core.StarterStats.GrowthThresholdMultiplier
+  id: GrowthThresholdMultiplier
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: GrowthThresholdMultiplier
+  nameWithType: StarterStats.GrowthThresholdMultiplier
+  fullName: SurvivorsMaker.Core.StarterStats.GrowthThresholdMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public const string GrowthThresholdMultiplier = "growth_threshold_multiplier"
+    return:
+      type: System.String
+    content.vb: Public Const GrowthThresholdMultiplier As String = "growth_threshold_multiplier"
+- uid: SurvivorsMaker.Core.StarterStats.Create
+  commentId: M:SurvivorsMaker.Core.StarterStats.Create
+  id: Create
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: StarterStats.Create()
+  fullName: SurvivorsMaker.Core.StarterStats.Create()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: The starter set with our own default values.
+  example: []
+  syntax:
+    content: public static StatDefinition[] Create()
+    return:
+      type: SurvivorsMaker.Core.StatDefinition[]
+    content.vb: Public Shared Function Create() As StatDefinition()
+  overload: SurvivorsMaker.Core.StarterStats.Create*
+- uid: SurvivorsMaker.Core.StarterStats.CreateCatalog
+  commentId: M:SurvivorsMaker.Core.StarterStats.CreateCatalog
+  id: CreateCatalog
+  parent: SurvivorsMaker.Core.StarterStats
+  langs:
+  - csharp
+  - vb
+  name: CreateCatalog()
+  nameWithType: StarterStats.CreateCatalog()
+  fullName: SurvivorsMaker.Core.StarterStats.CreateCatalog()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Creates an independent runtime catalog containing the package starter stat definitions.
+  example: []
+  syntax:
+    content: public static StatCatalog CreateCatalog()
+    return:
+      type: SurvivorsMaker.Core.StatCatalog
+    content.vb: Public Shared Function CreateCatalog() As StatCatalog
+  overload: SurvivorsMaker.Core.StarterStats.CreateCatalog*
+references:
+- uid: SurvivorsMaker.Core.DamageFormula.PercentStat
+  commentId: F:SurvivorsMaker.Core.DamageFormula.PercentStat
+  isExternal: true
+  href: SurvivorsMaker.Core.DamageFormula.html#SurvivorsMaker_Core_DamageFormula_PercentStat
+  name: PercentStat
+  nameWithType: DamageFormula.PercentStat
+  fullName: SurvivorsMaker.Core.DamageFormula.PercentStat
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Core.StarterStats.Create*
+  commentId: Overload:SurvivorsMaker.Core.StarterStats.Create
+  isExternal: true
+  href: SurvivorsMaker.Core.StarterStats.html#SurvivorsMaker_Core_StarterStats_Create
+  name: Create
+  nameWithType: StarterStats.Create
+  fullName: SurvivorsMaker.Core.StarterStats.Create
+- uid: SurvivorsMaker.Core.StatDefinition[]
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html
+  name: StatDefinition[]
+  nameWithType: StatDefinition[]
+  fullName: SurvivorsMaker.Core.StatDefinition[]
+  nameWithType.vb: StatDefinition()
+  fullName.vb: SurvivorsMaker.Core.StatDefinition()
+  name.vb: StatDefinition()
+  spec.csharp:
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SurvivorsMaker.Core.StatDefinition
+    name: StatDefinition
+    isExternal: true
+    href: SurvivorsMaker.Core.StatDefinition.html
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Core.StarterStats.CreateCatalog*
+  commentId: Overload:SurvivorsMaker.Core.StarterStats.CreateCatalog
+  isExternal: true
+  href: SurvivorsMaker.Core.StarterStats.html#SurvivorsMaker_Core_StarterStats_CreateCatalog
+  name: CreateCatalog
+  nameWithType: StarterStats.CreateCatalog
+  fullName: SurvivorsMaker.Core.StarterStats.CreateCatalog
+- uid: SurvivorsMaker.Core.StatCatalog
+  commentId: T:SurvivorsMaker.Core.StatCatalog
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html
+  name: StatCatalog
+  nameWithType: StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog

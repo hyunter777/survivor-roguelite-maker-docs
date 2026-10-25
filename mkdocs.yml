@@ -1,0 +1,136 @@
+site_name: Survivor Roguelite Maker
+site_description: User guides and public API reference for Survivor Roguelite Maker.
+site_url: https://hyunter777.github.io/survivor-roguelite-maker-docs/
+repo_url: https://github.com/hyunter777/survivor-roguelite-maker-docs
+edit_uri: ''
+copyright: Copyright © FlyCat
+theme:
+  name: material
+  language: en
+  font: false
+  features:
+  - navigation.sections
+  - navigation.top
+  - navigation.footer
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+  - content.tabs.link
+  palette:
+  - scheme: default
+    primary: blue grey
+    accent: cyan
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: blue grey
+    accent: cyan
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+plugins:
+- search:
+    lang: en
+- i18n:
+    docs_structure: folder
+    languages:
+    - locale: en
+      name: English
+      default: true
+      build: true
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- toc:
+    permalink: true
+nav:
+- Introduction:
+  - Welcome: index.md
+  - Feature overview: introduction/features.md
+  - Requirements: introduction/requirements.md
+- Installation and first session:
+  - Installation: getting-started/installation.md
+  - Samples: getting-started/samples.md
+  - Five-minute demo: getting-started/demo.md
+  - Ten-minute first game: getting-started/first-game.md
+- Core concepts:
+  - Architecture: concepts/architecture.md
+  - Ticks: concepts/ticks.md
+  - Definitions: concepts/definitions.md
+  - Run Loop: concepts/run-loop.md
+- Authoring guide:
+  - Content: authoring/content.md
+  - Characters: authoring/characters.md
+  - Weapons: authoring/weapons.md
+  - Weapon Tiers: authoring/weapon-tiers.md
+  - Items Sets: authoring/items-sets.md
+  - Stats Effects: authoring/stats-effects.md
+  - Triggers: authoring/triggers.md
+  - Offers: authoring/offers.md
+  - Enemies: authoring/enemies.md
+  - Elites Bosses Hordes: authoring/elites-bosses-hordes.md
+  - Waves Arenas: authoring/waves-arenas.md
+  - Progression: authoring/progression.md
+  - Settings: authoring/settings.md
+- Maker tools:
+  - Index: tools/index.md
+  - Content Browser: tools/content-browser.md
+  - Wave Editor: tools/wave-editor.md
+  - Balance Simulator: tools/balance-simulator.md
+  - Run Pacing: tools/run-pacing.md
+  - Build Lab: tools/build-lab.md
+  - Horde Preview: tools/horde-preview.md
+  - Weapon Lab: tools/weapon-lab.md
+  - Offer Odds: tools/offer-odds.md
+  - Content Table: tools/content-table.md
+  - Wizards Validation: tools/wizards-validation.md
+- Presentation:
+  - Bootstrap: presentation/bootstrap.md
+  - Catalogs: presentation/catalogs.md
+  - Ui Localization: presentation/ui-localization.md
+  - Feedback Audio: presentation/feedback-audio.md
+- Playtesting:
+  - Panel: playtesting/panel.md
+  - Metrics: playtesting/metrics.md
+- Saves and options:
+  - Continue: saves/continue.md
+  - Options Migrations: saves/options-migrations.md
+- Extending:
+  - Index: extending/index.md
+  - Behaviours: extending/behaviours.md
+  - Modules Events: extending/modules-events.md
+  - Effect Trigger Handlers: extending/effect-trigger-handlers.md
+  - Bootstrap Systems: extending/bootstrap-systems.md
+  - Save Hooks: extending/save-hooks.md
+- Performance and determinism:
+  - Determinism: quality/determinism.md
+  - Performance: quality/performance.md
+- Recipes:
+  - Weapon Evolution: recipes/weapon-evolution.md
+  - Boss Wave: recipes/boss-wave.md
+  - Status Weapon: recipes/status-weapon.md
+  - Custom Weapon: recipes/custom-weapon.md
+  - Custom Pickup: recipes/custom-pickup.md
+  - Localized Ui: recipes/localized-ui.md
+  - Field Mode: recipes/field-mode.md
+  - Saved Effect: recipes/saved-effect.md
+- Reference and help:
+  - Api: reference/api.md
+  - Troubleshooting: help/troubleshooting.md
+  - Faq: help/faq.md
+  - Release Notes: release-notes.md
+  - Support License: support-license.md
+validation:
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: warn
+  nav:
+    not_found: warn
+    omitted_files: warn

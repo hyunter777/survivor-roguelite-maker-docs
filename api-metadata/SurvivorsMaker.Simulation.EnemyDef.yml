@@ -1,0 +1,959 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.EnemyDef
+  commentId: T:SurvivorsMaker.Simulation.EnemyDef
+  id: EnemyDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.EnemyDef.#ctor
+  - SurvivorsMaker.Simulation.EnemyDef.AlwaysDropHeal
+  - SurvivorsMaker.Simulation.EnemyDef.Attack
+  - SurvivorsMaker.Simulation.EnemyDef.BodyRadius
+  - SurvivorsMaker.Simulation.EnemyDef.CanDropHeal
+  - SurvivorsMaker.Simulation.EnemyDef.ContactDamage
+  - SurvivorsMaker.Simulation.EnemyDef.DeathSpawn
+  - SurvivorsMaker.Simulation.EnemyDef.Health
+  - SurvivorsMaker.Simulation.EnemyDef.HitRadius
+  - SurvivorsMaker.Simulation.EnemyDef.Id
+  - SurvivorsMaker.Simulation.EnemyDef.IsBoss
+  - SurvivorsMaker.Simulation.EnemyDef.KnockbackResistance
+  - SurvivorsMaker.Simulation.EnemyDef.Movement
+  - SurvivorsMaker.Simulation.EnemyDef.Phases
+  - SurvivorsMaker.Simulation.EnemyDef.Speed
+  - SurvivorsMaker.Simulation.EnemyDef.SpeedJitter
+  - SurvivorsMaker.Simulation.EnemyDef.StatusImmunities
+  - SurvivorsMaker.Simulation.EnemyDef.StatusImmunityIds
+  - SurvivorsMaker.Simulation.EnemyDef.Support
+  - SurvivorsMaker.Simulation.EnemyDef.Value
+  langs:
+  - csharp
+  - vb
+  name: EnemyDef
+  nameWithType: EnemyDef
+  fullName: SurvivorsMaker.Simulation.EnemyDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: An enemy or neutral object (e.g. a destructible crate).
+  example: []
+  syntax:
+    content: public sealed class EnemyDef
+    content.vb: Public NotInheritable Class EnemyDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.EnemyDef.Id
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Id
+  id: Id
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EnemyDef.Id
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Simulation.EnemyDef.Health
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Health
+  id: Health
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: EnemyDef.Health
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Health
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Scaled Health
+    return:
+      type: SurvivorsMaker.Simulation.Scaled
+    content.vb: Public Health As Scaled
+- uid: SurvivorsMaker.Simulation.EnemyDef.Speed
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Speed
+  id: Speed
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Speed
+  nameWithType: EnemyDef.Speed
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Speed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Speed
+    return:
+      type: System.Single
+    content.vb: Public Speed As Single
+- uid: SurvivorsMaker.Simulation.EnemyDef.SpeedJitter
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.SpeedJitter
+  id: SpeedJitter
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: SpeedJitter
+  nameWithType: EnemyDef.SpeedJitter
+  fullName: SurvivorsMaker.Simulation.EnemyDef.SpeedJitter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: ± jitter on speed, fixed at spawn.
+  example: []
+  syntax:
+    content: public float SpeedJitter
+    return:
+      type: System.Single
+    content.vb: Public SpeedJitter As Single
+- uid: SurvivorsMaker.Simulation.EnemyDef.ContactDamage
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.ContactDamage
+  id: ContactDamage
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: ContactDamage
+  nameWithType: EnemyDef.ContactDamage
+  fullName: SurvivorsMaker.Simulation.EnemyDef.ContactDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Scaled ContactDamage
+    return:
+      type: SurvivorsMaker.Simulation.Scaled
+    content.vb: Public ContactDamage As Scaled
+- uid: SurvivorsMaker.Simulation.EnemyDef.BodyRadius
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.BodyRadius
+  id: BodyRadius
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: BodyRadius
+  nameWithType: EnemyDef.BodyRadius
+  fullName: SurvivorsMaker.Simulation.EnemyDef.BodyRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Body radius for arena clamping and contact. ≤ 0 → <xref href="SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius"
+    data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public float BodyRadius
+    return:
+      type: System.Single
+    content.vb: Public BodyRadius As Single
+- uid: SurvivorsMaker.Simulation.EnemyDef.HitRadius
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.HitRadius
+  id: HitRadius
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: HitRadius
+  nameWithType: EnemyDef.HitRadius
+  fullName: SurvivorsMaker.Simulation.EnemyDef.HitRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Radius weapons hit. ≤ 0 → body radius.
+  example: []
+  syntax:
+    content: public float HitRadius
+    return:
+      type: System.Single
+    content.vb: Public HitRadius As Single
+- uid: SurvivorsMaker.Simulation.EnemyDef.Value
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Value
+  id: Value
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: EnemyDef.Value
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Value
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Currency dropped and experience given on death (non-neutral only).
+  example: []
+  syntax:
+    content: public int Value
+    return:
+      type: System.Int32
+    content.vb: Public Value As Integer
+- uid: SurvivorsMaker.Simulation.EnemyDef.KnockbackResistance
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.KnockbackResistance
+  id: KnockbackResistance
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: KnockbackResistance
+  nameWithType: EnemyDef.KnockbackResistance
+  fullName: SurvivorsMaker.Simulation.EnemyDef.KnockbackResistance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 0 = full knockback, 1 = immune.
+  example: []
+  syntax:
+    content: public float KnockbackResistance
+    return:
+      type: System.Single
+    content.vb: Public KnockbackResistance As Single
+- uid: SurvivorsMaker.Simulation.EnemyDef.CanDropHeal
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.CanDropHeal
+  id: CanDropHeal
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: CanDropHeal
+  nameWithType: EnemyDef.CanDropHeal
+  fullName: SurvivorsMaker.Simulation.EnemyDef.CanDropHeal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool CanDropHeal
+    return:
+      type: System.Boolean
+    content.vb: Public CanDropHeal As Boolean
+- uid: SurvivorsMaker.Simulation.EnemyDef.AlwaysDropHeal
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.AlwaysDropHeal
+  id: AlwaysDropHeal
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: AlwaysDropHeal
+  nameWithType: EnemyDef.AlwaysDropHeal
+  fullName: SurvivorsMaker.Simulation.EnemyDef.AlwaysDropHeal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool AlwaysDropHeal
+    return:
+      type: System.Boolean
+    content.vb: Public AlwaysDropHeal As Boolean
+- uid: SurvivorsMaker.Simulation.EnemyDef.Movement
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Movement
+  id: Movement
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Movement
+  nameWithType: EnemyDef.Movement
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Movement
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public MovementDef Movement
+    return:
+      type: SurvivorsMaker.Simulation.MovementDef
+    content.vb: Public Movement As MovementDef
+- uid: SurvivorsMaker.Simulation.EnemyDef.Attack
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Attack
+  id: Attack
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Attack
+  nameWithType: EnemyDef.Attack
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Attack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SpecialAttackDef Attack
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackDef
+    content.vb: Public Attack As SpecialAttackDef
+- uid: SurvivorsMaker.Simulation.EnemyDef.Support
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Support
+  id: Support
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Support
+  nameWithType: EnemyDef.Support
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Support
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SupportDef Support
+    return:
+      type: SurvivorsMaker.Simulation.SupportDef
+    content.vb: Public Support As SupportDef
+- uid: SurvivorsMaker.Simulation.EnemyDef.DeathSpawn
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.DeathSpawn
+  id: DeathSpawn
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: DeathSpawn
+  nameWithType: EnemyDef.DeathSpawn
+  fullName: SurvivorsMaker.Simulation.EnemyDef.DeathSpawn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public DeathSpawnDef DeathSpawn
+    return:
+      type: SurvivorsMaker.Simulation.DeathSpawnDef
+    content.vb: Public DeathSpawn As DeathSpawnDef
+- uid: SurvivorsMaker.Simulation.EnemyDef.IsBoss
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.IsBoss
+  id: IsBoss
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: IsBoss
+  nameWithType: EnemyDef.IsBoss
+  fullName: SurvivorsMaker.Simulation.EnemyDef.IsBoss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Bosses get phase changes, boss events and the boss health bar.
+  example: []
+  syntax:
+    content: public bool IsBoss
+    return:
+      type: System.Boolean
+    content.vb: Public IsBoss As Boolean
+- uid: SurvivorsMaker.Simulation.EnemyDef.Phases
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.Phases
+  id: Phases
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: Phases
+  nameWithType: EnemyDef.Phases
+  fullName: SurvivorsMaker.Simulation.EnemyDef.Phases
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Boss phases in order. Empty = Movement/Attack above for the whole fight.
+  example: []
+  syntax:
+    content: public List<BossPhaseDef> Phases
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BossPhaseDef}
+    content.vb: Public Phases As List(Of BossPhaseDef)
+- uid: SurvivorsMaker.Simulation.EnemyDef.StatusImmunities
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.StatusImmunities
+  id: StatusImmunities
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: StatusImmunities
+  nameWithType: EnemyDef.StatusImmunities
+  fullName: SurvivorsMaker.Simulation.EnemyDef.StatusImmunities
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Statuses this enemy ignores.
+  example: []
+  syntax:
+    content: public List<StatusKind> StatusImmunities
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.StatusKind}
+    content.vb: Public StatusImmunities As List(Of StatusKind)
+- uid: SurvivorsMaker.Simulation.EnemyDef.StatusImmunityIds
+  commentId: F:SurvivorsMaker.Simulation.EnemyDef.StatusImmunityIds
+  id: StatusImmunityIds
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: StatusImmunityIds
+  nameWithType: EnemyDef.StatusImmunityIds
+  fullName: SurvivorsMaker.Simulation.EnemyDef.StatusImmunityIds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Statuses this enemy ignores, by behaviour id (custom statuses; built-ins may be listed here too).
+  example: []
+  syntax:
+    content: public List<string> StatusImmunityIds
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public StatusImmunityIds As List(Of String)
+- uid: SurvivorsMaker.Simulation.EnemyDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.EnemyDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.EnemyDef
+  langs:
+  - csharp
+  - vb
+  name: EnemyDef()
+  nameWithType: EnemyDef.EnemyDef()
+  fullName: SurvivorsMaker.Simulation.EnemyDef.EnemyDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EnemyDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.EnemyDef.#ctor*
+  nameWithType.vb: EnemyDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.EnemyDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.Scaled
+  commentId: T:SurvivorsMaker.Simulation.Scaled
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html
+  name: Scaled
+  nameWithType: Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EnemySettings.html#SurvivorsMaker_Simulation_EnemySettings_DefaultBodyRadius
+  name: DefaultBodyRadius
+  nameWithType: EnemySettings.DefaultBodyRadius
+  fullName: SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.MovementDef
+  commentId: T:SurvivorsMaker.Simulation.MovementDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MovementDef.html
+  name: MovementDef
+  nameWithType: MovementDef
+  fullName: SurvivorsMaker.Simulation.MovementDef
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef
+- uid: SurvivorsMaker.Simulation.SupportDef
+  commentId: T:SurvivorsMaker.Simulation.SupportDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SupportDef.html
+  name: SupportDef
+  nameWithType: SupportDef
+  fullName: SurvivorsMaker.Simulation.SupportDef
+- uid: SurvivorsMaker.Simulation.DeathSpawnDef
+  commentId: T:SurvivorsMaker.Simulation.DeathSpawnDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.DeathSpawnDef.html
+  name: DeathSpawnDef
+  nameWithType: DeathSpawnDef
+  fullName: SurvivorsMaker.Simulation.DeathSpawnDef
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BossPhaseDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BossPhaseDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BossPhaseDef>
+  nameWithType: List<BossPhaseDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BossPhaseDef>
+  nameWithType.vb: List(Of BossPhaseDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BossPhaseDef)
+  name.vb: List(Of BossPhaseDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BossPhaseDef
+    name: BossPhaseDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BossPhaseDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BossPhaseDef
+    name: BossPhaseDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BossPhaseDef.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.StatusKind}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.StatusKind}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<StatusKind>
+  nameWithType: List<StatusKind>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.StatusKind>
+  nameWithType.vb: List(Of StatusKind)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.StatusKind)
+  name.vb: List(Of StatusKind)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.StatusKind
+    name: StatusKind
+    isExternal: true
+    href: SurvivorsMaker.Simulation.StatusKind.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.StatusKind
+    name: StatusKind
+    isExternal: true
+    href: SurvivorsMaker.Simulation.StatusKind.html
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Simulation.EnemyDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.EnemyDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EnemyDef.html#SurvivorsMaker_Simulation_EnemyDef__ctor
+  name: EnemyDef
+  nameWithType: EnemyDef.EnemyDef
+  fullName: SurvivorsMaker.Simulation.EnemyDef.EnemyDef
+  nameWithType.vb: EnemyDef.New
+  fullName.vb: SurvivorsMaker.Simulation.EnemyDef.New
+  name.vb: New

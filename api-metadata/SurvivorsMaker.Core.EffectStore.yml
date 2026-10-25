@@ -1,0 +1,1245 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.EffectStore
+  commentId: T:SurvivorsMaker.Core.EffectStore
+  id: EffectStore
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.EffectStore.#ctor
+  - SurvivorsMaker.Core.EffectStore.Clear
+  - SurvivorsMaker.Core.EffectStore.Entries
+  - SurvivorsMaker.Core.EffectStore.EntriesFor(System.String)
+  - SurvivorsMaker.Core.EffectStore.Get(System.String)
+  - SurvivorsMaker.Core.EffectStore.GetEntries(System.String)
+  - SurvivorsMaker.Core.EffectStore.GetIds(System.String)
+  - SurvivorsMaker.Core.EffectStore.IdLists
+  - SurvivorsMaker.Core.EffectStore.IdsFor(System.String)
+  - SurvivorsMaker.Core.EffectStore.Revision
+  - SurvivorsMaker.Core.EffectStore.Total(System.String,System.String)
+  - SurvivorsMaker.Core.EffectStore.Touch
+  - SurvivorsMaker.Core.EffectStore.Values
+  langs:
+  - csharp
+  - vb
+  name: EffectStore
+  nameWithType: EffectStore
+  fullName: SurvivorsMaker.Core.EffectStore
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Raw effect totals for one player, before stat base values and limits.
+  example: []
+  syntax:
+    content: public sealed class EffectStore
+    content.vb: Public NotInheritable Class EffectStore
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.EffectStore.Values
+  commentId: F:SurvivorsMaker.Core.EffectStore.Values
+  id: Values
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: EffectStore.Values
+  fullName: SurvivorsMaker.Core.EffectStore.Values
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Scalar values written by <xref href="SurvivorsMaker.Core.EffectMethod.Add" data-throw-if-not-resolved="false"></xref>
+    and <xref href="SurvivorsMaker.Core.EffectMethod.Set" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly Dictionary<string, int> Values
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    content.vb: Public ReadOnly Values As Dictionary(Of String, Integer)
+- uid: SurvivorsMaker.Core.EffectStore.Entries
+  commentId: F:SurvivorsMaker.Core.EffectStore.Entries
+  id: Entries
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Entries
+  nameWithType: EffectStore.Entries
+  fullName: SurvivorsMaker.Core.EffectStore.Entries
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: (id, amount) lists written by <xref href="SurvivorsMaker.Core.EffectMethod.Tally" data-throw-if-not-resolved="false"></xref>
+    and <xref href="SurvivorsMaker.Core.EffectMethod.Append" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly Dictionary<string, List<KeyValuePair<string, int>>> Entries
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}}
+    content.vb: Public ReadOnly Entries As Dictionary(Of String, List(Of KeyValuePair(Of String, Integer)))
+- uid: SurvivorsMaker.Core.EffectStore.IdLists
+  commentId: F:SurvivorsMaker.Core.EffectStore.IdLists
+  id: IdLists
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: IdLists
+  nameWithType: EffectStore.IdLists
+  fullName: SurvivorsMaker.Core.EffectStore.IdLists
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Id lists written by <xref href="SurvivorsMaker.Core.EffectMethod.AppendUnique" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly Dictionary<string, List<string>> IdLists
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+    content.vb: Public ReadOnly IdLists As Dictionary(Of String, List(Of String))
+- uid: SurvivorsMaker.Core.EffectStore.Get(System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.Get(System.String)
+  id: Get(System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Get(string)
+  nameWithType: EffectStore.Get(string)
+  fullName: SurvivorsMaker.Core.EffectStore.Get(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Reads integer stat storage; unknown or null ids return zero.
+  example: []
+  syntax:
+    content: public int Get(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function [Get](id As String) As Integer
+  overload: SurvivorsMaker.Core.EffectStore.Get*
+  nameWithType.vb: EffectStore.Get(String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.Get(String)
+  name.vb: Get(String)
+- uid: SurvivorsMaker.Core.EffectStore.GetEntries(System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.GetEntries(System.String)
+  id: GetEntries(System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: GetEntries(string)
+  nameWithType: EffectStore.GetEntries(string)
+  fullName: SurvivorsMaker.Core.EffectStore.GetEntries(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Returns the current named entry-list view, or an empty view when absent.
+  example: []
+  syntax:
+    content: public IReadOnlyList<KeyValuePair<string, int>> GetEntries(string list)
+    parameters:
+    - id: list
+      type: System.String
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+    content.vb: Public Function GetEntries(list As String) As IReadOnlyList(Of KeyValuePair(Of String, Integer))
+  overload: SurvivorsMaker.Core.EffectStore.GetEntries*
+  nameWithType.vb: EffectStore.GetEntries(String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.GetEntries(String)
+  name.vb: GetEntries(String)
+- uid: SurvivorsMaker.Core.EffectStore.GetIds(System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.GetIds(System.String)
+  id: GetIds(System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: GetIds(string)
+  nameWithType: EffectStore.GetIds(string)
+  fullName: SurvivorsMaker.Core.EffectStore.GetIds(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Returns the current named id-list view, or an empty view when absent.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> GetIds(string list)
+    parameters:
+    - id: list
+      type: System.String
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public Function GetIds(list As String) As IReadOnlyList(Of String)
+  overload: SurvivorsMaker.Core.EffectStore.GetIds*
+  nameWithType.vb: EffectStore.GetIds(String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.GetIds(String)
+  name.vb: GetIds(String)
+- uid: SurvivorsMaker.Core.EffectStore.Total(System.String,System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.Total(System.String,System.String)
+  id: Total(System.String,System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Total(string, string)
+  nameWithType: EffectStore.Total(string, string)
+  fullName: SurvivorsMaker.Core.EffectStore.Total(string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Sum of the amounts for one id in a list, e.g. how many copies of a weapon in a loadout.
+  example: []
+  syntax:
+    content: public int Total(string list, string id)
+    parameters:
+    - id: list
+      type: System.String
+    - id: id
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function Total(list As String, id As String) As Integer
+  overload: SurvivorsMaker.Core.EffectStore.Total*
+  nameWithType.vb: EffectStore.Total(String, String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.Total(String, String)
+  name.vb: Total(String, String)
+- uid: SurvivorsMaker.Core.EffectStore.Touch
+  commentId: M:SurvivorsMaker.Core.EffectStore.Touch
+  id: Touch
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Touch()
+  nameWithType: EffectStore.Touch()
+  fullName: SurvivorsMaker.Core.EffectStore.Touch()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Marks the store changed. Custom handlers call this after writing.
+  example: []
+  syntax:
+    content: public void Touch()
+    content.vb: Public Sub Touch()
+  overload: SurvivorsMaker.Core.EffectStore.Touch*
+- uid: SurvivorsMaker.Core.EffectStore.EntriesFor(System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.EntriesFor(System.String)
+  id: EntriesFor(System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: EntriesFor(string)
+  nameWithType: EffectStore.EntriesFor(string)
+  fullName: SurvivorsMaker.Core.EffectStore.EntriesFor(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Returns the mutable named entry list, creating it when absent.
+  example: []
+  syntax:
+    content: public List<KeyValuePair<string, int>> EntriesFor(string list)
+    parameters:
+    - id: list
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+    content.vb: Public Function EntriesFor(list As String) As List(Of KeyValuePair(Of String, Integer))
+  overload: SurvivorsMaker.Core.EffectStore.EntriesFor*
+  nameWithType.vb: EffectStore.EntriesFor(String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.EntriesFor(String)
+  name.vb: EntriesFor(String)
+- uid: SurvivorsMaker.Core.EffectStore.IdsFor(System.String)
+  commentId: M:SurvivorsMaker.Core.EffectStore.IdsFor(System.String)
+  id: IdsFor(System.String)
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: IdsFor(string)
+  nameWithType: EffectStore.IdsFor(string)
+  fullName: SurvivorsMaker.Core.EffectStore.IdsFor(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Returns the mutable named id list, creating it when absent.
+  example: []
+  syntax:
+    content: public List<string> IdsFor(string list)
+    parameters:
+    - id: list
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function IdsFor(list As String) As List(Of String)
+  overload: SurvivorsMaker.Core.EffectStore.IdsFor*
+  nameWithType.vb: EffectStore.IdsFor(String)
+  fullName.vb: SurvivorsMaker.Core.EffectStore.IdsFor(String)
+  name.vb: IdsFor(String)
+- uid: SurvivorsMaker.Core.EffectStore.Clear
+  commentId: M:SurvivorsMaker.Core.EffectStore.Clear
+  id: Clear
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: EffectStore.Clear()
+  fullName: SurvivorsMaker.Core.EffectStore.Clear()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Clears stat values and named entry/id lists.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: SurvivorsMaker.Core.EffectStore.Clear*
+- uid: SurvivorsMaker.Core.EffectStore.#ctor
+  commentId: M:SurvivorsMaker.Core.EffectStore.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: EffectStore()
+  nameWithType: EffectStore.EffectStore()
+  fullName: SurvivorsMaker.Core.EffectStore.EffectStore()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public EffectStore()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Core.EffectStore.#ctor*
+  nameWithType.vb: EffectStore.New()
+  fullName.vb: SurvivorsMaker.Core.EffectStore.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Core.EffectStore.Revision
+  commentId: P:SurvivorsMaker.Core.EffectStore.Revision
+  id: Revision
+  parent: SurvivorsMaker.Core.EffectStore
+  langs:
+  - csharp
+  - vb
+  name: Revision
+  nameWithType: EffectStore.Revision
+  fullName: SurvivorsMaker.Core.EffectStore.Revision
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Incremented on every change, so callers can cache derived values.
+  example: []
+  syntax:
+    content: public int Revision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Revision As Integer
+  overload: SurvivorsMaker.Core.EffectStore.Revision*
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.EffectMethod.Add
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Add
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Add
+  name: Add
+  nameWithType: EffectMethod.Add
+  fullName: SurvivorsMaker.Core.EffectMethod.Add
+- uid: SurvivorsMaker.Core.EffectMethod.Set
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Set
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Set
+  name: Set
+  nameWithType: EffectMethod.Set
+  fullName: SurvivorsMaker.Core.EffectMethod.Set
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Core.EffectMethod.Tally
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Tally
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Tally
+  name: Tally
+  nameWithType: EffectMethod.Tally
+  fullName: SurvivorsMaker.Core.EffectMethod.Tally
+- uid: SurvivorsMaker.Core.EffectMethod.Append
+  commentId: F:SurvivorsMaker.Core.EffectMethod.Append
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_Append
+  name: Append
+  nameWithType: EffectMethod.Append
+  fullName: SurvivorsMaker.Core.EffectMethod.Append
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, List<KeyValuePair<string, int>>>
+  nameWithType: Dictionary<string, List<KeyValuePair<string, int>>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string,
+    int>>>
+  nameWithType.vb: Dictionary(Of String, List(Of KeyValuePair(Of String, Integer)))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of System.Collections.Generic.KeyValuePair(Of
+    String, Integer)))
+  name.vb: Dictionary(Of String, List(Of KeyValuePair(Of String, Integer)))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Core.EffectMethod.AppendUnique
+  commentId: F:SurvivorsMaker.Core.EffectMethod.AppendUnique
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html#SurvivorsMaker_Core_EffectMethod_AppendUnique
+  name: AppendUnique
+  nameWithType: EffectMethod.AppendUnique
+  fullName: SurvivorsMaker.Core.EffectMethod.AppendUnique
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, List<string>>
+  nameWithType: Dictionary<string, List<string>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<string>>
+  nameWithType.vb: Dictionary(Of String, List(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of String))
+  name.vb: Dictionary(Of String, List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Core.EffectStore.Get*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.Get
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_Get_System_String_
+  name: Get
+  nameWithType: EffectStore.Get
+  fullName: SurvivorsMaker.Core.EffectStore.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Core.EffectStore.GetEntries*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.GetEntries
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_GetEntries_System_String_
+  name: GetEntries
+  nameWithType: EffectStore.GetEntries
+  fullName: SurvivorsMaker.Core.EffectStore.GetEntries
+- uid: System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<KeyValuePair<string, int>>
+  nameWithType: IReadOnlyList<KeyValuePair<string, int>>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Collections.Generic.KeyValuePair<string, int>>
+  nameWithType.vb: IReadOnlyList(Of KeyValuePair(Of String, Integer))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.KeyValuePair(Of String, Integer))
+  name.vb: IReadOnlyList(Of KeyValuePair(Of String, Integer))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Core.EffectStore.GetIds*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.GetIds
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_GetIds_System_String_
+  name: GetIds
+  nameWithType: EffectStore.GetIds
+  fullName: SurvivorsMaker.Core.EffectStore.GetIds
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Core.EffectStore.Total*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.Total
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_Total_System_String_System_String_
+  name: Total
+  nameWithType: EffectStore.Total
+  fullName: SurvivorsMaker.Core.EffectStore.Total
+- uid: SurvivorsMaker.Core.EffectStore.Touch*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.Touch
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_Touch
+  name: Touch
+  nameWithType: EffectStore.Touch
+  fullName: SurvivorsMaker.Core.EffectStore.Touch
+- uid: SurvivorsMaker.Core.EffectStore.EntriesFor*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.EntriesFor
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_EntriesFor_System_String_
+  name: EntriesFor
+  nameWithType: EffectStore.EntriesFor
+  fullName: SurvivorsMaker.Core.EffectStore.EntriesFor
+- uid: System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Int32}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<KeyValuePair<string, int>>
+  nameWithType: List<KeyValuePair<string, int>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, int>>
+  nameWithType.vb: List(Of KeyValuePair(Of String, Integer))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.KeyValuePair(Of String, Integer))
+  name.vb: List(Of KeyValuePair(Of String, Integer))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Core.EffectStore.IdsFor*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.IdsFor
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_IdsFor_System_String_
+  name: IdsFor
+  nameWithType: EffectStore.IdsFor
+  fullName: SurvivorsMaker.Core.EffectStore.IdsFor
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Core.EffectStore.Clear*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.Clear
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_Clear
+  name: Clear
+  nameWithType: EffectStore.Clear
+  fullName: SurvivorsMaker.Core.EffectStore.Clear
+- uid: SurvivorsMaker.Core.EffectStore.#ctor*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore__ctor
+  name: EffectStore
+  nameWithType: EffectStore.EffectStore
+  fullName: SurvivorsMaker.Core.EffectStore.EffectStore
+  nameWithType.vb: EffectStore.New
+  fullName.vb: SurvivorsMaker.Core.EffectStore.New
+  name.vb: New
+- uid: SurvivorsMaker.Core.EffectStore.Revision*
+  commentId: Overload:SurvivorsMaker.Core.EffectStore.Revision
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectStore.html#SurvivorsMaker_Core_EffectStore_Revision
+  name: Revision
+  nameWithType: EffectStore.Revision
+  fullName: SurvivorsMaker.Core.EffectStore.Revision

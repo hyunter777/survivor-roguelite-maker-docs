@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferPoolState
+  commentId: T:SurvivorsMaker.Run.OfferPoolState
+  id: OfferPoolState
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferPoolState.#ctor
+  - SurvivorsMaker.Run.OfferPoolState.BanishedItems
+  - SurvivorsMaker.Run.OfferPoolState.BanishedWeapons
+  - SurvivorsMaker.Run.OfferPoolState.BanishesUsed
+  - SurvivorsMaker.Run.OfferPoolState.Copy
+  - SurvivorsMaker.Run.OfferPoolState.Guarantees
+  langs:
+  - csharp
+  - vb
+  name: OfferPoolState
+  nameWithType: OfferPoolState
+  fullName: SurvivorsMaker.Run.OfferPoolState
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Saveable run-scoped bans, guarantee uses and reroll context.
+  example: []
+  syntax:
+    content: public sealed class OfferPoolState
+    content.vb: Public NotInheritable Class OfferPoolState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.OfferPoolState.BanishedItems
+  commentId: F:SurvivorsMaker.Run.OfferPoolState.BanishedItems
+  id: BanishedItems
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: BanishedItems
+  nameWithType: OfferPoolState.BanishedItems
+  fullName: SurvivorsMaker.Run.OfferPoolState.BanishedItems
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> BanishedItems
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public BanishedItems As List(Of String)
+- uid: SurvivorsMaker.Run.OfferPoolState.BanishedWeapons
+  commentId: F:SurvivorsMaker.Run.OfferPoolState.BanishedWeapons
+  id: BanishedWeapons
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: BanishedWeapons
+  nameWithType: OfferPoolState.BanishedWeapons
+  fullName: SurvivorsMaker.Run.OfferPoolState.BanishedWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> BanishedWeapons
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public BanishedWeapons As List(Of String)
+- uid: SurvivorsMaker.Run.OfferPoolState.BanishesUsed
+  commentId: F:SurvivorsMaker.Run.OfferPoolState.BanishesUsed
+  id: BanishesUsed
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: BanishesUsed
+  nameWithType: OfferPoolState.BanishesUsed
+  fullName: SurvivorsMaker.Run.OfferPoolState.BanishesUsed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int BanishesUsed
+    return:
+      type: System.Int32
+    content.vb: Public BanishesUsed As Integer
+- uid: SurvivorsMaker.Run.OfferPoolState.Guarantees
+  commentId: F:SurvivorsMaker.Run.OfferPoolState.Guarantees
+  id: Guarantees
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: Guarantees
+  nameWithType: OfferPoolState.Guarantees
+  fullName: SurvivorsMaker.Run.OfferPoolState.Guarantees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<GuaranteeUse> Guarantees
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.GuaranteeUse}
+    content.vb: Public Guarantees As List(Of GuaranteeUse)
+- uid: SurvivorsMaker.Run.OfferPoolState.Copy
+  commentId: M:SurvivorsMaker.Run.OfferPoolState.Copy
+  id: Copy
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: OfferPoolState.Copy()
+  fullName: SurvivorsMaker.Run.OfferPoolState.Copy()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Returns an independent copy of this saved or reported state without running gameplay logic.
+  example: []
+  syntax:
+    content: public OfferPoolState Copy()
+    return:
+      type: SurvivorsMaker.Run.OfferPoolState
+    content.vb: Public Function Copy() As OfferPoolState
+  overload: SurvivorsMaker.Run.OfferPoolState.Copy*
+- uid: SurvivorsMaker.Run.OfferPoolState.#ctor
+  commentId: M:SurvivorsMaker.Run.OfferPoolState.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.OfferPoolState
+  langs:
+  - csharp
+  - vb
+  name: OfferPoolState()
+  nameWithType: OfferPoolState.OfferPoolState()
+  fullName: SurvivorsMaker.Run.OfferPoolState.OfferPoolState()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public OfferPoolState()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.OfferPoolState.#ctor*
+  nameWithType.vb: OfferPoolState.New()
+  fullName.vb: SurvivorsMaker.Run.OfferPoolState.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.GuaranteeUse}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.GuaranteeUse}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GuaranteeUse>
+  nameWithType: List<GuaranteeUse>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.GuaranteeUse>
+  nameWithType.vb: List(Of GuaranteeUse)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.GuaranteeUse)
+  name.vb: List(Of GuaranteeUse)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.GuaranteeUse
+    name: GuaranteeUse
+    isExternal: true
+    href: SurvivorsMaker.Run.GuaranteeUse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.GuaranteeUse
+    name: GuaranteeUse
+    isExternal: true
+    href: SurvivorsMaker.Run.GuaranteeUse.html
+  - name: )
+- uid: SurvivorsMaker.Run.OfferPoolState.Copy*
+  commentId: Overload:SurvivorsMaker.Run.OfferPoolState.Copy
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolState.html#SurvivorsMaker_Run_OfferPoolState_Copy
+  name: Copy
+  nameWithType: OfferPoolState.Copy
+  fullName: SurvivorsMaker.Run.OfferPoolState.Copy
+- uid: SurvivorsMaker.Run.OfferPoolState
+  commentId: T:SurvivorsMaker.Run.OfferPoolState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolState.html
+  name: OfferPoolState
+  nameWithType: OfferPoolState
+  fullName: SurvivorsMaker.Run.OfferPoolState
+- uid: SurvivorsMaker.Run.OfferPoolState.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.OfferPoolState.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolState.html#SurvivorsMaker_Run_OfferPoolState__ctor
+  name: OfferPoolState
+  nameWithType: OfferPoolState.OfferPoolState
+  fullName: SurvivorsMaker.Run.OfferPoolState.OfferPoolState
+  nameWithType.vb: OfferPoolState.New
+  fullName.vb: SurvivorsMaker.Run.OfferPoolState.New
+  name.vb: New

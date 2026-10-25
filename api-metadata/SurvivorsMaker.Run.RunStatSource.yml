@@ -1,0 +1,836 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunStatSource
+  commentId: T:SurvivorsMaker.Run.RunStatSource
+  id: RunStatSource
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunStatSource.#ctor(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.RunStatSource.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  - SurvivorsMaker.Run.RunStatSource.Revision
+  - SurvivorsMaker.Run.RunStatSource.TryDebit(System.String,System.Single)
+  - SurvivorsMaker.Run.RunStatSource.TryGet(System.String,System.Single@)
+  - SurvivorsMaker.Run.RunStatSource.Wallet
+  langs:
+  - csharp
+  - vb
+  name: RunStatSource
+  nameWithType: RunStatSource
+  fullName: SurvivorsMaker.Run.RunStatSource
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Read-only inventory queries plus an atomic currency debit. Definition identity follows Run contracts.
+
+    Currency reads the committed run balance unless Wallet is supplied (combat must supply its net ledger).'
+  example: []
+  syntax:
+    content: 'public sealed class RunStatSource : IStatDebitSource, IStatSource, IStatSourceDependencies'
+    content.vb: Public NotInheritable Class RunStatSource Implements IStatDebitSource, IStatSource, IStatSourceDependencies
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Core.IStatDebitSource
+  - SurvivorsMaker.Core.IStatSource
+  - SurvivorsMaker.Core.IStatSourceDependencies
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.RunStatSource.Wallet
+  commentId: F:SurvivorsMaker.Run.RunStatSource.Wallet
+  id: Wallet
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: Wallet
+  nameWithType: RunStatSource.Wallet
+  fullName: SurvivorsMaker.Run.RunStatSource.Wallet
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Optional shared combat wallet; key "currency" must include uncommitted net transactions.
+  example: []
+  syntax:
+    content: public IStatDebitSource Wallet
+    return:
+      type: SurvivorsMaker.Core.IStatDebitSource
+    content.vb: Public Wallet As IStatDebitSource
+- uid: SurvivorsMaker.Run.RunStatSource.#ctor(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.RunStatSource.#ctor(SurvivorsMaker.Run.RunState)
+  id: '#ctor(SurvivorsMaker.Run.RunState)'
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: RunStatSource(RunState)
+  nameWithType: RunStatSource.RunStatSource(RunState)
+  fullName: SurvivorsMaker.Run.RunStatSource.RunStatSource(SurvivorsMaker.Run.RunState)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunStatSource(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Sub New(run As RunState)
+  overload: SurvivorsMaker.Run.RunStatSource.#ctor*
+  nameWithType.vb: RunStatSource.New(RunState)
+  fullName.vb: SurvivorsMaker.Run.RunStatSource.New(SurvivorsMaker.Run.RunState)
+  name.vb: New(RunState)
+- uid: SurvivorsMaker.Run.RunStatSource.TryGet(System.String,System.Single@)
+  commentId: M:SurvivorsMaker.Run.RunStatSource.TryGet(System.String,System.Single@)
+  id: TryGet(System.String,System.Single@)
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: TryGet(string, out float)
+  nameWithType: RunStatSource.TryGet(string, out float)
+  fullName: SurvivorsMaker.Run.RunStatSource.TryGet(string, out float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Reads a stable external source value without side effects; false means the key is not supplied.
+  example: []
+  syntax:
+    content: public bool TryGet(string key, out float value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(key As String, value As Single) As Boolean
+  overload: SurvivorsMaker.Run.RunStatSource.TryGet*
+  implements:
+  - SurvivorsMaker.Core.IStatSource.TryGet(System.String,System.Single@)
+  nameWithType.vb: RunStatSource.TryGet(String, Single)
+  fullName.vb: SurvivorsMaker.Run.RunStatSource.TryGet(String, Single)
+  name.vb: TryGet(String, Single)
+- uid: SurvivorsMaker.Run.RunStatSource.TryDebit(System.String,System.Single)
+  commentId: M:SurvivorsMaker.Run.RunStatSource.TryDebit(System.String,System.Single)
+  id: TryDebit(System.String,System.Single)
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: TryDebit(string, float)
+  nameWithType: RunStatSource.TryDebit(string, float)
+  fullName: SurvivorsMaker.Run.RunStatSource.TryDebit(string, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Atomically spends a nonnegative amount from a source; false must leave its state unchanged.
+  example: []
+  syntax:
+    content: public bool TryDebit(string key, float amount)
+    parameters:
+    - id: key
+      type: System.String
+    - id: amount
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryDebit(key As String, amount As Single) As Boolean
+  overload: SurvivorsMaker.Run.RunStatSource.TryDebit*
+  implements:
+  - SurvivorsMaker.Core.IStatDebitSource.TryDebit(System.String,System.Single)
+  nameWithType.vb: RunStatSource.TryDebit(String, Single)
+  fullName.vb: SurvivorsMaker.Run.RunStatSource.TryDebit(String, Single)
+  name.vb: TryDebit(String, Single)
+- uid: SurvivorsMaker.Run.RunStatSource.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Run.RunStatSource.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  id: GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: GetDependencies(string, List<string>)
+  nameWithType: RunStatSource.GetDependencies(string, List<string>)
+  fullName: SurvivorsMaker.Run.RunStatSource.GetDependencies(string, System.Collections.Generic.List<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Reports stat ids used to derive an external source into the reusable output list; must not mutate gameplay.
+  example: []
+  syntax:
+    content: public void GetDependencies(string key, List<string> into)
+    parameters:
+    - id: key
+      type: System.String
+    - id: into
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Sub GetDependencies(key As String, into As List(Of String))
+  overload: SurvivorsMaker.Run.RunStatSource.GetDependencies*
+  implements:
+  - SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  nameWithType.vb: RunStatSource.GetDependencies(String, List(Of String))
+  fullName.vb: SurvivorsMaker.Run.RunStatSource.GetDependencies(String, System.Collections.Generic.List(Of String))
+  name.vb: GetDependencies(String, List(Of String))
+- uid: SurvivorsMaker.Run.RunStatSource.Revision
+  commentId: P:SurvivorsMaker.Run.RunStatSource.Revision
+  id: Revision
+  parent: SurvivorsMaker.Run.RunStatSource
+  langs:
+  - csharp
+  - vb
+  name: Revision
+  nameWithType: RunStatSource.Revision
+  fullName: SurvivorsMaker.Run.RunStatSource.Revision
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Revision stamp for reported source values; change it whenever those values change.
+  example: []
+  syntax:
+    content: public long Revision { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Revision As Long
+  overload: SurvivorsMaker.Run.RunStatSource.Revision*
+  implements:
+  - SurvivorsMaker.Core.IStatSource.Revision
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Core.IStatDebitSource
+  commentId: T:SurvivorsMaker.Core.IStatDebitSource
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatDebitSource.html
+  name: IStatDebitSource
+  nameWithType: IStatDebitSource
+  fullName: SurvivorsMaker.Core.IStatDebitSource
+- uid: SurvivorsMaker.Core.IStatSource
+  commentId: T:SurvivorsMaker.Core.IStatSource
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSource.html
+  name: IStatSource
+  nameWithType: IStatSource
+  fullName: SurvivorsMaker.Core.IStatSource
+- uid: SurvivorsMaker.Core.IStatSourceDependencies
+  commentId: T:SurvivorsMaker.Core.IStatSourceDependencies
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSourceDependencies.html
+  name: IStatSourceDependencies
+  nameWithType: IStatSourceDependencies
+  fullName: SurvivorsMaker.Core.IStatSourceDependencies
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunStatSource.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.RunStatSource.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.RunStatSource.html#SurvivorsMaker_Run_RunStatSource__ctor_SurvivorsMaker_Run_RunState_
+  name: RunStatSource
+  nameWithType: RunStatSource.RunStatSource
+  fullName: SurvivorsMaker.Run.RunStatSource.RunStatSource
+  nameWithType.vb: RunStatSource.New
+  fullName.vb: SurvivorsMaker.Run.RunStatSource.New
+  name.vb: New
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.RunStatSource.TryGet*
+  commentId: Overload:SurvivorsMaker.Run.RunStatSource.TryGet
+  isExternal: true
+  href: SurvivorsMaker.Run.RunStatSource.html#SurvivorsMaker_Run_RunStatSource_TryGet_System_String_System_Single__
+  name: TryGet
+  nameWithType: RunStatSource.TryGet
+  fullName: SurvivorsMaker.Run.RunStatSource.TryGet
+- uid: SurvivorsMaker.Core.IStatSource.TryGet(System.String,System.Single@)
+  commentId: M:SurvivorsMaker.Core.IStatSource.TryGet(System.String,System.Single@)
+  parent: SurvivorsMaker.Core.IStatSource
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSource.html#SurvivorsMaker_Core_IStatSource_TryGet_System_String_System_Single__
+  name: TryGet(string, out float)
+  nameWithType: IStatSource.TryGet(string, out float)
+  fullName: SurvivorsMaker.Core.IStatSource.TryGet(string, out float)
+  nameWithType.vb: IStatSource.TryGet(String, Single)
+  fullName.vb: SurvivorsMaker.Core.IStatSource.TryGet(String, Single)
+  name.vb: TryGet(String, Single)
+  spec.csharp:
+  - uid: SurvivorsMaker.Core.IStatSource.TryGet(System.String,System.Single@)
+    name: TryGet
+    isExternal: true
+    href: SurvivorsMaker.Core.IStatSource.html#SurvivorsMaker_Core_IStatSource_TryGet_System_String_System_Single__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - name: out
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Core.IStatSource.TryGet(System.String,System.Single@)
+    name: TryGet
+    isExternal: true
+    href: SurvivorsMaker.Core.IStatSource.html#SurvivorsMaker_Core_IStatSource_TryGet_System_String_System_Single__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.RunStatSource.TryDebit*
+  commentId: Overload:SurvivorsMaker.Run.RunStatSource.TryDebit
+  isExternal: true
+  href: SurvivorsMaker.Run.RunStatSource.html#SurvivorsMaker_Run_RunStatSource_TryDebit_System_String_System_Single_
+  name: TryDebit
+  nameWithType: RunStatSource.TryDebit
+  fullName: SurvivorsMaker.Run.RunStatSource.TryDebit
+- uid: SurvivorsMaker.Core.IStatDebitSource.TryDebit(System.String,System.Single)
+  commentId: M:SurvivorsMaker.Core.IStatDebitSource.TryDebit(System.String,System.Single)
+  parent: SurvivorsMaker.Core.IStatDebitSource
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatDebitSource.html#SurvivorsMaker_Core_IStatDebitSource_TryDebit_System_String_System_Single_
+  name: TryDebit(string, float)
+  nameWithType: IStatDebitSource.TryDebit(string, float)
+  fullName: SurvivorsMaker.Core.IStatDebitSource.TryDebit(string, float)
+  nameWithType.vb: IStatDebitSource.TryDebit(String, Single)
+  fullName.vb: SurvivorsMaker.Core.IStatDebitSource.TryDebit(String, Single)
+  name.vb: TryDebit(String, Single)
+  spec.csharp:
+  - uid: SurvivorsMaker.Core.IStatDebitSource.TryDebit(System.String,System.Single)
+    name: TryDebit
+    isExternal: true
+    href: SurvivorsMaker.Core.IStatDebitSource.html#SurvivorsMaker_Core_IStatDebitSource_TryDebit_System_String_System_Single_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Core.IStatDebitSource.TryDebit(System.String,System.Single)
+    name: TryDebit
+    isExternal: true
+    href: SurvivorsMaker.Core.IStatDebitSource.html#SurvivorsMaker_Core_IStatDebitSource_TryDebit_System_String_System_Single_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SurvivorsMaker.Run.RunStatSource.GetDependencies*
+  commentId: Overload:SurvivorsMaker.Run.RunStatSource.GetDependencies
+  isExternal: true
+  href: SurvivorsMaker.Run.RunStatSource.html#SurvivorsMaker_Run_RunStatSource_GetDependencies_System_String_System_Collections_Generic_List_System_String__
+  name: GetDependencies
+  nameWithType: RunStatSource.GetDependencies
+  fullName: SurvivorsMaker.Run.RunStatSource.GetDependencies
+- uid: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  commentId: M:SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+  parent: SurvivorsMaker.Core.IStatSourceDependencies
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetDependencies(string, List<string>)
+  nameWithType: IStatSourceDependencies.GetDependencies(string, List<string>)
+  fullName: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(string, System.Collections.Generic.List<string>)
+  nameWithType.vb: IStatSourceDependencies.GetDependencies(String, List(Of String))
+  fullName.vb: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(String, System.Collections.Generic.List(Of String))
+  name.vb: GetDependencies(String, List(Of String))
+  spec.csharp:
+  - uid: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+    name: GetDependencies
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Core.IStatSourceDependencies.GetDependencies(System.String,System.Collections.Generic.List{System.String})
+    name: GetDependencies
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Run.RunStatSource.Revision*
+  commentId: Overload:SurvivorsMaker.Run.RunStatSource.Revision
+  isExternal: true
+  href: SurvivorsMaker.Run.RunStatSource.html#SurvivorsMaker_Run_RunStatSource_Revision
+  name: Revision
+  nameWithType: RunStatSource.Revision
+  fullName: SurvivorsMaker.Run.RunStatSource.Revision
+- uid: SurvivorsMaker.Core.IStatSource.Revision
+  commentId: P:SurvivorsMaker.Core.IStatSource.Revision
+  parent: SurvivorsMaker.Core.IStatSource
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSource.html#SurvivorsMaker_Core_IStatSource_Revision
+  name: Revision
+  nameWithType: IStatSource.Revision
+  fullName: SurvivorsMaker.Core.IStatSource.Revision
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

@@ -1,0 +1,599 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.EnemySettings
+  commentId: T:SurvivorsMaker.Simulation.EnemySettings
+  id: EnemySettings
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.EnemySettings.#ctor
+  - SurvivorsMaker.Simulation.EnemySettings.ArriveEpsilon
+  - SurvivorsMaker.Simulation.EnemySettings.ChargeFallbackRadius
+  - SurvivorsMaker.Simulation.EnemySettings.ContactCooldownTicks
+  - SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  - SurvivorsMaker.Simulation.EnemySettings.DirectionEpsilonSq
+  - SurvivorsMaker.Simulation.EnemySettings.FallbackAim
+  - SurvivorsMaker.Simulation.EnemySettings.MinWindupSpeed
+  - SurvivorsMaker.Simulation.EnemySettings.ProjectileLifetimeTicks
+  - SurvivorsMaker.Simulation.EnemySettings.SeparationMaxNeighbours
+  - SurvivorsMaker.Simulation.EnemySettings.SeparationRadiusScale
+  - SurvivorsMaker.Simulation.EnemySettings.SeparationStrength
+  - SurvivorsMaker.Simulation.EnemySettings.StillProjectileLifetimeTicks
+  - SurvivorsMaker.Simulation.EnemySettings.WindupSpeed
+  langs:
+  - csharp
+  - vb
+  name: EnemySettings
+  nameWithType: EnemySettings
+  fullName: SurvivorsMaker.Simulation.EnemySettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class EnemySettings
+    content.vb: Public NotInheritable Class EnemySettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  id: DefaultBodyRadius
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: DefaultBodyRadius
+  nameWithType: EnemySettings.DefaultBodyRadius
+  fullName: SurvivorsMaker.Simulation.EnemySettings.DefaultBodyRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float DefaultBodyRadius
+    return:
+      type: System.Single
+    content.vb: Public DefaultBodyRadius As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.SeparationStrength
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.SeparationStrength
+  id: SeparationStrength
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: SeparationStrength
+  nameWithType: EnemySettings.SeparationStrength
+  fullName: SurvivorsMaker.Simulation.EnemySettings.SeparationStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Push between overlapping enemies, in world units per second at full overlap. 0 = off (enemies may stack).
+  example: []
+  syntax:
+    content: public float SeparationStrength
+    return:
+      type: System.Single
+    content.vb: Public SeparationStrength As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.SeparationRadiusScale
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.SeparationRadiusScale
+  id: SeparationRadiusScale
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: SeparationRadiusScale
+  nameWithType: EnemySettings.SeparationRadiusScale
+  fullName: SurvivorsMaker.Simulation.EnemySettings.SeparationRadiusScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Enemies push apart when closer than (body radius sum) × this.
+  example: []
+  syntax:
+    content: public float SeparationRadiusScale
+    return:
+      type: System.Single
+    content.vb: Public SeparationRadiusScale As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.SeparationMaxNeighbours
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.SeparationMaxNeighbours
+  id: SeparationMaxNeighbours
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: SeparationMaxNeighbours
+  nameWithType: EnemySettings.SeparationMaxNeighbours
+  fullName: SurvivorsMaker.Simulation.EnemySettings.SeparationMaxNeighbours
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Most neighbours each enemy considers for separation per tick (bounds the cost in dense crowds).
+  example: []
+  syntax:
+    content: public int SeparationMaxNeighbours
+    return:
+      type: System.Int32
+    content.vb: Public SeparationMaxNeighbours As Integer
+- uid: SurvivorsMaker.Simulation.EnemySettings.ContactCooldownTicks
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.ContactCooldownTicks
+  id: ContactCooldownTicks
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: ContactCooldownTicks
+  nameWithType: EnemySettings.ContactCooldownTicks
+  fullName: SurvivorsMaker.Simulation.EnemySettings.ContactCooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int ContactCooldownTicks
+    return:
+      type: System.Int32
+    content.vb: Public ContactCooldownTicks As Integer
+- uid: SurvivorsMaker.Simulation.EnemySettings.WindupSpeed
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.WindupSpeed
+  id: WindupSpeed
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: WindupSpeed
+  nameWithType: EnemySettings.WindupSpeed
+  fullName: SurvivorsMaker.Simulation.EnemySettings.WindupSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Wind-up seconds are divided by this.
+  example: []
+  syntax:
+    content: public float WindupSpeed
+    return:
+      type: System.Single
+    content.vb: Public WindupSpeed As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.MinWindupSpeed
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.MinWindupSpeed
+  id: MinWindupSpeed
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: MinWindupSpeed
+  nameWithType: EnemySettings.MinWindupSpeed
+  fullName: SurvivorsMaker.Simulation.EnemySettings.MinWindupSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float MinWindupSpeed
+    return:
+      type: System.Single
+    content.vb: Public MinWindupSpeed As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.ArriveEpsilon
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.ArriveEpsilon
+  id: ArriveEpsilon
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: ArriveEpsilon
+  nameWithType: EnemySettings.ArriveEpsilon
+  fullName: SurvivorsMaker.Simulation.EnemySettings.ArriveEpsilon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ArriveEpsilon
+    return:
+      type: System.Single
+    content.vb: Public ArriveEpsilon As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.DirectionEpsilonSq
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.DirectionEpsilonSq
+  id: DirectionEpsilonSq
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: DirectionEpsilonSq
+  nameWithType: EnemySettings.DirectionEpsilonSq
+  fullName: SurvivorsMaker.Simulation.EnemySettings.DirectionEpsilonSq
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float DirectionEpsilonSq
+    return:
+      type: System.Single
+    content.vb: Public DirectionEpsilonSq As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.FallbackAim
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.FallbackAim
+  id: FallbackAim
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: FallbackAim
+  nameWithType: EnemySettings.FallbackAim
+  fullName: SurvivorsMaker.Simulation.EnemySettings.FallbackAim
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Aim used when the shooter overlaps the player.
+  example: []
+  syntax:
+    content: public Vec2 FallbackAim
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public FallbackAim As Vec2
+- uid: SurvivorsMaker.Simulation.EnemySettings.ProjectileLifetimeTicks
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.ProjectileLifetimeTicks
+  id: ProjectileLifetimeTicks
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: ProjectileLifetimeTicks
+  nameWithType: EnemySettings.ProjectileLifetimeTicks
+  fullName: SurvivorsMaker.Simulation.EnemySettings.ProjectileLifetimeTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int ProjectileLifetimeTicks
+    return:
+      type: System.Int32
+    content.vb: Public ProjectileLifetimeTicks As Integer
+- uid: SurvivorsMaker.Simulation.EnemySettings.StillProjectileLifetimeTicks
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.StillProjectileLifetimeTicks
+  id: StillProjectileLifetimeTicks
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: StillProjectileLifetimeTicks
+  nameWithType: EnemySettings.StillProjectileLifetimeTicks
+  fullName: SurvivorsMaker.Simulation.EnemySettings.StillProjectileLifetimeTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Lifetime of enemy projectiles with speed 0.
+  example: []
+  syntax:
+    content: public int StillProjectileLifetimeTicks
+    return:
+      type: System.Int32
+    content.vb: Public StillProjectileLifetimeTicks As Integer
+- uid: SurvivorsMaker.Simulation.EnemySettings.ChargeFallbackRadius
+  commentId: F:SurvivorsMaker.Simulation.EnemySettings.ChargeFallbackRadius
+  id: ChargeFallbackRadius
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: ChargeFallbackRadius
+  nameWithType: EnemySettings.ChargeFallbackRadius
+  fullName: SurvivorsMaker.Simulation.EnemySettings.ChargeFallbackRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ChargeFallbackRadius
+    return:
+      type: System.Single
+    content.vb: Public ChargeFallbackRadius As Single
+- uid: SurvivorsMaker.Simulation.EnemySettings.#ctor
+  commentId: M:SurvivorsMaker.Simulation.EnemySettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.EnemySettings
+  langs:
+  - csharp
+  - vb
+  name: EnemySettings()
+  nameWithType: EnemySettings.EnemySettings()
+  fullName: SurvivorsMaker.Simulation.EnemySettings.EnemySettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EnemySettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.EnemySettings.#ctor*
+  nameWithType.vb: EnemySettings.New()
+  fullName.vb: SurvivorsMaker.Simulation.EnemySettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.EnemySettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.EnemySettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EnemySettings.html#SurvivorsMaker_Simulation_EnemySettings__ctor
+  name: EnemySettings
+  nameWithType: EnemySettings.EnemySettings
+  fullName: SurvivorsMaker.Simulation.EnemySettings.EnemySettings
+  nameWithType.vb: EnemySettings.New
+  fullName.vb: SurvivorsMaker.Simulation.EnemySettings.New
+  name.vb: New

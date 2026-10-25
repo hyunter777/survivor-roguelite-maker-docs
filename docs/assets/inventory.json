@@ -1,0 +1,226 @@
+{
+  "api-reference": {
+    "status": "pending",
+    "file": "api-reference.svg"
+  },
+  "architecture": {
+    "status": "diagram",
+    "file": "architecture.svg"
+  },
+  "balance-simulator": {
+    "status": "pending",
+    "file": "balance-simulator.svg"
+  },
+  "behaviour-registry": {
+    "status": "diagram",
+    "file": "behaviour-registry.svg"
+  },
+  "bootstrap-extension": {
+    "status": "diagram",
+    "file": "bootstrap-extension.svg"
+  },
+  "bootstrap-inspector": {
+    "status": "pending",
+    "file": "bootstrap-inspector.svg"
+  },
+  "boss-horde-inspector": {
+    "status": "pending",
+    "file": "boss-horde-inspector.svg"
+  },
+  "build-lab": {
+    "status": "captured",
+    "file": "build-lab.png"
+  },
+  "character-inspector": {
+    "status": "pending",
+    "file": "character-inspector.svg"
+  },
+  "content-browser": {
+    "status": "pending",
+    "file": "content-browser.svg"
+  },
+  "content-graph": {
+    "status": "diagram",
+    "file": "content-graph.svg"
+  },
+  "content-registry": {
+    "status": "pending",
+    "file": "content-registry.svg"
+  },
+  "content-table": {
+    "status": "captured",
+    "file": "content-table.png"
+  },
+  "custom-pickup": {
+    "status": "pending",
+    "file": "custom-pickup.svg"
+  },
+  "demo-menu": {
+    "status": "captured",
+    "file": "demo-menu.png"
+  },
+  "determinism-checklist": {
+    "status": "pending",
+    "file": "determinism-checklist.svg"
+  },
+  "effect-inspector": {
+    "status": "pending",
+    "file": "effect-inspector.svg"
+  },
+  "enemy-inspector": {
+    "status": "pending",
+    "file": "enemy-inspector.svg"
+  },
+  "extension-map": {
+    "status": "diagram",
+    "file": "extension-map.svg"
+  },
+  "faq-checklist": {
+    "status": "pending",
+    "file": "faq-checklist.svg"
+  },
+  "feature-map": {
+    "status": "pending",
+    "file": "feature-map.svg"
+  },
+  "feedback-audio": {
+    "status": "pending",
+    "file": "feedback-audio.svg"
+  },
+  "game-overview": {
+    "status": "captured",
+    "file": "game-overview.png"
+  },
+  "game-settings": {
+    "status": "pending",
+    "file": "game-settings.svg"
+  },
+  "handler-flow": {
+    "status": "diagram",
+    "file": "handler-flow.svg"
+  },
+  "horde-preview": {
+    "status": "captured",
+    "file": "horde-preview.png"
+  },
+  "item-set-inspector": {
+    "status": "pending",
+    "file": "item-set-inspector.svg"
+  },
+  "module-event-flow": {
+    "status": "diagram",
+    "file": "module-event-flow.svg"
+  },
+  "new-game-wizard": {
+    "status": "captured",
+    "file": "new-game-wizard.png"
+  },
+  "offer-odds": {
+    "status": "captured",
+    "file": "offer-odds.png"
+  },
+  "offer-settings": {
+    "status": "pending",
+    "file": "offer-settings.svg"
+  },
+  "options-menu": {
+    "status": "pending",
+    "file": "options-menu.svg"
+  },
+  "package-manager": {
+    "status": "pending",
+    "file": "package-manager.svg"
+  },
+  "performance-table": {
+    "status": "pending",
+    "file": "performance-table.svg"
+  },
+  "playtest-panel": {
+    "status": "pending",
+    "file": "playtest-panel.svg"
+  },
+  "project-requirements": {
+    "status": "pending",
+    "file": "project-requirements.svg"
+  },
+  "release-notes": {
+    "status": "pending",
+    "file": "release-notes.svg"
+  },
+  "run-loop": {
+    "status": "diagram",
+    "file": "run-loop.svg"
+  },
+  "run-pacing": {
+    "status": "captured",
+    "file": "run-pacing.png"
+  },
+  "run-summary": {
+    "status": "pending",
+    "file": "run-summary.svg"
+  },
+  "sample-import": {
+    "status": "pending",
+    "file": "sample-import.svg"
+  },
+  "save-continue": {
+    "status": "pending",
+    "file": "save-continue.svg"
+  },
+  "save-hook-flow": {
+    "status": "diagram",
+    "file": "save-hook-flow.svg"
+  },
+  "scene-wizard": {
+    "status": "pending",
+    "file": "scene-wizard.svg"
+  },
+  "support-checklist": {
+    "status": "pending",
+    "file": "support-checklist.svg"
+  },
+  "tick-flow": {
+    "status": "diagram",
+    "file": "tick-flow.svg"
+  },
+  "tools-menu": {
+    "status": "pending",
+    "file": "tools-menu.svg"
+  },
+  "trigger-inspector": {
+    "status": "pending",
+    "file": "trigger-inspector.svg"
+  },
+  "ui-localization": {
+    "status": "pending",
+    "file": "ui-localization.svg"
+  },
+  "unlock-settings": {
+    "status": "pending",
+    "file": "unlock-settings.svg"
+  },
+  "validation-issues": {
+    "status": "pending",
+    "file": "validation-issues.svg"
+  },
+  "view-catalog": {
+    "status": "pending",
+    "file": "view-catalog.svg"
+  },
+  "wave-editor": {
+    "status": "pending",
+    "file": "wave-editor.svg"
+  },
+  "weapon-inspector": {
+    "status": "pending",
+    "file": "weapon-inspector.svg"
+  },
+  "weapon-lab": {
+    "status": "captured",
+    "file": "weapon-lab.png"
+  },
+  "weapon-tier-chain": {
+    "status": "pending",
+    "file": "weapon-tier-chain.svg"
+  }
+}

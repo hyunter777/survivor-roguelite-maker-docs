@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimStatKeys
+  commentId: T:SurvivorsMaker.Simulation.SimStatKeys
+  id: SimStatKeys
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimStatKeys.ElapsedTicks
+  - SurvivorsMaker.Simulation.SimStatKeys.Health
+  - SurvivorsMaker.Simulation.SimStatKeys.HostileEnemies
+  - SurvivorsMaker.Simulation.SimStatKeys.LivingEnemies
+  - SurvivorsMaker.Simulation.SimStatKeys.LivingStatusPrefix
+  - SurvivorsMaker.Simulation.SimStatKeys.MaxHealth
+  - SurvivorsMaker.Simulation.SimStatKeys.MissingHealth
+  - SurvivorsMaker.Simulation.SimStatKeys.MissingHealthRatio
+  - SurvivorsMaker.Simulation.SimStatKeys.NeutralEnemies
+  - SurvivorsMaker.Simulation.SimStatKeys.OwnedEntities
+  - SurvivorsMaker.Simulation.SimStatKeys.OwnedEntityPrefix
+  - SurvivorsMaker.Simulation.SimStatKeys.Wave
+  langs:
+  - csharp
+  - vb
+  name: SimStatKeys
+  nameWithType: SimStatKeys
+  fullName: SurvivorsMaker.Simulation.SimStatKeys
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Stable external source keys consumed by simulation-side stat evaluation.
+  example: []
+  syntax:
+    content: public static class SimStatKeys
+    content.vb: Public Module SimStatKeys
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimStatKeys.Health
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.Health
+  id: Health
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: SimStatKeys.Health
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.Health
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string Health = "health"
+    return:
+      type: System.String
+    content.vb: Public Const Health As String = "health"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.MaxHealth
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.MaxHealth
+  id: MaxHealth
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: MaxHealth
+  nameWithType: SimStatKeys.MaxHealth
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.MaxHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string MaxHealth = "max_health"
+    return:
+      type: System.String
+    content.vb: Public Const MaxHealth As String = "max_health"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.MissingHealth
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.MissingHealth
+  id: MissingHealth
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: MissingHealth
+  nameWithType: SimStatKeys.MissingHealth
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.MissingHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string MissingHealth = "missing_health"
+    return:
+      type: System.String
+    content.vb: Public Const MissingHealth As String = "missing_health"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.MissingHealthRatio
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.MissingHealthRatio
+  id: MissingHealthRatio
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: MissingHealthRatio
+  nameWithType: SimStatKeys.MissingHealthRatio
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.MissingHealthRatio
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string MissingHealthRatio = "missing_health_ratio"
+    return:
+      type: System.String
+    content.vb: Public Const MissingHealthRatio As String = "missing_health_ratio"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.Wave
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.Wave
+  id: Wave
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: SimStatKeys.Wave
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string Wave = "wave"
+    return:
+      type: System.String
+    content.vb: Public Const Wave As String = "wave"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.ElapsedTicks
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.ElapsedTicks
+  id: ElapsedTicks
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: ElapsedTicks
+  nameWithType: SimStatKeys.ElapsedTicks
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.ElapsedTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string ElapsedTicks = "elapsed_ticks"
+    return:
+      type: System.String
+    content.vb: Public Const ElapsedTicks As String = "elapsed_ticks"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.LivingEnemies
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.LivingEnemies
+  id: LivingEnemies
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: LivingEnemies
+  nameWithType: SimStatKeys.LivingEnemies
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.LivingEnemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string LivingEnemies = "living_enemies"
+    return:
+      type: System.String
+    content.vb: Public Const LivingEnemies As String = "living_enemies"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.NeutralEnemies
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.NeutralEnemies
+  id: NeutralEnemies
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: NeutralEnemies
+  nameWithType: SimStatKeys.NeutralEnemies
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.NeutralEnemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string NeutralEnemies = "neutral_enemies"
+    return:
+      type: System.String
+    content.vb: Public Const NeutralEnemies As String = "neutral_enemies"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.HostileEnemies
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.HostileEnemies
+  id: HostileEnemies
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: HostileEnemies
+  nameWithType: SimStatKeys.HostileEnemies
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.HostileEnemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string HostileEnemies = "hostile_enemies"
+    return:
+      type: System.String
+    content.vb: Public Const HostileEnemies As String = "hostile_enemies"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.LivingStatusPrefix
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.LivingStatusPrefix
+  id: LivingStatusPrefix
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: LivingStatusPrefix
+  nameWithType: SimStatKeys.LivingStatusPrefix
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.LivingStatusPrefix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string LivingStatusPrefix = "living_status:"
+    return:
+      type: System.String
+    content.vb: Public Const LivingStatusPrefix As String = "living_status:"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.OwnedEntities
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.OwnedEntities
+  id: OwnedEntities
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: OwnedEntities
+  nameWithType: SimStatKeys.OwnedEntities
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.OwnedEntities
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string OwnedEntities = "owned_entities"
+    return:
+      type: System.String
+    content.vb: Public Const OwnedEntities As String = "owned_entities"
+- uid: SurvivorsMaker.Simulation.SimStatKeys.OwnedEntityPrefix
+  commentId: F:SurvivorsMaker.Simulation.SimStatKeys.OwnedEntityPrefix
+  id: OwnedEntityPrefix
+  parent: SurvivorsMaker.Simulation.SimStatKeys
+  langs:
+  - csharp
+  - vb
+  name: OwnedEntityPrefix
+  nameWithType: SimStatKeys.OwnedEntityPrefix
+  fullName: SurvivorsMaker.Simulation.SimStatKeys.OwnedEntityPrefix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const string OwnedEntityPrefix = "owned_entities:"
+    return:
+      type: System.String
+    content.vb: Public Const OwnedEntityPrefix As String = "owned_entities:"
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

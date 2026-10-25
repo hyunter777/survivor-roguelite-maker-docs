@@ -1,0 +1,916 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WeaponSystem
+  commentId: T:SurvivorsMaker.Simulation.WeaponSystem
+  id: WeaponSystem
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WeaponSystem.#ctor
+  - SurvivorsMaker.Simulation.WeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  - SurvivorsMaker.Simulation.WeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  - SurvivorsMaker.Simulation.WeaponSystem.Validate(SurvivorsMaker.Simulation.WeaponDef)
+  langs:
+  - csharp
+  - vb
+  name: WeaponSystem
+  nameWithType: WeaponSystem
+  fullName: SurvivorsMaker.Simulation.WeaponSystem
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Slot registration/dispatch and discrete friendly projectile collisions.
+  example: []
+  syntax:
+    content: 'public sealed class WeaponSystem : IWeaponSystem, IWeaponLoadoutUpdater'
+    content.vb: Public NotInheritable Class WeaponSystem Implements IWeaponSystem, IWeaponLoadoutUpdater
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponSystem
+  - SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  id: Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: Begin(SimWorld, IReadOnlyList<WeaponDef>)
+  nameWithType: WeaponSystem.Begin(SimWorld, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public void Begin(SimWorld world, IReadOnlyList<WeaponDef> weapons)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: weapons
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+    content.vb: Public Sub Begin(world As SimWorld, weapons As IReadOnlyList(Of WeaponDef))
+  overload: SurvivorsMaker.Simulation.WeaponSystem.Begin*
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  nameWithType.vb: WeaponSystem.Begin(SimWorld, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: Begin(SimWorld, IReadOnlyList(Of WeaponDef))
+- uid: SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  id: UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: UpdateAnchors(SimWorld)
+  nameWithType: WeaponSystem.UpdateAnchors(SimWorld)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Step 4 (after player movement): anchor positions.'
+  example: []
+  syntax:
+    content: public void UpdateAnchors(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub UpdateAnchors(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors*
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: WeaponSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Step 7 (weapons): targeting, firing, melee phases, cooldowns; in slot order.'
+  example: []
+  syntax:
+    content: public void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.WeaponSystem.Tick*
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+- uid: SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  id: TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: TickProjectiles(SimWorld)
+  nameWithType: WeaponSystem.TickProjectiles(SimWorld)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Step 8 (projectiles): friendly projectile movement and hits.'
+  example: []
+  syntax:
+    content: public void TickProjectiles(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub TickProjectiles(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles*
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Validate(SurvivorsMaker.Simulation.WeaponDef)
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.Validate(SurvivorsMaker.Simulation.WeaponDef)
+  id: Validate(SurvivorsMaker.Simulation.WeaponDef)
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: Validate(WeaponDef)
+  nameWithType: WeaponSystem.Validate(WeaponDef)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Validate(SurvivorsMaker.Simulation.WeaponDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Authoring warnings; execution clamps invalid quantities without changing definitions.
+  example: []
+  syntax:
+    content: public static List<string> Validate(WeaponDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.WeaponDef
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function Validate(def As WeaponDef) As List(Of String)
+  overload: SurvivorsMaker.Simulation.WeaponSystem.Validate*
+- uid: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  id: UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  nameWithType: WeaponSystem.UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Field upgrades preserve complete states in the same slots. Explicit Begin still resets every slot.
+  example: []
+  syntax:
+    content: public void UpdateLoadout(SimWorld world, IReadOnlyList<WeaponDef> weapons)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: weapons
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+    content.vb: Public Sub UpdateLoadout(world As SimWorld, weapons As IReadOnlyList(Of WeaponDef))
+  overload: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout*
+  implements:
+  - SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  nameWithType.vb: WeaponSystem.UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+- uid: SurvivorsMaker.Simulation.WeaponSystem.#ctor
+  commentId: M:SurvivorsMaker.Simulation.WeaponSystem.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.WeaponSystem
+  langs:
+  - csharp
+  - vb
+  name: WeaponSystem()
+  nameWithType: WeaponSystem.WeaponSystem()
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.WeaponSystem()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WeaponSystem()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.WeaponSystem.#ctor*
+  nameWithType.vb: WeaponSystem.New()
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSystem.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Simulation.IWeaponSystem
+  commentId: T:SurvivorsMaker.Simulation.IWeaponSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html
+  name: IWeaponSystem
+  nameWithType: IWeaponSystem
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem
+- uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  commentId: T:SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.html
+  name: IWeaponLoadoutUpdater
+  nameWithType: IWeaponLoadoutUpdater
+  fullName: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Begin*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.Begin
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: Begin
+  nameWithType: WeaponSystem.Begin
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Begin
+- uid: SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.IWeaponSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: Begin(SimWorld, IReadOnlyList<WeaponDef>)
+  nameWithType: IWeaponSystem.Begin(SimWorld, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  nameWithType.vb: IWeaponSystem.Begin(SimWorld, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: Begin(SimWorld, IReadOnlyList(Of WeaponDef))
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<WeaponDef>
+  nameWithType: IReadOnlyList<WeaponDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>
+  nameWithType.vb: IReadOnlyList(Of WeaponDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.WeaponDef)
+  name.vb: IReadOnlyList(Of WeaponDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_UpdateAnchors_SurvivorsMaker_Simulation_SimWorld_
+  name: UpdateAnchors
+  nameWithType: WeaponSystem.UpdateAnchors
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.UpdateAnchors
+- uid: SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.IWeaponSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_UpdateAnchors_SurvivorsMaker_Simulation_SimWorld_
+  name: UpdateAnchors(SimWorld)
+  nameWithType: IWeaponSystem.UpdateAnchors(SimWorld)
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+    name: UpdateAnchors
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_UpdateAnchors_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.UpdateAnchors(SurvivorsMaker.Simulation.SimWorld)
+    name: UpdateAnchors
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_UpdateAnchors_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: WeaponSystem.Tick
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Tick
+- uid: SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.IWeaponSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick(SimWorld)
+  nameWithType: IWeaponSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_TickProjectiles_SurvivorsMaker_Simulation_SimWorld_
+  name: TickProjectiles
+  nameWithType: WeaponSystem.TickProjectiles
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.TickProjectiles
+- uid: SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.IWeaponSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_TickProjectiles_SurvivorsMaker_Simulation_SimWorld_
+  name: TickProjectiles(SimWorld)
+  nameWithType: IWeaponSystem.TickProjectiles(SimWorld)
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+    name: TickProjectiles
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_TickProjectiles_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IWeaponSystem.TickProjectiles(SurvivorsMaker.Simulation.SimWorld)
+    name: TickProjectiles
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponSystem.html#SurvivorsMaker_Simulation_IWeaponSystem_TickProjectiles_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSystem.Validate*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.Validate
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_Validate_SurvivorsMaker_Simulation_WeaponDef_
+  name: Validate
+  nameWithType: WeaponSystem.Validate
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.Validate
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem_UpdateLoadout_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: UpdateLoadout
+  nameWithType: WeaponSystem.UpdateLoadout
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.UpdateLoadout
+- uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.html#SurvivorsMaker_Simulation_IWeaponLoadoutUpdater_UpdateLoadout_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  nameWithType: IWeaponLoadoutUpdater.UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  nameWithType.vb: IWeaponLoadoutUpdater.UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+    name: UpdateLoadout
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.html#SurvivorsMaker_Simulation_IWeaponLoadoutUpdater_UpdateLoadout_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+    name: UpdateLoadout
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.html#SurvivorsMaker_Simulation_IWeaponLoadoutUpdater_UpdateLoadout_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Simulation.WeaponSystem.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponSystem.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponSystem.html#SurvivorsMaker_Simulation_WeaponSystem__ctor
+  name: WeaponSystem
+  nameWithType: WeaponSystem.WeaponSystem
+  fullName: SurvivorsMaker.Simulation.WeaponSystem.WeaponSystem
+  nameWithType.vb: WeaponSystem.New
+  fullName.vb: SurvivorsMaker.Simulation.WeaponSystem.New
+  name.vb: New

@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.TakenChannel
+  commentId: T:SurvivorsMaker.Presentation.TakenChannel
+  id: TakenChannel
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.TakenChannel.Contact
+  - SurvivorsMaker.Presentation.TakenChannel.Other
+  - SurvivorsMaker.Presentation.TakenChannel.Projectile
+  langs:
+  - csharp
+  - vb
+  name: TakenChannel
+  nameWithType: TakenChannel
+  fullName: SurvivorsMaker.Presentation.TakenChannel
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: How damage reached the player.
+  example: []
+  syntax:
+    content: public enum TakenChannel
+    content.vb: Public Enum TakenChannel
+- uid: SurvivorsMaker.Presentation.TakenChannel.Contact
+  commentId: F:SurvivorsMaker.Presentation.TakenChannel.Contact
+  id: Contact
+  parent: SurvivorsMaker.Presentation.TakenChannel
+  langs:
+  - csharp
+  - vb
+  name: Contact
+  nameWithType: TakenChannel.Contact
+  fullName: SurvivorsMaker.Presentation.TakenChannel.Contact
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Contact = 0
+    return:
+      type: SurvivorsMaker.Presentation.TakenChannel
+- uid: SurvivorsMaker.Presentation.TakenChannel.Projectile
+  commentId: F:SurvivorsMaker.Presentation.TakenChannel.Projectile
+  id: Projectile
+  parent: SurvivorsMaker.Presentation.TakenChannel
+  langs:
+  - csharp
+  - vb
+  name: Projectile
+  nameWithType: TakenChannel.Projectile
+  fullName: SurvivorsMaker.Presentation.TakenChannel.Projectile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Projectile = 1
+    return:
+      type: SurvivorsMaker.Presentation.TakenChannel
+- uid: SurvivorsMaker.Presentation.TakenChannel.Other
+  commentId: F:SurvivorsMaker.Presentation.TakenChannel.Other
+  id: Other
+  parent: SurvivorsMaker.Presentation.TakenChannel
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: TakenChannel.Other
+  fullName: SurvivorsMaker.Presentation.TakenChannel.Other
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Other = 2
+    return:
+      type: SurvivorsMaker.Presentation.TakenChannel
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.TakenChannel
+  commentId: T:SurvivorsMaker.Presentation.TakenChannel
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TakenChannel.html
+  name: TakenChannel
+  nameWithType: TakenChannel
+  fullName: SurvivorsMaker.Presentation.TakenChannel

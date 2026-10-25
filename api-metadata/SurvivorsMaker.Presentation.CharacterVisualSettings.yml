@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.CharacterVisualSettings
+  id: CharacterVisualSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.AttackScale
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.AttackSeconds
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.DeathEndScale
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.DeathSeconds
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.HurtColor
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.HurtSeconds
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.MotionEpsilon
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.UseUnscaledTime
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.WalkBob
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.WalkFrequency
+  - SurvivorsMaker.Presentation.CharacterVisualSettings.WalkTiltDegrees
+  langs:
+  - csharp
+  - vb
+  name: CharacterVisualSettings
+  nameWithType: CharacterVisualSettings
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Character Visual tuning; defaults are defined by the field initializers and can be overridden per game.
+  example: []
+  syntax:
+    content: public sealed class CharacterVisualSettings
+    content.vb: Public NotInheritable Class CharacterVisualSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.UseUnscaledTime
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.UseUnscaledTime
+  id: UseUnscaledTime
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: UseUnscaledTime
+  nameWithType: CharacterVisualSettings.UseUnscaledTime
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.UseUnscaledTime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Use real frame time for visual animation, independent of Time.timeScale.
+  example: []
+  syntax:
+    content: '[Tooltip("Use real frame time for visual animation, independent of Time.timeScale.")]
+
+      public bool UseUnscaledTime'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Use real frame time for visual animation, independent of Time.timeScale.")>
+
+      Public UseUnscaledTime As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use real frame time for visual animation, independent of Time.timeScale.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.MotionEpsilon
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.MotionEpsilon
+  id: MotionEpsilon
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: MotionEpsilon
+  nameWithType: CharacterVisualSettings.MotionEpsilon
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.MotionEpsilon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Movement threshold in world units for walk animation; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Movement threshold in world units for walk animation; nonnegative.")]
+
+      public float MotionEpsilon'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Movement threshold in world units for walk animation; nonnegative.")>
+
+      Public MotionEpsilon As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Movement threshold in world units for walk animation; nonnegative.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkFrequency
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.WalkFrequency
+  id: WalkFrequency
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: WalkFrequency
+  nameWithType: CharacterVisualSettings.WalkFrequency
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkFrequency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Walk Frequency; animation oscillation rate per second, 0 = no oscillation.
+  example: []
+  syntax:
+    content: '[Tooltip("Walk Frequency; animation oscillation rate per second, 0 = no oscillation.")]
+
+      public float WalkFrequency'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Walk Frequency; animation oscillation rate per second, 0 = no oscillation.")>
+
+      Public WalkFrequency As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Walk Frequency; animation oscillation rate per second, 0 = no oscillation.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkBob
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.WalkBob
+  id: WalkBob
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: WalkBob
+  nameWithType: CharacterVisualSettings.WalkBob
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkBob
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Walk Bob in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Walk Bob in world units; use nonnegative sizes and signed offsets.")]
+
+      public float WalkBob'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Walk Bob in world units; use nonnegative sizes and signed offsets.")>
+
+      Public WalkBob As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Walk Bob in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkTiltDegrees
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.WalkTiltDegrees
+  id: WalkTiltDegrees
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: WalkTiltDegrees
+  nameWithType: CharacterVisualSettings.WalkTiltDegrees
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.WalkTiltDegrees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Walk Tilt Degrees; angle in degrees.
+  example: []
+  syntax:
+    content: '[Tooltip("Walk Tilt Degrees; angle in degrees.")]
+
+      public float WalkTiltDegrees'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Walk Tilt Degrees; angle in degrees.")>
+
+      Public WalkTiltDegrees As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Walk Tilt Degrees; angle in degrees.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.HurtSeconds
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.HurtSeconds
+  id: HurtSeconds
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: HurtSeconds
+  nameWithType: CharacterVisualSettings.HurtSeconds
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.HurtSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Hurt Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Hurt Seconds in seconds; nonnegative.")]
+
+      public float HurtSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Hurt Seconds in seconds; nonnegative.")>
+
+      Public HurtSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Hurt Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.HurtColor
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.HurtColor
+  id: HurtColor
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: HurtColor
+  nameWithType: CharacterVisualSettings.HurtColor
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.HurtColor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Hurt Color in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Hurt Color in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color HurtColor'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Hurt Color in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public HurtColor As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Hurt Color in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.AttackSeconds
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.AttackSeconds
+  id: AttackSeconds
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: AttackSeconds
+  nameWithType: CharacterVisualSettings.AttackSeconds
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.AttackSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Attack Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Attack Seconds in seconds; nonnegative.")]
+
+      public float AttackSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Attack Seconds in seconds; nonnegative.")>
+
+      Public AttackSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Attack Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.AttackScale
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.AttackScale
+  id: AttackScale
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: AttackScale
+  nameWithType: CharacterVisualSettings.AttackScale
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.AttackScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Additional X/Y scale during the attack punch; zero = no punch.
+  example: []
+  syntax:
+    content: '[Tooltip("Additional X/Y scale during the attack punch; zero = no punch.")]
+
+      public Vector2 AttackScale'
+    return:
+      type: UnityEngine.Vector2
+    content.vb: '<Tooltip("Additional X/Y scale during the attack punch; zero = no punch.")>
+
+      Public AttackScale As Vector2'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Additional X/Y scale during the attack punch; zero = no punch.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.DeathSeconds
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.DeathSeconds
+  id: DeathSeconds
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: DeathSeconds
+  nameWithType: CharacterVisualSettings.DeathSeconds
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.DeathSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Death Seconds in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Death Seconds in seconds; nonnegative.")]
+
+      public float DeathSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Death Seconds in seconds; nonnegative.")>
+
+      Public DeathSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Death Seconds in seconds; nonnegative.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.DeathEndScale
+  commentId: F:SurvivorsMaker.Presentation.CharacterVisualSettings.DeathEndScale
+  id: DeathEndScale
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: DeathEndScale
+  nameWithType: CharacterVisualSettings.DeathEndScale
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.DeathEndScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Final scale relative to the initial visual size; 0 shrinks away.
+  example: []
+  syntax:
+    content: '[Tooltip("Final scale relative to the initial visual size; 0 shrinks away.")]
+
+      public float DeathEndScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Final scale relative to the initial visual size; 0 shrinks away.")>
+
+      Public DeathEndScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Final scale relative to the initial visual size; 0 shrinks away.
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.CharacterVisualSettings
+  langs:
+  - csharp
+  - vb
+  name: CharacterVisualSettings()
+  nameWithType: CharacterVisualSettings.CharacterVisualSettings()
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.CharacterVisualSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public CharacterVisualSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor*
+  nameWithType.vb: CharacterVisualSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.CharacterVisualSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.CharacterVisualSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CharacterVisualSettings.html#SurvivorsMaker_Presentation_CharacterVisualSettings__ctor
+  name: CharacterVisualSettings
+  nameWithType: CharacterVisualSettings.CharacterVisualSettings
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings.CharacterVisualSettings
+  nameWithType.vb: CharacterVisualSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.CharacterVisualSettings.New
+  name.vb: New

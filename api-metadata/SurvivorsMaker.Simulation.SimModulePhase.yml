@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimModulePhase
+  commentId: T:SurvivorsMaker.Simulation.SimModulePhase
+  id: SimModulePhase
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimModulePhase.AfterCombat
+  - SurvivorsMaker.Simulation.SimModulePhase.AfterDeaths
+  - SurvivorsMaker.Simulation.SimModulePhase.AfterEnemies
+  - SurvivorsMaker.Simulation.SimModulePhase.AfterSchedule
+  - SurvivorsMaker.Simulation.SimModulePhase.BeforeEnemies
+  - SurvivorsMaker.Simulation.SimModulePhase.EndOfTick
+  langs:
+  - csharp
+  - vb
+  name: SimModulePhase
+  nameWithType: SimModulePhase
+  fullName: SurvivorsMaker.Simulation.SimModulePhase
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Where in the tick an <xref href="SurvivorsMaker.Simulation.ISimModule" data-throw-if-not-resolved="false"></xref>
+    runs.
+  example: []
+  syntax:
+    content: public enum SimModulePhase
+    content.vb: Public Enum SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.AfterSchedule
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.AfterSchedule
+  id: AfterSchedule
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: AfterSchedule
+  nameWithType: SimModulePhase.AfterSchedule
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.AfterSchedule
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: After the spawn schedule (step 3), before players move.
+  example: []
+  syntax:
+    content: AfterSchedule = 0
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.BeforeEnemies
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.BeforeEnemies
+  id: BeforeEnemies
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: BeforeEnemies
+  nameWithType: SimModulePhase.BeforeEnemies
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.BeforeEnemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: After players move and weapon anchors update (step 4), before statuses and enemies.
+  example: []
+  syntax:
+    content: BeforeEnemies = 1
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.AfterEnemies
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.AfterEnemies
+  id: AfterEnemies
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: AfterEnemies
+  nameWithType: SimModulePhase.AfterEnemies
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.AfterEnemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: After enemies act and behaviour spawns are admitted (step 6).
+  example: []
+  syntax:
+    content: AfterEnemies = 2
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.AfterCombat
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.AfterCombat
+  id: AfterCombat
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: AfterCombat
+  nameWithType: SimModulePhase.AfterCombat
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.AfterCombat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: After weapons and all projectiles (step 9).
+  example: []
+  syntax:
+    content: AfterCombat = 3
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.AfterDeaths
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.AfterDeaths
+  id: AfterDeaths
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: AfterDeaths
+  nameWithType: SimModulePhase.AfterDeaths
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.AfterDeaths
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: After deaths are collected and triggers ran (step 13a).
+  example: []
+  syntax:
+    content: AfterDeaths = 4
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+- uid: SurvivorsMaker.Simulation.SimModulePhase.EndOfTick
+  commentId: F:SurvivorsMaker.Simulation.SimModulePhase.EndOfTick
+  id: EndOfTick
+  parent: SurvivorsMaker.Simulation.SimModulePhase
+  langs:
+  - csharp
+  - vb
+  name: EndOfTick
+  nameWithType: SimModulePhase.EndOfTick
+  fullName: SurvivorsMaker.Simulation.SimModulePhase.EndOfTick
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Last, after regeneration and before the tick counter and end checks.
+  example: []
+  syntax:
+    content: EndOfTick = 5
+    return:
+      type: SurvivorsMaker.Simulation.SimModulePhase
+references:
+- uid: SurvivorsMaker.Simulation.ISimModule
+  commentId: T:SurvivorsMaker.Simulation.ISimModule
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimModule.html
+  name: ISimModule
+  nameWithType: ISimModule
+  fullName: SurvivorsMaker.Simulation.ISimModule
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.SimModulePhase
+  commentId: T:SurvivorsMaker.Simulation.SimModulePhase
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimModulePhase.html
+  name: SimModulePhase
+  nameWithType: SimModulePhase
+  fullName: SurvivorsMaker.Simulation.SimModulePhase

@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatDefinition
+  commentId: T:SurvivorsMaker.Core.StatDefinition
+  id: StatDefinition
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatDefinition.#ctor
+  - SurvivorsMaker.Core.StatDefinition.#ctor(System.String,System.Int32,System.String)
+  - SurvivorsMaker.Core.StatDefinition.AsPercent
+  - SurvivorsMaker.Core.StatDefinition.BaseValue
+  - SurvivorsMaker.Core.StatDefinition.Clamp(System.Int32)
+  - SurvivorsMaker.Core.StatDefinition.Description
+  - SurvivorsMaker.Core.StatDefinition.DisplayName
+  - SurvivorsMaker.Core.StatDefinition.HasMax
+  - SurvivorsMaker.Core.StatDefinition.HasMin
+  - SurvivorsMaker.Core.StatDefinition.Id
+  - SurvivorsMaker.Core.StatDefinition.IsPercent
+  - SurvivorsMaker.Core.StatDefinition.Max
+  - SurvivorsMaker.Core.StatDefinition.Min
+  - SurvivorsMaker.Core.StatDefinition.ToString
+  - SurvivorsMaker.Core.StatDefinition.WithMax(System.Int32)
+  - SurvivorsMaker.Core.StatDefinition.WithMin(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: StatDefinition
+  nameWithType: StatDefinition
+  fullName: SurvivorsMaker.Core.StatDefinition
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'One stat a game defines: its id, starting value and optional limits.'
+  example: []
+  syntax:
+    content: public sealed class StatDefinition
+    content.vb: Public NotInheritable Class StatDefinition
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Core.StatDefinition.Id
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Id
+  id: Id
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: StatDefinition.Id
+  fullName: SurvivorsMaker.Core.StatDefinition.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Key used by effects and code, e.g. "max_health". Must be unique within a catalog.
+  example: []
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Core.StatDefinition.DisplayName
+  commentId: F:SurvivorsMaker.Core.StatDefinition.DisplayName
+  id: DisplayName
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: StatDefinition.DisplayName
+  fullName: SurvivorsMaker.Core.StatDefinition.DisplayName
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public string DisplayName
+    return:
+      type: System.String
+    content.vb: Public DisplayName As String
+- uid: SurvivorsMaker.Core.StatDefinition.Description
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Description
+  id: Description
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: StatDefinition.Description
+  fullName: SurvivorsMaker.Core.StatDefinition.Description
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public string Description
+    return:
+      type: System.String
+    content.vb: Public Description As String
+- uid: SurvivorsMaker.Core.StatDefinition.BaseValue
+  commentId: F:SurvivorsMaker.Core.StatDefinition.BaseValue
+  id: BaseValue
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: BaseValue
+  nameWithType: StatDefinition.BaseValue
+  fullName: SurvivorsMaker.Core.StatDefinition.BaseValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Value before any effect is applied.
+  example: []
+  syntax:
+    content: public int BaseValue
+    return:
+      type: System.Int32
+    content.vb: Public BaseValue As Integer
+- uid: SurvivorsMaker.Core.StatDefinition.HasMin
+  commentId: F:SurvivorsMaker.Core.StatDefinition.HasMin
+  id: HasMin
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: HasMin
+  nameWithType: StatDefinition.HasMin
+  fullName: SurvivorsMaker.Core.StatDefinition.HasMin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool HasMin
+    return:
+      type: System.Boolean
+    content.vb: Public HasMin As Boolean
+- uid: SurvivorsMaker.Core.StatDefinition.Min
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Min
+  id: Min
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: StatDefinition.Min
+  fullName: SurvivorsMaker.Core.StatDefinition.Min
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int Min
+    return:
+      type: System.Int32
+    content.vb: Public Min As Integer
+- uid: SurvivorsMaker.Core.StatDefinition.HasMax
+  commentId: F:SurvivorsMaker.Core.StatDefinition.HasMax
+  id: HasMax
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: HasMax
+  nameWithType: StatDefinition.HasMax
+  fullName: SurvivorsMaker.Core.StatDefinition.HasMax
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool HasMax
+    return:
+      type: System.Boolean
+    content.vb: Public HasMax As Boolean
+- uid: SurvivorsMaker.Core.StatDefinition.Max
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Max
+  id: Max
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: StatDefinition.Max
+  fullName: SurvivorsMaker.Core.StatDefinition.Max
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int Max
+    return:
+      type: System.Int32
+    content.vb: Public Max As Integer
+- uid: SurvivorsMaker.Core.StatDefinition.IsPercent
+  commentId: F:SurvivorsMaker.Core.StatDefinition.IsPercent
+  id: IsPercent
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: IsPercent
+  nameWithType: StatDefinition.IsPercent
+  fullName: SurvivorsMaker.Core.StatDefinition.IsPercent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: 'Hint for UI: show the value with a % sign.'
+  example: []
+  syntax:
+    content: public bool IsPercent
+    return:
+      type: System.Boolean
+    content.vb: Public IsPercent As Boolean
+- uid: SurvivorsMaker.Core.StatDefinition.#ctor
+  commentId: M:SurvivorsMaker.Core.StatDefinition.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: StatDefinition()
+  nameWithType: StatDefinition.StatDefinition()
+  fullName: SurvivorsMaker.Core.StatDefinition.StatDefinition()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatDefinition()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Core.StatDefinition.#ctor*
+  nameWithType.vb: StatDefinition.New()
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Core.StatDefinition.#ctor(System.String,System.Int32,System.String)
+  commentId: M:SurvivorsMaker.Core.StatDefinition.#ctor(System.String,System.Int32,System.String)
+  id: '#ctor(System.String,System.Int32,System.String)'
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: StatDefinition(string, int, string)
+  nameWithType: StatDefinition.StatDefinition(string, int, string)
+  fullName: SurvivorsMaker.Core.StatDefinition.StatDefinition(string, int, string)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatDefinition(string id, int baseValue = 0, string displayName = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: baseValue
+      type: System.Int32
+    - id: displayName
+      type: System.String
+    content.vb: Public Sub New(id As String, baseValue As Integer = 0, displayName As String = Nothing)
+  overload: SurvivorsMaker.Core.StatDefinition.#ctor*
+  nameWithType.vb: StatDefinition.New(String, Integer, String)
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.New(String, Integer, String)
+  name.vb: New(String, Integer, String)
+- uid: SurvivorsMaker.Core.StatDefinition.WithMin(System.Int32)
+  commentId: M:SurvivorsMaker.Core.StatDefinition.WithMin(System.Int32)
+  id: WithMin(System.Int32)
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: WithMin(int)
+  nameWithType: StatDefinition.WithMin(int)
+  fullName: SurvivorsMaker.Core.StatDefinition.WithMin(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Enables and assigns the lower integer bound, then returns this definition.
+  example: []
+  syntax:
+    content: public StatDefinition WithMin(int min)
+    parameters:
+    - id: min
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Core.StatDefinition
+    content.vb: Public Function WithMin(min As Integer) As StatDefinition
+  overload: SurvivorsMaker.Core.StatDefinition.WithMin*
+  nameWithType.vb: StatDefinition.WithMin(Integer)
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.WithMin(Integer)
+  name.vb: WithMin(Integer)
+- uid: SurvivorsMaker.Core.StatDefinition.WithMax(System.Int32)
+  commentId: M:SurvivorsMaker.Core.StatDefinition.WithMax(System.Int32)
+  id: WithMax(System.Int32)
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: WithMax(int)
+  nameWithType: StatDefinition.WithMax(int)
+  fullName: SurvivorsMaker.Core.StatDefinition.WithMax(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Enables and assigns the upper integer bound, then returns this definition.
+  example: []
+  syntax:
+    content: public StatDefinition WithMax(int max)
+    parameters:
+    - id: max
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Core.StatDefinition
+    content.vb: Public Function WithMax(max As Integer) As StatDefinition
+  overload: SurvivorsMaker.Core.StatDefinition.WithMax*
+  nameWithType.vb: StatDefinition.WithMax(Integer)
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.WithMax(Integer)
+  name.vb: WithMax(Integer)
+- uid: SurvivorsMaker.Core.StatDefinition.AsPercent
+  commentId: M:SurvivorsMaker.Core.StatDefinition.AsPercent
+  id: AsPercent
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: AsPercent()
+  nameWithType: StatDefinition.AsPercent()
+  fullName: SurvivorsMaker.Core.StatDefinition.AsPercent()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Marks values as percentage points for authoring/display and returns this definition.
+  example: []
+  syntax:
+    content: public StatDefinition AsPercent()
+    return:
+      type: SurvivorsMaker.Core.StatDefinition
+    content.vb: Public Function AsPercent() As StatDefinition
+  overload: SurvivorsMaker.Core.StatDefinition.AsPercent*
+- uid: SurvivorsMaker.Core.StatDefinition.Clamp(System.Int32)
+  commentId: M:SurvivorsMaker.Core.StatDefinition.Clamp(System.Int32)
+  id: Clamp(System.Int32)
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: Clamp(int)
+  nameWithType: StatDefinition.Clamp(int)
+  fullName: SurvivorsMaker.Core.StatDefinition.Clamp(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Applies <xref href="SurvivorsMaker.Core.StatDefinition.Min" data-throw-if-not-resolved="false"></xref>/<xref href="SurvivorsMaker.Core.StatDefinition.Max"
+    data-throw-if-not-resolved="false"></xref> to a final value.
+  example: []
+  syntax:
+    content: public int Clamp(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Clamp(value As Integer) As Integer
+  overload: SurvivorsMaker.Core.StatDefinition.Clamp*
+  nameWithType.vb: StatDefinition.Clamp(Integer)
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.Clamp(Integer)
+  name.vb: Clamp(Integer)
+- uid: SurvivorsMaker.Core.StatDefinition.ToString
+  commentId: M:SurvivorsMaker.Core.StatDefinition.ToString
+  id: ToString
+  parent: SurvivorsMaker.Core.StatDefinition
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StatDefinition.ToString()
+  fullName: SurvivorsMaker.Core.StatDefinition.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SurvivorsMaker.Core.StatDefinition.ToString*
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Core.StatDefinition.#ctor*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition__ctor
+  name: StatDefinition
+  nameWithType: StatDefinition.StatDefinition
+  fullName: SurvivorsMaker.Core.StatDefinition.StatDefinition
+  nameWithType.vb: StatDefinition.New
+  fullName.vb: SurvivorsMaker.Core.StatDefinition.New
+  name.vb: New
+- uid: SurvivorsMaker.Core.StatDefinition.WithMin*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.WithMin
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_WithMin_System_Int32_
+  name: WithMin
+  nameWithType: StatDefinition.WithMin
+  fullName: SurvivorsMaker.Core.StatDefinition.WithMin
+- uid: SurvivorsMaker.Core.StatDefinition
+  commentId: T:SurvivorsMaker.Core.StatDefinition
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html
+  name: StatDefinition
+  nameWithType: StatDefinition
+  fullName: SurvivorsMaker.Core.StatDefinition
+- uid: SurvivorsMaker.Core.StatDefinition.WithMax*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.WithMax
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_WithMax_System_Int32_
+  name: WithMax
+  nameWithType: StatDefinition.WithMax
+  fullName: SurvivorsMaker.Core.StatDefinition.WithMax
+- uid: SurvivorsMaker.Core.StatDefinition.AsPercent*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.AsPercent
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_AsPercent
+  name: AsPercent
+  nameWithType: StatDefinition.AsPercent
+  fullName: SurvivorsMaker.Core.StatDefinition.AsPercent
+- uid: SurvivorsMaker.Core.StatDefinition.Min
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Min
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_Min
+  name: Min
+  nameWithType: StatDefinition.Min
+  fullName: SurvivorsMaker.Core.StatDefinition.Min
+- uid: SurvivorsMaker.Core.StatDefinition.Max
+  commentId: F:SurvivorsMaker.Core.StatDefinition.Max
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_Max
+  name: Max
+  nameWithType: StatDefinition.Max
+  fullName: SurvivorsMaker.Core.StatDefinition.Max
+- uid: SurvivorsMaker.Core.StatDefinition.Clamp*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.Clamp
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_Clamp_System_Int32_
+  name: Clamp
+  nameWithType: StatDefinition.Clamp
+  fullName: SurvivorsMaker.Core.StatDefinition.Clamp
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Core.StatDefinition.ToString*
+  commentId: Overload:SurvivorsMaker.Core.StatDefinition.ToString
+  isExternal: true
+  href: SurvivorsMaker.Core.StatDefinition.html#SurvivorsMaker_Core_StatDefinition_ToString
+  name: ToString
+  nameWithType: StatDefinition.ToString
+  fullName: SurvivorsMaker.Core.StatDefinition.ToString

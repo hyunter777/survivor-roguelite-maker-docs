@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.WeaponPoolKind
+  commentId: T:SurvivorsMaker.Run.WeaponPoolKind
+  id: WeaponPoolKind
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.WeaponPoolKind.Automatic
+  - SurvivorsMaker.Run.WeaponPoolKind.Melee
+  - SurvivorsMaker.Run.WeaponPoolKind.Other
+  - SurvivorsMaker.Run.WeaponPoolKind.Ranged
+  langs:
+  - csharp
+  - vb
+  name: WeaponPoolKind
+  nameWithType: WeaponPoolKind
+  fullName: SurvivorsMaker.Run.WeaponPoolKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Weapon category used by acquisition and slot limits; Automatic derives the category from combat kind.
+  example: []
+  syntax:
+    content: public enum WeaponPoolKind
+    content.vb: Public Enum WeaponPoolKind
+- uid: SurvivorsMaker.Run.WeaponPoolKind.Automatic
+  commentId: F:SurvivorsMaker.Run.WeaponPoolKind.Automatic
+  id: Automatic
+  parent: SurvivorsMaker.Run.WeaponPoolKind
+  langs:
+  - csharp
+  - vb
+  name: Automatic
+  nameWithType: WeaponPoolKind.Automatic
+  fullName: SurvivorsMaker.Run.WeaponPoolKind.Automatic
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Automatic = 0
+    return:
+      type: SurvivorsMaker.Run.WeaponPoolKind
+- uid: SurvivorsMaker.Run.WeaponPoolKind.Melee
+  commentId: F:SurvivorsMaker.Run.WeaponPoolKind.Melee
+  id: Melee
+  parent: SurvivorsMaker.Run.WeaponPoolKind
+  langs:
+  - csharp
+  - vb
+  name: Melee
+  nameWithType: WeaponPoolKind.Melee
+  fullName: SurvivorsMaker.Run.WeaponPoolKind.Melee
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Melee = 1
+    return:
+      type: SurvivorsMaker.Run.WeaponPoolKind
+- uid: SurvivorsMaker.Run.WeaponPoolKind.Ranged
+  commentId: F:SurvivorsMaker.Run.WeaponPoolKind.Ranged
+  id: Ranged
+  parent: SurvivorsMaker.Run.WeaponPoolKind
+  langs:
+  - csharp
+  - vb
+  name: Ranged
+  nameWithType: WeaponPoolKind.Ranged
+  fullName: SurvivorsMaker.Run.WeaponPoolKind.Ranged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Ranged = 2
+    return:
+      type: SurvivorsMaker.Run.WeaponPoolKind
+- uid: SurvivorsMaker.Run.WeaponPoolKind.Other
+  commentId: F:SurvivorsMaker.Run.WeaponPoolKind.Other
+  id: Other
+  parent: SurvivorsMaker.Run.WeaponPoolKind
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: WeaponPoolKind.Other
+  fullName: SurvivorsMaker.Run.WeaponPoolKind.Other
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Other = 3
+    return:
+      type: SurvivorsMaker.Run.WeaponPoolKind
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.WeaponPoolKind
+  commentId: T:SurvivorsMaker.Run.WeaponPoolKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponPoolKind.html
+  name: WeaponPoolKind
+  nameWithType: WeaponPoolKind
+  fullName: SurvivorsMaker.Run.WeaponPoolKind

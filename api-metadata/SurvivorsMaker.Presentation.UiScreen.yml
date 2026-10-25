@@ -1,0 +1,281 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiScreen
+  commentId: T:SurvivorsMaker.Presentation.UiScreen
+  id: UiScreen
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiScreen.Alerts
+  - SurvivorsMaker.Presentation.UiScreen.All
+  - SurvivorsMaker.Presentation.UiScreen.GameOver
+  - SurvivorsMaker.Presentation.UiScreen.Hud
+  - SurvivorsMaker.Presentation.UiScreen.LevelUp
+  - SurvivorsMaker.Presentation.UiScreen.MainMenu
+  - SurvivorsMaker.Presentation.UiScreen.Pause
+  - SurvivorsMaker.Presentation.UiScreen.Records
+  - SurvivorsMaker.Presentation.UiScreen.Settings
+  - SurvivorsMaker.Presentation.UiScreen.Shop
+  - SurvivorsMaker.Presentation.UiScreen.Unlocks
+  - SurvivorsMaker.Presentation.UiScreen.WaveResult
+  langs:
+  - csharp
+  - vb
+  name: UiScreen
+  nameWithType: UiScreen
+  fullName: SurvivorsMaker.Presentation.UiScreen
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Screen category instantiated by the default UI prefab factory.
+  example: []
+  syntax:
+    content: public enum UiScreen
+    content.vb: Public Enum UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.All
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.All
+  id: All
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: UiScreen.All
+  fullName: SurvivorsMaker.Presentation.UiScreen.All
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: All = 0
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Hud
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Hud
+  id: Hud
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Hud
+  nameWithType: UiScreen.Hud
+  fullName: SurvivorsMaker.Presentation.UiScreen.Hud
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Hud = 1
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.LevelUp
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: UiScreen.LevelUp
+  fullName: SurvivorsMaker.Presentation.UiScreen.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: LevelUp = 2
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Shop
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Shop
+  id: Shop
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: UiScreen.Shop
+  fullName: SurvivorsMaker.Presentation.UiScreen.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Shop = 3
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.WaveResult
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.WaveResult
+  id: WaveResult
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: WaveResult
+  nameWithType: UiScreen.WaveResult
+  fullName: SurvivorsMaker.Presentation.UiScreen.WaveResult
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: WaveResult = 4
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.GameOver
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.GameOver
+  id: GameOver
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: GameOver
+  nameWithType: UiScreen.GameOver
+  fullName: SurvivorsMaker.Presentation.UiScreen.GameOver
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: GameOver = 5
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Pause
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Pause
+  id: Pause
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Pause
+  nameWithType: UiScreen.Pause
+  fullName: SurvivorsMaker.Presentation.UiScreen.Pause
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Pause = 6
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.MainMenu
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.MainMenu
+  id: MainMenu
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: MainMenu
+  nameWithType: UiScreen.MainMenu
+  fullName: SurvivorsMaker.Presentation.UiScreen.MainMenu
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: MainMenu = 7
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Alerts
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Alerts
+  id: Alerts
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Alerts
+  nameWithType: UiScreen.Alerts
+  fullName: SurvivorsMaker.Presentation.UiScreen.Alerts
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Alerts = 8
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Unlocks
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Unlocks
+  id: Unlocks
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Unlocks
+  nameWithType: UiScreen.Unlocks
+  fullName: SurvivorsMaker.Presentation.UiScreen.Unlocks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Unlocks = 9
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Records
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Records
+  id: Records
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Records
+  nameWithType: UiScreen.Records
+  fullName: SurvivorsMaker.Presentation.UiScreen.Records
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Records = 10
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+- uid: SurvivorsMaker.Presentation.UiScreen.Settings
+  commentId: F:SurvivorsMaker.Presentation.UiScreen.Settings
+  id: Settings
+  parent: SurvivorsMaker.Presentation.UiScreen
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: UiScreen.Settings
+  fullName: SurvivorsMaker.Presentation.UiScreen.Settings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Settings = 11
+    return:
+      type: SurvivorsMaker.Presentation.UiScreen
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiScreen
+  commentId: T:SurvivorsMaker.Presentation.UiScreen
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiScreen.html
+  name: UiScreen
+  nameWithType: UiScreen
+  fullName: SurvivorsMaker.Presentation.UiScreen

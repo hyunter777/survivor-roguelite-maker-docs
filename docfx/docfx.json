@@ -1,0 +1,18 @@
+{
+  "build": {
+    "content": [
+      { "files": ["index.md", "toc.yml"] },
+      { "src": "../api-metadata", "files": ["**/*.yml"], "dest": "reference" }
+    ],
+    "dest": "../site/api",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appName": "Survivor Roguelite Maker API",
+      "_appTitle": "Survivor Roguelite Maker API",
+      "_appFooter": "Copyright © FlyCat",
+      "_enableSearch": true,
+      "_disableContribution": true
+    },
+    "xref": ["https://learn.microsoft.com/dotnet/.xrefmap.json"]
+  }
+}

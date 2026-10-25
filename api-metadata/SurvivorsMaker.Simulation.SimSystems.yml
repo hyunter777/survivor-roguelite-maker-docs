@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimSystems
+  commentId: T:SurvivorsMaker.Simulation.SimSystems
+  id: SimSystems
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimSystems.#ctor
+  - SurvivorsMaker.Simulation.SimSystems.Behaviours
+  - SurvivorsMaker.Simulation.SimSystems.Combat
+  - SurvivorsMaker.Simulation.SimSystems.CreateDefault
+  - SurvivorsMaker.Simulation.SimSystems.Enemies
+  - SurvivorsMaker.Simulation.SimSystems.Modules
+  - SurvivorsMaker.Simulation.SimSystems.Pools
+  - SurvivorsMaker.Simulation.SimSystems.Spatial
+  - SurvivorsMaker.Simulation.SimSystems.Spawning
+  - SurvivorsMaker.Simulation.SimSystems.Status
+  - SurvivorsMaker.Simulation.SimSystems.Triggers
+  - SurvivorsMaker.Simulation.SimSystems.Weapons
+  langs:
+  - csharp
+  - vb
+  name: SimSystems
+  nameWithType: SimSystems
+  fullName: SurvivorsMaker.Simulation.SimSystems
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'The pluggable systems of a simulation. Concrete classes: Spawning/SpawnSystem, Enemies/EnemySystem,
+
+    Weapons/WeaponSystem, World/CombatRules. Replace any of them to change behaviour.'
+  example: []
+  syntax:
+    content: public sealed class SimSystems
+    content.vb: Public NotInheritable Class SimSystems
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimSystems.Spawning
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Spawning
+  id: Spawning
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Spawning
+  nameWithType: SimSystems.Spawning
+  fullName: SurvivorsMaker.Simulation.SimSystems.Spawning
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ISpawnSystem Spawning
+    return:
+      type: SurvivorsMaker.Simulation.ISpawnSystem
+    content.vb: Public Spawning As ISpawnSystem
+- uid: SurvivorsMaker.Simulation.SimSystems.Enemies
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: SimSystems.Enemies
+  fullName: SurvivorsMaker.Simulation.SimSystems.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public IEnemySystem Enemies
+    return:
+      type: SurvivorsMaker.Simulation.IEnemySystem
+    content.vb: Public Enemies As IEnemySystem
+- uid: SurvivorsMaker.Simulation.SimSystems.Weapons
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: SimSystems.Weapons
+  fullName: SurvivorsMaker.Simulation.SimSystems.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public IWeaponSystem Weapons
+    return:
+      type: SurvivorsMaker.Simulation.IWeaponSystem
+    content.vb: Public Weapons As IWeaponSystem
+- uid: SurvivorsMaker.Simulation.SimSystems.Combat
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Combat
+  id: Combat
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Combat
+  nameWithType: SimSystems.Combat
+  fullName: SurvivorsMaker.Simulation.SimSystems.Combat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ICombat Combat
+    return:
+      type: SurvivorsMaker.Simulation.ICombat
+    content.vb: Public Combat As ICombat
+- uid: SurvivorsMaker.Simulation.SimSystems.Status
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Status
+  id: Status
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: SimSystems.Status
+  fullName: SurvivorsMaker.Simulation.SimSystems.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public IStatusSystem Status
+    return:
+      type: SurvivorsMaker.Simulation.IStatusSystem
+    content.vb: Public Status As IStatusSystem
+- uid: SurvivorsMaker.Simulation.SimSystems.Triggers
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Triggers
+  id: Triggers
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Triggers
+  nameWithType: SimSystems.Triggers
+  fullName: SurvivorsMaker.Simulation.SimSystems.Triggers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ITriggerSystem Triggers
+    return:
+      type: SurvivorsMaker.Simulation.ITriggerSystem
+    content.vb: Public Triggers As ITriggerSystem
+- uid: SurvivorsMaker.Simulation.SimSystems.Modules
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Modules
+  id: Modules
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Modules
+  nameWithType: SimSystems.Modules
+  fullName: SurvivorsMaker.Simulation.SimSystems.Modules
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Optional modules (endless mode, summons, …) called at fixed points of every tick, in list order.
+  example: []
+  syntax:
+    content: public readonly List<ISimModule> Modules
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.ISimModule}
+    content.vb: Public ReadOnly Modules As List(Of ISimModule)
+- uid: SurvivorsMaker.Simulation.SimSystems.Behaviours
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Behaviours
+  id: Behaviours
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Behaviours
+  nameWithType: SimSystems.Behaviours
+  fullName: SurvivorsMaker.Simulation.SimSystems.Behaviours
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Weapon, enemy movement, enemy attack, status and pickup behaviours by id.
+  example: []
+  syntax:
+    content: public SimBehaviours Behaviours
+    return:
+      type: SurvivorsMaker.Simulation.SimBehaviours
+    content.vb: Public Behaviours As SimBehaviours
+- uid: SurvivorsMaker.Simulation.SimSystems.Spatial
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Spatial
+  id: Spatial
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Spatial
+  nameWithType: SimSystems.Spatial
+  fullName: SurvivorsMaker.Simulation.SimSystems.Spatial
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Null = the tick loop's default grid index.
+  example: []
+  syntax:
+    content: public ISpatialIndex Spatial
+    return:
+      type: SurvivorsMaker.Simulation.ISpatialIndex
+    content.vb: Public Spatial As ISpatialIndex
+- uid: SurvivorsMaker.Simulation.SimSystems.Pools
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Pools
+  id: Pools
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: Pools
+  nameWithType: SimSystems.Pools
+  fullName: SurvivorsMaker.Simulation.SimSystems.Pools
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Null = the tick loop's default pools.
+  example: []
+  syntax:
+    content: public ISimPools Pools
+    return:
+      type: SurvivorsMaker.Simulation.ISimPools
+    content.vb: Public Pools As ISimPools
+- uid: SurvivorsMaker.Simulation.SimSystems.CreateDefault
+  commentId: M:SurvivorsMaker.Simulation.SimSystems.CreateDefault
+  id: CreateDefault
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: CreateDefault()
+  nameWithType: SimSystems.CreateDefault()
+  fullName: SurvivorsMaker.Simulation.SimSystems.CreateDefault()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The package's built-in systems.
+  example: []
+  syntax:
+    content: public static SimSystems CreateDefault()
+    return:
+      type: SurvivorsMaker.Simulation.SimSystems
+    content.vb: Public Shared Function CreateDefault() As SimSystems
+  overload: SurvivorsMaker.Simulation.SimSystems.CreateDefault*
+- uid: SurvivorsMaker.Simulation.SimSystems.#ctor
+  commentId: M:SurvivorsMaker.Simulation.SimSystems.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.SimSystems
+  langs:
+  - csharp
+  - vb
+  name: SimSystems()
+  nameWithType: SimSystems.SimSystems()
+  fullName: SurvivorsMaker.Simulation.SimSystems.SimSystems()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimSystems()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.SimSystems.#ctor*
+  nameWithType.vb: SimSystems.New()
+  fullName.vb: SurvivorsMaker.Simulation.SimSystems.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.ISpawnSystem
+  commentId: T:SurvivorsMaker.Simulation.ISpawnSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISpawnSystem.html
+  name: ISpawnSystem
+  nameWithType: ISpawnSystem
+  fullName: SurvivorsMaker.Simulation.ISpawnSystem
+- uid: SurvivorsMaker.Simulation.IEnemySystem
+  commentId: T:SurvivorsMaker.Simulation.IEnemySystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemySystem.html
+  name: IEnemySystem
+  nameWithType: IEnemySystem
+  fullName: SurvivorsMaker.Simulation.IEnemySystem
+- uid: SurvivorsMaker.Simulation.IWeaponSystem
+  commentId: T:SurvivorsMaker.Simulation.IWeaponSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponSystem.html
+  name: IWeaponSystem
+  nameWithType: IWeaponSystem
+  fullName: SurvivorsMaker.Simulation.IWeaponSystem
+- uid: SurvivorsMaker.Simulation.ICombat
+  commentId: T:SurvivorsMaker.Simulation.ICombat
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ICombat.html
+  name: ICombat
+  nameWithType: ICombat
+  fullName: SurvivorsMaker.Simulation.ICombat
+- uid: SurvivorsMaker.Simulation.IStatusSystem
+  commentId: T:SurvivorsMaker.Simulation.IStatusSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusSystem.html
+  name: IStatusSystem
+  nameWithType: IStatusSystem
+  fullName: SurvivorsMaker.Simulation.IStatusSystem
+- uid: SurvivorsMaker.Simulation.ITriggerSystem
+  commentId: T:SurvivorsMaker.Simulation.ITriggerSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html
+  name: ITriggerSystem
+  nameWithType: ITriggerSystem
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.ISimModule}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.ISimModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ISimModule>
+  nameWithType: List<ISimModule>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.ISimModule>
+  nameWithType.vb: List(Of ISimModule)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.ISimModule)
+  name.vb: List(Of ISimModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.ISimModule
+    name: ISimModule
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimModule.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.ISimModule
+    name: ISimModule
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimModule.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation.SimBehaviours
+  commentId: T:SurvivorsMaker.Simulation.SimBehaviours
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html
+  name: SimBehaviours
+  nameWithType: SimBehaviours
+  fullName: SurvivorsMaker.Simulation.SimBehaviours
+- uid: SurvivorsMaker.Simulation.ISpatialIndex
+  commentId: T:SurvivorsMaker.Simulation.ISpatialIndex
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISpatialIndex.html
+  name: ISpatialIndex
+  nameWithType: ISpatialIndex
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex
+- uid: SurvivorsMaker.Simulation.ISimPools
+  commentId: T:SurvivorsMaker.Simulation.ISimPools
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html
+  name: ISimPools
+  nameWithType: ISimPools
+  fullName: SurvivorsMaker.Simulation.ISimPools
+- uid: SurvivorsMaker.Simulation.SimSystems.CreateDefault*
+  commentId: Overload:SurvivorsMaker.Simulation.SimSystems.CreateDefault
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSystems.html#SurvivorsMaker_Simulation_SimSystems_CreateDefault
+  name: CreateDefault
+  nameWithType: SimSystems.CreateDefault
+  fullName: SurvivorsMaker.Simulation.SimSystems.CreateDefault
+- uid: SurvivorsMaker.Simulation.SimSystems
+  commentId: T:SurvivorsMaker.Simulation.SimSystems
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSystems.html
+  name: SimSystems
+  nameWithType: SimSystems
+  fullName: SurvivorsMaker.Simulation.SimSystems
+- uid: SurvivorsMaker.Simulation.SimSystems.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SimSystems.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSystems.html#SurvivorsMaker_Simulation_SimSystems__ctor
+  name: SimSystems
+  nameWithType: SimSystems.SimSystems
+  fullName: SurvivorsMaker.Simulation.SimSystems.SimSystems
+  nameWithType.vb: SimSystems.New
+  fullName.vb: SurvivorsMaker.Simulation.SimSystems.New
+  name.vb: New

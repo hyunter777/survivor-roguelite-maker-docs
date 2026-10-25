@@ -1,0 +1,471 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder
+  commentId: T:SurvivorsMaker.Editor.UiPrefabBuilder
+  id: UiPrefabBuilder
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.UiPrefabBuilder.Build
+  - SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll(System.String)
+  - SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+  - SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt(System.String,SurvivorsMaker.Presentation.UiTheme)
+  langs:
+  - csharp
+  - vb
+  name: UiPrefabBuilder
+  nameWithType: UiPrefabBuilder
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Reproducible UI assets; no scene edits, content conversion or interactive imports.
+  example: []
+  syntax:
+    content: public static class UiPrefabBuilder
+    content.vb: Public Module UiPrefabBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.Build
+  commentId: M:SurvivorsMaker.Editor.UiPrefabBuilder.Build
+  id: Build
+  parent: SurvivorsMaker.Editor.UiPrefabBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: UiPrefabBuilder.Build()
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.Build()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: '[MenuItem("Tools/Survivor Roguelite Maker/Build UI Prefabs", false, 40)]
+
+      public static void Build()'
+    content.vb: '<MenuItem("Tools/Survivor Roguelite Maker/Build UI Prefabs", False, 40)>
+
+      Public Shared Sub Build()'
+  overload: SurvivorsMaker.Editor.UiPrefabBuilder.Build*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: Tools/Survivor Roguelite Maker/Build UI Prefabs
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 40
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll(System.String)
+  commentId: M:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll(System.String)
+  id: BuildAll(System.String)
+  parent: SurvivorsMaker.Editor.UiPrefabBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildAll(string)
+  nameWithType: UiPrefabBuilder.BuildAll(string)
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Callable by editor automation, without dialogs or scene changes.
+  example: []
+  syntax:
+    content: public static void BuildAll(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    content.vb: Public Shared Sub BuildAll(folder As String)
+  overload: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll*
+  nameWithType.vb: UiPrefabBuilder.BuildAll(String)
+  fullName.vb: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll(String)
+  name.vb: BuildAll(String)
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+  commentId: M:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+  id: BuildAllDefault
+  parent: SurvivorsMaker.Editor.UiPrefabBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildAllDefault()
+  nameWithType: UiPrefabBuilder.BuildAllDefault()
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Batch entry: -executeMethod SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+
+    Optional output override: -uiPrefabFolder Assets/SomeFolder'
+  example: []
+  syntax:
+    content: public static void BuildAllDefault()
+    content.vb: Public Shared Sub BuildAllDefault()
+  overload: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault*
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt(System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt(System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: BuildAt(System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Editor.UiPrefabBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildAt(string, UiTheme)
+  nameWithType: UiPrefabBuilder.BuildAt(string, UiTheme)
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt(string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void BuildAt(string folder, UiTheme theme = null)
+    parameters:
+    - id: folder
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    content.vb: Public Shared Sub BuildAt(folder As String, theme As UiTheme = Nothing)
+  overload: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt*
+  nameWithType.vb: UiPrefabBuilder.BuildAt(String, UiTheme)
+  fullName.vb: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt(String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: BuildAt(String, UiTheme)
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.Build*
+  commentId: Overload:SurvivorsMaker.Editor.UiPrefabBuilder.Build
+  isExternal: true
+  href: SurvivorsMaker.Editor.UiPrefabBuilder.html#SurvivorsMaker_Editor_UiPrefabBuilder_Build
+  name: Build
+  nameWithType: UiPrefabBuilder.Build
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.Build
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll*
+  commentId: Overload:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll
+  isExternal: true
+  href: SurvivorsMaker.Editor.UiPrefabBuilder.html#SurvivorsMaker_Editor_UiPrefabBuilder_BuildAll_System_String_
+  name: BuildAll
+  nameWithType: UiPrefabBuilder.BuildAll
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAll
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault*
+  commentId: Overload:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+  isExternal: true
+  href: SurvivorsMaker.Editor.UiPrefabBuilder.html#SurvivorsMaker_Editor_UiPrefabBuilder_BuildAllDefault
+  name: BuildAllDefault
+  nameWithType: UiPrefabBuilder.BuildAllDefault
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAllDefault
+- uid: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt*
+  commentId: Overload:SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt
+  isExternal: true
+  href: SurvivorsMaker.Editor.UiPrefabBuilder.html#SurvivorsMaker_Editor_UiPrefabBuilder_BuildAt_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: BuildAt
+  nameWithType: UiPrefabBuilder.BuildAt
+  fullName: SurvivorsMaker.Editor.UiPrefabBuilder.BuildAt
+- uid: SurvivorsMaker.Presentation.UiTheme
+  commentId: T:SurvivorsMaker.Presentation.UiTheme
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html
+  name: UiTheme
+  nameWithType: UiTheme
+  fullName: SurvivorsMaker.Presentation.UiTheme
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true

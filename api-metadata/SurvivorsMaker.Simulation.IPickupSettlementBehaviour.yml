@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IPickupSettlementBehaviour
+  commentId: T:SurvivorsMaker.Simulation.IPickupSettlementBehaviour
+  id: IPickupSettlementBehaviour
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Pickup)
+  langs:
+  - csharp
+  - vb
+  name: IPickupSettlementBehaviour
+  nameWithType: IPickupSettlementBehaviour
+  fullName: SurvivorsMaker.Simulation.IPickupSettlementBehaviour
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Optional end-of-wave collection. Custom pickups otherwise disappear at settlement.
+  example: []
+  syntax:
+    content: public interface IPickupSettlementBehaviour
+    content.vb: Public Interface IPickupSettlementBehaviour
+- uid: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Pickup)
+  commentId: M:SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Pickup)
+  id: Settle(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Pickup)
+  parent: SurvivorsMaker.Simulation.IPickupSettlementBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Settle(SimWorld, Pickup)
+  nameWithType: IPickupSettlementBehaviour.Settle(SimWorld, Pickup)
+  fullName: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Pickup)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Settles an uncollected pickup at wave end using the normal wallet/effect boundaries.
+  example: []
+  syntax:
+    content: void Settle(SimWorld world, Pickup pickup)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: pickup
+      type: SurvivorsMaker.Simulation.Pickup
+    content.vb: Sub Settle(world As SimWorld, pickup As Pickup)
+  overload: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle*
+  commentId: Overload:SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.html#SurvivorsMaker_Simulation_IPickupSettlementBehaviour_Settle_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Pickup_
+  name: Settle
+  nameWithType: IPickupSettlementBehaviour.Settle
+  fullName: SurvivorsMaker.Simulation.IPickupSettlementBehaviour.Settle
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Pickup
+  commentId: T:SurvivorsMaker.Simulation.Pickup
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Pickup.html
+  name: Pickup
+  nameWithType: Pickup
+  fullName: SurvivorsMaker.Simulation.Pickup

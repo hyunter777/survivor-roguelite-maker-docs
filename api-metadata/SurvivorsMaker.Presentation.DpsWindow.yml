@@ -1,0 +1,862 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.DpsWindow
+  commentId: T:SurvivorsMaker.Presentation.DpsWindow
+  id: DpsWindow
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.DpsWindow.#ctor(System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.Add(System.Int32,System.Int32,System.Single)
+  - SurvivorsMaker.Presentation.DpsWindow.Keys
+  - SurvivorsMaker.Presentation.DpsWindow.PerSecond(System.Single,System.Int32,System.Single)
+  - SurvivorsMaker.Presentation.DpsWindow.Rate(System.Int32,System.Int32,System.Single)
+  - SurvivorsMaker.Presentation.DpsWindow.Reset(System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.Share(System.Int32,System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.SpanTicks(System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.StartTick
+  - SurvivorsMaker.Presentation.DpsWindow.Sum(System.Int32,System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.Total(System.Int32)
+  - SurvivorsMaker.Presentation.DpsWindow.TotalRate(System.Int32,System.Single)
+  - SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  langs:
+  - csharp
+  - vb
+  name: DpsWindow
+  nameWithType: DpsWindow
+  fullName: SurvivorsMaker.Presentation.DpsWindow
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Sliding sum over the last <xref href="SurvivorsMaker.Presentation.DpsWindow.WindowTicks" data-throw-if-not-resolved="false"></xref>
+    ticks per key: one bucket per tick in a ring, so adding is O(1)
+
+    and nothing is allocated after a key is first seen. Rates divide by the window, or by the ticks since
+
+    <xref href="SurvivorsMaker.Presentation.DpsWindow.StartTick" data-throw-if-not-resolved="false"></xref> while fewer have
+    passed (so the first second of a wave is not under-reported).'
+  example: []
+  syntax:
+    content: public sealed class DpsWindow
+    content.vb: Public NotInheritable Class DpsWindow
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.DpsWindow.#ctor(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: DpsWindow(int)
+  nameWithType: DpsWindow.DpsWindow(int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.DpsWindow(int)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public DpsWindow(int windowTicks)
+    parameters:
+    - id: windowTicks
+      type: System.Int32
+    content.vb: Public Sub New(windowTicks As Integer)
+  overload: SurvivorsMaker.Presentation.DpsWindow.#ctor*
+  nameWithType.vb: DpsWindow.New(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.New(Integer)
+  name.vb: New(Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Reset(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Reset(System.Int32)
+  id: Reset(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Reset(int)
+  nameWithType: DpsWindow.Reset(int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Reset(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Forgets every amount; keys stay known. Ticks before <code class="paramref">startTick</code> are never counted.
+  example: []
+  syntax:
+    content: public void Reset(int startTick)
+    parameters:
+    - id: startTick
+      type: System.Int32
+    content.vb: Public Sub Reset(startTick As Integer)
+  overload: SurvivorsMaker.Presentation.DpsWindow.Reset*
+  nameWithType.vb: DpsWindow.Reset(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Reset(Integer)
+  name.vb: Reset(Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Add(System.Int32,System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Add(System.Int32,System.Int32,System.Single)
+  id: Add(System.Int32,System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Add(int, int, float)
+  nameWithType: DpsWindow.Add(int, int, float)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Add(int, int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Add(int tick, int key, float amount)
+    parameters:
+    - id: tick
+      type: System.Int32
+    - id: key
+      type: System.Int32
+    - id: amount
+      type: System.Single
+    content.vb: Public Sub Add(tick As Integer, key As Integer, amount As Single)
+  overload: SurvivorsMaker.Presentation.DpsWindow.Add*
+  nameWithType.vb: DpsWindow.Add(Integer, Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Add(Integer, Integer, Single)
+  name.vb: Add(Integer, Integer, Single)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Sum(System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Sum(System.Int32,System.Int32)
+  id: Sum(System.Int32,System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Sum(int, int)
+  nameWithType: DpsWindow.Sum(int, int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Sum(int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Amount added for <code class="paramref">key</code> in the window ending at <code class="paramref">nowTick</code>
+    (inclusive).
+  example: []
+  syntax:
+    content: public float Sum(int key, int nowTick)
+    parameters:
+    - id: key
+      type: System.Int32
+    - id: nowTick
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function Sum(key As Integer, nowTick As Integer) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.Sum*
+  nameWithType.vb: DpsWindow.Sum(Integer, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Sum(Integer, Integer)
+  name.vb: Sum(Integer, Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Total(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Total(System.Int32)
+  id: Total(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Total(int)
+  nameWithType: DpsWindow.Total(int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Total(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float Total(int nowTick)
+    parameters:
+    - id: nowTick
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function Total(nowTick As Integer) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.Total*
+  nameWithType.vb: DpsWindow.Total(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Total(Integer)
+  name.vb: Total(Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.SpanTicks(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.SpanTicks(System.Int32)
+  id: SpanTicks(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: SpanTicks(int)
+  nameWithType: DpsWindow.SpanTicks(int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.SpanTicks(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Ticks the rate is measured over: the window, or fewer at the start.'
+  example: []
+  syntax:
+    content: public int SpanTicks(int nowTick)
+    parameters:
+    - id: nowTick
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function SpanTicks(nowTick As Integer) As Integer
+  overload: SurvivorsMaker.Presentation.DpsWindow.SpanTicks*
+  nameWithType.vb: DpsWindow.SpanTicks(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.SpanTicks(Integer)
+  name.vb: SpanTicks(Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Rate(System.Int32,System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Rate(System.Int32,System.Int32,System.Single)
+  id: Rate(System.Int32,System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Rate(int, int, float)
+  nameWithType: DpsWindow.Rate(int, int, float)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Rate(int, int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float Rate(int key, int nowTick, float tickSeconds)
+    parameters:
+    - id: key
+      type: System.Int32
+    - id: nowTick
+      type: System.Int32
+    - id: tickSeconds
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function Rate(key As Integer, nowTick As Integer, tickSeconds As Single) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.Rate*
+  nameWithType.vb: DpsWindow.Rate(Integer, Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Rate(Integer, Integer, Single)
+  name.vb: Rate(Integer, Integer, Single)
+- uid: SurvivorsMaker.Presentation.DpsWindow.TotalRate(System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.TotalRate(System.Int32,System.Single)
+  id: TotalRate(System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: TotalRate(int, float)
+  nameWithType: DpsWindow.TotalRate(int, float)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.TotalRate(int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float TotalRate(int nowTick, float tickSeconds)
+    parameters:
+    - id: nowTick
+      type: System.Int32
+    - id: tickSeconds
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function TotalRate(nowTick As Integer, tickSeconds As Single) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.TotalRate*
+  nameWithType.vb: DpsWindow.TotalRate(Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.TotalRate(Integer, Single)
+  name.vb: TotalRate(Integer, Single)
+- uid: SurvivorsMaker.Presentation.DpsWindow.Share(System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.Share(System.Int32,System.Int32)
+  id: Share(System.Int32,System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Share(int, int)
+  nameWithType: DpsWindow.Share(int, int)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Share(int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Fraction 0–1 of the window's total that came from <code class="paramref">key</code>.
+  example: []
+  syntax:
+    content: public float Share(int key, int nowTick)
+    parameters:
+    - id: key
+      type: System.Int32
+    - id: nowTick
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function Share(key As Integer, nowTick As Integer) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.Share*
+  nameWithType.vb: DpsWindow.Share(Integer, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.Share(Integer, Integer)
+  name.vb: Share(Integer, Integer)
+- uid: SurvivorsMaker.Presentation.DpsWindow.PerSecond(System.Single,System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsWindow.PerSecond(System.Single,System.Int32,System.Single)
+  id: PerSecond(System.Single,System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: PerSecond(float, int, float)
+  nameWithType: DpsWindow.PerSecond(float, int, float)
+  fullName: SurvivorsMaker.Presentation.DpsWindow.PerSecond(float, int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float PerSecond(float sum, int nowTick, float tickSeconds)
+    parameters:
+    - id: sum
+      type: System.Single
+    - id: nowTick
+      type: System.Int32
+    - id: tickSeconds
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function PerSecond(sum As Single, nowTick As Integer, tickSeconds As Single) As Single
+  overload: SurvivorsMaker.Presentation.DpsWindow.PerSecond*
+  nameWithType.vb: DpsWindow.PerSecond(Single, Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.PerSecond(Single, Integer, Single)
+  name.vb: PerSecond(Single, Integer, Single)
+- uid: SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  commentId: P:SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  id: WindowTicks
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: WindowTicks
+  nameWithType: DpsWindow.WindowTicks
+  fullName: SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int WindowTicks { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property WindowTicks As Integer
+  overload: SurvivorsMaker.Presentation.DpsWindow.WindowTicks*
+- uid: SurvivorsMaker.Presentation.DpsWindow.StartTick
+  commentId: P:SurvivorsMaker.Presentation.DpsWindow.StartTick
+  id: StartTick
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: StartTick
+  nameWithType: DpsWindow.StartTick
+  fullName: SurvivorsMaker.Presentation.DpsWindow.StartTick
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public int StartTick { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartTick As Integer
+  overload: SurvivorsMaker.Presentation.DpsWindow.StartTick*
+- uid: SurvivorsMaker.Presentation.DpsWindow.Keys
+  commentId: P:SurvivorsMaker.Presentation.DpsWindow.Keys
+  id: Keys
+  parent: SurvivorsMaker.Presentation.DpsWindow
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: DpsWindow.Keys
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Keys
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Keys in the order first seen.
+  example: []
+  syntax:
+    content: public IReadOnlyList<int> Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+    content.vb: Public ReadOnly Property Keys As IReadOnlyList(Of Integer)
+  overload: SurvivorsMaker.Presentation.DpsWindow.Keys*
+references:
+- uid: SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  commentId: P:SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_WindowTicks
+  name: WindowTicks
+  nameWithType: DpsWindow.WindowTicks
+  fullName: SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+- uid: SurvivorsMaker.Presentation.DpsWindow.StartTick
+  commentId: P:SurvivorsMaker.Presentation.DpsWindow.StartTick
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_StartTick
+  name: StartTick
+  nameWithType: DpsWindow.StartTick
+  fullName: SurvivorsMaker.Presentation.DpsWindow.StartTick
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.DpsWindow.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow__ctor_System_Int32_
+  name: DpsWindow
+  nameWithType: DpsWindow.DpsWindow
+  fullName: SurvivorsMaker.Presentation.DpsWindow.DpsWindow
+  nameWithType.vb: DpsWindow.New
+  fullName.vb: SurvivorsMaker.Presentation.DpsWindow.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.DpsWindow.Reset*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Reset
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Reset_System_Int32_
+  name: Reset
+  nameWithType: DpsWindow.Reset
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Reset
+- uid: SurvivorsMaker.Presentation.DpsWindow.Add*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Add
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Add_System_Int32_System_Int32_System_Single_
+  name: Add
+  nameWithType: DpsWindow.Add
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Add
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.DpsWindow.Sum*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Sum
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Sum_System_Int32_System_Int32_
+  name: Sum
+  nameWithType: DpsWindow.Sum
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Sum
+- uid: SurvivorsMaker.Presentation.DpsWindow.Total*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Total
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Total_System_Int32_
+  name: Total
+  nameWithType: DpsWindow.Total
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Total
+- uid: SurvivorsMaker.Presentation.DpsWindow.SpanTicks*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.SpanTicks
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_SpanTicks_System_Int32_
+  name: SpanTicks
+  nameWithType: DpsWindow.SpanTicks
+  fullName: SurvivorsMaker.Presentation.DpsWindow.SpanTicks
+- uid: SurvivorsMaker.Presentation.DpsWindow.Rate*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Rate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Rate_System_Int32_System_Int32_System_Single_
+  name: Rate
+  nameWithType: DpsWindow.Rate
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Rate
+- uid: SurvivorsMaker.Presentation.DpsWindow.TotalRate*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.TotalRate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_TotalRate_System_Int32_System_Single_
+  name: TotalRate
+  nameWithType: DpsWindow.TotalRate
+  fullName: SurvivorsMaker.Presentation.DpsWindow.TotalRate
+- uid: SurvivorsMaker.Presentation.DpsWindow.Share*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Share
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Share_System_Int32_System_Int32_
+  name: Share
+  nameWithType: DpsWindow.Share
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Share
+- uid: SurvivorsMaker.Presentation.DpsWindow.PerSecond*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.PerSecond
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_PerSecond_System_Single_System_Int32_System_Single_
+  name: PerSecond
+  nameWithType: DpsWindow.PerSecond
+  fullName: SurvivorsMaker.Presentation.DpsWindow.PerSecond
+- uid: SurvivorsMaker.Presentation.DpsWindow.WindowTicks*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_WindowTicks
+  name: WindowTicks
+  nameWithType: DpsWindow.WindowTicks
+  fullName: SurvivorsMaker.Presentation.DpsWindow.WindowTicks
+- uid: SurvivorsMaker.Presentation.DpsWindow.StartTick*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.StartTick
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_StartTick
+  name: StartTick
+  nameWithType: DpsWindow.StartTick
+  fullName: SurvivorsMaker.Presentation.DpsWindow.StartTick
+- uid: SurvivorsMaker.Presentation.DpsWindow.Keys*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsWindow.Keys
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html#SurvivorsMaker_Presentation_DpsWindow_Keys
+  name: Keys
+  nameWithType: DpsWindow.Keys
+  fullName: SurvivorsMaker.Presentation.DpsWindow.Keys
+- uid: System.Collections.Generic.IReadOnlyList{System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<int>
+  nameWithType: IReadOnlyList<int>
+  fullName: System.Collections.Generic.IReadOnlyList<int>
+  nameWithType.vb: IReadOnlyList(Of Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Integer)
+  name.vb: IReadOnlyList(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

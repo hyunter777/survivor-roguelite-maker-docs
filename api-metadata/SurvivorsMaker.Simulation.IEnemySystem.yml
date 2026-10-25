@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IEnemySystem
+  commentId: T:SurvivorsMaker.Simulation.IEnemySystem
+  id: IEnemySystem
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IEnemySystem.CollectDeath(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.IEnemySystem.InitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.IEnemySystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: IEnemySystem
+  nameWithType: IEnemySystem
+  fullName: SurvivorsMaker.Simulation.IEnemySystem
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Enemies: per-enemy behaviour.'
+  example: []
+  syntax:
+    content: public interface IEnemySystem
+    content.vb: Public Interface IEnemySystem
+  derivedClasses:
+  - SurvivorsMaker.Simulation.EnemySystem
+- uid: SurvivorsMaker.Simulation.IEnemySystem.InitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemySystem.InitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  id: InitEnemy(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemySystem
+  langs:
+  - csharp
+  - vb
+  name: InitEnemy(SimWorld, Enemy)
+  nameWithType: IEnemySystem.InitEnemy(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.InitEnemy(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Initializes spawn-time values (health, speed jitter, offsets, first cooldown).
+  example: []
+  syntax:
+    content: void InitEnemy(SimWorld world, Enemy enemy)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub InitEnemy(world As SimWorld, enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.IEnemySystem.InitEnemy*
+- uid: SurvivorsMaker.Simulation.IEnemySystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.IEnemySystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.IEnemySystem
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: IEnemySystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Step 5 (enemies): contact timer, knockback, attack, movement, support, contact damage; in list order.'
+  example: []
+  syntax:
+    content: void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.IEnemySystem.Tick*
+- uid: SurvivorsMaker.Simulation.IEnemySystem.CollectDeath(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemySystem.CollectDeath(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  id: CollectDeath(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemySystem
+  langs:
+  - csharp
+  - vb
+  name: CollectDeath(SimWorld, Enemy)
+  nameWithType: IEnemySystem.CollectDeath(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.CollectDeath(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: "Called by death collection for each dead enemy before it is removed: boss defeat\n            events and elite
+    death effects (splitting adds to world.DeathSpawns)."
+  example: []
+  syntax:
+    content: void CollectDeath(SimWorld world, Enemy enemy)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub CollectDeath(world As SimWorld, enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.IEnemySystem.CollectDeath*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IEnemySystem.InitEnemy*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemySystem.InitEnemy
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemySystem.html#SurvivorsMaker_Simulation_IEnemySystem_InitEnemy_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: InitEnemy
+  nameWithType: IEnemySystem.InitEnemy
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.InitEnemy
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.IEnemySystem.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemySystem.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemySystem.html#SurvivorsMaker_Simulation_IEnemySystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: IEnemySystem.Tick
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.Tick
+- uid: SurvivorsMaker.Simulation.IEnemySystem.CollectDeath*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemySystem.CollectDeath
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemySystem.html#SurvivorsMaker_Simulation_IEnemySystem_CollectDeath_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: CollectDeath
+  nameWithType: IEnemySystem.CollectDeath
+  fullName: SurvivorsMaker.Simulation.IEnemySystem.CollectDeath

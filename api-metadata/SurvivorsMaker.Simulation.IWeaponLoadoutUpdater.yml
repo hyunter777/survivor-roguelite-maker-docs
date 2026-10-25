@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  commentId: T:SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  id: IWeaponLoadoutUpdater
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  langs:
+  - csharp
+  - vb
+  name: IWeaponLoadoutUpdater
+  nameWithType: IWeaponLoadoutUpdater
+  fullName: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Optional incremental loadout update; retained slot/definition pairs must not Begin again.
+  example: []
+  syntax:
+    content: public interface IWeaponLoadoutUpdater
+    content.vb: Public Interface IWeaponLoadoutUpdater
+  derivedClasses:
+  - SurvivorsMaker.Simulation.WeaponSystem
+- uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  id: UpdateLoadout(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater
+  langs:
+  - csharp
+  - vb
+  name: UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  nameWithType: IWeaponLoadoutUpdater.UpdateLoadout(SimWorld, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Applies an explicit loadout update, including during field waves, while preserving compatible slot state.
+  example: []
+  syntax:
+    content: void UpdateLoadout(SimWorld world, IReadOnlyList<WeaponDef> weapons)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: weapons
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+    content.vb: Sub UpdateLoadout(world As SimWorld, weapons As IReadOnlyList(Of WeaponDef))
+  overload: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout*
+  nameWithType.vb: IWeaponLoadoutUpdater.UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: UpdateLoadout(SimWorld, IReadOnlyList(Of WeaponDef))
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout*
+  commentId: Overload:SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.html#SurvivorsMaker_Simulation_IWeaponLoadoutUpdater_UpdateLoadout_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: UpdateLoadout
+  nameWithType: IWeaponLoadoutUpdater.UpdateLoadout
+  fullName: SurvivorsMaker.Simulation.IWeaponLoadoutUpdater.UpdateLoadout
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<WeaponDef>
+  nameWithType: IReadOnlyList<WeaponDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>
+  nameWithType.vb: IReadOnlyList(Of WeaponDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.WeaponDef)
+  name.vb: IReadOnlyList(Of WeaponDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

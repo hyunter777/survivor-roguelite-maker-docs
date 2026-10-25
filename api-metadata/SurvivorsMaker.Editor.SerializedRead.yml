@@ -1,0 +1,1252 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.SerializedRead
+  commentId: T:SurvivorsMaker.Editor.SerializedRead
+  id: SerializedRead
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.SerializedRead.Bool(UnityEditor.SerializedProperty,System.String,System.Boolean)
+  - SurvivorsMaker.Editor.SerializedRead.Child(UnityEditor.SerializedProperty,System.String)
+  - SurvivorsMaker.Editor.SerializedRead.Condition(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.Elements(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedObject)
+  - SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.Enum``1(UnityEditor.SerializedProperty,System.String,``0)
+  - SurvivorsMaker.Editor.SerializedRead.Float(UnityEditor.SerializedProperty,System.String,System.Single)
+  - SurvivorsMaker.Editor.SerializedRead.HasRulePayload(SurvivorsMaker.Simulation.TriggerDef)
+  - SurvivorsMaker.Editor.SerializedRead.Hit(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.Int(UnityEditor.SerializedProperty,System.String,System.Int32)
+  - SurvivorsMaker.Editor.SerializedRead.Mixed(UnityEditor.SerializedProperty,System.String)
+  - SurvivorsMaker.Editor.SerializedRead.Modifier(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.ReferenceName(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.RootBool(UnityEditor.SerializedObject,System.String,System.Boolean)
+  - SurvivorsMaker.Editor.SerializedRead.RootFloat(UnityEditor.SerializedObject,System.String,System.Single)
+  - SurvivorsMaker.Editor.SerializedRead.Status(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.String(UnityEditor.SerializedProperty,System.String,System.String)
+  - SurvivorsMaker.Editor.SerializedRead.Trigger(UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.SerializedRead.Unlock(UnityEditor.SerializedProperty)
+  langs:
+  - csharp
+  - vb
+  name: SerializedRead
+  nameWithType: SerializedRead
+  fullName: SurvivorsMaker.Editor.SerializedRead
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Null-tolerant reads of serialized definition data by field name. Missing or mistyped fields fall back
+
+    to the given default, so editor UI keeps working while authoring assets gain or rename fields.'
+  example: []
+  syntax:
+    content: public static class SerializedRead
+    content.vb: Public Module SerializedRead
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.SerializedRead.Child(UnityEditor.SerializedProperty,System.String)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Child(UnityEditor.SerializedProperty,System.String)
+  id: Child(UnityEditor.SerializedProperty,System.String)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Child(SerializedProperty, string)
+  nameWithType: SerializedRead.Child(SerializedProperty, string)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Child(UnityEditor.SerializedProperty, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static SerializedProperty Child(SerializedProperty parent, string name)
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    return:
+      type: UnityEditor.SerializedProperty
+    content.vb: Public Shared Function Child(parent As SerializedProperty, name As String) As SerializedProperty
+  overload: SurvivorsMaker.Editor.SerializedRead.Child*
+  nameWithType.vb: SerializedRead.Child(SerializedProperty, String)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Child(UnityEditor.SerializedProperty, String)
+  name.vb: Child(SerializedProperty, String)
+- uid: SurvivorsMaker.Editor.SerializedRead.Float(UnityEditor.SerializedProperty,System.String,System.Single)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Float(UnityEditor.SerializedProperty,System.String,System.Single)
+  id: Float(UnityEditor.SerializedProperty,System.String,System.Single)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Float(SerializedProperty, string, float)
+  nameWithType: SerializedRead.Float(SerializedProperty, string, float)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Float(UnityEditor.SerializedProperty, string, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static float Float(SerializedProperty parent, string name, float fallback)
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Float(parent As SerializedProperty, name As String, fallback As Single) As Single
+  overload: SurvivorsMaker.Editor.SerializedRead.Float*
+  nameWithType.vb: SerializedRead.Float(SerializedProperty, String, Single)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Float(UnityEditor.SerializedProperty, String, Single)
+  name.vb: Float(SerializedProperty, String, Single)
+- uid: SurvivorsMaker.Editor.SerializedRead.Int(UnityEditor.SerializedProperty,System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Int(UnityEditor.SerializedProperty,System.String,System.Int32)
+  id: Int(UnityEditor.SerializedProperty,System.String,System.Int32)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Int(SerializedProperty, string, int)
+  nameWithType: SerializedRead.Int(SerializedProperty, string, int)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Int(UnityEditor.SerializedProperty, string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static int Int(SerializedProperty parent, string name, int fallback)
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Int(parent As SerializedProperty, name As String, fallback As Integer) As Integer
+  overload: SurvivorsMaker.Editor.SerializedRead.Int*
+  nameWithType.vb: SerializedRead.Int(SerializedProperty, String, Integer)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Int(UnityEditor.SerializedProperty, String, Integer)
+  name.vb: Int(SerializedProperty, String, Integer)
+- uid: SurvivorsMaker.Editor.SerializedRead.Bool(UnityEditor.SerializedProperty,System.String,System.Boolean)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Bool(UnityEditor.SerializedProperty,System.String,System.Boolean)
+  id: Bool(UnityEditor.SerializedProperty,System.String,System.Boolean)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Bool(SerializedProperty, string, bool)
+  nameWithType: SerializedRead.Bool(SerializedProperty, string, bool)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Bool(UnityEditor.SerializedProperty, string, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static bool Bool(SerializedProperty parent, string name, bool fallback)
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Bool(parent As SerializedProperty, name As String, fallback As Boolean) As Boolean
+  overload: SurvivorsMaker.Editor.SerializedRead.Bool*
+  nameWithType.vb: SerializedRead.Bool(SerializedProperty, String, Boolean)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Bool(UnityEditor.SerializedProperty, String, Boolean)
+  name.vb: Bool(SerializedProperty, String, Boolean)
+- uid: SurvivorsMaker.Editor.SerializedRead.String(UnityEditor.SerializedProperty,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.String(UnityEditor.SerializedProperty,System.String,System.String)
+  id: String(UnityEditor.SerializedProperty,System.String,System.String)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: String(SerializedProperty, string, string)
+  nameWithType: SerializedRead.String(SerializedProperty, string, string)
+  fullName: SurvivorsMaker.Editor.SerializedRead.String(UnityEditor.SerializedProperty, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string String(SerializedProperty parent, string name, string fallback = "")
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function [String](parent As SerializedProperty, name As String, fallback As String = "") As
+      String
+  overload: SurvivorsMaker.Editor.SerializedRead.String*
+  nameWithType.vb: SerializedRead.String(SerializedProperty, String, String)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.String(UnityEditor.SerializedProperty, String, String)
+  name.vb: String(SerializedProperty, String, String)
+- uid: SurvivorsMaker.Editor.SerializedRead.Enum``1(UnityEditor.SerializedProperty,System.String,``0)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Enum``1(UnityEditor.SerializedProperty,System.String,``0)
+  id: Enum``1(UnityEditor.SerializedProperty,System.String,``0)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Enum<T>(SerializedProperty, string, T)
+  nameWithType: SerializedRead.Enum<T>(SerializedProperty, string, T)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Enum<T>(UnityEditor.SerializedProperty, string, T)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: 'public static T Enum<T>(SerializedProperty parent, string name, T fallback) where T : struct, Enum'
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    - id: fallback
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function [Enum](Of T As {Structure, [Enum]})(parent As SerializedProperty, name As String, fallback
+      As T) As T
+  overload: SurvivorsMaker.Editor.SerializedRead.Enum*
+  nameWithType.vb: SerializedRead.Enum(Of T)(SerializedProperty, String, T)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Enum(Of T)(UnityEditor.SerializedProperty, String, T)
+  name.vb: Enum(Of T)(SerializedProperty, String, T)
+- uid: SurvivorsMaker.Editor.SerializedRead.Mixed(UnityEditor.SerializedProperty,System.String)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Mixed(UnityEditor.SerializedProperty,System.String)
+  id: Mixed(UnityEditor.SerializedProperty,System.String)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Mixed(SerializedProperty, string)
+  nameWithType: SerializedRead.Mixed(SerializedProperty, string)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Mixed(UnityEditor.SerializedProperty, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: True when the named child is missing or differs across the selected objects.
+  example: []
+  syntax:
+    content: public static bool Mixed(SerializedProperty parent, string name)
+    parameters:
+    - id: parent
+      type: UnityEditor.SerializedProperty
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Mixed(parent As SerializedProperty, name As String) As Boolean
+  overload: SurvivorsMaker.Editor.SerializedRead.Mixed*
+  nameWithType.vb: SerializedRead.Mixed(SerializedProperty, String)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.Mixed(UnityEditor.SerializedProperty, String)
+  name.vb: Mixed(SerializedProperty, String)
+- uid: SurvivorsMaker.Editor.SerializedRead.Status(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Status(UnityEditor.SerializedProperty)
+  id: Status(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Status(SerializedProperty)
+  nameWithType: SerializedRead.Status(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Status(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static StatusEffectDef Status(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.StatusEffectDef
+    content.vb: Public Shared Function Status(p As SerializedProperty) As StatusEffectDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Status*
+- uid: SurvivorsMaker.Editor.SerializedRead.Hit(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Hit(UnityEditor.SerializedProperty)
+  id: Hit(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Hit(SerializedProperty)
+  nameWithType: SerializedRead.Hit(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Hit(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static HitEffectDef Hit(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.HitEffectDef
+    content.vb: Public Shared Function Hit(p As SerializedProperty) As HitEffectDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Hit*
+- uid: SurvivorsMaker.Editor.SerializedRead.Modifier(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Modifier(UnityEditor.SerializedProperty)
+  id: Modifier(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Modifier(SerializedProperty)
+  nameWithType: SerializedRead.Modifier(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Modifier(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static EliteModifier Modifier(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifier
+    content.vb: Public Shared Function Modifier(p As SerializedProperty) As EliteModifier
+  overload: SurvivorsMaker.Editor.SerializedRead.Modifier*
+- uid: SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedProperty)
+  id: Elite(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Elite(SerializedProperty)
+  nameWithType: SerializedRead.Elite(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Reads an elite from an EliteDef property or from an elite asset's root iterator (same field names).
+  example: []
+  syntax:
+    content: public static EliteDef Elite(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.EliteDef
+    content.vb: Public Shared Function Elite(p As SerializedProperty) As EliteDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Elite*
+- uid: SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedObject)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedObject)
+  id: Elite(UnityEditor.SerializedObject)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Elite(SerializedObject)
+  nameWithType: SerializedRead.Elite(SerializedObject)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Elite(UnityEditor.SerializedObject)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static EliteDef Elite(SerializedObject asset)
+    parameters:
+    - id: asset
+      type: UnityEditor.SerializedObject
+    return:
+      type: SurvivorsMaker.Simulation.EliteDef
+    content.vb: Public Shared Function Elite(asset As SerializedObject) As EliteDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Elite*
+- uid: SurvivorsMaker.Editor.SerializedRead.RootFloat(UnityEditor.SerializedObject,System.String,System.Single)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.RootFloat(UnityEditor.SerializedObject,System.String,System.Single)
+  id: RootFloat(UnityEditor.SerializedObject,System.String,System.Single)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: RootFloat(SerializedObject, string, float)
+  nameWithType: SerializedRead.RootFloat(SerializedObject, string, float)
+  fullName: SurvivorsMaker.Editor.SerializedRead.RootFloat(UnityEditor.SerializedObject, string, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static float RootFloat(SerializedObject asset, string name, float fallback)
+    parameters:
+    - id: asset
+      type: UnityEditor.SerializedObject
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function RootFloat(asset As SerializedObject, name As String, fallback As Single) As Single
+  overload: SurvivorsMaker.Editor.SerializedRead.RootFloat*
+  nameWithType.vb: SerializedRead.RootFloat(SerializedObject, String, Single)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.RootFloat(UnityEditor.SerializedObject, String, Single)
+  name.vb: RootFloat(SerializedObject, String, Single)
+- uid: SurvivorsMaker.Editor.SerializedRead.RootBool(UnityEditor.SerializedObject,System.String,System.Boolean)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.RootBool(UnityEditor.SerializedObject,System.String,System.Boolean)
+  id: RootBool(UnityEditor.SerializedObject,System.String,System.Boolean)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: RootBool(SerializedObject, string, bool)
+  nameWithType: SerializedRead.RootBool(SerializedObject, string, bool)
+  fullName: SurvivorsMaker.Editor.SerializedRead.RootBool(UnityEditor.SerializedObject, string, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static bool RootBool(SerializedObject asset, string name, bool fallback)
+    parameters:
+    - id: asset
+      type: UnityEditor.SerializedObject
+    - id: name
+      type: System.String
+    - id: fallback
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RootBool(asset As SerializedObject, name As String, fallback As Boolean) As Boolean
+  overload: SurvivorsMaker.Editor.SerializedRead.RootBool*
+  nameWithType.vb: SerializedRead.RootBool(SerializedObject, String, Boolean)
+  fullName.vb: SurvivorsMaker.Editor.SerializedRead.RootBool(UnityEditor.SerializedObject, String, Boolean)
+  name.vb: RootBool(SerializedObject, String, Boolean)
+- uid: SurvivorsMaker.Editor.SerializedRead.Trigger(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Trigger(UnityEditor.SerializedProperty)
+  id: Trigger(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Trigger(SerializedProperty)
+  nameWithType: SerializedRead.Trigger(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Trigger(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static TriggerDef Trigger(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.TriggerDef
+    content.vb: Public Shared Function Trigger(p As SerializedProperty) As TriggerDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Trigger*
+- uid: SurvivorsMaker.Editor.SerializedRead.Condition(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Condition(UnityEditor.SerializedProperty)
+  id: Condition(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Condition(SerializedProperty)
+  nameWithType: SerializedRead.Condition(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Condition(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static TriggerCondition Condition(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Simulation.TriggerCondition
+    content.vb: Public Shared Function Condition(p As SerializedProperty) As TriggerCondition
+  overload: SurvivorsMaker.Editor.SerializedRead.Condition*
+- uid: SurvivorsMaker.Editor.SerializedRead.HasRulePayload(SurvivorsMaker.Simulation.TriggerDef)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.HasRulePayload(SurvivorsMaker.Simulation.TriggerDef)
+  id: HasRulePayload(SurvivorsMaker.Simulation.TriggerDef)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: HasRulePayload(TriggerDef)
+  nameWithType: SerializedRead.HasRulePayload(TriggerDef)
+  fullName: SurvivorsMaker.Editor.SerializedRead.HasRulePayload(SurvivorsMaker.Simulation.TriggerDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: True when any rule field differs from its default (the payload a rules toggle would activate).
+  example: []
+  syntax:
+    content: public static bool HasRulePayload(TriggerDef d)
+    parameters:
+    - id: d
+      type: SurvivorsMaker.Simulation.TriggerDef
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasRulePayload(d As TriggerDef) As Boolean
+  overload: SurvivorsMaker.Editor.SerializedRead.HasRulePayload*
+- uid: SurvivorsMaker.Editor.SerializedRead.Unlock(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Unlock(UnityEditor.SerializedProperty)
+  id: Unlock(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Unlock(SerializedProperty)
+  nameWithType: SerializedRead.Unlock(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Unlock(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static UnlockDef Unlock(SerializedProperty p)
+    parameters:
+    - id: p
+      type: UnityEditor.SerializedProperty
+    return:
+      type: SurvivorsMaker.Run.UnlockDef
+    content.vb: Public Shared Function Unlock(p As SerializedProperty) As UnlockDef
+  overload: SurvivorsMaker.Editor.SerializedRead.Unlock*
+- uid: SurvivorsMaker.Editor.SerializedRead.Elements(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.Elements(UnityEditor.SerializedProperty)
+  id: Elements(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: Elements(SerializedProperty)
+  nameWithType: SerializedRead.Elements(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.Elements(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Elements of a serialized array, or an empty list when the array is missing.
+  example: []
+  syntax:
+    content: public static List<SerializedProperty> Elements(SerializedProperty array)
+    parameters:
+    - id: array
+      type: UnityEditor.SerializedProperty
+    return:
+      type: System.Collections.Generic.List{UnityEditor.SerializedProperty}
+    content.vb: Public Shared Function Elements(array As SerializedProperty) As List(Of SerializedProperty)
+  overload: SurvivorsMaker.Editor.SerializedRead.Elements*
+- uid: SurvivorsMaker.Editor.SerializedRead.ReferenceName(UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.SerializedRead.ReferenceName(UnityEditor.SerializedProperty)
+  id: ReferenceName(UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.SerializedRead
+  langs:
+  - csharp
+  - vb
+  name: ReferenceName(SerializedProperty)
+  nameWithType: SerializedRead.ReferenceName(SerializedProperty)
+  fullName: SurvivorsMaker.Editor.SerializedRead.ReferenceName(UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Display name for an id-backed object reference, e.g. an enemy asset in a spawn entry.
+  example: []
+  syntax:
+    content: public static string ReferenceName(SerializedProperty reference)
+    parameters:
+    - id: reference
+      type: UnityEditor.SerializedProperty
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReferenceName(reference As SerializedProperty) As String
+  overload: SurvivorsMaker.Editor.SerializedRead.ReferenceName*
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.SerializedRead.Child*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Child
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Child_UnityEditor_SerializedProperty_System_String_
+  name: Child
+  nameWithType: SerializedRead.Child
+  fullName: SurvivorsMaker.Editor.SerializedRead.Child
+- uid: UnityEditor.SerializedProperty
+  commentId: T:UnityEditor.SerializedProperty
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: SurvivorsMaker.Editor.SerializedRead.Float*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Float
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Float_UnityEditor_SerializedProperty_System_String_System_Single_
+  name: Float
+  nameWithType: SerializedRead.Float
+  fullName: SurvivorsMaker.Editor.SerializedRead.Float
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Editor.SerializedRead.Int*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Int
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Int_UnityEditor_SerializedProperty_System_String_System_Int32_
+  name: Int
+  nameWithType: SerializedRead.Int
+  fullName: SurvivorsMaker.Editor.SerializedRead.Int
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.SerializedRead.Bool*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Bool
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Bool_UnityEditor_SerializedProperty_System_String_System_Boolean_
+  name: Bool
+  nameWithType: SerializedRead.Bool
+  fullName: SurvivorsMaker.Editor.SerializedRead.Bool
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.SerializedRead.String*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.String
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_String_UnityEditor_SerializedProperty_System_String_System_String_
+  name: String
+  nameWithType: SerializedRead.String
+  fullName: SurvivorsMaker.Editor.SerializedRead.String
+- uid: SurvivorsMaker.Editor.SerializedRead.Enum*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Enum
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Enum__1_UnityEditor_SerializedProperty_System_String___0_
+  name: Enum
+  nameWithType: SerializedRead.Enum
+  fullName: SurvivorsMaker.Editor.SerializedRead.Enum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SurvivorsMaker.Editor.SerializedRead.Mixed*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Mixed
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Mixed_UnityEditor_SerializedProperty_System_String_
+  name: Mixed
+  nameWithType: SerializedRead.Mixed
+  fullName: SurvivorsMaker.Editor.SerializedRead.Mixed
+- uid: SurvivorsMaker.Editor.SerializedRead.Status*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Status
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Status_UnityEditor_SerializedProperty_
+  name: Status
+  nameWithType: SerializedRead.Status
+  fullName: SurvivorsMaker.Editor.SerializedRead.Status
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Editor.SerializedRead.Hit*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Hit
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Hit_UnityEditor_SerializedProperty_
+  name: Hit
+  nameWithType: SerializedRead.Hit
+  fullName: SurvivorsMaker.Editor.SerializedRead.Hit
+- uid: SurvivorsMaker.Simulation.HitEffectDef
+  commentId: T:SurvivorsMaker.Simulation.HitEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HitEffectDef.html
+  name: HitEffectDef
+  nameWithType: HitEffectDef
+  fullName: SurvivorsMaker.Simulation.HitEffectDef
+- uid: SurvivorsMaker.Editor.SerializedRead.Modifier*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Modifier
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Modifier_UnityEditor_SerializedProperty_
+  name: Modifier
+  nameWithType: SerializedRead.Modifier
+  fullName: SurvivorsMaker.Editor.SerializedRead.Modifier
+- uid: SurvivorsMaker.Simulation.EliteModifier
+  commentId: T:SurvivorsMaker.Simulation.EliteModifier
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EliteModifier.html
+  name: EliteModifier
+  nameWithType: EliteModifier
+  fullName: SurvivorsMaker.Simulation.EliteModifier
+- uid: SurvivorsMaker.Editor.SerializedRead.Elite*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Elite
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Elite_UnityEditor_SerializedProperty_
+  name: Elite
+  nameWithType: SerializedRead.Elite
+  fullName: SurvivorsMaker.Editor.SerializedRead.Elite
+- uid: SurvivorsMaker.Simulation.EliteDef
+  commentId: T:SurvivorsMaker.Simulation.EliteDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EliteDef.html
+  name: EliteDef
+  nameWithType: EliteDef
+  fullName: SurvivorsMaker.Simulation.EliteDef
+- uid: UnityEditor.SerializedObject
+  commentId: T:UnityEditor.SerializedObject
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedObject
+  nameWithType: SerializedObject
+  fullName: UnityEditor.SerializedObject
+- uid: SurvivorsMaker.Editor.SerializedRead.RootFloat*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.RootFloat
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_RootFloat_UnityEditor_SerializedObject_System_String_System_Single_
+  name: RootFloat
+  nameWithType: SerializedRead.RootFloat
+  fullName: SurvivorsMaker.Editor.SerializedRead.RootFloat
+- uid: SurvivorsMaker.Editor.SerializedRead.RootBool*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.RootBool
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_RootBool_UnityEditor_SerializedObject_System_String_System_Boolean_
+  name: RootBool
+  nameWithType: SerializedRead.RootBool
+  fullName: SurvivorsMaker.Editor.SerializedRead.RootBool
+- uid: SurvivorsMaker.Editor.SerializedRead.Trigger*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Trigger
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Trigger_UnityEditor_SerializedProperty_
+  name: Trigger
+  nameWithType: SerializedRead.Trigger
+  fullName: SurvivorsMaker.Editor.SerializedRead.Trigger
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+- uid: SurvivorsMaker.Editor.SerializedRead.Condition*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Condition
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Condition_UnityEditor_SerializedProperty_
+  name: Condition
+  nameWithType: SerializedRead.Condition
+  fullName: SurvivorsMaker.Editor.SerializedRead.Condition
+- uid: SurvivorsMaker.Simulation.TriggerCondition
+  commentId: T:SurvivorsMaker.Simulation.TriggerCondition
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerCondition.html
+  name: TriggerCondition
+  nameWithType: TriggerCondition
+  fullName: SurvivorsMaker.Simulation.TriggerCondition
+- uid: SurvivorsMaker.Editor.SerializedRead.HasRulePayload*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.HasRulePayload
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_HasRulePayload_SurvivorsMaker_Simulation_TriggerDef_
+  name: HasRulePayload
+  nameWithType: SerializedRead.HasRulePayload
+  fullName: SurvivorsMaker.Editor.SerializedRead.HasRulePayload
+- uid: SurvivorsMaker.Editor.SerializedRead.Unlock*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Unlock
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Unlock_UnityEditor_SerializedProperty_
+  name: Unlock
+  nameWithType: SerializedRead.Unlock
+  fullName: SurvivorsMaker.Editor.SerializedRead.Unlock
+- uid: SurvivorsMaker.Run.UnlockDef
+  commentId: T:SurvivorsMaker.Run.UnlockDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.UnlockDef.html
+  name: UnlockDef
+  nameWithType: UnlockDef
+  fullName: SurvivorsMaker.Run.UnlockDef
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Editor.SerializedRead.Elements*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.Elements
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_Elements_UnityEditor_SerializedProperty_
+  name: Elements
+  nameWithType: SerializedRead.Elements
+  fullName: SurvivorsMaker.Editor.SerializedRead.Elements
+- uid: System.Collections.Generic.List{UnityEditor.SerializedProperty}
+  commentId: T:System.Collections.Generic.List{UnityEditor.SerializedProperty}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SerializedProperty>
+  nameWithType: List<SerializedProperty>
+  fullName: System.Collections.Generic.List<UnityEditor.SerializedProperty>
+  nameWithType.vb: List(Of SerializedProperty)
+  fullName.vb: System.Collections.Generic.List(Of UnityEditor.SerializedProperty)
+  name.vb: List(Of SerializedProperty)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.SerializedRead.ReferenceName*
+  commentId: Overload:SurvivorsMaker.Editor.SerializedRead.ReferenceName
+  isExternal: true
+  href: SurvivorsMaker.Editor.SerializedRead.html#SurvivorsMaker_Editor_SerializedRead_ReferenceName_UnityEditor_SerializedProperty_
+  name: ReferenceName
+  nameWithType: SerializedRead.ReferenceName
+  fullName: SurvivorsMaker.Editor.SerializedRead.ReferenceName

@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimEvent
+  commentId: T:SurvivorsMaker.Simulation.SimEvent
+  id: SimEvent
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimEvent.Amount
+  - SurvivorsMaker.Simulation.SimEvent.CustomId
+  - SurvivorsMaker.Simulation.SimEvent.IsCrit
+  - SurvivorsMaker.Simulation.SimEvent.Kind
+  - SurvivorsMaker.Simulation.SimEvent.Position
+  - SurvivorsMaker.Simulation.SimEvent.Slot
+  - SurvivorsMaker.Simulation.SimEvent.SourceId
+  - SurvivorsMaker.Simulation.SimEvent.TargetId
+  - SurvivorsMaker.Simulation.SimEvent.Tick
+  - SurvivorsMaker.Simulation.SimEvent.ToString
+  langs:
+  - csharp
+  - vb
+  name: SimEvent
+  nameWithType: SimEvent
+  fullName: SurvivorsMaker.Simulation.SimEvent
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Something that happened during one tick, for presentation and replays. Plain values only, so
+
+    events can be kept after the entities they mention are gone.'
+  example: []
+  syntax:
+    content: public struct SimEvent
+    content.vb: Public Structure SimEvent
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.SimEvent.Kind
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.Kind
+  id: Kind
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: SimEvent.Kind
+  fullName: SurvivorsMaker.Simulation.SimEvent.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimEventKind Kind
+    return:
+      type: SurvivorsMaker.Simulation.SimEventKind
+    content.vb: Public Kind As SimEventKind
+- uid: SurvivorsMaker.Simulation.SimEvent.Tick
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.Tick
+  id: Tick
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: Tick
+  nameWithType: SimEvent.Tick
+  fullName: SurvivorsMaker.Simulation.SimEvent.Tick
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Tick
+    return:
+      type: System.Int32
+    content.vb: Public Tick As Integer
+- uid: SurvivorsMaker.Simulation.SimEvent.SourceId
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.SourceId
+  id: SourceId
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: SourceId
+  nameWithType: SimEvent.SourceId
+  fullName: SurvivorsMaker.Simulation.SimEvent.SourceId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int SourceId
+    return:
+      type: System.Int32
+    content.vb: Public SourceId As Integer
+- uid: SurvivorsMaker.Simulation.SimEvent.TargetId
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.TargetId
+  id: TargetId
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: TargetId
+  nameWithType: SimEvent.TargetId
+  fullName: SurvivorsMaker.Simulation.SimEvent.TargetId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int TargetId
+    return:
+      type: System.Int32
+    content.vb: Public TargetId As Integer
+- uid: SurvivorsMaker.Simulation.SimEvent.Slot
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.Slot
+  id: Slot
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: Slot
+  nameWithType: SimEvent.Slot
+  fullName: SurvivorsMaker.Simulation.SimEvent.Slot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Weapon slot, or -1.
+  example: []
+  syntax:
+    content: public int Slot
+    return:
+      type: System.Int32
+    content.vb: Public Slot As Integer
+- uid: SurvivorsMaker.Simulation.SimEvent.Position
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.Position
+  id: Position
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: SimEvent.Position
+  fullName: SurvivorsMaker.Simulation.SimEvent.Position
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Vec2 Position
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Position As Vec2
+- uid: SurvivorsMaker.Simulation.SimEvent.Amount
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.Amount
+  id: Amount
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: SimEvent.Amount
+  fullName: SurvivorsMaker.Simulation.SimEvent.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Amount
+    return:
+      type: System.Single
+    content.vb: Public Amount As Single
+- uid: SurvivorsMaker.Simulation.SimEvent.IsCrit
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.IsCrit
+  id: IsCrit
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: IsCrit
+  nameWithType: SimEvent.IsCrit
+  fullName: SurvivorsMaker.Simulation.SimEvent.IsCrit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool IsCrit
+    return:
+      type: System.Boolean
+    content.vb: Public IsCrit As Boolean
+- uid: SurvivorsMaker.Simulation.SimEvent.CustomId
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.CustomId
+  id: CustomId
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: CustomId
+  nameWithType: SimEvent.CustomId
+  fullName: SurvivorsMaker.Simulation.SimEvent.CustomId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Custom events: the sender''s id (e.g. "mine_armed"). Built-in events may set it for detail (e.g. the status behaviour
+    id).'
+  example: []
+  syntax:
+    content: public string CustomId
+    return:
+      type: System.String
+    content.vb: Public CustomId As String
+- uid: SurvivorsMaker.Simulation.SimEvent.ToString
+  commentId: M:SurvivorsMaker.Simulation.SimEvent.ToString
+  id: ToString
+  parent: SurvivorsMaker.Simulation.SimEvent
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SimEvent.ToString()
+  fullName: SurvivorsMaker.Simulation.SimEvent.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: SurvivorsMaker.Simulation.SimEvent.ToString*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.SimEventKind
+  commentId: T:SurvivorsMaker.Simulation.SimEventKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEventKind.html
+  name: SimEventKind
+  nameWithType: SimEventKind
+  fullName: SurvivorsMaker.Simulation.SimEventKind
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimEvent.ToString*
+  commentId: Overload:SurvivorsMaker.Simulation.SimEvent.ToString
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEvent.html#SurvivorsMaker_Simulation_SimEvent_ToString
+  name: ToString
+  nameWithType: SimEvent.ToString
+  fullName: SurvivorsMaker.Simulation.SimEvent.ToString

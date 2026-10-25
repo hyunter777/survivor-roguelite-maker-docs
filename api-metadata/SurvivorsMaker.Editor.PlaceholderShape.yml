@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.PlaceholderShape
+  commentId: T:SurvivorsMaker.Editor.PlaceholderShape
+  id: PlaceholderShape
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.PlaceholderShape.Checker
+  - SurvivorsMaker.Editor.PlaceholderShape.Circle
+  - SurvivorsMaker.Editor.PlaceholderShape.Diamond
+  - SurvivorsMaker.Editor.PlaceholderShape.Ring
+  - SurvivorsMaker.Editor.PlaceholderShape.Square
+  - SurvivorsMaker.Editor.PlaceholderShape.Star
+  - SurvivorsMaker.Editor.PlaceholderShape.Triangle
+  langs:
+  - csharp
+  - vb
+  name: PlaceholderShape
+  nameWithType: PlaceholderShape
+  fullName: SurvivorsMaker.Editor.PlaceholderShape
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum PlaceholderShape
+    content.vb: Public Enum PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Circle
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Circle
+  id: Circle
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Circle
+  nameWithType: PlaceholderShape.Circle
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Circle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Circle = 0
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Square
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Square
+  id: Square
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Square
+  nameWithType: PlaceholderShape.Square
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Square
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Square = 1
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Diamond
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Diamond
+  id: Diamond
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Diamond
+  nameWithType: PlaceholderShape.Diamond
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Diamond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Diamond = 2
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Triangle
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Triangle
+  id: Triangle
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Triangle
+  nameWithType: PlaceholderShape.Triangle
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Triangle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Triangle = 3
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Ring
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Ring
+  id: Ring
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Ring
+  nameWithType: PlaceholderShape.Ring
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Ring
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Ring = 4
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Star
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Star
+  id: Star
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Star
+  nameWithType: PlaceholderShape.Star
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Star
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Star = 5
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+- uid: SurvivorsMaker.Editor.PlaceholderShape.Checker
+  commentId: F:SurvivorsMaker.Editor.PlaceholderShape.Checker
+  id: Checker
+  parent: SurvivorsMaker.Editor.PlaceholderShape
+  langs:
+  - csharp
+  - vb
+  name: Checker
+  nameWithType: PlaceholderShape.Checker
+  fullName: SurvivorsMaker.Editor.PlaceholderShape.Checker
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Checker = 6
+    return:
+      type: SurvivorsMaker.Editor.PlaceholderShape
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.PlaceholderShape
+  commentId: T:SurvivorsMaker.Editor.PlaceholderShape
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.PlaceholderShape.html
+  name: PlaceholderShape
+  nameWithType: PlaceholderShape
+  fullName: SurvivorsMaker.Editor.PlaceholderShape

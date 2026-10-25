@@ -1,0 +1,670 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.ShopSettings
+  commentId: T:SurvivorsMaker.Run.ShopSettings
+  id: ShopSettings
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.ShopSettings.#ctor
+  - SurvivorsMaker.Run.ShopSettings.LockKeepsPrice
+  - SurvivorsMaker.Run.ShopSettings.MergeOnFullSlots
+  - SurvivorsMaker.Run.ShopSettings.MinPrice
+  - SurvivorsMaker.Run.ShopSettings.MinRefund
+  - SurvivorsMaker.Run.ShopSettings.MinRerollBase
+  - SurvivorsMaker.Run.ShopSettings.MinRerollStep
+  - SurvivorsMaker.Run.ShopSettings.PriceBase
+  - SurvivorsMaker.Run.ShopSettings.PricePerWave
+  - SurvivorsMaker.Run.ShopSettings.PriceStartWave
+  - SurvivorsMaker.Run.ShopSettings.RecycleRatio
+  - SurvivorsMaker.Run.ShopSettings.RerollBasePerWave
+  - SurvivorsMaker.Run.ShopSettings.RerollStepPerWave
+  - SurvivorsMaker.Run.ShopSettings.Slots
+  - SurvivorsMaker.Run.ShopSettings.Tiers
+  - SurvivorsMaker.Run.ShopSettings.WeaponChance
+  - SurvivorsMaker.Run.ShopSettings.WeaponSlots
+  langs:
+  - csharp
+  - vb
+  name: ShopSettings
+  nameWithType: ShopSettings
+  fullName: SurvivorsMaker.Run.ShopSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public sealed class ShopSettings
+    content.vb: Public NotInheritable Class ShopSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.ShopSettings.Slots
+  commentId: F:SurvivorsMaker.Run.ShopSettings.Slots
+  id: Slots
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: Slots
+  nameWithType: ShopSettings.Slots
+  fullName: SurvivorsMaker.Run.ShopSettings.Slots
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Slots
+    return:
+      type: System.Int32
+    content.vb: Public Slots As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.WeaponChance
+  commentId: F:SurvivorsMaker.Run.ShopSettings.WeaponChance
+  id: WeaponChance
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponChance
+  nameWithType: ShopSettings.WeaponChance
+  fullName: SurvivorsMaker.Run.ShopSettings.WeaponChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Chance (0–1) a slot offers a weapon instead of an item.
+  example: []
+  syntax:
+    content: public float WeaponChance
+    return:
+      type: System.Single
+    content.vb: Public WeaponChance As Single
+- uid: SurvivorsMaker.Run.ShopSettings.Tiers
+  commentId: F:SurvivorsMaker.Run.ShopSettings.Tiers
+  id: Tiers
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: Tiers
+  nameWithType: ShopSettings.Tiers
+  fullName: SurvivorsMaker.Run.ShopSettings.Tiers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public TierTable Tiers
+    return:
+      type: SurvivorsMaker.Run.TierTable
+    content.vb: Public Tiers As TierTable
+- uid: SurvivorsMaker.Run.ShopSettings.PriceBase
+  commentId: F:SurvivorsMaker.Run.ShopSettings.PriceBase
+  id: PriceBase
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: PriceBase
+  nameWithType: ShopSettings.PriceBase
+  fullName: SurvivorsMaker.Run.ShopSettings.PriceBase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Price = round(BasePrice × (PriceBase + max(0, wave − PriceStartWave) × PricePerWave)), at least MinPrice.
+  example: []
+  syntax:
+    content: public float PriceBase
+    return:
+      type: System.Single
+    content.vb: Public PriceBase As Single
+- uid: SurvivorsMaker.Run.ShopSettings.PriceStartWave
+  commentId: F:SurvivorsMaker.Run.ShopSettings.PriceStartWave
+  id: PriceStartWave
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: PriceStartWave
+  nameWithType: ShopSettings.PriceStartWave
+  fullName: SurvivorsMaker.Run.ShopSettings.PriceStartWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int PriceStartWave
+    return:
+      type: System.Int32
+    content.vb: Public PriceStartWave As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.PricePerWave
+  commentId: F:SurvivorsMaker.Run.ShopSettings.PricePerWave
+  id: PricePerWave
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: PricePerWave
+  nameWithType: ShopSettings.PricePerWave
+  fullName: SurvivorsMaker.Run.ShopSettings.PricePerWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float PricePerWave
+    return:
+      type: System.Single
+    content.vb: Public PricePerWave As Single
+- uid: SurvivorsMaker.Run.ShopSettings.MinPrice
+  commentId: F:SurvivorsMaker.Run.ShopSettings.MinPrice
+  id: MinPrice
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: MinPrice
+  nameWithType: ShopSettings.MinPrice
+  fullName: SurvivorsMaker.Run.ShopSettings.MinPrice
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int MinPrice
+    return:
+      type: System.Int32
+    content.vb: Public MinPrice As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.RerollBasePerWave
+  commentId: F:SurvivorsMaker.Run.ShopSettings.RerollBasePerWave
+  id: RerollBasePerWave
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: RerollBasePerWave
+  nameWithType: ShopSettings.RerollBasePerWave
+  fullName: SurvivorsMaker.Run.ShopSettings.RerollBasePerWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Reroll cost = max(MinRerollBase, round(wave × RerollBasePerWave)) + rerolls × max(MinRerollStep, round(wave × RerollStepPerWave)).
+  example: []
+  syntax:
+    content: public float RerollBasePerWave
+    return:
+      type: System.Single
+    content.vb: Public RerollBasePerWave As Single
+- uid: SurvivorsMaker.Run.ShopSettings.MinRerollBase
+  commentId: F:SurvivorsMaker.Run.ShopSettings.MinRerollBase
+  id: MinRerollBase
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: MinRerollBase
+  nameWithType: ShopSettings.MinRerollBase
+  fullName: SurvivorsMaker.Run.ShopSettings.MinRerollBase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int MinRerollBase
+    return:
+      type: System.Int32
+    content.vb: Public MinRerollBase As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.RerollStepPerWave
+  commentId: F:SurvivorsMaker.Run.ShopSettings.RerollStepPerWave
+  id: RerollStepPerWave
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: RerollStepPerWave
+  nameWithType: ShopSettings.RerollStepPerWave
+  fullName: SurvivorsMaker.Run.ShopSettings.RerollStepPerWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float RerollStepPerWave
+    return:
+      type: System.Single
+    content.vb: Public RerollStepPerWave As Single
+- uid: SurvivorsMaker.Run.ShopSettings.MinRerollStep
+  commentId: F:SurvivorsMaker.Run.ShopSettings.MinRerollStep
+  id: MinRerollStep
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: MinRerollStep
+  nameWithType: ShopSettings.MinRerollStep
+  fullName: SurvivorsMaker.Run.ShopSettings.MinRerollStep
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int MinRerollStep
+    return:
+      type: System.Int32
+    content.vb: Public MinRerollStep As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.RecycleRatio
+  commentId: F:SurvivorsMaker.Run.ShopSettings.RecycleRatio
+  id: RecycleRatio
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: RecycleRatio
+  nameWithType: ShopSettings.RecycleRatio
+  fullName: SurvivorsMaker.Run.ShopSettings.RecycleRatio
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Recycle refund = round(current price × RecycleRatio), at least MinRefund.
+  example: []
+  syntax:
+    content: public float RecycleRatio
+    return:
+      type: System.Single
+    content.vb: Public RecycleRatio As Single
+- uid: SurvivorsMaker.Run.ShopSettings.MinRefund
+  commentId: F:SurvivorsMaker.Run.ShopSettings.MinRefund
+  id: MinRefund
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: MinRefund
+  nameWithType: ShopSettings.MinRefund
+  fullName: SurvivorsMaker.Run.ShopSettings.MinRefund
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int MinRefund
+    return:
+      type: System.Int32
+    content.vb: Public MinRefund As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.WeaponSlots
+  commentId: F:SurvivorsMaker.Run.ShopSettings.WeaponSlots
+  id: WeaponSlots
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponSlots
+  nameWithType: ShopSettings.WeaponSlots
+  fullName: SurvivorsMaker.Run.ShopSettings.WeaponSlots
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int WeaponSlots
+    return:
+      type: System.Int32
+    content.vb: Public WeaponSlots As Integer
+- uid: SurvivorsMaker.Run.ShopSettings.MergeOnFullSlots
+  commentId: F:SurvivorsMaker.Run.ShopSettings.MergeOnFullSlots
+  id: MergeOnFullSlots
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: MergeOnFullSlots
+  nameWithType: ShopSettings.MergeOnFullSlots
+  fullName: SurvivorsMaker.Run.ShopSettings.MergeOnFullSlots
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Buying a weapon with full slots merges it into an owned copy when it has a next tier.
+  example: []
+  syntax:
+    content: public bool MergeOnFullSlots
+    return:
+      type: System.Boolean
+    content.vb: Public MergeOnFullSlots As Boolean
+- uid: SurvivorsMaker.Run.ShopSettings.LockKeepsPrice
+  commentId: F:SurvivorsMaker.Run.ShopSettings.LockKeepsPrice
+  id: LockKeepsPrice
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: LockKeepsPrice
+  nameWithType: ShopSettings.LockKeepsPrice
+  fullName: SurvivorsMaker.Run.ShopSettings.LockKeepsPrice
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Locked offers keep their old price into later shops.
+  example: []
+  syntax:
+    content: public bool LockKeepsPrice
+    return:
+      type: System.Boolean
+    content.vb: Public LockKeepsPrice As Boolean
+- uid: SurvivorsMaker.Run.ShopSettings.#ctor
+  commentId: M:SurvivorsMaker.Run.ShopSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.ShopSettings
+  langs:
+  - csharp
+  - vb
+  name: ShopSettings()
+  nameWithType: ShopSettings.ShopSettings()
+  fullName: SurvivorsMaker.Run.ShopSettings.ShopSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public ShopSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.ShopSettings.#ctor*
+  nameWithType.vb: ShopSettings.New()
+  fullName.vb: SurvivorsMaker.Run.ShopSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Run.TierTable
+  commentId: T:SurvivorsMaker.Run.TierTable
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.TierTable.html
+  name: TierTable
+  nameWithType: TierTable
+  fullName: SurvivorsMaker.Run.TierTable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.ShopSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.ShopSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.ShopSettings.html#SurvivorsMaker_Run_ShopSettings__ctor
+  name: ShopSettings
+  nameWithType: ShopSettings.ShopSettings
+  fullName: SurvivorsMaker.Run.ShopSettings.ShopSettings
+  nameWithType.vb: ShopSettings.New
+  fullName.vb: SurvivorsMaker.Run.ShopSettings.New
+  name.vb: New

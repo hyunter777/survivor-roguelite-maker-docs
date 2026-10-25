@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimBehaviours
+  commentId: T:SurvivorsMaker.Simulation.SimBehaviours
+  id: SimBehaviours
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimBehaviours.#ctor
+  - SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  - SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  - SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.MovementDef)
+  - SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.SpecialAttackDef)
+  - SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.StatusEffectDef)
+  - SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.WeaponDef)
+  - SurvivorsMaker.Simulation.SimBehaviours.Movements
+  - SurvivorsMaker.Simulation.SimBehaviours.Pickups
+  - SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  - SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  langs:
+  - csharp
+  - vb
+  name: SimBehaviours
+  nameWithType: SimBehaviours
+  fullName: SurvivorsMaker.Simulation.SimBehaviours
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'The behaviour registries of a simulation (<xref href="SurvivorsMaker.Simulation.SimSystems.Behaviours" data-throw-if-not-resolved="false"></xref>).
+    Each built-in
+
+    system folder fills its registry through a partial method, so <xref href="SurvivorsMaker.Simulation.SimBehaviours.CreateDefault"
+    data-throw-if-not-resolved="false"></xref>
+
+    has every built-in behaviour.'
+  example: []
+  syntax:
+    content: public sealed class SimBehaviours
+    content.vb: Public NotInheritable Class SimBehaviours
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: SimBehaviours.Weapons
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly BehaviourRegistry<IWeaponBehaviour> Weapons
+    return:
+      type: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IWeaponBehaviour}
+    content.vb: Public ReadOnly Weapons As BehaviourRegistry(Of IWeaponBehaviour)
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Movements
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Movements
+  id: Movements
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: Movements
+  nameWithType: SimBehaviours.Movements
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Movements
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly BehaviourRegistry<IEnemyMovement> Movements
+    return:
+      type: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyMovement}
+    content.vb: Public ReadOnly Movements As BehaviourRegistry(Of IEnemyMovement)
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  id: Attacks
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: Attacks
+  nameWithType: SimBehaviours.Attacks
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly BehaviourRegistry<IEnemyAttack> Attacks
+    return:
+      type: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyAttack}
+    content.vb: Public ReadOnly Attacks As BehaviourRegistry(Of IEnemyAttack)
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  id: Statuses
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: Statuses
+  nameWithType: SimBehaviours.Statuses
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Statuses
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly BehaviourRegistry<IStatusBehaviour> Statuses
+    return:
+      type: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IStatusBehaviour}
+    content.vb: Public ReadOnly Statuses As BehaviourRegistry(Of IStatusBehaviour)
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Pickups
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Pickups
+  id: Pickups
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: Pickups
+  nameWithType: SimBehaviours.Pickups
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Pickups
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly BehaviourRegistry<IPickupBehaviour> Pickups
+    return:
+      type: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IPickupBehaviour}
+    content.vb: Public ReadOnly Pickups As BehaviourRegistry(Of IPickupBehaviour)
+- uid: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  id: CreateDefault
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: CreateDefault()
+  nameWithType: SimBehaviours.CreateDefault()
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static SimBehaviours CreateDefault()
+    return:
+      type: SurvivorsMaker.Simulation.SimBehaviours
+    content.vb: Public Shared Function CreateDefault() As SimBehaviours
+  overload: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault*
+- uid: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.WeaponDef)
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.WeaponDef)
+  id: IdOf(SurvivorsMaker.Simulation.WeaponDef)
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: IdOf(WeaponDef)
+  nameWithType: SimBehaviours.IdOf(WeaponDef)
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.WeaponDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'The behaviour id a weapon uses: its Behaviour id, or the built-in id of its kind.'
+  example: []
+  syntax:
+    content: public static string IdOf(WeaponDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.WeaponDef
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdOf(def As WeaponDef) As String
+  overload: SurvivorsMaker.Simulation.SimBehaviours.IdOf*
+- uid: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.MovementDef)
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.MovementDef)
+  id: IdOf(SurvivorsMaker.Simulation.MovementDef)
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: IdOf(MovementDef)
+  nameWithType: SimBehaviours.IdOf(MovementDef)
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.MovementDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static string IdOf(MovementDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.MovementDef
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdOf(def As MovementDef) As String
+  overload: SurvivorsMaker.Simulation.SimBehaviours.IdOf*
+- uid: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.SpecialAttackDef)
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.SpecialAttackDef)
+  id: IdOf(SurvivorsMaker.Simulation.SpecialAttackDef)
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: IdOf(SpecialAttackDef)
+  nameWithType: SimBehaviours.IdOf(SpecialAttackDef)
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.SpecialAttackDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Empty when the enemy has no special attack.
+  example: []
+  syntax:
+    content: public static string IdOf(SpecialAttackDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.SpecialAttackDef
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdOf(def As SpecialAttackDef) As String
+  overload: SurvivorsMaker.Simulation.SimBehaviours.IdOf*
+- uid: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.StatusEffectDef)
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.StatusEffectDef)
+  id: IdOf(SurvivorsMaker.Simulation.StatusEffectDef)
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: IdOf(StatusEffectDef)
+  nameWithType: SimBehaviours.IdOf(StatusEffectDef)
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.IdOf(SurvivorsMaker.Simulation.StatusEffectDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static string IdOf(StatusEffectDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.StatusEffectDef
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdOf(def As StatusEffectDef) As String
+  overload: SurvivorsMaker.Simulation.SimBehaviours.IdOf*
+- uid: SurvivorsMaker.Simulation.SimBehaviours.#ctor
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.SimBehaviours
+  langs:
+  - csharp
+  - vb
+  name: SimBehaviours()
+  nameWithType: SimBehaviours.SimBehaviours()
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.SimBehaviours()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimBehaviours()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.SimBehaviours.#ctor*
+  nameWithType.vb: SimBehaviours.New()
+  fullName.vb: SurvivorsMaker.Simulation.SimBehaviours.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation.SimSystems.Behaviours
+  commentId: F:SurvivorsMaker.Simulation.SimSystems.Behaviours
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSystems.html#SurvivorsMaker_Simulation_SimSystems_Behaviours
+  name: Behaviours
+  nameWithType: SimSystems.Behaviours
+  fullName: SurvivorsMaker.Simulation.SimSystems.Behaviours
+- uid: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  commentId: M:SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_CreateDefault
+  name: CreateDefault()
+  nameWithType: SimBehaviours.CreateDefault()
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault()
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+    name: CreateDefault
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_CreateDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+    name: CreateDefault
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_CreateDefault
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IWeaponBehaviour}
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IWeaponBehaviour}
+  parent: SurvivorsMaker.Simulation
+  definition: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<IWeaponBehaviour>
+  nameWithType: BehaviourRegistry<IWeaponBehaviour>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<SurvivorsMaker.Simulation.IWeaponBehaviour>
+  nameWithType.vb: BehaviourRegistry(Of IWeaponBehaviour)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of SurvivorsMaker.Simulation.IWeaponBehaviour)
+  name.vb: BehaviourRegistry(Of IWeaponBehaviour)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - uid: SurvivorsMaker.Simulation.IWeaponBehaviour
+    name: IWeaponBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponBehaviour.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.IWeaponBehaviour
+    name: IWeaponBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IWeaponBehaviour.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry`1
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<T>
+  nameWithType: BehaviourRegistry<T>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<T>
+  nameWithType.vb: BehaviourRegistry(Of T)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of T)
+  name.vb: BehaviourRegistry(Of T)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyMovement}
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyMovement}
+  parent: SurvivorsMaker.Simulation
+  definition: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<IEnemyMovement>
+  nameWithType: BehaviourRegistry<IEnemyMovement>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<SurvivorsMaker.Simulation.IEnemyMovement>
+  nameWithType.vb: BehaviourRegistry(Of IEnemyMovement)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of SurvivorsMaker.Simulation.IEnemyMovement)
+  name.vb: BehaviourRegistry(Of IEnemyMovement)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - uid: SurvivorsMaker.Simulation.IEnemyMovement
+    name: IEnemyMovement
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IEnemyMovement.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.IEnemyMovement
+    name: IEnemyMovement
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IEnemyMovement.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyAttack}
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IEnemyAttack}
+  parent: SurvivorsMaker.Simulation
+  definition: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<IEnemyAttack>
+  nameWithType: BehaviourRegistry<IEnemyAttack>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<SurvivorsMaker.Simulation.IEnemyAttack>
+  nameWithType.vb: BehaviourRegistry(Of IEnemyAttack)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of SurvivorsMaker.Simulation.IEnemyAttack)
+  name.vb: BehaviourRegistry(Of IEnemyAttack)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - uid: SurvivorsMaker.Simulation.IEnemyAttack
+    name: IEnemyAttack
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IEnemyAttack.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.IEnemyAttack
+    name: IEnemyAttack
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IEnemyAttack.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IStatusBehaviour}
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IStatusBehaviour}
+  parent: SurvivorsMaker.Simulation
+  definition: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<IStatusBehaviour>
+  nameWithType: BehaviourRegistry<IStatusBehaviour>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<SurvivorsMaker.Simulation.IStatusBehaviour>
+  nameWithType.vb: BehaviourRegistry(Of IStatusBehaviour)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of SurvivorsMaker.Simulation.IStatusBehaviour)
+  name.vb: BehaviourRegistry(Of IStatusBehaviour)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - uid: SurvivorsMaker.Simulation.IStatusBehaviour
+    name: IStatusBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IStatusBehaviour.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.IStatusBehaviour
+    name: IStatusBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IStatusBehaviour.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IPickupBehaviour}
+  commentId: T:SurvivorsMaker.Simulation.BehaviourRegistry{SurvivorsMaker.Simulation.IPickupBehaviour}
+  parent: SurvivorsMaker.Simulation
+  definition: SurvivorsMaker.Simulation.BehaviourRegistry`1
+  href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  name: BehaviourRegistry<IPickupBehaviour>
+  nameWithType: BehaviourRegistry<IPickupBehaviour>
+  fullName: SurvivorsMaker.Simulation.BehaviourRegistry<SurvivorsMaker.Simulation.IPickupBehaviour>
+  nameWithType.vb: BehaviourRegistry(Of IPickupBehaviour)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourRegistry(Of SurvivorsMaker.Simulation.IPickupBehaviour)
+  name.vb: BehaviourRegistry(Of IPickupBehaviour)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: <
+  - uid: SurvivorsMaker.Simulation.IPickupBehaviour
+    name: IPickupBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IPickupBehaviour.html
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.BehaviourRegistry`1
+    name: BehaviourRegistry
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourRegistry-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.IPickupBehaviour
+    name: IPickupBehaviour
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IPickupBehaviour.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault*
+  commentId: Overload:SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_CreateDefault
+  name: CreateDefault
+  nameWithType: SimBehaviours.CreateDefault
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.CreateDefault
+- uid: SurvivorsMaker.Simulation.SimBehaviours
+  commentId: T:SurvivorsMaker.Simulation.SimBehaviours
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html
+  name: SimBehaviours
+  nameWithType: SimBehaviours
+  fullName: SurvivorsMaker.Simulation.SimBehaviours
+- uid: SurvivorsMaker.Simulation.SimBehaviours.IdOf*
+  commentId: Overload:SurvivorsMaker.Simulation.SimBehaviours.IdOf
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_IdOf_SurvivorsMaker_Simulation_WeaponDef_
+  name: IdOf
+  nameWithType: SimBehaviours.IdOf
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.IdOf
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.MovementDef
+  commentId: T:SurvivorsMaker.Simulation.MovementDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MovementDef.html
+  name: MovementDef
+  nameWithType: MovementDef
+  fullName: SurvivorsMaker.Simulation.MovementDef
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+- uid: SurvivorsMaker.Simulation.SimBehaviours.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SimBehaviours.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours__ctor
+  name: SimBehaviours
+  nameWithType: SimBehaviours.SimBehaviours
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.SimBehaviours
+  nameWithType.vb: SimBehaviours.New
+  fullName.vb: SurvivorsMaker.Simulation.SimBehaviours.New
+  name.vb: New

@@ -1,0 +1,960 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.AudioCueRules
+  commentId: T:SurvivorsMaker.Presentation.AudioCueRules
+  id: AudioCueRules
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.AudioCueRules.BossAlive(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Presentation.AudioCueRules.CustomCue(System.String,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound})
+  - SurvivorsMaker.Presentation.AudioCueRules.FindTrigger(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  - SurvivorsMaker.Presentation.AudioCueRules.FindWeapon(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  - SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  - SurvivorsMaker.Presentation.AudioCueRules.StatusCue(System.Int32,SurvivorsMaker.Presentation.SoundCueKeys)
+  - SurvivorsMaker.Presentation.AudioCueRules.WeaponCue(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Simulation.MeleeStyle,SurvivorsMaker.Presentation.SoundCueKeys,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: AudioCueRules
+  nameWithType: AudioCueRules
+  fullName: SurvivorsMaker.Presentation.AudioCueRules
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Pure cue selection and playback-limit calculations shared by sound components.
+  example: []
+  syntax:
+    content: public static class AudioCueRules
+    content.vb: Public Module AudioCueRules
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  id: ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList<WeaponSoundOverride>, bool)
+  nameWithType: AudioCueRules.ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList<WeaponSoundOverride>,
+    bool)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent, SurvivorsMaker.Presentation.SoundCueKeys,
+    SurvivorsMaker.Simulation.WeaponState, SurvivorsMaker.Simulation.TriggerDef, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.WeaponSoundOverride>,
+    bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The cue key a simulation event plays, or "" for none. <code class="paramref">weapon</code> is the firing weapon
+    for
+
+    <xref href="SurvivorsMaker.Simulation.SimEventKind.WeaponFired" data-throw-if-not-resolved="false"></xref> and <code class="paramref">trigger</code>
+    the fired trigger for
+
+    <xref href="SurvivorsMaker.Simulation.SimEventKind.TriggerFired" data-throw-if-not-resolved="false"></xref>; both may
+    be null.'
+  example: []
+  syntax:
+    content: public static string ForEvent(SimEvent value, SoundCueKeys keys, WeaponState weapon = null, TriggerDef trigger
+      = null, IReadOnlyList<WeaponSoundOverride> overrides = null, bool homingUsesMagic = true)
+    parameters:
+    - id: value
+      type: SurvivorsMaker.Simulation.SimEvent
+    - id: keys
+      type: SurvivorsMaker.Presentation.SoundCueKeys
+    - id: weapon
+      type: SurvivorsMaker.Simulation.WeaponState
+    - id: trigger
+      type: SurvivorsMaker.Simulation.TriggerDef
+    - id: overrides
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride}
+    - id: homingUsesMagic
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function ForEvent(value As SimEvent, keys As SoundCueKeys, weapon As WeaponState = Nothing,
+      trigger As TriggerDef = Nothing, [overrides] As IReadOnlyList(Of WeaponSoundOverride) = Nothing, homingUsesMagic As
+      Boolean = True) As String
+  overload: SurvivorsMaker.Presentation.AudioCueRules.ForEvent*
+  nameWithType.vb: AudioCueRules.ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList(Of WeaponSoundOverride),
+    Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent, SurvivorsMaker.Presentation.SoundCueKeys,
+    SurvivorsMaker.Simulation.WeaponState, SurvivorsMaker.Simulation.TriggerDef, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Presentation.WeaponSoundOverride), Boolean)
+  name.vb: ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList(Of WeaponSoundOverride), Boolean)
+- uid: SurvivorsMaker.Presentation.AudioCueRules.CustomCue(System.String,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound})
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.CustomCue(System.String,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound})
+  id: CustomCue(System.String,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound})
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: CustomCue(string, IReadOnlyList<CustomEventSound>)
+  nameWithType: AudioCueRules.CustomCue(string, IReadOnlyList<CustomEventSound>)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.CustomCue(string, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.CustomEventSound>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The cue mapped to a custom event id, "" when it is mapped to silence, or null when it has no entry (first entry
+    wins).
+
+    Checked before <xref href="SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent%2cSurvivorsMaker.Presentation.SoundCueKeys%2cSurvivorsMaker.Simulation.WeaponState%2cSurvivorsMaker.Simulation.TriggerDef%2cSystem.Collections.Generic.IReadOnlyList%7bSurvivorsMaker.Presentation.WeaponSoundOverride%7d%2cSystem.Boolean)"
+    data-throw-if-not-resolved="false"></xref>, so a mapped id also replaces a built-in event''s cue.'
+  example: []
+  syntax:
+    content: public static string CustomCue(string id, IReadOnlyList<CustomEventSound> entries)
+    parameters:
+    - id: id
+      type: System.String
+    - id: entries
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound}
+    return:
+      type: System.String
+    content.vb: Public Shared Function CustomCue(id As String, entries As IReadOnlyList(Of CustomEventSound)) As String
+  overload: SurvivorsMaker.Presentation.AudioCueRules.CustomCue*
+  nameWithType.vb: AudioCueRules.CustomCue(String, IReadOnlyList(Of CustomEventSound))
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.CustomCue(String, System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.CustomEventSound))
+  name.vb: CustomCue(String, IReadOnlyList(Of CustomEventSound))
+- uid: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Simulation.MeleeStyle,SurvivorsMaker.Presentation.SoundCueKeys,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.WeaponCue(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Simulation.MeleeStyle,SurvivorsMaker.Presentation.SoundCueKeys,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  id: WeaponCue(SurvivorsMaker.Simulation.WeaponDef,SurvivorsMaker.Simulation.MeleeStyle,SurvivorsMaker.Presentation.SoundCueKeys,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: WeaponCue(WeaponDef, MeleeStyle, SoundCueKeys, IReadOnlyList<WeaponSoundOverride>, bool)
+  nameWithType: AudioCueRules.WeaponCue(WeaponDef, MeleeStyle, SoundCueKeys, IReadOnlyList<WeaponSoundOverride>, bool)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue(SurvivorsMaker.Simulation.WeaponDef, SurvivorsMaker.Simulation.MeleeStyle,
+    SurvivorsMaker.Presentation.SoundCueKeys, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.WeaponSoundOverride>,
+    bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Override by the longest matching id prefix, else by kind: melee swing/thrust, ranged (homing = magic), orbit,
+    aura.'
+  example: []
+  syntax:
+    content: public static string WeaponCue(WeaponDef weapon, MeleeStyle style, SoundCueKeys keys, IReadOnlyList<WeaponSoundOverride>
+      overrides = null, bool homingUsesMagic = true)
+    parameters:
+    - id: weapon
+      type: SurvivorsMaker.Simulation.WeaponDef
+    - id: style
+      type: SurvivorsMaker.Simulation.MeleeStyle
+    - id: keys
+      type: SurvivorsMaker.Presentation.SoundCueKeys
+    - id: overrides
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride}
+    - id: homingUsesMagic
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function WeaponCue(weapon As WeaponDef, style As MeleeStyle, keys As SoundCueKeys, [overrides]
+      As IReadOnlyList(Of WeaponSoundOverride) = Nothing, homingUsesMagic As Boolean = True) As String
+  overload: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue*
+  nameWithType.vb: AudioCueRules.WeaponCue(WeaponDef, MeleeStyle, SoundCueKeys, IReadOnlyList(Of WeaponSoundOverride), Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue(SurvivorsMaker.Simulation.WeaponDef, SurvivorsMaker.Simulation.MeleeStyle,
+    SurvivorsMaker.Presentation.SoundCueKeys, System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.WeaponSoundOverride),
+    Boolean)
+  name.vb: WeaponCue(WeaponDef, MeleeStyle, SoundCueKeys, IReadOnlyList(Of WeaponSoundOverride), Boolean)
+- uid: SurvivorsMaker.Presentation.AudioCueRules.StatusCue(System.Int32,SurvivorsMaker.Presentation.SoundCueKeys)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.StatusCue(System.Int32,SurvivorsMaker.Presentation.SoundCueKeys)
+  id: StatusCue(System.Int32,SurvivorsMaker.Presentation.SoundCueKeys)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: StatusCue(int, SoundCueKeys)
+  nameWithType: AudioCueRules.StatusCue(int, SoundCueKeys)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.StatusCue(int, SurvivorsMaker.Presentation.SoundCueKeys)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Cue for a status index (<xref href="SurvivorsMaker.Simulation.StatusKind" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public static string StatusCue(int status, SoundCueKeys keys)
+    parameters:
+    - id: status
+      type: System.Int32
+    - id: keys
+      type: SurvivorsMaker.Presentation.SoundCueKeys
+    return:
+      type: System.String
+    content.vb: Public Shared Function StatusCue(status As Integer, keys As SoundCueKeys) As String
+  overload: SurvivorsMaker.Presentation.AudioCueRules.StatusCue*
+  nameWithType.vb: AudioCueRules.StatusCue(Integer, SoundCueKeys)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.StatusCue(Integer, SurvivorsMaker.Presentation.SoundCueKeys)
+  name.vb: StatusCue(Integer, SoundCueKeys)
+- uid: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.FindWeapon(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  id: FindWeapon(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: FindWeapon(SimWorld, int)
+  nameWithType: AudioCueRules.FindWeapon(SimWorld, int)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon(SurvivorsMaker.Simulation.SimWorld, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static WeaponState FindWeapon(SimWorld world, int slot)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Simulation.WeaponState
+    content.vb: Public Shared Function FindWeapon(world As SimWorld, slot As Integer) As WeaponState
+  overload: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon*
+  nameWithType.vb: AudioCueRules.FindWeapon(SimWorld, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon(SurvivorsMaker.Simulation.SimWorld, Integer)
+  name.vb: FindWeapon(SimWorld, Integer)
+- uid: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.FindTrigger(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  id: FindTrigger(SurvivorsMaker.Simulation.SimWorld,System.Int32)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: FindTrigger(SimWorld, int)
+  nameWithType: AudioCueRules.FindTrigger(SimWorld, int)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger(SurvivorsMaker.Simulation.SimWorld, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static TriggerDef FindTrigger(SimWorld world, int index)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Simulation.TriggerDef
+    content.vb: Public Shared Function FindTrigger(world As SimWorld, index As Integer) As TriggerDef
+  overload: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger*
+  nameWithType.vb: AudioCueRules.FindTrigger(SimWorld, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger(SurvivorsMaker.Simulation.SimWorld, Integer)
+  name.vb: FindTrigger(SimWorld, Integer)
+- uid: SurvivorsMaker.Presentation.AudioCueRules.BossAlive(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.BossAlive(SurvivorsMaker.Simulation.SimWorld)
+  id: BossAlive(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.AudioCueRules
+  langs:
+  - csharp
+  - vb
+  name: BossAlive(SimWorld)
+  nameWithType: AudioCueRules.BossAlive(SimWorld)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.BossAlive(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static bool BossAlive(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function BossAlive(world As SimWorld) As Boolean
+  overload: SurvivorsMaker.Presentation.AudioCueRules.BossAlive*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+  isExternal: true
+  name: WeaponFired
+  nameWithType: SimEventKind.WeaponFired
+  fullName: SurvivorsMaker.Simulation.SimEventKind.WeaponFired
+- uid: SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  commentId: F:SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+  isExternal: true
+  name: TriggerFired
+  nameWithType: SimEventKind.TriggerFired
+  fullName: SurvivorsMaker.Simulation.SimEventKind.TriggerFired
+- uid: SurvivorsMaker.Presentation.AudioCueRules.ForEvent*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.ForEvent
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_ForEvent_SurvivorsMaker_Simulation_SimEvent_SurvivorsMaker_Presentation_SoundCueKeys_SurvivorsMaker_Simulation_WeaponState_SurvivorsMaker_Simulation_TriggerDef_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_WeaponSoundOverride__System_Boolean_
+  name: ForEvent
+  nameWithType: AudioCueRules.ForEvent
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.ForEvent
+- uid: SurvivorsMaker.Simulation.SimEvent
+  commentId: T:SurvivorsMaker.Simulation.SimEvent
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEvent.html
+  name: SimEvent
+  nameWithType: SimEvent
+  fullName: SurvivorsMaker.Simulation.SimEvent
+- uid: SurvivorsMaker.Presentation.SoundCueKeys
+  commentId: T:SurvivorsMaker.Presentation.SoundCueKeys
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCueKeys.html
+  name: SoundCueKeys
+  nameWithType: SoundCueKeys
+  fullName: SurvivorsMaker.Presentation.SoundCueKeys
+- uid: SurvivorsMaker.Simulation.WeaponState
+  commentId: T:SurvivorsMaker.Simulation.WeaponState
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponState.html
+  name: WeaponState
+  nameWithType: WeaponState
+  fullName: SurvivorsMaker.Simulation.WeaponState
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<WeaponSoundOverride>
+  nameWithType: IReadOnlyList<WeaponSoundOverride>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.WeaponSoundOverride>
+  nameWithType.vb: IReadOnlyList(Of WeaponSoundOverride)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.WeaponSoundOverride)
+  name.vb: IReadOnlyList(Of WeaponSoundOverride)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.WeaponSoundOverride
+    name: WeaponSoundOverride
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WeaponSoundOverride.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.WeaponSoundOverride
+    name: WeaponSoundOverride
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WeaponSoundOverride.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_ForEvent_SurvivorsMaker_Simulation_SimEvent_SurvivorsMaker_Presentation_SoundCueKeys_SurvivorsMaker_Simulation_WeaponState_SurvivorsMaker_Simulation_TriggerDef_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_WeaponSoundOverride__System_Boolean_
+  name: ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList<WeaponSoundOverride>, bool)
+  nameWithType: AudioCueRules.ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList<WeaponSoundOverride>,
+    bool)
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent, SurvivorsMaker.Presentation.SoundCueKeys,
+    SurvivorsMaker.Simulation.WeaponState, SurvivorsMaker.Simulation.TriggerDef, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.WeaponSoundOverride>,
+    bool)
+  nameWithType.vb: AudioCueRules.ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList(Of WeaponSoundOverride),
+    Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent, SurvivorsMaker.Presentation.SoundCueKeys,
+    SurvivorsMaker.Simulation.WeaponState, SurvivorsMaker.Simulation.TriggerDef, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Presentation.WeaponSoundOverride), Boolean)
+  name.vb: ForEvent(SimEvent, SoundCueKeys, WeaponState, TriggerDef, IReadOnlyList(Of WeaponSoundOverride), Boolean)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+    name: ForEvent
+    isExternal: true
+    href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_ForEvent_SurvivorsMaker_Simulation_SimEvent_SurvivorsMaker_Presentation_SoundCueKeys_SurvivorsMaker_Simulation_WeaponState_SurvivorsMaker_Simulation_TriggerDef_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_WeaponSoundOverride__System_Boolean_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimEvent
+    name: SimEvent
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.SoundCueKeys
+    name: SoundCueKeys
+    isExternal: true
+    href: SurvivorsMaker.Presentation.SoundCueKeys.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponState
+    name: WeaponState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.WeaponSoundOverride
+    name: WeaponSoundOverride
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WeaponSoundOverride.html
+  - name: '>'
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.AudioCueRules.ForEvent(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Presentation.SoundCueKeys,SurvivorsMaker.Simulation.WeaponState,SurvivorsMaker.Simulation.TriggerDef,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.WeaponSoundOverride},System.Boolean)
+    name: ForEvent
+    isExternal: true
+    href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_ForEvent_SurvivorsMaker_Simulation_SimEvent_SurvivorsMaker_Presentation_SoundCueKeys_SurvivorsMaker_Simulation_WeaponState_SurvivorsMaker_Simulation_TriggerDef_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_WeaponSoundOverride__System_Boolean_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimEvent
+    name: SimEvent
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.SoundCueKeys
+    name: SoundCueKeys
+    isExternal: true
+    href: SurvivorsMaker.Presentation.SoundCueKeys.html
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponState
+    name: WeaponState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.WeaponSoundOverride
+    name: WeaponSoundOverride
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WeaponSoundOverride.html
+  - name: )
+  - name: ','
+  - name: ' '
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SurvivorsMaker.Presentation.AudioCueRules.CustomCue*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.CustomCue
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_CustomCue_System_String_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_CustomEventSound__
+  name: CustomCue
+  nameWithType: AudioCueRules.CustomCue
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.CustomCue
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Presentation.CustomEventSound}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CustomEventSound>
+  nameWithType: IReadOnlyList<CustomEventSound>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Presentation.CustomEventSound>
+  nameWithType.vb: IReadOnlyList(Of CustomEventSound)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Presentation.CustomEventSound)
+  name.vb: IReadOnlyList(Of CustomEventSound)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.CustomEventSound
+    name: CustomEventSound
+    isExternal: true
+    href: SurvivorsMaker.Presentation.CustomEventSound.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.CustomEventSound
+    name: CustomEventSound
+    isExternal: true
+    href: SurvivorsMaker.Presentation.CustomEventSound.html
+  - name: )
+- uid: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.WeaponCue
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_WeaponCue_SurvivorsMaker_Simulation_WeaponDef_SurvivorsMaker_Simulation_MeleeStyle_SurvivorsMaker_Presentation_SoundCueKeys_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Presentation_WeaponSoundOverride__System_Boolean_
+  name: WeaponCue
+  nameWithType: AudioCueRules.WeaponCue
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.WeaponCue
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+- uid: SurvivorsMaker.Simulation.MeleeStyle
+  commentId: T:SurvivorsMaker.Simulation.MeleeStyle
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MeleeStyle.html
+  name: MeleeStyle
+  nameWithType: MeleeStyle
+  fullName: SurvivorsMaker.Simulation.MeleeStyle
+- uid: SurvivorsMaker.Simulation.StatusKind
+  commentId: T:SurvivorsMaker.Simulation.StatusKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusKind.html
+  name: StatusKind
+  nameWithType: StatusKind
+  fullName: SurvivorsMaker.Simulation.StatusKind
+- uid: SurvivorsMaker.Presentation.AudioCueRules.StatusCue*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.StatusCue
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_StatusCue_System_Int32_SurvivorsMaker_Presentation_SoundCueKeys_
+  name: StatusCue
+  nameWithType: AudioCueRules.StatusCue
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.StatusCue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.FindWeapon
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_FindWeapon_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  name: FindWeapon
+  nameWithType: AudioCueRules.FindWeapon
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.FindWeapon
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.FindTrigger
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_FindTrigger_SurvivorsMaker_Simulation_SimWorld_System_Int32_
+  name: FindTrigger
+  nameWithType: AudioCueRules.FindTrigger
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.FindTrigger
+- uid: SurvivorsMaker.Presentation.AudioCueRules.BossAlive*
+  commentId: Overload:SurvivorsMaker.Presentation.AudioCueRules.BossAlive
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AudioCueRules.html#SurvivorsMaker_Presentation_AudioCueRules_BossAlive_SurvivorsMaker_Simulation_SimWorld_
+  name: BossAlive
+  nameWithType: AudioCueRules.BossAlive
+  fullName: SurvivorsMaker.Presentation.AudioCueRules.BossAlive

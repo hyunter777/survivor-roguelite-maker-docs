@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferPath
+  commentId: T:SurvivorsMaker.Run.OfferPath
+  id: OfferPath
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferPath.LowerTier
+  - SurvivorsMaker.Run.OfferPath.None
+  - SurvivorsMaker.Run.OfferPath.PreferenceRelaxed
+  - SurvivorsMaker.Run.OfferPath.PreviousRelaxed
+  - SurvivorsMaker.Run.OfferPath.Retained
+  - SurvivorsMaker.Run.OfferPath.UniformFallback
+  langs:
+  - csharp
+  - vb
+  name: OfferPath
+  nameWithType: OfferPath
+  fullName: SurvivorsMaker.Run.OfferPath
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Candidate-selection path recorded for diagnostics, including tier fallback and guarantees.
+  example: []
+  syntax:
+    content: '[Flags]
+
+      public enum OfferPath'
+    content.vb: '<Flags>
+
+      Public Enum OfferPath'
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SurvivorsMaker.Run.OfferPath.None
+  commentId: F:SurvivorsMaker.Run.OfferPath.None
+  id: None
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OfferPath.None
+  fullName: SurvivorsMaker.Run.OfferPath.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+- uid: SurvivorsMaker.Run.OfferPath.LowerTier
+  commentId: F:SurvivorsMaker.Run.OfferPath.LowerTier
+  id: LowerTier
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: LowerTier
+  nameWithType: OfferPath.LowerTier
+  fullName: SurvivorsMaker.Run.OfferPath.LowerTier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: LowerTier = 1
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+- uid: SurvivorsMaker.Run.OfferPath.PreferenceRelaxed
+  commentId: F:SurvivorsMaker.Run.OfferPath.PreferenceRelaxed
+  id: PreferenceRelaxed
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: PreferenceRelaxed
+  nameWithType: OfferPath.PreferenceRelaxed
+  fullName: SurvivorsMaker.Run.OfferPath.PreferenceRelaxed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: PreferenceRelaxed = 2
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+- uid: SurvivorsMaker.Run.OfferPath.PreviousRelaxed
+  commentId: F:SurvivorsMaker.Run.OfferPath.PreviousRelaxed
+  id: PreviousRelaxed
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: PreviousRelaxed
+  nameWithType: OfferPath.PreviousRelaxed
+  fullName: SurvivorsMaker.Run.OfferPath.PreviousRelaxed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: PreviousRelaxed = 4
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+- uid: SurvivorsMaker.Run.OfferPath.UniformFallback
+  commentId: F:SurvivorsMaker.Run.OfferPath.UniformFallback
+  id: UniformFallback
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: UniformFallback
+  nameWithType: OfferPath.UniformFallback
+  fullName: SurvivorsMaker.Run.OfferPath.UniformFallback
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: UniformFallback = 8
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+- uid: SurvivorsMaker.Run.OfferPath.Retained
+  commentId: F:SurvivorsMaker.Run.OfferPath.Retained
+  id: Retained
+  parent: SurvivorsMaker.Run.OfferPath
+  langs:
+  - csharp
+  - vb
+  name: Retained
+  nameWithType: OfferPath.Retained
+  fullName: SurvivorsMaker.Run.OfferPath.Retained
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Retained = 16
+    return:
+      type: SurvivorsMaker.Run.OfferPath
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.OfferPath
+  commentId: T:SurvivorsMaker.Run.OfferPath
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPath.html
+  name: OfferPath
+  nameWithType: OfferPath
+  fullName: SurvivorsMaker.Run.OfferPath

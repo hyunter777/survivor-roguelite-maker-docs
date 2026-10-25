@@ -1,0 +1,854 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.OfferOddsModel
+  commentId: T:SurvivorsMaker.Editor.OfferOddsModel
+  id: OfferOddsModel
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.OfferOddsModel.Filter(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.String,SurvivorsMaker.Run.OfferKind)
+  - SurvivorsMaker.Editor.OfferOddsModel.MaxChance(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow})
+  - SurvivorsMaker.Editor.OfferOddsModel.Rows(SurvivorsMaker.Balance.OfferOddsReport,SurvivorsMaker.Balance.OfferOddsReport,System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32})
+  - SurvivorsMaker.Editor.OfferOddsModel.Sort(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.Int32,System.Boolean)
+  - SurvivorsMaker.Editor.OfferOddsModel.SortFirst
+  - SurvivorsMaker.Editor.OfferOddsModel.SortId
+  - SurvivorsMaker.Editor.OfferOddsModel.SortKind
+  - SurvivorsMaker.Editor.OfferOddsModel.SortNotObserved
+  - SurvivorsMaker.Editor.OfferOddsModel.SortTier
+  langs:
+  - csharp
+  - vb
+  name: OfferOddsModel
+  nameWithType: OfferOddsModel
+  fullName: SurvivorsMaker.Editor.OfferOddsModel
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Columns the Offer Odds table can sort by: Id, Kind, Tier, ExpectedFirst, or a progress column (≥ 0).'
+  example: []
+  syntax:
+    content: public static class OfferOddsModel
+    content.vb: Public Module OfferOddsModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.OfferOddsModel.SortId
+  commentId: F:SurvivorsMaker.Editor.OfferOddsModel.SortId
+  id: SortId
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: SortId
+  nameWithType: OfferOddsModel.SortId
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.SortId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int SortId = -1
+    return:
+      type: System.Int32
+    content.vb: Public Const SortId As Integer = -1
+- uid: SurvivorsMaker.Editor.OfferOddsModel.SortKind
+  commentId: F:SurvivorsMaker.Editor.OfferOddsModel.SortKind
+  id: SortKind
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: SortKind
+  nameWithType: OfferOddsModel.SortKind
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.SortKind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int SortKind = -2
+    return:
+      type: System.Int32
+    content.vb: Public Const SortKind As Integer = -2
+- uid: SurvivorsMaker.Editor.OfferOddsModel.SortTier
+  commentId: F:SurvivorsMaker.Editor.OfferOddsModel.SortTier
+  id: SortTier
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: SortTier
+  nameWithType: OfferOddsModel.SortTier
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.SortTier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int SortTier = -3
+    return:
+      type: System.Int32
+    content.vb: Public Const SortTier As Integer = -3
+- uid: SurvivorsMaker.Editor.OfferOddsModel.SortFirst
+  commentId: F:SurvivorsMaker.Editor.OfferOddsModel.SortFirst
+  id: SortFirst
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: SortFirst
+  nameWithType: OfferOddsModel.SortFirst
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.SortFirst
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int SortFirst = -4
+    return:
+      type: System.Int32
+    content.vb: Public Const SortFirst As Integer = -4
+- uid: SurvivorsMaker.Editor.OfferOddsModel.SortNotObserved
+  commentId: F:SurvivorsMaker.Editor.OfferOddsModel.SortNotObserved
+  id: SortNotObserved
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: SortNotObserved
+  nameWithType: OfferOddsModel.SortNotObserved
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.SortNotObserved
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const int SortNotObserved = -5
+    return:
+      type: System.Int32
+    content.vb: Public Const SortNotObserved As Integer = -5
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Rows(SurvivorsMaker.Balance.OfferOddsReport,SurvivorsMaker.Balance.OfferOddsReport,System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32})
+  commentId: M:SurvivorsMaker.Editor.OfferOddsModel.Rows(SurvivorsMaker.Balance.OfferOddsReport,SurvivorsMaker.Balance.OfferOddsReport,System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32})
+  id: Rows(SurvivorsMaker.Balance.OfferOddsReport,SurvivorsMaker.Balance.OfferOddsReport,System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32})
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: Rows(OfferOddsReport, OfferOddsReport, Func<OfferKind, string, int>)
+  nameWithType: OfferOddsModel.Rows(OfferOddsReport, OfferOddsReport, Func<OfferKind, string, int>)
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Rows(SurvivorsMaker.Balance.OfferOddsReport, SurvivorsMaker.Balance.OfferOddsReport,
+    System.Func<SurvivorsMaker.Run.OfferKind, string, int>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static List<OfferOddsRow> Rows(OfferOddsReport report, OfferOddsReport baseline, Func<OfferKind, string,
+      int> tierOf = null)
+    parameters:
+    - id: report
+      type: SurvivorsMaker.Balance.OfferOddsReport
+    - id: baseline
+      type: SurvivorsMaker.Balance.OfferOddsReport
+    - id: tierOf
+      type: System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32}
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+    content.vb: Public Shared Function Rows(report As OfferOddsReport, baseline As OfferOddsReport, tierOf As Func(Of OfferKind,
+      String, Integer) = Nothing) As List(Of OfferOddsRow)
+  overload: SurvivorsMaker.Editor.OfferOddsModel.Rows*
+  nameWithType.vb: OfferOddsModel.Rows(OfferOddsReport, OfferOddsReport, Func(Of OfferKind, String, Integer))
+  fullName.vb: SurvivorsMaker.Editor.OfferOddsModel.Rows(SurvivorsMaker.Balance.OfferOddsReport, SurvivorsMaker.Balance.OfferOddsReport,
+    System.Func(Of SurvivorsMaker.Run.OfferKind, String, Integer))
+  name.vb: Rows(OfferOddsReport, OfferOddsReport, Func(Of OfferKind, String, Integer))
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Sort(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.Int32,System.Boolean)
+  commentId: M:SurvivorsMaker.Editor.OfferOddsModel.Sort(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.Int32,System.Boolean)
+  id: Sort(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.Int32,System.Boolean)
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: Sort(List<OfferOddsRow>, int, bool)
+  nameWithType: OfferOddsModel.Sort(List<OfferOddsRow>, int, bool)
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Sort(System.Collections.Generic.List<SurvivorsMaker.Editor.OfferOddsRow>,
+    int, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Stable sort: by the column, then id. Never-appearing (−1) first-appearance values sort last.'
+  example: []
+  syntax:
+    content: public static void Sort(List<OfferOddsRow> rows, int column, bool descending)
+    parameters:
+    - id: rows
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+    - id: column
+      type: System.Int32
+    - id: descending
+      type: System.Boolean
+    content.vb: Public Shared Sub Sort(rows As List(Of OfferOddsRow), column As Integer, descending As Boolean)
+  overload: SurvivorsMaker.Editor.OfferOddsModel.Sort*
+  nameWithType.vb: OfferOddsModel.Sort(List(Of OfferOddsRow), Integer, Boolean)
+  fullName.vb: SurvivorsMaker.Editor.OfferOddsModel.Sort(System.Collections.Generic.List(Of SurvivorsMaker.Editor.OfferOddsRow),
+    Integer, Boolean)
+  name.vb: Sort(List(Of OfferOddsRow), Integer, Boolean)
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Filter(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.String,SurvivorsMaker.Run.OfferKind)
+  commentId: M:SurvivorsMaker.Editor.OfferOddsModel.Filter(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.String,SurvivorsMaker.Run.OfferKind)
+  id: Filter(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow},System.String,SurvivorsMaker.Run.OfferKind)
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: Filter(List<OfferOddsRow>, string, OfferKind)
+  nameWithType: OfferOddsModel.Filter(List<OfferOddsRow>, string, OfferKind)
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Filter(System.Collections.Generic.List<SurvivorsMaker.Editor.OfferOddsRow>,
+    string, SurvivorsMaker.Run.OfferKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Rows whose id contains the filter (case-insensitive) and whose kind matches (None = all).
+  example: []
+  syntax:
+    content: public static List<OfferOddsRow> Filter(List<OfferOddsRow> rows, string text, OfferKind kind)
+    parameters:
+    - id: rows
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+    - id: text
+      type: System.String
+    - id: kind
+      type: SurvivorsMaker.Run.OfferKind
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+    content.vb: Public Shared Function Filter(rows As List(Of OfferOddsRow), text As String, kind As OfferKind) As List(Of
+      OfferOddsRow)
+  overload: SurvivorsMaker.Editor.OfferOddsModel.Filter*
+  nameWithType.vb: OfferOddsModel.Filter(List(Of OfferOddsRow), String, OfferKind)
+  fullName.vb: SurvivorsMaker.Editor.OfferOddsModel.Filter(System.Collections.Generic.List(Of SurvivorsMaker.Editor.OfferOddsRow),
+    String, SurvivorsMaker.Run.OfferKind)
+  name.vb: Filter(List(Of OfferOddsRow), String, OfferKind)
+- uid: SurvivorsMaker.Editor.OfferOddsModel.MaxChance(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow})
+  commentId: M:SurvivorsMaker.Editor.OfferOddsModel.MaxChance(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow})
+  id: MaxChance(System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow})
+  parent: SurvivorsMaker.Editor.OfferOddsModel
+  langs:
+  - csharp
+  - vb
+  name: MaxChance(List<OfferOddsRow>)
+  nameWithType: OfferOddsModel.MaxChance(List<OfferOddsRow>)
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.MaxChance(System.Collections.Generic.List<SurvivorsMaker.Editor.OfferOddsRow>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Highest chance in the table (for heat coloring), at least a small positive value.
+  example: []
+  syntax:
+    content: public static float MaxChance(List<OfferOddsRow> rows)
+    parameters:
+    - id: rows
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+    return:
+      type: System.Single
+    content.vb: Public Shared Function MaxChance(rows As List(Of OfferOddsRow)) As Single
+  overload: SurvivorsMaker.Editor.OfferOddsModel.MaxChance*
+  nameWithType.vb: OfferOddsModel.MaxChance(List(Of OfferOddsRow))
+  fullName.vb: SurvivorsMaker.Editor.OfferOddsModel.MaxChance(System.Collections.Generic.List(Of SurvivorsMaker.Editor.OfferOddsRow))
+  name.vb: MaxChance(List(Of OfferOddsRow))
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Rows*
+  commentId: Overload:SurvivorsMaker.Editor.OfferOddsModel.Rows
+  isExternal: true
+  href: SurvivorsMaker.Editor.OfferOddsModel.html#SurvivorsMaker_Editor_OfferOddsModel_Rows_SurvivorsMaker_Balance_OfferOddsReport_SurvivorsMaker_Balance_OfferOddsReport_System_Func_SurvivorsMaker_Run_OfferKind_System_String_System_Int32__
+  name: Rows
+  nameWithType: OfferOddsModel.Rows
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Rows
+- uid: SurvivorsMaker.Balance.OfferOddsReport
+  commentId: T:SurvivorsMaker.Balance.OfferOddsReport
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.OfferOddsReport.html
+  name: OfferOddsReport
+  nameWithType: OfferOddsReport
+  fullName: SurvivorsMaker.Balance.OfferOddsReport
+- uid: System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32}
+  commentId: T:System.Func{SurvivorsMaker.Run.OfferKind,System.String,System.Int32}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<OfferKind, string, int>
+  nameWithType: Func<OfferKind, string, int>
+  fullName: System.Func<SurvivorsMaker.Run.OfferKind, string, int>
+  nameWithType.vb: Func(Of OfferKind, String, Integer)
+  fullName.vb: System.Func(Of SurvivorsMaker.Run.OfferKind, String, Integer)
+  name.vb: Func(Of OfferKind, String, Integer)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferKind
+    name: OfferKind
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferKind
+    name: OfferKind
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Editor.OfferOddsRow}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OfferOddsRow>
+  nameWithType: List<OfferOddsRow>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Editor.OfferOddsRow>
+  nameWithType.vb: List(Of OfferOddsRow)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Editor.OfferOddsRow)
+  name.vb: List(Of OfferOddsRow)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Editor.OfferOddsRow
+    name: OfferOddsRow
+    isExternal: true
+    href: SurvivorsMaker.Editor.OfferOddsRow.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Editor.OfferOddsRow
+    name: OfferOddsRow
+    isExternal: true
+    href: SurvivorsMaker.Editor.OfferOddsRow.html
+  - name: )
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T1
+  - name: ','
+  - name: ' '
+  - name: T2
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Sort*
+  commentId: Overload:SurvivorsMaker.Editor.OfferOddsModel.Sort
+  isExternal: true
+  href: SurvivorsMaker.Editor.OfferOddsModel.html#SurvivorsMaker_Editor_OfferOddsModel_Sort_System_Collections_Generic_List_SurvivorsMaker_Editor_OfferOddsRow__System_Int32_System_Boolean_
+  name: Sort
+  nameWithType: OfferOddsModel.Sort
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Sort
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.OfferOddsModel.Filter*
+  commentId: Overload:SurvivorsMaker.Editor.OfferOddsModel.Filter
+  isExternal: true
+  href: SurvivorsMaker.Editor.OfferOddsModel.html#SurvivorsMaker_Editor_OfferOddsModel_Filter_System_Collections_Generic_List_SurvivorsMaker_Editor_OfferOddsRow__System_String_SurvivorsMaker_Run_OfferKind_
+  name: Filter
+  nameWithType: OfferOddsModel.Filter
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.Filter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.OfferKind
+  commentId: T:SurvivorsMaker.Run.OfferKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferKind.html
+  name: OfferKind
+  nameWithType: OfferKind
+  fullName: SurvivorsMaker.Run.OfferKind
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Editor.OfferOddsModel.MaxChance*
+  commentId: Overload:SurvivorsMaker.Editor.OfferOddsModel.MaxChance
+  isExternal: true
+  href: SurvivorsMaker.Editor.OfferOddsModel.html#SurvivorsMaker_Editor_OfferOddsModel_MaxChance_System_Collections_Generic_List_SurvivorsMaker_Editor_OfferOddsRow__
+  name: MaxChance
+  nameWithType: OfferOddsModel.MaxChance
+  fullName: SurvivorsMaker.Editor.OfferOddsModel.MaxChance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

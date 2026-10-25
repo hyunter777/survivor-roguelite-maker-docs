@@ -1,0 +1,674 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatContributionDetail
+  commentId: T:SurvivorsMaker.Core.StatContributionDetail
+  id: StatContributionDetail
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatContributionDetail.Amount
+  - SurvivorsMaker.Core.StatContributionDetail.AppliedIndex
+  - SurvivorsMaker.Core.StatContributionDetail.EffectIndex
+  - SurvivorsMaker.Core.StatContributionDetail.ExternalSource
+  - SurvivorsMaker.Core.StatContributionDetail.Included
+  - SurvivorsMaker.Core.StatContributionDetail.InputSource
+  - SurvivorsMaker.Core.StatContributionDetail.InstanceId
+  - SurvivorsMaker.Core.StatContributionDetail.Layer
+  - SurvivorsMaker.Core.StatContributionDetail.Method
+  - SurvivorsMaker.Core.StatContributionDetail.Note
+  - SurvivorsMaker.Core.StatContributionDetail.ReadLayer
+  - SurvivorsMaker.Core.StatContributionDetail.Source
+  - SurvivorsMaker.Core.StatContributionDetail.Stat
+  - SurvivorsMaker.Core.StatContributionDetail.Temporary
+  - SurvivorsMaker.Core.StatContributionDetail.Valid
+  - SurvivorsMaker.Core.StatContributionDetail.Value
+  langs:
+  - csharp
+  - vb
+  name: StatContributionDetail
+  nameWithType: StatContributionDetail
+  fullName: SurvivorsMaker.Core.StatContributionDetail
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: A detached value record. Amount is the effective delta, not the configured operand.
+  example: []
+  syntax:
+    content: public struct StatContributionDetail
+    content.vb: Public Structure StatContributionDetail
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Core.StatContributionDetail.Stat
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Stat
+  id: Stat
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Stat
+  nameWithType: StatContributionDetail.Stat
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Stat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public string Stat
+    return:
+      type: System.String
+    content.vb: Public Stat As String
+- uid: SurvivorsMaker.Core.StatContributionDetail.Source
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Source
+  id: Source
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: StatContributionDetail.Source
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Source
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Provider key assigned by the caller; external input keys live in InputSource.
+  example: []
+  syntax:
+    content: public string Source
+    return:
+      type: System.String
+    content.vb: Public Source As String
+- uid: SurvivorsMaker.Core.StatContributionDetail.InputSource
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.InputSource
+  id: InputSource
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: InputSource
+  nameWithType: StatContributionDetail.InputSource
+  fullName: SurvivorsMaker.Core.StatContributionDetail.InputSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public string InputSource
+    return:
+      type: System.String
+    content.vb: Public InputSource As String
+- uid: SurvivorsMaker.Core.StatContributionDetail.AppliedIndex
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.AppliedIndex
+  id: AppliedIndex
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: AppliedIndex
+  nameWithType: StatContributionDetail.AppliedIndex
+  fullName: SurvivorsMaker.Core.StatContributionDetail.AppliedIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int AppliedIndex
+    return:
+      type: System.Int32
+    content.vb: Public AppliedIndex As Integer
+- uid: SurvivorsMaker.Core.StatContributionDetail.InstanceId
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.InstanceId
+  id: InstanceId
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: InstanceId
+  nameWithType: StatContributionDetail.InstanceId
+  fullName: SurvivorsMaker.Core.StatContributionDetail.InstanceId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public long InstanceId
+    return:
+      type: System.Int64
+    content.vb: Public InstanceId As Long
+- uid: SurvivorsMaker.Core.StatContributionDetail.EffectIndex
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.EffectIndex
+  id: EffectIndex
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: EffectIndex
+  nameWithType: StatContributionDetail.EffectIndex
+  fullName: SurvivorsMaker.Core.StatContributionDetail.EffectIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public int EffectIndex
+    return:
+      type: System.Int32
+    content.vb: Public EffectIndex As Integer
+- uid: SurvivorsMaker.Core.StatContributionDetail.Method
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Method
+  id: Method
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: StatContributionDetail.Method
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Method
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public EffectMethod Method
+    return:
+      type: SurvivorsMaker.Core.EffectMethod
+    content.vb: Public Method As EffectMethod
+- uid: SurvivorsMaker.Core.StatContributionDetail.Layer
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Layer
+  id: Layer
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Layer
+  nameWithType: StatContributionDetail.Layer
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Layer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatContributionLayer Layer
+    return:
+      type: SurvivorsMaker.Core.StatContributionLayer
+    content.vb: Public Layer As StatContributionLayer
+- uid: SurvivorsMaker.Core.StatContributionDetail.ReadLayer
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.ReadLayer
+  id: ReadLayer
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: ReadLayer
+  nameWithType: StatContributionDetail.ReadLayer
+  fullName: SurvivorsMaker.Core.StatContributionDetail.ReadLayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public StatReadLayer ReadLayer
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+    content.vb: Public ReadLayer As StatReadLayer
+- uid: SurvivorsMaker.Core.StatContributionDetail.ExternalSource
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.ExternalSource
+  id: ExternalSource
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: ExternalSource
+  nameWithType: StatContributionDetail.ExternalSource
+  fullName: SurvivorsMaker.Core.StatContributionDetail.ExternalSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool ExternalSource
+    return:
+      type: System.Boolean
+    content.vb: Public ExternalSource As Boolean
+- uid: SurvivorsMaker.Core.StatContributionDetail.Temporary
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Temporary
+  id: Temporary
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Temporary
+  nameWithType: StatContributionDetail.Temporary
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Temporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool Temporary
+    return:
+      type: System.Boolean
+    content.vb: Public Temporary As Boolean
+- uid: SurvivorsMaker.Core.StatContributionDetail.Valid
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Valid
+  id: Valid
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Valid
+  nameWithType: StatContributionDetail.Valid
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Valid
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool Valid
+    return:
+      type: System.Boolean
+    content.vb: Public Valid As Boolean
+- uid: SurvivorsMaker.Core.StatContributionDetail.Included
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Included
+  id: Included
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Included
+  nameWithType: StatContributionDetail.Included
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Included
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public bool Included
+    return:
+      type: System.Boolean
+    content.vb: Public Included As Boolean
+- uid: SurvivorsMaker.Core.StatContributionDetail.Amount
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Amount
+  id: Amount
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: StatContributionDetail.Amount
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Effective delta in final-value units. Included entries sum to Final (float precision).
+  example: []
+  syntax:
+    content: public float Amount
+    return:
+      type: System.Single
+    content.vb: Public Amount As Single
+- uid: SurvivorsMaker.Core.StatContributionDetail.Value
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Value
+  id: Value
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: StatContributionDetail.Value
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Value
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Configured scalar, transformed link output, or limit bound, before target efficiency.
+  example: []
+  syntax:
+    content: public float Value
+    return:
+      type: System.Single
+    content.vb: Public Value As Single
+- uid: SurvivorsMaker.Core.StatContributionDetail.Note
+  commentId: F:SurvivorsMaker.Core.StatContributionDetail.Note
+  id: Note
+  parent: SurvivorsMaker.Core.StatContributionDetail
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: StatContributionDetail.Note
+  fullName: SurvivorsMaker.Core.StatContributionDetail.Note
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: public string Note
+    return:
+      type: System.String
+    content.vb: Public Note As String
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: SurvivorsMaker.Core.EffectMethod
+  commentId: T:SurvivorsMaker.Core.EffectMethod
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectMethod.html
+  name: EffectMethod
+  nameWithType: EffectMethod
+  fullName: SurvivorsMaker.Core.EffectMethod
+- uid: SurvivorsMaker.Core.StatContributionLayer
+  commentId: T:SurvivorsMaker.Core.StatContributionLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatContributionLayer.html
+  name: StatContributionLayer
+  nameWithType: StatContributionLayer
+  fullName: SurvivorsMaker.Core.StatContributionLayer
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatReadLayer.html
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

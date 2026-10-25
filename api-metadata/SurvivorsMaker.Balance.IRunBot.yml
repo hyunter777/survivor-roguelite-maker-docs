@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.IRunBot
+  commentId: T:SurvivorsMaker.Balance.IRunBot
+  id: IRunBot
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  - SurvivorsMaker.Balance.IRunBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Balance.IRunBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Balance.IRunBot.Name
+  - SurvivorsMaker.Balance.IRunBot.Shop(SurvivorsMaker.Run.RunController)
+  langs:
+  - csharp
+  - vb
+  name: IRunBot
+  nameWithType: IRunBot
+  fullName: SurvivorsMaker.Balance.IRunBot
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: 'An automated player for headless runs. One instance plays one run at a time; the runner
+
+    calls <xref href="SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState%2cSurvivorsMaker.Simulation.SimRandom)"
+    data-throw-if-not-resolved="false"></xref> before each run. Bots must use only the random they are given so
+
+    results stay reproducible.'
+  example: []
+  syntax:
+    content: public interface IRunBot
+    content.vb: Public Interface IRunBot
+  derivedClasses:
+  - SurvivorsMaker.Balance.GreedyBot
+  - SurvivorsMaker.Balance.RandomBot
+- uid: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  commentId: M:SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  id: Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  parent: SurvivorsMaker.Balance.IRunBot
+  langs:
+  - csharp
+  - vb
+  name: Begin(RunState, SimRandom)
+  nameWithType: IRunBot.Begin(RunState, SimRandom)
+  fullName: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState, SurvivorsMaker.Simulation.SimRandom)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: void Begin(RunState run, SimRandom random)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: random
+      type: SurvivorsMaker.Simulation.SimRandom
+    content.vb: Sub Begin(run As RunState, random As SimRandom)
+  overload: SurvivorsMaker.Balance.IRunBot.Begin*
+- uid: SurvivorsMaker.Balance.IRunBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Balance.IRunBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  id: Move(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Balance.IRunBot
+  langs:
+  - csharp
+  - vb
+  name: Move(SimWorld)
+  nameWithType: IRunBot.Move(SimWorld)
+  fullName: SurvivorsMaker.Balance.IRunBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Movement for the next tick, length 0–1.
+  example: []
+  syntax:
+    content: Vec2 Move(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Function Move(world As SimWorld) As Vec2
+  overload: SurvivorsMaker.Balance.IRunBot.Move*
+- uid: SurvivorsMaker.Balance.IRunBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Balance.IRunBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  id: ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Balance.IRunBot
+  langs:
+  - csharp
+  - vb
+  name: ChooseLevelUp(RunState)
+  nameWithType: IRunBot.ChooseLevelUp(RunState)
+  fullName: SurvivorsMaker.Balance.IRunBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Index into <xref href="SurvivorsMaker.Run.RunState.Choices" data-throw-if-not-resolved="false"></xref>. Must be
+    a choice the controller accepts.
+  example: []
+  syntax:
+    content: int ChooseLevelUp(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: System.Int32
+    content.vb: Function ChooseLevelUp(run As RunState) As Integer
+  overload: SurvivorsMaker.Balance.IRunBot.ChooseLevelUp*
+- uid: SurvivorsMaker.Balance.IRunBot.Shop(SurvivorsMaker.Run.RunController)
+  commentId: M:SurvivorsMaker.Balance.IRunBot.Shop(SurvivorsMaker.Run.RunController)
+  id: Shop(SurvivorsMaker.Run.RunController)
+  parent: SurvivorsMaker.Balance.IRunBot
+  langs:
+  - csharp
+  - vb
+  name: Shop(RunController)
+  nameWithType: IRunBot.Shop(RunController)
+  fullName: SurvivorsMaker.Balance.IRunBot.Shop(SurvivorsMaker.Run.RunController)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Spend the shop phase through the controller (buy, reroll, lock, merge, recycle). Do not call NextWave.
+  example: []
+  syntax:
+    content: void Shop(RunController controller)
+    parameters:
+    - id: controller
+      type: SurvivorsMaker.Run.RunController
+    content.vb: Sub Shop(controller As RunController)
+  overload: SurvivorsMaker.Balance.IRunBot.Shop*
+- uid: SurvivorsMaker.Balance.IRunBot.Name
+  commentId: P:SurvivorsMaker.Balance.IRunBot.Name
+  id: Name
+  parent: SurvivorsMaker.Balance.IRunBot
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IRunBot.Name
+  fullName: SurvivorsMaker.Balance.IRunBot.Name
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Short name shown in reports, e.g. "random" or "greedy".
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: SurvivorsMaker.Balance.IRunBot.Name*
+references:
+- uid: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  commentId: M:SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  parent: SurvivorsMaker.Balance.IRunBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  name: Begin(RunState, SimRandom)
+  nameWithType: IRunBot.Begin(RunState, SimRandom)
+  fullName: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState, SurvivorsMaker.Simulation.SimRandom)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimRandom
+    name: SimRandom
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.IRunBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimRandom
+    name: SimRandom
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: SurvivorsMaker.Balance.IRunBot
+  commentId: T:SurvivorsMaker.Balance.IRunBot
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html
+  name: IRunBot
+  nameWithType: IRunBot
+  fullName: SurvivorsMaker.Balance.IRunBot
+- uid: SurvivorsMaker.Balance.IRunBot.Begin*
+  commentId: Overload:SurvivorsMaker.Balance.IRunBot.Begin
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  name: Begin
+  nameWithType: IRunBot.Begin
+  fullName: SurvivorsMaker.Balance.IRunBot.Begin
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Simulation.SimRandom
+  commentId: T:SurvivorsMaker.Simulation.SimRandom
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html
+  name: SimRandom
+  nameWithType: SimRandom
+  fullName: SurvivorsMaker.Simulation.SimRandom
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Balance.IRunBot.Move*
+  commentId: Overload:SurvivorsMaker.Balance.IRunBot.Move
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Move_SurvivorsMaker_Simulation_SimWorld_
+  name: Move
+  nameWithType: IRunBot.Move
+  fullName: SurvivorsMaker.Balance.IRunBot.Move
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Run.RunState.Choices
+  commentId: F:SurvivorsMaker.Run.RunState.Choices
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html#SurvivorsMaker_Run_RunState_Choices
+  name: Choices
+  nameWithType: RunState.Choices
+  fullName: SurvivorsMaker.Run.RunState.Choices
+- uid: SurvivorsMaker.Balance.IRunBot.ChooseLevelUp*
+  commentId: Overload:SurvivorsMaker.Balance.IRunBot.ChooseLevelUp
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_ChooseLevelUp_SurvivorsMaker_Run_RunState_
+  name: ChooseLevelUp
+  nameWithType: IRunBot.ChooseLevelUp
+  fullName: SurvivorsMaker.Balance.IRunBot.ChooseLevelUp
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.IRunBot.Shop*
+  commentId: Overload:SurvivorsMaker.Balance.IRunBot.Shop
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Shop_SurvivorsMaker_Run_RunController_
+  name: Shop
+  nameWithType: IRunBot.Shop
+  fullName: SurvivorsMaker.Balance.IRunBot.Shop
+- uid: SurvivorsMaker.Run.RunController
+  commentId: T:SurvivorsMaker.Run.RunController
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html
+  name: RunController
+  nameWithType: RunController
+  fullName: SurvivorsMaker.Run.RunController
+- uid: SurvivorsMaker.Balance.IRunBot.Name*
+  commentId: Overload:SurvivorsMaker.Balance.IRunBot.Name
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html#SurvivorsMaker_Balance_IRunBot_Name
+  name: Name
+  nameWithType: IRunBot.Name
+  fullName: SurvivorsMaker.Balance.IRunBot.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

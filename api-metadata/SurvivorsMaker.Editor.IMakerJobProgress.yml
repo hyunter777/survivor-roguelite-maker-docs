@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.IMakerJobProgress
+  commentId: T:SurvivorsMaker.Editor.IMakerJobProgress
+  id: IMakerJobProgress
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  - SurvivorsMaker.Editor.IMakerJobProgress.Label
+  - SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  - SurvivorsMaker.Editor.IMakerJobProgress.Running
+  langs:
+  - csharp
+  - vb
+  name: IMakerJobProgress
+  nameWithType: IMakerJobProgress
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Progress view of a running job for <xref href="SurvivorsMaker.Editor.MakerJobBar" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IMakerJobProgress
+    content.vb: Public Interface IMakerJobProgress
+  derivedClasses:
+  - SurvivorsMaker.Editor.AnalysisJobDriver`1
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  commentId: M:SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  id: Cancel
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: IMakerJobProgress.Cancel()
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Cancel()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: void Cancel()
+    content.vb: Sub Cancel()
+  overload: SurvivorsMaker.Editor.IMakerJobProgress.Cancel*
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Running
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Running
+  id: Running
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: IMakerJobProgress.Running
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Running
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: bool Running { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Running As Boolean
+  overload: SurvivorsMaker.Editor.IMakerJobProgress.Running*
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  id: Progress
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: IMakerJobProgress.Progress
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: float Progress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property Progress As Single
+  overload: SurvivorsMaker.Editor.IMakerJobProgress.Progress*
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Label
+  commentId: P:SurvivorsMaker.Editor.IMakerJobProgress.Label
+  id: Label
+  parent: SurvivorsMaker.Editor.IMakerJobProgress
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: IMakerJobProgress.Label
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Label
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: string Label { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Label As String
+  overload: SurvivorsMaker.Editor.IMakerJobProgress.Label*
+references:
+- uid: SurvivorsMaker.Editor.MakerJobBar
+  commentId: T:SurvivorsMaker.Editor.MakerJobBar
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerJobBar.html
+  name: MakerJobBar
+  nameWithType: MakerJobBar
+  fullName: SurvivorsMaker.Editor.MakerJobBar
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Cancel*
+  commentId: Overload:SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Cancel
+  name: Cancel
+  nameWithType: IMakerJobProgress.Cancel
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Cancel
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Running*
+  commentId: Overload:SurvivorsMaker.Editor.IMakerJobProgress.Running
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Running
+  name: Running
+  nameWithType: IMakerJobProgress.Running
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Running
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Progress*
+  commentId: Overload:SurvivorsMaker.Editor.IMakerJobProgress.Progress
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Progress
+  name: Progress
+  nameWithType: IMakerJobProgress.Progress
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Progress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Editor.IMakerJobProgress.Label*
+  commentId: Overload:SurvivorsMaker.Editor.IMakerJobProgress.Label
+  isExternal: true
+  href: SurvivorsMaker.Editor.IMakerJobProgress.html#SurvivorsMaker_Editor_IMakerJobProgress_Label
+  name: Label
+  nameWithType: IMakerJobProgress.Label
+  fullName: SurvivorsMaker.Editor.IMakerJobProgress.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

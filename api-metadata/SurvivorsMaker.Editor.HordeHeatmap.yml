@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.HordeHeatmap
+  commentId: T:SurvivorsMaker.Editor.HordeHeatmap
+  id: HordeHeatmap
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.HordeHeatmap.CurrentFrame
+  - SurvivorsMaker.Editor.HordeHeatmap.Off
+  - SurvivorsMaker.Editor.HordeHeatmap.WholeWave
+  langs:
+  - csharp
+  - vb
+  name: HordeHeatmap
+  nameWithType: HordeHeatmap
+  fullName: SurvivorsMaker.Editor.HordeHeatmap
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum HordeHeatmap
+    content.vb: Public Enum HordeHeatmap
+- uid: SurvivorsMaker.Editor.HordeHeatmap.Off
+  commentId: F:SurvivorsMaker.Editor.HordeHeatmap.Off
+  id: false
+  parent: SurvivorsMaker.Editor.HordeHeatmap
+  langs:
+  - csharp
+  - vb
+  name: false
+  nameWithType: HordeHeatmap.Off
+  fullName: SurvivorsMaker.Editor.HordeHeatmap.Off
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Off = 0
+    return:
+      type: SurvivorsMaker.Editor.HordeHeatmap
+- uid: SurvivorsMaker.Editor.HordeHeatmap.CurrentFrame
+  commentId: F:SurvivorsMaker.Editor.HordeHeatmap.CurrentFrame
+  id: CurrentFrame
+  parent: SurvivorsMaker.Editor.HordeHeatmap
+  langs:
+  - csharp
+  - vb
+  name: CurrentFrame
+  nameWithType: HordeHeatmap.CurrentFrame
+  fullName: SurvivorsMaker.Editor.HordeHeatmap.CurrentFrame
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: CurrentFrame = 1
+    return:
+      type: SurvivorsMaker.Editor.HordeHeatmap
+- uid: SurvivorsMaker.Editor.HordeHeatmap.WholeWave
+  commentId: F:SurvivorsMaker.Editor.HordeHeatmap.WholeWave
+  id: WholeWave
+  parent: SurvivorsMaker.Editor.HordeHeatmap
+  langs:
+  - csharp
+  - vb
+  name: WholeWave
+  nameWithType: HordeHeatmap.WholeWave
+  fullName: SurvivorsMaker.Editor.HordeHeatmap.WholeWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: WholeWave = 2
+    return:
+      type: SurvivorsMaker.Editor.HordeHeatmap
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.HordeHeatmap
+  commentId: T:SurvivorsMaker.Editor.HordeHeatmap
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.HordeHeatmap.html
+  name: HordeHeatmap
+  nameWithType: HordeHeatmap
+  fullName: SurvivorsMaker.Editor.HordeHeatmap

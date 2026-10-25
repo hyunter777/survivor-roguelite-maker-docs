@@ -1,0 +1,1138 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.MakerToolContext
+  commentId: T:SurvivorsMaker.Editor.MakerToolContext
+  id: MakerToolContext
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.MakerToolContext.AllEnemies(SurvivorsMaker.Data.ContentAsset)
+  - SurvivorsMaker.Editor.MakerToolContext.AllWeapons(SurvivorsMaker.Data.ContentAsset)
+  - SurvivorsMaker.Editor.MakerToolContext.DefaultContent(UnityEngine.Object)
+  - SurvivorsMaker.Editor.MakerToolContext.DefaultSettings(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  - SurvivorsMaker.Editor.MakerToolContext.FindWave(SurvivorsMaker.Data.WaveAsset,SurvivorsMaker.Data.ContentAsset@,SurvivorsMaker.Data.ArenaAsset@,System.Int32@)
+  - SurvivorsMaker.Editor.MakerToolContext.FirstArena(SurvivorsMaker.Data.ContentAsset,System.Int32@)
+  - SurvivorsMaker.Editor.MakerToolContext.Label(SurvivorsMaker.Data.ContentAssetBase)
+  - SurvivorsMaker.Editor.MakerToolContext.Ping(UnityEngine.Object)
+  - SurvivorsMaker.Editor.MakerToolContext.References(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  - SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Data.ArenaAsset,System.Int32)
+  - SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Run.RunMode,System.Int32,System.UInt32,System.String,System.Int32)
+  - SurvivorsMaker.Editor.MakerToolContext.TierChain(SurvivorsMaker.Data.WeaponAsset,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset})
+  - SurvivorsMaker.Editor.MakerToolContext.WaveAt(SurvivorsMaker.Data.ContentAsset,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MakerToolContext
+  nameWithType: MakerToolContext
+  fullName: SurvivorsMaker.Editor.MakerToolContext
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Content and settings lookups shared by the maker tool windows.
+  example: []
+  syntax:
+    content: public static class MakerToolContext
+    content.vb: Public Module MakerToolContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.MakerToolContext.DefaultContent(UnityEngine.Object)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.DefaultContent(UnityEngine.Object)
+  id: DefaultContent(UnityEngine.Object)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: DefaultContent(Object)
+  nameWithType: MakerToolContext.DefaultContent(Object)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.DefaultContent(UnityEngine.Object)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: The selection when it is (or belongs to) a content asset, else the first content asset in the project.
+  example: []
+  syntax:
+    content: public static ContentAsset DefaultContent(Object selection)
+    parameters:
+    - id: selection
+      type: UnityEngine.Object
+    return:
+      type: SurvivorsMaker.Data.ContentAsset
+    content.vb: Public Shared Function DefaultContent(selection As [Object]) As ContentAsset
+  overload: SurvivorsMaker.Editor.MakerToolContext.DefaultContent*
+- uid: SurvivorsMaker.Editor.MakerToolContext.DefaultSettings(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.DefaultSettings(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  id: DefaultSettings(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: DefaultSettings(ContentAsset, Object)
+  nameWithType: MakerToolContext.DefaultSettings(ContentAsset, Object)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.DefaultSettings(SurvivorsMaker.Data.ContentAsset, UnityEngine.Object)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static GameSettingsAsset DefaultSettings(ContentAsset content, Object selection = null)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: selection
+      type: UnityEngine.Object
+    return:
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    content.vb: Public Shared Function DefaultSettings(content As ContentAsset, selection As [Object] = Nothing) As GameSettingsAsset
+  overload: SurvivorsMaker.Editor.MakerToolContext.DefaultSettings*
+- uid: SurvivorsMaker.Editor.MakerToolContext.References(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.References(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  id: References(SurvivorsMaker.Data.ContentAsset,UnityEngine.Object)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: References(ContentAsset, Object)
+  nameWithType: MakerToolContext.References(ContentAsset, Object)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.References(SurvivorsMaker.Data.ContentAsset, UnityEngine.Object)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: True when <code class="paramref">target</code> is listed by the content directly, as a weapon tier, or as an arena
+    wave.
+  example: []
+  syntax:
+    content: public static bool References(ContentAsset content, Object target)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: target
+      type: UnityEngine.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function References(content As ContentAsset, target As [Object]) As Boolean
+  overload: SurvivorsMaker.Editor.MakerToolContext.References*
+- uid: SurvivorsMaker.Editor.MakerToolContext.FirstArena(SurvivorsMaker.Data.ContentAsset,System.Int32@)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.FirstArena(SurvivorsMaker.Data.ContentAsset,System.Int32@)
+  id: FirstArena(SurvivorsMaker.Data.ContentAsset,System.Int32@)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: FirstArena(ContentAsset, out int)
+  nameWithType: MakerToolContext.FirstArena(ContentAsset, out int)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.FirstArena(SurvivorsMaker.Data.ContentAsset, out int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: First arena with waves (the one bot runs use by default).
+  example: []
+  syntax:
+    content: public static ArenaAsset FirstArena(ContentAsset content, out int index)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Data.ArenaAsset
+    content.vb: Public Shared Function FirstArena(content As ContentAsset, index As Integer) As ArenaAsset
+  overload: SurvivorsMaker.Editor.MakerToolContext.FirstArena*
+  nameWithType.vb: MakerToolContext.FirstArena(ContentAsset, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.FirstArena(SurvivorsMaker.Data.ContentAsset, Integer)
+  name.vb: FirstArena(ContentAsset, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolContext.WaveAt(SurvivorsMaker.Data.ContentAsset,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.WaveAt(SurvivorsMaker.Data.ContentAsset,System.Int32)
+  id: WaveAt(SurvivorsMaker.Data.ContentAsset,System.Int32)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: WaveAt(ContentAsset, int)
+  nameWithType: MakerToolContext.WaveAt(ContentAsset, int)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.WaveAt(SurvivorsMaker.Data.ContentAsset, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: The authoring asset of 1-based wave <code class="paramref">wave</code> in the first arena with waves.
+  example: []
+  syntax:
+    content: public static WaveAsset WaveAt(ContentAsset content, int wave)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: wave
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Data.WaveAsset
+    content.vb: Public Shared Function WaveAt(content As ContentAsset, wave As Integer) As WaveAsset
+  overload: SurvivorsMaker.Editor.MakerToolContext.WaveAt*
+  nameWithType.vb: MakerToolContext.WaveAt(ContentAsset, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.WaveAt(SurvivorsMaker.Data.ContentAsset, Integer)
+  name.vb: WaveAt(ContentAsset, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolContext.FindWave(SurvivorsMaker.Data.WaveAsset,SurvivorsMaker.Data.ContentAsset@,SurvivorsMaker.Data.ArenaAsset@,System.Int32@)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.FindWave(SurvivorsMaker.Data.WaveAsset,SurvivorsMaker.Data.ContentAsset@,SurvivorsMaker.Data.ArenaAsset@,System.Int32@)
+  id: FindWave(SurvivorsMaker.Data.WaveAsset,SurvivorsMaker.Data.ContentAsset@,SurvivorsMaker.Data.ArenaAsset@,System.Int32@)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: FindWave(WaveAsset, out ContentAsset, out ArenaAsset, out int)
+  nameWithType: MakerToolContext.FindWave(WaveAsset, out ContentAsset, out ArenaAsset, out int)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.FindWave(SurvivorsMaker.Data.WaveAsset, out SurvivorsMaker.Data.ContentAsset,
+    out SurvivorsMaker.Data.ArenaAsset, out int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Finds a wave asset in the project''s contents: content, arena and 1-based wave number.'
+  example: []
+  syntax:
+    content: public static bool FindWave(WaveAsset wave, out ContentAsset content, out ArenaAsset arena, out int waveNumber)
+    parameters:
+    - id: wave
+      type: SurvivorsMaker.Data.WaveAsset
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: arena
+      type: SurvivorsMaker.Data.ArenaAsset
+    - id: waveNumber
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FindWave(wave As WaveAsset, content As ContentAsset, arena As ArenaAsset, waveNumber
+      As Integer) As Boolean
+  overload: SurvivorsMaker.Editor.MakerToolContext.FindWave*
+  nameWithType.vb: MakerToolContext.FindWave(WaveAsset, ContentAsset, ArenaAsset, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.FindWave(SurvivorsMaker.Data.WaveAsset, SurvivorsMaker.Data.ContentAsset,
+    SurvivorsMaker.Data.ArenaAsset, Integer)
+  name.vb: FindWave(WaveAsset, ContentAsset, ArenaAsset, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolContext.AllWeapons(SurvivorsMaker.Data.ContentAsset)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.AllWeapons(SurvivorsMaker.Data.ContentAsset)
+  id: AllWeapons(SurvivorsMaker.Data.ContentAsset)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: AllWeapons(ContentAsset)
+  nameWithType: MakerToolContext.AllWeapons(ContentAsset)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.AllWeapons(SurvivorsMaker.Data.ContentAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Content weapons followed by their tier chains, without duplicates, in authored order.
+  example: []
+  syntax:
+    content: public static List<WeaponAsset> AllWeapons(ContentAsset content)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+    content.vb: Public Shared Function AllWeapons(content As ContentAsset) As List(Of WeaponAsset)
+  overload: SurvivorsMaker.Editor.MakerToolContext.AllWeapons*
+- uid: SurvivorsMaker.Editor.MakerToolContext.TierChain(SurvivorsMaker.Data.WeaponAsset,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset})
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.TierChain(SurvivorsMaker.Data.WeaponAsset,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset})
+  id: TierChain(SurvivorsMaker.Data.WeaponAsset,System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset})
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: TierChain(WeaponAsset, IEnumerable<WeaponAsset>)
+  nameWithType: MakerToolContext.TierChain(WeaponAsset, IEnumerable<WeaponAsset>)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.TierChain(SurvivorsMaker.Data.WeaponAsset, System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.WeaponAsset>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Tier chain starting at the lowest tier that leads to <code class="paramref">weapon</code>.
+  example: []
+  syntax:
+    content: public static List<WeaponAsset> TierChain(WeaponAsset weapon, IEnumerable<WeaponAsset> pool = null)
+    parameters:
+    - id: weapon
+      type: SurvivorsMaker.Data.WeaponAsset
+    - id: pool
+      type: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset}
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+    content.vb: Public Shared Function TierChain(weapon As WeaponAsset, pool As IEnumerable(Of WeaponAsset) = Nothing) As
+      List(Of WeaponAsset)
+  overload: SurvivorsMaker.Editor.MakerToolContext.TierChain*
+  nameWithType.vb: MakerToolContext.TierChain(WeaponAsset, IEnumerable(Of WeaponAsset))
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.TierChain(SurvivorsMaker.Data.WeaponAsset, System.Collections.Generic.IEnumerable(Of
+    SurvivorsMaker.Data.WeaponAsset))
+  name.vb: TierChain(WeaponAsset, IEnumerable(Of WeaponAsset))
+- uid: SurvivorsMaker.Editor.MakerToolContext.AllEnemies(SurvivorsMaker.Data.ContentAsset)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.AllEnemies(SurvivorsMaker.Data.ContentAsset)
+  id: AllEnemies(SurvivorsMaker.Data.ContentAsset)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: AllEnemies(ContentAsset)
+  nameWithType: MakerToolContext.AllEnemies(ContentAsset)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.AllEnemies(SurvivorsMaker.Data.ContentAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Enemies the content lists, plus enemies reached through waves, hordes, summons and death spawns.
+  example: []
+  syntax:
+    content: public static List<EnemyAsset> AllEnemies(ContentAsset content)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+    content.vb: Public Shared Function AllEnemies(content As ContentAsset) As List(Of EnemyAsset)
+  overload: SurvivorsMaker.Editor.MakerToolContext.AllEnemies*
+- uid: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Run.RunMode,System.Int32,System.UInt32,System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Run.RunMode,System.Int32,System.UInt32,System.String,System.Int32)
+  id: Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Run.RunMode,System.Int32,System.UInt32,System.String,System.Int32)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: Snapshot(ContentAsset, GameSettingsAsset, RunMode, int, uint, string, int)
+  nameWithType: MakerToolContext.Snapshot(ContentAsset, GameSettingsAsset, RunMode, int, uint, string, int)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset, SurvivorsMaker.Data.GameSettingsAsset,
+    SurvivorsMaker.Run.RunMode, int, uint, string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Converts the assets into run definitions (copies of settings, cached content definitions) on the editor
+
+    thread. Throws with a readable message when content or settings are missing.'
+  example: []
+  syntax:
+    content: public static MakerSnapshot Snapshot(ContentAsset content, GameSettingsAsset settings, RunMode mode = RunMode.Arena,
+      int runs = 100, uint seed = 1, string bot = "Greedy", int difficulty = 0)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: settings
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    - id: mode
+      type: SurvivorsMaker.Run.RunMode
+    - id: runs
+      type: System.Int32
+    - id: seed
+      type: System.UInt32
+    - id: bot
+      type: System.String
+    - id: difficulty
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Editor.MakerSnapshot
+    content.vb: Public Shared Function Snapshot(content As ContentAsset, settings As GameSettingsAsset, mode As RunMode =
+      RunMode.Arena, runs As Integer = 100, seed As UInteger = 1, bot As String = "Greedy", difficulty As Integer = 0) As
+      MakerSnapshot
+  overload: SurvivorsMaker.Editor.MakerToolContext.Snapshot*
+  nameWithType.vb: MakerToolContext.Snapshot(ContentAsset, GameSettingsAsset, RunMode, Integer, UInteger, String, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset, SurvivorsMaker.Data.GameSettingsAsset,
+    SurvivorsMaker.Run.RunMode, Integer, UInteger, String, Integer)
+  name.vb: Snapshot(ContentAsset, GameSettingsAsset, RunMode, Integer, UInteger, String, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Data.ArenaAsset,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Data.ArenaAsset,System.Int32)
+  id: Snapshot(SurvivorsMaker.Data.ContentAsset,SurvivorsMaker.Data.GameSettingsAsset,SurvivorsMaker.Data.ArenaAsset,System.Int32)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: Snapshot(ContentAsset, GameSettingsAsset, ArenaAsset, int)
+  nameWithType: MakerToolContext.Snapshot(ContentAsset, GameSettingsAsset, ArenaAsset, int)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset, SurvivorsMaker.Data.GameSettingsAsset,
+    SurvivorsMaker.Data.ArenaAsset, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Snapshot that targets a specific arena asset of the content.
+  example: []
+  syntax:
+    content: public static MakerSnapshot Snapshot(ContentAsset content, GameSettingsAsset settings, ArenaAsset arena, int
+      difficulty)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Data.ContentAsset
+    - id: settings
+      type: SurvivorsMaker.Data.GameSettingsAsset
+    - id: arena
+      type: SurvivorsMaker.Data.ArenaAsset
+    - id: difficulty
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Editor.MakerSnapshot
+    content.vb: Public Shared Function Snapshot(content As ContentAsset, settings As GameSettingsAsset, arena As ArenaAsset,
+      difficulty As Integer) As MakerSnapshot
+  overload: SurvivorsMaker.Editor.MakerToolContext.Snapshot*
+  nameWithType.vb: MakerToolContext.Snapshot(ContentAsset, GameSettingsAsset, ArenaAsset, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolContext.Snapshot(SurvivorsMaker.Data.ContentAsset, SurvivorsMaker.Data.GameSettingsAsset,
+    SurvivorsMaker.Data.ArenaAsset, Integer)
+  name.vb: Snapshot(ContentAsset, GameSettingsAsset, ArenaAsset, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolContext.Label(SurvivorsMaker.Data.ContentAssetBase)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.Label(SurvivorsMaker.Data.ContentAssetBase)
+  id: Label(SurvivorsMaker.Data.ContentAssetBase)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: Label(ContentAssetBase)
+  nameWithType: MakerToolContext.Label(ContentAssetBase)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Label(SurvivorsMaker.Data.ContentAssetBase)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Label(ContentAssetBase asset)
+    parameters:
+    - id: asset
+      type: SurvivorsMaker.Data.ContentAssetBase
+    return:
+      type: System.String
+    content.vb: Public Shared Function Label(asset As ContentAssetBase) As String
+  overload: SurvivorsMaker.Editor.MakerToolContext.Label*
+- uid: SurvivorsMaker.Editor.MakerToolContext.Ping(UnityEngine.Object)
+  commentId: M:SurvivorsMaker.Editor.MakerToolContext.Ping(UnityEngine.Object)
+  id: Ping(UnityEngine.Object)
+  parent: SurvivorsMaker.Editor.MakerToolContext
+  langs:
+  - csharp
+  - vb
+  name: Ping(Object)
+  nameWithType: MakerToolContext.Ping(Object)
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Ping(UnityEngine.Object)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Pings and selects an asset in the Project window.
+  example: []
+  syntax:
+    content: public static void Ping(Object asset)
+    parameters:
+    - id: asset
+      type: UnityEngine.Object
+    content.vb: Public Shared Sub Ping(asset As [Object])
+  overload: SurvivorsMaker.Editor.MakerToolContext.Ping*
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.MakerToolContext.DefaultContent*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.DefaultContent
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_DefaultContent_UnityEngine_Object_
+  name: DefaultContent
+  nameWithType: MakerToolContext.DefaultContent
+  fullName: SurvivorsMaker.Editor.MakerToolContext.DefaultContent
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: SurvivorsMaker.Data.ContentAsset
+  commentId: T:SurvivorsMaker.Data.ContentAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAsset.html
+  name: ContentAsset
+  nameWithType: ContentAsset
+  fullName: SurvivorsMaker.Data.ContentAsset
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerToolContext.DefaultSettings*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.DefaultSettings
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_DefaultSettings_SurvivorsMaker_Data_ContentAsset_UnityEngine_Object_
+  name: DefaultSettings
+  nameWithType: MakerToolContext.DefaultSettings
+  fullName: SurvivorsMaker.Editor.MakerToolContext.DefaultSettings
+- uid: SurvivorsMaker.Data.GameSettingsAsset
+  commentId: T:SurvivorsMaker.Data.GameSettingsAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.GameSettingsAsset.html
+  name: GameSettingsAsset
+  nameWithType: GameSettingsAsset
+  fullName: SurvivorsMaker.Data.GameSettingsAsset
+- uid: SurvivorsMaker.Editor.MakerToolContext.References*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.References
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_References_SurvivorsMaker_Data_ContentAsset_UnityEngine_Object_
+  name: References
+  nameWithType: MakerToolContext.References
+  fullName: SurvivorsMaker.Editor.MakerToolContext.References
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.MakerToolContext.FirstArena*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.FirstArena
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_FirstArena_SurvivorsMaker_Data_ContentAsset_System_Int32__
+  name: FirstArena
+  nameWithType: MakerToolContext.FirstArena
+  fullName: SurvivorsMaker.Editor.MakerToolContext.FirstArena
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Data.ArenaAsset
+  commentId: T:SurvivorsMaker.Data.ArenaAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ArenaAsset.html
+  name: ArenaAsset
+  nameWithType: ArenaAsset
+  fullName: SurvivorsMaker.Data.ArenaAsset
+- uid: SurvivorsMaker.Editor.MakerToolContext.WaveAt*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.WaveAt
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_WaveAt_SurvivorsMaker_Data_ContentAsset_System_Int32_
+  name: WaveAt
+  nameWithType: MakerToolContext.WaveAt
+  fullName: SurvivorsMaker.Editor.MakerToolContext.WaveAt
+- uid: SurvivorsMaker.Data.WaveAsset
+  commentId: T:SurvivorsMaker.Data.WaveAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WaveAsset.html
+  name: WaveAsset
+  nameWithType: WaveAsset
+  fullName: SurvivorsMaker.Data.WaveAsset
+- uid: SurvivorsMaker.Editor.MakerToolContext.FindWave*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.FindWave
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_FindWave_SurvivorsMaker_Data_WaveAsset_SurvivorsMaker_Data_ContentAsset__SurvivorsMaker_Data_ArenaAsset__System_Int32__
+  name: FindWave
+  nameWithType: MakerToolContext.FindWave
+  fullName: SurvivorsMaker.Editor.MakerToolContext.FindWave
+- uid: SurvivorsMaker.Editor.MakerToolContext.AllWeapons*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.AllWeapons
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_AllWeapons_SurvivorsMaker_Data_ContentAsset_
+  name: AllWeapons
+  nameWithType: MakerToolContext.AllWeapons
+  fullName: SurvivorsMaker.Editor.MakerToolContext.AllWeapons
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.WeaponAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WeaponAsset>
+  nameWithType: List<WeaponAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.WeaponAsset>
+  nameWithType.vb: List(Of WeaponAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.WeaponAsset)
+  name.vb: List(Of WeaponAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WeaponAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.WeaponAsset.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.MakerToolContext.TierChain*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.TierChain
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_TierChain_SurvivorsMaker_Data_WeaponAsset_System_Collections_Generic_IEnumerable_SurvivorsMaker_Data_WeaponAsset__
+  name: TierChain
+  nameWithType: MakerToolContext.TierChain
+  fullName: SurvivorsMaker.Editor.MakerToolContext.TierChain
+- uid: SurvivorsMaker.Data.WeaponAsset
+  commentId: T:SurvivorsMaker.Data.WeaponAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WeaponAsset.html
+  name: WeaponAsset
+  nameWithType: WeaponAsset
+  fullName: SurvivorsMaker.Data.WeaponAsset
+- uid: System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset}
+  commentId: T:System.Collections.Generic.IEnumerable{SurvivorsMaker.Data.WeaponAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<WeaponAsset>
+  nameWithType: IEnumerable<WeaponAsset>
+  fullName: System.Collections.Generic.IEnumerable<SurvivorsMaker.Data.WeaponAsset>
+  nameWithType.vb: IEnumerable(Of WeaponAsset)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SurvivorsMaker.Data.WeaponAsset)
+  name.vb: IEnumerable(Of WeaponAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.WeaponAsset
+    name: WeaponAsset
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Editor.MakerToolContext.AllEnemies*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.AllEnemies
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_AllEnemies_SurvivorsMaker_Data_ContentAsset_
+  name: AllEnemies
+  nameWithType: MakerToolContext.AllEnemies
+  fullName: SurvivorsMaker.Editor.MakerToolContext.AllEnemies
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.EnemyAsset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EnemyAsset>
+  nameWithType: List<EnemyAsset>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.EnemyAsset>
+  nameWithType.vb: List(Of EnemyAsset)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.EnemyAsset)
+  name.vb: List(Of EnemyAsset)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.EnemyAsset
+    name: EnemyAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.EnemyAsset.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.EnemyAsset
+    name: EnemyAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.EnemyAsset.html
+  - name: )
+- uid: SurvivorsMaker.Editor.MakerToolContext.Snapshot*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.Snapshot
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_Snapshot_SurvivorsMaker_Data_ContentAsset_SurvivorsMaker_Data_GameSettingsAsset_SurvivorsMaker_Run_RunMode_System_Int32_System_UInt32_System_String_System_Int32_
+  name: Snapshot
+  nameWithType: MakerToolContext.Snapshot
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Snapshot
+- uid: SurvivorsMaker.Run.RunMode
+  commentId: T:SurvivorsMaker.Run.RunMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunMode.html
+  name: RunMode
+  nameWithType: RunMode
+  fullName: SurvivorsMaker.Run.RunMode
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Editor.MakerSnapshot
+  commentId: T:SurvivorsMaker.Editor.MakerSnapshot
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerSnapshot.html
+  name: MakerSnapshot
+  nameWithType: MakerSnapshot
+  fullName: SurvivorsMaker.Editor.MakerSnapshot
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerToolContext.Label*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.Label
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_Label_SurvivorsMaker_Data_ContentAssetBase_
+  name: Label
+  nameWithType: MakerToolContext.Label
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Label
+- uid: SurvivorsMaker.Data.ContentAssetBase
+  commentId: T:SurvivorsMaker.Data.ContentAssetBase
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAssetBase.html
+  name: ContentAssetBase
+  nameWithType: ContentAssetBase
+  fullName: SurvivorsMaker.Data.ContentAssetBase
+- uid: SurvivorsMaker.Editor.MakerToolContext.Ping*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolContext.Ping
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolContext.html#SurvivorsMaker_Editor_MakerToolContext_Ping_UnityEngine_Object_
+  name: Ping
+  nameWithType: MakerToolContext.Ping
+  fullName: SurvivorsMaker.Editor.MakerToolContext.Ping

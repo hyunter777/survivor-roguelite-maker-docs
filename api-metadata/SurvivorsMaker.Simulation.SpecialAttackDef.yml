@@ -1,0 +1,982 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackDef
+  id: SpecialAttackDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SpecialAttackDef.#ctor
+  - SurvivorsMaker.Simulation.SpecialAttackDef.Behaviour
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSeconds
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSpeed
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTarget
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTargetRadius
+  - SurvivorsMaker.Simulation.SpecialAttackDef.CooldownJitterTicks
+  - SurvivorsMaker.Simulation.SpecialAttackDef.CooldownTicks
+  - SurvivorsMaker.Simulation.SpecialAttackDef.FirstDelayTicks
+  - SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  - SurvivorsMaker.Simulation.SpecialAttackDef.MaxRange
+  - SurvivorsMaker.Simulation.SpecialAttackDef.MaxSummonAttacks
+  - SurvivorsMaker.Simulation.SpecialAttackDef.MinRange
+  - SurvivorsMaker.Simulation.SpecialAttackDef.Origin
+  - SurvivorsMaker.Simulation.SpecialAttackDef.OriginRadius
+  - SurvivorsMaker.Simulation.SpecialAttackDef.Parameters
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileCount
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileDamage
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileRadius
+  - SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileSpeed
+  - SurvivorsMaker.Simulation.SpecialAttackDef.SpreadRadians
+  - SurvivorsMaker.Simulation.SpecialAttackDef.SummonCount
+  - SurvivorsMaker.Simulation.SpecialAttackDef.SummonDef
+  - SurvivorsMaker.Simulation.SpecialAttackDef.SummonRadius
+  - SurvivorsMaker.Simulation.SpecialAttackDef.WindupSeconds
+  langs:
+  - csharp
+  - vb
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class SpecialAttackDef
+    content.vb: Public NotInheritable Class SpecialAttackDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  id: Kind
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: SpecialAttackDef.Kind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SpecialAttackKind Kind
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+    content.vb: Public Kind As SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.Behaviour
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.Behaviour
+  id: Behaviour
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: Behaviour
+  nameWithType: SpecialAttackDef.Behaviour
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.Behaviour
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Registered attack id (<xref href="SurvivorsMaker.Simulation.SimBehaviours.Attacks" data-throw-if-not-resolved="false"></xref>).
+    Empty = the built-in behaviour of <xref href="SurvivorsMaker.Simulation.SpecialAttackDef.Kind" data-throw-if-not-resolved="false"></xref>
+    (none for None).
+  example: []
+  syntax:
+    content: public string Behaviour
+    return:
+      type: System.String
+    content.vb: Public Behaviour As String
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.Parameters
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.Parameters
+  id: Parameters
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: SpecialAttackDef.Parameters
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.Parameters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Values a custom attack reads.
+  example: []
+  syntax:
+    content: public List<BehaviourParameter> Parameters
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    content.vb: Public Parameters As List(Of BehaviourParameter)
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.CooldownTicks
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.CooldownTicks
+  id: CooldownTicks
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: CooldownTicks
+  nameWithType: SpecialAttackDef.CooldownTicks
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.CooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Cooldown between attacks; ± CooldownJitterTicks, rounded, at least 1 tick.
+  example: []
+  syntax:
+    content: public int CooldownTicks
+    return:
+      type: System.Int32
+    content.vb: Public CooldownTicks As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.CooldownJitterTicks
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.CooldownJitterTicks
+  id: CooldownJitterTicks
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: CooldownJitterTicks
+  nameWithType: SpecialAttackDef.CooldownJitterTicks
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.CooldownJitterTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int CooldownJitterTicks
+    return:
+      type: System.Int32
+    content.vb: Public CooldownJitterTicks As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.FirstDelayTicks
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.FirstDelayTicks
+  id: FirstDelayTicks
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: FirstDelayTicks
+  nameWithType: SpecialAttackDef.FirstDelayTicks
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.FirstDelayTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Shoot only: wait before the first attack. Charge/Summon use a normal cooldown roll.'
+  example: []
+  syntax:
+    content: public int FirstDelayTicks
+    return:
+      type: System.Int32
+    content.vb: Public FirstDelayTicks As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.MinRange
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.MinRange
+  id: MinRange
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: MinRange
+  nameWithType: SpecialAttackDef.MinRange
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.MinRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Shoot/Charge: wind-up may start only when the player distance is within [MinRange, MaxRange].'
+  example: []
+  syntax:
+    content: public float MinRange
+    return:
+      type: System.Single
+    content.vb: Public MinRange As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.MaxRange
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.MaxRange
+  id: MaxRange
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: MaxRange
+  nameWithType: SpecialAttackDef.MaxRange
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.MaxRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float MaxRange
+    return:
+      type: System.Single
+    content.vb: Public MaxRange As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.WindupSeconds
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.WindupSeconds
+  id: WindupSeconds
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: WindupSeconds
+  nameWithType: SpecialAttackDef.WindupSeconds
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.WindupSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Wind-up before the effect, in seconds (divided by the global wind-up speed).
+  example: []
+  syntax:
+    content: public float WindupSeconds
+    return:
+      type: System.Single
+    content.vb: Public WindupSeconds As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileCount
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileCount
+  id: ProjectileCount
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileCount
+  nameWithType: SpecialAttackDef.ProjectileCount
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int ProjectileCount
+    return:
+      type: System.Int32
+    content.vb: Public ProjectileCount As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.SpreadRadians
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.SpreadRadians
+  id: SpreadRadians
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: SpreadRadians
+  nameWithType: SpecialAttackDef.SpreadRadians
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SpreadRadians
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Full spread angle in radians, centered on the aim.
+  example: []
+  syntax:
+    content: public float SpreadRadians
+    return:
+      type: System.Single
+    content.vb: Public SpreadRadians As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileSpeed
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileSpeed
+  id: ProjectileSpeed
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpeed
+  nameWithType: SpecialAttackDef.ProjectileSpeed
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileSpeed
+    return:
+      type: System.Single
+    content.vb: Public ProjectileSpeed As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileRadius
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileRadius
+  id: ProjectileRadius
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRadius
+  nameWithType: SpecialAttackDef.ProjectileRadius
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileRadius
+    return:
+      type: System.Single
+    content.vb: Public ProjectileRadius As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileDamage
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileDamage
+  id: ProjectileDamage
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileDamage
+  nameWithType: SpecialAttackDef.ProjectileDamage
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ProjectileDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Scaled ProjectileDamage
+    return:
+      type: SurvivorsMaker.Simulation.Scaled
+    content.vb: Public ProjectileDamage As Scaled
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.Origin
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.Origin
+  id: Origin
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: SpecialAttackDef.Origin
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.Origin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ShotOrigin Origin
+    return:
+      type: SurvivorsMaker.Simulation.ShotOrigin
+    content.vb: Public Origin As ShotOrigin
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.OriginRadius
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.OriginRadius
+  id: OriginRadius
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: OriginRadius
+  nameWithType: SpecialAttackDef.OriginRadius
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.OriginRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float OriginRadius
+    return:
+      type: System.Single
+    content.vb: Public OriginRadius As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTarget
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTarget
+  id: ChargeTarget
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ChargeTarget
+  nameWithType: SpecialAttackDef.ChargeTarget
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTarget
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public ChargeTarget ChargeTarget
+    return:
+      type: SurvivorsMaker.Simulation.ChargeTarget
+    content.vb: Public ChargeTarget As ChargeTarget
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTargetRadius
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTargetRadius
+  id: ChargeTargetRadius
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ChargeTargetRadius
+  nameWithType: SpecialAttackDef.ChargeTargetRadius
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeTargetRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ChargeTargetRadius
+    return:
+      type: System.Single
+    content.vb: Public ChargeTargetRadius As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSpeed
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSpeed
+  id: ChargeSpeed
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ChargeSpeed
+  nameWithType: SpecialAttackDef.ChargeSpeed
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ChargeSpeed
+    return:
+      type: System.Single
+    content.vb: Public ChargeSpeed As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSeconds
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSeconds
+  id: ChargeSeconds
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: ChargeSeconds
+  nameWithType: SpecialAttackDef.ChargeSeconds
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.ChargeSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ChargeSeconds
+    return:
+      type: System.Single
+    content.vb: Public ChargeSeconds As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.SummonDef
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.SummonDef
+  id: SummonDef
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: SummonDef
+  nameWithType: SpecialAttackDef.SummonDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SummonDef
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EnemyDef SummonDef
+    return:
+      type: SurvivorsMaker.Simulation.EnemyDef
+    content.vb: Public SummonDef As EnemyDef
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.SummonCount
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.SummonCount
+  id: SummonCount
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: SummonCount
+  nameWithType: SpecialAttackDef.SummonCount
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SummonCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int SummonCount
+    return:
+      type: System.Int32
+    content.vb: Public SummonCount As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.SummonRadius
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.SummonRadius
+  id: SummonRadius
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: SummonRadius
+  nameWithType: SpecialAttackDef.SummonRadius
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SummonRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float SummonRadius
+    return:
+      type: System.Single
+    content.vb: Public SummonRadius As Single
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.MaxSummonAttacks
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.MaxSummonAttacks
+  id: MaxSummonAttacks
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: MaxSummonAttacks
+  nameWithType: SpecialAttackDef.MaxSummonAttacks
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.MaxSummonAttacks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Maximum number of summon attacks (not children). 0 or less = unlimited.
+  example: []
+  syntax:
+    content: public int MaxSummonAttacks
+    return:
+      type: System.Int32
+    content.vb: Public MaxSummonAttacks As Integer
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.SpecialAttackDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.SpecialAttackDef
+  langs:
+  - csharp
+  - vb
+  name: SpecialAttackDef()
+  nameWithType: SpecialAttackDef.SpecialAttackDef()
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SpecialAttackDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SpecialAttackDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.SpecialAttackDef.#ctor*
+  nameWithType.vb: SpecialAttackDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.SpecialAttackDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackKind.html
+  name: SpecialAttackKind
+  nameWithType: SpecialAttackKind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Attacks
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_Attacks
+  name: Attacks
+  nameWithType: SimBehaviours.Attacks
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Attacks
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html#SurvivorsMaker_Simulation_SpecialAttackDef_Kind
+  name: Kind
+  nameWithType: SpecialAttackDef.Kind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.Kind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BehaviourParameter>
+  nameWithType: List<BehaviourParameter>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>
+  nameWithType.vb: List(Of BehaviourParameter)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter)
+  name.vb: List(Of BehaviourParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.Scaled
+  commentId: T:SurvivorsMaker.Simulation.Scaled
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html
+  name: Scaled
+  nameWithType: Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled
+- uid: SurvivorsMaker.Simulation.ShotOrigin
+  commentId: T:SurvivorsMaker.Simulation.ShotOrigin
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ShotOrigin.html
+  name: ShotOrigin
+  nameWithType: ShotOrigin
+  fullName: SurvivorsMaker.Simulation.ShotOrigin
+- uid: SurvivorsMaker.Simulation.ChargeTarget
+  commentId: T:SurvivorsMaker.Simulation.ChargeTarget
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ChargeTarget.html
+  name: ChargeTarget
+  nameWithType: ChargeTarget
+  fullName: SurvivorsMaker.Simulation.ChargeTarget
+- uid: SurvivorsMaker.Simulation.EnemyDef
+  commentId: T:SurvivorsMaker.Simulation.EnemyDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EnemyDef.html
+  name: EnemyDef
+  nameWithType: EnemyDef
+  fullName: SurvivorsMaker.Simulation.EnemyDef
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.SpecialAttackDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html#SurvivorsMaker_Simulation_SpecialAttackDef__ctor
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef.SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef.SpecialAttackDef
+  nameWithType.vb: SpecialAttackDef.New
+  fullName.vb: SurvivorsMaker.Simulation.SpecialAttackDef.New
+  name.vb: New

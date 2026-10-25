@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.BuildLabChoices
+  commentId: T:SurvivorsMaker.Editor.BuildLabChoices
+  id: BuildLabChoices
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.BuildLabChoices.#ctor
+  - SurvivorsMaker.Editor.BuildLabChoices.CharacterIds
+  - SurvivorsMaker.Editor.BuildLabChoices.CharacterLabels
+  - SurvivorsMaker.Editor.BuildLabChoices.ItemIds
+  - SurvivorsMaker.Editor.BuildLabChoices.ItemLabels
+  - SurvivorsMaker.Editor.BuildLabChoices.Popup(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Action{System.String})
+  - SurvivorsMaker.Editor.BuildLabChoices.WeaponIds
+  - SurvivorsMaker.Editor.BuildLabChoices.WeaponLabels
+  langs:
+  - csharp
+  - vb
+  name: BuildLabChoices
+  nameWithType: BuildLabChoices
+  fullName: SurvivorsMaker.Editor.BuildLabChoices
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Id choices for the Build Lab pickers (ids and their labels, same order).
+  example: []
+  syntax:
+    content: public sealed class BuildLabChoices
+    content.vb: Public NotInheritable Class BuildLabChoices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.BuildLabChoices.CharacterIds
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.CharacterIds
+  id: CharacterIds
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: CharacterIds
+  nameWithType: BuildLabChoices.CharacterIds
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.CharacterIds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> CharacterIds
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly CharacterIds As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.CharacterLabels
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.CharacterLabels
+  id: CharacterLabels
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: CharacterLabels
+  nameWithType: BuildLabChoices.CharacterLabels
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.CharacterLabels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> CharacterLabels
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly CharacterLabels As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.WeaponIds
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.WeaponIds
+  id: WeaponIds
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: WeaponIds
+  nameWithType: BuildLabChoices.WeaponIds
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.WeaponIds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> WeaponIds
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly WeaponIds As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.WeaponLabels
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.WeaponLabels
+  id: WeaponLabels
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: WeaponLabels
+  nameWithType: BuildLabChoices.WeaponLabels
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.WeaponLabels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> WeaponLabels
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly WeaponLabels As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.ItemIds
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.ItemIds
+  id: ItemIds
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: ItemIds
+  nameWithType: BuildLabChoices.ItemIds
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.ItemIds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> ItemIds
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly ItemIds As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.ItemLabels
+  commentId: F:SurvivorsMaker.Editor.BuildLabChoices.ItemLabels
+  id: ItemLabels
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: ItemLabels
+  nameWithType: BuildLabChoices.ItemLabels
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.ItemLabels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public readonly List<string> ItemLabels
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly ItemLabels As List(Of String)
+- uid: SurvivorsMaker.Editor.BuildLabChoices.Popup(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Action{System.String})
+  commentId: M:SurvivorsMaker.Editor.BuildLabChoices.Popup(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Action{System.String})
+  id: Popup(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Action{System.String})
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: Popup(string, List<string>, List<string>, string, Action<string>)
+  nameWithType: BuildLabChoices.Popup(string, List<string>, List<string>, string, Action<string>)
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.Popup(string, System.Collections.Generic.List<string>, System.Collections.Generic.List<string>,
+    string, System.Action<string>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static PopupField<string> Popup(string label, List<string> ids, List<string> labels, string current, Action<string>
+      picked)
+    parameters:
+    - id: label
+      type: System.String
+    - id: ids
+      type: System.Collections.Generic.List{System.String}
+    - id: labels
+      type: System.Collections.Generic.List{System.String}
+    - id: current
+      type: System.String
+    - id: picked
+      type: System.Action{System.String}
+    return:
+      type: UnityEngine.UIElements.PopupField{System.String}
+    content.vb: Public Shared Function Popup(label As String, ids As List(Of String), labels As List(Of String), current As
+      String, picked As Action(Of String)) As PopupField(Of String)
+  overload: SurvivorsMaker.Editor.BuildLabChoices.Popup*
+  nameWithType.vb: BuildLabChoices.Popup(String, List(Of String), List(Of String), String, Action(Of String))
+  fullName.vb: SurvivorsMaker.Editor.BuildLabChoices.Popup(String, System.Collections.Generic.List(Of String), System.Collections.Generic.List(Of
+    String), String, System.Action(Of String))
+  name.vb: Popup(String, List(Of String), List(Of String), String, Action(Of String))
+- uid: SurvivorsMaker.Editor.BuildLabChoices.#ctor
+  commentId: M:SurvivorsMaker.Editor.BuildLabChoices.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.BuildLabChoices
+  langs:
+  - csharp
+  - vb
+  name: BuildLabChoices()
+  nameWithType: BuildLabChoices.BuildLabChoices()
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.BuildLabChoices()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public BuildLabChoices()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.BuildLabChoices.#ctor*
+  nameWithType.vb: BuildLabChoices.New()
+  fullName.vb: SurvivorsMaker.Editor.BuildLabChoices.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.BuildLabChoices.Popup*
+  commentId: Overload:SurvivorsMaker.Editor.BuildLabChoices.Popup
+  isExternal: true
+  href: SurvivorsMaker.Editor.BuildLabChoices.html#SurvivorsMaker_Editor_BuildLabChoices_Popup_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_System_String__System_String_System_Action_System_String__
+  name: Popup
+  nameWithType: BuildLabChoices.Popup
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.Popup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.UIElements.PopupField{System.String}
+  commentId: T:UnityEngine.UIElements.PopupField{System.String}
+  parent: UnityEngine.UIElements
+  definition: UnityEngine.UIElements.PopupField`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PopupField<string>
+  nameWithType: PopupField<string>
+  fullName: UnityEngine.UIElements.PopupField<string>
+  nameWithType.vb: PopupField(Of String)
+  fullName.vb: UnityEngine.UIElements.PopupField(Of String)
+  name.vb: PopupField(Of String)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.PopupField`1
+    name: PopupField
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.UIElements.PopupField`1
+    name: PopupField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: UnityEngine.UIElements.PopupField`1
+  commentId: T:UnityEngine.UIElements.PopupField`1
+  isExternal: true
+  name: PopupField<T>
+  nameWithType: PopupField<T>
+  fullName: UnityEngine.UIElements.PopupField<T>
+  nameWithType.vb: PopupField(Of T)
+  fullName.vb: UnityEngine.UIElements.PopupField(Of T)
+  name.vb: PopupField(Of T)
+  spec.csharp:
+  - uid: UnityEngine.UIElements.PopupField`1
+    name: PopupField
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.UIElements.PopupField`1
+    name: PopupField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: SurvivorsMaker.Editor.BuildLabChoices.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.BuildLabChoices.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.BuildLabChoices.html#SurvivorsMaker_Editor_BuildLabChoices__ctor
+  name: BuildLabChoices
+  nameWithType: BuildLabChoices.BuildLabChoices
+  fullName: SurvivorsMaker.Editor.BuildLabChoices.BuildLabChoices
+  nameWithType.vb: BuildLabChoices.New
+  fullName.vb: SurvivorsMaker.Editor.BuildLabChoices.New
+  name.vb: New

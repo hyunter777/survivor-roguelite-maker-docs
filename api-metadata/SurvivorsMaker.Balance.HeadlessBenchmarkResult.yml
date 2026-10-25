@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  commentId: T:SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  id: HeadlessBenchmarkResult
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.AllocatedBytes
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.BytesPerTick
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.Enemies
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeanMilliseconds
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeetsTimeTarget
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.PercentileMilliseconds
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.Pools
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.Projectiles
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.SampleTicks
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.Separation
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.Spatial
+  - SurvivorsMaker.Balance.HeadlessBenchmarkResult.WarmupTicks
+  langs:
+  - csharp
+  - vb
+  name: HeadlessBenchmarkResult
+  nameWithType: HeadlessBenchmarkResult
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Tick timings and managed allocation measurements for one benchmark workload.
+  example: []
+  syntax:
+    content: public struct HeadlessBenchmarkResult
+    content.vb: Public Structure HeadlessBenchmarkResult
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Separation
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.Separation
+  id: Separation
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Separation
+  nameWithType: HeadlessBenchmarkResult.Separation
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Separation
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public bool Separation
+    return:
+      type: System.Boolean
+    content.vb: Public Separation As Boolean
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Spatial
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.Spatial
+  id: Spatial
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Spatial
+  nameWithType: HeadlessBenchmarkResult.Spatial
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Spatial
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public string Spatial
+    return:
+      type: System.String
+    content.vb: Public Spatial As String
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Pools
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.Pools
+  id: Pools
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Pools
+  nameWithType: HeadlessBenchmarkResult.Pools
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Pools
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public string Pools
+    return:
+      type: System.String
+    content.vb: Public Pools As String
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Enemies
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: HeadlessBenchmarkResult.Enemies
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Enemies
+    return:
+      type: System.Int32
+    content.vb: Public Enemies As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Projectiles
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.Projectiles
+  id: Projectiles
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: Projectiles
+  nameWithType: HeadlessBenchmarkResult.Projectiles
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.Projectiles
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Projectiles
+    return:
+      type: System.Int32
+    content.vb: Public Projectiles As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.WarmupTicks
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.WarmupTicks
+  id: WarmupTicks
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: WarmupTicks
+  nameWithType: HeadlessBenchmarkResult.WarmupTicks
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.WarmupTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int WarmupTicks
+    return:
+      type: System.Int32
+    content.vb: Public WarmupTicks As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.SampleTicks
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.SampleTicks
+  id: SampleTicks
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: SampleTicks
+  nameWithType: HeadlessBenchmarkResult.SampleTicks
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.SampleTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int SampleTicks
+    return:
+      type: System.Int32
+    content.vb: Public SampleTicks As Integer
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeanMilliseconds
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeanMilliseconds
+  id: MeanMilliseconds
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: MeanMilliseconds
+  nameWithType: HeadlessBenchmarkResult.MeanMilliseconds
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeanMilliseconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public double MeanMilliseconds
+    return:
+      type: System.Double
+    content.vb: Public MeanMilliseconds As Double
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.PercentileMilliseconds
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.PercentileMilliseconds
+  id: PercentileMilliseconds
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: PercentileMilliseconds
+  nameWithType: HeadlessBenchmarkResult.PercentileMilliseconds
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.PercentileMilliseconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public double PercentileMilliseconds
+    return:
+      type: System.Double
+    content.vb: Public PercentileMilliseconds As Double
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.AllocatedBytes
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.AllocatedBytes
+  id: AllocatedBytes
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: AllocatedBytes
+  nameWithType: HeadlessBenchmarkResult.AllocatedBytes
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.AllocatedBytes
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public long AllocatedBytes
+    return:
+      type: System.Int64
+    content.vb: Public AllocatedBytes As Long
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.BytesPerTick
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.BytesPerTick
+  id: BytesPerTick
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: BytesPerTick
+  nameWithType: HeadlessBenchmarkResult.BytesPerTick
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.BytesPerTick
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public double BytesPerTick
+    return:
+      type: System.Double
+    content.vb: Public BytesPerTick As Double
+- uid: SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeetsTimeTarget
+  commentId: F:SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeetsTimeTarget
+  id: MeetsTimeTarget
+  parent: SurvivorsMaker.Balance.HeadlessBenchmarkResult
+  langs:
+  - csharp
+  - vb
+  name: MeetsTimeTarget
+  nameWithType: HeadlessBenchmarkResult.MeetsTimeTarget
+  fullName: SurvivorsMaker.Balance.HeadlessBenchmarkResult.MeetsTimeTarget
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public bool MeetsTimeTarget
+    return:
+      type: System.Boolean
+    content.vb: Public MeetsTimeTarget As Boolean
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

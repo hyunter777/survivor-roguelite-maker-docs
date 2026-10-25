@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IProfileStore
+  commentId: T:SurvivorsMaker.Run.IProfileStore
+  id: IProfileStore
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IProfileStore.Load
+  - SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  langs:
+  - csharp
+  - vb
+  name: IProfileStore
+  nameWithType: IProfileStore
+  fullName: SurvivorsMaker.Run.IProfileStore
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Where profiles live. Presentation ships a JSON file store; tests use memory.
+  example: []
+  syntax:
+    content: public interface IProfileStore
+    content.vb: Public Interface IProfileStore
+  derivedClasses:
+  - SurvivorsMaker.Presentation.JsonFileProfileStore
+  - SurvivorsMaker.Run.MemoryProfileStore
+- uid: SurvivorsMaker.Run.IProfileStore.Load
+  commentId: M:SurvivorsMaker.Run.IProfileStore.Load
+  id: Load
+  parent: SurvivorsMaker.Run.IProfileStore
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: IProfileStore.Load()
+  fullName: SurvivorsMaker.Run.IProfileStore.Load()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: ProfileState Load()
+    return:
+      type: SurvivorsMaker.Run.ProfileState
+    content.vb: Function Load() As ProfileState
+  overload: SurvivorsMaker.Run.IProfileStore.Load*
+- uid: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  commentId: M:SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  id: Save(SurvivorsMaker.Run.ProfileState)
+  parent: SurvivorsMaker.Run.IProfileStore
+  langs:
+  - csharp
+  - vb
+  name: Save(ProfileState)
+  nameWithType: IProfileStore.Save(ProfileState)
+  fullName: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: void Save(ProfileState profile)
+    parameters:
+    - id: profile
+      type: SurvivorsMaker.Run.ProfileState
+    content.vb: Sub Save(profile As ProfileState)
+  overload: SurvivorsMaker.Run.IProfileStore.Save*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IProfileStore.Load*
+  commentId: Overload:SurvivorsMaker.Run.IProfileStore.Load
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Load
+  name: Load
+  nameWithType: IProfileStore.Load
+  fullName: SurvivorsMaker.Run.IProfileStore.Load
+- uid: SurvivorsMaker.Run.ProfileState
+  commentId: T:SurvivorsMaker.Run.ProfileState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ProfileState.html
+  name: ProfileState
+  nameWithType: ProfileState
+  fullName: SurvivorsMaker.Run.ProfileState
+- uid: SurvivorsMaker.Run.IProfileStore.Save*
+  commentId: Overload:SurvivorsMaker.Run.IProfileStore.Save
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Save_SurvivorsMaker_Run_ProfileState_
+  name: Save
+  nameWithType: IProfileStore.Save
+  fullName: SurvivorsMaker.Run.IProfileStore.Save

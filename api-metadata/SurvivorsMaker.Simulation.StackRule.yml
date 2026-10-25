@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.StackRule
+  commentId: T:SurvivorsMaker.Simulation.StackRule
+  id: StackRule
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.StackRule.Refresh
+  - SurvivorsMaker.Simulation.StackRule.Stack
+  langs:
+  - csharp
+  - vb
+  name: StackRule
+  nameWithType: StackRule
+  fullName: SurvivorsMaker.Simulation.StackRule
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum StackRule
+    content.vb: Public Enum StackRule
+- uid: SurvivorsMaker.Simulation.StackRule.Refresh
+  commentId: F:SurvivorsMaker.Simulation.StackRule.Refresh
+  id: Refresh
+  parent: SurvivorsMaker.Simulation.StackRule
+  langs:
+  - csharp
+  - vb
+  name: Refresh
+  nameWithType: StackRule.Refresh
+  fullName: SurvivorsMaker.Simulation.StackRule.Refresh
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: One instance; a new application resets its duration (and keeps the stronger magnitude).
+  example: []
+  syntax:
+    content: Refresh = 0
+    return:
+      type: SurvivorsMaker.Simulation.StackRule
+- uid: SurvivorsMaker.Simulation.StackRule.Stack
+  commentId: F:SurvivorsMaker.Simulation.StackRule.Stack
+  id: Stack
+  parent: SurvivorsMaker.Simulation.StackRule
+  langs:
+  - csharp
+  - vb
+  name: Stack
+  nameWithType: StackRule.Stack
+  fullName: SurvivorsMaker.Simulation.StackRule.Stack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: One instance with a stack count up to MaxStacks; each application adds a stack and resets duration.
+  example: []
+  syntax:
+    content: Stack = 1
+    return:
+      type: SurvivorsMaker.Simulation.StackRule
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.StackRule
+  commentId: T:SurvivorsMaker.Simulation.StackRule
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StackRule.html
+  name: StackRule
+  nameWithType: StackRule
+  fullName: SurvivorsMaker.Simulation.StackRule

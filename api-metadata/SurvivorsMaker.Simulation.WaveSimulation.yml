@@ -1,0 +1,1191 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WaveSimulation
+  commentId: T:SurvivorsMaker.Simulation.WaveSimulation
+  id: WaveSimulation
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems)
+  - SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems,SurvivorsMaker.Simulation.PickupRules)
+  - SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  - SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef},System.Boolean)
+  - SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects
+  - SurvivorsMaker.Simulation.WaveSimulation.EffectStates
+  - SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest
+  - SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+  - SurvivorsMaker.Simulation.WaveSimulation.PlaytestInvulnerable
+  - SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  - SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest)
+  - SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState},SurvivorsMaker.Core.IStatSource,SurvivorsMaker.Core.EffectEvaluationSettings,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding},SurvivorsMaker.Simulation.WaveEffectLoadout)
+  - SurvivorsMaker.Simulation.WaveSimulation.Step(SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Simulation.WaveSimulation.Step(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2})
+  - SurvivorsMaker.Simulation.WaveSimulation.World
+  langs:
+  - csharp
+  - vb
+  name: WaveSimulation
+  nameWithType: WaveSimulation
+  fullName: SurvivorsMaker.Simulation.WaveSimulation
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Runs one wave with a fixed, deterministic system order.
+  example: []
+  syntax:
+    content: public sealed class WaveSimulation
+    content.vb: Public NotInheritable Class WaveSimulation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WaveSimulation.EffectStates
+  commentId: F:SurvivorsMaker.Simulation.WaveSimulation.EffectStates
+  id: EffectStates
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: EffectStates
+  nameWithType: WaveSimulation.EffectStates
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.EffectStates
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public readonly List<WaveEffectLease> EffectStates
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+    content.vb: Public ReadOnly EffectStates As List(Of WaveEffectLease)
+- uid: SurvivorsMaker.Simulation.WaveSimulation.PlaytestInvulnerable
+  commentId: F:SurvivorsMaker.Simulation.WaveSimulation.PlaytestInvulnerable
+  id: PlaytestInvulnerable
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: PlaytestInvulnerable
+  nameWithType: WaveSimulation.PlaytestInvulnerable
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.PlaytestInvulnerable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool PlaytestInvulnerable
+    return:
+      type: System.Boolean
+    content.vb: Public PlaytestInvulnerable As Boolean
+- uid: SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems)
+  id: '#ctor(SurvivorsMaker.Simulation.SimSystems)'
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: WaveSimulation(SimSystems)
+  nameWithType: WaveSimulation.WaveSimulation(SimSystems)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.WaveSimulation(SurvivorsMaker.Simulation.SimSystems)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WaveSimulation(SimSystems systems)
+    parameters:
+    - id: systems
+      type: SurvivorsMaker.Simulation.SimSystems
+    content.vb: Public Sub New(systems As SimSystems)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.#ctor*
+  nameWithType.vb: WaveSimulation.New(SimSystems)
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.New(SurvivorsMaker.Simulation.SimSystems)
+  name.vb: New(SimSystems)
+- uid: SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems,SurvivorsMaker.Simulation.PickupRules)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.#ctor(SurvivorsMaker.Simulation.SimSystems,SurvivorsMaker.Simulation.PickupRules)
+  id: '#ctor(SurvivorsMaker.Simulation.SimSystems,SurvivorsMaker.Simulation.PickupRules)'
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: WaveSimulation(SimSystems, PickupRules)
+  nameWithType: WaveSimulation.WaveSimulation(SimSystems, PickupRules)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.WaveSimulation(SurvivorsMaker.Simulation.SimSystems, SurvivorsMaker.Simulation.PickupRules)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Supplies a replacement for death rewards, attraction and wave settlement.
+  example: []
+  syntax:
+    content: public WaveSimulation(SimSystems systems, PickupRules pickups)
+    parameters:
+    - id: systems
+      type: SurvivorsMaker.Simulation.SimSystems
+    - id: pickups
+      type: SurvivorsMaker.Simulation.PickupRules
+    content.vb: Public Sub New(systems As SimSystems, pickups As PickupRules)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.#ctor*
+  nameWithType.vb: WaveSimulation.New(SimSystems, PickupRules)
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.New(SurvivorsMaker.Simulation.SimSystems, SurvivorsMaker.Simulation.PickupRules)
+  name.vb: New(SimSystems, PickupRules)
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest)
+  id: Start(SurvivorsMaker.Simulation.WaveRequest)
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: Start(WaveRequest)
+  nameWithType: WaveSimulation.Start(WaveRequest)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Starts a fresh world from request settings, optional carried triggers and effect leases.
+  example: []
+  syntax:
+    content: public void Start(WaveRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Simulation.WaveRequest
+    content.vb: Public Sub Start(request As WaveRequest)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.Start*
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState},SurvivorsMaker.Core.IStatSource,SurvivorsMaker.Core.EffectEvaluationSettings,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding},SurvivorsMaker.Simulation.WaveEffectLoadout)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState},SurvivorsMaker.Core.IStatSource,SurvivorsMaker.Core.EffectEvaluationSettings,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding},SurvivorsMaker.Simulation.WaveEffectLoadout)
+  id: Start(SurvivorsMaker.Simulation.WaveRequest,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState},SurvivorsMaker.Core.IStatSource,SurvivorsMaker.Core.EffectEvaluationSettings,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding},SurvivorsMaker.Simulation.WaveEffectLoadout)
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: Start(WaveRequest, IReadOnlyList<TriggerCarryState>, IStatSource, EffectEvaluationSettings, IReadOnlyList<TriggerBinding>,
+    WaveEffectLoadout)
+  nameWithType: WaveSimulation.Start(WaveRequest, IReadOnlyList<TriggerCarryState>, IStatSource, EffectEvaluationSettings,
+    IReadOnlyList<TriggerBinding>, WaveEffectLoadout)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerCarryState>,
+    SurvivorsMaker.Core.IStatSource, SurvivorsMaker.Core.EffectEvaluationSettings, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerBinding>,
+    SurvivorsMaker.Simulation.WaveEffectLoadout)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Starts a fresh world from request settings, optional carried triggers and effect leases.
+  example: []
+  syntax:
+    content: public void Start(WaveRequest request, IReadOnlyList<TriggerCarryState> carriedTriggers, IStatSource statSource
+      = null, EffectEvaluationSettings evaluation = null, IReadOnlyList<TriggerBinding> bindings = null, WaveEffectLoadout
+      loadout = null)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Simulation.WaveRequest
+    - id: carriedTriggers
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState}
+    - id: statSource
+      type: SurvivorsMaker.Core.IStatSource
+    - id: evaluation
+      type: SurvivorsMaker.Core.EffectEvaluationSettings
+    - id: bindings
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+    - id: loadout
+      type: SurvivorsMaker.Simulation.WaveEffectLoadout
+    content.vb: Public Sub Start(request As WaveRequest, carriedTriggers As IReadOnlyList(Of TriggerCarryState), statSource
+      As IStatSource = Nothing, evaluation As EffectEvaluationSettings = Nothing, bindings As IReadOnlyList(Of TriggerBinding)
+      = Nothing, loadout As WaveEffectLoadout = Nothing)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.Start*
+  nameWithType.vb: WaveSimulation.Start(WaveRequest, IReadOnlyList(Of TriggerCarryState), IStatSource, EffectEvaluationSettings,
+    IReadOnlyList(Of TriggerBinding), WaveEffectLoadout)
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.Start(SurvivorsMaker.Simulation.WaveRequest, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.TriggerCarryState), SurvivorsMaker.Core.IStatSource, SurvivorsMaker.Core.EffectEvaluationSettings,
+    System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerBinding), SurvivorsMaker.Simulation.WaveEffectLoadout)
+  name.vb: Start(WaveRequest, IReadOnlyList(Of TriggerCarryState), IStatSource, EffectEvaluationSettings, IReadOnlyList(Of
+    TriggerBinding), WaveEffectLoadout)
+- uid: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef},System.Boolean)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef},System.Boolean)
+  id: ApplyUpgrade(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef},System.Boolean)
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: ApplyUpgrade(IReadOnlyList<Effect>, IReadOnlyList<WeaponDef>, bool)
+  nameWithType: WaveSimulation.ApplyUpgrade(IReadOnlyList<Effect>, IReadOnlyList<WeaponDef>, bool)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade(System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Core.Effect>,
+    System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Applies field-mode rewards without advancing time. When replaceEffects is true, effects
+
+    replace the previous loadout in canonical inventory order (including changed set bonuses).
+
+    A null weapon list keeps the current weapons. Unchanged slots retain their full state.'
+  example: []
+  syntax:
+    content: public void ApplyUpgrade(IReadOnlyList<Effect> effects, IReadOnlyList<WeaponDef> weapons, bool replaceEffects
+      = false)
+    parameters:
+    - id: effects
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+    - id: weapons
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+    - id: replaceEffects
+      type: System.Boolean
+    content.vb: Public Sub ApplyUpgrade(effects As IReadOnlyList(Of Effect), weapons As IReadOnlyList(Of WeaponDef), replaceEffects
+      As Boolean = False)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade*
+  nameWithType.vb: WaveSimulation.ApplyUpgrade(IReadOnlyList(Of Effect), IReadOnlyList(Of WeaponDef), Boolean)
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade(System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Core.Effect),
+    System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.WeaponDef), Boolean)
+  name.vb: ApplyUpgrade(IReadOnlyList(Of Effect), IReadOnlyList(Of WeaponDef), Boolean)
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Step(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.Step(SurvivorsMaker.Simulation.Vec2)
+  id: Step(SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: Step(Vec2)
+  nameWithType: WaveSimulation.Step(Vec2)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Step(SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Advances exactly one fixed tick when the wave is running; terminal waves do not advance.
+  example: []
+  syntax:
+    content: public void Step(Vec2 input)
+    parameters:
+    - id: input
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Sub [Step](input As Vec2)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.Step*
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Step(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2})
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.Step(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2})
+  id: Step(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2})
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: Step(IReadOnlyList<Vec2>)
+  nameWithType: WaveSimulation.Step(IReadOnlyList<Vec2>)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Step(System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.Vec2>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Inputs follow Players order. Missing inputs are zero; surplus inputs are ignored.
+  example: []
+  syntax:
+    content: public void Step(IReadOnlyList<Vec2> inputs)
+    parameters:
+    - id: inputs
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2}
+    content.vb: Public Sub [Step](inputs As IReadOnlyList(Of Vec2))
+  overload: SurvivorsMaker.Simulation.WaveSimulation.Step*
+  nameWithType.vb: WaveSimulation.Step(IReadOnlyList(Of Vec2))
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.Step(System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.Vec2))
+  name.vb: Step(IReadOnlyList(Of Vec2))
+- uid: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  id: RefreshTriggers(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: RefreshTriggers(IReadOnlyList<TriggerDef>, IReadOnlyList<TriggerBinding>)
+  nameWithType: WaveSimulation.RefreshTriggers(IReadOnlyList<TriggerDef>, IReadOnlyList<TriggerBinding>)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers(System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>,
+    System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerBinding>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Updates trigger definitions and optional ownership bindings at an explicit loadout boundary.
+  example: []
+  syntax:
+    content: public void RefreshTriggers(IReadOnlyList<TriggerDef> triggers, IReadOnlyList<TriggerBinding> bindings = null)
+    parameters:
+    - id: triggers
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+    - id: bindings
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+    content.vb: Public Sub RefreshTriggers(triggers As IReadOnlyList(Of TriggerDef), bindings As IReadOnlyList(Of TriggerBinding)
+      = Nothing)
+  overload: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers*
+  nameWithType.vb: WaveSimulation.RefreshTriggers(IReadOnlyList(Of TriggerDef), IReadOnlyList(Of TriggerBinding))
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers(System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerDef),
+    System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerBinding))
+  name.vb: RefreshTriggers(IReadOnlyList(Of TriggerDef), IReadOnlyList(Of TriggerBinding))
+- uid: SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects
+  id: CaptureEffects
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: CaptureEffects()
+  nameWithType: WaveSimulation.CaptureEffects()
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Exports values only; callers can snapshot during field choices without advancing time.
+  example: []
+  syntax:
+    content: public void CaptureEffects()
+    content.vb: Public Sub CaptureEffects()
+  overload: SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects*
+- uid: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  id: ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef})
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: ApplyLoadout(WaveEffectLoadout, IReadOnlyList<WeaponDef>)
+  nameWithType: WaveSimulation.ApplyLoadout(WaveEffectLoadout, IReadOnlyList<WeaponDef>)
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Rebuilds the catalog ledger from current lease values, preserving all transient tokens and weapon slots.
+  example: []
+  syntax:
+    content: public void ApplyLoadout(WaveEffectLoadout loadout, IReadOnlyList<WeaponDef> weapons)
+    parameters:
+    - id: loadout
+      type: SurvivorsMaker.Simulation.WaveEffectLoadout
+    - id: weapons
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+    content.vb: Public Sub ApplyLoadout(loadout As WaveEffectLoadout, weapons As IReadOnlyList(Of WeaponDef))
+  overload: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout*
+  nameWithType.vb: WaveSimulation.ApplyLoadout(WaveEffectLoadout, IReadOnlyList(Of WeaponDef))
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout(SurvivorsMaker.Simulation.WaveEffectLoadout, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.WeaponDef))
+  name.vb: ApplyLoadout(WaveEffectLoadout, IReadOnlyList(Of WeaponDef))
+- uid: SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest
+  commentId: M:SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest
+  id: EndForPlaytest
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: EndForPlaytest()
+  nameWithType: WaveSimulation.EndForPlaytest()
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Uses normal survival settlement without taking another tick. Death cannot be overridden.
+  example: []
+  syntax:
+    content: public bool EndForPlaytest()
+    return:
+      type: System.Boolean
+    content.vb: Public Function EndForPlaytest() As Boolean
+  overload: SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest*
+- uid: SurvivorsMaker.Simulation.WaveSimulation.World
+  commentId: P:SurvivorsMaker.Simulation.WaveSimulation.World
+  id: World
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: WaveSimulation.World
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.World
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public SimWorld World { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public ReadOnly Property World As SimWorld
+  overload: SurvivorsMaker.Simulation.WaveSimulation.World*
+- uid: SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+  commentId: P:SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+  id: NextEffectCarryId
+  parent: SurvivorsMaker.Simulation.WaveSimulation
+  langs:
+  - csharp
+  - vb
+  name: NextEffectCarryId
+  nameWithType: WaveSimulation.NextEffectCarryId
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public long NextEffectCarryId { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property NextEffectCarryId As Long
+  overload: SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WaveEffectLease>
+  nameWithType: List<WaveEffectLease>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.WaveEffectLease>
+  nameWithType.vb: List(Of WaveEffectLease)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.WaveEffectLease)
+  name.vb: List(Of WaveEffectLease)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WaveEffectLease
+    name: WaveEffectLease
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WaveEffectLease.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WaveEffectLease
+    name: WaveEffectLease
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WaveEffectLease.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.WaveSimulation.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation__ctor_SurvivorsMaker_Simulation_SimSystems_
+  name: WaveSimulation
+  nameWithType: WaveSimulation.WaveSimulation
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.WaveSimulation
+  nameWithType.vb: WaveSimulation.New
+  fullName.vb: SurvivorsMaker.Simulation.WaveSimulation.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.SimSystems
+  commentId: T:SurvivorsMaker.Simulation.SimSystems
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSystems.html
+  name: SimSystems
+  nameWithType: SimSystems
+  fullName: SurvivorsMaker.Simulation.SimSystems
+- uid: SurvivorsMaker.Simulation.PickupRules
+  commentId: T:SurvivorsMaker.Simulation.PickupRules
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html
+  name: PickupRules
+  nameWithType: PickupRules
+  fullName: SurvivorsMaker.Simulation.PickupRules
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Start*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.Start
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_Start_SurvivorsMaker_Simulation_WaveRequest_
+  name: Start
+  nameWithType: WaveSimulation.Start
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Start
+- uid: SurvivorsMaker.Simulation.WaveRequest
+  commentId: T:SurvivorsMaker.Simulation.WaveRequest
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveRequest.html
+  name: WaveRequest
+  nameWithType: WaveRequest
+  fullName: SurvivorsMaker.Simulation.WaveRequest
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerCarryState}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerCarryState>
+  nameWithType: IReadOnlyList<TriggerCarryState>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerCarryState>
+  nameWithType.vb: IReadOnlyList(Of TriggerCarryState)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerCarryState)
+  name.vb: IReadOnlyList(Of TriggerCarryState)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerCarryState
+    name: TriggerCarryState
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerCarryState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerCarryState
+    name: TriggerCarryState
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerCarryState.html
+  - name: )
+- uid: SurvivorsMaker.Core.IStatSource
+  commentId: T:SurvivorsMaker.Core.IStatSource
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.IStatSource.html
+  name: IStatSource
+  nameWithType: IStatSource
+  fullName: SurvivorsMaker.Core.IStatSource
+- uid: SurvivorsMaker.Core.EffectEvaluationSettings
+  commentId: T:SurvivorsMaker.Core.EffectEvaluationSettings
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectEvaluationSettings.html
+  name: EffectEvaluationSettings
+  nameWithType: EffectEvaluationSettings
+  fullName: SurvivorsMaker.Core.EffectEvaluationSettings
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerBinding>
+  nameWithType: IReadOnlyList<TriggerBinding>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerBinding>
+  nameWithType.vb: IReadOnlyList(Of TriggerBinding)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerBinding)
+  name.vb: IReadOnlyList(Of TriggerBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerBinding
+    name: TriggerBinding
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerBinding.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerBinding
+    name: TriggerBinding
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerBinding.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WaveEffectLoadout
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectLoadout
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLoadout.html
+  name: WaveEffectLoadout
+  nameWithType: WaveEffectLoadout
+  fullName: SurvivorsMaker.Simulation.WaveEffectLoadout
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_ApplyUpgrade_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Core_Effect__System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__System_Boolean_
+  name: ApplyUpgrade
+  nameWithType: WaveSimulation.ApplyUpgrade
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.ApplyUpgrade
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Effect>
+  nameWithType: IReadOnlyList<Effect>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: IReadOnlyList(Of Effect)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Core.Effect)
+  name.vb: IReadOnlyList(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.WeaponDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<WeaponDef>
+  nameWithType: IReadOnlyList<WeaponDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.WeaponDef>
+  nameWithType.vb: IReadOnlyList(Of WeaponDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.WeaponDef)
+  name.vb: IReadOnlyList(Of WeaponDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WeaponDef
+    name: WeaponDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WeaponDef.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WaveSimulation.Step*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.Step
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_Step_SurvivorsMaker_Simulation_Vec2_
+  name: Step
+  nameWithType: WaveSimulation.Step
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.Step
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.Vec2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Vec2>
+  nameWithType: IReadOnlyList<Vec2>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.Vec2>
+  nameWithType.vb: IReadOnlyList(Of Vec2)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.Vec2)
+  name.vb: IReadOnlyList(Of Vec2)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Vec2
+    name: Vec2
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Vec2.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_RefreshTriggers_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerBinding__
+  name: RefreshTriggers
+  nameWithType: WaveSimulation.RefreshTriggers
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.RefreshTriggers
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerDef>
+  nameWithType: IReadOnlyList<TriggerDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>
+  nameWithType.vb: IReadOnlyList(Of TriggerDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerDef)
+  name.vb: IReadOnlyList(Of TriggerDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_CaptureEffects
+  name: CaptureEffects
+  nameWithType: WaveSimulation.CaptureEffects
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.CaptureEffects
+- uid: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_ApplyLoadout_SurvivorsMaker_Simulation_WaveEffectLoadout_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_WeaponDef__
+  name: ApplyLoadout
+  nameWithType: WaveSimulation.ApplyLoadout
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.ApplyLoadout
+- uid: SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_EndForPlaytest
+  name: EndForPlaytest
+  nameWithType: WaveSimulation.EndForPlaytest
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.EndForPlaytest
+- uid: SurvivorsMaker.Simulation.WaveSimulation.World*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.World
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_World
+  name: World
+  nameWithType: WaveSimulation.World
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.World
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveSimulation.html#SurvivorsMaker_Simulation_WaveSimulation_NextEffectCarryId
+  name: NextEffectCarryId
+  nameWithType: WaveSimulation.NextEffectCarryId
+  fullName: SurvivorsMaker.Simulation.WaveSimulation.NextEffectCarryId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

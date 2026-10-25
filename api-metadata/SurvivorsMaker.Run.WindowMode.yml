@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.WindowMode
+  commentId: T:SurvivorsMaker.Run.WindowMode
+  id: WindowMode
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.WindowMode.Borderless
+  - SurvivorsMaker.Run.WindowMode.Fullscreen
+  - SurvivorsMaker.Run.WindowMode.Windowed
+  langs:
+  - csharp
+  - vb
+  name: WindowMode
+  nameWithType: WindowMode
+  fullName: SurvivorsMaker.Run.WindowMode
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requested presentation window mode, independent of simulation state.
+  example: []
+  syntax:
+    content: public enum WindowMode
+    content.vb: Public Enum WindowMode
+- uid: SurvivorsMaker.Run.WindowMode.Windowed
+  commentId: F:SurvivorsMaker.Run.WindowMode.Windowed
+  id: Windowed
+  parent: SurvivorsMaker.Run.WindowMode
+  langs:
+  - csharp
+  - vb
+  name: Windowed
+  nameWithType: WindowMode.Windowed
+  fullName: SurvivorsMaker.Run.WindowMode.Windowed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Windowed = 0
+    return:
+      type: SurvivorsMaker.Run.WindowMode
+- uid: SurvivorsMaker.Run.WindowMode.Fullscreen
+  commentId: F:SurvivorsMaker.Run.WindowMode.Fullscreen
+  id: Fullscreen
+  parent: SurvivorsMaker.Run.WindowMode
+  langs:
+  - csharp
+  - vb
+  name: Fullscreen
+  nameWithType: WindowMode.Fullscreen
+  fullName: SurvivorsMaker.Run.WindowMode.Fullscreen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Fullscreen = 1
+    return:
+      type: SurvivorsMaker.Run.WindowMode
+- uid: SurvivorsMaker.Run.WindowMode.Borderless
+  commentId: F:SurvivorsMaker.Run.WindowMode.Borderless
+  id: Borderless
+  parent: SurvivorsMaker.Run.WindowMode
+  langs:
+  - csharp
+  - vb
+  name: Borderless
+  nameWithType: WindowMode.Borderless
+  fullName: SurvivorsMaker.Run.WindowMode.Borderless
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Borderless = 2
+    return:
+      type: SurvivorsMaker.Run.WindowMode
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.WindowMode
+  commentId: T:SurvivorsMaker.Run.WindowMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WindowMode.html
+  name: WindowMode
+  nameWithType: WindowMode
+  fullName: SurvivorsMaker.Run.WindowMode

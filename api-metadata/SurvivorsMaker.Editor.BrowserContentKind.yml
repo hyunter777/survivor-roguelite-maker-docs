@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.BrowserContentKind
+  commentId: T:SurvivorsMaker.Editor.BrowserContentKind
+  id: BrowserContentKind
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.BrowserContentKind.Arena
+  - SurvivorsMaker.Editor.BrowserContentKind.Character
+  - SurvivorsMaker.Editor.BrowserContentKind.Elite
+  - SurvivorsMaker.Editor.BrowserContentKind.Enemy
+  - SurvivorsMaker.Editor.BrowserContentKind.Item
+  - SurvivorsMaker.Editor.BrowserContentKind.Set
+  - SurvivorsMaker.Editor.BrowserContentKind.Upgrade
+  - SurvivorsMaker.Editor.BrowserContentKind.Wave
+  - SurvivorsMaker.Editor.BrowserContentKind.Weapon
+  langs:
+  - csharp
+  - vb
+  name: BrowserContentKind
+  nameWithType: BrowserContentKind
+  fullName: SurvivorsMaker.Editor.BrowserContentKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum BrowserContentKind
+    content.vb: Public Enum BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Character
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Character
+  id: Character
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: BrowserContentKind.Character
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Character = 0
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Weapon
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: BrowserContentKind.Weapon
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Weapon = 1
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Item
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Item
+  id: Item
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: BrowserContentKind.Item
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Item = 2
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Upgrade
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Upgrade
+  id: Upgrade
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Upgrade
+  nameWithType: BrowserContentKind.Upgrade
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Upgrade
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Upgrade = 3
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Set
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Set
+  id: Set
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: BrowserContentKind.Set
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Set
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Set = 4
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Enemy
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Enemy
+  id: Enemy
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: BrowserContentKind.Enemy
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Enemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Enemy = 5
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Wave
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Wave
+  id: Wave
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: BrowserContentKind.Wave
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Wave = 6
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Arena
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Arena
+  id: Arena
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: BrowserContentKind.Arena
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Arena = 7
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.BrowserContentKind.Elite
+  commentId: F:SurvivorsMaker.Editor.BrowserContentKind.Elite
+  id: Elite
+  parent: SurvivorsMaker.Editor.BrowserContentKind
+  langs:
+  - csharp
+  - vb
+  name: Elite
+  nameWithType: BrowserContentKind.Elite
+  fullName: SurvivorsMaker.Editor.BrowserContentKind.Elite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Elite = 8
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.BrowserContentKind
+  commentId: T:SurvivorsMaker.Editor.BrowserContentKind
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.BrowserContentKind.html
+  name: BrowserContentKind
+  nameWithType: BrowserContentKind
+  fullName: SurvivorsMaker.Editor.BrowserContentKind

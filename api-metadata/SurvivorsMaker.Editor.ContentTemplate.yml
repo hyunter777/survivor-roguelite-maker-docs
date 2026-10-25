@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentTemplate
+  commentId: T:SurvivorsMaker.Editor.ContentTemplate
+  id: ContentTemplate
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentTemplate.AuraWeapon
+  - SurvivorsMaker.Editor.ContentTemplate.Blank
+  - SurvivorsMaker.Editor.ContentTemplate.BossEnemy
+  - SurvivorsMaker.Editor.ContentTemplate.ChargerEnemy
+  - SurvivorsMaker.Editor.ContentTemplate.ChaserEnemy
+  - SurvivorsMaker.Editor.ContentTemplate.Elite
+  - SurvivorsMaker.Editor.ContentTemplate.MeleeWeapon
+  - SurvivorsMaker.Editor.ContentTemplate.OrbitWeapon
+  - SurvivorsMaker.Editor.ContentTemplate.RangedWeapon
+  - SurvivorsMaker.Editor.ContentTemplate.ShooterEnemy
+  - SurvivorsMaker.Editor.ContentTemplate.SummonerEnemy
+  langs:
+  - csharp
+  - vb
+  name: ContentTemplate
+  nameWithType: ContentTemplate
+  fullName: SurvivorsMaker.Editor.ContentTemplate
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Starting points for new content: one per weapon kind and per enemy archetype. Numbers are our own generic defaults.'
+  example: []
+  syntax:
+    content: public enum ContentTemplate
+    content.vb: Public Enum ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.Blank
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.Blank
+  id: Blank
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: Blank
+  nameWithType: ContentTemplate.Blank
+  fullName: SurvivorsMaker.Editor.ContentTemplate.Blank
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Blank = 0
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.RangedWeapon
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.RangedWeapon
+  id: RangedWeapon
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: RangedWeapon
+  nameWithType: ContentTemplate.RangedWeapon
+  fullName: SurvivorsMaker.Editor.ContentTemplate.RangedWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: RangedWeapon = 1
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.MeleeWeapon
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.MeleeWeapon
+  id: MeleeWeapon
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: MeleeWeapon
+  nameWithType: ContentTemplate.MeleeWeapon
+  fullName: SurvivorsMaker.Editor.ContentTemplate.MeleeWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: MeleeWeapon = 2
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.OrbitWeapon
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.OrbitWeapon
+  id: OrbitWeapon
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: OrbitWeapon
+  nameWithType: ContentTemplate.OrbitWeapon
+  fullName: SurvivorsMaker.Editor.ContentTemplate.OrbitWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: OrbitWeapon = 3
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.AuraWeapon
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.AuraWeapon
+  id: AuraWeapon
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: AuraWeapon
+  nameWithType: ContentTemplate.AuraWeapon
+  fullName: SurvivorsMaker.Editor.ContentTemplate.AuraWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: AuraWeapon = 4
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.ChaserEnemy
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.ChaserEnemy
+  id: ChaserEnemy
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: ChaserEnemy
+  nameWithType: ContentTemplate.ChaserEnemy
+  fullName: SurvivorsMaker.Editor.ContentTemplate.ChaserEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: ChaserEnemy = 5
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.ShooterEnemy
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.ShooterEnemy
+  id: ShooterEnemy
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: ShooterEnemy
+  nameWithType: ContentTemplate.ShooterEnemy
+  fullName: SurvivorsMaker.Editor.ContentTemplate.ShooterEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: ShooterEnemy = 6
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.ChargerEnemy
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.ChargerEnemy
+  id: ChargerEnemy
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: ChargerEnemy
+  nameWithType: ContentTemplate.ChargerEnemy
+  fullName: SurvivorsMaker.Editor.ContentTemplate.ChargerEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: ChargerEnemy = 7
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.SummonerEnemy
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.SummonerEnemy
+  id: SummonerEnemy
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: SummonerEnemy
+  nameWithType: ContentTemplate.SummonerEnemy
+  fullName: SurvivorsMaker.Editor.ContentTemplate.SummonerEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: SummonerEnemy = 8
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.BossEnemy
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.BossEnemy
+  id: BossEnemy
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: BossEnemy
+  nameWithType: ContentTemplate.BossEnemy
+  fullName: SurvivorsMaker.Editor.ContentTemplate.BossEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: BossEnemy = 9
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.ContentTemplate.Elite
+  commentId: F:SurvivorsMaker.Editor.ContentTemplate.Elite
+  id: Elite
+  parent: SurvivorsMaker.Editor.ContentTemplate
+  langs:
+  - csharp
+  - vb
+  name: Elite
+  nameWithType: ContentTemplate.Elite
+  fullName: SurvivorsMaker.Editor.ContentTemplate.Elite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Elite = 10
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.ContentTemplate
+  commentId: T:SurvivorsMaker.Editor.ContentTemplate
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplate.html
+  name: ContentTemplate
+  nameWithType: ContentTemplate
+  fullName: SurvivorsMaker.Editor.ContentTemplate

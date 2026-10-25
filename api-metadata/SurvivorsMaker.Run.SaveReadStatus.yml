@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.SaveReadStatus
+  commentId: T:SurvivorsMaker.Run.SaveReadStatus
+  id: SaveReadStatus
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.SaveReadStatus.AccessDenied
+  - SurvivorsMaker.Run.SaveReadStatus.Corrupt
+  - SurvivorsMaker.Run.SaveReadStatus.Failed
+  - SurvivorsMaker.Run.SaveReadStatus.Incompatible
+  - SurvivorsMaker.Run.SaveReadStatus.Missing
+  - SurvivorsMaker.Run.SaveReadStatus.Success
+  - SurvivorsMaker.Run.SaveReadStatus.UnsupportedVersion
+  langs:
+  - csharp
+  - vb
+  name: SaveReadStatus
+  nameWithType: SaveReadStatus
+  fullName: SurvivorsMaker.Run.SaveReadStatus
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Result category of reading, validating or migrating a save envelope.
+  example: []
+  syntax:
+    content: public enum SaveReadStatus
+    content.vb: Public Enum SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.Success
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.Success
+  id: Success
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: SaveReadStatus.Success
+  fullName: SurvivorsMaker.Run.SaveReadStatus.Success
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Success = 0
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.Missing
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.Missing
+  id: Missing
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: Missing
+  nameWithType: SaveReadStatus.Missing
+  fullName: SurvivorsMaker.Run.SaveReadStatus.Missing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Missing = 1
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.Corrupt
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.Corrupt
+  id: Corrupt
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: Corrupt
+  nameWithType: SaveReadStatus.Corrupt
+  fullName: SurvivorsMaker.Run.SaveReadStatus.Corrupt
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Corrupt = 2
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.UnsupportedVersion
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.UnsupportedVersion
+  id: UnsupportedVersion
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: UnsupportedVersion
+  nameWithType: SaveReadStatus.UnsupportedVersion
+  fullName: SurvivorsMaker.Run.SaveReadStatus.UnsupportedVersion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: UnsupportedVersion = 3
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.Incompatible
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.Incompatible
+  id: Incompatible
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: Incompatible
+  nameWithType: SaveReadStatus.Incompatible
+  fullName: SurvivorsMaker.Run.SaveReadStatus.Incompatible
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Incompatible = 4
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.AccessDenied
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.AccessDenied
+  id: AccessDenied
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: AccessDenied
+  nameWithType: SaveReadStatus.AccessDenied
+  fullName: SurvivorsMaker.Run.SaveReadStatus.AccessDenied
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: AccessDenied = 5
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+- uid: SurvivorsMaker.Run.SaveReadStatus.Failed
+  commentId: F:SurvivorsMaker.Run.SaveReadStatus.Failed
+  id: Failed
+  parent: SurvivorsMaker.Run.SaveReadStatus
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: SaveReadStatus.Failed
+  fullName: SurvivorsMaker.Run.SaveReadStatus.Failed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Failed = 6
+    return:
+      type: SurvivorsMaker.Run.SaveReadStatus
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.SaveReadStatus
+  commentId: T:SurvivorsMaker.Run.SaveReadStatus
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveReadStatus.html
+  name: SaveReadStatus
+  nameWithType: SaveReadStatus
+  fullName: SurvivorsMaker.Run.SaveReadStatus

@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SpecialPhase
+  commentId: T:SurvivorsMaker.Simulation.SpecialPhase
+  id: SpecialPhase
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SpecialPhase.Charging
+  - SurvivorsMaker.Simulation.SpecialPhase.Cooldown
+  - SurvivorsMaker.Simulation.SpecialPhase.Windup
+  langs:
+  - csharp
+  - vb
+  name: SpecialPhase
+  nameWithType: SpecialPhase
+  fullName: SurvivorsMaker.Simulation.SpecialPhase
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum SpecialPhase
+    content.vb: Public Enum SpecialPhase
+- uid: SurvivorsMaker.Simulation.SpecialPhase.Cooldown
+  commentId: F:SurvivorsMaker.Simulation.SpecialPhase.Cooldown
+  id: Cooldown
+  parent: SurvivorsMaker.Simulation.SpecialPhase
+  langs:
+  - csharp
+  - vb
+  name: Cooldown
+  nameWithType: SpecialPhase.Cooldown
+  fullName: SurvivorsMaker.Simulation.SpecialPhase.Cooldown
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Cooldown = 0
+    return:
+      type: SurvivorsMaker.Simulation.SpecialPhase
+- uid: SurvivorsMaker.Simulation.SpecialPhase.Windup
+  commentId: F:SurvivorsMaker.Simulation.SpecialPhase.Windup
+  id: Windup
+  parent: SurvivorsMaker.Simulation.SpecialPhase
+  langs:
+  - csharp
+  - vb
+  name: Windup
+  nameWithType: SpecialPhase.Windup
+  fullName: SurvivorsMaker.Simulation.SpecialPhase.Windup
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Windup = 1
+    return:
+      type: SurvivorsMaker.Simulation.SpecialPhase
+- uid: SurvivorsMaker.Simulation.SpecialPhase.Charging
+  commentId: F:SurvivorsMaker.Simulation.SpecialPhase.Charging
+  id: Charging
+  parent: SurvivorsMaker.Simulation.SpecialPhase
+  langs:
+  - csharp
+  - vb
+  name: Charging
+  nameWithType: SpecialPhase.Charging
+  fullName: SurvivorsMaker.Simulation.SpecialPhase.Charging
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Charging = 2
+    return:
+      type: SurvivorsMaker.Simulation.SpecialPhase
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.SpecialPhase
+  commentId: T:SurvivorsMaker.Simulation.SpecialPhase
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialPhase.html
+  name: SpecialPhase
+  nameWithType: SpecialPhase
+  fullName: SurvivorsMaker.Simulation.SpecialPhase

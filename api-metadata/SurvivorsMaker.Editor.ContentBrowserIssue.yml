@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue
+  commentId: T:SurvivorsMaker.Editor.ContentBrowserIssue
+  id: ContentBrowserIssue
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentBrowserIssue.#ctor
+  - SurvivorsMaker.Editor.ContentBrowserIssue.Asset
+  - SurvivorsMaker.Editor.ContentBrowserIssue.Message
+  - SurvivorsMaker.Editor.ContentBrowserIssue.ToString
+  - SurvivorsMaker.Editor.ContentBrowserIssue.Warning
+  langs:
+  - csharp
+  - vb
+  name: ContentBrowserIssue
+  nameWithType: ContentBrowserIssue
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public sealed class ContentBrowserIssue
+    content.vb: Public NotInheritable Class ContentBrowserIssue
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.Asset
+  commentId: F:SurvivorsMaker.Editor.ContentBrowserIssue.Asset
+  id: Asset
+  parent: SurvivorsMaker.Editor.ContentBrowserIssue
+  langs:
+  - csharp
+  - vb
+  name: Asset
+  nameWithType: ContentBrowserIssue.Asset
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.Asset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Object Asset
+    return:
+      type: UnityEngine.Object
+    content.vb: Public Asset As [Object]
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.Message
+  commentId: F:SurvivorsMaker.Editor.ContentBrowserIssue.Message
+  id: Message
+  parent: SurvivorsMaker.Editor.ContentBrowserIssue
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: ContentBrowserIssue.Message
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.Message
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public string Message
+    return:
+      type: System.String
+    content.vb: Public Message As String
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.Warning
+  commentId: F:SurvivorsMaker.Editor.ContentBrowserIssue.Warning
+  id: Warning
+  parent: SurvivorsMaker.Editor.ContentBrowserIssue
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: ContentBrowserIssue.Warning
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.Warning
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Catalog findings that do not stop the game (it falls back to default looks or silence).
+  example: []
+  syntax:
+    content: public bool Warning
+    return:
+      type: System.Boolean
+    content.vb: Public Warning As Boolean
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.ToString
+  commentId: M:SurvivorsMaker.Editor.ContentBrowserIssue.ToString
+  id: ToString
+  parent: SurvivorsMaker.Editor.ContentBrowserIssue
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ContentBrowserIssue.ToString()
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.ToString()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SurvivorsMaker.Editor.ContentBrowserIssue.ToString*
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.#ctor
+  commentId: M:SurvivorsMaker.Editor.ContentBrowserIssue.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.ContentBrowserIssue
+  langs:
+  - csharp
+  - vb
+  name: ContentBrowserIssue()
+  nameWithType: ContentBrowserIssue.ContentBrowserIssue()
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.ContentBrowserIssue()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public ContentBrowserIssue()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.ContentBrowserIssue.#ctor*
+  nameWithType.vb: ContentBrowserIssue.New()
+  fullName.vb: SurvivorsMaker.Editor.ContentBrowserIssue.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.ToString*
+  commentId: Overload:SurvivorsMaker.Editor.ContentBrowserIssue.ToString
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentBrowserIssue.html#SurvivorsMaker_Editor_ContentBrowserIssue_ToString
+  name: ToString
+  nameWithType: ContentBrowserIssue.ToString
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.ToString
+- uid: SurvivorsMaker.Editor.ContentBrowserIssue.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.ContentBrowserIssue.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentBrowserIssue.html#SurvivorsMaker_Editor_ContentBrowserIssue__ctor
+  name: ContentBrowserIssue
+  nameWithType: ContentBrowserIssue.ContentBrowserIssue
+  fullName: SurvivorsMaker.Editor.ContentBrowserIssue.ContentBrowserIssue
+  nameWithType.vb: ContentBrowserIssue.New
+  fullName.vb: SurvivorsMaker.Editor.ContentBrowserIssue.New
+  name.vb: New

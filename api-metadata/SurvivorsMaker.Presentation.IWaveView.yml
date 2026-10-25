@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.IWaveView
+  commentId: T:SurvivorsMaker.Presentation.IWaveView
+  id: IWaveView
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.IWaveView.Render(SurvivorsMaker.Simulation.SimWorld,System.Single)
+  - SurvivorsMaker.Presentation.IWaveView.Tick(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Presentation.IWaveView.WaveEnded(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Presentation.IWaveView.WaveStarted(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: IWaveView
+  nameWithType: IWaveView
+  fullName: SurvivorsMaker.Presentation.IWaveView
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Something that shows the running wave. The game loop calls it in this order:
+
+    WaveStarted once, then per fixed tick Tick (after the simulation step, with that tick''s events),
+
+    Render every frame, and WaveEnded once.'
+  example: []
+  syntax:
+    content: public interface IWaveView
+    content.vb: Public Interface IWaveView
+  derivedClasses:
+  - SurvivorsMaker.Presentation.CombatAlertsPanel
+  - SurvivorsMaker.Presentation.WorldView
+- uid: SurvivorsMaker.Presentation.IWaveView.WaveStarted(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.IWaveView.WaveStarted(SurvivorsMaker.Simulation.SimWorld)
+  id: WaveStarted(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.IWaveView
+  langs:
+  - csharp
+  - vb
+  name: WaveStarted(SimWorld)
+  nameWithType: IWaveView.WaveStarted(SimWorld)
+  fullName: SurvivorsMaker.Presentation.IWaveView.WaveStarted(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: void WaveStarted(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub WaveStarted(world As SimWorld)
+  overload: SurvivorsMaker.Presentation.IWaveView.WaveStarted*
+- uid: SurvivorsMaker.Presentation.IWaveView.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.IWaveView.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.IWaveView
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: IWaveView.Tick(SimWorld)
+  fullName: SurvivorsMaker.Presentation.IWaveView.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: After one simulation step. <code>world.Events</code> holds this tick's events.
+  example: []
+  syntax:
+    content: void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Presentation.IWaveView.Tick*
+- uid: SurvivorsMaker.Presentation.IWaveView.Render(SurvivorsMaker.Simulation.SimWorld,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.IWaveView.Render(SurvivorsMaker.Simulation.SimWorld,System.Single)
+  id: Render(SurvivorsMaker.Simulation.SimWorld,System.Single)
+  parent: SurvivorsMaker.Presentation.IWaveView
+  langs:
+  - csharp
+  - vb
+  name: Render(SimWorld, float)
+  nameWithType: IWaveView.Render(SimWorld, float)
+  fullName: SurvivorsMaker.Presentation.IWaveView.Render(SurvivorsMaker.Simulation.SimWorld, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Every frame. <code class="paramref">alpha</code> 0–1 is the time between the last two ticks, for interpolation.
+  example: []
+  syntax:
+    content: void Render(SimWorld world, float alpha)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: alpha
+      type: System.Single
+    content.vb: Sub Render(world As SimWorld, alpha As Single)
+  overload: SurvivorsMaker.Presentation.IWaveView.Render*
+  nameWithType.vb: IWaveView.Render(SimWorld, Single)
+  fullName.vb: SurvivorsMaker.Presentation.IWaveView.Render(SurvivorsMaker.Simulation.SimWorld, Single)
+  name.vb: Render(SimWorld, Single)
+- uid: SurvivorsMaker.Presentation.IWaveView.WaveEnded(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Presentation.IWaveView.WaveEnded(SurvivorsMaker.Simulation.SimWorld)
+  id: WaveEnded(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Presentation.IWaveView
+  langs:
+  - csharp
+  - vb
+  name: WaveEnded(SimWorld)
+  nameWithType: IWaveView.WaveEnded(SimWorld)
+  fullName: SurvivorsMaker.Presentation.IWaveView.WaveEnded(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: void WaveEnded(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub WaveEnded(world As SimWorld)
+  overload: SurvivorsMaker.Presentation.IWaveView.WaveEnded*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.IWaveView.WaveStarted*
+  commentId: Overload:SurvivorsMaker.Presentation.IWaveView.WaveStarted
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IWaveView.html#SurvivorsMaker_Presentation_IWaveView_WaveStarted_SurvivorsMaker_Simulation_SimWorld_
+  name: WaveStarted
+  nameWithType: IWaveView.WaveStarted
+  fullName: SurvivorsMaker.Presentation.IWaveView.WaveStarted
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.IWaveView.Tick*
+  commentId: Overload:SurvivorsMaker.Presentation.IWaveView.Tick
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IWaveView.html#SurvivorsMaker_Presentation_IWaveView_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: IWaveView.Tick
+  fullName: SurvivorsMaker.Presentation.IWaveView.Tick
+- uid: SurvivorsMaker.Presentation.IWaveView.Render*
+  commentId: Overload:SurvivorsMaker.Presentation.IWaveView.Render
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IWaveView.html#SurvivorsMaker_Presentation_IWaveView_Render_SurvivorsMaker_Simulation_SimWorld_System_Single_
+  name: Render
+  nameWithType: IWaveView.Render
+  fullName: SurvivorsMaker.Presentation.IWaveView.Render
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.IWaveView.WaveEnded*
+  commentId: Overload:SurvivorsMaker.Presentation.IWaveView.WaveEnded
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IWaveView.html#SurvivorsMaker_Presentation_IWaveView_WaveEnded_SurvivorsMaker_Simulation_SimWorld_
+  name: WaveEnded
+  nameWithType: IWaveView.WaveEnded
+  fullName: SurvivorsMaker.Presentation.IWaveView.WaveEnded

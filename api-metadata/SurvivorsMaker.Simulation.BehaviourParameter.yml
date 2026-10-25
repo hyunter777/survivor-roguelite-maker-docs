@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.BehaviourParameter
+  commentId: T:SurvivorsMaker.Simulation.BehaviourParameter
+  id: BehaviourParameter
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.BehaviourParameter.#ctor(System.String,System.Single,System.String)
+  - SurvivorsMaker.Simulation.BehaviourParameter.Get(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.Single)
+  - SurvivorsMaker.Simulation.BehaviourParameter.GetText(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.String)
+  - SurvivorsMaker.Simulation.BehaviourParameter.Key
+  - SurvivorsMaker.Simulation.BehaviourParameter.Text
+  - SurvivorsMaker.Simulation.BehaviourParameter.Value
+  langs:
+  - csharp
+  - vb
+  name: BehaviourParameter
+  nameWithType: BehaviourParameter
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A named number or text a custom behaviour reads from its definition.
+  example: []
+  syntax:
+    content: public struct BehaviourParameter
+    content.vb: Public Structure BehaviourParameter
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.Key
+  commentId: F:SurvivorsMaker.Simulation.BehaviourParameter.Key
+  id: Key
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: BehaviourParameter.Key
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.Key
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Key
+    return:
+      type: System.String
+    content.vb: Public Key As String
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.Value
+  commentId: F:SurvivorsMaker.Simulation.BehaviourParameter.Value
+  id: Value
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: BehaviourParameter.Value
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.Value
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Value
+    return:
+      type: System.Single
+    content.vb: Public Value As Single
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.Text
+  commentId: F:SurvivorsMaker.Simulation.BehaviourParameter.Text
+  id: Text
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: BehaviourParameter.Text
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.Text
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Text
+    return:
+      type: System.String
+    content.vb: Public Text As String
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.#ctor(System.String,System.Single,System.String)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourParameter.#ctor(System.String,System.Single,System.String)
+  id: '#ctor(System.String,System.Single,System.String)'
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: BehaviourParameter(string, float, string)
+  nameWithType: BehaviourParameter.BehaviourParameter(string, float, string)
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.BehaviourParameter(string, float, string)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public BehaviourParameter(string key, float value, string text = "")
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Single
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(key As String, value As Single, text As String = "")
+  overload: SurvivorsMaker.Simulation.BehaviourParameter.#ctor*
+  nameWithType.vb: BehaviourParameter.New(String, Single, String)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourParameter.New(String, Single, String)
+  name.vb: New(String, Single, String)
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.Get(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourParameter.Get(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.Single)
+  id: Get(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.Single)
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: Get(List<BehaviourParameter>, string, float)
+  nameWithType: BehaviourParameter.Get(List<BehaviourParameter>, string, float)
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.Get(System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>,
+    string, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: The value of <code class="paramref">key</code> in <code class="paramref">parameters</code>, or <code class="paramref">fallback</code>.
+  example: []
+  syntax:
+    content: public static float Get(List<BehaviourParameter> parameters, string key, float fallback = 0)
+    parameters:
+    - id: parameters
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    - id: key
+      type: System.String
+    - id: fallback
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function [Get](parameters As List(Of BehaviourParameter), key As String, fallback As Single
+      = 0) As Single
+  overload: SurvivorsMaker.Simulation.BehaviourParameter.Get*
+  nameWithType.vb: BehaviourParameter.Get(List(Of BehaviourParameter), String, Single)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourParameter.Get(System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter),
+    String, Single)
+  name.vb: Get(List(Of BehaviourParameter), String, Single)
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.GetText(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.String)
+  commentId: M:SurvivorsMaker.Simulation.BehaviourParameter.GetText(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.String)
+  id: GetText(System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter},System.String,System.String)
+  parent: SurvivorsMaker.Simulation.BehaviourParameter
+  langs:
+  - csharp
+  - vb
+  name: GetText(List<BehaviourParameter>, string, string)
+  nameWithType: BehaviourParameter.GetText(List<BehaviourParameter>, string, string)
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.GetText(System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>,
+    string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static string GetText(List<BehaviourParameter> parameters, string key, string fallback = "")
+    parameters:
+    - id: parameters
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    - id: key
+      type: System.String
+    - id: fallback
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetText(parameters As List(Of BehaviourParameter), key As String, fallback As String
+      = "") As String
+  overload: SurvivorsMaker.Simulation.BehaviourParameter.GetText*
+  nameWithType.vb: BehaviourParameter.GetText(List(Of BehaviourParameter), String, String)
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourParameter.GetText(System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter),
+    String, String)
+  name.vb: GetText(List(Of BehaviourParameter), String, String)
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourParameter.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourParameter.html#SurvivorsMaker_Simulation_BehaviourParameter__ctor_System_String_System_Single_System_String_
+  name: BehaviourParameter
+  nameWithType: BehaviourParameter.BehaviourParameter
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.BehaviourParameter
+  nameWithType.vb: BehaviourParameter.New
+  fullName.vb: SurvivorsMaker.Simulation.BehaviourParameter.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.Get*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourParameter.Get
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourParameter.html#SurvivorsMaker_Simulation_BehaviourParameter_Get_System_Collections_Generic_List_SurvivorsMaker_Simulation_BehaviourParameter__System_String_System_Single_
+  name: Get
+  nameWithType: BehaviourParameter.Get
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.Get
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BehaviourParameter>
+  nameWithType: List<BehaviourParameter>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>
+  nameWithType.vb: List(Of BehaviourParameter)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter)
+  name.vb: List(Of BehaviourParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation.BehaviourParameter.GetText*
+  commentId: Overload:SurvivorsMaker.Simulation.BehaviourParameter.GetText
+  isExternal: true
+  href: SurvivorsMaker.Simulation.BehaviourParameter.html#SurvivorsMaker_Simulation_BehaviourParameter_GetText_System_Collections_Generic_List_SurvivorsMaker_Simulation_BehaviourParameter__System_String_System_String_
+  name: GetText
+  nameWithType: BehaviourParameter.GetText
+  fullName: SurvivorsMaker.Simulation.BehaviourParameter.GetText

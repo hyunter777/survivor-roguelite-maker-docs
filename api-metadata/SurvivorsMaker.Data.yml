@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  id: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.ArenaAsset
+  - SurvivorsMaker.Data.BossPhaseEntry
+  - SurvivorsMaker.Data.CharacterAsset
+  - SurvivorsMaker.Data.ContentAsset
+  - SurvivorsMaker.Data.ContentAssetBase
+  - SurvivorsMaker.Data.ContentDefinitionAsset`1
+  - SurvivorsMaker.Data.ContentTextEntry
+  - SurvivorsMaker.Data.ContentTextKind
+  - SurvivorsMaker.Data.ContentTextTable
+  - SurvivorsMaker.Data.EffectEntry
+  - SurvivorsMaker.Data.EliteAsset
+  - SurvivorsMaker.Data.EnemyAsset
+  - SurvivorsMaker.Data.EnemyAttackEntry
+  - SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  - SurvivorsMaker.Data.GameSettingsAsset
+  - SurvivorsMaker.Data.HordeEventEntry
+  - SurvivorsMaker.Data.IContentTextSource
+  - SurvivorsMaker.Data.ItemAsset
+  - SurvivorsMaker.Data.OfferBanEntry
+  - SurvivorsMaker.Data.OfferGuaranteeEntry
+  - SurvivorsMaker.Data.SetAsset
+  - SurvivorsMaker.Data.SetBonusEntry
+  - SurvivorsMaker.Data.SpawnEnemyEntry
+  - SurvivorsMaker.Data.SpawnGroupEntry
+  - SurvivorsMaker.Data.StatCatalogAsset
+  - SurvivorsMaker.Data.WaveAsset
+  - SurvivorsMaker.Data.WeaponAsset
+  langs:
+  - csharp
+  - vb
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  type: Namespace
+  assemblies:
+  - SurvivorsMaker.Data
+references:
+- uid: SurvivorsMaker.Data.ArenaAsset
+  commentId: T:SurvivorsMaker.Data.ArenaAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ArenaAsset.html
+  name: ArenaAsset
+  nameWithType: ArenaAsset
+  fullName: SurvivorsMaker.Data.ArenaAsset
+- uid: SurvivorsMaker.Data.CharacterAsset
+  commentId: T:SurvivorsMaker.Data.CharacterAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.CharacterAsset.html
+  name: CharacterAsset
+  nameWithType: CharacterAsset
+  fullName: SurvivorsMaker.Data.CharacterAsset
+- uid: SurvivorsMaker.Data.ContentAsset
+  commentId: T:SurvivorsMaker.Data.ContentAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAsset.html
+  name: ContentAsset
+  nameWithType: ContentAsset
+  fullName: SurvivorsMaker.Data.ContentAsset
+- uid: SurvivorsMaker.Data.ContentAssetBase
+  commentId: T:SurvivorsMaker.Data.ContentAssetBase
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAssetBase.html
+  name: ContentAssetBase
+  nameWithType: ContentAssetBase
+  fullName: SurvivorsMaker.Data.ContentAssetBase
+- uid: SurvivorsMaker.Data.ContentDefinitionAsset`1
+  commentId: T:SurvivorsMaker.Data.ContentDefinitionAsset`1
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentDefinitionAsset-1.html
+  name: ContentDefinitionAsset<T>
+  nameWithType: ContentDefinitionAsset<T>
+  fullName: SurvivorsMaker.Data.ContentDefinitionAsset<T>
+  nameWithType.vb: ContentDefinitionAsset(Of T)
+  fullName.vb: SurvivorsMaker.Data.ContentDefinitionAsset(Of T)
+  name.vb: ContentDefinitionAsset(Of T)
+  spec.csharp:
+  - uid: SurvivorsMaker.Data.ContentDefinitionAsset`1
+    name: ContentDefinitionAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentDefinitionAsset-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SurvivorsMaker.Data.ContentDefinitionAsset`1
+    name: ContentDefinitionAsset
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentDefinitionAsset-1.html
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.IContentTextSource
+  commentId: T:SurvivorsMaker.Data.IContentTextSource
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html
+  name: IContentTextSource
+  nameWithType: IContentTextSource
+  fullName: SurvivorsMaker.Data.IContentTextSource
+- uid: SurvivorsMaker.Data.ContentTextEntry
+  commentId: T:SurvivorsMaker.Data.ContentTextEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextEntry.html
+  name: ContentTextEntry
+  nameWithType: ContentTextEntry
+  fullName: SurvivorsMaker.Data.ContentTextEntry
+- uid: SurvivorsMaker.Data.ContentTextTable
+  commentId: T:SurvivorsMaker.Data.ContentTextTable
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html
+  name: ContentTextTable
+  nameWithType: ContentTextTable
+  fullName: SurvivorsMaker.Data.ContentTextTable
+- uid: SurvivorsMaker.Data.EliteAsset
+  commentId: T:SurvivorsMaker.Data.EliteAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EliteAsset.html
+  name: EliteAsset
+  nameWithType: EliteAsset
+  fullName: SurvivorsMaker.Data.EliteAsset
+- uid: SurvivorsMaker.Data.EnemyAttackEntry
+  commentId: T:SurvivorsMaker.Data.EnemyAttackEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAttackEntry.html
+  name: EnemyAttackEntry
+  nameWithType: EnemyAttackEntry
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry
+- uid: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  commentId: T:SurvivorsMaker.Data.EnemyDeathSpawnEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyDeathSpawnEntry.html
+  name: EnemyDeathSpawnEntry
+  nameWithType: EnemyDeathSpawnEntry
+  fullName: SurvivorsMaker.Data.EnemyDeathSpawnEntry
+- uid: SurvivorsMaker.Data.BossPhaseEntry
+  commentId: T:SurvivorsMaker.Data.BossPhaseEntry
+  isExternal: true
+  href: SurvivorsMaker.Data.BossPhaseEntry.html
+  name: BossPhaseEntry
+  nameWithType: BossPhaseEntry
+  fullName: SurvivorsMaker.Data.BossPhaseEntry
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: SurvivorsMaker.Data.ItemAsset
+  commentId: T:SurvivorsMaker.Data.ItemAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ItemAsset.html
+  name: ItemAsset
+  nameWithType: ItemAsset
+  fullName: SurvivorsMaker.Data.ItemAsset
+- uid: SurvivorsMaker.Data.OfferBanEntry
+  commentId: T:SurvivorsMaker.Data.OfferBanEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.OfferBanEntry.html
+  name: OfferBanEntry
+  nameWithType: OfferBanEntry
+  fullName: SurvivorsMaker.Data.OfferBanEntry
+- uid: SurvivorsMaker.Data.OfferGuaranteeEntry
+  commentId: T:SurvivorsMaker.Data.OfferGuaranteeEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.OfferGuaranteeEntry.html
+  name: OfferGuaranteeEntry
+  nameWithType: OfferGuaranteeEntry
+  fullName: SurvivorsMaker.Data.OfferGuaranteeEntry
+- uid: SurvivorsMaker.Data.SetBonusEntry
+  commentId: T:SurvivorsMaker.Data.SetBonusEntry
+  isExternal: true
+  href: SurvivorsMaker.Data.SetBonusEntry.html
+  name: SetBonusEntry
+  nameWithType: SetBonusEntry
+  fullName: SurvivorsMaker.Data.SetBonusEntry
+- uid: SurvivorsMaker.Data.SetAsset
+  commentId: T:SurvivorsMaker.Data.SetAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.SetAsset.html
+  name: SetAsset
+  nameWithType: SetAsset
+  fullName: SurvivorsMaker.Data.SetAsset
+- uid: SurvivorsMaker.Data.SpawnEnemyEntry
+  commentId: T:SurvivorsMaker.Data.SpawnEnemyEntry
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnEnemyEntry.html
+  name: SpawnEnemyEntry
+  nameWithType: SpawnEnemyEntry
+  fullName: SurvivorsMaker.Data.SpawnEnemyEntry
+- uid: SurvivorsMaker.Data.SpawnGroupEntry
+  commentId: T:SurvivorsMaker.Data.SpawnGroupEntry
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnGroupEntry.html
+  name: SpawnGroupEntry
+  nameWithType: SpawnGroupEntry
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry
+- uid: SurvivorsMaker.Data.HordeEventEntry
+  commentId: T:SurvivorsMaker.Data.HordeEventEntry
+  isExternal: true
+  href: SurvivorsMaker.Data.HordeEventEntry.html
+  name: HordeEventEntry
+  nameWithType: HordeEventEntry
+  fullName: SurvivorsMaker.Data.HordeEventEntry
+- uid: SurvivorsMaker.Data.WaveAsset
+  commentId: T:SurvivorsMaker.Data.WaveAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WaveAsset.html
+  name: WaveAsset
+  nameWithType: WaveAsset
+  fullName: SurvivorsMaker.Data.WaveAsset
+- uid: SurvivorsMaker.Data.WeaponAsset
+  commentId: T:SurvivorsMaker.Data.WeaponAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WeaponAsset.html
+  name: WeaponAsset
+  nameWithType: WeaponAsset
+  fullName: SurvivorsMaker.Data.WeaponAsset
+- uid: SurvivorsMaker.Data.EffectEntry
+  commentId: T:SurvivorsMaker.Data.EffectEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EffectEntry.html
+  name: EffectEntry
+  nameWithType: EffectEntry
+  fullName: SurvivorsMaker.Data.EffectEntry
+- uid: SurvivorsMaker.Data.GameSettingsAsset
+  commentId: T:SurvivorsMaker.Data.GameSettingsAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.GameSettingsAsset.html
+  name: GameSettingsAsset
+  nameWithType: GameSettingsAsset
+  fullName: SurvivorsMaker.Data.GameSettingsAsset
+- uid: SurvivorsMaker.Data.StatCatalogAsset
+  commentId: T:SurvivorsMaker.Data.StatCatalogAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.StatCatalogAsset.html
+  name: StatCatalogAsset
+  nameWithType: StatCatalogAsset
+  fullName: SurvivorsMaker.Data.StatCatalogAsset
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true

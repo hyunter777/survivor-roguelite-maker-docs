@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ChargeTarget
+  commentId: T:SurvivorsMaker.Simulation.ChargeTarget
+  id: ChargeTarget
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ChargeTarget.NearPlayer
+  - SurvivorsMaker.Simulation.ChargeTarget.Player
+  - SurvivorsMaker.Simulation.ChargeTarget.RandomInArena
+  langs:
+  - csharp
+  - vb
+  name: ChargeTarget
+  nameWithType: ChargeTarget
+  fullName: SurvivorsMaker.Simulation.ChargeTarget
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum ChargeTarget
+    content.vb: Public Enum ChargeTarget
+- uid: SurvivorsMaker.Simulation.ChargeTarget.Player
+  commentId: F:SurvivorsMaker.Simulation.ChargeTarget.Player
+  id: Player
+  parent: SurvivorsMaker.Simulation.ChargeTarget
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: ChargeTarget.Player
+  fullName: SurvivorsMaker.Simulation.ChargeTarget.Player
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Player = 0
+    return:
+      type: SurvivorsMaker.Simulation.ChargeTarget
+- uid: SurvivorsMaker.Simulation.ChargeTarget.NearPlayer
+  commentId: F:SurvivorsMaker.Simulation.ChargeTarget.NearPlayer
+  id: NearPlayer
+  parent: SurvivorsMaker.Simulation.ChargeTarget
+  langs:
+  - csharp
+  - vb
+  name: NearPlayer
+  nameWithType: ChargeTarget.NearPlayer
+  fullName: SurvivorsMaker.Simulation.ChargeTarget.NearPlayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: NearPlayer = 1
+    return:
+      type: SurvivorsMaker.Simulation.ChargeTarget
+- uid: SurvivorsMaker.Simulation.ChargeTarget.RandomInArena
+  commentId: F:SurvivorsMaker.Simulation.ChargeTarget.RandomInArena
+  id: RandomInArena
+  parent: SurvivorsMaker.Simulation.ChargeTarget
+  langs:
+  - csharp
+  - vb
+  name: RandomInArena
+  nameWithType: ChargeTarget.RandomInArena
+  fullName: SurvivorsMaker.Simulation.ChargeTarget.RandomInArena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: RandomInArena = 2
+    return:
+      type: SurvivorsMaker.Simulation.ChargeTarget
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ChargeTarget
+  commentId: T:SurvivorsMaker.Simulation.ChargeTarget
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ChargeTarget.html
+  name: ChargeTarget
+  nameWithType: ChargeTarget
+  fullName: SurvivorsMaker.Simulation.ChargeTarget

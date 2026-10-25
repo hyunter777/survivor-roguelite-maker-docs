@@ -1,0 +1,704 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.FxCatalogIds
+  commentId: T:SurvivorsMaker.Presentation.FxCatalogIds
+  id: FxCatalogIds
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.FxCatalogIds.Chain
+  - SurvivorsMaker.Presentation.FxCatalogIds.EliteCrown
+  - SurvivorsMaker.Presentation.FxCatalogIds.EliteOutline
+  - SurvivorsMaker.Presentation.FxCatalogIds.Explosion
+  - SurvivorsMaker.Presentation.FxCatalogIds.Orbit
+  - SurvivorsMaker.Presentation.FxCatalogIds.Status(System.Int32)
+  - SurvivorsMaker.Presentation.FxCatalogIds.StatusBurn
+  - SurvivorsMaker.Presentation.FxCatalogIds.StatusSlow
+  - SurvivorsMaker.Presentation.FxCatalogIds.StatusStun
+  - SurvivorsMaker.Presentation.FxCatalogIds.Trigger
+  - SurvivorsMaker.Presentation.FxCatalogIds.TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset,System.String,SurvivorsMaker.Presentation.ViewEntry@,UnityEngine.Sprite@,System.Boolean)
+  - SurvivorsMaker.Presentation.FxCatalogIds.UiArrow
+  - SurvivorsMaker.Presentation.FxCatalogIds.UiLock
+  - SurvivorsMaker.Presentation.FxCatalogIds.UiTrophy
+  - SurvivorsMaker.Presentation.FxCatalogIds.UiUnlock
+  langs:
+  - csharp
+  - vb
+  name: FxCatalogIds
+  nameWithType: FxCatalogIds
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Catalog ids the presentation looks up for optional art. Missing entries use <xref href="SurvivorsMaker.Presentation.ProceduralArt"
+    data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class FxCatalogIds
+    content.vb: Public Module FxCatalogIds
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.StatusBurn
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.StatusBurn
+  id: StatusBurn
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: StatusBurn
+  nameWithType: FxCatalogIds.StatusBurn
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.StatusBurn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string StatusBurn = "status.burn"
+    return:
+      type: System.String
+    content.vb: Public Const StatusBurn As String = "status.burn"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.StatusSlow
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.StatusSlow
+  id: StatusSlow
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: StatusSlow
+  nameWithType: FxCatalogIds.StatusSlow
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.StatusSlow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string StatusSlow = "status.slow"
+    return:
+      type: System.String
+    content.vb: Public Const StatusSlow As String = "status.slow"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.StatusStun
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.StatusStun
+  id: StatusStun
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: StatusStun
+  nameWithType: FxCatalogIds.StatusStun
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.StatusStun
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string StatusStun = "status.stun"
+    return:
+      type: System.String
+    content.vb: Public Const StatusStun As String = "status.stun"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.EliteOutline
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.EliteOutline
+  id: EliteOutline
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: EliteOutline
+  nameWithType: FxCatalogIds.EliteOutline
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.EliteOutline
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EliteOutline = "elite.outline"
+    return:
+      type: System.String
+    content.vb: Public Const EliteOutline As String = "elite.outline"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.EliteCrown
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.EliteCrown
+  id: EliteCrown
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: EliteCrown
+  nameWithType: FxCatalogIds.EliteCrown
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.EliteCrown
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EliteCrown = "elite.crown"
+    return:
+      type: System.String
+    content.vb: Public Const EliteCrown As String = "elite.crown"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Explosion
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.Explosion
+  id: Explosion
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: Explosion
+  nameWithType: FxCatalogIds.Explosion
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Explosion
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Explosion = "fx.explosion"
+    return:
+      type: System.String
+    content.vb: Public Const Explosion As String = "fx.explosion"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Chain
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.Chain
+  id: Chain
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: Chain
+  nameWithType: FxCatalogIds.Chain
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Chain
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Chain = "fx.chain"
+    return:
+      type: System.String
+    content.vb: Public Const Chain As String = "fx.chain"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Orbit
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.Orbit
+  id: Orbit
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: Orbit
+  nameWithType: FxCatalogIds.Orbit
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Orbit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Orbit = "fx.orbit"
+    return:
+      type: System.String
+    content.vb: Public Const Orbit As String = "fx.orbit"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Trigger
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.Trigger
+  id: Trigger
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: Trigger
+  nameWithType: FxCatalogIds.Trigger
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Trigger
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Trigger = "fx.trigger"
+    return:
+      type: System.String
+    content.vb: Public Const Trigger As String = "fx.trigger"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.UiLock
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.UiLock
+  id: UiLock
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: UiLock
+  nameWithType: FxCatalogIds.UiLock
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.UiLock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UiLock = "ui.lock"
+    return:
+      type: System.String
+    content.vb: Public Const UiLock As String = "ui.lock"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.UiUnlock
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.UiUnlock
+  id: UiUnlock
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: UiUnlock
+  nameWithType: FxCatalogIds.UiUnlock
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.UiUnlock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UiUnlock = "ui.unlock"
+    return:
+      type: System.String
+    content.vb: Public Const UiUnlock As String = "ui.unlock"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.UiTrophy
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.UiTrophy
+  id: UiTrophy
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: UiTrophy
+  nameWithType: FxCatalogIds.UiTrophy
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.UiTrophy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UiTrophy = "ui.trophy"
+    return:
+      type: System.String
+    content.vb: Public Const UiTrophy As String = "ui.trophy"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.UiArrow
+  commentId: F:SurvivorsMaker.Presentation.FxCatalogIds.UiArrow
+  id: UiArrow
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: UiArrow
+  nameWithType: FxCatalogIds.UiArrow
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.UiArrow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UiArrow = "ui.arrow"
+    return:
+      type: System.String
+    content.vb: Public Const UiArrow As String = "ui.arrow"
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Status(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.FxCatalogIds.Status(System.Int32)
+  id: Status(System.Int32)
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: Status(int)
+  nameWithType: FxCatalogIds.Status(int)
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Status(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Status(int kind)
+    parameters:
+    - id: kind
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function Status(kind As Integer) As String
+  overload: SurvivorsMaker.Presentation.FxCatalogIds.Status*
+  nameWithType.vb: FxCatalogIds.Status(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.FxCatalogIds.Status(Integer)
+  name.vb: Status(Integer)
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset,System.String,SurvivorsMaker.Presentation.ViewEntry@,UnityEngine.Sprite@,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.FxCatalogIds.TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset,System.String,SurvivorsMaker.Presentation.ViewEntry@,UnityEngine.Sprite@,System.Boolean)
+  id: TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset,System.String,SurvivorsMaker.Presentation.ViewEntry@,UnityEngine.Sprite@,System.Boolean)
+  parent: SurvivorsMaker.Presentation.FxCatalogIds
+  langs:
+  - csharp
+  - vb
+  name: TryGet(ViewCatalogAsset, string, out ViewEntry, out Sprite, bool)
+  nameWithType: FxCatalogIds.TryGet(ViewCatalogAsset, string, out ViewEntry, out Sprite, bool)
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset, string, out SurvivorsMaker.Presentation.ViewEntry,
+    out UnityEngine.Sprite, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: True only when the catalog has an entry for exactly this id with a sprite or icon.
+  example: []
+  syntax:
+    content: public static bool TryGet(ViewCatalogAsset catalog, string id, out ViewEntry entry, out Sprite sprite, bool preferIcon
+      = false)
+    parameters:
+    - id: catalog
+      type: SurvivorsMaker.Presentation.ViewCatalogAsset
+    - id: id
+      type: System.String
+    - id: entry
+      type: SurvivorsMaker.Presentation.ViewEntry
+    - id: sprite
+      type: UnityEngine.Sprite
+    - id: preferIcon
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryGet(catalog As ViewCatalogAsset, id As String, entry As ViewEntry, sprite As Sprite,
+      preferIcon As Boolean = False) As Boolean
+  overload: SurvivorsMaker.Presentation.FxCatalogIds.TryGet*
+  nameWithType.vb: FxCatalogIds.TryGet(ViewCatalogAsset, String, ViewEntry, Sprite, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.FxCatalogIds.TryGet(SurvivorsMaker.Presentation.ViewCatalogAsset, String, SurvivorsMaker.Presentation.ViewEntry,
+    UnityEngine.Sprite, Boolean)
+  name.vb: TryGet(ViewCatalogAsset, String, ViewEntry, Sprite, Boolean)
+references:
+- uid: SurvivorsMaker.Presentation.ProceduralArt
+  commentId: T:SurvivorsMaker.Presentation.ProceduralArt
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ProceduralArt.html
+  name: ProceduralArt
+  nameWithType: ProceduralArt
+  fullName: SurvivorsMaker.Presentation.ProceduralArt
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.Status*
+  commentId: Overload:SurvivorsMaker.Presentation.FxCatalogIds.Status
+  isExternal: true
+  href: SurvivorsMaker.Presentation.FxCatalogIds.html#SurvivorsMaker_Presentation_FxCatalogIds_Status_System_Int32_
+  name: Status
+  nameWithType: FxCatalogIds.Status
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.Status
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.FxCatalogIds.TryGet*
+  commentId: Overload:SurvivorsMaker.Presentation.FxCatalogIds.TryGet
+  isExternal: true
+  href: SurvivorsMaker.Presentation.FxCatalogIds.html#SurvivorsMaker_Presentation_FxCatalogIds_TryGet_SurvivorsMaker_Presentation_ViewCatalogAsset_System_String_SurvivorsMaker_Presentation_ViewEntry__UnityEngine_Sprite__System_Boolean_
+  name: TryGet
+  nameWithType: FxCatalogIds.TryGet
+  fullName: SurvivorsMaker.Presentation.FxCatalogIds.TryGet
+- uid: SurvivorsMaker.Presentation.ViewCatalogAsset
+  commentId: T:SurvivorsMaker.Presentation.ViewCatalogAsset
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewCatalogAsset.html
+  name: ViewCatalogAsset
+  nameWithType: ViewCatalogAsset
+  fullName: SurvivorsMaker.Presentation.ViewCatalogAsset
+- uid: SurvivorsMaker.Presentation.ViewEntry
+  commentId: T:SurvivorsMaker.Presentation.ViewEntry
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ViewEntry.html
+  name: ViewEntry
+  nameWithType: ViewEntry
+  fullName: SurvivorsMaker.Presentation.ViewEntry
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

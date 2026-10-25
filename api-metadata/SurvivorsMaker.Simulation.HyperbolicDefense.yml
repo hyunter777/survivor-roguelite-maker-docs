@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense
+  commentId: T:SurvivorsMaker.Simulation.HyperbolicDefense
+  id: HyperbolicDefense
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.HyperbolicDefense.#ctor
+  - SurvivorsMaker.Simulation.HyperbolicDefense.Apply(System.Int32,System.Int32)
+  - SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  - SurvivorsMaker.Simulation.HyperbolicDefense.Softness
+  langs:
+  - csharp
+  - vb
+  name: HyperbolicDefense
+  nameWithType: HyperbolicDefense
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Armor reduces damage by armor / (armor + Softness); negative armor increases it by the same
+
+    ratio. Result is rounded and at least <xref href="SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage" data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: 'public sealed class HyperbolicDefense : IDefenseFormula'
+    content.vb: Public NotInheritable Class HyperbolicDefense Implements IDefenseFormula
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Simulation.IDefenseFormula
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.Softness
+  commentId: F:SurvivorsMaker.Simulation.HyperbolicDefense.Softness
+  id: Softness
+  parent: SurvivorsMaker.Simulation.HyperbolicDefense
+  langs:
+  - csharp
+  - vb
+  name: Softness
+  nameWithType: HyperbolicDefense.Softness
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.Softness
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Softness
+    return:
+      type: System.Single
+    content.vb: Public Softness As Single
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  commentId: F:SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  id: MinimumDamage
+  parent: SurvivorsMaker.Simulation.HyperbolicDefense
+  langs:
+  - csharp
+  - vb
+  name: MinimumDamage
+  nameWithType: HyperbolicDefense.MinimumDamage
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int MinimumDamage
+    return:
+      type: System.Int32
+    content.vb: Public MinimumDamage As Integer
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.Apply(System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.HyperbolicDefense.Apply(System.Int32,System.Int32)
+  id: Apply(System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.HyperbolicDefense
+  langs:
+  - csharp
+  - vb
+  name: Apply(int, int)
+  nameWithType: HyperbolicDefense.Apply(int, int)
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.Apply(int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public int Apply(int rawDamage, int armor)
+    parameters:
+    - id: rawDamage
+      type: System.Int32
+    - id: armor
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Apply(rawDamage As Integer, armor As Integer) As Integer
+  overload: SurvivorsMaker.Simulation.HyperbolicDefense.Apply*
+  implements:
+  - SurvivorsMaker.Simulation.IDefenseFormula.Apply(System.Int32,System.Int32)
+  nameWithType.vb: HyperbolicDefense.Apply(Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.HyperbolicDefense.Apply(Integer, Integer)
+  name.vb: Apply(Integer, Integer)
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.#ctor
+  commentId: M:SurvivorsMaker.Simulation.HyperbolicDefense.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.HyperbolicDefense
+  langs:
+  - csharp
+  - vb
+  name: HyperbolicDefense()
+  nameWithType: HyperbolicDefense.HyperbolicDefense()
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.HyperbolicDefense()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public HyperbolicDefense()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.HyperbolicDefense.#ctor*
+  nameWithType.vb: HyperbolicDefense.New()
+  fullName.vb: SurvivorsMaker.Simulation.HyperbolicDefense.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  commentId: F:SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HyperbolicDefense.html#SurvivorsMaker_Simulation_HyperbolicDefense_MinimumDamage
+  name: MinimumDamage
+  nameWithType: HyperbolicDefense.MinimumDamage
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.MinimumDamage
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Simulation.IDefenseFormula
+  commentId: T:SurvivorsMaker.Simulation.IDefenseFormula
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IDefenseFormula.html
+  name: IDefenseFormula
+  nameWithType: IDefenseFormula
+  fullName: SurvivorsMaker.Simulation.IDefenseFormula
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.Apply*
+  commentId: Overload:SurvivorsMaker.Simulation.HyperbolicDefense.Apply
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HyperbolicDefense.html#SurvivorsMaker_Simulation_HyperbolicDefense_Apply_System_Int32_System_Int32_
+  name: Apply
+  nameWithType: HyperbolicDefense.Apply
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.Apply
+- uid: SurvivorsMaker.Simulation.IDefenseFormula.Apply(System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.IDefenseFormula.Apply(System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.IDefenseFormula
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IDefenseFormula.html#SurvivorsMaker_Simulation_IDefenseFormula_Apply_System_Int32_System_Int32_
+  name: Apply(int, int)
+  nameWithType: IDefenseFormula.Apply(int, int)
+  fullName: SurvivorsMaker.Simulation.IDefenseFormula.Apply(int, int)
+  nameWithType.vb: IDefenseFormula.Apply(Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.IDefenseFormula.Apply(Integer, Integer)
+  name.vb: Apply(Integer, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.IDefenseFormula.Apply(System.Int32,System.Int32)
+    name: Apply
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IDefenseFormula.html#SurvivorsMaker_Simulation_IDefenseFormula_Apply_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.IDefenseFormula.Apply(System.Int32,System.Int32)
+    name: Apply
+    isExternal: true
+    href: SurvivorsMaker.Simulation.IDefenseFormula.html#SurvivorsMaker_Simulation_IDefenseFormula_Apply_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Simulation.HyperbolicDefense.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.HyperbolicDefense.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HyperbolicDefense.html#SurvivorsMaker_Simulation_HyperbolicDefense__ctor
+  name: HyperbolicDefense
+  nameWithType: HyperbolicDefense.HyperbolicDefense
+  fullName: SurvivorsMaker.Simulation.HyperbolicDefense.HyperbolicDefense
+  nameWithType.vb: HyperbolicDefense.New
+  fullName.vb: SurvivorsMaker.Simulation.HyperbolicDefense.New
+  name.vb: New

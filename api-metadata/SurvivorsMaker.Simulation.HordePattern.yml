@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.HordePattern
+  commentId: T:SurvivorsMaker.Simulation.HordePattern
+  id: HordePattern
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.HordePattern.EdgeLine
+  - SurvivorsMaker.Simulation.HordePattern.Random
+  - SurvivorsMaker.Simulation.HordePattern.Ring
+  langs:
+  - csharp
+  - vb
+  name: HordePattern
+  nameWithType: HordePattern
+  fullName: SurvivorsMaker.Simulation.HordePattern
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum HordePattern
+    content.vb: Public Enum HordePattern
+- uid: SurvivorsMaker.Simulation.HordePattern.Ring
+  commentId: F:SurvivorsMaker.Simulation.HordePattern.Ring
+  id: Ring
+  parent: SurvivorsMaker.Simulation.HordePattern
+  langs:
+  - csharp
+  - vb
+  name: Ring
+  nameWithType: HordePattern.Ring
+  fullName: SurvivorsMaker.Simulation.HordePattern.Ring
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Evenly around the player at Radius.
+  example: []
+  syntax:
+    content: Ring = 0
+    return:
+      type: SurvivorsMaker.Simulation.HordePattern
+- uid: SurvivorsMaker.Simulation.HordePattern.EdgeLine
+  commentId: F:SurvivorsMaker.Simulation.HordePattern.EdgeLine
+  id: EdgeLine
+  parent: SurvivorsMaker.Simulation.HordePattern
+  langs:
+  - csharp
+  - vb
+  name: EdgeLine
+  nameWithType: HordePattern.EdgeLine
+  fullName: SurvivorsMaker.Simulation.HordePattern.EdgeLine
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A line along one random arena edge.
+  example: []
+  syntax:
+    content: EdgeLine = 1
+    return:
+      type: SurvivorsMaker.Simulation.HordePattern
+- uid: SurvivorsMaker.Simulation.HordePattern.Random
+  commentId: F:SurvivorsMaker.Simulation.HordePattern.Random
+  id: Random
+  parent: SurvivorsMaker.Simulation.HordePattern
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: HordePattern.Random
+  fullName: SurvivorsMaker.Simulation.HordePattern.Random
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Random safe points, like normal spawns.
+  example: []
+  syntax:
+    content: Random = 2
+    return:
+      type: SurvivorsMaker.Simulation.HordePattern
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.HordePattern
+  commentId: T:SurvivorsMaker.Simulation.HordePattern
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.HordePattern.html
+  name: HordePattern
+  nameWithType: HordePattern
+  fullName: SurvivorsMaker.Simulation.HordePattern

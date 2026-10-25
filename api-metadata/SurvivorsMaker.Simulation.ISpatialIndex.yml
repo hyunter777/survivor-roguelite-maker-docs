@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ISpatialIndex
+  commentId: T:SurvivorsMaker.Simulation.ISpatialIndex
+  id: ISpatialIndex
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies(SurvivorsMaker.Simulation.Vec2,System.Single,System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy})
+  - SurvivorsMaker.Simulation.ISpatialIndex.Rebuild(SurvivorsMaker.Simulation.SimWorld)
+  langs:
+  - csharp
+  - vb
+  name: ISpatialIndex
+  nameWithType: ISpatialIndex
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'Finds enemies near a point. Results are candidates (they may lie a little outside the radius;
+
+    callers keep their exact tests) in <xref href="SurvivorsMaker.Simulation.SimWorld.Enemies" data-throw-if-not-resolved="false"></xref>
+    order, so systems give the
+
+    same results as a full scan. Rebuilt by the tick loop after enemies move and spawns are admitted.'
+  example: []
+  syntax:
+    content: public interface ISpatialIndex
+    content.vb: Public Interface ISpatialIndex
+  derivedClasses:
+  - SurvivorsMaker.Simulation.LinearSpatialIndex
+  - SurvivorsMaker.Simulation.UniformGridSpatialIndex
+- uid: SurvivorsMaker.Simulation.ISpatialIndex.Rebuild(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.ISpatialIndex.Rebuild(SurvivorsMaker.Simulation.SimWorld)
+  id: Rebuild(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.ISpatialIndex
+  langs:
+  - csharp
+  - vb
+  name: Rebuild(SimWorld)
+  nameWithType: ISpatialIndex.Rebuild(SimWorld)
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex.Rebuild(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Rebuild(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Rebuild(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.ISpatialIndex.Rebuild*
+- uid: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies(SurvivorsMaker.Simulation.Vec2,System.Single,System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy})
+  commentId: M:SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies(SurvivorsMaker.Simulation.Vec2,System.Single,System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy})
+  id: QueryEnemies(SurvivorsMaker.Simulation.Vec2,System.Single,System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy})
+  parent: SurvivorsMaker.Simulation.ISpatialIndex
+  langs:
+  - csharp
+  - vb
+  name: QueryEnemies(Vec2, float, List<Enemy>)
+  nameWithType: ISpatialIndex.QueryEnemies(Vec2, float, List<Enemy>)
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies(SurvivorsMaker.Simulation.Vec2, float, System.Collections.Generic.List<SurvivorsMaker.Simulation.Enemy>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Clears <code class="paramref">results</code>, then adds living enemies that may be within <code class="paramref">radius</code>
+    of <code class="paramref">center</code>.
+  example: []
+  syntax:
+    content: void QueryEnemies(Vec2 center, float radius, List<Enemy> results)
+    parameters:
+    - id: center
+      type: SurvivorsMaker.Simulation.Vec2
+    - id: radius
+      type: System.Single
+    - id: results
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy}
+    content.vb: Sub QueryEnemies(center As Vec2, radius As Single, results As List(Of Enemy))
+  overload: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies*
+  nameWithType.vb: ISpatialIndex.QueryEnemies(Vec2, Single, List(Of Enemy))
+  fullName.vb: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies(SurvivorsMaker.Simulation.Vec2, Single, System.Collections.Generic.List(Of
+    SurvivorsMaker.Simulation.Enemy))
+  name.vb: QueryEnemies(Vec2, Single, List(Of Enemy))
+references:
+- uid: SurvivorsMaker.Simulation.SimWorld.Enemies
+  commentId: F:SurvivorsMaker.Simulation.SimWorld.Enemies
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html#SurvivorsMaker_Simulation_SimWorld_Enemies
+  name: Enemies
+  nameWithType: SimWorld.Enemies
+  fullName: SurvivorsMaker.Simulation.SimWorld.Enemies
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ISpatialIndex.Rebuild*
+  commentId: Overload:SurvivorsMaker.Simulation.ISpatialIndex.Rebuild
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISpatialIndex.html#SurvivorsMaker_Simulation_ISpatialIndex_Rebuild_SurvivorsMaker_Simulation_SimWorld_
+  name: Rebuild
+  nameWithType: ISpatialIndex.Rebuild
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex.Rebuild
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies*
+  commentId: Overload:SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISpatialIndex.html#SurvivorsMaker_Simulation_ISpatialIndex_QueryEnemies_SurvivorsMaker_Simulation_Vec2_System_Single_System_Collections_Generic_List_SurvivorsMaker_Simulation_Enemy__
+  name: QueryEnemies
+  nameWithType: ISpatialIndex.QueryEnemies
+  fullName: SurvivorsMaker.Simulation.ISpatialIndex.QueryEnemies
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.Enemy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Enemy>
+  nameWithType: List<Enemy>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.Enemy>
+  nameWithType.vb: List(Of Enemy)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.Enemy)
+  name.vb: List(Of Enemy)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

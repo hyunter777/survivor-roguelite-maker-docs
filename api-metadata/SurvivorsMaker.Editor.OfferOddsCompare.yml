@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.OfferOddsCompare
+  commentId: T:SurvivorsMaker.Editor.OfferOddsCompare
+  id: OfferOddsCompare
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.OfferOddsCompare.None
+  - SurvivorsMaker.Editor.OfferOddsCompare.WithoutCharacter
+  - SurvivorsMaker.Editor.OfferOddsCompare.WithoutGuarantees
+  langs:
+  - csharp
+  - vb
+  name: OfferOddsCompare
+  nameWithType: OfferOddsCompare
+  fullName: SurvivorsMaker.Editor.OfferOddsCompare
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum OfferOddsCompare
+    content.vb: Public Enum OfferOddsCompare
+- uid: SurvivorsMaker.Editor.OfferOddsCompare.None
+  commentId: F:SurvivorsMaker.Editor.OfferOddsCompare.None
+  id: None
+  parent: SurvivorsMaker.Editor.OfferOddsCompare
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OfferOddsCompare.None
+  fullName: SurvivorsMaker.Editor.OfferOddsCompare.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Editor.OfferOddsCompare
+- uid: SurvivorsMaker.Editor.OfferOddsCompare.WithoutGuarantees
+  commentId: F:SurvivorsMaker.Editor.OfferOddsCompare.WithoutGuarantees
+  id: WithoutGuarantees
+  parent: SurvivorsMaker.Editor.OfferOddsCompare
+  langs:
+  - csharp
+  - vb
+  name: WithoutGuarantees
+  nameWithType: OfferOddsCompare.WithoutGuarantees
+  fullName: SurvivorsMaker.Editor.OfferOddsCompare.WithoutGuarantees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Same draw without the game settings' offer guarantees.
+  example: []
+  syntax:
+    content: WithoutGuarantees = 1
+    return:
+      type: SurvivorsMaker.Editor.OfferOddsCompare
+- uid: SurvivorsMaker.Editor.OfferOddsCompare.WithoutCharacter
+  commentId: F:SurvivorsMaker.Editor.OfferOddsCompare.WithoutCharacter
+  id: WithoutCharacter
+  parent: SurvivorsMaker.Editor.OfferOddsCompare
+  langs:
+  - csharp
+  - vb
+  name: WithoutCharacter
+  nameWithType: OfferOddsCompare.WithoutCharacter
+  fullName: SurvivorsMaker.Editor.OfferOddsCompare.WithoutCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Same draw with no character (no bans, preferences or pool constraints).
+  example: []
+  syntax:
+    content: WithoutCharacter = 2
+    return:
+      type: SurvivorsMaker.Editor.OfferOddsCompare
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.OfferOddsCompare
+  commentId: T:SurvivorsMaker.Editor.OfferOddsCompare
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.OfferOddsCompare.html
+  name: OfferOddsCompare
+  nameWithType: OfferOddsCompare
+  fullName: SurvivorsMaker.Editor.OfferOddsCompare

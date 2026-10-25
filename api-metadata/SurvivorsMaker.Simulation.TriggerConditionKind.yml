@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind
+  commentId: T:SurvivorsMaker.Simulation.TriggerConditionKind
+  id: TriggerConditionKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerConditionKind.ActualMovingTicks
+  - SurvivorsMaker.Simulation.TriggerConditionKind.ActualStationaryTicks
+  - SurvivorsMaker.Simulation.TriggerConditionKind.Alive
+  - SurvivorsMaker.Simulation.TriggerConditionKind.Counter
+  - SurvivorsMaker.Simulation.TriggerConditionKind.HealthRatio
+  - SurvivorsMaker.Simulation.TriggerConditionKind.MovingTicks
+  - SurvivorsMaker.Simulation.TriggerConditionKind.NoDamageTicks
+  - SurvivorsMaker.Simulation.TriggerConditionKind.Stat
+  - SurvivorsMaker.Simulation.TriggerConditionKind.StationaryTicks
+  langs:
+  - csharp
+  - vb
+  name: TriggerConditionKind
+  nameWithType: TriggerConditionKind
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Value source tested by an extended trigger condition.
+  example: []
+  syntax:
+    content: public enum TriggerConditionKind
+    content.vb: Public Enum TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.HealthRatio
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.HealthRatio
+  id: HealthRatio
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: HealthRatio
+  nameWithType: TriggerConditionKind.HealthRatio
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.HealthRatio
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: HealthRatio = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.NoDamageTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.NoDamageTicks
+  id: NoDamageTicks
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: NoDamageTicks
+  nameWithType: TriggerConditionKind.NoDamageTicks
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.NoDamageTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: NoDamageTicks = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.StationaryTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.StationaryTicks
+  id: StationaryTicks
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: StationaryTicks
+  nameWithType: TriggerConditionKind.StationaryTicks
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.StationaryTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: StationaryTicks = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.MovingTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.MovingTicks
+  id: MovingTicks
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: MovingTicks
+  nameWithType: TriggerConditionKind.MovingTicks
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.MovingTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: MovingTicks = 3
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.Stat
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.Stat
+  id: Stat
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: Stat
+  nameWithType: TriggerConditionKind.Stat
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.Stat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Stat = 4
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.Counter
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.Counter
+  id: Counter
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: Counter
+  nameWithType: TriggerConditionKind.Counter
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.Counter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Counter = 5
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.Alive
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.Alive
+  id: Alive
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: Alive
+  nameWithType: TriggerConditionKind.Alive
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.Alive
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Alive = 6
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.ActualMovingTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.ActualMovingTicks
+  id: ActualMovingTicks
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: ActualMovingTicks
+  nameWithType: TriggerConditionKind.ActualMovingTicks
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.ActualMovingTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: ActualMovingTicks = 7
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind.ActualStationaryTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerConditionKind.ActualStationaryTicks
+  id: ActualStationaryTicks
+  parent: SurvivorsMaker.Simulation.TriggerConditionKind
+  langs:
+  - csharp
+  - vb
+  name: ActualStationaryTicks
+  nameWithType: TriggerConditionKind.ActualStationaryTicks
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind.ActualStationaryTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: ActualStationaryTicks = 8
+    return:
+      type: SurvivorsMaker.Simulation.TriggerConditionKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerConditionKind
+  commentId: T:SurvivorsMaker.Simulation.TriggerConditionKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerConditionKind.html
+  name: TriggerConditionKind
+  nameWithType: TriggerConditionKind
+  fullName: SurvivorsMaker.Simulation.TriggerConditionKind

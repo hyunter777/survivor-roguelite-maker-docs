@@ -1,0 +1,1300 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.EnemyAttackEntry
+  commentId: T:SurvivorsMaker.Data.EnemyAttackEntry
+  id: EnemyAttackEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.EnemyAttackEntry.#ctor
+  - SurvivorsMaker.Data.EnemyAttackEntry.Behaviour
+  - SurvivorsMaker.Data.EnemyAttackEntry.ChargeSeconds
+  - SurvivorsMaker.Data.EnemyAttackEntry.ChargeSpeed
+  - SurvivorsMaker.Data.EnemyAttackEntry.ChargeTarget
+  - SurvivorsMaker.Data.EnemyAttackEntry.ChargeTargetRadius
+  - SurvivorsMaker.Data.EnemyAttackEntry.CooldownJitterTicks
+  - SurvivorsMaker.Data.EnemyAttackEntry.CooldownTicks
+  - SurvivorsMaker.Data.EnemyAttackEntry.FirstDelayTicks
+  - SurvivorsMaker.Data.EnemyAttackEntry.Kind
+  - SurvivorsMaker.Data.EnemyAttackEntry.MaxRange
+  - SurvivorsMaker.Data.EnemyAttackEntry.MaxSummonAttacks
+  - SurvivorsMaker.Data.EnemyAttackEntry.MinRange
+  - SurvivorsMaker.Data.EnemyAttackEntry.Origin
+  - SurvivorsMaker.Data.EnemyAttackEntry.OriginRadius
+  - SurvivorsMaker.Data.EnemyAttackEntry.Parameters
+  - SurvivorsMaker.Data.EnemyAttackEntry.ProjectileCount
+  - SurvivorsMaker.Data.EnemyAttackEntry.ProjectileDamage
+  - SurvivorsMaker.Data.EnemyAttackEntry.ProjectileRadius
+  - SurvivorsMaker.Data.EnemyAttackEntry.ProjectileSpeed
+  - SurvivorsMaker.Data.EnemyAttackEntry.SpreadRadians
+  - SurvivorsMaker.Data.EnemyAttackEntry.SummonCount
+  - SurvivorsMaker.Data.EnemyAttackEntry.SummonEnemy
+  - SurvivorsMaker.Data.EnemyAttackEntry.SummonRadius
+  - SurvivorsMaker.Data.EnemyAttackEntry.ToDef
+  - SurvivorsMaker.Data.EnemyAttackEntry.WindupSeconds
+  langs:
+  - csharp
+  - vb
+  name: EnemyAttackEntry
+  nameWithType: EnemyAttackEntry
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Serializable enemy attack authoring data whose summon target is an enemy asset reference.
+  example: []
+  syntax:
+    content: public sealed class EnemyAttackEntry
+    content.vb: Public NotInheritable Class EnemyAttackEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.Kind
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.Kind
+  id: Kind
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: EnemyAttackEntry.Kind
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Built-in attack used when Behaviour is empty; None disables special attacks.
+  example: []
+  syntax:
+    content: '[Tooltip("Built-in attack used when Behaviour is empty; None disables special attacks.")]
+
+      public SpecialAttackKind Kind'
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+    content.vb: '<Tooltip("Built-in attack used when Behaviour is empty; None disables special attacks.")>
+
+      Public Kind As SpecialAttackKind'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Built-in attack used when Behaviour is empty; None disables special attacks.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.Behaviour
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.Behaviour
+  id: Behaviour
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: Behaviour
+  nameWithType: EnemyAttackEntry.Behaviour
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.Behaviour
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Registered attack id; empty = the built-in behaviour of Kind.
+  example: []
+  syntax:
+    content: '[Tooltip("Registered behaviour id; empty = the built-in behaviour selected by Kind.")]
+
+      public string Behaviour'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Registered behaviour id; empty = the built-in behaviour selected by Kind.")>
+
+      Public Behaviour As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Registered behaviour id; empty = the built-in behaviour selected by Kind.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.Parameters
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.Parameters
+  id: Parameters
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: EnemyAttackEntry.Parameters
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.Parameters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Named values read by the selected behaviour. Empty = its own defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Named values read by the selected behaviour. Empty = its own defaults.")]
+
+      public List<BehaviourParameter> Parameters'
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    content.vb: '<Tooltip("Named values read by the selected behaviour. Empty = its own defaults.")>
+
+      Public Parameters As List(Of BehaviourParameter)'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Named values read by the selected behaviour. Empty = its own defaults.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.CooldownTicks
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.CooldownTicks
+  id: CooldownTicks
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: CooldownTicks
+  nameWithType: EnemyAttackEntry.CooldownTicks
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.CooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Positive combat ticks between special attacks.
+  example: []
+  syntax:
+    content: '[Tooltip("Positive combat ticks between special attacks.")]
+
+      public int CooldownTicks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Positive combat ticks between special attacks.")>
+
+      Public CooldownTicks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Positive combat ticks between special attacks.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.CooldownJitterTicks
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.CooldownJitterTicks
+  id: CooldownJitterTicks
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: CooldownJitterTicks
+  nameWithType: EnemyAttackEntry.CooldownJitterTicks
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.CooldownJitterTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Symmetric cooldown variation in ticks; nonnegative and less than Cooldown Ticks. 0 = fixed.
+  example: []
+  syntax:
+    content: '[Tooltip("Symmetric cooldown variation in ticks; nonnegative and less than Cooldown Ticks. 0 = fixed.")]
+
+      public int CooldownJitterTicks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Symmetric cooldown variation in ticks; nonnegative and less than Cooldown Ticks. 0 = fixed.")>
+
+      Public CooldownJitterTicks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Symmetric cooldown variation in ticks; nonnegative and less than Cooldown Ticks. 0 = fixed.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.FirstDelayTicks
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.FirstDelayTicks
+  id: FirstDelayTicks
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: FirstDelayTicks
+  nameWithType: EnemyAttackEntry.FirstDelayTicks
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.FirstDelayTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Ticks before the first shooting attack; 0 permits an immediate first shot.
+  example: []
+  syntax:
+    content: '[Tooltip("Ticks before the first shooting attack; 0 permits an immediate first shot.")]
+
+      public int FirstDelayTicks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Ticks before the first shooting attack; 0 permits an immediate first shot.")>
+
+      Public FirstDelayTicks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Ticks before the first shooting attack; 0 permits an immediate first shot.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.MinRange
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.MinRange
+  id: MinRange
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: MinRange
+  nameWithType: EnemyAttackEntry.MinRange
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.MinRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Minimum attack distance in world units; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Minimum attack distance in world units; nonnegative.")]
+
+      public float MinRange'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Minimum attack distance in world units; nonnegative.")>
+
+      Public MinRange As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum attack distance in world units; nonnegative.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.MaxRange
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.MaxRange
+  id: MaxRange
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: MaxRange
+  nameWithType: EnemyAttackEntry.MaxRange
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.MaxRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Maximum attack distance in world units; must be at least Min Range.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum attack distance in world units; must be at least Min Range.")]
+
+      public float MaxRange'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Maximum attack distance in world units; must be at least Min Range.")>
+
+      Public MaxRange As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum attack distance in world units; must be at least Min Range.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.WindupSeconds
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.WindupSeconds
+  id: WindupSeconds
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: WindupSeconds
+  nameWithType: EnemyAttackEntry.WindupSeconds
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.WindupSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Charge warning duration in seconds; 0 = no windup.
+  example: []
+  syntax:
+    content: '[Tooltip("Charge warning duration in seconds; 0 = no windup.")]
+
+      public float WindupSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Charge warning duration in seconds; 0 = no windup.")>
+
+      Public WindupSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Charge warning duration in seconds; 0 = no windup.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileCount
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ProjectileCount
+  id: ProjectileCount
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileCount
+  nameWithType: EnemyAttackEntry.ProjectileCount
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Positive projectile count per shooting attack.
+  example: []
+  syntax:
+    content: '[Tooltip("Positive projectile count per shooting attack.")]
+
+      public int ProjectileCount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Positive projectile count per shooting attack.")>
+
+      Public ProjectileCount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Positive projectile count per shooting attack.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.SpreadRadians
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.SpreadRadians
+  id: SpreadRadians
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: SpreadRadians
+  nameWithType: EnemyAttackEntry.SpreadRadians
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.SpreadRadians
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Total shot fan angle in radians; 0 aims all shots in one direction.
+  example: []
+  syntax:
+    content: '[Tooltip("Total shot fan angle in radians; 0 aims all shots in one direction.")]
+
+      public float SpreadRadians'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Total shot fan angle in radians; 0 aims all shots in one direction.")>
+
+      Public SpreadRadians As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Total shot fan angle in radians; 0 aims all shots in one direction.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileSpeed
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ProjectileSpeed
+  id: ProjectileSpeed
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpeed
+  nameWithType: EnemyAttackEntry.ProjectileSpeed
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Projectile speed in world units per second; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Projectile speed in world units per second; nonnegative.")]
+
+      public float ProjectileSpeed'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Projectile speed in world units per second; nonnegative.")>
+
+      Public ProjectileSpeed As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Projectile speed in world units per second; nonnegative.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileRadius
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ProjectileRadius
+  id: ProjectileRadius
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRadius
+  nameWithType: EnemyAttackEntry.ProjectileRadius
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Projectile collision radius in world units; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Projectile collision radius in world units; nonnegative.")]
+
+      public float ProjectileRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Projectile collision radius in world units; nonnegative.")>
+
+      Public ProjectileRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Projectile collision radius in world units; nonnegative.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileDamage
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ProjectileDamage
+  id: ProjectileDamage
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ProjectileDamage
+  nameWithType: EnemyAttackEntry.ProjectileDamage
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ProjectileDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Damage points scaled by wave, then clamped to the authored minimum.
+  example: []
+  syntax:
+    content: '[Tooltip("Damage points scaled by wave, then clamped to the authored minimum.")]
+
+      public Scaled ProjectileDamage'
+    return:
+      type: SurvivorsMaker.Simulation.Scaled
+    content.vb: '<Tooltip("Damage points scaled by wave, then clamped to the authored minimum.")>
+
+      Public ProjectileDamage As Scaled'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Damage points scaled by wave, then clamped to the authored minimum.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.Origin
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.Origin
+  id: Origin
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: EnemyAttackEntry.Origin
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.Origin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Where shooting projectiles originate: enemy, player ring or arena positions.'
+  example: []
+  syntax:
+    content: '[Tooltip("Where shooting projectiles originate: enemy, player ring or arena positions.")]
+
+      public ShotOrigin Origin'
+    return:
+      type: SurvivorsMaker.Simulation.ShotOrigin
+    content.vb: '<Tooltip("Where shooting projectiles originate: enemy, player ring or arena positions.")>
+
+      Public Origin As ShotOrigin'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'Where shooting projectiles originate: enemy, player ring or arena positions.'
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.OriginRadius
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.OriginRadius
+  id: OriginRadius
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: OriginRadius
+  nameWithType: EnemyAttackEntry.OriginRadius
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.OriginRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Shot origin ring radius in world units; 0 = ring centre.
+  example: []
+  syntax:
+    content: '[Tooltip("Shot origin ring radius in world units; 0 = ring centre.")]
+
+      public float OriginRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Shot origin ring radius in world units; 0 = ring centre.")>
+
+      Public OriginRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shot origin ring radius in world units; 0 = ring centre.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ChargeTarget
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ChargeTarget
+  id: ChargeTarget
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ChargeTarget
+  nameWithType: EnemyAttackEntry.ChargeTarget
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ChargeTarget
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: How a charge destination is sampled at windup start.
+  example: []
+  syntax:
+    content: '[Tooltip("How a charge destination is sampled at windup start.")]
+
+      public ChargeTarget ChargeTarget'
+    return:
+      type: SurvivorsMaker.Simulation.ChargeTarget
+    content.vb: '<Tooltip("How a charge destination is sampled at windup start.")>
+
+      Public ChargeTarget As ChargeTarget'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: How a charge destination is sampled at windup start.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ChargeTargetRadius
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ChargeTargetRadius
+  id: ChargeTargetRadius
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ChargeTargetRadius
+  nameWithType: EnemyAttackEntry.ChargeTargetRadius
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ChargeTargetRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Charge destination sampling radius in world units; 0 targets the centre.
+  example: []
+  syntax:
+    content: '[Tooltip("Charge destination sampling radius in world units; 0 targets the centre.")]
+
+      public float ChargeTargetRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Charge destination sampling radius in world units; 0 targets the centre.")>
+
+      Public ChargeTargetRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Charge destination sampling radius in world units; 0 targets the centre.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ChargeSpeed
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ChargeSpeed
+  id: ChargeSpeed
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ChargeSpeed
+  nameWithType: EnemyAttackEntry.ChargeSpeed
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ChargeSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Charging speed in world units per second; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Charging speed in world units per second; nonnegative.")]
+
+      public float ChargeSpeed'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Charging speed in world units per second; nonnegative.")>
+
+      Public ChargeSpeed As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Charging speed in world units per second; nonnegative.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ChargeSeconds
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.ChargeSeconds
+  id: ChargeSeconds
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ChargeSeconds
+  nameWithType: EnemyAttackEntry.ChargeSeconds
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ChargeSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Positive charge travel duration in seconds.
+  example: []
+  syntax:
+    content: '[Tooltip("Positive charge travel duration in seconds.")]
+
+      public float ChargeSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Positive charge travel duration in seconds.")>
+
+      Public ChargeSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Positive charge travel duration in seconds.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.SummonEnemy
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.SummonEnemy
+  id: SummonEnemy
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: SummonEnemy
+  nameWithType: EnemyAttackEntry.SummonEnemy
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.SummonEnemy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy asset created by summon attacks. Required when summoning is enabled.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy asset created by summon attacks. Required when summoning is enabled.")]
+
+      public EnemyAsset SummonEnemy'
+    return:
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: '<Tooltip("Enemy asset created by summon attacks. Required when summoning is enabled.")>
+
+      Public SummonEnemy As EnemyAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy asset created by summon attacks. Required when summoning is enabled.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.SummonCount
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.SummonCount
+  id: SummonCount
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: SummonCount
+  nameWithType: EnemyAttackEntry.SummonCount
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.SummonCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Children per summon attack; nonnegative, 0 creates none.
+  example: []
+  syntax:
+    content: '[Tooltip("Children per summon attack; nonnegative, 0 creates none.")]
+
+      public int SummonCount'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Children per summon attack; nonnegative, 0 creates none.")>
+
+      Public SummonCount As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Children per summon attack; nonnegative, 0 creates none.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.SummonRadius
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.SummonRadius
+  id: SummonRadius
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: SummonRadius
+  nameWithType: EnemyAttackEntry.SummonRadius
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.SummonRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Child spawn radius in world units; 0 uses the summoner position.
+  example: []
+  syntax:
+    content: '[Tooltip("Child spawn radius in world units; 0 uses the summoner position.")]
+
+      public float SummonRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Child spawn radius in world units; 0 uses the summoner position.")>
+
+      Public SummonRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Child spawn radius in world units; 0 uses the summoner position.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.MaxSummonAttacks
+  commentId: F:SurvivorsMaker.Data.EnemyAttackEntry.MaxSummonAttacks
+  id: MaxSummonAttacks
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: MaxSummonAttacks
+  nameWithType: EnemyAttackEntry.MaxSummonAttacks
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.MaxSummonAttacks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Maximum summon executions per enemy; 0 = unlimited.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum summon executions per enemy; 0 = unlimited.")]
+
+      public int MaxSummonAttacks'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Maximum summon executions per enemy; 0 = unlimited.")>
+
+      Public MaxSummonAttacks As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum summon executions per enemy; 0 = unlimited.
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ToDef
+  commentId: M:SurvivorsMaker.Data.EnemyAttackEntry.ToDef
+  id: ToDef
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: ToDef()
+  nameWithType: EnemyAttackEntry.ToDef()
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ToDef()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Converts this authoring entry to a runtime definition, resolving asset references through their caches.
+  example: []
+  syntax:
+    content: public SpecialAttackDef ToDef()
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackDef
+    content.vb: Public Function ToDef() As SpecialAttackDef
+  overload: SurvivorsMaker.Data.EnemyAttackEntry.ToDef*
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.EnemyAttackEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.EnemyAttackEntry
+  langs:
+  - csharp
+  - vb
+  name: EnemyAttackEntry()
+  nameWithType: EnemyAttackEntry.EnemyAttackEntry()
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.EnemyAttackEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public EnemyAttackEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.EnemyAttackEntry.#ctor*
+  nameWithType.vb: EnemyAttackEntry.New()
+  fullName.vb: SurvivorsMaker.Data.EnemyAttackEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackKind.html
+  name: SpecialAttackKind
+  nameWithType: SpecialAttackKind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BehaviourParameter>
+  nameWithType: List<BehaviourParameter>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>
+  nameWithType.vb: List(Of BehaviourParameter)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter)
+  name.vb: List(Of BehaviourParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.Scaled
+  commentId: T:SurvivorsMaker.Simulation.Scaled
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Scaled.html
+  name: Scaled
+  nameWithType: Scaled
+  fullName: SurvivorsMaker.Simulation.Scaled
+- uid: SurvivorsMaker.Simulation.ShotOrigin
+  commentId: T:SurvivorsMaker.Simulation.ShotOrigin
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ShotOrigin.html
+  name: ShotOrigin
+  nameWithType: ShotOrigin
+  fullName: SurvivorsMaker.Simulation.ShotOrigin
+- uid: SurvivorsMaker.Simulation.ChargeTarget
+  commentId: T:SurvivorsMaker.Simulation.ChargeTarget
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ChargeTarget.html
+  name: ChargeTarget
+  nameWithType: ChargeTarget
+  fullName: SurvivorsMaker.Simulation.ChargeTarget
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.ToDef*
+  commentId: Overload:SurvivorsMaker.Data.EnemyAttackEntry.ToDef
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAttackEntry.html#SurvivorsMaker_Data_EnemyAttackEntry_ToDef
+  name: ToDef
+  nameWithType: EnemyAttackEntry.ToDef
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.ToDef
+- uid: SurvivorsMaker.Simulation.SpecialAttackDef
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackDef.html
+  name: SpecialAttackDef
+  nameWithType: SpecialAttackDef
+  fullName: SurvivorsMaker.Simulation.SpecialAttackDef
+- uid: SurvivorsMaker.Data.EnemyAttackEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.EnemyAttackEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAttackEntry.html#SurvivorsMaker_Data_EnemyAttackEntry__ctor
+  name: EnemyAttackEntry
+  nameWithType: EnemyAttackEntry.EnemyAttackEntry
+  fullName: SurvivorsMaker.Data.EnemyAttackEntry.EnemyAttackEntry
+  nameWithType.vb: EnemyAttackEntry.New
+  fullName.vb: SurvivorsMaker.Data.EnemyAttackEntry.New
+  name.vb: New

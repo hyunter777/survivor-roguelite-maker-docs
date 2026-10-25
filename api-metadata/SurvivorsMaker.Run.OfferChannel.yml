@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  id: OfferChannel
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferChannel.All
+  - SurvivorsMaker.Run.OfferChannel.LevelUp
+  - SurvivorsMaker.Run.OfferChannel.None
+  - SurvivorsMaker.Run.OfferChannel.Reward
+  - SurvivorsMaker.Run.OfferChannel.Shop
+  - SurvivorsMaker.Run.OfferChannel.Start
+  langs:
+  - csharp
+  - vb
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Bit mask of acquisition channels: shop, level-up and reward.'
+  example: []
+  syntax:
+    content: '[Flags]
+
+      public enum OfferChannel'
+    content.vb: '<Flags>
+
+      Public Enum OfferChannel'
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SurvivorsMaker.Run.OfferChannel.None
+  commentId: F:SurvivorsMaker.Run.OfferChannel.None
+  id: None
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OfferChannel.None
+  fullName: SurvivorsMaker.Run.OfferChannel.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run.OfferChannel.Shop
+  commentId: F:SurvivorsMaker.Run.OfferChannel.Shop
+  id: Shop
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: OfferChannel.Shop
+  fullName: SurvivorsMaker.Run.OfferChannel.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Shop = 1
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run.OfferChannel.LevelUp
+  commentId: F:SurvivorsMaker.Run.OfferChannel.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: OfferChannel.LevelUp
+  fullName: SurvivorsMaker.Run.OfferChannel.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: LevelUp = 2
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run.OfferChannel.Reward
+  commentId: F:SurvivorsMaker.Run.OfferChannel.Reward
+  id: Reward
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: Reward
+  nameWithType: OfferChannel.Reward
+  fullName: SurvivorsMaker.Run.OfferChannel.Reward
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Reward = 4
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run.OfferChannel.Start
+  commentId: F:SurvivorsMaker.Run.OfferChannel.Start
+  id: Start
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: OfferChannel.Start
+  fullName: SurvivorsMaker.Run.OfferChannel.Start
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Start = 8
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+- uid: SurvivorsMaker.Run.OfferChannel.All
+  commentId: F:SurvivorsMaker.Run.OfferChannel.All
+  id: All
+  parent: SurvivorsMaker.Run.OfferChannel
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: OfferChannel.All
+  fullName: SurvivorsMaker.Run.OfferChannel.All
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: All = Shop | LevelUp | Reward | Start
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+    content.vb: All = Shop Or LevelUp Or Reward Or Start
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferChannel.html
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel

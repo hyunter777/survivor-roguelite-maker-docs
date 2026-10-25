@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.IOptionsApplicator
+  commentId: T:SurvivorsMaker.Presentation.IOptionsApplicator
+  id: IOptionsApplicator
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.IOptionsApplicator.Apply(SurvivorsMaker.Run.OptionsState)
+  langs:
+  - csharp
+  - vb
+  name: IOptionsApplicator
+  nameWithType: IOptionsApplicator
+  fullName: SurvivorsMaker.Presentation.IOptionsApplicator
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Turns the player's option choices into engine settings (audio, window, frame rate, background play).
+  example: []
+  syntax:
+    content: public interface IOptionsApplicator
+    content.vb: Public Interface IOptionsApplicator
+  derivedClasses:
+  - SurvivorsMaker.Presentation.UnityOptionsApplicator
+- uid: SurvivorsMaker.Presentation.IOptionsApplicator.Apply(SurvivorsMaker.Run.OptionsState)
+  commentId: M:SurvivorsMaker.Presentation.IOptionsApplicator.Apply(SurvivorsMaker.Run.OptionsState)
+  id: Apply(SurvivorsMaker.Run.OptionsState)
+  parent: SurvivorsMaker.Presentation.IOptionsApplicator
+  langs:
+  - csharp
+  - vb
+  name: Apply(OptionsState)
+  nameWithType: IOptionsApplicator.Apply(OptionsState)
+  fullName: SurvivorsMaker.Presentation.IOptionsApplicator.Apply(SurvivorsMaker.Run.OptionsState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Applies user options to presentation services without changing run or simulation rules.
+  example: []
+  syntax:
+    content: void Apply(OptionsState options)
+    parameters:
+    - id: options
+      type: SurvivorsMaker.Run.OptionsState
+    content.vb: Sub Apply(options As OptionsState)
+  overload: SurvivorsMaker.Presentation.IOptionsApplicator.Apply*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.IOptionsApplicator.Apply*
+  commentId: Overload:SurvivorsMaker.Presentation.IOptionsApplicator.Apply
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IOptionsApplicator.html#SurvivorsMaker_Presentation_IOptionsApplicator_Apply_SurvivorsMaker_Run_OptionsState_
+  name: Apply
+  nameWithType: IOptionsApplicator.Apply
+  fullName: SurvivorsMaker.Presentation.IOptionsApplicator.Apply
+- uid: SurvivorsMaker.Run.OptionsState
+  commentId: T:SurvivorsMaker.Run.OptionsState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OptionsState.html
+  name: OptionsState
+  nameWithType: OptionsState
+  fullName: SurvivorsMaker.Run.OptionsState
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true

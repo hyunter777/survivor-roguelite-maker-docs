@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState
+  commentId: T:SurvivorsMaker.Presentation.PlaytestCheatState
+  id: PlaytestCheatState
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.PlaytestCheatState.#ctor
+  - SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+  - SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+  - SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+  - SurvivorsMaker.Presentation.PlaytestCheatState.Note(System.String,SurvivorsMaker.Run.RunResult)
+  - SurvivorsMaker.Presentation.PlaytestCheatState.Observe(System.Boolean)
+  - SurvivorsMaker.Presentation.PlaytestCheatState.Reset
+  - SurvivorsMaker.Presentation.PlaytestCheatState.Used
+  langs:
+  - csharp
+  - vb
+  name: PlaytestCheatState
+  nameWithType: PlaytestCheatState
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The "CHEATS USED" badge: on once any playtest command succeeded in this run (or the run says it used cheats),
+
+    until the next run. Speed and single-stepping are not cheats: they never change what the simulation does.'
+  example: []
+  syntax:
+    content: public sealed class PlaytestCheatState
+    content.vb: Public NotInheritable Class PlaytestCheatState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Note(System.String,SurvivorsMaker.Run.RunResult)
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCheatState.Note(System.String,SurvivorsMaker.Run.RunResult)
+  id: Note(System.String,SurvivorsMaker.Run.RunResult)
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: Note(string, RunResult)
+  nameWithType: PlaytestCheatState.Note(string, RunResult)
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Note(string, SurvivorsMaker.Run.RunResult)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Note(string command, RunResult result)
+    parameters:
+    - id: command
+      type: System.String
+    - id: result
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Sub Note(command As String, result As RunResult)
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.Note*
+  nameWithType.vb: PlaytestCheatState.Note(String, RunResult)
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCheatState.Note(String, SurvivorsMaker.Run.RunResult)
+  name.vb: Note(String, RunResult)
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Observe(System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCheatState.Observe(System.Boolean)
+  id: Observe(System.Boolean)
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: Observe(bool)
+  nameWithType: PlaytestCheatState.Observe(bool)
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Observe(bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Takes the run's own flag (e.g. a continued run that already used cheats).
+  example: []
+  syntax:
+    content: public void Observe(bool runUsedCheats)
+    parameters:
+    - id: runUsedCheats
+      type: System.Boolean
+    content.vb: Public Sub Observe(runUsedCheats As Boolean)
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.Observe*
+  nameWithType.vb: PlaytestCheatState.Observe(Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCheatState.Observe(Boolean)
+  name.vb: Observe(Boolean)
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Reset
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCheatState.Reset
+  id: Reset
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: PlaytestCheatState.Reset()
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Reset()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.Reset*
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.#ctor
+  commentId: M:SurvivorsMaker.Presentation.PlaytestCheatState.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: PlaytestCheatState()
+  nameWithType: PlaytestCheatState.PlaytestCheatState()
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.PlaytestCheatState()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public PlaytestCheatState()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.#ctor*
+  nameWithType.vb: PlaytestCheatState.New()
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCheatState.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Used
+  commentId: P:SurvivorsMaker.Presentation.PlaytestCheatState.Used
+  id: Used
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: Used
+  nameWithType: PlaytestCheatState.Used
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Used
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public bool Used { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Used As Boolean
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.Used*
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+  commentId: P:SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+  id: Commands
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: Commands
+  nameWithType: PlaytestCheatState.Commands
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Successful commands this run.
+  example: []
+  syntax:
+    content: public int Commands { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Commands As Integer
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.Commands*
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+  commentId: P:SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+  id: LastCommand
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: LastCommand
+  nameWithType: PlaytestCheatState.LastCommand
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public string LastCommand { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LastCommand As String
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand*
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+  commentId: P:SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+  id: LastResult
+  parent: SurvivorsMaker.Presentation.PlaytestCheatState
+  langs:
+  - csharp
+  - vb
+  name: LastResult
+  nameWithType: PlaytestCheatState.LastResult
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public RunResult? LastResult { get; }
+    parameters: []
+    return:
+      type: System.Nullable{SurvivorsMaker.Run.RunResult}
+    content.vb: Public ReadOnly Property LastResult As RunResult?
+  overload: SurvivorsMaker.Presentation.PlaytestCheatState.LastResult*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Note*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.Note
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_Note_System_String_SurvivorsMaker_Run_RunResult_
+  name: Note
+  nameWithType: PlaytestCheatState.Note
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Note
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Observe*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.Observe
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_Observe_System_Boolean_
+  name: Observe
+  nameWithType: PlaytestCheatState.Observe
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Observe
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Reset*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.Reset
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_Reset
+  name: Reset
+  nameWithType: PlaytestCheatState.Reset
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Reset
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState__ctor
+  name: PlaytestCheatState
+  nameWithType: PlaytestCheatState.PlaytestCheatState
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.PlaytestCheatState
+  nameWithType.vb: PlaytestCheatState.New
+  fullName.vb: SurvivorsMaker.Presentation.PlaytestCheatState.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Used*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.Used
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_Used
+  name: Used
+  nameWithType: PlaytestCheatState.Used
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Used
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.Commands*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_Commands
+  name: Commands
+  nameWithType: PlaytestCheatState.Commands
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.Commands
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_LastCommand
+  name: LastCommand
+  nameWithType: PlaytestCheatState.LastCommand
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.LastCommand
+- uid: SurvivorsMaker.Presentation.PlaytestCheatState.LastResult*
+  commentId: Overload:SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PlaytestCheatState.html#SurvivorsMaker_Presentation_PlaytestCheatState_LastResult
+  name: LastResult
+  nameWithType: PlaytestCheatState.LastResult
+  fullName: SurvivorsMaker.Presentation.PlaytestCheatState.LastResult
+- uid: System.Nullable{SurvivorsMaker.Run.RunResult}
+  commentId: T:System.Nullable{SurvivorsMaker.Run.RunResult}
+  parent: System
+  definition: System.Nullable`1
+  name: RunResult?
+  nameWithType: RunResult?
+  fullName: SurvivorsMaker.Run.RunResult?
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.RunResult
+    name: RunResult
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: SurvivorsMaker.Run.RunResult
+    name: RunResult
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )

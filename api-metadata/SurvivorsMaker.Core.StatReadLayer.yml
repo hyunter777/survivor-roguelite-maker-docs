@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  id: StatReadLayer
+  parent: SurvivorsMaker.Core
+  children:
+  - SurvivorsMaker.Core.StatReadLayer.Final
+  - SurvivorsMaker.Core.StatReadLayer.Permanent
+  - SurvivorsMaker.Core.StatReadLayer.WithTemporary
+  langs:
+  - csharp
+  - vb
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  summary: Which evaluation layer supplies a linked or limited effect input.
+  example: []
+  syntax:
+    content: public enum StatReadLayer
+    content.vb: Public Enum StatReadLayer
+- uid: SurvivorsMaker.Core.StatReadLayer.Permanent
+  commentId: F:SurvivorsMaker.Core.StatReadLayer.Permanent
+  id: Permanent
+  parent: SurvivorsMaker.Core.StatReadLayer
+  langs:
+  - csharp
+  - vb
+  name: Permanent
+  nameWithType: StatReadLayer.Permanent
+  fullName: SurvivorsMaker.Core.StatReadLayer.Permanent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Permanent = 0
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+- uid: SurvivorsMaker.Core.StatReadLayer.WithTemporary
+  commentId: F:SurvivorsMaker.Core.StatReadLayer.WithTemporary
+  id: WithTemporary
+  parent: SurvivorsMaker.Core.StatReadLayer
+  langs:
+  - csharp
+  - vb
+  name: WithTemporary
+  nameWithType: StatReadLayer.WithTemporary
+  fullName: SurvivorsMaker.Core.StatReadLayer.WithTemporary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: WithTemporary = 1
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+- uid: SurvivorsMaker.Core.StatReadLayer.Final
+  commentId: F:SurvivorsMaker.Core.StatReadLayer.Final
+  id: Final
+  parent: SurvivorsMaker.Core.StatReadLayer
+  langs:
+  - csharp
+  - vb
+  name: Final
+  nameWithType: StatReadLayer.Final
+  fullName: SurvivorsMaker.Core.StatReadLayer.Final
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Core
+  namespace: SurvivorsMaker.Core
+  syntax:
+    content: Final = 2
+    return:
+      type: SurvivorsMaker.Core.StatReadLayer
+references:
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.StatReadLayer
+  commentId: T:SurvivorsMaker.Core.StatReadLayer
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatReadLayer.html
+  name: StatReadLayer
+  nameWithType: StatReadLayer
+  fullName: SurvivorsMaker.Core.StatReadLayer

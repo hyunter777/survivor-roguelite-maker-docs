@@ -1,0 +1,1058 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.WorldViewSettings
+  commentId: T:SurvivorsMaker.Presentation.WorldViewSettings
+  id: WorldViewSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.WorldViewSettings.#ctor
+  - SurvivorsMaker.Presentation.WorldViewSettings.Depth
+  - SurvivorsMaker.Presentation.WorldViewSettings.DirectionEpsilon
+  - SurvivorsMaker.Presentation.WorldViewSettings.EnemyOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.EnemyProjectileTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.EnemyTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.FallbackSize
+  - SurvivorsMaker.Presentation.WorldViewSettings.FriendlyProjectileTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.InitialCapacity
+  - SurvivorsMaker.Presentation.WorldViewSettings.MaxRetainedPerPool
+  - SurvivorsMaker.Presentation.WorldViewSettings.PickupOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.PickupTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.PlayerDefinitionId
+  - SurvivorsMaker.Presentation.WorldViewSettings.PlayerFromRunCharacter
+  - SurvivorsMaker.Presentation.WorldViewSettings.PlayerOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.PlayerTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
+  - SurvivorsMaker.Presentation.WorldViewSettings.ProjectileOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.SortingLayer
+  - SurvivorsMaker.Presentation.WorldViewSettings.TelegraphOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.TelegraphTint
+  - SurvivorsMaker.Presentation.WorldViewSettings.WeaponOrder
+  - SurvivorsMaker.Presentation.WorldViewSettings.WeaponTint
+  langs:
+  - csharp
+  - vb
+  name: WorldViewSettings
+  nameWithType: WorldViewSettings
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: World View tuning; defaults are defined by the field initializers and can be overridden per game.
+  example: []
+  syntax:
+    content: public sealed class WorldViewSettings
+    content.vb: Public NotInheritable Class WorldViewSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PlayerDefinitionId
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PlayerDefinitionId
+  id: PlayerDefinitionId
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PlayerDefinitionId
+  nameWithType: WorldViewSettings.PlayerDefinitionId
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PlayerDefinitionId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("View catalog id of the player when the run''s character has no entry of its own (or no session is
+      bound).")]
+
+      public string PlayerDefinitionId'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("View catalog id of the player when the run''s character has no entry of its own (or no session
+      is bound).")>
+
+      Public PlayerDefinitionId As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: View catalog id of the player when the run's character has no entry of its own (or no session is bound).
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PlayerFromRunCharacter
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PlayerFromRunCharacter
+  id: PlayerFromRunCharacter
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PlayerFromRunCharacter
+  nameWithType: WorldViewSettings.PlayerFromRunCharacter
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PlayerFromRunCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Show the run''s character (its view catalog entry) as the player. Off = always PlayerDefinitionId.")]
+
+      public bool PlayerFromRunCharacter'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Show the run''s character (its view catalog entry) as the player. Off = always PlayerDefinitionId.")>
+
+      Public PlayerFromRunCharacter As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show the run's character (its view catalog entry) as the player. Off = always PlayerDefinitionId.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.InitialCapacity
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.InitialCapacity
+  id: InitialCapacity
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: InitialCapacity
+  nameWithType: WorldViewSettings.InitialCapacity
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.InitialCapacity
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Initial entity lookup capacity; nonnegative. Capacity may grow during play.
+  example: []
+  syntax:
+    content: '[Tooltip("Initial entity lookup capacity; nonnegative. Capacity may grow during play.")]
+
+      public int InitialCapacity'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Initial entity lookup capacity; nonnegative. Capacity may grow during play.")>
+
+      Public InitialCapacity As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Initial entity lookup capacity; nonnegative. Capacity may grow during play.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
+  id: PrewarmPerPool
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PrewarmPerPool
+  nameWithType: WorldViewSettings.PrewarmPerPool
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PrewarmPerPool
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: View instances created per pool before use; nonnegative, 0 = none.
+  example: []
+  syntax:
+    content: '[Tooltip("View instances created per pool before use; nonnegative, 0 = none.")]
+
+      public int PrewarmPerPool'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("View instances created per pool before use; nonnegative, 0 = none.")>
+
+      Public PrewarmPerPool As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: View instances created per pool before use; nonnegative, 0 = none.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.MaxRetainedPerPool
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.MaxRetainedPerPool
+  id: MaxRetainedPerPool
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: MaxRetainedPerPool
+  nameWithType: WorldViewSettings.MaxRetainedPerPool
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.MaxRetainedPerPool
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Inactive views retained per pool; nonnegative, 0 retains none.
+  example: []
+  syntax:
+    content: '[Tooltip("Inactive views retained per pool; nonnegative, 0 retains none.")]
+
+      public int MaxRetainedPerPool'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Inactive views retained per pool; nonnegative, 0 retains none.")>
+
+      Public MaxRetainedPerPool As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Inactive views retained per pool; nonnegative, 0 retains none.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.Depth
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.Depth
+  id: Depth
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: WorldViewSettings.Depth
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.Depth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Depth in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Depth in world units; use nonnegative sizes and signed offsets.")]
+
+      public float Depth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Depth in world units; use nonnegative sizes and signed offsets.")>
+
+      Public Depth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Depth in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.FallbackSize
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.FallbackSize
+  id: FallbackSize
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: FallbackSize
+  nameWithType: WorldViewSettings.FallbackSize
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.FallbackSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Fallback Size in world units; use nonnegative sizes and signed offsets.
+  example: []
+  syntax:
+    content: '[Tooltip("Fallback Size in world units; use nonnegative sizes and signed offsets.")]
+
+      public float FallbackSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Fallback Size in world units; use nonnegative sizes and signed offsets.")>
+
+      Public FallbackSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fallback Size in world units; use nonnegative sizes and signed offsets.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.DirectionEpsilon
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.DirectionEpsilon
+  id: DirectionEpsilon
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: DirectionEpsilon
+  nameWithType: WorldViewSettings.DirectionEpsilon
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.DirectionEpsilon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Minimum direction length for facing updates in world units; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Minimum direction length for facing updates in world units; nonnegative.")]
+
+      public float DirectionEpsilon'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Minimum direction length for facing updates in world units; nonnegative.")>
+
+      Public DirectionEpsilon As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum direction length for facing updates in world units; nonnegative.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.SortingLayer
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.SortingLayer
+  id: SortingLayer
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: SortingLayer
+  nameWithType: WorldViewSettings.SortingLayer
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.SortingLayer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Unity sorting-layer name used by generated entity sprites.
+  example: []
+  syntax:
+    content: '[Tooltip("Unity sorting-layer name used by generated entity sprites.")]
+
+      public string SortingLayer'
+    return:
+      type: System.String
+    content.vb: '<Tooltip("Unity sorting-layer name used by generated entity sprites.")>
+
+      Public SortingLayer As String'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Unity sorting-layer name used by generated entity sprites.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.EnemyOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.EnemyOrder
+  id: EnemyOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: EnemyOrder
+  nameWithType: WorldViewSettings.EnemyOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.EnemyOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enemy Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy Order; sprite sorting order, higher draws in front.")]
+
+      public int EnemyOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Enemy Order; sprite sorting order, higher draws in front.")>
+
+      Public EnemyOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.TelegraphOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.TelegraphOrder
+  id: TelegraphOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: TelegraphOrder
+  nameWithType: WorldViewSettings.TelegraphOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.TelegraphOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Telegraph Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Telegraph Order; sprite sorting order, higher draws in front.")]
+
+      public int TelegraphOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Telegraph Order; sprite sorting order, higher draws in front.")>
+
+      Public TelegraphOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Telegraph Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.ProjectileOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.ProjectileOrder
+  id: ProjectileOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: ProjectileOrder
+  nameWithType: WorldViewSettings.ProjectileOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.ProjectileOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Projectile Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Projectile Order; sprite sorting order, higher draws in front.")]
+
+      public int ProjectileOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Projectile Order; sprite sorting order, higher draws in front.")>
+
+      Public ProjectileOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Projectile Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PickupOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PickupOrder
+  id: PickupOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PickupOrder
+  nameWithType: WorldViewSettings.PickupOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PickupOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Pickup Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Pickup Order; sprite sorting order, higher draws in front.")]
+
+      public int PickupOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Pickup Order; sprite sorting order, higher draws in front.")>
+
+      Public PickupOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pickup Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PlayerOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PlayerOrder
+  id: PlayerOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PlayerOrder
+  nameWithType: WorldViewSettings.PlayerOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PlayerOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Player Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Player Order; sprite sorting order, higher draws in front.")]
+
+      public int PlayerOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Player Order; sprite sorting order, higher draws in front.")>
+
+      Public PlayerOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Player Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.WeaponOrder
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.WeaponOrder
+  id: WeaponOrder
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponOrder
+  nameWithType: WorldViewSettings.WeaponOrder
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.WeaponOrder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Weapon Order; sprite sorting order, higher draws in front.
+  example: []
+  syntax:
+    content: '[Tooltip("Weapon Order; sprite sorting order, higher draws in front.")]
+
+      public int WeaponOrder'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Weapon Order; sprite sorting order, higher draws in front.")>
+
+      Public WeaponOrder As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Weapon Order; sprite sorting order, higher draws in front.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.EnemyTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.EnemyTint
+  id: EnemyTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: EnemyTint
+  nameWithType: WorldViewSettings.EnemyTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.EnemyTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enemy Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color EnemyTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Enemy Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public EnemyTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.TelegraphTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.TelegraphTint
+  id: TelegraphTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: TelegraphTint
+  nameWithType: WorldViewSettings.TelegraphTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.TelegraphTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Telegraph Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Telegraph Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color TelegraphTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Telegraph Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public TelegraphTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Telegraph Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.FriendlyProjectileTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.FriendlyProjectileTint
+  id: FriendlyProjectileTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: FriendlyProjectileTint
+  nameWithType: WorldViewSettings.FriendlyProjectileTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.FriendlyProjectileTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Friendly Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Friendly Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color FriendlyProjectileTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Friendly Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public FriendlyProjectileTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Friendly Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.EnemyProjectileTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.EnemyProjectileTint
+  id: EnemyProjectileTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: EnemyProjectileTint
+  nameWithType: WorldViewSettings.EnemyProjectileTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.EnemyProjectileTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Enemy Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color EnemyProjectileTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Enemy Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public EnemyProjectileTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy Projectile Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PickupTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PickupTint
+  id: PickupTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PickupTint
+  nameWithType: WorldViewSettings.PickupTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PickupTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Pickup Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Pickup Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color PickupTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Pickup Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public PickupTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pickup Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.PlayerTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.PlayerTint
+  id: PlayerTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: PlayerTint
+  nameWithType: WorldViewSettings.PlayerTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.PlayerTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Player Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Player Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color PlayerTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Player Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public PlayerTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Player Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.WeaponTint
+  commentId: F:SurvivorsMaker.Presentation.WorldViewSettings.WeaponTint
+  id: WeaponTint
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponTint
+  nameWithType: WorldViewSettings.WeaponTint
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.WeaponTint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Weapon Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Weapon Tint in RGBA; alpha 0 = transparent, 1 = opaque.")]
+
+      public Color WeaponTint'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Weapon Tint in RGBA; alpha 0 = transparent, 1 = opaque.")>
+
+      Public WeaponTint As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Weapon Tint in RGBA; alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.WorldViewSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.WorldViewSettings
+  langs:
+  - csharp
+  - vb
+  name: WorldViewSettings()
+  nameWithType: WorldViewSettings.WorldViewSettings()
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.WorldViewSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public WorldViewSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.WorldViewSettings.#ctor*
+  nameWithType.vb: WorldViewSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.WorldViewSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.WorldViewSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.WorldViewSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WorldViewSettings.html#SurvivorsMaker_Presentation_WorldViewSettings__ctor
+  name: WorldViewSettings
+  nameWithType: WorldViewSettings.WorldViewSettings
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings.WorldViewSettings
+  nameWithType.vb: WorldViewSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.WorldViewSettings.New
+  name.vb: New

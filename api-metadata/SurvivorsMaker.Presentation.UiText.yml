@@ -1,0 +1,3843 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiText
+  commentId: T:SurvivorsMaker.Presentation.UiText
+  id: UiText
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiText.Add
+  - SurvivorsMaker.Presentation.UiText.Append
+  - SurvivorsMaker.Presentation.UiText.AppendUnique
+  - SurvivorsMaker.Presentation.UiText.ApplyTextMenuPath
+  - SurvivorsMaker.Presentation.UiText.ArenaMode
+  - SurvivorsMaker.Presentation.UiText.AtMaxOwned
+  - SurvivorsMaker.Presentation.UiText.Aura
+  - SurvivorsMaker.Presentation.UiText.BossAppears
+  - SurvivorsMaker.Presentation.UiText.BossDefeated
+  - SurvivorsMaker.Presentation.UiText.BossEnraged
+  - SurvivorsMaker.Presentation.UiText.BossHealth
+  - SurvivorsMaker.Presentation.UiText.BossPhase
+  - SurvivorsMaker.Presentation.UiText.BuildMenuPath
+  - SurvivorsMaker.Presentation.UiText.Buy
+  - SurvivorsMaker.Presentation.UiText.CannotMerge
+  - SurvivorsMaker.Presentation.UiText.Character
+  - SurvivorsMaker.Presentation.UiText.CheatsUsed
+  - SurvivorsMaker.Presentation.UiText.Choose
+  - SurvivorsMaker.Presentation.UiText.Confirm
+  - SurvivorsMaker.Presentation.UiText.Controls
+  - SurvivorsMaker.Presentation.UiText.Currency
+  - SurvivorsMaker.Presentation.UiText.CurrencyValue
+  - SurvivorsMaker.Presentation.UiText.CustomEffect
+  - SurvivorsMaker.Presentation.UiText.DamageNumbers
+  - SurvivorsMaker.Presentation.UiText.Defeat
+  - SurvivorsMaker.Presentation.UiText.DpsRow
+  - SurvivorsMaker.Presentation.UiText.DpsSlot
+  - SurvivorsMaker.Presentation.UiText.DpsSplit
+  - SurvivorsMaker.Presentation.UiText.DpsTitle
+  - SurvivorsMaker.Presentation.UiText.DpsTotal
+  - SurvivorsMaker.Presentation.UiText.EditorAssetsMissing
+  - SurvivorsMaker.Presentation.UiText.EditorBuilt
+  - SurvivorsMaker.Presentation.UiText.EditorCreateFailed
+  - SurvivorsMaker.Presentation.UiText.EditorFolderArgument
+  - SurvivorsMaker.Presentation.UiText.EditorFolderScope
+  - SurvivorsMaker.Presentation.UiText.EditorSaveFailed
+  - SurvivorsMaker.Presentation.UiText.EffectsVolume
+  - SurvivorsMaker.Presentation.UiText.EliteToast
+  - SurvivorsMaker.Presentation.UiText.EliteToastMany
+  - SurvivorsMaker.Presentation.UiText.Empty
+  - SurvivorsMaker.Presentation.UiText.EmptyDescription
+  - SurvivorsMaker.Presentation.UiText.EmptySlot
+  - SurvivorsMaker.Presentation.UiText.Experience
+  - SurvivorsMaker.Presentation.UiText.ExperienceValue
+  - SurvivorsMaker.Presentation.UiText.FieldMode
+  - SurvivorsMaker.Presentation.UiText.FocusPause
+  - SurvivorsMaker.Presentation.UiText.GameOver
+  - SurvivorsMaker.Presentation.UiText.Health
+  - SurvivorsMaker.Presentation.UiText.HealthUnavailable
+  - SurvivorsMaker.Presentation.UiText.HealthValue
+  - SurvivorsMaker.Presentation.UiText.HordeCount
+  - SurvivorsMaker.Presentation.UiText.HordeTitle
+  - SurvivorsMaker.Presentation.UiText.Language
+  - SurvivorsMaker.Presentation.UiText.LanguagePrefix
+  - SurvivorsMaker.Presentation.UiText.LastWeapon
+  - SurvivorsMaker.Presentation.UiText.Level
+  - SurvivorsMaker.Presentation.UiText.LevelUp
+  - SurvivorsMaker.Presentation.UiText.LevelUpPending
+  - SurvivorsMaker.Presentation.UiText.LevelValue
+  - SurvivorsMaker.Presentation.UiText.Lock
+  - SurvivorsMaker.Presentation.UiText.LockedName
+  - SurvivorsMaker.Presentation.UiText.MasterVolume
+  - SurvivorsMaker.Presentation.UiText.Melee
+  - SurvivorsMaker.Presentation.UiText.Menu
+  - SurvivorsMaker.Presentation.UiText.MenuContinue
+  - SurvivorsMaker.Presentation.UiText.MenuContinueDetail
+  - SurvivorsMaker.Presentation.UiText.MenuSubtitle
+  - SurvivorsMaker.Presentation.UiText.MenuTitle
+  - SurvivorsMaker.Presentation.UiText.Merge
+  - SurvivorsMaker.Presentation.UiText.ModeArenaShort
+  - SurvivorsMaker.Presentation.UiText.ModeFieldShort
+  - SurvivorsMaker.Presentation.UiText.MusicVolume
+  - SurvivorsMaker.Presentation.UiText.NextCharacter
+  - SurvivorsMaker.Presentation.UiText.NextWave
+  - SurvivorsMaker.Presentation.UiText.NextWeapon
+  - SurvivorsMaker.Presentation.UiText.NoCharacters
+  - SurvivorsMaker.Presentation.UiText.NoEffects
+  - SurvivorsMaker.Presentation.UiText.NoWeapon
+  - SurvivorsMaker.Presentation.UiText.NoWeaponSlot
+  - SurvivorsMaker.Presentation.UiText.NotEnoughCurrency
+  - SurvivorsMaker.Presentation.UiText.Offer
+  - SurvivorsMaker.Presentation.UiText.OptionOff
+  - SurvivorsMaker.Presentation.UiText.OptionOn
+  - SurvivorsMaker.Presentation.UiText.Orbit
+  - SurvivorsMaker.Presentation.UiText.OwnedWeapons
+  - SurvivorsMaker.Presentation.UiText.Pause
+  - SurvivorsMaker.Presentation.UiText.Paused
+  - SurvivorsMaker.Presentation.UiText.Percent
+  - SurvivorsMaker.Presentation.UiText.PreviousCharacter
+  - SurvivorsMaker.Presentation.UiText.PreviousWeapon
+  - SurvivorsMaker.Presentation.UiText.Ranged
+  - SurvivorsMaker.Presentation.UiText.RecordsBest
+  - SurvivorsMaker.Presentation.UiText.RecordsCharacter
+  - SurvivorsMaker.Presentation.UiText.RecordsEmpty
+  - SurvivorsMaker.Presentation.UiText.RecordsRuns
+  - SurvivorsMaker.Presentation.UiText.RecordsSummary
+  - SurvivorsMaker.Presentation.UiText.RecordsTitle
+  - SurvivorsMaker.Presentation.UiText.RecordsUnlocked
+  - SurvivorsMaker.Presentation.UiText.RecordsWins
+  - SurvivorsMaker.Presentation.UiText.Recycle
+  - SurvivorsMaker.Presentation.UiText.RecycleRefund
+  - SurvivorsMaker.Presentation.UiText.ReduceFlashes
+  - SurvivorsMaker.Presentation.UiText.Reroll
+  - SurvivorsMaker.Presentation.UiText.RerollCost
+  - SurvivorsMaker.Presentation.UiText.Restart
+  - SurvivorsMaker.Presentation.UiText.Resume
+  - SurvivorsMaker.Presentation.UiText.RunSummary
+  - SurvivorsMaker.Presentation.UiText.SaveQuit
+  - SurvivorsMaker.Presentation.UiText.SaveUnavailable
+  - SurvivorsMaker.Presentation.UiText.ScreenShake
+  - SurvivorsMaker.Presentation.UiText.Set
+  - SurvivorsMaker.Presentation.UiText.SettingsDefaults
+  - SurvivorsMaker.Presentation.UiText.SettingsDone
+  - SurvivorsMaker.Presentation.UiText.SettingsOpen
+  - SurvivorsMaker.Presentation.UiText.SettingsPercent
+  - SurvivorsMaker.Presentation.UiText.SettingsTitle
+  - SurvivorsMaker.Presentation.UiText.ShakeStrength
+  - SurvivorsMaker.Presentation.UiText.Shop
+  - SurvivorsMaker.Presentation.UiText.ShopValue
+  - SurvivorsMaker.Presentation.UiText.ShopWaveSummary
+  - SurvivorsMaker.Presentation.UiText.Start
+  - SurvivorsMaker.Presentation.UiText.StatValue
+  - SurvivorsMaker.Presentation.UiText.Stats
+  - SurvivorsMaker.Presentation.UiText.Stock
+  - SurvivorsMaker.Presentation.UiText.SummaryBack
+  - SurvivorsMaker.Presentation.UiText.SummaryContact
+  - SurvivorsMaker.Presentation.UiText.SummaryDetails
+  - SurvivorsMaker.Presentation.UiText.SummaryGainCheat
+  - SurvivorsMaker.Presentation.UiText.SummaryGainLine
+  - SurvivorsMaker.Presentation.UiText.SummaryGains
+  - SurvivorsMaker.Presentation.UiText.SummaryLevelLine
+  - SurvivorsMaker.Presentation.UiText.SummaryLevels
+  - SurvivorsMaker.Presentation.UiText.SummaryNone
+  - SurvivorsMaker.Presentation.UiText.SummaryOther
+  - SurvivorsMaker.Presentation.UiText.SummaryOtherSource
+  - SurvivorsMaker.Presentation.UiText.SummaryProjectile
+  - SurvivorsMaker.Presentation.UiText.SummaryTaken
+  - SurvivorsMaker.Presentation.UiText.SummaryTakenHeader
+  - SurvivorsMaker.Presentation.UiText.SummaryTitle
+  - SurvivorsMaker.Presentation.UiText.SummaryTotals
+  - SurvivorsMaker.Presentation.UiText.SummaryUnknownSource
+  - SurvivorsMaker.Presentation.UiText.SummaryWeaponHeader
+  - SurvivorsMaker.Presentation.UiText.SummaryWeaponSplit
+  - SurvivorsMaker.Presentation.UiText.SummaryWeapons
+  - SurvivorsMaker.Presentation.UiText.Tally
+  - SurvivorsMaker.Presentation.UiText.Tier
+  - SurvivorsMaker.Presentation.UiText.TierFallback
+  - SurvivorsMaker.Presentation.UiText.TierPrefix
+  - SurvivorsMaker.Presentation.UiText.TieredName
+  - SurvivorsMaker.Presentation.UiText.Unarmed
+  - SurvivorsMaker.Presentation.UiText.Unavailable
+  - SurvivorsMaker.Presentation.UiText.Unlock
+  - SurvivorsMaker.Presentation.UiText.UnlockCharacter
+  - SurvivorsMaker.Presentation.UiText.UnlockDismiss
+  - SurvivorsMaker.Presentation.UiText.UnlockHint
+  - SurvivorsMaker.Presentation.UiText.UnlockItem
+  - SurvivorsMaker.Presentation.UiText.UnlockKills
+  - SurvivorsMaker.Presentation.UiText.UnlockReachWave
+  - SurvivorsMaker.Presentation.UiText.UnlockSubtitle
+  - SurvivorsMaker.Presentation.UiText.UnlockTitle
+  - SurvivorsMaker.Presentation.UiText.UnlockWeapon
+  - SurvivorsMaker.Presentation.UiText.UnlockWinAny
+  - SurvivorsMaker.Presentation.UiText.UnlockWinCharacter
+  - SurvivorsMaker.Presentation.UiText.UnlockWinMode
+  - SurvivorsMaker.Presentation.UiText.UnlockWins
+  - SurvivorsMaker.Presentation.UiText.Unnamed
+  - SurvivorsMaker.Presentation.UiText.Victory
+  - SurvivorsMaker.Presentation.UiText.Wave
+  - SurvivorsMaker.Presentation.UiText.WaveComplete
+  - SurvivorsMaker.Presentation.UiText.WaveSummary
+  - SurvivorsMaker.Presentation.UiText.WaveValue
+  - SurvivorsMaker.Presentation.UiText.Weapon
+  - SurvivorsMaker.Presentation.UiText.WeaponSummary
+  - SurvivorsMaker.Presentation.UiText.WindowBorderless
+  - SurvivorsMaker.Presentation.UiText.WindowFullscreen
+  - SurvivorsMaker.Presentation.UiText.WindowModeLabel
+  - SurvivorsMaker.Presentation.UiText.WindowWindowed
+  langs:
+  - csharp
+  - vb
+  name: UiText
+  nameWithType: UiText
+  fullName: SurvivorsMaker.Presentation.UiText
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Stable built-in interface text keys resolved by UiStrings.
+  example: []
+  syntax:
+    content: public static class UiText
+    content.vb: Public Module UiText
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.UiText.Choose
+  commentId: F:SurvivorsMaker.Presentation.UiText.Choose
+  id: Choose
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Choose
+  nameWithType: UiText.Choose
+  fullName: SurvivorsMaker.Presentation.UiText.Choose
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Choose = "action.choose"
+    return:
+      type: System.String
+    content.vb: Public Const Choose As String = "action.choose"
+- uid: SurvivorsMaker.Presentation.UiText.Lock
+  commentId: F:SurvivorsMaker.Presentation.UiText.Lock
+  id: Lock
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Lock
+  nameWithType: UiText.Lock
+  fullName: SurvivorsMaker.Presentation.UiText.Lock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Lock = "action.lock"
+    return:
+      type: System.String
+    content.vb: Public Const Lock As String = "action.lock"
+- uid: SurvivorsMaker.Presentation.UiText.Unlock
+  commentId: F:SurvivorsMaker.Presentation.UiText.Unlock
+  id: Unlock
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Unlock
+  nameWithType: UiText.Unlock
+  fullName: SurvivorsMaker.Presentation.UiText.Unlock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Unlock = "action.unlock"
+    return:
+      type: System.String
+    content.vb: Public Const Unlock As String = "action.unlock"
+- uid: SurvivorsMaker.Presentation.UiText.Recycle
+  commentId: F:SurvivorsMaker.Presentation.UiText.Recycle
+  id: Recycle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Recycle
+  nameWithType: UiText.Recycle
+  fullName: SurvivorsMaker.Presentation.UiText.Recycle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Recycle = "action.recycle"
+    return:
+      type: System.String
+    content.vb: Public Const Recycle As String = "action.recycle"
+- uid: SurvivorsMaker.Presentation.UiText.Merge
+  commentId: F:SurvivorsMaker.Presentation.UiText.Merge
+  id: Merge
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Merge
+  nameWithType: UiText.Merge
+  fullName: SurvivorsMaker.Presentation.UiText.Merge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Merge = "action.merge"
+    return:
+      type: System.String
+    content.vb: Public Const Merge As String = "action.merge"
+- uid: SurvivorsMaker.Presentation.UiText.Menu
+  commentId: F:SurvivorsMaker.Presentation.UiText.Menu
+  id: Menu
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Menu
+  nameWithType: UiText.Menu
+  fullName: SurvivorsMaker.Presentation.UiText.Menu
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Menu = "action.menu"
+    return:
+      type: System.String
+    content.vb: Public Const Menu As String = "action.menu"
+- uid: SurvivorsMaker.Presentation.UiText.Restart
+  commentId: F:SurvivorsMaker.Presentation.UiText.Restart
+  id: Restart
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Restart
+  nameWithType: UiText.Restart
+  fullName: SurvivorsMaker.Presentation.UiText.Restart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Restart = "action.restart"
+    return:
+      type: System.String
+    content.vb: Public Const Restart As String = "action.restart"
+- uid: SurvivorsMaker.Presentation.UiText.Resume
+  commentId: F:SurvivorsMaker.Presentation.UiText.Resume
+  id: Resume
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Resume
+  nameWithType: UiText.Resume
+  fullName: SurvivorsMaker.Presentation.UiText.Resume
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Resume = "action.resume"
+    return:
+      type: System.String
+    content.vb: Public Const Resume As String = "action.resume"
+- uid: SurvivorsMaker.Presentation.UiText.Pause
+  commentId: F:SurvivorsMaker.Presentation.UiText.Pause
+  id: Pause
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Pause
+  nameWithType: UiText.Pause
+  fullName: SurvivorsMaker.Presentation.UiText.Pause
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Pause = "action.pause"
+    return:
+      type: System.String
+    content.vb: Public Const Pause As String = "action.pause"
+- uid: SurvivorsMaker.Presentation.UiText.Confirm
+  commentId: F:SurvivorsMaker.Presentation.UiText.Confirm
+  id: Confirm
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Confirm
+  nameWithType: UiText.Confirm
+  fullName: SurvivorsMaker.Presentation.UiText.Confirm
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Confirm = "action.confirm"
+    return:
+      type: System.String
+    content.vb: Public Const Confirm As String = "action.confirm"
+- uid: SurvivorsMaker.Presentation.UiText.Unnamed
+  commentId: F:SurvivorsMaker.Presentation.UiText.Unnamed
+  id: Unnamed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Unnamed
+  nameWithType: UiText.Unnamed
+  fullName: SurvivorsMaker.Presentation.UiText.Unnamed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Unnamed = "name.unnamed"
+    return:
+      type: System.String
+    content.vb: Public Const Unnamed As String = "name.unnamed"
+- uid: SurvivorsMaker.Presentation.UiText.Tier
+  commentId: F:SurvivorsMaker.Presentation.UiText.Tier
+  id: Tier
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Tier
+  nameWithType: UiText.Tier
+  fullName: SurvivorsMaker.Presentation.UiText.Tier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Tier = "tier.label"
+    return:
+      type: System.String
+    content.vb: Public Const Tier As String = "tier.label"
+- uid: SurvivorsMaker.Presentation.UiText.TieredName
+  commentId: F:SurvivorsMaker.Presentation.UiText.TieredName
+  id: TieredName
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: TieredName
+  nameWithType: UiText.TieredName
+  fullName: SurvivorsMaker.Presentation.UiText.TieredName
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string TieredName = "tier.name"
+    return:
+      type: System.String
+    content.vb: Public Const TieredName As String = "tier.name"
+- uid: SurvivorsMaker.Presentation.UiText.TierPrefix
+  commentId: F:SurvivorsMaker.Presentation.UiText.TierPrefix
+  id: TierPrefix
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: TierPrefix
+  nameWithType: UiText.TierPrefix
+  fullName: SurvivorsMaker.Presentation.UiText.TierPrefix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string TierPrefix = "tier.value."
+    return:
+      type: System.String
+    content.vb: Public Const TierPrefix As String = "tier.value."
+- uid: SurvivorsMaker.Presentation.UiText.TierFallback
+  commentId: F:SurvivorsMaker.Presentation.UiText.TierFallback
+  id: TierFallback
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: TierFallback
+  nameWithType: UiText.TierFallback
+  fullName: SurvivorsMaker.Presentation.UiText.TierFallback
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string TierFallback = "tier.fallback"
+    return:
+      type: System.String
+    content.vb: Public Const TierFallback As String = "tier.fallback"
+- uid: SurvivorsMaker.Presentation.UiText.MenuTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.MenuTitle
+  id: MenuTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MenuTitle
+  nameWithType: UiText.MenuTitle
+  fullName: SurvivorsMaker.Presentation.UiText.MenuTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MenuTitle = "menu.title"
+    return:
+      type: System.String
+    content.vb: Public Const MenuTitle As String = "menu.title"
+- uid: SurvivorsMaker.Presentation.UiText.MenuSubtitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.MenuSubtitle
+  id: MenuSubtitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MenuSubtitle
+  nameWithType: UiText.MenuSubtitle
+  fullName: SurvivorsMaker.Presentation.UiText.MenuSubtitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MenuSubtitle = "menu.subtitle"
+    return:
+      type: System.String
+    content.vb: Public Const MenuSubtitle As String = "menu.subtitle"
+- uid: SurvivorsMaker.Presentation.UiText.Character
+  commentId: F:SurvivorsMaker.Presentation.UiText.Character
+  id: Character
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: UiText.Character
+  fullName: SurvivorsMaker.Presentation.UiText.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Character = "menu.character"
+    return:
+      type: System.String
+    content.vb: Public Const Character As String = "menu.character"
+- uid: SurvivorsMaker.Presentation.UiText.Weapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: UiText.Weapon
+  fullName: SurvivorsMaker.Presentation.UiText.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Weapon = "menu.weapon"
+    return:
+      type: System.String
+    content.vb: Public Const Weapon As String = "menu.weapon"
+- uid: SurvivorsMaker.Presentation.UiText.PreviousCharacter
+  commentId: F:SurvivorsMaker.Presentation.UiText.PreviousCharacter
+  id: PreviousCharacter
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: PreviousCharacter
+  nameWithType: UiText.PreviousCharacter
+  fullName: SurvivorsMaker.Presentation.UiText.PreviousCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string PreviousCharacter = "menu.character.previous"
+    return:
+      type: System.String
+    content.vb: Public Const PreviousCharacter As String = "menu.character.previous"
+- uid: SurvivorsMaker.Presentation.UiText.NextCharacter
+  commentId: F:SurvivorsMaker.Presentation.UiText.NextCharacter
+  id: NextCharacter
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NextCharacter
+  nameWithType: UiText.NextCharacter
+  fullName: SurvivorsMaker.Presentation.UiText.NextCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NextCharacter = "menu.character.next"
+    return:
+      type: System.String
+    content.vb: Public Const NextCharacter As String = "menu.character.next"
+- uid: SurvivorsMaker.Presentation.UiText.PreviousWeapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.PreviousWeapon
+  id: PreviousWeapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: PreviousWeapon
+  nameWithType: UiText.PreviousWeapon
+  fullName: SurvivorsMaker.Presentation.UiText.PreviousWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string PreviousWeapon = "menu.weapon.previous"
+    return:
+      type: System.String
+    content.vb: Public Const PreviousWeapon As String = "menu.weapon.previous"
+- uid: SurvivorsMaker.Presentation.UiText.NextWeapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.NextWeapon
+  id: NextWeapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NextWeapon
+  nameWithType: UiText.NextWeapon
+  fullName: SurvivorsMaker.Presentation.UiText.NextWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NextWeapon = "menu.weapon.next"
+    return:
+      type: System.String
+    content.vb: Public Const NextWeapon As String = "menu.weapon.next"
+- uid: SurvivorsMaker.Presentation.UiText.Start
+  commentId: F:SurvivorsMaker.Presentation.UiText.Start
+  id: Start
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UiText.Start
+  fullName: SurvivorsMaker.Presentation.UiText.Start
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Start = "menu.start"
+    return:
+      type: System.String
+    content.vb: Public Const Start As String = "menu.start"
+- uid: SurvivorsMaker.Presentation.UiText.NoCharacters
+  commentId: F:SurvivorsMaker.Presentation.UiText.NoCharacters
+  id: NoCharacters
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NoCharacters
+  nameWithType: UiText.NoCharacters
+  fullName: SurvivorsMaker.Presentation.UiText.NoCharacters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NoCharacters = "menu.no_characters"
+    return:
+      type: System.String
+    content.vb: Public Const NoCharacters As String = "menu.no_characters"
+- uid: SurvivorsMaker.Presentation.UiText.Unarmed
+  commentId: F:SurvivorsMaker.Presentation.UiText.Unarmed
+  id: Unarmed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Unarmed
+  nameWithType: UiText.Unarmed
+  fullName: SurvivorsMaker.Presentation.UiText.Unarmed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Unarmed = "menu.unarmed"
+    return:
+      type: System.String
+    content.vb: Public Const Unarmed As String = "menu.unarmed"
+- uid: SurvivorsMaker.Presentation.UiText.ArenaMode
+  commentId: F:SurvivorsMaker.Presentation.UiText.ArenaMode
+  id: ArenaMode
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ArenaMode
+  nameWithType: UiText.ArenaMode
+  fullName: SurvivorsMaker.Presentation.UiText.ArenaMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ArenaMode = "menu.mode.arena"
+    return:
+      type: System.String
+    content.vb: Public Const ArenaMode As String = "menu.mode.arena"
+- uid: SurvivorsMaker.Presentation.UiText.FieldMode
+  commentId: F:SurvivorsMaker.Presentation.UiText.FieldMode
+  id: FieldMode
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: FieldMode
+  nameWithType: UiText.FieldMode
+  fullName: SurvivorsMaker.Presentation.UiText.FieldMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string FieldMode = "menu.mode.field"
+    return:
+      type: System.String
+    content.vb: Public Const FieldMode As String = "menu.mode.field"
+- uid: SurvivorsMaker.Presentation.UiText.Health
+  commentId: F:SurvivorsMaker.Presentation.UiText.Health
+  id: Health
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: UiText.Health
+  fullName: SurvivorsMaker.Presentation.UiText.Health
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Health = "hud.health"
+    return:
+      type: System.String
+    content.vb: Public Const Health As String = "hud.health"
+- uid: SurvivorsMaker.Presentation.UiText.HealthUnavailable
+  commentId: F:SurvivorsMaker.Presentation.UiText.HealthUnavailable
+  id: HealthUnavailable
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: HealthUnavailable
+  nameWithType: UiText.HealthUnavailable
+  fullName: SurvivorsMaker.Presentation.UiText.HealthUnavailable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string HealthUnavailable = "hud.health.unavailable"
+    return:
+      type: System.String
+    content.vb: Public Const HealthUnavailable As String = "hud.health.unavailable"
+- uid: SurvivorsMaker.Presentation.UiText.HealthValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.HealthValue
+  id: HealthValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: HealthValue
+  nameWithType: UiText.HealthValue
+  fullName: SurvivorsMaker.Presentation.UiText.HealthValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string HealthValue = "hud.health.value"
+    return:
+      type: System.String
+    content.vb: Public Const HealthValue As String = "hud.health.value"
+- uid: SurvivorsMaker.Presentation.UiText.Experience
+  commentId: F:SurvivorsMaker.Presentation.UiText.Experience
+  id: Experience
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: UiText.Experience
+  fullName: SurvivorsMaker.Presentation.UiText.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Experience = "hud.experience"
+    return:
+      type: System.String
+    content.vb: Public Const Experience As String = "hud.experience"
+- uid: SurvivorsMaker.Presentation.UiText.ExperienceValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.ExperienceValue
+  id: ExperienceValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ExperienceValue
+  nameWithType: UiText.ExperienceValue
+  fullName: SurvivorsMaker.Presentation.UiText.ExperienceValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ExperienceValue = "hud.experience.value"
+    return:
+      type: System.String
+    content.vb: Public Const ExperienceValue As String = "hud.experience.value"
+- uid: SurvivorsMaker.Presentation.UiText.Wave
+  commentId: F:SurvivorsMaker.Presentation.UiText.Wave
+  id: Wave
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: UiText.Wave
+  fullName: SurvivorsMaker.Presentation.UiText.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Wave = "hud.wave"
+    return:
+      type: System.String
+    content.vb: Public Const Wave As String = "hud.wave"
+- uid: SurvivorsMaker.Presentation.UiText.WaveValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.WaveValue
+  id: WaveValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WaveValue
+  nameWithType: UiText.WaveValue
+  fullName: SurvivorsMaker.Presentation.UiText.WaveValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WaveValue = "hud.wave.value"
+    return:
+      type: System.String
+    content.vb: Public Const WaveValue As String = "hud.wave.value"
+- uid: SurvivorsMaker.Presentation.UiText.Currency
+  commentId: F:SurvivorsMaker.Presentation.UiText.Currency
+  id: Currency
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: UiText.Currency
+  fullName: SurvivorsMaker.Presentation.UiText.Currency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Currency = "hud.currency"
+    return:
+      type: System.String
+    content.vb: Public Const Currency As String = "hud.currency"
+- uid: SurvivorsMaker.Presentation.UiText.CurrencyValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.CurrencyValue
+  id: CurrencyValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: CurrencyValue
+  nameWithType: UiText.CurrencyValue
+  fullName: SurvivorsMaker.Presentation.UiText.CurrencyValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string CurrencyValue = "hud.currency.value"
+    return:
+      type: System.String
+    content.vb: Public Const CurrencyValue As String = "hud.currency.value"
+- uid: SurvivorsMaker.Presentation.UiText.Level
+  commentId: F:SurvivorsMaker.Presentation.UiText.Level
+  id: Level
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: UiText.Level
+  fullName: SurvivorsMaker.Presentation.UiText.Level
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Level = "hud.level"
+    return:
+      type: System.String
+    content.vb: Public Const Level As String = "hud.level"
+- uid: SurvivorsMaker.Presentation.UiText.LevelValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.LevelValue
+  id: LevelValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LevelValue
+  nameWithType: UiText.LevelValue
+  fullName: SurvivorsMaker.Presentation.UiText.LevelValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LevelValue = "hud.level.value"
+    return:
+      type: System.String
+    content.vb: Public Const LevelValue As String = "hud.level.value"
+- uid: SurvivorsMaker.Presentation.UiText.LevelUp
+  commentId: F:SurvivorsMaker.Presentation.UiText.LevelUp
+  id: LevelUp
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LevelUp
+  nameWithType: UiText.LevelUp
+  fullName: SurvivorsMaker.Presentation.UiText.LevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LevelUp = "levelup.title"
+    return:
+      type: System.String
+    content.vb: Public Const LevelUp As String = "levelup.title"
+- uid: SurvivorsMaker.Presentation.UiText.LevelUpPending
+  commentId: F:SurvivorsMaker.Presentation.UiText.LevelUpPending
+  id: LevelUpPending
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LevelUpPending
+  nameWithType: UiText.LevelUpPending
+  fullName: SurvivorsMaker.Presentation.UiText.LevelUpPending
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LevelUpPending = "levelup.pending"
+    return:
+      type: System.String
+    content.vb: Public Const LevelUpPending As String = "levelup.pending"
+- uid: SurvivorsMaker.Presentation.UiText.Shop
+  commentId: F:SurvivorsMaker.Presentation.UiText.Shop
+  id: Shop
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: UiText.Shop
+  fullName: SurvivorsMaker.Presentation.UiText.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Shop = "shop.title"
+    return:
+      type: System.String
+    content.vb: Public Const Shop As String = "shop.title"
+- uid: SurvivorsMaker.Presentation.UiText.Stock
+  commentId: F:SurvivorsMaker.Presentation.UiText.Stock
+  id: Stock
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Stock
+  nameWithType: UiText.Stock
+  fullName: SurvivorsMaker.Presentation.UiText.Stock
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Stock = "shop.stock"
+    return:
+      type: System.String
+    content.vb: Public Const Stock As String = "shop.stock"
+- uid: SurvivorsMaker.Presentation.UiText.OwnedWeapons
+  commentId: F:SurvivorsMaker.Presentation.UiText.OwnedWeapons
+  id: OwnedWeapons
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: OwnedWeapons
+  nameWithType: UiText.OwnedWeapons
+  fullName: SurvivorsMaker.Presentation.UiText.OwnedWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string OwnedWeapons = "shop.weapons"
+    return:
+      type: System.String
+    content.vb: Public Const OwnedWeapons As String = "shop.weapons"
+- uid: SurvivorsMaker.Presentation.UiText.Stats
+  commentId: F:SurvivorsMaker.Presentation.UiText.Stats
+  id: Stats
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: UiText.Stats
+  fullName: SurvivorsMaker.Presentation.UiText.Stats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Stats = "shop.stats"
+    return:
+      type: System.String
+    content.vb: Public Const Stats As String = "shop.stats"
+- uid: SurvivorsMaker.Presentation.UiText.ShopValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.ShopValue
+  id: ShopValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ShopValue
+  nameWithType: UiText.ShopValue
+  fullName: SurvivorsMaker.Presentation.UiText.ShopValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ShopValue = "shop.summary"
+    return:
+      type: System.String
+    content.vb: Public Const ShopValue As String = "shop.summary"
+- uid: SurvivorsMaker.Presentation.UiText.Reroll
+  commentId: F:SurvivorsMaker.Presentation.UiText.Reroll
+  id: Reroll
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Reroll
+  nameWithType: UiText.Reroll
+  fullName: SurvivorsMaker.Presentation.UiText.Reroll
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Reroll = "shop.reroll"
+    return:
+      type: System.String
+    content.vb: Public Const Reroll As String = "shop.reroll"
+- uid: SurvivorsMaker.Presentation.UiText.RerollCost
+  commentId: F:SurvivorsMaker.Presentation.UiText.RerollCost
+  id: RerollCost
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RerollCost
+  nameWithType: UiText.RerollCost
+  fullName: SurvivorsMaker.Presentation.UiText.RerollCost
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RerollCost = "shop.reroll.cost"
+    return:
+      type: System.String
+    content.vb: Public Const RerollCost As String = "shop.reroll.cost"
+- uid: SurvivorsMaker.Presentation.UiText.NextWave
+  commentId: F:SurvivorsMaker.Presentation.UiText.NextWave
+  id: NextWave
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NextWave
+  nameWithType: UiText.NextWave
+  fullName: SurvivorsMaker.Presentation.UiText.NextWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NextWave = "shop.next_wave"
+    return:
+      type: System.String
+    content.vb: Public Const NextWave As String = "shop.next_wave"
+- uid: SurvivorsMaker.Presentation.UiText.Empty
+  commentId: F:SurvivorsMaker.Presentation.UiText.Empty
+  id: Empty
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: UiText.Empty
+  fullName: SurvivorsMaker.Presentation.UiText.Empty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Empty = "shop.empty"
+    return:
+      type: System.String
+    content.vb: Public Const Empty As String = "shop.empty"
+- uid: SurvivorsMaker.Presentation.UiText.EmptyDescription
+  commentId: F:SurvivorsMaker.Presentation.UiText.EmptyDescription
+  id: EmptyDescription
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EmptyDescription
+  nameWithType: UiText.EmptyDescription
+  fullName: SurvivorsMaker.Presentation.UiText.EmptyDescription
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EmptyDescription = "shop.empty.description"
+    return:
+      type: System.String
+    content.vb: Public Const EmptyDescription As String = "shop.empty.description"
+- uid: SurvivorsMaker.Presentation.UiText.Offer
+  commentId: F:SurvivorsMaker.Presentation.UiText.Offer
+  id: Offer
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Offer
+  nameWithType: UiText.Offer
+  fullName: SurvivorsMaker.Presentation.UiText.Offer
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Offer = "shop.offer"
+    return:
+      type: System.String
+    content.vb: Public Const Offer As String = "shop.offer"
+- uid: SurvivorsMaker.Presentation.UiText.Buy
+  commentId: F:SurvivorsMaker.Presentation.UiText.Buy
+  id: Buy
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Buy
+  nameWithType: UiText.Buy
+  fullName: SurvivorsMaker.Presentation.UiText.Buy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Buy = "shop.buy"
+    return:
+      type: System.String
+    content.vb: Public Const Buy As String = "shop.buy"
+- uid: SurvivorsMaker.Presentation.UiText.RecycleRefund
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecycleRefund
+  id: RecycleRefund
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecycleRefund
+  nameWithType: UiText.RecycleRefund
+  fullName: SurvivorsMaker.Presentation.UiText.RecycleRefund
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecycleRefund = "shop.recycle.refund"
+    return:
+      type: System.String
+    content.vb: Public Const RecycleRefund As String = "shop.recycle.refund"
+- uid: SurvivorsMaker.Presentation.UiText.StatValue
+  commentId: F:SurvivorsMaker.Presentation.UiText.StatValue
+  id: StatValue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: StatValue
+  nameWithType: UiText.StatValue
+  fullName: SurvivorsMaker.Presentation.UiText.StatValue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string StatValue = "shop.stat.value"
+    return:
+      type: System.String
+    content.vb: Public Const StatValue As String = "shop.stat.value"
+- uid: SurvivorsMaker.Presentation.UiText.ShopWaveSummary
+  commentId: F:SurvivorsMaker.Presentation.UiText.ShopWaveSummary
+  id: ShopWaveSummary
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ShopWaveSummary
+  nameWithType: UiText.ShopWaveSummary
+  fullName: SurvivorsMaker.Presentation.UiText.ShopWaveSummary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ShopWaveSummary = "shop.wave_summary"
+    return:
+      type: System.String
+    content.vb: Public Const ShopWaveSummary As String = "shop.wave_summary"
+- uid: SurvivorsMaker.Presentation.UiText.GameOver
+  commentId: F:SurvivorsMaker.Presentation.UiText.GameOver
+  id: GameOver
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: GameOver
+  nameWithType: UiText.GameOver
+  fullName: SurvivorsMaker.Presentation.UiText.GameOver
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string GameOver = "gameover.title"
+    return:
+      type: System.String
+    content.vb: Public Const GameOver As String = "gameover.title"
+- uid: SurvivorsMaker.Presentation.UiText.Victory
+  commentId: F:SurvivorsMaker.Presentation.UiText.Victory
+  id: Victory
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Victory
+  nameWithType: UiText.Victory
+  fullName: SurvivorsMaker.Presentation.UiText.Victory
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Victory = "gameover.victory"
+    return:
+      type: System.String
+    content.vb: Public Const Victory As String = "gameover.victory"
+- uid: SurvivorsMaker.Presentation.UiText.Defeat
+  commentId: F:SurvivorsMaker.Presentation.UiText.Defeat
+  id: Defeat
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Defeat
+  nameWithType: UiText.Defeat
+  fullName: SurvivorsMaker.Presentation.UiText.Defeat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Defeat = "gameover.defeat"
+    return:
+      type: System.String
+    content.vb: Public Const Defeat As String = "gameover.defeat"
+- uid: SurvivorsMaker.Presentation.UiText.RunSummary
+  commentId: F:SurvivorsMaker.Presentation.UiText.RunSummary
+  id: RunSummary
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RunSummary
+  nameWithType: UiText.RunSummary
+  fullName: SurvivorsMaker.Presentation.UiText.RunSummary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RunSummary = "gameover.summary"
+    return:
+      type: System.String
+    content.vb: Public Const RunSummary As String = "gameover.summary"
+- uid: SurvivorsMaker.Presentation.UiText.Paused
+  commentId: F:SurvivorsMaker.Presentation.UiText.Paused
+  id: Paused
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: UiText.Paused
+  fullName: SurvivorsMaker.Presentation.UiText.Paused
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Paused = "pause.title"
+    return:
+      type: System.String
+    content.vb: Public Const Paused As String = "pause.title"
+- uid: SurvivorsMaker.Presentation.UiText.Controls
+  commentId: F:SurvivorsMaker.Presentation.UiText.Controls
+  id: Controls
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Controls
+  nameWithType: UiText.Controls
+  fullName: SurvivorsMaker.Presentation.UiText.Controls
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Controls = "pause.controls"
+    return:
+      type: System.String
+    content.vb: Public Const Controls As String = "pause.controls"
+- uid: SurvivorsMaker.Presentation.UiText.WaveComplete
+  commentId: F:SurvivorsMaker.Presentation.UiText.WaveComplete
+  id: WaveComplete
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WaveComplete
+  nameWithType: UiText.WaveComplete
+  fullName: SurvivorsMaker.Presentation.UiText.WaveComplete
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WaveComplete = "wave_result.title"
+    return:
+      type: System.String
+    content.vb: Public Const WaveComplete As String = "wave_result.title"
+- uid: SurvivorsMaker.Presentation.UiText.WaveSummary
+  commentId: F:SurvivorsMaker.Presentation.UiText.WaveSummary
+  id: WaveSummary
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WaveSummary
+  nameWithType: UiText.WaveSummary
+  fullName: SurvivorsMaker.Presentation.UiText.WaveSummary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WaveSummary = "wave_result.summary"
+    return:
+      type: System.String
+    content.vb: Public Const WaveSummary As String = "wave_result.summary"
+- uid: SurvivorsMaker.Presentation.UiText.Percent
+  commentId: F:SurvivorsMaker.Presentation.UiText.Percent
+  id: Percent
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Percent
+  nameWithType: UiText.Percent
+  fullName: SurvivorsMaker.Presentation.UiText.Percent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Percent = "unit.percent"
+    return:
+      type: System.String
+    content.vb: Public Const Percent As String = "unit.percent"
+- uid: SurvivorsMaker.Presentation.UiText.CustomEffect
+  commentId: F:SurvivorsMaker.Presentation.UiText.CustomEffect
+  id: CustomEffect
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: CustomEffect
+  nameWithType: UiText.CustomEffect
+  fullName: SurvivorsMaker.Presentation.UiText.CustomEffect
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string CustomEffect = "effect.custom"
+    return:
+      type: System.String
+    content.vb: Public Const CustomEffect As String = "effect.custom"
+- uid: SurvivorsMaker.Presentation.UiText.Set
+  commentId: F:SurvivorsMaker.Presentation.UiText.Set
+  id: Set
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: UiText.Set
+  fullName: SurvivorsMaker.Presentation.UiText.Set
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Set = "effect.set"
+    return:
+      type: System.String
+    content.vb: Public Const Set As String = "effect.set"
+- uid: SurvivorsMaker.Presentation.UiText.Tally
+  commentId: F:SurvivorsMaker.Presentation.UiText.Tally
+  id: Tally
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Tally
+  nameWithType: UiText.Tally
+  fullName: SurvivorsMaker.Presentation.UiText.Tally
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Tally = "effect.tally"
+    return:
+      type: System.String
+    content.vb: Public Const Tally As String = "effect.tally"
+- uid: SurvivorsMaker.Presentation.UiText.AppendUnique
+  commentId: F:SurvivorsMaker.Presentation.UiText.AppendUnique
+  id: AppendUnique
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: AppendUnique
+  nameWithType: UiText.AppendUnique
+  fullName: SurvivorsMaker.Presentation.UiText.AppendUnique
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string AppendUnique = "effect.append_unique"
+    return:
+      type: System.String
+    content.vb: Public Const AppendUnique As String = "effect.append_unique"
+- uid: SurvivorsMaker.Presentation.UiText.Append
+  commentId: F:SurvivorsMaker.Presentation.UiText.Append
+  id: Append
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Append
+  nameWithType: UiText.Append
+  fullName: SurvivorsMaker.Presentation.UiText.Append
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Append = "effect.append"
+    return:
+      type: System.String
+    content.vb: Public Const Append As String = "effect.append"
+- uid: SurvivorsMaker.Presentation.UiText.Add
+  commentId: F:SurvivorsMaker.Presentation.UiText.Add
+  id: Add
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: UiText.Add
+  fullName: SurvivorsMaker.Presentation.UiText.Add
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Add = "effect.add"
+    return:
+      type: System.String
+    content.vb: Public Const Add As String = "effect.add"
+- uid: SurvivorsMaker.Presentation.UiText.NoEffects
+  commentId: F:SurvivorsMaker.Presentation.UiText.NoEffects
+  id: NoEffects
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NoEffects
+  nameWithType: UiText.NoEffects
+  fullName: SurvivorsMaker.Presentation.UiText.NoEffects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NoEffects = "effect.none"
+    return:
+      type: System.String
+    content.vb: Public Const NoEffects As String = "effect.none"
+- uid: SurvivorsMaker.Presentation.UiText.NoWeapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.NoWeapon
+  id: NoWeapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NoWeapon
+  nameWithType: UiText.NoWeapon
+  fullName: SurvivorsMaker.Presentation.UiText.NoWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NoWeapon = "effect.no_weapon"
+    return:
+      type: System.String
+    content.vb: Public Const NoWeapon As String = "effect.no_weapon"
+- uid: SurvivorsMaker.Presentation.UiText.Melee
+  commentId: F:SurvivorsMaker.Presentation.UiText.Melee
+  id: Melee
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Melee
+  nameWithType: UiText.Melee
+  fullName: SurvivorsMaker.Presentation.UiText.Melee
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Melee = "effect.melee"
+    return:
+      type: System.String
+    content.vb: Public Const Melee As String = "effect.melee"
+- uid: SurvivorsMaker.Presentation.UiText.Ranged
+  commentId: F:SurvivorsMaker.Presentation.UiText.Ranged
+  id: Ranged
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Ranged
+  nameWithType: UiText.Ranged
+  fullName: SurvivorsMaker.Presentation.UiText.Ranged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Ranged = "effect.ranged"
+    return:
+      type: System.String
+    content.vb: Public Const Ranged As String = "effect.ranged"
+- uid: SurvivorsMaker.Presentation.UiText.WeaponSummary
+  commentId: F:SurvivorsMaker.Presentation.UiText.WeaponSummary
+  id: WeaponSummary
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WeaponSummary
+  nameWithType: UiText.WeaponSummary
+  fullName: SurvivorsMaker.Presentation.UiText.WeaponSummary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WeaponSummary = "effect.weapon"
+    return:
+      type: System.String
+    content.vb: Public Const WeaponSummary As String = "effect.weapon"
+- uid: SurvivorsMaker.Presentation.UiText.NotEnoughCurrency
+  commentId: F:SurvivorsMaker.Presentation.UiText.NotEnoughCurrency
+  id: NotEnoughCurrency
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NotEnoughCurrency
+  nameWithType: UiText.NotEnoughCurrency
+  fullName: SurvivorsMaker.Presentation.UiText.NotEnoughCurrency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NotEnoughCurrency = "result.insufficient_currency"
+    return:
+      type: System.String
+    content.vb: Public Const NotEnoughCurrency As String = "result.insufficient_currency"
+- uid: SurvivorsMaker.Presentation.UiText.NoWeaponSlot
+  commentId: F:SurvivorsMaker.Presentation.UiText.NoWeaponSlot
+  id: NoWeaponSlot
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: NoWeaponSlot
+  nameWithType: UiText.NoWeaponSlot
+  fullName: SurvivorsMaker.Presentation.UiText.NoWeaponSlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string NoWeaponSlot = "result.no_weapon_slot"
+    return:
+      type: System.String
+    content.vb: Public Const NoWeaponSlot As String = "result.no_weapon_slot"
+- uid: SurvivorsMaker.Presentation.UiText.AtMaxOwned
+  commentId: F:SurvivorsMaker.Presentation.UiText.AtMaxOwned
+  id: AtMaxOwned
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: AtMaxOwned
+  nameWithType: UiText.AtMaxOwned
+  fullName: SurvivorsMaker.Presentation.UiText.AtMaxOwned
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string AtMaxOwned = "result.at_max_owned"
+    return:
+      type: System.String
+    content.vb: Public Const AtMaxOwned As String = "result.at_max_owned"
+- uid: SurvivorsMaker.Presentation.UiText.LastWeapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.LastWeapon
+  id: LastWeapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LastWeapon
+  nameWithType: UiText.LastWeapon
+  fullName: SurvivorsMaker.Presentation.UiText.LastWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LastWeapon = "result.last_weapon"
+    return:
+      type: System.String
+    content.vb: Public Const LastWeapon As String = "result.last_weapon"
+- uid: SurvivorsMaker.Presentation.UiText.CannotMerge
+  commentId: F:SurvivorsMaker.Presentation.UiText.CannotMerge
+  id: CannotMerge
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: CannotMerge
+  nameWithType: UiText.CannotMerge
+  fullName: SurvivorsMaker.Presentation.UiText.CannotMerge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string CannotMerge = "result.cannot_merge"
+    return:
+      type: System.String
+    content.vb: Public Const CannotMerge As String = "result.cannot_merge"
+- uid: SurvivorsMaker.Presentation.UiText.EmptySlot
+  commentId: F:SurvivorsMaker.Presentation.UiText.EmptySlot
+  id: EmptySlot
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EmptySlot
+  nameWithType: UiText.EmptySlot
+  fullName: SurvivorsMaker.Presentation.UiText.EmptySlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EmptySlot = "result.empty_slot"
+    return:
+      type: System.String
+    content.vb: Public Const EmptySlot As String = "result.empty_slot"
+- uid: SurvivorsMaker.Presentation.UiText.Unavailable
+  commentId: F:SurvivorsMaker.Presentation.UiText.Unavailable
+  id: Unavailable
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Unavailable
+  nameWithType: UiText.Unavailable
+  fullName: SurvivorsMaker.Presentation.UiText.Unavailable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Unavailable = "result.unavailable"
+    return:
+      type: System.String
+    content.vb: Public Const Unavailable As String = "result.unavailable"
+- uid: SurvivorsMaker.Presentation.UiText.EditorFolderArgument
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorFolderArgument
+  id: EditorFolderArgument
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorFolderArgument
+  nameWithType: UiText.EditorFolderArgument
+  fullName: SurvivorsMaker.Presentation.UiText.EditorFolderArgument
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorFolderArgument = "editor.ui.folder_argument"
+    return:
+      type: System.String
+    content.vb: Public Const EditorFolderArgument As String = "editor.ui.folder_argument"
+- uid: SurvivorsMaker.Presentation.UiText.EditorFolderScope
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorFolderScope
+  id: EditorFolderScope
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorFolderScope
+  nameWithType: UiText.EditorFolderScope
+  fullName: SurvivorsMaker.Presentation.UiText.EditorFolderScope
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorFolderScope = "editor.ui.folder_scope"
+    return:
+      type: System.String
+    content.vb: Public Const EditorFolderScope As String = "editor.ui.folder_scope"
+- uid: SurvivorsMaker.Presentation.UiText.EditorSaveFailed
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorSaveFailed
+  id: EditorSaveFailed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorSaveFailed
+  nameWithType: UiText.EditorSaveFailed
+  fullName: SurvivorsMaker.Presentation.UiText.EditorSaveFailed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorSaveFailed = "editor.ui.save_failed"
+    return:
+      type: System.String
+    content.vb: Public Const EditorSaveFailed As String = "editor.ui.save_failed"
+- uid: SurvivorsMaker.Presentation.UiText.EditorBuilt
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorBuilt
+  id: EditorBuilt
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorBuilt
+  nameWithType: UiText.EditorBuilt
+  fullName: SurvivorsMaker.Presentation.UiText.EditorBuilt
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorBuilt = "editor.ui.built"
+    return:
+      type: System.String
+    content.vb: Public Const EditorBuilt As String = "editor.ui.built"
+- uid: SurvivorsMaker.Presentation.UiText.EditorAssetsMissing
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorAssetsMissing
+  id: EditorAssetsMissing
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorAssetsMissing
+  nameWithType: UiText.EditorAssetsMissing
+  fullName: SurvivorsMaker.Presentation.UiText.EditorAssetsMissing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorAssetsMissing = "editor.ui.assets_missing"
+    return:
+      type: System.String
+    content.vb: Public Const EditorAssetsMissing As String = "editor.ui.assets_missing"
+- uid: SurvivorsMaker.Presentation.UiText.EditorCreateFailed
+  commentId: F:SurvivorsMaker.Presentation.UiText.EditorCreateFailed
+  id: EditorCreateFailed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EditorCreateFailed
+  nameWithType: UiText.EditorCreateFailed
+  fullName: SurvivorsMaker.Presentation.UiText.EditorCreateFailed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EditorCreateFailed = "editor.ui.create_failed"
+    return:
+      type: System.String
+    content.vb: Public Const EditorCreateFailed As String = "editor.ui.create_failed"
+- uid: SurvivorsMaker.Presentation.UiText.BossHealth
+  commentId: F:SurvivorsMaker.Presentation.UiText.BossHealth
+  id: BossHealth
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BossHealth
+  nameWithType: UiText.BossHealth
+  fullName: SurvivorsMaker.Presentation.UiText.BossHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BossHealth = "boss.health"
+    return:
+      type: System.String
+    content.vb: Public Const BossHealth As String = "boss.health"
+- uid: SurvivorsMaker.Presentation.UiText.BossPhase
+  commentId: F:SurvivorsMaker.Presentation.UiText.BossPhase
+  id: BossPhase
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BossPhase
+  nameWithType: UiText.BossPhase
+  fullName: SurvivorsMaker.Presentation.UiText.BossPhase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BossPhase = "boss.phase"
+    return:
+      type: System.String
+    content.vb: Public Const BossPhase As String = "boss.phase"
+- uid: SurvivorsMaker.Presentation.UiText.BossAppears
+  commentId: F:SurvivorsMaker.Presentation.UiText.BossAppears
+  id: BossAppears
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BossAppears
+  nameWithType: UiText.BossAppears
+  fullName: SurvivorsMaker.Presentation.UiText.BossAppears
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BossAppears = "boss.appears"
+    return:
+      type: System.String
+    content.vb: Public Const BossAppears As String = "boss.appears"
+- uid: SurvivorsMaker.Presentation.UiText.BossEnraged
+  commentId: F:SurvivorsMaker.Presentation.UiText.BossEnraged
+  id: BossEnraged
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BossEnraged
+  nameWithType: UiText.BossEnraged
+  fullName: SurvivorsMaker.Presentation.UiText.BossEnraged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BossEnraged = "boss.enraged"
+    return:
+      type: System.String
+    content.vb: Public Const BossEnraged As String = "boss.enraged"
+- uid: SurvivorsMaker.Presentation.UiText.BossDefeated
+  commentId: F:SurvivorsMaker.Presentation.UiText.BossDefeated
+  id: BossDefeated
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BossDefeated
+  nameWithType: UiText.BossDefeated
+  fullName: SurvivorsMaker.Presentation.UiText.BossDefeated
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BossDefeated = "boss.defeated"
+    return:
+      type: System.String
+    content.vb: Public Const BossDefeated As String = "boss.defeated"
+- uid: SurvivorsMaker.Presentation.UiText.EliteToast
+  commentId: F:SurvivorsMaker.Presentation.UiText.EliteToast
+  id: EliteToast
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EliteToast
+  nameWithType: UiText.EliteToast
+  fullName: SurvivorsMaker.Presentation.UiText.EliteToast
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EliteToast = "toast.elite"
+    return:
+      type: System.String
+    content.vb: Public Const EliteToast As String = "toast.elite"
+- uid: SurvivorsMaker.Presentation.UiText.EliteToastMany
+  commentId: F:SurvivorsMaker.Presentation.UiText.EliteToastMany
+  id: EliteToastMany
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EliteToastMany
+  nameWithType: UiText.EliteToastMany
+  fullName: SurvivorsMaker.Presentation.UiText.EliteToastMany
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EliteToastMany = "toast.elite.many"
+    return:
+      type: System.String
+    content.vb: Public Const EliteToastMany As String = "toast.elite.many"
+- uid: SurvivorsMaker.Presentation.UiText.HordeTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.HordeTitle
+  id: HordeTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: HordeTitle
+  nameWithType: UiText.HordeTitle
+  fullName: SurvivorsMaker.Presentation.UiText.HordeTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string HordeTitle = "toast.horde"
+    return:
+      type: System.String
+    content.vb: Public Const HordeTitle As String = "toast.horde"
+- uid: SurvivorsMaker.Presentation.UiText.HordeCount
+  commentId: F:SurvivorsMaker.Presentation.UiText.HordeCount
+  id: HordeCount
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: HordeCount
+  nameWithType: UiText.HordeCount
+  fullName: SurvivorsMaker.Presentation.UiText.HordeCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string HordeCount = "toast.horde.count"
+    return:
+      type: System.String
+    content.vb: Public Const HordeCount As String = "toast.horde.count"
+- uid: SurvivorsMaker.Presentation.UiText.SaveQuit
+  commentId: F:SurvivorsMaker.Presentation.UiText.SaveQuit
+  id: SaveQuit
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SaveQuit
+  nameWithType: UiText.SaveQuit
+  fullName: SurvivorsMaker.Presentation.UiText.SaveQuit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SaveQuit = "pause.save_quit"
+    return:
+      type: System.String
+    content.vb: Public Const SaveQuit As String = "pause.save_quit"
+- uid: SurvivorsMaker.Presentation.UiText.SaveUnavailable
+  commentId: F:SurvivorsMaker.Presentation.UiText.SaveUnavailable
+  id: SaveUnavailable
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SaveUnavailable
+  nameWithType: UiText.SaveUnavailable
+  fullName: SurvivorsMaker.Presentation.UiText.SaveUnavailable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SaveUnavailable = "pause.save_unavailable"
+    return:
+      type: System.String
+    content.vb: Public Const SaveUnavailable As String = "pause.save_unavailable"
+- uid: SurvivorsMaker.Presentation.UiText.MenuContinue
+  commentId: F:SurvivorsMaker.Presentation.UiText.MenuContinue
+  id: MenuContinue
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MenuContinue
+  nameWithType: UiText.MenuContinue
+  fullName: SurvivorsMaker.Presentation.UiText.MenuContinue
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MenuContinue = "menu.continue"
+    return:
+      type: System.String
+    content.vb: Public Const MenuContinue As String = "menu.continue"
+- uid: SurvivorsMaker.Presentation.UiText.MenuContinueDetail
+  commentId: F:SurvivorsMaker.Presentation.UiText.MenuContinueDetail
+  id: MenuContinueDetail
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MenuContinueDetail
+  nameWithType: UiText.MenuContinueDetail
+  fullName: SurvivorsMaker.Presentation.UiText.MenuContinueDetail
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MenuContinueDetail = "menu.continue.detail"
+    return:
+      type: System.String
+    content.vb: Public Const MenuContinueDetail As String = "menu.continue.detail"
+- uid: SurvivorsMaker.Presentation.UiText.LockedName
+  commentId: F:SurvivorsMaker.Presentation.UiText.LockedName
+  id: LockedName
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LockedName
+  nameWithType: UiText.LockedName
+  fullName: SurvivorsMaker.Presentation.UiText.LockedName
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LockedName = "menu.locked.name"
+    return:
+      type: System.String
+    content.vb: Public Const LockedName As String = "menu.locked.name"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockHint
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockHint
+  id: UnlockHint
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockHint
+  nameWithType: UiText.UnlockHint
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockHint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockHint = "menu.unlock_hint"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockHint As String = "menu.unlock_hint"
+- uid: SurvivorsMaker.Presentation.UiText.ModeArenaShort
+  commentId: F:SurvivorsMaker.Presentation.UiText.ModeArenaShort
+  id: ModeArenaShort
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ModeArenaShort
+  nameWithType: UiText.ModeArenaShort
+  fullName: SurvivorsMaker.Presentation.UiText.ModeArenaShort
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ModeArenaShort = "mode.arena"
+    return:
+      type: System.String
+    content.vb: Public Const ModeArenaShort As String = "mode.arena"
+- uid: SurvivorsMaker.Presentation.UiText.ModeFieldShort
+  commentId: F:SurvivorsMaker.Presentation.UiText.ModeFieldShort
+  id: ModeFieldShort
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ModeFieldShort
+  nameWithType: UiText.ModeFieldShort
+  fullName: SurvivorsMaker.Presentation.UiText.ModeFieldShort
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ModeFieldShort = "mode.field"
+    return:
+      type: System.String
+    content.vb: Public Const ModeFieldShort As String = "mode.field"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockWinCharacter
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockWinCharacter
+  id: UnlockWinCharacter
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockWinCharacter
+  nameWithType: UiText.UnlockWinCharacter
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockWinCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockWinCharacter = "unlock.condition.win_character"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockWinCharacter As String = "unlock.condition.win_character"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockWinAny
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockWinAny
+  id: UnlockWinAny
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockWinAny
+  nameWithType: UiText.UnlockWinAny
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockWinAny
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockWinAny = "unlock.condition.win_any"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockWinAny As String = "unlock.condition.win_any"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockReachWave
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockReachWave
+  id: UnlockReachWave
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockReachWave
+  nameWithType: UiText.UnlockReachWave
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockReachWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockReachWave = "unlock.condition.reach_wave"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockReachWave As String = "unlock.condition.reach_wave"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockKills
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockKills
+  id: UnlockKills
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockKills
+  nameWithType: UiText.UnlockKills
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockKills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockKills = "unlock.condition.kills"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockKills As String = "unlock.condition.kills"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockWins
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockWins
+  id: UnlockWins
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockWins
+  nameWithType: UiText.UnlockWins
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockWins
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockWins = "unlock.condition.wins"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockWins As String = "unlock.condition.wins"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockWinMode
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockWinMode
+  id: UnlockWinMode
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockWinMode
+  nameWithType: UiText.UnlockWinMode
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockWinMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockWinMode = "unlock.condition.win_mode"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockWinMode As String = "unlock.condition.win_mode"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockTitle
+  id: UnlockTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockTitle
+  nameWithType: UiText.UnlockTitle
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockTitle = "unlock.title"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockTitle As String = "unlock.title"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockSubtitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockSubtitle
+  id: UnlockSubtitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockSubtitle
+  nameWithType: UiText.UnlockSubtitle
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockSubtitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockSubtitle = "unlock.subtitle"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockSubtitle As String = "unlock.subtitle"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockCharacter
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockCharacter
+  id: UnlockCharacter
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockCharacter
+  nameWithType: UiText.UnlockCharacter
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockCharacter = "unlock.kind.character"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockCharacter As String = "unlock.kind.character"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockWeapon
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockWeapon
+  id: UnlockWeapon
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockWeapon
+  nameWithType: UiText.UnlockWeapon
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockWeapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockWeapon = "unlock.kind.weapon"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockWeapon As String = "unlock.kind.weapon"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockItem
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockItem
+  id: UnlockItem
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockItem
+  nameWithType: UiText.UnlockItem
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockItem
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockItem = "unlock.kind.item"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockItem As String = "unlock.kind.item"
+- uid: SurvivorsMaker.Presentation.UiText.UnlockDismiss
+  commentId: F:SurvivorsMaker.Presentation.UiText.UnlockDismiss
+  id: UnlockDismiss
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: UnlockDismiss
+  nameWithType: UiText.UnlockDismiss
+  fullName: SurvivorsMaker.Presentation.UiText.UnlockDismiss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string UnlockDismiss = "unlock.dismiss"
+    return:
+      type: System.String
+    content.vb: Public Const UnlockDismiss As String = "unlock.dismiss"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsTitle
+  id: RecordsTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsTitle
+  nameWithType: UiText.RecordsTitle
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsTitle = "profile.title"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsTitle As String = "profile.title"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsSummary
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsSummary
+  id: RecordsSummary
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsSummary
+  nameWithType: UiText.RecordsSummary
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsSummary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsSummary = "profile.summary"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsSummary As String = "profile.summary"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsCharacter
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsCharacter
+  id: RecordsCharacter
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsCharacter
+  nameWithType: UiText.RecordsCharacter
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsCharacter
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsCharacter = "profile.header.character"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsCharacter As String = "profile.header.character"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsRuns
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsRuns
+  id: RecordsRuns
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsRuns
+  nameWithType: UiText.RecordsRuns
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsRuns
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsRuns = "profile.header.runs"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsRuns As String = "profile.header.runs"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsWins
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsWins
+  id: RecordsWins
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsWins
+  nameWithType: UiText.RecordsWins
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsWins
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsWins = "profile.header.wins"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsWins As String = "profile.header.wins"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsBest
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsBest
+  id: RecordsBest
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsBest
+  nameWithType: UiText.RecordsBest
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsBest
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsBest = "profile.header.best"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsBest As String = "profile.header.best"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsEmpty
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsEmpty
+  id: RecordsEmpty
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsEmpty
+  nameWithType: UiText.RecordsEmpty
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsEmpty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsEmpty = "profile.empty"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsEmpty As String = "profile.empty"
+- uid: SurvivorsMaker.Presentation.UiText.RecordsUnlocked
+  commentId: F:SurvivorsMaker.Presentation.UiText.RecordsUnlocked
+  id: RecordsUnlocked
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: RecordsUnlocked
+  nameWithType: UiText.RecordsUnlocked
+  fullName: SurvivorsMaker.Presentation.UiText.RecordsUnlocked
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string RecordsUnlocked = "profile.unlocked"
+    return:
+      type: System.String
+    content.vb: Public Const RecordsUnlocked As String = "profile.unlocked"
+- uid: SurvivorsMaker.Presentation.UiText.Orbit
+  commentId: F:SurvivorsMaker.Presentation.UiText.Orbit
+  id: Orbit
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Orbit
+  nameWithType: UiText.Orbit
+  fullName: SurvivorsMaker.Presentation.UiText.Orbit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Orbit = "effect.orbit"
+    return:
+      type: System.String
+    content.vb: Public Const Orbit As String = "effect.orbit"
+- uid: SurvivorsMaker.Presentation.UiText.Aura
+  commentId: F:SurvivorsMaker.Presentation.UiText.Aura
+  id: Aura
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Aura
+  nameWithType: UiText.Aura
+  fullName: SurvivorsMaker.Presentation.UiText.Aura
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Aura = "effect.aura"
+    return:
+      type: System.String
+    content.vb: Public Const Aura As String = "effect.aura"
+- uid: SurvivorsMaker.Presentation.UiText.SettingsOpen
+  commentId: F:SurvivorsMaker.Presentation.UiText.SettingsOpen
+  id: SettingsOpen
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SettingsOpen
+  nameWithType: UiText.SettingsOpen
+  fullName: SurvivorsMaker.Presentation.UiText.SettingsOpen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SettingsOpen = "settings.open"
+    return:
+      type: System.String
+    content.vb: Public Const SettingsOpen As String = "settings.open"
+- uid: SurvivorsMaker.Presentation.UiText.SettingsTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.SettingsTitle
+  id: SettingsTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SettingsTitle
+  nameWithType: UiText.SettingsTitle
+  fullName: SurvivorsMaker.Presentation.UiText.SettingsTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SettingsTitle = "settings.title"
+    return:
+      type: System.String
+    content.vb: Public Const SettingsTitle As String = "settings.title"
+- uid: SurvivorsMaker.Presentation.UiText.MasterVolume
+  commentId: F:SurvivorsMaker.Presentation.UiText.MasterVolume
+  id: MasterVolume
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MasterVolume
+  nameWithType: UiText.MasterVolume
+  fullName: SurvivorsMaker.Presentation.UiText.MasterVolume
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MasterVolume = "settings.volume.master"
+    return:
+      type: System.String
+    content.vb: Public Const MasterVolume As String = "settings.volume.master"
+- uid: SurvivorsMaker.Presentation.UiText.MusicVolume
+  commentId: F:SurvivorsMaker.Presentation.UiText.MusicVolume
+  id: MusicVolume
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: MusicVolume
+  nameWithType: UiText.MusicVolume
+  fullName: SurvivorsMaker.Presentation.UiText.MusicVolume
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string MusicVolume = "settings.volume.music"
+    return:
+      type: System.String
+    content.vb: Public Const MusicVolume As String = "settings.volume.music"
+- uid: SurvivorsMaker.Presentation.UiText.EffectsVolume
+  commentId: F:SurvivorsMaker.Presentation.UiText.EffectsVolume
+  id: EffectsVolume
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: EffectsVolume
+  nameWithType: UiText.EffectsVolume
+  fullName: SurvivorsMaker.Presentation.UiText.EffectsVolume
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string EffectsVolume = "settings.volume.effects"
+    return:
+      type: System.String
+    content.vb: Public Const EffectsVolume As String = "settings.volume.effects"
+- uid: SurvivorsMaker.Presentation.UiText.WindowModeLabel
+  commentId: F:SurvivorsMaker.Presentation.UiText.WindowModeLabel
+  id: WindowModeLabel
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WindowModeLabel
+  nameWithType: UiText.WindowModeLabel
+  fullName: SurvivorsMaker.Presentation.UiText.WindowModeLabel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WindowModeLabel = "settings.window"
+    return:
+      type: System.String
+    content.vb: Public Const WindowModeLabel As String = "settings.window"
+- uid: SurvivorsMaker.Presentation.UiText.WindowWindowed
+  commentId: F:SurvivorsMaker.Presentation.UiText.WindowWindowed
+  id: WindowWindowed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WindowWindowed
+  nameWithType: UiText.WindowWindowed
+  fullName: SurvivorsMaker.Presentation.UiText.WindowWindowed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WindowWindowed = "settings.window.windowed"
+    return:
+      type: System.String
+    content.vb: Public Const WindowWindowed As String = "settings.window.windowed"
+- uid: SurvivorsMaker.Presentation.UiText.WindowFullscreen
+  commentId: F:SurvivorsMaker.Presentation.UiText.WindowFullscreen
+  id: WindowFullscreen
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WindowFullscreen
+  nameWithType: UiText.WindowFullscreen
+  fullName: SurvivorsMaker.Presentation.UiText.WindowFullscreen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WindowFullscreen = "settings.window.fullscreen"
+    return:
+      type: System.String
+    content.vb: Public Const WindowFullscreen As String = "settings.window.fullscreen"
+- uid: SurvivorsMaker.Presentation.UiText.WindowBorderless
+  commentId: F:SurvivorsMaker.Presentation.UiText.WindowBorderless
+  id: WindowBorderless
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: WindowBorderless
+  nameWithType: UiText.WindowBorderless
+  fullName: SurvivorsMaker.Presentation.UiText.WindowBorderless
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string WindowBorderless = "settings.window.borderless"
+    return:
+      type: System.String
+    content.vb: Public Const WindowBorderless As String = "settings.window.borderless"
+- uid: SurvivorsMaker.Presentation.UiText.ScreenShake
+  commentId: F:SurvivorsMaker.Presentation.UiText.ScreenShake
+  id: ScreenShake
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ScreenShake
+  nameWithType: UiText.ScreenShake
+  fullName: SurvivorsMaker.Presentation.UiText.ScreenShake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ScreenShake = "settings.shake"
+    return:
+      type: System.String
+    content.vb: Public Const ScreenShake As String = "settings.shake"
+- uid: SurvivorsMaker.Presentation.UiText.ShakeStrength
+  commentId: F:SurvivorsMaker.Presentation.UiText.ShakeStrength
+  id: ShakeStrength
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ShakeStrength
+  nameWithType: UiText.ShakeStrength
+  fullName: SurvivorsMaker.Presentation.UiText.ShakeStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ShakeStrength = "settings.shake.strength"
+    return:
+      type: System.String
+    content.vb: Public Const ShakeStrength As String = "settings.shake.strength"
+- uid: SurvivorsMaker.Presentation.UiText.ReduceFlashes
+  commentId: F:SurvivorsMaker.Presentation.UiText.ReduceFlashes
+  id: ReduceFlashes
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ReduceFlashes
+  nameWithType: UiText.ReduceFlashes
+  fullName: SurvivorsMaker.Presentation.UiText.ReduceFlashes
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ReduceFlashes = "settings.reduce_flashes"
+    return:
+      type: System.String
+    content.vb: Public Const ReduceFlashes As String = "settings.reduce_flashes"
+- uid: SurvivorsMaker.Presentation.UiText.DamageNumbers
+  commentId: F:SurvivorsMaker.Presentation.UiText.DamageNumbers
+  id: DamageNumbers
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DamageNumbers
+  nameWithType: UiText.DamageNumbers
+  fullName: SurvivorsMaker.Presentation.UiText.DamageNumbers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DamageNumbers = "settings.damage_numbers"
+    return:
+      type: System.String
+    content.vb: Public Const DamageNumbers As String = "settings.damage_numbers"
+- uid: SurvivorsMaker.Presentation.UiText.FocusPause
+  commentId: F:SurvivorsMaker.Presentation.UiText.FocusPause
+  id: FocusPause
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: FocusPause
+  nameWithType: UiText.FocusPause
+  fullName: SurvivorsMaker.Presentation.UiText.FocusPause
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string FocusPause = "settings.focus_pause"
+    return:
+      type: System.String
+    content.vb: Public Const FocusPause As String = "settings.focus_pause"
+- uid: SurvivorsMaker.Presentation.UiText.Language
+  commentId: F:SurvivorsMaker.Presentation.UiText.Language
+  id: Language
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: UiText.Language
+  fullName: SurvivorsMaker.Presentation.UiText.Language
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string Language = "settings.language"
+    return:
+      type: System.String
+    content.vb: Public Const Language As String = "settings.language"
+- uid: SurvivorsMaker.Presentation.UiText.LanguagePrefix
+  commentId: F:SurvivorsMaker.Presentation.UiText.LanguagePrefix
+  id: LanguagePrefix
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: LanguagePrefix
+  nameWithType: UiText.LanguagePrefix
+  fullName: SurvivorsMaker.Presentation.UiText.LanguagePrefix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string LanguagePrefix = "settings.language.value."
+    return:
+      type: System.String
+    content.vb: Public Const LanguagePrefix As String = "settings.language.value."
+- uid: SurvivorsMaker.Presentation.UiText.OptionOn
+  commentId: F:SurvivorsMaker.Presentation.UiText.OptionOn
+  id: OptionOn
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: OptionOn
+  nameWithType: UiText.OptionOn
+  fullName: SurvivorsMaker.Presentation.UiText.OptionOn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string OptionOn = "settings.on"
+    return:
+      type: System.String
+    content.vb: Public Const OptionOn As String = "settings.on"
+- uid: SurvivorsMaker.Presentation.UiText.OptionOff
+  commentId: F:SurvivorsMaker.Presentation.UiText.OptionOff
+  id: OptionOff
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: OptionOff
+  nameWithType: UiText.OptionOff
+  fullName: SurvivorsMaker.Presentation.UiText.OptionOff
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string OptionOff = "settings.off"
+    return:
+      type: System.String
+    content.vb: Public Const OptionOff As String = "settings.off"
+- uid: SurvivorsMaker.Presentation.UiText.SettingsDone
+  commentId: F:SurvivorsMaker.Presentation.UiText.SettingsDone
+  id: SettingsDone
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SettingsDone
+  nameWithType: UiText.SettingsDone
+  fullName: SurvivorsMaker.Presentation.UiText.SettingsDone
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SettingsDone = "settings.done"
+    return:
+      type: System.String
+    content.vb: Public Const SettingsDone As String = "settings.done"
+- uid: SurvivorsMaker.Presentation.UiText.SettingsDefaults
+  commentId: F:SurvivorsMaker.Presentation.UiText.SettingsDefaults
+  id: SettingsDefaults
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SettingsDefaults
+  nameWithType: UiText.SettingsDefaults
+  fullName: SurvivorsMaker.Presentation.UiText.SettingsDefaults
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SettingsDefaults = "settings.defaults"
+    return:
+      type: System.String
+    content.vb: Public Const SettingsDefaults As String = "settings.defaults"
+- uid: SurvivorsMaker.Presentation.UiText.SettingsPercent
+  commentId: F:SurvivorsMaker.Presentation.UiText.SettingsPercent
+  id: SettingsPercent
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SettingsPercent
+  nameWithType: UiText.SettingsPercent
+  fullName: SurvivorsMaker.Presentation.UiText.SettingsPercent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SettingsPercent = "settings.percent"
+    return:
+      type: System.String
+    content.vb: Public Const SettingsPercent As String = "settings.percent"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryDetails
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryDetails
+  id: SummaryDetails
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryDetails
+  nameWithType: UiText.SummaryDetails
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryDetails
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryDetails = "summary.details"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryDetails As String = "summary.details"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryTitle
+  id: SummaryTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryTitle
+  nameWithType: UiText.SummaryTitle
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryTitle = "summary.title"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryTitle As String = "summary.title"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryBack
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryBack
+  id: SummaryBack
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryBack
+  nameWithType: UiText.SummaryBack
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryBack
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryBack = "summary.back"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryBack As String = "summary.back"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryWeapons
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryWeapons
+  id: SummaryWeapons
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryWeapons
+  nameWithType: UiText.SummaryWeapons
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryWeapons = "summary.weapons"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryWeapons As String = "summary.weapons"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryWeaponHeader
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryWeaponHeader
+  id: SummaryWeaponHeader
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryWeaponHeader
+  nameWithType: UiText.SummaryWeaponHeader
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryWeaponHeader
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryWeaponHeader = "summary.weapons.header"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryWeaponHeader As String = "summary.weapons.header"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryWeaponSplit
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryWeaponSplit
+  id: SummaryWeaponSplit
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryWeaponSplit
+  nameWithType: UiText.SummaryWeaponSplit
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryWeaponSplit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryWeaponSplit = "summary.weapons.split"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryWeaponSplit As String = "summary.weapons.split"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryOther
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryOther
+  id: SummaryOther
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryOther
+  nameWithType: UiText.SummaryOther
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryOther
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryOther = "summary.weapons.other"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryOther As String = "summary.weapons.other"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryTaken
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryTaken
+  id: SummaryTaken
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryTaken
+  nameWithType: UiText.SummaryTaken
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryTaken
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryTaken = "summary.taken"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryTaken As String = "summary.taken"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryTakenHeader
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryTakenHeader
+  id: SummaryTakenHeader
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryTakenHeader
+  nameWithType: UiText.SummaryTakenHeader
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryTakenHeader
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryTakenHeader = "summary.taken.header"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryTakenHeader As String = "summary.taken.header"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryContact
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryContact
+  id: SummaryContact
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryContact
+  nameWithType: UiText.SummaryContact
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryContact
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryContact = "summary.taken.contact"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryContact As String = "summary.taken.contact"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryProjectile
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryProjectile
+  id: SummaryProjectile
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryProjectile
+  nameWithType: UiText.SummaryProjectile
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryProjectile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryProjectile = "summary.taken.projectile"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryProjectile As String = "summary.taken.projectile"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryOtherSource
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryOtherSource
+  id: SummaryOtherSource
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryOtherSource
+  nameWithType: UiText.SummaryOtherSource
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryOtherSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryOtherSource = "summary.taken.other"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryOtherSource As String = "summary.taken.other"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryUnknownSource
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryUnknownSource
+  id: SummaryUnknownSource
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryUnknownSource
+  nameWithType: UiText.SummaryUnknownSource
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryUnknownSource
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryUnknownSource = "summary.taken.unknown"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryUnknownSource As String = "summary.taken.unknown"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryLevels
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryLevels
+  id: SummaryLevels
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryLevels
+  nameWithType: UiText.SummaryLevels
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryLevels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryLevels = "summary.levels"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryLevels As String = "summary.levels"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryLevelLine
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryLevelLine
+  id: SummaryLevelLine
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryLevelLine
+  nameWithType: UiText.SummaryLevelLine
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryLevelLine
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryLevelLine = "summary.levels.line"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryLevelLine As String = "summary.levels.line"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryGains
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryGains
+  id: SummaryGains
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryGains
+  nameWithType: UiText.SummaryGains
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryGains
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryGains = "summary.gains"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryGains As String = "summary.gains"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryGainLine
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryGainLine
+  id: SummaryGainLine
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryGainLine
+  nameWithType: UiText.SummaryGainLine
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryGainLine
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryGainLine = "summary.gains.line"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryGainLine As String = "summary.gains.line"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryGainCheat
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryGainCheat
+  id: SummaryGainCheat
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryGainCheat
+  nameWithType: UiText.SummaryGainCheat
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryGainCheat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryGainCheat = "summary.gains.cheat"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryGainCheat As String = "summary.gains.cheat"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryNone
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryNone
+  id: SummaryNone
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryNone
+  nameWithType: UiText.SummaryNone
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryNone
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryNone = "summary.none"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryNone As String = "summary.none"
+- uid: SurvivorsMaker.Presentation.UiText.SummaryTotals
+  commentId: F:SurvivorsMaker.Presentation.UiText.SummaryTotals
+  id: SummaryTotals
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: SummaryTotals
+  nameWithType: UiText.SummaryTotals
+  fullName: SurvivorsMaker.Presentation.UiText.SummaryTotals
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string SummaryTotals = "summary.totals"
+    return:
+      type: System.String
+    content.vb: Public Const SummaryTotals As String = "summary.totals"
+- uid: SurvivorsMaker.Presentation.UiText.CheatsUsed
+  commentId: F:SurvivorsMaker.Presentation.UiText.CheatsUsed
+  id: CheatsUsed
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: CheatsUsed
+  nameWithType: UiText.CheatsUsed
+  fullName: SurvivorsMaker.Presentation.UiText.CheatsUsed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string CheatsUsed = "playtest.cheats_used"
+    return:
+      type: System.String
+    content.vb: Public Const CheatsUsed As String = "playtest.cheats_used"
+- uid: SurvivorsMaker.Presentation.UiText.DpsTitle
+  commentId: F:SurvivorsMaker.Presentation.UiText.DpsTitle
+  id: DpsTitle
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DpsTitle
+  nameWithType: UiText.DpsTitle
+  fullName: SurvivorsMaker.Presentation.UiText.DpsTitle
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DpsTitle = "dps.title"
+    return:
+      type: System.String
+    content.vb: Public Const DpsTitle As String = "dps.title"
+- uid: SurvivorsMaker.Presentation.UiText.DpsTotal
+  commentId: F:SurvivorsMaker.Presentation.UiText.DpsTotal
+  id: DpsTotal
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DpsTotal
+  nameWithType: UiText.DpsTotal
+  fullName: SurvivorsMaker.Presentation.UiText.DpsTotal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DpsTotal = "dps.total"
+    return:
+      type: System.String
+    content.vb: Public Const DpsTotal As String = "dps.total"
+- uid: SurvivorsMaker.Presentation.UiText.DpsRow
+  commentId: F:SurvivorsMaker.Presentation.UiText.DpsRow
+  id: DpsRow
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DpsRow
+  nameWithType: UiText.DpsRow
+  fullName: SurvivorsMaker.Presentation.UiText.DpsRow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DpsRow = "dps.row"
+    return:
+      type: System.String
+    content.vb: Public Const DpsRow As String = "dps.row"
+- uid: SurvivorsMaker.Presentation.UiText.DpsSlot
+  commentId: F:SurvivorsMaker.Presentation.UiText.DpsSlot
+  id: DpsSlot
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DpsSlot
+  nameWithType: UiText.DpsSlot
+  fullName: SurvivorsMaker.Presentation.UiText.DpsSlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DpsSlot = "dps.slot"
+    return:
+      type: System.String
+    content.vb: Public Const DpsSlot As String = "dps.slot"
+- uid: SurvivorsMaker.Presentation.UiText.DpsSplit
+  commentId: F:SurvivorsMaker.Presentation.UiText.DpsSplit
+  id: DpsSplit
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: DpsSplit
+  nameWithType: UiText.DpsSplit
+  fullName: SurvivorsMaker.Presentation.UiText.DpsSplit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string DpsSplit = "dps.split"
+    return:
+      type: System.String
+    content.vb: Public Const DpsSplit As String = "dps.split"
+- uid: SurvivorsMaker.Presentation.UiText.BuildMenuPath
+  commentId: F:SurvivorsMaker.Presentation.UiText.BuildMenuPath
+  id: BuildMenuPath
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: BuildMenuPath
+  nameWithType: UiText.BuildMenuPath
+  fullName: SurvivorsMaker.Presentation.UiText.BuildMenuPath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string BuildMenuPath = "Tools/Survivor Roguelite Maker/Build UI Prefabs"
+    return:
+      type: System.String
+    content.vb: Public Const BuildMenuPath As String = "Tools/Survivor Roguelite Maker/Build UI Prefabs"
+- uid: SurvivorsMaker.Presentation.UiText.ApplyTextMenuPath
+  commentId: F:SurvivorsMaker.Presentation.UiText.ApplyTextMenuPath
+  id: ApplyTextMenuPath
+  parent: SurvivorsMaker.Presentation.UiText
+  langs:
+  - csharp
+  - vb
+  name: ApplyTextMenuPath
+  nameWithType: UiText.ApplyTextMenuPath
+  fullName: SurvivorsMaker.Presentation.UiText.ApplyTextMenuPath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public const string ApplyTextMenuPath = "Apply UI Text"
+    return:
+      type: System.String
+    content.vb: Public Const ApplyTextMenuPath As String = "Apply UI Text"
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

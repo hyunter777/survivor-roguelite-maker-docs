@@ -1,0 +1,663 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions
+  commentId: T:SurvivorsMaker.Editor.NewGameProjectOptions
+  id: NewGameProjectOptions
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.NewGameProjectOptions.#ctor
+  - SurvivorsMaker.Editor.NewGameProjectOptions.AddSceneToBuildSettings
+  - SurvivorsMaker.Editor.NewGameProjectOptions.AdditiveScene
+  - SurvivorsMaker.Editor.NewGameProjectOptions.BossSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.CreateScene
+  - SurvivorsMaker.Editor.NewGameProjectOptions.EnemySprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.FloorSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.Folder
+  - SurvivorsMaker.Editor.NewGameProjectOptions.ItemSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.PickupSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.PlayerSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.ProjectileSprite
+  - SurvivorsMaker.Editor.NewGameProjectOptions.ScenePath
+  - SurvivorsMaker.Editor.NewGameProjectOptions.SeparationStrength
+  - SurvivorsMaker.Editor.NewGameProjectOptions.WeaponSprite
+  langs:
+  - csharp
+  - vb
+  name: NewGameProjectOptions
+  nameWithType: NewGameProjectOptions
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Choices for <xref href="SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)"
+    data-throw-if-not-resolved="false"></xref>. Every sprite is optional: missing ones are generated shapes.'
+  example: []
+  syntax:
+    content: public sealed class NewGameProjectOptions
+    content.vb: Public NotInheritable Class NewGameProjectOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.Folder
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.Folder
+  id: Folder
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: NewGameProjectOptions.Folder
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.Folder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Project folder ("Assets/…"); created when missing.
+  example: []
+  syntax:
+    content: public string Folder
+    return:
+      type: System.String
+    content.vb: Public Folder As String
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.PlayerSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.PlayerSprite
+  id: PlayerSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: PlayerSprite
+  nameWithType: NewGameProjectOptions.PlayerSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.PlayerSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite PlayerSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public PlayerSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.EnemySprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.EnemySprite
+  id: EnemySprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: EnemySprite
+  nameWithType: NewGameProjectOptions.EnemySprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.EnemySprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite EnemySprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public EnemySprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.BossSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.BossSprite
+  id: BossSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: BossSprite
+  nameWithType: NewGameProjectOptions.BossSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.BossSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite BossSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public BossSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.WeaponSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.WeaponSprite
+  id: WeaponSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: WeaponSprite
+  nameWithType: NewGameProjectOptions.WeaponSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.WeaponSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite WeaponSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public WeaponSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.ProjectileSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.ProjectileSprite
+  id: ProjectileSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSprite
+  nameWithType: NewGameProjectOptions.ProjectileSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.ProjectileSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite ProjectileSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ProjectileSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.ItemSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.ItemSprite
+  id: ItemSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: ItemSprite
+  nameWithType: NewGameProjectOptions.ItemSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.ItemSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite ItemSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ItemSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.PickupSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.PickupSprite
+  id: PickupSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: PickupSprite
+  nameWithType: NewGameProjectOptions.PickupSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.PickupSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite PickupSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public PickupSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.FloorSprite
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.FloorSprite
+  id: FloorSprite
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: FloorSprite
+  nameWithType: NewGameProjectOptions.FloorSprite
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.FloorSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public Sprite FloorSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public FloorSprite As Sprite
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.SeparationStrength
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.SeparationStrength
+  id: SeparationStrength
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: SeparationStrength
+  nameWithType: NewGameProjectOptions.SeparationStrength
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.SeparationStrength
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Enemy push-apart strength written to the game settings (0 = off).
+  example: []
+  syntax:
+    content: public float SeparationStrength
+    return:
+      type: System.Single
+    content.vb: Public SeparationStrength As Single
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.CreateScene
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.CreateScene
+  id: CreateScene
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: CreateScene
+  nameWithType: NewGameProjectOptions.CreateScene
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.CreateScene
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Also run the Create Game Scene step.
+  example: []
+  syntax:
+    content: public bool CreateScene
+    return:
+      type: System.Boolean
+    content.vb: Public CreateScene As Boolean
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.ScenePath
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.ScenePath
+  id: ScenePath
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: ScenePath
+  nameWithType: NewGameProjectOptions.ScenePath
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.ScenePath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Scene path; empty = "&lt;Folder&gt;/Scenes/Game.unity".
+  example: []
+  syntax:
+    content: public string ScenePath
+    return:
+      type: System.String
+    content.vb: Public ScenePath As String
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.AdditiveScene
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.AdditiveScene
+  id: AdditiveScene
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: AdditiveScene
+  nameWithType: NewGameProjectOptions.AdditiveScene
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.AdditiveScene
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public bool AdditiveScene
+    return:
+      type: System.Boolean
+    content.vb: Public AdditiveScene As Boolean
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.AddSceneToBuildSettings
+  commentId: F:SurvivorsMaker.Editor.NewGameProjectOptions.AddSceneToBuildSettings
+  id: AddSceneToBuildSettings
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: AddSceneToBuildSettings
+  nameWithType: NewGameProjectOptions.AddSceneToBuildSettings
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.AddSceneToBuildSettings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public bool AddSceneToBuildSettings
+    return:
+      type: System.Boolean
+    content.vb: Public AddSceneToBuildSettings As Boolean
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.#ctor
+  commentId: M:SurvivorsMaker.Editor.NewGameProjectOptions.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Editor.NewGameProjectOptions
+  langs:
+  - csharp
+  - vb
+  name: NewGameProjectOptions()
+  nameWithType: NewGameProjectOptions.NewGameProjectOptions()
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.NewGameProjectOptions()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public NewGameProjectOptions()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Editor.NewGameProjectOptions.#ctor*
+  nameWithType.vb: NewGameProjectOptions.New()
+  fullName.vb: SurvivorsMaker.Editor.NewGameProjectOptions.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  commentId: M:SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  isExternal: true
+  href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  name: Create(NewGameProjectOptions)
+  nameWithType: NewGameProjectWizard.Create(NewGameProjectOptions)
+  fullName: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.NewGameProjectOptions
+    name: NewGameProjectOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectOptions.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.NewGameProjectWizard.Create(SurvivorsMaker.Editor.NewGameProjectOptions)
+    name: Create
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectWizard.html#SurvivorsMaker_Editor_NewGameProjectWizard_Create_SurvivorsMaker_Editor_NewGameProjectOptions_
+  - name: (
+  - uid: SurvivorsMaker.Editor.NewGameProjectOptions
+    name: NewGameProjectOptions
+    isExternal: true
+    href: SurvivorsMaker.Editor.NewGameProjectOptions.html
+  - name: )
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.NewGameProjectOptions.#ctor*
+  commentId: Overload:SurvivorsMaker.Editor.NewGameProjectOptions.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Editor.NewGameProjectOptions.html#SurvivorsMaker_Editor_NewGameProjectOptions__ctor
+  name: NewGameProjectOptions
+  nameWithType: NewGameProjectOptions.NewGameProjectOptions
+  fullName: SurvivorsMaker.Editor.NewGameProjectOptions.NewGameProjectOptions
+  nameWithType.vb: NewGameProjectOptions.New
+  fullName.vb: SurvivorsMaker.Editor.NewGameProjectOptions.New
+  name.vb: New

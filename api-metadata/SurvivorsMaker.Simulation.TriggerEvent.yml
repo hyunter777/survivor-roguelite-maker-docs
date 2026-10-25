@@ -1,0 +1,471 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerEvent
+  commentId: T:SurvivorsMaker.Simulation.TriggerEvent
+  id: TriggerEvent
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerEvent.Banished
+  - SurvivorsMaker.Simulation.TriggerEvent.BossKilled
+  - SurvivorsMaker.Simulation.TriggerEvent.CriticalHit
+  - SurvivorsMaker.Simulation.TriggerEvent.CriticalKill
+  - SurvivorsMaker.Simulation.TriggerEvent.CurrencyCollected
+  - SurvivorsMaker.Simulation.TriggerEvent.Dodged
+  - SurvivorsMaker.Simulation.TriggerEvent.EliteKilled
+  - SurvivorsMaker.Simulation.TriggerEvent.HealCollected
+  - SurvivorsMaker.Simulation.TriggerEvent.Healed
+  - SurvivorsMaker.Simulation.TriggerEvent.ItemAcquired
+  - SurvivorsMaker.Simulation.TriggerEvent.Legacy
+  - SurvivorsMaker.Simulation.TriggerEvent.LevelUpChosen
+  - SurvivorsMaker.Simulation.TriggerEvent.Locked
+  - SurvivorsMaker.Simulation.TriggerEvent.Merged
+  - SurvivorsMaker.Simulation.TriggerEvent.NextWave
+  - SurvivorsMaker.Simulation.TriggerEvent.Purchased
+  - SurvivorsMaker.Simulation.TriggerEvent.Recycled
+  - SurvivorsMaker.Simulation.TriggerEvent.Rerolled
+  - SurvivorsMaker.Simulation.TriggerEvent.ShopEntered
+  - SurvivorsMaker.Simulation.TriggerEvent.StatusApplied
+  - SurvivorsMaker.Simulation.TriggerEvent.WaveEnded
+  - SurvivorsMaker.Simulation.TriggerEvent.WaveMidpoint
+  langs:
+  - csharp
+  - vb
+  name: TriggerEvent
+  nameWithType: TriggerEvent
+  fullName: SurvivorsMaker.Simulation.TriggerEvent
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Simulation or run event that can drive extended trigger conditions.
+  example: []
+  syntax:
+    content: public enum TriggerEvent
+    content.vb: Public Enum TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Legacy
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Legacy
+  id: Legacy
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Legacy
+  nameWithType: TriggerEvent.Legacy
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Legacy
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Legacy = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Dodged
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Dodged
+  id: Dodged
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Dodged
+  nameWithType: TriggerEvent.Dodged
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Dodged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Dodged = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Healed
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Healed
+  id: Healed
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Healed
+  nameWithType: TriggerEvent.Healed
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Healed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Healed = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.CurrencyCollected
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.CurrencyCollected
+  id: CurrencyCollected
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCollected
+  nameWithType: TriggerEvent.CurrencyCollected
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.CurrencyCollected
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: CurrencyCollected = 3
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.HealCollected
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.HealCollected
+  id: HealCollected
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: HealCollected
+  nameWithType: TriggerEvent.HealCollected
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.HealCollected
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: HealCollected = 4
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.CriticalHit
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.CriticalHit
+  id: CriticalHit
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: CriticalHit
+  nameWithType: TriggerEvent.CriticalHit
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.CriticalHit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: CriticalHit = 5
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.CriticalKill
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.CriticalKill
+  id: CriticalKill
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: CriticalKill
+  nameWithType: TriggerEvent.CriticalKill
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.CriticalKill
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: CriticalKill = 6
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.StatusApplied
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.StatusApplied
+  id: StatusApplied
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: StatusApplied
+  nameWithType: TriggerEvent.StatusApplied
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.StatusApplied
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: StatusApplied = 7
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.EliteKilled
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.EliteKilled
+  id: EliteKilled
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: EliteKilled
+  nameWithType: TriggerEvent.EliteKilled
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.EliteKilled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: EliteKilled = 8
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.BossKilled
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.BossKilled
+  id: BossKilled
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: BossKilled
+  nameWithType: TriggerEvent.BossKilled
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.BossKilled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: BossKilled = 9
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.WaveEnded
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.WaveEnded
+  id: WaveEnded
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: WaveEnded
+  nameWithType: TriggerEvent.WaveEnded
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.WaveEnded
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: WaveEnded = 10
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.WaveMidpoint
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.WaveMidpoint
+  id: WaveMidpoint
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: WaveMidpoint
+  nameWithType: TriggerEvent.WaveMidpoint
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.WaveMidpoint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: WaveMidpoint = 11
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.ShopEntered
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.ShopEntered
+  id: ShopEntered
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: ShopEntered
+  nameWithType: TriggerEvent.ShopEntered
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.ShopEntered
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: ShopEntered = 12
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Rerolled
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Rerolled
+  id: Rerolled
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Rerolled
+  nameWithType: TriggerEvent.Rerolled
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Rerolled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Rerolled = 13
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Purchased
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Purchased
+  id: Purchased
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Purchased
+  nameWithType: TriggerEvent.Purchased
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Purchased
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Purchased = 14
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Locked
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Locked
+  id: Locked
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Locked
+  nameWithType: TriggerEvent.Locked
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Locked
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Locked = 15
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Merged
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Merged
+  id: Merged
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Merged
+  nameWithType: TriggerEvent.Merged
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Merged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Merged = 16
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Recycled
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Recycled
+  id: Recycled
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Recycled
+  nameWithType: TriggerEvent.Recycled
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Recycled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Recycled = 17
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.NextWave
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.NextWave
+  id: NextWave
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: NextWave
+  nameWithType: TriggerEvent.NextWave
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.NextWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: NextWave = 18
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.ItemAcquired
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.ItemAcquired
+  id: ItemAcquired
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: ItemAcquired
+  nameWithType: TriggerEvent.ItemAcquired
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.ItemAcquired
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: ItemAcquired = 19
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.LevelUpChosen
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.LevelUpChosen
+  id: LevelUpChosen
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: LevelUpChosen
+  nameWithType: TriggerEvent.LevelUpChosen
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.LevelUpChosen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: LevelUpChosen = 20
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerEvent.Banished
+  commentId: F:SurvivorsMaker.Simulation.TriggerEvent.Banished
+  id: Banished
+  parent: SurvivorsMaker.Simulation.TriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: Banished
+  nameWithType: TriggerEvent.Banished
+  fullName: SurvivorsMaker.Simulation.TriggerEvent.Banished
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Banished = 21
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerEvent
+  commentId: T:SurvivorsMaker.Simulation.TriggerEvent
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerEvent.html
+  name: TriggerEvent
+  nameWithType: TriggerEvent
+  fullName: SurvivorsMaker.Simulation.TriggerEvent

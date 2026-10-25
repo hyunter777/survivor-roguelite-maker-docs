@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IProgressionRules
+  commentId: T:SurvivorsMaker.Run.IProgressionRules
+  id: IProgressionRules
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent)
+  - SurvivorsMaker.Run.IProgressionRules.RecordRun(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.RunState)
+  langs:
+  - csharp
+  - vb
+  name: IProgressionRules
+  nameWithType: IProgressionRules
+  fullName: SurvivorsMaker.Run.IProgressionRules
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Progress: unlock evaluation and applying unlocks to content.'
+  example: []
+  syntax:
+    content: public interface IProgressionRules
+    content.vb: Public Interface IProgressionRules
+  derivedClasses:
+  - SurvivorsMaker.Run.ProgressionRules
+- uid: SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent)
+  commentId: M:SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent)
+  id: ApplyUnlocks(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent)
+  parent: SurvivorsMaker.Run.IProgressionRules
+  langs:
+  - csharp
+  - vb
+  name: ApplyUnlocks(ProfileState, RunContent)
+  nameWithType: IProgressionRules.ApplyUnlocks(ProfileState, RunContent)
+  fullName: SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks(SurvivorsMaker.Run.ProfileState, SurvivorsMaker.Run.RunContent)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Sets Available on unlock targets: true when unlocked in the profile, false when locked.'
+  example: []
+  syntax:
+    content: void ApplyUnlocks(ProfileState profile, RunContent content)
+    parameters:
+    - id: profile
+      type: SurvivorsMaker.Run.ProfileState
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    content.vb: Sub ApplyUnlocks(profile As ProfileState, content As RunContent)
+  overload: SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks*
+- uid: SurvivorsMaker.Run.IProgressionRules.RecordRun(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.IProgressionRules.RecordRun(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.RunState)
+  id: RecordRun(SurvivorsMaker.Run.ProfileState,SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.IProgressionRules
+  langs:
+  - csharp
+  - vb
+  name: RecordRun(ProfileState, RunContent, RunState)
+  nameWithType: IProgressionRules.RecordRun(ProfileState, RunContent, RunState)
+  fullName: SurvivorsMaker.Run.IProgressionRules.RecordRun(SurvivorsMaker.Run.ProfileState, SurvivorsMaker.Run.RunContent,
+    SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Records a finished run (Won/Lost) and returns the unlocks it newly earned, in content order.
+  example: []
+  syntax:
+    content: List<UnlockDef> RecordRun(ProfileState profile, RunContent content, RunState finished)
+    parameters:
+    - id: profile
+      type: SurvivorsMaker.Run.ProfileState
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    - id: finished
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.UnlockDef}
+    content.vb: Function RecordRun(profile As ProfileState, content As RunContent, finished As RunState) As List(Of UnlockDef)
+  overload: SurvivorsMaker.Run.IProgressionRules.RecordRun*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks*
+  commentId: Overload:SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks
+  isExternal: true
+  href: SurvivorsMaker.Run.IProgressionRules.html#SurvivorsMaker_Run_IProgressionRules_ApplyUnlocks_SurvivorsMaker_Run_ProfileState_SurvivorsMaker_Run_RunContent_
+  name: ApplyUnlocks
+  nameWithType: IProgressionRules.ApplyUnlocks
+  fullName: SurvivorsMaker.Run.IProgressionRules.ApplyUnlocks
+- uid: SurvivorsMaker.Run.ProfileState
+  commentId: T:SurvivorsMaker.Run.ProfileState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ProfileState.html
+  name: ProfileState
+  nameWithType: ProfileState
+  fullName: SurvivorsMaker.Run.ProfileState
+- uid: SurvivorsMaker.Run.RunContent
+  commentId: T:SurvivorsMaker.Run.RunContent
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunContent.html
+  name: RunContent
+  nameWithType: RunContent
+  fullName: SurvivorsMaker.Run.RunContent
+- uid: SurvivorsMaker.Run.IProgressionRules.RecordRun*
+  commentId: Overload:SurvivorsMaker.Run.IProgressionRules.RecordRun
+  isExternal: true
+  href: SurvivorsMaker.Run.IProgressionRules.html#SurvivorsMaker_Run_IProgressionRules_RecordRun_SurvivorsMaker_Run_ProfileState_SurvivorsMaker_Run_RunContent_SurvivorsMaker_Run_RunState_
+  name: RecordRun
+  nameWithType: IProgressionRules.RecordRun
+  fullName: SurvivorsMaker.Run.IProgressionRules.RecordRun
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.UnlockDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.UnlockDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<UnlockDef>
+  nameWithType: List<UnlockDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.UnlockDef>
+  nameWithType.vb: List(Of UnlockDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.UnlockDef)
+  name.vb: List(Of UnlockDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.UnlockDef
+    name: UnlockDef
+    isExternal: true
+    href: SurvivorsMaker.Run.UnlockDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.UnlockDef
+    name: UnlockDef
+    isExternal: true
+    href: SurvivorsMaker.Run.UnlockDef.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

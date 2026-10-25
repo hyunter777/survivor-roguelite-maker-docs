@@ -1,0 +1,1046 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentTemplates
+  commentId: T:SurvivorsMaker.Editor.ContentTemplates
+  id: ContentTemplates
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentTemplates.Apply(SurvivorsMaker.Data.ContentAssetBase,SurvivorsMaker.Editor.ContentTemplate)
+  - SurvivorsMaker.Editor.ContentTemplates.Boss(SurvivorsMaker.Data.EnemyAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.Charger(SurvivorsMaker.Data.EnemyAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.Chaser(SurvivorsMaker.Data.EnemyAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.CreateAssets(SurvivorsMaker.Editor.ContentTemplate,System.String,System.String)
+  - SurvivorsMaker.Editor.ContentTemplates.DefaultName(SurvivorsMaker.Editor.ContentTemplate)
+  - SurvivorsMaker.Editor.ContentTemplates.Elite(SurvivorsMaker.Data.EliteAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.Enemies
+  - SurvivorsMaker.Editor.ContentTemplates.For(SurvivorsMaker.Editor.BrowserContentKind)
+  - SurvivorsMaker.Editor.ContentTemplates.KindOf(SurvivorsMaker.Editor.ContentTemplate)
+  - SurvivorsMaker.Editor.ContentTemplates.Label(SurvivorsMaker.Editor.ContentTemplate)
+  - SurvivorsMaker.Editor.ContentTemplates.Shooter(SurvivorsMaker.Data.EnemyAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.Slug(System.String)
+  - SurvivorsMaker.Editor.ContentTemplates.Summoner(SurvivorsMaker.Data.EnemyAsset,SurvivorsMaker.Data.EnemyAsset)
+  - SurvivorsMaker.Editor.ContentTemplates.Weapon(SurvivorsMaker.Data.WeaponAsset,SurvivorsMaker.Simulation.WeaponKind)
+  - SurvivorsMaker.Editor.ContentTemplates.Weapons
+  langs:
+  - csharp
+  - vb
+  name: ContentTemplates
+  nameWithType: ContentTemplates
+  fullName: SurvivorsMaker.Editor.ContentTemplates
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static class ContentTemplates
+    content.vb: Public Module ContentTemplates
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.ContentTemplates.Weapons
+  commentId: F:SurvivorsMaker.Editor.ContentTemplates.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: ContentTemplates.Weapons
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static readonly ContentTemplate[] Weapons
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate[]
+    content.vb: Public Shared ReadOnly Weapons As ContentTemplate()
+- uid: SurvivorsMaker.Editor.ContentTemplates.Enemies
+  commentId: F:SurvivorsMaker.Editor.ContentTemplates.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: ContentTemplates.Enemies
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static readonly ContentTemplate[] Enemies
+    return:
+      type: SurvivorsMaker.Editor.ContentTemplate[]
+    content.vb: Public Shared ReadOnly Enemies As ContentTemplate()
+- uid: SurvivorsMaker.Editor.ContentTemplates.KindOf(SurvivorsMaker.Editor.ContentTemplate)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.KindOf(SurvivorsMaker.Editor.ContentTemplate)
+  id: KindOf(SurvivorsMaker.Editor.ContentTemplate)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: KindOf(ContentTemplate)
+  nameWithType: ContentTemplates.KindOf(ContentTemplate)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.KindOf(SurvivorsMaker.Editor.ContentTemplate)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static BrowserContentKind KindOf(ContentTemplate template)
+    parameters:
+    - id: template
+      type: SurvivorsMaker.Editor.ContentTemplate
+    return:
+      type: SurvivorsMaker.Editor.BrowserContentKind
+    content.vb: Public Shared Function KindOf(template As ContentTemplate) As BrowserContentKind
+  overload: SurvivorsMaker.Editor.ContentTemplates.KindOf*
+- uid: SurvivorsMaker.Editor.ContentTemplates.For(SurvivorsMaker.Editor.BrowserContentKind)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.For(SurvivorsMaker.Editor.BrowserContentKind)
+  id: For(SurvivorsMaker.Editor.BrowserContentKind)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: For(BrowserContentKind)
+  nameWithType: ContentTemplates.For(BrowserContentKind)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.For(SurvivorsMaker.Editor.BrowserContentKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: The templates that create <code class="paramref">kind</code> (Blank first).
+  example: []
+  syntax:
+    content: public static List<ContentTemplate> For(BrowserContentKind kind)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Editor.BrowserContentKind
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Editor.ContentTemplate}
+    content.vb: Public Shared Function [For](kind As BrowserContentKind) As List(Of ContentTemplate)
+  overload: SurvivorsMaker.Editor.ContentTemplates.For*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Label(SurvivorsMaker.Editor.ContentTemplate)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Label(SurvivorsMaker.Editor.ContentTemplate)
+  id: Label(SurvivorsMaker.Editor.ContentTemplate)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Label(ContentTemplate)
+  nameWithType: ContentTemplates.Label(ContentTemplate)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Label(SurvivorsMaker.Editor.ContentTemplate)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Label(ContentTemplate template)
+    parameters:
+    - id: template
+      type: SurvivorsMaker.Editor.ContentTemplate
+    return:
+      type: System.String
+    content.vb: Public Shared Function Label(template As ContentTemplate) As String
+  overload: SurvivorsMaker.Editor.ContentTemplates.Label*
+- uid: SurvivorsMaker.Editor.ContentTemplates.DefaultName(SurvivorsMaker.Editor.ContentTemplate)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.DefaultName(SurvivorsMaker.Editor.ContentTemplate)
+  id: DefaultName(SurvivorsMaker.Editor.ContentTemplate)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: DefaultName(ContentTemplate)
+  nameWithType: ContentTemplates.DefaultName(ContentTemplate)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.DefaultName(SurvivorsMaker.Editor.ContentTemplate)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string DefaultName(ContentTemplate template)
+    parameters:
+    - id: template
+      type: SurvivorsMaker.Editor.ContentTemplate
+    return:
+      type: System.String
+    content.vb: Public Shared Function DefaultName(template As ContentTemplate) As String
+  overload: SurvivorsMaker.Editor.ContentTemplates.DefaultName*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Apply(SurvivorsMaker.Data.ContentAssetBase,SurvivorsMaker.Editor.ContentTemplate)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Apply(SurvivorsMaker.Data.ContentAssetBase,SurvivorsMaker.Editor.ContentTemplate)
+  id: Apply(SurvivorsMaker.Data.ContentAssetBase,SurvivorsMaker.Editor.ContentTemplate)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Apply(ContentAssetBase, ContentTemplate)
+  nameWithType: ContentTemplates.Apply(ContentAssetBase, ContentTemplate)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Apply(SurvivorsMaker.Data.ContentAssetBase, SurvivorsMaker.Editor.ContentTemplate)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Fills a new asset with the template's values. The asset type must match the template.
+  example: []
+  syntax:
+    content: public static void Apply(ContentAssetBase asset, ContentTemplate template)
+    parameters:
+    - id: asset
+      type: SurvivorsMaker.Data.ContentAssetBase
+    - id: template
+      type: SurvivorsMaker.Editor.ContentTemplate
+    content.vb: Public Shared Sub Apply(asset As ContentAssetBase, template As ContentTemplate)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Apply*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Weapon(SurvivorsMaker.Data.WeaponAsset,SurvivorsMaker.Simulation.WeaponKind)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Weapon(SurvivorsMaker.Data.WeaponAsset,SurvivorsMaker.Simulation.WeaponKind)
+  id: Weapon(SurvivorsMaker.Data.WeaponAsset,SurvivorsMaker.Simulation.WeaponKind)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Weapon(WeaponAsset, WeaponKind)
+  nameWithType: ContentTemplates.Weapon(WeaponAsset, WeaponKind)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Weapon(SurvivorsMaker.Data.WeaponAsset, SurvivorsMaker.Simulation.WeaponKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Weapon(WeaponAsset weapon, WeaponKind kind)
+    parameters:
+    - id: weapon
+      type: SurvivorsMaker.Data.WeaponAsset
+    - id: kind
+      type: SurvivorsMaker.Simulation.WeaponKind
+    content.vb: Public Shared Sub Weapon(weapon As WeaponAsset, kind As WeaponKind)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Weapon*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Chaser(SurvivorsMaker.Data.EnemyAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Chaser(SurvivorsMaker.Data.EnemyAsset)
+  id: Chaser(SurvivorsMaker.Data.EnemyAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Chaser(EnemyAsset)
+  nameWithType: ContentTemplates.Chaser(EnemyAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Chaser(SurvivorsMaker.Data.EnemyAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Chaser(EnemyAsset enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Shared Sub Chaser(enemy As EnemyAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Chaser*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Shooter(SurvivorsMaker.Data.EnemyAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Shooter(SurvivorsMaker.Data.EnemyAsset)
+  id: Shooter(SurvivorsMaker.Data.EnemyAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Shooter(EnemyAsset)
+  nameWithType: ContentTemplates.Shooter(EnemyAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Shooter(SurvivorsMaker.Data.EnemyAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Shooter(EnemyAsset enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Shared Sub Shooter(enemy As EnemyAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Shooter*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Charger(SurvivorsMaker.Data.EnemyAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Charger(SurvivorsMaker.Data.EnemyAsset)
+  id: Charger(SurvivorsMaker.Data.EnemyAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Charger(EnemyAsset)
+  nameWithType: ContentTemplates.Charger(EnemyAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Charger(SurvivorsMaker.Data.EnemyAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Charger(EnemyAsset enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Shared Sub Charger(enemy As EnemyAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Charger*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Summoner(SurvivorsMaker.Data.EnemyAsset,SurvivorsMaker.Data.EnemyAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Summoner(SurvivorsMaker.Data.EnemyAsset,SurvivorsMaker.Data.EnemyAsset)
+  id: Summoner(SurvivorsMaker.Data.EnemyAsset,SurvivorsMaker.Data.EnemyAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Summoner(EnemyAsset, EnemyAsset)
+  nameWithType: ContentTemplates.Summoner(EnemyAsset, EnemyAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Summoner(SurvivorsMaker.Data.EnemyAsset, SurvivorsMaker.Data.EnemyAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Summons <code class="paramref">minion</code> (assign one before use: a summon attack without a minion does not
+    validate).'
+  example: []
+  syntax:
+    content: public static void Summoner(EnemyAsset enemy, EnemyAsset minion)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Data.EnemyAsset
+    - id: minion
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Shared Sub Summoner(enemy As EnemyAsset, minion As EnemyAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Summoner*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Boss(SurvivorsMaker.Data.EnemyAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Boss(SurvivorsMaker.Data.EnemyAsset)
+  id: Boss(SurvivorsMaker.Data.EnemyAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Boss(EnemyAsset)
+  nameWithType: ContentTemplates.Boss(EnemyAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Boss(SurvivorsMaker.Data.EnemyAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Boss(EnemyAsset enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Data.EnemyAsset
+    content.vb: Public Shared Sub Boss(enemy As EnemyAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Boss*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Elite(SurvivorsMaker.Data.EliteAsset)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Elite(SurvivorsMaker.Data.EliteAsset)
+  id: Elite(SurvivorsMaker.Data.EliteAsset)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Elite(EliteAsset)
+  nameWithType: ContentTemplates.Elite(EliteAsset)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Elite(SurvivorsMaker.Data.EliteAsset)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Elite(EliteAsset elite)
+    parameters:
+    - id: elite
+      type: SurvivorsMaker.Data.EliteAsset
+    content.vb: Public Shared Sub Elite(elite As EliteAsset)
+  overload: SurvivorsMaker.Editor.ContentTemplates.Elite*
+- uid: SurvivorsMaker.Editor.ContentTemplates.Slug(System.String)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.Slug(System.String)
+  id: Slug(System.String)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: Slug(string)
+  nameWithType: ContentTemplates.Slug(string)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Slug(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: '"Ranged Weapon" → "ranged_weapon".'
+  example: []
+  syntax:
+    content: public static string Slug(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Slug(name As String) As String
+  overload: SurvivorsMaker.Editor.ContentTemplates.Slug*
+  nameWithType.vb: ContentTemplates.Slug(String)
+  fullName.vb: SurvivorsMaker.Editor.ContentTemplates.Slug(String)
+  name.vb: Slug(String)
+- uid: SurvivorsMaker.Editor.ContentTemplates.CreateAssets(SurvivorsMaker.Editor.ContentTemplate,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.ContentTemplates.CreateAssets(SurvivorsMaker.Editor.ContentTemplate,System.String,System.String)
+  id: CreateAssets(SurvivorsMaker.Editor.ContentTemplate,System.String,System.String)
+  parent: SurvivorsMaker.Editor.ContentTemplates
+  langs:
+  - csharp
+  - vb
+  name: CreateAssets(ContentTemplate, string, string)
+  nameWithType: ContentTemplates.CreateAssets(ContentTemplate, string, string)
+  fullName: SurvivorsMaker.Editor.ContentTemplates.CreateAssets(SurvivorsMaker.Editor.ContentTemplate, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Creates the template''s asset(s) in <code class="paramref">folder</code> as one undo step and returns them; the
+    main asset is last
+
+    (a summoner''s minion comes first). Ids come from the file names. Not added to any ContentAsset.'
+  example: []
+  syntax:
+    content: public static List<ContentAssetBase> CreateAssets(ContentTemplate template, string folder, string name)
+    parameters:
+    - id: template
+      type: SurvivorsMaker.Editor.ContentTemplate
+    - id: folder
+      type: System.String
+    - id: name
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.ContentAssetBase}
+    content.vb: Public Shared Function CreateAssets(template As ContentTemplate, folder As String, name As String) As List(Of
+      ContentAssetBase)
+  overload: SurvivorsMaker.Editor.ContentTemplates.CreateAssets*
+  nameWithType.vb: ContentTemplates.CreateAssets(ContentTemplate, String, String)
+  fullName.vb: SurvivorsMaker.Editor.ContentTemplates.CreateAssets(SurvivorsMaker.Editor.ContentTemplate, String, String)
+  name.vb: CreateAssets(ContentTemplate, String, String)
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Editor.ContentTemplate[]
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplate.html
+  name: ContentTemplate[]
+  nameWithType: ContentTemplate[]
+  fullName: SurvivorsMaker.Editor.ContentTemplate[]
+  nameWithType.vb: ContentTemplate()
+  fullName.vb: SurvivorsMaker.Editor.ContentTemplate()
+  name.vb: ContentTemplate()
+  spec.csharp:
+  - uid: SurvivorsMaker.Editor.ContentTemplate
+    name: ContentTemplate
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTemplate.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SurvivorsMaker.Editor.ContentTemplate
+    name: ContentTemplate
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTemplate.html
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.ContentTemplates.KindOf*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.KindOf
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_KindOf_SurvivorsMaker_Editor_ContentTemplate_
+  name: KindOf
+  nameWithType: ContentTemplates.KindOf
+  fullName: SurvivorsMaker.Editor.ContentTemplates.KindOf
+- uid: SurvivorsMaker.Editor.ContentTemplate
+  commentId: T:SurvivorsMaker.Editor.ContentTemplate
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplate.html
+  name: ContentTemplate
+  nameWithType: ContentTemplate
+  fullName: SurvivorsMaker.Editor.ContentTemplate
+- uid: SurvivorsMaker.Editor.BrowserContentKind
+  commentId: T:SurvivorsMaker.Editor.BrowserContentKind
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.BrowserContentKind.html
+  name: BrowserContentKind
+  nameWithType: BrowserContentKind
+  fullName: SurvivorsMaker.Editor.BrowserContentKind
+- uid: SurvivorsMaker.Editor.ContentTemplates.For*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.For
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_For_SurvivorsMaker_Editor_BrowserContentKind_
+  name: For
+  nameWithType: ContentTemplates.For
+  fullName: SurvivorsMaker.Editor.ContentTemplates.For
+- uid: System.Collections.Generic.List{SurvivorsMaker.Editor.ContentTemplate}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Editor.ContentTemplate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ContentTemplate>
+  nameWithType: List<ContentTemplate>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Editor.ContentTemplate>
+  nameWithType.vb: List(Of ContentTemplate)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Editor.ContentTemplate)
+  name.vb: List(Of ContentTemplate)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Editor.ContentTemplate
+    name: ContentTemplate
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTemplate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Editor.ContentTemplate
+    name: ContentTemplate
+    isExternal: true
+    href: SurvivorsMaker.Editor.ContentTemplate.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Editor.ContentTemplates.Label*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Label
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Label_SurvivorsMaker_Editor_ContentTemplate_
+  name: Label
+  nameWithType: ContentTemplates.Label
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Editor.ContentTemplates.DefaultName*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.DefaultName
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_DefaultName_SurvivorsMaker_Editor_ContentTemplate_
+  name: DefaultName
+  nameWithType: ContentTemplates.DefaultName
+  fullName: SurvivorsMaker.Editor.ContentTemplates.DefaultName
+- uid: SurvivorsMaker.Editor.ContentTemplates.Apply*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Apply
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Apply_SurvivorsMaker_Data_ContentAssetBase_SurvivorsMaker_Editor_ContentTemplate_
+  name: Apply
+  nameWithType: ContentTemplates.Apply
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Apply
+- uid: SurvivorsMaker.Data.ContentAssetBase
+  commentId: T:SurvivorsMaker.Data.ContentAssetBase
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAssetBase.html
+  name: ContentAssetBase
+  nameWithType: ContentAssetBase
+  fullName: SurvivorsMaker.Data.ContentAssetBase
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Editor.ContentTemplates.Weapon*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Weapon
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Weapon_SurvivorsMaker_Data_WeaponAsset_SurvivorsMaker_Simulation_WeaponKind_
+  name: Weapon
+  nameWithType: ContentTemplates.Weapon
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Weapon
+- uid: SurvivorsMaker.Data.WeaponAsset
+  commentId: T:SurvivorsMaker.Data.WeaponAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.WeaponAsset.html
+  name: WeaponAsset
+  nameWithType: WeaponAsset
+  fullName: SurvivorsMaker.Data.WeaponAsset
+- uid: SurvivorsMaker.Simulation.WeaponKind
+  commentId: T:SurvivorsMaker.Simulation.WeaponKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponKind.html
+  name: WeaponKind
+  nameWithType: WeaponKind
+  fullName: SurvivorsMaker.Simulation.WeaponKind
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Editor.ContentTemplates.Chaser*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Chaser
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Chaser_SurvivorsMaker_Data_EnemyAsset_
+  name: Chaser
+  nameWithType: ContentTemplates.Chaser
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Chaser
+- uid: SurvivorsMaker.Data.EnemyAsset
+  commentId: T:SurvivorsMaker.Data.EnemyAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EnemyAsset.html
+  name: EnemyAsset
+  nameWithType: EnemyAsset
+  fullName: SurvivorsMaker.Data.EnemyAsset
+- uid: SurvivorsMaker.Editor.ContentTemplates.Shooter*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Shooter
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Shooter_SurvivorsMaker_Data_EnemyAsset_
+  name: Shooter
+  nameWithType: ContentTemplates.Shooter
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Shooter
+- uid: SurvivorsMaker.Editor.ContentTemplates.Charger*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Charger
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Charger_SurvivorsMaker_Data_EnemyAsset_
+  name: Charger
+  nameWithType: ContentTemplates.Charger
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Charger
+- uid: SurvivorsMaker.Editor.ContentTemplates.Summoner*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Summoner
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Summoner_SurvivorsMaker_Data_EnemyAsset_SurvivorsMaker_Data_EnemyAsset_
+  name: Summoner
+  nameWithType: ContentTemplates.Summoner
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Summoner
+- uid: SurvivorsMaker.Editor.ContentTemplates.Boss*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Boss
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Boss_SurvivorsMaker_Data_EnemyAsset_
+  name: Boss
+  nameWithType: ContentTemplates.Boss
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Boss
+- uid: SurvivorsMaker.Editor.ContentTemplates.Elite*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Elite
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Elite_SurvivorsMaker_Data_EliteAsset_
+  name: Elite
+  nameWithType: ContentTemplates.Elite
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Elite
+- uid: SurvivorsMaker.Data.EliteAsset
+  commentId: T:SurvivorsMaker.Data.EliteAsset
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.EliteAsset.html
+  name: EliteAsset
+  nameWithType: EliteAsset
+  fullName: SurvivorsMaker.Data.EliteAsset
+- uid: SurvivorsMaker.Editor.ContentTemplates.Slug*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.Slug
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_Slug_System_String_
+  name: Slug
+  nameWithType: ContentTemplates.Slug
+  fullName: SurvivorsMaker.Editor.ContentTemplates.Slug
+- uid: SurvivorsMaker.Editor.ContentTemplates.CreateAssets*
+  commentId: Overload:SurvivorsMaker.Editor.ContentTemplates.CreateAssets
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTemplates.html#SurvivorsMaker_Editor_ContentTemplates_CreateAssets_SurvivorsMaker_Editor_ContentTemplate_System_String_System_String_
+  name: CreateAssets
+  nameWithType: ContentTemplates.CreateAssets
+  fullName: SurvivorsMaker.Editor.ContentTemplates.CreateAssets
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.ContentAssetBase}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.ContentAssetBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ContentAssetBase>
+  nameWithType: List<ContentAssetBase>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.ContentAssetBase>
+  nameWithType.vb: List(Of ContentAssetBase)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.ContentAssetBase)
+  name.vb: List(Of ContentAssetBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.ContentAssetBase
+    name: ContentAssetBase
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.ContentAssetBase
+    name: ContentAssetBase
+    isExternal: true
+  - name: )

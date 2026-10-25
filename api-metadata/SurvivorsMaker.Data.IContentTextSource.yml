@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.IContentTextSource
+  commentId: T:SurvivorsMaker.Data.IContentTextSource
+  id: IContentTextSource
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.IContentTextSource.TextDescription
+  - SurvivorsMaker.Data.IContentTextSource.TextId
+  - SurvivorsMaker.Data.IContentTextSource.TextKey
+  - SurvivorsMaker.Data.IContentTextSource.TextKind
+  - SurvivorsMaker.Data.IContentTextSource.TextName
+  langs:
+  - csharp
+  - vb
+  name: IContentTextSource
+  nameWithType: IContentTextSource
+  fullName: SurvivorsMaker.Data.IContentTextSource
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Authored display text of one content asset. The simulation never sees it: the UI reads it through
+
+    <xref href="SurvivorsMaker.Data.ContentTextTable" data-throw-if-not-resolved="false"></xref> by kind and id.'
+  example: []
+  syntax:
+    content: public interface IContentTextSource
+    content.vb: Public Interface IContentTextSource
+  derivedClasses:
+  - SurvivorsMaker.Data.CharacterAsset
+  - SurvivorsMaker.Data.EnemyAsset
+  - SurvivorsMaker.Data.ItemAsset
+  - SurvivorsMaker.Data.SetAsset
+  - SurvivorsMaker.Data.WeaponAsset
+- uid: SurvivorsMaker.Data.IContentTextSource.TextKind
+  commentId: P:SurvivorsMaker.Data.IContentTextSource.TextKind
+  id: TextKind
+  parent: SurvivorsMaker.Data.IContentTextSource
+  langs:
+  - csharp
+  - vb
+  name: TextKind
+  nameWithType: IContentTextSource.TextKind
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextKind
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Content category used with TextId to resolve display and localization entries.
+  example: []
+  syntax:
+    content: ContentTextKind TextKind { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+    content.vb: ReadOnly Property TextKind As ContentTextKind
+  overload: SurvivorsMaker.Data.IContentTextSource.TextKind*
+- uid: SurvivorsMaker.Data.IContentTextSource.TextId
+  commentId: P:SurvivorsMaker.Data.IContentTextSource.TextId
+  id: TextId
+  parent: SurvivorsMaker.Data.IContentTextSource
+  langs:
+  - csharp
+  - vb
+  name: TextId
+  nameWithType: IContentTextSource.TextId
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextId
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: The definition id the text belongs to.
+  example: []
+  syntax:
+    content: string TextId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TextId As String
+  overload: SurvivorsMaker.Data.IContentTextSource.TextId*
+- uid: SurvivorsMaker.Data.IContentTextSource.TextName
+  commentId: P:SurvivorsMaker.Data.IContentTextSource.TextName
+  id: TextName
+  parent: SurvivorsMaker.Data.IContentTextSource
+  langs:
+  - csharp
+  - vb
+  name: TextName
+  nameWithType: IContentTextSource.TextName
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextName
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Plain display name. Empty = the UI derives one from the id.
+  example: []
+  syntax:
+    content: string TextName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TextName As String
+  overload: SurvivorsMaker.Data.IContentTextSource.TextName*
+- uid: SurvivorsMaker.Data.IContentTextSource.TextDescription
+  commentId: P:SurvivorsMaker.Data.IContentTextSource.TextDescription
+  id: TextDescription
+  parent: SurvivorsMaker.Data.IContentTextSource
+  langs:
+  - csharp
+  - vb
+  name: TextDescription
+  nameWithType: IContentTextSource.TextDescription
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextDescription
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Plain description. May be empty.
+  example: []
+  syntax:
+    content: string TextDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TextDescription As String
+  overload: SurvivorsMaker.Data.IContentTextSource.TextDescription*
+- uid: SurvivorsMaker.Data.IContentTextSource.TextKey
+  commentId: P:SurvivorsMaker.Data.IContentTextSource.TextKey
+  id: TextKey
+  parent: SurvivorsMaker.Data.IContentTextSource
+  langs:
+  - csharp
+  - vb
+  name: TextKey
+  nameWithType: IContentTextSource.TextKey
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextKey
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Optional localization key base. Empty = <xref href="SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind%2cSystem.String)"
+    data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: string TextKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TextKey As String
+  overload: SurvivorsMaker.Data.IContentTextSource.TextKey*
+references:
+- uid: SurvivorsMaker.Data.ContentTextTable
+  commentId: T:SurvivorsMaker.Data.ContentTextTable
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html
+  name: ContentTextTable
+  nameWithType: ContentTextTable
+  fullName: SurvivorsMaker.Data.ContentTextTable
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Data.IContentTextSource.TextKind*
+  commentId: Overload:SurvivorsMaker.Data.IContentTextSource.TextKind
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html#SurvivorsMaker_Data_IContentTextSource_TextKind
+  name: TextKind
+  nameWithType: IContentTextSource.TextKind
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextKind
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.IContentTextSource.TextId*
+  commentId: Overload:SurvivorsMaker.Data.IContentTextSource.TextId
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html#SurvivorsMaker_Data_IContentTextSource_TextId
+  name: TextId
+  nameWithType: IContentTextSource.TextId
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Data.IContentTextSource.TextName*
+  commentId: Overload:SurvivorsMaker.Data.IContentTextSource.TextName
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html#SurvivorsMaker_Data_IContentTextSource_TextName
+  name: TextName
+  nameWithType: IContentTextSource.TextName
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextName
+- uid: SurvivorsMaker.Data.IContentTextSource.TextDescription*
+  commentId: Overload:SurvivorsMaker.Data.IContentTextSource.TextDescription
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html#SurvivorsMaker_Data_IContentTextSource_TextDescription
+  name: TextDescription
+  nameWithType: IContentTextSource.TextDescription
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextDescription
+- uid: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_DefaultKey_SurvivorsMaker_Data_ContentTextKind_System_String_
+  name: DefaultKey(ContentTextKind, string)
+  nameWithType: ContentTextTable.DefaultKey(ContentTextKind, string)
+  fullName: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind, string)
+  nameWithType.vb: ContentTextTable.DefaultKey(ContentTextKind, String)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind, String)
+  name.vb: DefaultKey(ContentTextKind, String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+    name: DefaultKey
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_DefaultKey_SurvivorsMaker_Data_ContentTextKind_System_String_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextKind.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+    name: DefaultKey
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_DefaultKey_SurvivorsMaker_Data_ContentTextKind_System_String_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextKind.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Data.IContentTextSource.TextKey*
+  commentId: Overload:SurvivorsMaker.Data.IContentTextSource.TextKey
+  isExternal: true
+  href: SurvivorsMaker.Data.IContentTextSource.html#SurvivorsMaker_Data_IContentTextSource_TextKey
+  name: TextKey
+  nameWithType: IContentTextSource.TextKey
+  fullName: SurvivorsMaker.Data.IContentTextSource.TextKey

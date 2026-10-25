@@ -1,0 +1,745 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.StatBindings
+  commentId: T:SurvivorsMaker.Simulation.StatBindings
+  id: StatBindings
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.StatBindings.#ctor
+  - SurvivorsMaker.Simulation.StatBindings.AcquisitionEfficiency
+  - SurvivorsMaker.Simulation.StatBindings.Armor
+  - SurvivorsMaker.Simulation.StatBindings.AttackSpeed
+  - SurvivorsMaker.Simulation.StatBindings.CritChance
+  - SurvivorsMaker.Simulation.StatBindings.Damage
+  - SurvivorsMaker.Simulation.StatBindings.Dodge
+  - SurvivorsMaker.Simulation.StatBindings.GrowthThresholdMultiplier
+  - SurvivorsMaker.Simulation.StatBindings.HealingMultiplier
+  - SurvivorsMaker.Simulation.StatBindings.HealthRegen
+  - SurvivorsMaker.Simulation.StatBindings.Knockback
+  - SurvivorsMaker.Simulation.StatBindings.LifeSteal
+  - SurvivorsMaker.Simulation.StatBindings.Luck
+  - SurvivorsMaker.Simulation.StatBindings.MaxHealth
+  - SurvivorsMaker.Simulation.StatBindings.MoveSpeed
+  - SurvivorsMaker.Simulation.StatBindings.PickupHeal
+  - SurvivorsMaker.Simulation.StatBindings.PickupRange
+  - SurvivorsMaker.Simulation.StatBindings.ProjectileCount
+  - SurvivorsMaker.Simulation.StatBindings.Range
+  - SurvivorsMaker.Simulation.StatBindings.RegenMultiplier
+  - SurvivorsMaker.Simulation.StatBindings.XpGain
+  langs:
+  - csharp
+  - vb
+  name: StatBindings
+  nameWithType: StatBindings
+  fullName: SurvivorsMaker.Simulation.StatBindings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Which stat ids the simulation reads. Change these to use your own catalog.
+  example: []
+  syntax:
+    content: public sealed class StatBindings
+    content.vb: Public NotInheritable Class StatBindings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.StatBindings.MaxHealth
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.MaxHealth
+  id: MaxHealth
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: MaxHealth
+  nameWithType: StatBindings.MaxHealth
+  fullName: SurvivorsMaker.Simulation.StatBindings.MaxHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string MaxHealth
+    return:
+      type: System.String
+    content.vb: Public MaxHealth As String
+- uid: SurvivorsMaker.Simulation.StatBindings.HealthRegen
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.HealthRegen
+  id: HealthRegen
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: HealthRegen
+  nameWithType: StatBindings.HealthRegen
+  fullName: SurvivorsMaker.Simulation.StatBindings.HealthRegen
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string HealthRegen
+    return:
+      type: System.String
+    content.vb: Public HealthRegen As String
+- uid: SurvivorsMaker.Simulation.StatBindings.LifeSteal
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.LifeSteal
+  id: LifeSteal
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: LifeSteal
+  nameWithType: StatBindings.LifeSteal
+  fullName: SurvivorsMaker.Simulation.StatBindings.LifeSteal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent chance to heal on each hit.
+  example: []
+  syntax:
+    content: public string LifeSteal
+    return:
+      type: System.String
+    content.vb: Public LifeSteal As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Armor
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Armor
+  id: Armor
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Armor
+  nameWithType: StatBindings.Armor
+  fullName: SurvivorsMaker.Simulation.StatBindings.Armor
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Armor
+    return:
+      type: System.String
+    content.vb: Public Armor As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Dodge
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Dodge
+  id: Dodge
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Dodge
+  nameWithType: StatBindings.Dodge
+  fullName: SurvivorsMaker.Simulation.StatBindings.Dodge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent dodge chance.
+  example: []
+  syntax:
+    content: public string Dodge
+    return:
+      type: System.String
+    content.vb: Public Dodge As String
+- uid: SurvivorsMaker.Simulation.StatBindings.MoveSpeed
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.MoveSpeed
+  id: MoveSpeed
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: MoveSpeed
+  nameWithType: StatBindings.MoveSpeed
+  fullName: SurvivorsMaker.Simulation.StatBindings.MoveSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent move speed bonus.
+  example: []
+  syntax:
+    content: public string MoveSpeed
+    return:
+      type: System.String
+    content.vb: Public MoveSpeed As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Damage
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Damage
+  id: Damage
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: StatBindings.Damage
+  fullName: SurvivorsMaker.Simulation.StatBindings.Damage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent damage bonus (also <xref href="SurvivorsMaker.Core.DamageFormula.PercentStat" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public string Damage
+    return:
+      type: System.String
+    content.vb: Public Damage As String
+- uid: SurvivorsMaker.Simulation.StatBindings.AttackSpeed
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.AttackSpeed
+  id: AttackSpeed
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: AttackSpeed
+  nameWithType: StatBindings.AttackSpeed
+  fullName: SurvivorsMaker.Simulation.StatBindings.AttackSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent attack speed bonus.
+  example: []
+  syntax:
+    content: public string AttackSpeed
+    return:
+      type: System.String
+    content.vb: Public AttackSpeed As String
+- uid: SurvivorsMaker.Simulation.StatBindings.CritChance
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.CritChance
+  id: CritChance
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: CritChance
+  nameWithType: StatBindings.CritChance
+  fullName: SurvivorsMaker.Simulation.StatBindings.CritChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent crit chance added to the weapon's.
+  example: []
+  syntax:
+    content: public string CritChance
+    return:
+      type: System.String
+    content.vb: Public CritChance As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Range
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Range
+  id: Range
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: StatBindings.Range
+  fullName: SurvivorsMaker.Simulation.StatBindings.Range
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Flat range added to weapon reach.
+  example: []
+  syntax:
+    content: public string Range
+    return:
+      type: System.String
+    content.vb: Public Range As String
+- uid: SurvivorsMaker.Simulation.StatBindings.ProjectileCount
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.ProjectileCount
+  id: ProjectileCount
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: ProjectileCount
+  nameWithType: StatBindings.ProjectileCount
+  fullName: SurvivorsMaker.Simulation.StatBindings.ProjectileCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Flat extra projectiles for ranged weapons.
+  example: []
+  syntax:
+    content: public string ProjectileCount
+    return:
+      type: System.String
+    content.vb: Public ProjectileCount As String
+- uid: SurvivorsMaker.Simulation.StatBindings.PickupRange
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.PickupRange
+  id: PickupRange
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: PickupRange
+  nameWithType: StatBindings.PickupRange
+  fullName: SurvivorsMaker.Simulation.StatBindings.PickupRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent pickup radius bonus.
+  example: []
+  syntax:
+    content: public string PickupRange
+    return:
+      type: System.String
+    content.vb: Public PickupRange As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Luck
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Luck
+  id: Luck
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Luck
+  nameWithType: StatBindings.Luck
+  fullName: SurvivorsMaker.Simulation.StatBindings.Luck
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent heal-drop chance bonus.
+  example: []
+  syntax:
+    content: public string Luck
+    return:
+      type: System.String
+    content.vb: Public Luck As String
+- uid: SurvivorsMaker.Simulation.StatBindings.XpGain
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.XpGain
+  id: XpGain
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: XpGain
+  nameWithType: StatBindings.XpGain
+  fullName: SurvivorsMaker.Simulation.StatBindings.XpGain
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent experience bonus.
+  example: []
+  syntax:
+    content: public string XpGain
+    return:
+      type: System.String
+    content.vb: Public XpGain As String
+- uid: SurvivorsMaker.Simulation.StatBindings.Knockback
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.Knockback
+  id: Knockback
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: Knockback
+  nameWithType: StatBindings.Knockback
+  fullName: SurvivorsMaker.Simulation.StatBindings.Knockback
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Flat knockback strength added to weapons. Empty = none.
+  example: []
+  syntax:
+    content: public string Knockback
+    return:
+      type: System.String
+    content.vb: Public Knockback As String
+- uid: SurvivorsMaker.Simulation.StatBindings.PickupHeal
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.PickupHeal
+  id: PickupHeal
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: PickupHeal
+  nameWithType: StatBindings.PickupHeal
+  fullName: SurvivorsMaker.Simulation.StatBindings.PickupHeal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Flat bonus to healing pickups. Empty = none.
+  example: []
+  syntax:
+    content: public string PickupHeal
+    return:
+      type: System.String
+    content.vb: Public PickupHeal As String
+- uid: SurvivorsMaker.Simulation.StatBindings.AcquisitionEfficiency
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.AcquisitionEfficiency
+  id: AcquisitionEfficiency
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: AcquisitionEfficiency
+  nameWithType: StatBindings.AcquisitionEfficiency
+  fullName: SurvivorsMaker.Simulation.StatBindings.AcquisitionEfficiency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent adjustments; zero preserves existing behavior. Consumers apply their configured percent unit.
+  example: []
+  syntax:
+    content: public string AcquisitionEfficiency
+    return:
+      type: System.String
+    content.vb: Public AcquisitionEfficiency As String
+- uid: SurvivorsMaker.Simulation.StatBindings.HealingMultiplier
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.HealingMultiplier
+  id: HealingMultiplier
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: HealingMultiplier
+  nameWithType: StatBindings.HealingMultiplier
+  fullName: SurvivorsMaker.Simulation.StatBindings.HealingMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string HealingMultiplier
+    return:
+      type: System.String
+    content.vb: Public HealingMultiplier As String
+- uid: SurvivorsMaker.Simulation.StatBindings.RegenMultiplier
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.RegenMultiplier
+  id: RegenMultiplier
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: RegenMultiplier
+  nameWithType: StatBindings.RegenMultiplier
+  fullName: SurvivorsMaker.Simulation.StatBindings.RegenMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string RegenMultiplier
+    return:
+      type: System.String
+    content.vb: Public RegenMultiplier As String
+- uid: SurvivorsMaker.Simulation.StatBindings.GrowthThresholdMultiplier
+  commentId: F:SurvivorsMaker.Simulation.StatBindings.GrowthThresholdMultiplier
+  id: GrowthThresholdMultiplier
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: GrowthThresholdMultiplier
+  nameWithType: StatBindings.GrowthThresholdMultiplier
+  fullName: SurvivorsMaker.Simulation.StatBindings.GrowthThresholdMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string GrowthThresholdMultiplier
+    return:
+      type: System.String
+    content.vb: Public GrowthThresholdMultiplier As String
+- uid: SurvivorsMaker.Simulation.StatBindings.#ctor
+  commentId: M:SurvivorsMaker.Simulation.StatBindings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.StatBindings
+  langs:
+  - csharp
+  - vb
+  name: StatBindings()
+  nameWithType: StatBindings.StatBindings()
+  fullName: SurvivorsMaker.Simulation.StatBindings.StatBindings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatBindings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.StatBindings.#ctor*
+  nameWithType.vb: StatBindings.New()
+  fullName.vb: SurvivorsMaker.Simulation.StatBindings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Core.DamageFormula.PercentStat
+  commentId: F:SurvivorsMaker.Core.DamageFormula.PercentStat
+  isExternal: true
+  href: SurvivorsMaker.Core.DamageFormula.html#SurvivorsMaker_Core_DamageFormula_PercentStat
+  name: PercentStat
+  nameWithType: DamageFormula.PercentStat
+  fullName: SurvivorsMaker.Core.DamageFormula.PercentStat
+- uid: SurvivorsMaker.Simulation.StatBindings.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.StatBindings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatBindings.html#SurvivorsMaker_Simulation_StatBindings__ctor
+  name: StatBindings
+  nameWithType: StatBindings.StatBindings
+  fullName: SurvivorsMaker.Simulation.StatBindings.StatBindings
+  nameWithType.vb: StatBindings.New
+  fullName.vb: SurvivorsMaker.Simulation.StatBindings.New
+  name.vb: New

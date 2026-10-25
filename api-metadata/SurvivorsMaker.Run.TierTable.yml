@@ -1,0 +1,634 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.TierTable
+  commentId: T:SurvivorsMaker.Run.TierTable
+  id: TierTable
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.TierTable.#ctor
+  - SurvivorsMaker.Run.TierTable.BaseTotal
+  - SurvivorsMaker.Run.TierTable.Higher
+  - SurvivorsMaker.Run.TierTable.Roll(System.Int32,SurvivorsMaker.Simulation.SimRandom,System.Collections.Generic.List{System.Single})
+  - SurvivorsMaker.Run.TierTable.TierCount
+  - SurvivorsMaker.Run.TierTable.Weights(System.Int32,System.Collections.Generic.List{System.Single})
+  langs:
+  - csharp
+  - vb
+  name: TierTable
+  nameWithType: TierTable
+  fullName: SurvivorsMaker.Run.TierTable
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Tier odds by progress (wave in arena mode, level in field mode).
+  example: []
+  syntax:
+    content: public sealed class TierTable
+    content.vb: Public NotInheritable Class TierTable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.TierTable.BaseTotal
+  commentId: F:SurvivorsMaker.Run.TierTable.BaseTotal
+  id: BaseTotal
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: BaseTotal
+  nameWithType: TierTable.BaseTotal
+  fullName: SurvivorsMaker.Run.TierTable.BaseTotal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float BaseTotal
+    return:
+      type: System.Single
+    content.vb: Public BaseTotal As Single
+- uid: SurvivorsMaker.Run.TierTable.Higher
+  commentId: F:SurvivorsMaker.Run.TierTable.Higher
+  id: Higher
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: Higher
+  nameWithType: TierTable.Higher
+  fullName: SurvivorsMaker.Run.TierTable.Higher
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Weights for tiers 1, 2, … (tier 0 takes the remainder).
+  example: []
+  syntax:
+    content: public List<TierWeight> Higher
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.TierWeight}
+    content.vb: Public Higher As List(Of TierWeight)
+- uid: SurvivorsMaker.Run.TierTable.Weights(System.Int32,System.Collections.Generic.List{System.Single})
+  commentId: M:SurvivorsMaker.Run.TierTable.Weights(System.Int32,System.Collections.Generic.List{System.Single})
+  id: Weights(System.Int32,System.Collections.Generic.List{System.Single})
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: Weights(int, List<float>)
+  nameWithType: TierTable.Weights(int, List<float>)
+  fullName: SurvivorsMaker.Run.TierTable.Weights(int, System.Collections.Generic.List<float>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Fills <code class="paramref">weights</code> (cleared first) with one weight per tier.
+  example: []
+  syntax:
+    content: public void Weights(int progress, List<float> weights)
+    parameters:
+    - id: progress
+      type: System.Int32
+    - id: weights
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Sub Weights(progress As Integer, weights As List(Of Single))
+  overload: SurvivorsMaker.Run.TierTable.Weights*
+  nameWithType.vb: TierTable.Weights(Integer, List(Of Single))
+  fullName.vb: SurvivorsMaker.Run.TierTable.Weights(Integer, System.Collections.Generic.List(Of Single))
+  name.vb: Weights(Integer, List(Of Single))
+- uid: SurvivorsMaker.Run.TierTable.Roll(System.Int32,SurvivorsMaker.Simulation.SimRandom,System.Collections.Generic.List{System.Single})
+  commentId: M:SurvivorsMaker.Run.TierTable.Roll(System.Int32,SurvivorsMaker.Simulation.SimRandom,System.Collections.Generic.List{System.Single})
+  id: Roll(System.Int32,SurvivorsMaker.Simulation.SimRandom,System.Collections.Generic.List{System.Single})
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: Roll(int, SimRandom, List<float>)
+  nameWithType: TierTable.Roll(int, SimRandom, List<float>)
+  fullName: SurvivorsMaker.Run.TierTable.Roll(int, SurvivorsMaker.Simulation.SimRandom, System.Collections.Generic.List<float>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Rolls a tier (one random draw). Returns 0 when all weights are 0.
+  example: []
+  syntax:
+    content: public int Roll(int progress, SimRandom random, List<float> scratch)
+    parameters:
+    - id: progress
+      type: System.Int32
+    - id: random
+      type: SurvivorsMaker.Simulation.SimRandom
+    - id: scratch
+      type: System.Collections.Generic.List{System.Single}
+    return:
+      type: System.Int32
+    content.vb: Public Function Roll(progress As Integer, random As SimRandom, scratch As List(Of Single)) As Integer
+  overload: SurvivorsMaker.Run.TierTable.Roll*
+  nameWithType.vb: TierTable.Roll(Integer, SimRandom, List(Of Single))
+  fullName.vb: SurvivorsMaker.Run.TierTable.Roll(Integer, SurvivorsMaker.Simulation.SimRandom, System.Collections.Generic.List(Of
+    Single))
+  name.vb: Roll(Integer, SimRandom, List(Of Single))
+- uid: SurvivorsMaker.Run.TierTable.#ctor
+  commentId: M:SurvivorsMaker.Run.TierTable.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: TierTable()
+  nameWithType: TierTable.TierTable()
+  fullName: SurvivorsMaker.Run.TierTable.TierTable()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public TierTable()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.TierTable.#ctor*
+  nameWithType.vb: TierTable.New()
+  fullName.vb: SurvivorsMaker.Run.TierTable.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Run.TierTable.TierCount
+  commentId: P:SurvivorsMaker.Run.TierTable.TierCount
+  id: TierCount
+  parent: SurvivorsMaker.Run.TierTable
+  langs:
+  - csharp
+  - vb
+  name: TierCount
+  nameWithType: TierTable.TierCount
+  fullName: SurvivorsMaker.Run.TierTable.TierCount
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int TierCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TierCount As Integer
+  overload: SurvivorsMaker.Run.TierTable.TierCount*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.TierWeight}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.TierWeight}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TierWeight>
+  nameWithType: List<TierWeight>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.TierWeight>
+  nameWithType.vb: List(Of TierWeight)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.TierWeight)
+  name.vb: List(Of TierWeight)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.TierWeight
+    name: TierWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TierWeight.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.TierWeight
+    name: TierWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TierWeight.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Run.TierTable.Weights*
+  commentId: Overload:SurvivorsMaker.Run.TierTable.Weights
+  isExternal: true
+  href: SurvivorsMaker.Run.TierTable.html#SurvivorsMaker_Run_TierTable_Weights_System_Int32_System_Collections_Generic_List_System_Single__
+  name: Weights
+  nameWithType: TierTable.Weights
+  fullName: SurvivorsMaker.Run.TierTable.Weights
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<float>
+  nameWithType: List<float>
+  fullName: System.Collections.Generic.List<float>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SurvivorsMaker.Run.TierTable.Roll*
+  commentId: Overload:SurvivorsMaker.Run.TierTable.Roll
+  isExternal: true
+  href: SurvivorsMaker.Run.TierTable.html#SurvivorsMaker_Run_TierTable_Roll_System_Int32_SurvivorsMaker_Simulation_SimRandom_System_Collections_Generic_List_System_Single__
+  name: Roll
+  nameWithType: TierTable.Roll
+  fullName: SurvivorsMaker.Run.TierTable.Roll
+- uid: SurvivorsMaker.Simulation.SimRandom
+  commentId: T:SurvivorsMaker.Simulation.SimRandom
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimRandom.html
+  name: SimRandom
+  nameWithType: SimRandom
+  fullName: SurvivorsMaker.Simulation.SimRandom
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Run.TierTable.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.TierTable.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.TierTable.html#SurvivorsMaker_Run_TierTable__ctor
+  name: TierTable
+  nameWithType: TierTable.TierTable
+  fullName: SurvivorsMaker.Run.TierTable.TierTable
+  nameWithType.vb: TierTable.New
+  fullName.vb: SurvivorsMaker.Run.TierTable.New
+  name.vb: New
+- uid: SurvivorsMaker.Run.TierTable.TierCount*
+  commentId: Overload:SurvivorsMaker.Run.TierTable.TierCount
+  isExternal: true
+  href: SurvivorsMaker.Run.TierTable.html#SurvivorsMaker_Run_TierTable_TierCount
+  name: TierCount
+  nameWithType: TierTable.TierCount
+  fullName: SurvivorsMaker.Run.TierTable.TierCount

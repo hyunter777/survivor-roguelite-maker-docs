@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages
+  commentId: T:SurvivorsMaker.Presentation.TextProviderLanguages
+  id: TextProviderLanguages
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.TextProviderLanguages.#ctor(SurvivorsMaker.Presentation.ITextProvider)
+  - SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+  - SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+  - SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+  - SurvivorsMaker.Presentation.TextProviderLanguages.Resolver(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TextProviderLanguages
+  nameWithType: TextProviderLanguages
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Offers an <xref href="SurvivorsMaker.Presentation.ITextProvider" data-throw-if-not-resolved="false"></xref>'s languages
+    on the settings screen and installs its lookup.
+  example: []
+  syntax:
+    content: 'public sealed class TextProviderLanguages : IUiLanguageProvider'
+    content.vb: Public NotInheritable Class TextProviderLanguages Implements IUiLanguageProvider
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Presentation.IUiLanguageProvider
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.#ctor(SurvivorsMaker.Presentation.ITextProvider)
+  commentId: M:SurvivorsMaker.Presentation.TextProviderLanguages.#ctor(SurvivorsMaker.Presentation.ITextProvider)
+  id: '#ctor(SurvivorsMaker.Presentation.ITextProvider)'
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: TextProviderLanguages(ITextProvider)
+  nameWithType: TextProviderLanguages.TextProviderLanguages(ITextProvider)
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.TextProviderLanguages(SurvivorsMaker.Presentation.ITextProvider)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public TextProviderLanguages(ITextProvider provider)
+    parameters:
+    - id: provider
+      type: SurvivorsMaker.Presentation.ITextProvider
+    content.vb: Public Sub New(provider As ITextProvider)
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.#ctor*
+  nameWithType.vb: TextProviderLanguages.New(ITextProvider)
+  fullName.vb: SurvivorsMaker.Presentation.TextProviderLanguages.New(SurvivorsMaker.Presentation.ITextProvider)
+  name.vb: New(ITextProvider)
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  id: DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: DisplayName(string, UiStrings)
+  nameWithType: TextProviderLanguages.DisplayName(string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName(string, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The provider's "settings.language.value.&lt;code&gt;" in that language, else the string table's name, else the
+    code.
+  example: []
+  syntax:
+    content: public string DisplayName(string code, UiStrings strings)
+    parameters:
+    - id: code
+      type: System.String
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Function DisplayName(code As String, strings As UiStrings) As String
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName*
+  implements:
+  - SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  nameWithType.vb: TextProviderLanguages.DisplayName(String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName(String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: DisplayName(String, UiStrings)
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver(System.String)
+  commentId: M:SurvivorsMaker.Presentation.TextProviderLanguages.Resolver(System.String)
+  id: Resolver(System.String)
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: Resolver(string)
+  nameWithType: TextProviderLanguages.Resolver(string)
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Always a resolver, so switching back to the authored language also removes the previous translation.
+  example: []
+  syntax:
+    content: public Func<string, string> Resolver(string code)
+    parameters:
+    - id: code
+      type: System.String
+    return:
+      type: System.Func{System.String,System.String}
+    content.vb: Public Function Resolver(code As String) As Func(Of String, String)
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver*
+  implements:
+  - SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(System.String)
+  nameWithType.vb: TextProviderLanguages.Resolver(String)
+  fullName.vb: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver(String)
+  name.vb: Resolver(String)
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+  commentId: P:SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+  id: Provider
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: TextProviderLanguages.Provider
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public ITextProvider Provider { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Presentation.ITextProvider
+    content.vb: Public ReadOnly Property Provider As ITextProvider
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.Provider*
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+  commentId: P:SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+  id: Languages
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: Languages
+  nameWithType: TextProviderLanguages.Languages
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Language codes in display order. Never empty.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> Languages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public ReadOnly Property Languages As IReadOnlyList(Of String)
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.Languages*
+  implements:
+  - SurvivorsMaker.Presentation.IUiLanguageProvider.Languages
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+  commentId: P:SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+  id: DefaultLanguage
+  parent: SurvivorsMaker.Presentation.TextProviderLanguages
+  langs:
+  - csharp
+  - vb
+  name: DefaultLanguage
+  nameWithType: TextProviderLanguages.DefaultLanguage
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Used when the saved choice is empty or no longer offered.
+  example: []
+  syntax:
+    content: public string DefaultLanguage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DefaultLanguage As String
+  overload: SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage*
+  implements:
+  - SurvivorsMaker.Presentation.IUiLanguageProvider.DefaultLanguage
+references:
+- uid: SurvivorsMaker.Presentation.ITextProvider
+  commentId: T:SurvivorsMaker.Presentation.ITextProvider
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ITextProvider.html
+  name: ITextProvider
+  nameWithType: ITextProvider
+  fullName: SurvivorsMaker.Presentation.ITextProvider
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Presentation.IUiLanguageProvider
+  commentId: T:SurvivorsMaker.Presentation.IUiLanguageProvider
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IUiLanguageProvider.html
+  name: IUiLanguageProvider
+  nameWithType: IUiLanguageProvider
+  fullName: SurvivorsMaker.Presentation.IUiLanguageProvider
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages__ctor_SurvivorsMaker_Presentation_ITextProvider_
+  name: TextProviderLanguages
+  nameWithType: TextProviderLanguages.TextProviderLanguages
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.TextProviderLanguages
+  nameWithType.vb: TextProviderLanguages.New
+  fullName.vb: SurvivorsMaker.Presentation.TextProviderLanguages.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages_DisplayName_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: DisplayName
+  nameWithType: TextProviderLanguages.DisplayName
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.DisplayName
+- uid: SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.IUiLanguageProvider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_DisplayName_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: DisplayName(string, UiStrings)
+  nameWithType: IUiLanguageProvider.DisplayName(string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(string, SurvivorsMaker.Presentation.UiStrings)
+  nameWithType.vb: IUiLanguageProvider.DisplayName(String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: DisplayName(String, UiStrings)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+    name: DisplayName
+    isExternal: true
+    href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_DisplayName_System_String_SurvivorsMaker_Presentation_UiStrings_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.UiStrings
+    name: UiStrings
+    isExternal: true
+    href: SurvivorsMaker.Presentation.UiStrings.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.IUiLanguageProvider.DisplayName(System.String,SurvivorsMaker.Presentation.UiStrings)
+    name: DisplayName
+    isExternal: true
+    href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_DisplayName_System_String_SurvivorsMaker_Presentation_UiStrings_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.UiStrings
+    name: UiStrings
+    isExternal: true
+    href: SurvivorsMaker.Presentation.UiStrings.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.UiStrings
+  commentId: T:SurvivorsMaker.Presentation.UiStrings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiStrings.html
+  name: UiStrings
+  nameWithType: UiStrings
+  fullName: SurvivorsMaker.Presentation.UiStrings
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.Resolver
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages_Resolver_System_String_
+  name: Resolver
+  nameWithType: TextProviderLanguages.Resolver
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Resolver
+- uid: SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(System.String)
+  commentId: M:SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(System.String)
+  parent: SurvivorsMaker.Presentation.IUiLanguageProvider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_Resolver_System_String_
+  name: Resolver(string)
+  nameWithType: IUiLanguageProvider.Resolver(string)
+  fullName: SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(string)
+  nameWithType.vb: IUiLanguageProvider.Resolver(String)
+  fullName.vb: SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(String)
+  name.vb: Resolver(String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(System.String)
+    name: Resolver
+    isExternal: true
+    href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_Resolver_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.IUiLanguageProvider.Resolver(System.String)
+    name: Resolver
+    isExternal: true
+    href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_Resolver_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: ','
+  - name: ' '
+  - name: TResult
+  - name: )
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Provider*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages_Provider
+  name: Provider
+  nameWithType: TextProviderLanguages.Provider
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Provider
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.Languages*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages_Languages
+  name: Languages
+  nameWithType: TextProviderLanguages.Languages
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.Languages
+- uid: SurvivorsMaker.Presentation.IUiLanguageProvider.Languages
+  commentId: P:SurvivorsMaker.Presentation.IUiLanguageProvider.Languages
+  parent: SurvivorsMaker.Presentation.IUiLanguageProvider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_Languages
+  name: Languages
+  nameWithType: IUiLanguageProvider.Languages
+  fullName: SurvivorsMaker.Presentation.IUiLanguageProvider.Languages
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage*
+  commentId: Overload:SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+  isExternal: true
+  href: SurvivorsMaker.Presentation.TextProviderLanguages.html#SurvivorsMaker_Presentation_TextProviderLanguages_DefaultLanguage
+  name: DefaultLanguage
+  nameWithType: TextProviderLanguages.DefaultLanguage
+  fullName: SurvivorsMaker.Presentation.TextProviderLanguages.DefaultLanguage
+- uid: SurvivorsMaker.Presentation.IUiLanguageProvider.DefaultLanguage
+  commentId: P:SurvivorsMaker.Presentation.IUiLanguageProvider.DefaultLanguage
+  parent: SurvivorsMaker.Presentation.IUiLanguageProvider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.IUiLanguageProvider.html#SurvivorsMaker_Presentation_IUiLanguageProvider_DefaultLanguage
+  name: DefaultLanguage
+  nameWithType: IUiLanguageProvider.DefaultLanguage
+  fullName: SurvivorsMaker.Presentation.IUiLanguageProvider.DefaultLanguage

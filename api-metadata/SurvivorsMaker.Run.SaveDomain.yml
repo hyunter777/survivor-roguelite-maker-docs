@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.SaveDomain
+  commentId: T:SurvivorsMaker.Run.SaveDomain
+  id: SaveDomain
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.SaveDomain.Options
+  - SurvivorsMaker.Run.SaveDomain.Profile
+  - SurvivorsMaker.Run.SaveDomain.Run
+  langs:
+  - csharp
+  - vb
+  name: SaveDomain
+  nameWithType: SaveDomain
+  fullName: SurvivorsMaker.Run.SaveDomain
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Independent persistence domain for profile, options or one saved run.
+  example: []
+  syntax:
+    content: public enum SaveDomain
+    content.vb: Public Enum SaveDomain
+- uid: SurvivorsMaker.Run.SaveDomain.Options
+  commentId: F:SurvivorsMaker.Run.SaveDomain.Options
+  id: Options
+  parent: SurvivorsMaker.Run.SaveDomain
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: SaveDomain.Options
+  fullName: SurvivorsMaker.Run.SaveDomain.Options
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Options = 0
+    return:
+      type: SurvivorsMaker.Run.SaveDomain
+- uid: SurvivorsMaker.Run.SaveDomain.Profile
+  commentId: F:SurvivorsMaker.Run.SaveDomain.Profile
+  id: Profile
+  parent: SurvivorsMaker.Run.SaveDomain
+  langs:
+  - csharp
+  - vb
+  name: Profile
+  nameWithType: SaveDomain.Profile
+  fullName: SurvivorsMaker.Run.SaveDomain.Profile
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Profile = 1
+    return:
+      type: SurvivorsMaker.Run.SaveDomain
+- uid: SurvivorsMaker.Run.SaveDomain.Run
+  commentId: F:SurvivorsMaker.Run.SaveDomain.Run
+  id: Run
+  parent: SurvivorsMaker.Run.SaveDomain
+  langs:
+  - csharp
+  - vb
+  name: Run
+  nameWithType: SaveDomain.Run
+  fullName: SurvivorsMaker.Run.SaveDomain.Run
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Run = 2
+    return:
+      type: SurvivorsMaker.Run.SaveDomain
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.SaveDomain
+  commentId: T:SurvivorsMaker.Run.SaveDomain
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveDomain.html
+  name: SaveDomain
+  nameWithType: SaveDomain
+  fullName: SurvivorsMaker.Run.SaveDomain

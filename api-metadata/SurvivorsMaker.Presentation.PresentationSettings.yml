@@ -1,0 +1,1022 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.PresentationSettings
+  commentId: T:SurvivorsMaker.Presentation.PresentationSettings
+  id: PresentationSettings
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.PresentationSettings.#ctor
+  - SurvivorsMaker.Presentation.PresentationSettings.Accessibility
+  - SurvivorsMaker.Presentation.PresentationSettings.Boss
+  - SurvivorsMaker.Presentation.PresentationSettings.Character
+  - SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  - SurvivorsMaker.Presentation.PresentationSettings.DamageNumbers
+  - SurvivorsMaker.Presentation.PresentationSettings.Death
+  - SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+  - SurvivorsMaker.Presentation.PresentationSettings.Effects
+  - SurvivorsMaker.Presentation.PresentationSettings.Elite
+  - SurvivorsMaker.Presentation.PresentationSettings.Now
+  - SurvivorsMaker.Presentation.PresentationSettings.Shake
+  - SurvivorsMaker.Presentation.PresentationSettings.Sound
+  - SurvivorsMaker.Presentation.PresentationSettings.Status
+  - SurvivorsMaker.Presentation.PresentationSettings.UseUnscaledTime
+  - SurvivorsMaker.Presentation.PresentationSettings.Views
+  - SurvivorsMaker.Presentation.PresentationSettings.WeaponFields
+  langs:
+  - csharp
+  - vb
+  name: PresentationSettings
+  nameWithType: PresentationSettings
+  fullName: SurvivorsMaker.Presentation.PresentationSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Presentation-only tuning. These values never affect simulation state.
+  example: []
+  syntax:
+    content: public sealed class PresentationSettings
+    content.vb: Public NotInheritable Class PresentationSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.PresentationSettings.UseUnscaledTime
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.UseUnscaledTime
+  id: UseUnscaledTime
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: UseUnscaledTime
+  nameWithType: PresentationSettings.UseUnscaledTime
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.UseUnscaledTime
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Use real frame time for visual animation, independent of Time.timeScale.
+  example: []
+  syntax:
+    content: '[Tooltip("Use real frame time for visual animation, independent of Time.timeScale.")]
+
+      public bool UseUnscaledTime'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Use real frame time for visual animation, independent of Time.timeScale.")>
+
+      Public UseUnscaledTime As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use real frame time for visual animation, independent of Time.timeScale.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Views
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Views
+  id: Views
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Views
+  nameWithType: PresentationSettings.Views
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Views
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: World-view pooling, depth, sorting and fallback visual settings.
+  example: []
+  syntax:
+    content: '[Tooltip("World-view pooling, depth, sorting and fallback visual settings.")]
+
+      public WorldViewSettings Views'
+    return:
+      type: SurvivorsMaker.Presentation.WorldViewSettings
+    content.vb: '<Tooltip("World-view pooling, depth, sorting and fallback visual settings.")>
+
+      Public Views As WorldViewSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: World-view pooling, depth, sorting and fallback visual settings.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Character
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Character
+  id: Character
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: PresentationSettings.Character
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Character tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Character tuning; a new instance uses the package presentation defaults.")]
+
+      public CharacterVisualSettings Character'
+    return:
+      type: SurvivorsMaker.Presentation.CharacterVisualSettings
+    content.vb: '<Tooltip("Character tuning; a new instance uses the package presentation defaults.")>
+
+      Public Character As CharacterVisualSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Character tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.DamageNumbers
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.DamageNumbers
+  id: DamageNumbers
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: DamageNumbers
+  nameWithType: PresentationSettings.DamageNumbers
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.DamageNumbers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Damage Numbers tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Damage Numbers tuning; a new instance uses the package presentation defaults.")]
+
+      public DamageNumberSettings DamageNumbers'
+    return:
+      type: SurvivorsMaker.Presentation.DamageNumberSettings
+    content.vb: '<Tooltip("Damage Numbers tuning; a new instance uses the package presentation defaults.")>
+
+      Public DamageNumbers As DamageNumberSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Damage Numbers tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Death
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Death
+  id: Death
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Death
+  nameWithType: PresentationSettings.Death
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Death
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Death tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Death tuning; a new instance uses the package presentation defaults.")]
+
+      public DeathEffectSettings Death'
+    return:
+      type: SurvivorsMaker.Presentation.DeathEffectSettings
+    content.vb: '<Tooltip("Death tuning; a new instance uses the package presentation defaults.")>
+
+      Public Death As DeathEffectSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Death tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Shake
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Shake
+  id: Shake
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Shake
+  nameWithType: PresentationSettings.Shake
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Shake
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shake tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Shake tuning; a new instance uses the package presentation defaults.")]
+
+      public ScreenShakeSettings Shake'
+    return:
+      type: SurvivorsMaker.Presentation.ScreenShakeSettings
+    content.vb: '<Tooltip("Shake tuning; a new instance uses the package presentation defaults.")>
+
+      Public Shake As ScreenShakeSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Shake tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Sound
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Sound
+  id: Sound
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Sound
+  nameWithType: PresentationSettings.Sound
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Sound
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sound tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Sound tuning; a new instance uses the package presentation defaults.")]
+
+      public SoundPlaybackSettings Sound'
+    return:
+      type: SurvivorsMaker.Presentation.SoundPlaybackSettings
+    content.vb: '<Tooltip("Sound tuning; a new instance uses the package presentation defaults.")>
+
+      Public Sound As SoundPlaybackSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sound tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Status
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Status
+  id: Status
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: PresentationSettings.Status
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Status tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Status tuning; a new instance uses the package presentation defaults.")]
+
+      public StatusVisualSettings Status'
+    return:
+      type: SurvivorsMaker.Presentation.StatusVisualSettings
+    content.vb: '<Tooltip("Status tuning; a new instance uses the package presentation defaults.")>
+
+      Public Status As StatusVisualSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Status tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Elite
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Elite
+  id: Elite
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Elite
+  nameWithType: PresentationSettings.Elite
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Elite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Elite tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Elite tuning; a new instance uses the package presentation defaults.")]
+
+      public EliteVisualSettings Elite'
+    return:
+      type: SurvivorsMaker.Presentation.EliteVisualSettings
+    content.vb: '<Tooltip("Elite tuning; a new instance uses the package presentation defaults.")>
+
+      Public Elite As EliteVisualSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elite tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Boss
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Boss
+  id: Boss
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Boss
+  nameWithType: PresentationSettings.Boss
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Boss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss tuning; a new instance uses the package presentation defaults.")]
+
+      public BossVisualSettings Boss'
+    return:
+      type: SurvivorsMaker.Presentation.BossVisualSettings
+    content.vb: '<Tooltip("Boss tuning; a new instance uses the package presentation defaults.")>
+
+      Public Boss As BossVisualSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Effects
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Effects
+  id: Effects
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: PresentationSettings.Effects
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Effects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Effects tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Effects tuning; a new instance uses the package presentation defaults.")]
+
+      public CombatEffectSettings Effects'
+    return:
+      type: SurvivorsMaker.Presentation.CombatEffectSettings
+    content.vb: '<Tooltip("Effects tuning; a new instance uses the package presentation defaults.")>
+
+      Public Effects As CombatEffectSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Effects tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.WeaponFields
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.WeaponFields
+  id: WeaponFields
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: WeaponFields
+  nameWithType: PresentationSettings.WeaponFields
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.WeaponFields
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Weapon Fields tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Weapon Fields tuning; a new instance uses the package presentation defaults.")]
+
+      public WeaponFieldSettings WeaponFields'
+    return:
+      type: SurvivorsMaker.Presentation.WeaponFieldSettings
+    content.vb: '<Tooltip("Weapon Fields tuning; a new instance uses the package presentation defaults.")>
+
+      Public WeaponFields As WeaponFieldSettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Weapon Fields tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Accessibility
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.Accessibility
+  id: Accessibility
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Accessibility
+  nameWithType: PresentationSettings.Accessibility
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Accessibility
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Accessibility tuning; a new instance uses the package presentation defaults.
+  example: []
+  syntax:
+    content: '[Tooltip("Accessibility tuning; a new instance uses the package presentation defaults.")]
+
+      public AccessibilitySettings Accessibility'
+    return:
+      type: SurvivorsMaker.Presentation.AccessibilitySettings
+    content.vb: '<Tooltip("Accessibility tuning; a new instance uses the package presentation defaults.")>
+
+      Public Accessibility As AccessibilitySettings'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Accessibility tuning; a new instance uses the package presentation defaults.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  id: CustomEvents
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: CustomEvents
+  nameWithType: PresentationSettings.CustomEvents
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: '[Tooltip("Effects for game-defined events by id (SimEvent.CustomId). Code can also register handlers with WorldView.RegisterCustomEvent.")]
+
+      public List<CustomEventEffect> CustomEvents'
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Presentation.CustomEventEffect}
+    content.vb: '<Tooltip("Effects for game-defined events by id (SimEvent.CustomId). Code can also register handlers with
+      WorldView.RegisterCustomEvent.")>
+
+      Public CustomEvents As List(Of CustomEventEffect)'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Effects for game-defined events by id (SimEvent.CustomId). Code can also register handlers with WorldView.RegisterCustomEvent.
+- uid: SurvivorsMaker.Presentation.PresentationSettings.#ctor
+  commentId: M:SurvivorsMaker.Presentation.PresentationSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: PresentationSettings()
+  nameWithType: PresentationSettings.PresentationSettings()
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.PresentationSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public PresentationSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.PresentationSettings.#ctor*
+  nameWithType.vb: PresentationSettings.New()
+  fullName.vb: SurvivorsMaker.Presentation.PresentationSettings.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+  commentId: P:SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+  id: DeltaTime
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: DeltaTime
+  nameWithType: PresentationSettings.DeltaTime
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float DeltaTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DeltaTime As Single
+  overload: SurvivorsMaker.Presentation.PresentationSettings.DeltaTime*
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Now
+  commentId: P:SurvivorsMaker.Presentation.PresentationSettings.Now
+  id: Now
+  parent: SurvivorsMaker.Presentation.PresentationSettings
+  langs:
+  - csharp
+  - vb
+  name: Now
+  nameWithType: PresentationSettings.Now
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Now
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float Now { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Now As Single
+  overload: SurvivorsMaker.Presentation.PresentationSettings.Now*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Presentation.WorldViewSettings
+  commentId: T:SurvivorsMaker.Presentation.WorldViewSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WorldViewSettings.html
+  name: WorldViewSettings
+  nameWithType: WorldViewSettings
+  fullName: SurvivorsMaker.Presentation.WorldViewSettings
+- uid: SurvivorsMaker.Presentation.CharacterVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.CharacterVisualSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CharacterVisualSettings.html
+  name: CharacterVisualSettings
+  nameWithType: CharacterVisualSettings
+  fullName: SurvivorsMaker.Presentation.CharacterVisualSettings
+- uid: SurvivorsMaker.Presentation.DamageNumberSettings
+  commentId: T:SurvivorsMaker.Presentation.DamageNumberSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DamageNumberSettings.html
+  name: DamageNumberSettings
+  nameWithType: DamageNumberSettings
+  fullName: SurvivorsMaker.Presentation.DamageNumberSettings
+- uid: SurvivorsMaker.Presentation.DeathEffectSettings
+  commentId: T:SurvivorsMaker.Presentation.DeathEffectSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DeathEffectSettings.html
+  name: DeathEffectSettings
+  nameWithType: DeathEffectSettings
+  fullName: SurvivorsMaker.Presentation.DeathEffectSettings
+- uid: SurvivorsMaker.Presentation.ScreenShakeSettings
+  commentId: T:SurvivorsMaker.Presentation.ScreenShakeSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ScreenShakeSettings.html
+  name: ScreenShakeSettings
+  nameWithType: ScreenShakeSettings
+  fullName: SurvivorsMaker.Presentation.ScreenShakeSettings
+- uid: SurvivorsMaker.Presentation.SoundPlaybackSettings
+  commentId: T:SurvivorsMaker.Presentation.SoundPlaybackSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundPlaybackSettings.html
+  name: SoundPlaybackSettings
+  nameWithType: SoundPlaybackSettings
+  fullName: SurvivorsMaker.Presentation.SoundPlaybackSettings
+- uid: SurvivorsMaker.Presentation.StatusVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.StatusVisualSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.StatusVisualSettings.html
+  name: StatusVisualSettings
+  nameWithType: StatusVisualSettings
+  fullName: SurvivorsMaker.Presentation.StatusVisualSettings
+- uid: SurvivorsMaker.Presentation.EliteVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.EliteVisualSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EliteVisualSettings.html
+  name: EliteVisualSettings
+  nameWithType: EliteVisualSettings
+  fullName: SurvivorsMaker.Presentation.EliteVisualSettings
+- uid: SurvivorsMaker.Presentation.BossVisualSettings
+  commentId: T:SurvivorsMaker.Presentation.BossVisualSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.BossVisualSettings.html
+  name: BossVisualSettings
+  nameWithType: BossVisualSettings
+  fullName: SurvivorsMaker.Presentation.BossVisualSettings
+- uid: SurvivorsMaker.Presentation.CombatEffectSettings
+  commentId: T:SurvivorsMaker.Presentation.CombatEffectSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatEffectSettings.html
+  name: CombatEffectSettings
+  nameWithType: CombatEffectSettings
+  fullName: SurvivorsMaker.Presentation.CombatEffectSettings
+- uid: SurvivorsMaker.Presentation.WeaponFieldSettings
+  commentId: T:SurvivorsMaker.Presentation.WeaponFieldSettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WeaponFieldSettings.html
+  name: WeaponFieldSettings
+  nameWithType: WeaponFieldSettings
+  fullName: SurvivorsMaker.Presentation.WeaponFieldSettings
+- uid: SurvivorsMaker.Presentation.AccessibilitySettings
+  commentId: T:SurvivorsMaker.Presentation.AccessibilitySettings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.AccessibilitySettings.html
+  name: AccessibilitySettings
+  nameWithType: AccessibilitySettings
+  fullName: SurvivorsMaker.Presentation.AccessibilitySettings
+- uid: System.Collections.Generic.List{SurvivorsMaker.Presentation.CustomEventEffect}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Presentation.CustomEventEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CustomEventEffect>
+  nameWithType: List<CustomEventEffect>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Presentation.CustomEventEffect>
+  nameWithType.vb: List(Of CustomEventEffect)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Presentation.CustomEventEffect)
+  name.vb: List(Of CustomEventEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Presentation.CustomEventEffect
+    name: CustomEventEffect
+    isExternal: true
+    href: SurvivorsMaker.Presentation.CustomEventEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.CustomEventEffect
+    name: CustomEventEffect
+    isExternal: true
+    href: SurvivorsMaker.Presentation.CustomEventEffect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.PresentationSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.PresentationSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PresentationSettings.html#SurvivorsMaker_Presentation_PresentationSettings__ctor
+  name: PresentationSettings
+  nameWithType: PresentationSettings.PresentationSettings
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.PresentationSettings
+  nameWithType.vb: PresentationSettings.New
+  fullName.vb: SurvivorsMaker.Presentation.PresentationSettings.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.PresentationSettings.DeltaTime*
+  commentId: Overload:SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PresentationSettings.html#SurvivorsMaker_Presentation_PresentationSettings_DeltaTime
+  name: DeltaTime
+  nameWithType: PresentationSettings.DeltaTime
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.DeltaTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.PresentationSettings.Now*
+  commentId: Overload:SurvivorsMaker.Presentation.PresentationSettings.Now
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PresentationSettings.html#SurvivorsMaker_Presentation_PresentationSettings_Now
+  name: Now
+  nameWithType: PresentationSettings.Now
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.Now

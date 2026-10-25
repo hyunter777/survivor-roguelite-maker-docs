@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IEnemyAttack
+  commentId: T:SurvivorsMaker.Simulation.IEnemyAttack
+  id: IEnemyAttack
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.IEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  langs:
+  - csharp
+  - vb
+  name: IEnemyAttack
+  nameWithType: IEnemyAttack
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'An enemy special attack (step 5): cooldown, wind-up and effect.'
+  example: []
+  syntax:
+    content: public interface IEnemyAttack
+    content.vb: Public Interface IEnemyAttack
+  derivedClasses:
+  - SurvivorsMaker.Simulation.ChargeEnemyAttack
+  - SurvivorsMaker.Simulation.ShootEnemyAttack
+  - SurvivorsMaker.Simulation.SummonEnemyAttack
+  - SurvivorsMaker.Simulation.TimedEnemyAttack
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  id: Init(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: Init(SimWorld, Enemy)
+  nameWithType: IEnemyAttack.Init(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.Init(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Init(SimWorld world, Enemy enemy)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub Init(world As SimWorld, enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.IEnemyAttack.Init*
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld, Enemy)
+  nameWithType: IEnemyAttack.Tick(SimWorld, Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.Tick(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Tick(SimWorld world, Enemy enemy)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Sub Tick(world As SimWorld, enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.IEnemyAttack.Tick*
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  id: OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.IEnemyAttack
+  langs:
+  - csharp
+  - vb
+  name: OverridesMovement(Enemy)
+  nameWithType: IEnemyAttack.OverridesMovement(Enemy)
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement(SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: True while the attack controls movement (e.g. a charge); the movement behaviour is skipped.
+  example: []
+  syntax:
+    content: bool OverridesMovement(Enemy enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    return:
+      type: System.Boolean
+    content.vb: Function OverridesMovement(enemy As Enemy) As Boolean
+  overload: SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.Init*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemyAttack.Init
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyAttack.html#SurvivorsMaker_Simulation_IEnemyAttack_Init_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: Init
+  nameWithType: IEnemyAttack.Init
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.Init
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemyAttack.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyAttack.html#SurvivorsMaker_Simulation_IEnemyAttack_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_
+  name: Tick
+  nameWithType: IEnemyAttack.Tick
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.Tick
+- uid: SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement*
+  commentId: Overload:SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IEnemyAttack.html#SurvivorsMaker_Simulation_IEnemyAttack_OverridesMovement_SurvivorsMaker_Simulation_Enemy_
+  name: OverridesMovement
+  nameWithType: IEnemyAttack.OverridesMovement
+  fullName: SurvivorsMaker.Simulation.IEnemyAttack.OverridesMovement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

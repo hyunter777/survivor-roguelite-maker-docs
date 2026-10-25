@@ -1,0 +1,1618 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  id: RunSnapshot
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunSnapshot.#ctor
+  - SurvivorsMaker.Run.RunSnapshot.Arena
+  - SurvivorsMaker.Run.RunSnapshot.ArenaId
+  - SurvivorsMaker.Run.RunSnapshot.CapturePools(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.RunSnapshot.CarriedHealth
+  - SurvivorsMaker.Run.RunSnapshot.Character
+  - SurvivorsMaker.Run.RunSnapshot.CharacterEffects
+  - SurvivorsMaker.Run.RunSnapshot.Choices
+  - SurvivorsMaker.Run.RunSnapshot.ContentRevision
+  - SurvivorsMaker.Run.RunSnapshot.ContinuingEffects
+  - SurvivorsMaker.Run.RunSnapshot.Currency
+  - SurvivorsMaker.Run.RunSnapshot.Difficulty
+  - SurvivorsMaker.Run.RunSnapshot.Experience
+  - SurvivorsMaker.Run.RunSnapshot.HandlerEffects
+  - SurvivorsMaker.Run.RunSnapshot.InventoryRevision
+  - SurvivorsMaker.Run.RunSnapshot.Items
+  - SurvivorsMaker.Run.RunSnapshot.LastWaveCurrency
+  - SurvivorsMaker.Run.RunSnapshot.LastWaveReward
+  - SurvivorsMaker.Run.RunSnapshot.Level
+  - SurvivorsMaker.Run.RunSnapshot.Mode
+  - SurvivorsMaker.Run.RunSnapshot.NextEffectCarryId
+  - SurvivorsMaker.Run.RunSnapshot.NextItemInstanceId
+  - SurvivorsMaker.Run.RunSnapshot.OwnedItems
+  - SurvivorsMaker.Run.RunSnapshot.PendingLevelUps
+  - SurvivorsMaker.Run.RunSnapshot.Phase
+  - SurvivorsMaker.Run.RunSnapshot.PlaytestInvulnerable
+  - SurvivorsMaker.Run.RunSnapshot.PlaytestResumeWave
+  - SurvivorsMaker.Run.RunSnapshot.Pools
+  - SurvivorsMaker.Run.RunSnapshot.Random0
+  - SurvivorsMaker.Run.RunSnapshot.Random1
+  - SurvivorsMaker.Run.RunSnapshot.Random2
+  - SurvivorsMaker.Run.RunSnapshot.Random3
+  - SurvivorsMaker.Run.RunSnapshot.Rerolls
+  - SurvivorsMaker.Run.RunSnapshot.RestorePools(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Run.RunSnapshot.RulesRevision
+  - SurvivorsMaker.Run.RunSnapshot.Seed
+  - SurvivorsMaker.Run.RunSnapshot.Shop
+  - SurvivorsMaker.Run.RunSnapshot.ShopVisit
+  - SurvivorsMaker.Run.RunSnapshot.TotalIncome
+  - SurvivorsMaker.Run.RunSnapshot.TotalKills
+  - SurvivorsMaker.Run.RunSnapshot.TriggerCounters
+  - SurvivorsMaker.Run.RunSnapshot.TriggerSequence
+  - SurvivorsMaker.Run.RunSnapshot.UsedCheats
+  - SurvivorsMaker.Run.RunSnapshot.Version
+  - SurvivorsMaker.Run.RunSnapshot.WaveIndex
+  - SurvivorsMaker.Run.RunSnapshot.WaveTriggerCounters
+  - SurvivorsMaker.Run.RunSnapshot.Weapons
+  langs:
+  - csharp
+  - vb
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: A run between waves (LevelUp or Shop phase, or Wave before the wave started).
+  example: []
+  syntax:
+    content: public sealed class RunSnapshot
+    content.vb: Public NotInheritable Class RunSnapshot
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.RunSnapshot.UsedCheats
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.UsedCheats
+  id: UsedCheats
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: UsedCheats
+  nameWithType: RunSnapshot.UsedCheats
+  fullName: SurvivorsMaker.Run.RunSnapshot.UsedCheats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool UsedCheats
+    return:
+      type: System.Boolean
+    content.vb: Public UsedCheats As Boolean
+- uid: SurvivorsMaker.Run.RunSnapshot.PlaytestInvulnerable
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.PlaytestInvulnerable
+  id: PlaytestInvulnerable
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: PlaytestInvulnerable
+  nameWithType: RunSnapshot.PlaytestInvulnerable
+  fullName: SurvivorsMaker.Run.RunSnapshot.PlaytestInvulnerable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool PlaytestInvulnerable
+    return:
+      type: System.Boolean
+    content.vb: Public PlaytestInvulnerable As Boolean
+- uid: SurvivorsMaker.Run.RunSnapshot.PlaytestResumeWave
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.PlaytestResumeWave
+  id: PlaytestResumeWave
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: PlaytestResumeWave
+  nameWithType: RunSnapshot.PlaytestResumeWave
+  fullName: SurvivorsMaker.Run.RunSnapshot.PlaytestResumeWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool PlaytestResumeWave
+    return:
+      type: System.Boolean
+    content.vb: Public PlaytestResumeWave As Boolean
+- uid: SurvivorsMaker.Run.RunSnapshot.Pools
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Pools
+  id: Pools
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Pools
+  nameWithType: RunSnapshot.Pools
+  fullName: SurvivorsMaker.Run.RunSnapshot.Pools
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Null on older saves means no banishes or consumed guarantees.
+  example: []
+  syntax:
+    content: public OfferPoolState Pools
+    return:
+      type: SurvivorsMaker.Run.OfferPoolState
+    content.vb: Public Pools As OfferPoolState
+- uid: SurvivorsMaker.Run.RunSnapshot.ArenaId
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.ArenaId
+  id: ArenaId
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ArenaId
+  nameWithType: RunSnapshot.ArenaId
+  fullName: SurvivorsMaker.Run.RunSnapshot.ArenaId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string ArenaId
+    return:
+      type: System.String
+    content.vb: Public ArenaId As String
+- uid: SurvivorsMaker.Run.RunSnapshot.ContentRevision
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.ContentRevision
+  id: ContentRevision
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ContentRevision
+  nameWithType: RunSnapshot.ContentRevision
+  fullName: SurvivorsMaker.Run.RunSnapshot.ContentRevision
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string ContentRevision
+    return:
+      type: System.String
+    content.vb: Public ContentRevision As String
+- uid: SurvivorsMaker.Run.RunSnapshot.RulesRevision
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.RulesRevision
+  id: RulesRevision
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: RulesRevision
+  nameWithType: RunSnapshot.RulesRevision
+  fullName: SurvivorsMaker.Run.RunSnapshot.RulesRevision
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string RulesRevision
+    return:
+      type: System.String
+    content.vb: Public RulesRevision As String
+- uid: SurvivorsMaker.Run.RunSnapshot.ShopVisit
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.ShopVisit
+  id: ShopVisit
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ShopVisit
+  nameWithType: RunSnapshot.ShopVisit
+  fullName: SurvivorsMaker.Run.RunSnapshot.ShopVisit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long ShopVisit
+    return:
+      type: System.Int64
+    content.vb: Public ShopVisit As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.TriggerSequence
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.TriggerSequence
+  id: TriggerSequence
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: TriggerSequence
+  nameWithType: RunSnapshot.TriggerSequence
+  fullName: SurvivorsMaker.Run.RunSnapshot.TriggerSequence
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long TriggerSequence
+    return:
+      type: System.Int64
+    content.vb: Public TriggerSequence As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.TriggerCounters
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.TriggerCounters
+  id: TriggerCounters
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: TriggerCounters
+  nameWithType: RunSnapshot.TriggerCounters
+  fullName: SurvivorsMaker.Run.RunSnapshot.TriggerCounters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<TriggerCounterSnapshot> TriggerCounters
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.TriggerCounterSnapshot}
+    content.vb: Public TriggerCounters As List(Of TriggerCounterSnapshot)
+- uid: SurvivorsMaker.Run.RunSnapshot.WaveTriggerCounters
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.WaveTriggerCounters
+  id: WaveTriggerCounters
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: WaveTriggerCounters
+  nameWithType: RunSnapshot.WaveTriggerCounters
+  fullName: SurvivorsMaker.Run.RunSnapshot.WaveTriggerCounters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<TriggerCounterSnapshot> WaveTriggerCounters
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.TriggerCounterSnapshot}
+    content.vb: Public WaveTriggerCounters As List(Of TriggerCounterSnapshot)
+- uid: SurvivorsMaker.Run.RunSnapshot.OwnedItems
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.OwnedItems
+  id: OwnedItems
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: OwnedItems
+  nameWithType: RunSnapshot.OwnedItems
+  fullName: SurvivorsMaker.Run.RunSnapshot.OwnedItems
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<OwnedItemSnapshot> OwnedItems
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.OwnedItemSnapshot}
+    content.vb: Public OwnedItems As List(Of OwnedItemSnapshot)
+- uid: SurvivorsMaker.Run.RunSnapshot.NextItemInstanceId
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.NextItemInstanceId
+  id: NextItemInstanceId
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: NextItemInstanceId
+  nameWithType: RunSnapshot.NextItemInstanceId
+  fullName: SurvivorsMaker.Run.RunSnapshot.NextItemInstanceId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long NextItemInstanceId
+    return:
+      type: System.Int64
+    content.vb: Public NextItemInstanceId As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.InventoryRevision
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.InventoryRevision
+  id: InventoryRevision
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: InventoryRevision
+  nameWithType: RunSnapshot.InventoryRevision
+  fullName: SurvivorsMaker.Run.RunSnapshot.InventoryRevision
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long InventoryRevision
+    return:
+      type: System.Int64
+    content.vb: Public InventoryRevision As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.CharacterEffects
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.CharacterEffects
+  id: CharacterEffects
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CharacterEffects
+  nameWithType: RunSnapshot.CharacterEffects
+  fullName: SurvivorsMaker.Run.RunSnapshot.CharacterEffects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<EffectLeaseState> CharacterEffects
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.EffectLeaseState}
+    content.vb: Public CharacterEffects As List(Of EffectLeaseState)
+- uid: SurvivorsMaker.Run.RunSnapshot.TotalIncome
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.TotalIncome
+  id: TotalIncome
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: TotalIncome
+  nameWithType: RunSnapshot.TotalIncome
+  fullName: SurvivorsMaker.Run.RunSnapshot.TotalIncome
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long TotalIncome
+    return:
+      type: System.Int64
+    content.vb: Public TotalIncome As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.NextEffectCarryId
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.NextEffectCarryId
+  id: NextEffectCarryId
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: NextEffectCarryId
+  nameWithType: RunSnapshot.NextEffectCarryId
+  fullName: SurvivorsMaker.Run.RunSnapshot.NextEffectCarryId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public long NextEffectCarryId
+    return:
+      type: System.Int64
+    content.vb: Public NextEffectCarryId As Long
+- uid: SurvivorsMaker.Run.RunSnapshot.ContinuingEffects
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.ContinuingEffects
+  id: ContinuingEffects
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ContinuingEffects
+  nameWithType: RunSnapshot.ContinuingEffects
+  fullName: SurvivorsMaker.Run.RunSnapshot.ContinuingEffects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<WaveEffectLease> ContinuingEffects
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+    content.vb: Public ContinuingEffects As List(Of WaveEffectLease)
+- uid: SurvivorsMaker.Run.RunSnapshot.HandlerEffects
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.HandlerEffects
+  id: HandlerEffects
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: HandlerEffects
+  nameWithType: RunSnapshot.HandlerEffects
+  fullName: SurvivorsMaker.Run.RunSnapshot.HandlerEffects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<WaveEffectLease> HandlerEffects
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+    content.vb: Public HandlerEffects As List(Of WaveEffectLease)
+- uid: SurvivorsMaker.Run.RunSnapshot.Version
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Version
+  id: Version
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: RunSnapshot.Version
+  fullName: SurvivorsMaker.Run.RunSnapshot.Version
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Version
+    return:
+      type: System.Int32
+    content.vb: Public Version As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Seed
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Seed
+  id: Seed
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: RunSnapshot.Seed
+  fullName: SurvivorsMaker.Run.RunSnapshot.Seed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public uint Seed
+    return:
+      type: System.UInt32
+    content.vb: Public Seed As UInteger
+- uid: SurvivorsMaker.Run.RunSnapshot.Mode
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Mode
+  id: Mode
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: RunSnapshot.Mode
+  fullName: SurvivorsMaker.Run.RunSnapshot.Mode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunMode Mode
+    return:
+      type: SurvivorsMaker.Run.RunMode
+    content.vb: Public Mode As RunMode
+- uid: SurvivorsMaker.Run.RunSnapshot.Character
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Character
+  id: Character
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: RunSnapshot.Character
+  fullName: SurvivorsMaker.Run.RunSnapshot.Character
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Character
+    return:
+      type: System.String
+    content.vb: Public Character As String
+- uid: SurvivorsMaker.Run.RunSnapshot.Arena
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Arena
+  id: Arena
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Arena
+  nameWithType: RunSnapshot.Arena
+  fullName: SurvivorsMaker.Run.RunSnapshot.Arena
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Index into RunContent.Arenas.
+  example: []
+  syntax:
+    content: public int Arena
+    return:
+      type: System.Int32
+    content.vb: Public Arena As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Difficulty
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Difficulty
+  id: Difficulty
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Difficulty
+  nameWithType: RunSnapshot.Difficulty
+  fullName: SurvivorsMaker.Run.RunSnapshot.Difficulty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Difficulty
+    return:
+      type: System.Int32
+    content.vb: Public Difficulty As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Phase
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Phase
+  id: Phase
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Phase
+  nameWithType: RunSnapshot.Phase
+  fullName: SurvivorsMaker.Run.RunSnapshot.Phase
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunPhase Phase
+    return:
+      type: SurvivorsMaker.Run.RunPhase
+    content.vb: Public Phase As RunPhase
+- uid: SurvivorsMaker.Run.RunSnapshot.WaveIndex
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.WaveIndex
+  id: WaveIndex
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: WaveIndex
+  nameWithType: RunSnapshot.WaveIndex
+  fullName: SurvivorsMaker.Run.RunSnapshot.WaveIndex
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int WaveIndex
+    return:
+      type: System.Int32
+    content.vb: Public WaveIndex As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Weapons
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: RunSnapshot.Weapons
+  fullName: SurvivorsMaker.Run.RunSnapshot.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> Weapons
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Weapons As List(Of String)
+- uid: SurvivorsMaker.Run.RunSnapshot.Items
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Items
+  id: Items
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: RunSnapshot.Items
+  fullName: SurvivorsMaker.Run.RunSnapshot.Items
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> Items
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Items As List(Of String)
+- uid: SurvivorsMaker.Run.RunSnapshot.Currency
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Currency
+  id: Currency
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: RunSnapshot.Currency
+  fullName: SurvivorsMaker.Run.RunSnapshot.Currency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Currency
+    return:
+      type: System.Int32
+    content.vb: Public Currency As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Level
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Level
+  id: Level
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: RunSnapshot.Level
+  fullName: SurvivorsMaker.Run.RunSnapshot.Level
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Experience
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Experience
+  id: Experience
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: RunSnapshot.Experience
+  fullName: SurvivorsMaker.Run.RunSnapshot.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float Experience
+    return:
+      type: System.Single
+    content.vb: Public Experience As Single
+- uid: SurvivorsMaker.Run.RunSnapshot.CarriedHealth
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.CarriedHealth
+  id: CarriedHealth
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CarriedHealth
+  nameWithType: RunSnapshot.CarriedHealth
+  fullName: SurvivorsMaker.Run.RunSnapshot.CarriedHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int CarriedHealth
+    return:
+      type: System.Int32
+    content.vb: Public CarriedHealth As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.PendingLevelUps
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.PendingLevelUps
+  id: PendingLevelUps
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: PendingLevelUps
+  nameWithType: RunSnapshot.PendingLevelUps
+  fullName: SurvivorsMaker.Run.RunSnapshot.PendingLevelUps
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int PendingLevelUps
+    return:
+      type: System.Int32
+    content.vb: Public PendingLevelUps As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Choices
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Choices
+  id: Choices
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Choices
+  nameWithType: RunSnapshot.Choices
+  fullName: SurvivorsMaker.Run.RunSnapshot.Choices
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Level-up choices as ids (weapon or upgrade).
+  example: []
+  syntax:
+    content: public List<string> Choices
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Choices As List(Of String)
+- uid: SurvivorsMaker.Run.RunSnapshot.Shop
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Shop
+  id: Shop
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Shop
+  nameWithType: RunSnapshot.Shop
+  fullName: SurvivorsMaker.Run.RunSnapshot.Shop
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<OfferSnapshot> Shop
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.OfferSnapshot}
+    content.vb: Public Shop As List(Of OfferSnapshot)
+- uid: SurvivorsMaker.Run.RunSnapshot.Rerolls
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Rerolls
+  id: Rerolls
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Rerolls
+  nameWithType: RunSnapshot.Rerolls
+  fullName: SurvivorsMaker.Run.RunSnapshot.Rerolls
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int Rerolls
+    return:
+      type: System.Int32
+    content.vb: Public Rerolls As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.Random0
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Random0
+  id: Random0
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Random0
+  nameWithType: RunSnapshot.Random0
+  fullName: SurvivorsMaker.Run.RunSnapshot.Random0
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public uint Random0
+    return:
+      type: System.UInt32
+    content.vb: Public Random0 As UInteger
+- uid: SurvivorsMaker.Run.RunSnapshot.Random1
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Random1
+  id: Random1
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Random1
+  nameWithType: RunSnapshot.Random1
+  fullName: SurvivorsMaker.Run.RunSnapshot.Random1
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public uint Random1
+    return:
+      type: System.UInt32
+    content.vb: Public Random1 As UInteger
+- uid: SurvivorsMaker.Run.RunSnapshot.Random2
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Random2
+  id: Random2
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Random2
+  nameWithType: RunSnapshot.Random2
+  fullName: SurvivorsMaker.Run.RunSnapshot.Random2
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public uint Random2
+    return:
+      type: System.UInt32
+    content.vb: Public Random2 As UInteger
+- uid: SurvivorsMaker.Run.RunSnapshot.Random3
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.Random3
+  id: Random3
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Random3
+  nameWithType: RunSnapshot.Random3
+  fullName: SurvivorsMaker.Run.RunSnapshot.Random3
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public uint Random3
+    return:
+      type: System.UInt32
+    content.vb: Public Random3 As UInteger
+- uid: SurvivorsMaker.Run.RunSnapshot.LastWaveCurrency
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.LastWaveCurrency
+  id: LastWaveCurrency
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: LastWaveCurrency
+  nameWithType: RunSnapshot.LastWaveCurrency
+  fullName: SurvivorsMaker.Run.RunSnapshot.LastWaveCurrency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int LastWaveCurrency
+    return:
+      type: System.Int32
+    content.vb: Public LastWaveCurrency As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.LastWaveReward
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.LastWaveReward
+  id: LastWaveReward
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: LastWaveReward
+  nameWithType: RunSnapshot.LastWaveReward
+  fullName: SurvivorsMaker.Run.RunSnapshot.LastWaveReward
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int LastWaveReward
+    return:
+      type: System.Int32
+    content.vb: Public LastWaveReward As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.TotalKills
+  commentId: F:SurvivorsMaker.Run.RunSnapshot.TotalKills
+  id: TotalKills
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: TotalKills
+  nameWithType: RunSnapshot.TotalKills
+  fullName: SurvivorsMaker.Run.RunSnapshot.TotalKills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int TotalKills
+    return:
+      type: System.Int32
+    content.vb: Public TotalKills As Integer
+- uid: SurvivorsMaker.Run.RunSnapshot.CapturePools(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.RunSnapshot.CapturePools(SurvivorsMaker.Run.RunState)
+  id: CapturePools(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CapturePools(RunState)
+  nameWithType: RunSnapshot.CapturePools(RunState)
+  fullName: SurvivorsMaker.Run.RunSnapshot.CapturePools(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Copies run-scoped pool state into this save snapshot.
+  example: []
+  syntax:
+    content: public void CapturePools(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Sub CapturePools(run As RunState)
+  overload: SurvivorsMaker.Run.RunSnapshot.CapturePools*
+- uid: SurvivorsMaker.Run.RunSnapshot.RestorePools(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Run.RunSnapshot.RestorePools(SurvivorsMaker.Run.RunState)
+  id: RestorePools(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: RestorePools(RunState)
+  nameWithType: RunSnapshot.RestorePools(RunState)
+  fullName: SurvivorsMaker.Run.RunSnapshot.RestorePools(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Restores saved pool state into a run without drawing random values.
+  example: []
+  syntax:
+    content: public void RestorePools(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Sub RestorePools(run As RunState)
+  overload: SurvivorsMaker.Run.RunSnapshot.RestorePools*
+- uid: SurvivorsMaker.Run.RunSnapshot.#ctor
+  commentId: M:SurvivorsMaker.Run.RunSnapshot.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.RunSnapshot
+  langs:
+  - csharp
+  - vb
+  name: RunSnapshot()
+  nameWithType: RunSnapshot.RunSnapshot()
+  fullName: SurvivorsMaker.Run.RunSnapshot.RunSnapshot()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunSnapshot()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.RunSnapshot.#ctor*
+  nameWithType.vb: RunSnapshot.New()
+  fullName.vb: SurvivorsMaker.Run.RunSnapshot.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.OfferPoolState
+  commentId: T:SurvivorsMaker.Run.OfferPoolState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolState.html
+  name: OfferPoolState
+  nameWithType: OfferPoolState
+  fullName: SurvivorsMaker.Run.OfferPoolState
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.TriggerCounterSnapshot}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.TriggerCounterSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TriggerCounterSnapshot>
+  nameWithType: List<TriggerCounterSnapshot>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.TriggerCounterSnapshot>
+  nameWithType.vb: List(Of TriggerCounterSnapshot)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.TriggerCounterSnapshot)
+  name.vb: List(Of TriggerCounterSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.TriggerCounterSnapshot
+    name: TriggerCounterSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.TriggerCounterSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.TriggerCounterSnapshot
+    name: TriggerCounterSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.TriggerCounterSnapshot.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.OwnedItemSnapshot}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.OwnedItemSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OwnedItemSnapshot>
+  nameWithType: List<OwnedItemSnapshot>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.OwnedItemSnapshot>
+  nameWithType.vb: List(Of OwnedItemSnapshot)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.OwnedItemSnapshot)
+  name.vb: List(Of OwnedItemSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OwnedItemSnapshot
+    name: OwnedItemSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.OwnedItemSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OwnedItemSnapshot
+    name: OwnedItemSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.OwnedItemSnapshot.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.EffectLeaseState}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.EffectLeaseState}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EffectLeaseState>
+  nameWithType: List<EffectLeaseState>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.EffectLeaseState>
+  nameWithType.vb: List(Of EffectLeaseState)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.EffectLeaseState)
+  name.vb: List(Of EffectLeaseState)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.EffectLeaseState
+    name: EffectLeaseState
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.EffectLeaseState
+    name: EffectLeaseState
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.WaveEffectLease}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WaveEffectLease>
+  nameWithType: List<WaveEffectLease>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.WaveEffectLease>
+  nameWithType.vb: List(Of WaveEffectLease)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.WaveEffectLease)
+  name.vb: List(Of WaveEffectLease)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.WaveEffectLease
+    name: WaveEffectLease
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WaveEffectLease.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.WaveEffectLease
+    name: WaveEffectLease
+    isExternal: true
+    href: SurvivorsMaker.Simulation.WaveEffectLease.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SurvivorsMaker.Run.RunMode
+  commentId: T:SurvivorsMaker.Run.RunMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunMode.html
+  name: RunMode
+  nameWithType: RunMode
+  fullName: SurvivorsMaker.Run.RunMode
+- uid: SurvivorsMaker.Run.RunPhase
+  commentId: T:SurvivorsMaker.Run.RunPhase
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunPhase.html
+  name: RunPhase
+  nameWithType: RunPhase
+  fullName: SurvivorsMaker.Run.RunPhase
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.OfferSnapshot}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.OfferSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OfferSnapshot>
+  nameWithType: List<OfferSnapshot>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.OfferSnapshot>
+  nameWithType.vb: List(Of OfferSnapshot)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.OfferSnapshot)
+  name.vb: List(Of OfferSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferSnapshot
+    name: OfferSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferSnapshot
+    name: OfferSnapshot
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferSnapshot.html
+  - name: )
+- uid: SurvivorsMaker.Run.RunSnapshot.CapturePools*
+  commentId: Overload:SurvivorsMaker.Run.RunSnapshot.CapturePools
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html#SurvivorsMaker_Run_RunSnapshot_CapturePools_SurvivorsMaker_Run_RunState_
+  name: CapturePools
+  nameWithType: RunSnapshot.CapturePools
+  fullName: SurvivorsMaker.Run.RunSnapshot.CapturePools
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.RunSnapshot.RestorePools*
+  commentId: Overload:SurvivorsMaker.Run.RunSnapshot.RestorePools
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html#SurvivorsMaker_Run_RunSnapshot_RestorePools_SurvivorsMaker_Run_RunState_
+  name: RestorePools
+  nameWithType: RunSnapshot.RestorePools
+  fullName: SurvivorsMaker.Run.RunSnapshot.RestorePools
+- uid: SurvivorsMaker.Run.RunSnapshot.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.RunSnapshot.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html#SurvivorsMaker_Run_RunSnapshot__ctor
+  name: RunSnapshot
+  nameWithType: RunSnapshot.RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot.RunSnapshot
+  nameWithType.vb: RunSnapshot.New
+  fullName.vb: SurvivorsMaker.Run.RunSnapshot.New
+  name.vb: New

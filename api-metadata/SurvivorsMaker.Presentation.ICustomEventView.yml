@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ICustomEventView
+  commentId: T:SurvivorsMaker.Presentation.ICustomEventView
+  id: ICustomEventView
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ICustomEventView.Show(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Presentation.WorldView)
+  langs:
+  - csharp
+  - vb
+  name: ICustomEventView
+  nameWithType: ICustomEventView
+  fullName: SurvivorsMaker.Presentation.ICustomEventView
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Shows one game-defined event (<xref href="SurvivorsMaker.Simulation.SimEvent.CustomId" data-throw-if-not-resolved="false"></xref>).
+    Register it with <xref href="SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(System.String%2cSurvivorsMaker.Presentation.ICustomEventView)"
+    data-throw-if-not-resolved="false"></xref>.
+
+    Called once per event during the fixed tick, after the built-in visuals. Read the world; never change it.
+
+    Sounds for custom ids come from <xref href="SurvivorsMaker.Presentation.SoundCatalogAsset.CustomEvents" data-throw-if-not-resolved="false"></xref>,
+    simple effects from
+
+    <xref href="SurvivorsMaker.Presentation.PresentationSettings.CustomEvents" data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public interface ICustomEventView
+    content.vb: Public Interface ICustomEventView
+- uid: SurvivorsMaker.Presentation.ICustomEventView.Show(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Presentation.WorldView)
+  commentId: M:SurvivorsMaker.Presentation.ICustomEventView.Show(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Presentation.WorldView)
+  id: Show(SurvivorsMaker.Simulation.SimEvent,SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Presentation.WorldView)
+  parent: SurvivorsMaker.Presentation.ICustomEventView
+  langs:
+  - csharp
+  - vb
+  name: Show(SimEvent, SimWorld, WorldView)
+  nameWithType: ICustomEventView.Show(SimEvent, SimWorld, WorldView)
+  fullName: SurvivorsMaker.Presentation.ICustomEventView.Show(SurvivorsMaker.Simulation.SimEvent, SurvivorsMaker.Simulation.SimWorld,
+    SurvivorsMaker.Presentation.WorldView)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Displays the supplied event without mutating the world; consume it during this dispatch and do not retain pooled
+    entities.
+  example: []
+  syntax:
+    content: void Show(SimEvent value, SimWorld world, WorldView view)
+    parameters:
+    - id: value
+      type: SurvivorsMaker.Simulation.SimEvent
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: view
+      type: SurvivorsMaker.Presentation.WorldView
+    content.vb: Sub Show(value As SimEvent, world As SimWorld, view As WorldView)
+  overload: SurvivorsMaker.Presentation.ICustomEventView.Show*
+references:
+- uid: SurvivorsMaker.Simulation.SimEvent.CustomId
+  commentId: F:SurvivorsMaker.Simulation.SimEvent.CustomId
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEvent.html#SurvivorsMaker_Simulation_SimEvent_CustomId
+  name: CustomId
+  nameWithType: SimEvent.CustomId
+  fullName: SurvivorsMaker.Simulation.SimEvent.CustomId
+- uid: SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(System.String,SurvivorsMaker.Presentation.ICustomEventView)
+  commentId: M:SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(System.String,SurvivorsMaker.Presentation.ICustomEventView)
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WorldView.html#SurvivorsMaker_Presentation_WorldView_RegisterCustomEvent_System_String_SurvivorsMaker_Presentation_ICustomEventView_
+  name: RegisterCustomEvent(string, ICustomEventView)
+  nameWithType: WorldView.RegisterCustomEvent(string, ICustomEventView)
+  fullName: SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(string, SurvivorsMaker.Presentation.ICustomEventView)
+  nameWithType.vb: WorldView.RegisterCustomEvent(String, ICustomEventView)
+  fullName.vb: SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(String, SurvivorsMaker.Presentation.ICustomEventView)
+  name.vb: RegisterCustomEvent(String, ICustomEventView)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(System.String,SurvivorsMaker.Presentation.ICustomEventView)
+    name: RegisterCustomEvent
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WorldView.html#SurvivorsMaker_Presentation_WorldView_RegisterCustomEvent_System_String_SurvivorsMaker_Presentation_ICustomEventView_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.ICustomEventView
+    name: ICustomEventView
+    isExternal: true
+    href: SurvivorsMaker.Presentation.ICustomEventView.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.WorldView.RegisterCustomEvent(System.String,SurvivorsMaker.Presentation.ICustomEventView)
+    name: RegisterCustomEvent
+    isExternal: true
+    href: SurvivorsMaker.Presentation.WorldView.html#SurvivorsMaker_Presentation_WorldView_RegisterCustomEvent_System_String_SurvivorsMaker_Presentation_ICustomEventView_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.ICustomEventView
+    name: ICustomEventView
+    isExternal: true
+    href: SurvivorsMaker.Presentation.ICustomEventView.html
+  - name: )
+- uid: SurvivorsMaker.Presentation.SoundCatalogAsset.CustomEvents
+  commentId: F:SurvivorsMaker.Presentation.SoundCatalogAsset.CustomEvents
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SoundCatalogAsset.html#SurvivorsMaker_Presentation_SoundCatalogAsset_CustomEvents
+  name: CustomEvents
+  nameWithType: SoundCatalogAsset.CustomEvents
+  fullName: SurvivorsMaker.Presentation.SoundCatalogAsset.CustomEvents
+- uid: SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  commentId: F:SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+  isExternal: true
+  href: SurvivorsMaker.Presentation.PresentationSettings.html#SurvivorsMaker_Presentation_PresentationSettings_CustomEvents
+  name: CustomEvents
+  nameWithType: PresentationSettings.CustomEvents
+  fullName: SurvivorsMaker.Presentation.PresentationSettings.CustomEvents
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ICustomEventView.Show*
+  commentId: Overload:SurvivorsMaker.Presentation.ICustomEventView.Show
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ICustomEventView.html#SurvivorsMaker_Presentation_ICustomEventView_Show_SurvivorsMaker_Simulation_SimEvent_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Presentation_WorldView_
+  name: Show
+  nameWithType: ICustomEventView.Show
+  fullName: SurvivorsMaker.Presentation.ICustomEventView.Show
+- uid: SurvivorsMaker.Simulation.SimEvent
+  commentId: T:SurvivorsMaker.Simulation.SimEvent
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimEvent.html
+  name: SimEvent
+  nameWithType: SimEvent
+  fullName: SurvivorsMaker.Simulation.SimEvent
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Presentation.WorldView
+  commentId: T:SurvivorsMaker.Presentation.WorldView
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.WorldView.html
+  name: WorldView
+  nameWithType: WorldView
+  fullName: SurvivorsMaker.Presentation.WorldView
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true

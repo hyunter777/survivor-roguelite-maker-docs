@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.EliteModifierKind
+  commentId: T:SurvivorsMaker.Simulation.EliteModifierKind
+  id: EliteModifierKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.EliteModifierKind.Armored
+  - SurvivorsMaker.Simulation.EliteModifierKind.Regenerating
+  - SurvivorsMaker.Simulation.EliteModifierKind.Splitting
+  - SurvivorsMaker.Simulation.EliteModifierKind.Swift
+  - SurvivorsMaker.Simulation.EliteModifierKind.Unshakable
+  langs:
+  - csharp
+  - vb
+  name: EliteModifierKind
+  nameWithType: EliteModifierKind
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum EliteModifierKind
+    content.vb: Public Enum EliteModifierKind
+- uid: SurvivorsMaker.Simulation.EliteModifierKind.Swift
+  commentId: F:SurvivorsMaker.Simulation.EliteModifierKind.Swift
+  id: Swift
+  parent: SurvivorsMaker.Simulation.EliteModifierKind
+  langs:
+  - csharp
+  - vb
+  name: Swift
+  nameWithType: EliteModifierKind.Swift
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind.Swift
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Speed × (1 + Magnitude).
+  example: []
+  syntax:
+    content: Swift = 0
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifierKind
+- uid: SurvivorsMaker.Simulation.EliteModifierKind.Armored
+  commentId: F:SurvivorsMaker.Simulation.EliteModifierKind.Armored
+  id: Armored
+  parent: SurvivorsMaker.Simulation.EliteModifierKind
+  langs:
+  - csharp
+  - vb
+  name: Armored
+  nameWithType: EliteModifierKind.Armored
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind.Armored
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Incoming damage × (1 − Magnitude).
+  example: []
+  syntax:
+    content: Armored = 1
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifierKind
+- uid: SurvivorsMaker.Simulation.EliteModifierKind.Regenerating
+  commentId: F:SurvivorsMaker.Simulation.EliteModifierKind.Regenerating
+  id: Regenerating
+  parent: SurvivorsMaker.Simulation.EliteModifierKind
+  langs:
+  - csharp
+  - vb
+  name: Regenerating
+  nameWithType: EliteModifierKind.Regenerating
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind.Regenerating
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Heals Magnitude health per second.
+  example: []
+  syntax:
+    content: Regenerating = 2
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifierKind
+- uid: SurvivorsMaker.Simulation.EliteModifierKind.Splitting
+  commentId: F:SurvivorsMaker.Simulation.EliteModifierKind.Splitting
+  id: Splitting
+  parent: SurvivorsMaker.Simulation.EliteModifierKind
+  langs:
+  - csharp
+  - vb
+  name: Splitting
+  nameWithType: EliteModifierKind.Splitting
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind.Splitting
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: On death spawns Magnitude (rounded) normal copies.
+  example: []
+  syntax:
+    content: Splitting = 3
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifierKind
+- uid: SurvivorsMaker.Simulation.EliteModifierKind.Unshakable
+  commentId: F:SurvivorsMaker.Simulation.EliteModifierKind.Unshakable
+  id: Unshakable
+  parent: SurvivorsMaker.Simulation.EliteModifierKind
+  langs:
+  - csharp
+  - vb
+  name: Unshakable
+  nameWithType: EliteModifierKind.Unshakable
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind.Unshakable
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Immune to statuses.
+  example: []
+  syntax:
+    content: Unshakable = 4
+    return:
+      type: SurvivorsMaker.Simulation.EliteModifierKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.EliteModifierKind
+  commentId: T:SurvivorsMaker.Simulation.EliteModifierKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.EliteModifierKind.html
+  name: EliteModifierKind
+  nameWithType: EliteModifierKind
+  fullName: SurvivorsMaker.Simulation.EliteModifierKind

@@ -1,0 +1,1095 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.MakerEditorUi
+  commentId: T:SurvivorsMaker.Editor.MakerEditorUi
+  id: MakerEditorUi
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.MakerEditorUi.Accent
+  - SurvivorsMaker.Editor.MakerEditorUi.Badge(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Card(UnityEngine.UIElements.VisualElement,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty)
+  - SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle(UnityEditor.SerializedProperty,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Field(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty,System.String,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Header(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.HiddenClass
+  - SurvivorsMaker.Editor.MakerEditorUi.Preview(UnityEngine.UIElements.VisualElement,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Properties(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String[])
+  - SurvivorsMaker.Editor.MakerEditorUi.Property(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Root
+  - SurvivorsMaker.Editor.MakerEditorUi.Row(UnityEngine.UIElements.VisualElement)
+  - SurvivorsMaker.Editor.MakerEditorUi.Section(UnityEngine.UIElements.VisualElement,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Show(UnityEngine.UIElements.VisualElement,System.Boolean)
+  - SurvivorsMaker.Editor.MakerEditorUi.StylePath
+  - SurvivorsMaker.Editor.MakerEditorUi.Surface
+  - SurvivorsMaker.Editor.MakerEditorUi.Text(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  - SurvivorsMaker.Editor.MakerEditorUi.Warning(UnityEngine.UIElements.VisualElement,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MakerEditorUi
+  nameWithType: MakerEditorUi
+  fullName: SurvivorsMaker.Editor.MakerEditorUi
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static class MakerEditorUi
+    content.vb: Public Module MakerEditorUi
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.MakerEditorUi.StylePath
+  commentId: F:SurvivorsMaker.Editor.MakerEditorUi.StylePath
+  id: StylePath
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: StylePath
+  nameWithType: MakerEditorUi.StylePath
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.StylePath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string StylePath = "Packages/com.flycat.survivors-maker/Editor/Common/MakerEditor.uss"
+    return:
+      type: System.String
+    content.vb: Public Const StylePath As String = "Packages/com.flycat.survivors-maker/Editor/Common/MakerEditor.uss"
+- uid: SurvivorsMaker.Editor.MakerEditorUi.HiddenClass
+  commentId: F:SurvivorsMaker.Editor.MakerEditorUi.HiddenClass
+  id: HiddenClass
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: HiddenClass
+  nameWithType: MakerEditorUi.HiddenClass
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.HiddenClass
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string HiddenClass = "sm-hidden"
+    return:
+      type: System.String
+    content.vb: Public Const HiddenClass As String = "sm-hidden"
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Root
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Root
+  id: Root
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Root()
+  nameWithType: MakerEditorUi.Root()
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Root()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static VisualElement Root()
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Function Root() As VisualElement
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Root*
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Header(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Header(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  id: Header(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Header(VisualElement, string, string)
+  nameWithType: MakerEditorUi.Header(VisualElement, string, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Header(UnityEngine.UIElements.VisualElement, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Header(VisualElement root, string title, string description = null)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    content.vb: Public Shared Sub Header(root As VisualElement, title As String, description As String = Nothing)
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Header*
+  nameWithType.vb: MakerEditorUi.Header(VisualElement, String, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Header(UnityEngine.UIElements.VisualElement, String, String)
+  name.vb: Header(VisualElement, String, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Section(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Section(UnityEngine.UIElements.VisualElement,System.String)
+  id: Section(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Section(VisualElement, string)
+  nameWithType: MakerEditorUi.Section(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Section(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static VisualElement Section(VisualElement root, string title)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: title
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Function Section(root As VisualElement, title As String) As VisualElement
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Section*
+  nameWithType.vb: MakerEditorUi.Section(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Section(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Section(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Text(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Text(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  id: Text(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Text(VisualElement, string, string)
+  nameWithType: MakerEditorUi.Text(VisualElement, string, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Text(UnityEngine.UIElements.VisualElement, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Label Text(VisualElement root, string text, string name = null)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: text
+      type: System.String
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Label
+    content.vb: Public Shared Function Text(root As VisualElement, text As String, name As String = Nothing) As Label
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Text*
+  nameWithType.vb: MakerEditorUi.Text(VisualElement, String, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Text(UnityEngine.UIElements.VisualElement, String, String)
+  name.vb: Text(VisualElement, String, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Warning(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Warning(UnityEngine.UIElements.VisualElement,System.String)
+  id: Warning(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Warning(VisualElement, string)
+  nameWithType: MakerEditorUi.Warning(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Warning(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static HelpBox Warning(VisualElement root, string message)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: message
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.HelpBox
+    content.vb: Public Shared Function Warning(root As VisualElement, message As String) As HelpBox
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Warning*
+  nameWithType.vb: MakerEditorUi.Warning(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Warning(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Warning(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Show(UnityEngine.UIElements.VisualElement,System.Boolean)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Show(UnityEngine.UIElements.VisualElement,System.Boolean)
+  id: Show(UnityEngine.UIElements.VisualElement,System.Boolean)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Show(VisualElement, bool)
+  nameWithType: MakerEditorUi.Show(VisualElement, bool)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Show(UnityEngine.UIElements.VisualElement, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Show(VisualElement element, bool visible)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: visible
+      type: System.Boolean
+    content.vb: Public Shared Sub Show(element As VisualElement, visible As Boolean)
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Show*
+  nameWithType.vb: MakerEditorUi.Show(VisualElement, Boolean)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Show(UnityEngine.UIElements.VisualElement, Boolean)
+  name.vb: Show(VisualElement, Boolean)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty)
+  id: DrawerFoldout(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: DrawerFoldout(VisualElement, SerializedProperty)
+  nameWithType: MakerEditorUi.DrawerFoldout(VisualElement, SerializedProperty)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedProperty)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Root for definition drawers: a foldout whose title is the one-line preview, so collapsed list
+
+    entries stay readable. List elements ("Element N") show the preview only.'
+  example: []
+  syntax:
+    content: public static Foldout DrawerFoldout(VisualElement root, SerializedProperty property)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: property
+      type: UnityEditor.SerializedProperty
+    return:
+      type: UnityEngine.UIElements.Foldout
+    content.vb: Public Shared Function DrawerFoldout(root As VisualElement, [property] As SerializedProperty) As Foldout
+  overload: SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout*
+- uid: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle(UnityEditor.SerializedProperty,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle(UnityEditor.SerializedProperty,System.String)
+  id: DrawerTitle(UnityEditor.SerializedProperty,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: DrawerTitle(SerializedProperty, string)
+  nameWithType: MakerEditorUi.DrawerTitle(SerializedProperty, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle(UnityEditor.SerializedProperty, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string DrawerTitle(SerializedProperty property, string preview)
+    parameters:
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: preview
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DrawerTitle([property] As SerializedProperty, preview As String) As String
+  overload: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle*
+  nameWithType.vb: MakerEditorUi.DrawerTitle(SerializedProperty, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle(UnityEditor.SerializedProperty, String)
+  name.vb: DrawerTitle(SerializedProperty, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Field(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Field(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty,System.String,System.String)
+  id: Field(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty,System.String,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Field(VisualElement, SerializedProperty, string, string)
+  nameWithType: MakerEditorUi.Field(VisualElement, SerializedProperty, string, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Field(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedProperty,
+    string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: A PropertyField for a relative child, or null when the field does not exist.
+  example: []
+  syntax:
+    content: public static PropertyField Field(VisualElement parent, SerializedProperty property, string relative, string
+      label = null)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: relative
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: UnityEditor.UIElements.PropertyField
+    content.vb: Public Shared Function Field(parent As VisualElement, [property] As SerializedProperty, relative As String,
+      label As String = Nothing) As PropertyField
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Field*
+  nameWithType.vb: MakerEditorUi.Field(VisualElement, SerializedProperty, String, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Field(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedProperty,
+    String, String)
+  name.vb: Field(VisualElement, SerializedProperty, String, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Row(UnityEngine.UIElements.VisualElement)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Row(UnityEngine.UIElements.VisualElement)
+  id: Row(UnityEngine.UIElements.VisualElement)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Row(VisualElement)
+  nameWithType: MakerEditorUi.Row(VisualElement)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Row(UnityEngine.UIElements.VisualElement)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static VisualElement Row(VisualElement parent)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Function Row(parent As VisualElement) As VisualElement
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Row*
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Card(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Card(UnityEngine.UIElements.VisualElement,System.String)
+  id: Card(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Card(VisualElement, string)
+  nameWithType: MakerEditorUi.Card(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Card(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static VisualElement Card(VisualElement parent, string name = null)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Function Card(parent As VisualElement, name As String = Nothing) As VisualElement
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Card*
+  nameWithType.vb: MakerEditorUi.Card(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Card(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Card(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Badge(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Badge(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  id: Badge(UnityEngine.UIElements.VisualElement,System.String,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Badge(VisualElement, string, string)
+  nameWithType: MakerEditorUi.Badge(VisualElement, string, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Badge(UnityEngine.UIElements.VisualElement, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Label Badge(VisualElement parent, string text, string name = null)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: text
+      type: System.String
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Label
+    content.vb: Public Shared Function Badge(parent As VisualElement, text As String, name As String = Nothing) As Label
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Badge*
+  nameWithType.vb: MakerEditorUi.Badge(VisualElement, String, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Badge(UnityEngine.UIElements.VisualElement, String, String)
+  name.vb: Badge(VisualElement, String, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Preview(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Preview(UnityEngine.UIElements.VisualElement,System.String)
+  id: Preview(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Preview(VisualElement, string)
+  nameWithType: MakerEditorUi.Preview(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Preview(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Label Preview(VisualElement parent, string name = null)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Label
+    content.vb: Public Shared Function Preview(parent As VisualElement, name As String = Nothing) As Label
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Preview*
+  nameWithType.vb: MakerEditorUi.Preview(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Preview(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Preview(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Property(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Property(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String,System.String)
+  id: Property(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String,System.String)
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Property(VisualElement, SerializedObject, string, string)
+  nameWithType: MakerEditorUi.Property(VisualElement, SerializedObject, string, string)
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Property(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedObject,
+    string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static PropertyField Property(VisualElement root, SerializedObject source, string path, string label =
+      null)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: source
+      type: UnityEditor.SerializedObject
+    - id: path
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: UnityEditor.UIElements.PropertyField
+    content.vb: Public Shared Function [Property](root As VisualElement, source As SerializedObject, path As String, label
+      As String = Nothing) As PropertyField
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Property*
+  nameWithType.vb: MakerEditorUi.Property(VisualElement, SerializedObject, String, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Property(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedObject,
+    String, String)
+  name.vb: Property(VisualElement, SerializedObject, String, String)
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Properties(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String[])
+  commentId: M:SurvivorsMaker.Editor.MakerEditorUi.Properties(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String[])
+  id: Properties(UnityEngine.UIElements.VisualElement,UnityEditor.SerializedObject,System.String[])
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Properties(VisualElement, SerializedObject, params string[])
+  nameWithType: MakerEditorUi.Properties(VisualElement, SerializedObject, params string[])
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Properties(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedObject,
+    params string[])
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static void Properties(VisualElement root, SerializedObject source, params string[] paths)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    - id: source
+      type: UnityEditor.SerializedObject
+    - id: paths
+      type: System.String[]
+    content.vb: Public Shared Sub Properties(root As VisualElement, source As SerializedObject, ParamArray paths As String())
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Properties*
+  nameWithType.vb: MakerEditorUi.Properties(VisualElement, SerializedObject, ParamArray String())
+  fullName.vb: SurvivorsMaker.Editor.MakerEditorUi.Properties(UnityEngine.UIElements.VisualElement, UnityEditor.SerializedObject,
+    ParamArray String())
+  name.vb: Properties(VisualElement, SerializedObject, ParamArray String())
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Accent
+  commentId: P:SurvivorsMaker.Editor.MakerEditorUi.Accent
+  id: Accent
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Accent
+  nameWithType: MakerEditorUi.Accent
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Accent
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Color Accent { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property Accent As Color
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Accent*
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Surface
+  commentId: P:SurvivorsMaker.Editor.MakerEditorUi.Surface
+  id: Surface
+  parent: SurvivorsMaker.Editor.MakerEditorUi
+  langs:
+  - csharp
+  - vb
+  name: Surface
+  nameWithType: MakerEditorUi.Surface
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Surface
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Color Surface { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property Surface As Color
+  overload: SurvivorsMaker.Editor.MakerEditorUi.Surface*
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Root*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Root
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Root
+  name: Root
+  nameWithType: MakerEditorUi.Root
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Root
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Header*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Header
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Header_UnityEngine_UIElements_VisualElement_System_String_System_String_
+  name: Header
+  nameWithType: MakerEditorUi.Header
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Header
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Section*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Section
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Section_UnityEngine_UIElements_VisualElement_System_String_
+  name: Section
+  nameWithType: MakerEditorUi.Section
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Section
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Text*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Text
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Text_UnityEngine_UIElements_VisualElement_System_String_System_String_
+  name: Text
+  nameWithType: MakerEditorUi.Text
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Text
+- uid: UnityEngine.UIElements.Label
+  commentId: T:UnityEngine.UIElements.Label
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: UnityEngine.UIElements.Label
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Warning*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Warning
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Warning_UnityEngine_UIElements_VisualElement_System_String_
+  name: Warning
+  nameWithType: MakerEditorUi.Warning
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Warning
+- uid: UnityEngine.UIElements.HelpBox
+  commentId: T:UnityEngine.UIElements.HelpBox
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: HelpBox
+  nameWithType: HelpBox
+  fullName: UnityEngine.UIElements.HelpBox
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Show*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Show
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Show_UnityEngine_UIElements_VisualElement_System_Boolean_
+  name: Show
+  nameWithType: MakerEditorUi.Show
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Show
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_DrawerFoldout_UnityEngine_UIElements_VisualElement_UnityEditor_SerializedProperty_
+  name: DrawerFoldout
+  nameWithType: MakerEditorUi.DrawerFoldout
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.DrawerFoldout
+- uid: UnityEditor.SerializedProperty
+  commentId: T:UnityEditor.SerializedProperty
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: UnityEngine.UIElements.Foldout
+  commentId: T:UnityEngine.UIElements.Foldout
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: Foldout
+  nameWithType: Foldout
+  fullName: UnityEngine.UIElements.Foldout
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_DrawerTitle_UnityEditor_SerializedProperty_System_String_
+  name: DrawerTitle
+  nameWithType: MakerEditorUi.DrawerTitle
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.DrawerTitle
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Field*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Field
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Field_UnityEngine_UIElements_VisualElement_UnityEditor_SerializedProperty_System_String_System_String_
+  name: Field
+  nameWithType: MakerEditorUi.Field
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Field
+- uid: UnityEditor.UIElements.PropertyField
+  commentId: T:UnityEditor.UIElements.PropertyField
+  parent: UnityEditor.UIElements
+  isExternal: true
+  name: PropertyField
+  nameWithType: PropertyField
+  fullName: UnityEditor.UIElements.PropertyField
+- uid: UnityEditor.UIElements
+  commentId: N:UnityEditor.UIElements
+  isExternal: true
+  name: UnityEditor.UIElements
+  nameWithType: UnityEditor.UIElements
+  fullName: UnityEditor.UIElements
+  spec.csharp:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.UIElements
+    name: UIElements
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Row*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Row
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Row_UnityEngine_UIElements_VisualElement_
+  name: Row
+  nameWithType: MakerEditorUi.Row
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Row
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Card*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Card
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Card_UnityEngine_UIElements_VisualElement_System_String_
+  name: Card
+  nameWithType: MakerEditorUi.Card
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Card
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Badge*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Badge
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Badge_UnityEngine_UIElements_VisualElement_System_String_System_String_
+  name: Badge
+  nameWithType: MakerEditorUi.Badge
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Badge
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Preview*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Preview
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Preview_UnityEngine_UIElements_VisualElement_System_String_
+  name: Preview
+  nameWithType: MakerEditorUi.Preview
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Preview
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Property*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Property
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Property_UnityEngine_UIElements_VisualElement_UnityEditor_SerializedObject_System_String_System_String_
+  name: Property
+  nameWithType: MakerEditorUi.Property
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Property
+- uid: UnityEditor.SerializedObject
+  commentId: T:UnityEditor.SerializedObject
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedObject
+  nameWithType: SerializedObject
+  fullName: UnityEditor.SerializedObject
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Properties*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Properties
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Properties_UnityEngine_UIElements_VisualElement_UnityEditor_SerializedObject_System_String___
+  name: Properties
+  nameWithType: MakerEditorUi.Properties
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Properties
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Accent*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Accent
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Accent
+  name: Accent
+  nameWithType: MakerEditorUi.Accent
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Accent
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Editor.MakerEditorUi.Surface*
+  commentId: Overload:SurvivorsMaker.Editor.MakerEditorUi.Surface
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerEditorUi.html#SurvivorsMaker_Editor_MakerEditorUi_Surface
+  name: Surface
+  nameWithType: MakerEditorUi.Surface
+  fullName: SurvivorsMaker.Editor.MakerEditorUi.Surface

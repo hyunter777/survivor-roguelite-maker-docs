@@ -1,0 +1,608 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SimMath
+  commentId: T:SurvivorsMaker.Simulation.SimMath
+  id: SimMath
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SimMath.Clamp(System.Int32,System.Int32,System.Int32)
+  - SurvivorsMaker.Simulation.SimMath.Clamp(System.Single,System.Single,System.Single)
+  - SurvivorsMaker.Simulation.SimMath.Clamp01(System.Single)
+  - SurvivorsMaker.Simulation.SimMath.DegToRad
+  - SurvivorsMaker.Simulation.SimMath.Percent(System.Int32)
+  - SurvivorsMaker.Simulation.SimMath.Pi
+  - SurvivorsMaker.Simulation.SimMath.Round(System.Double)
+  - SurvivorsMaker.Simulation.SimMath.Round(System.Single)
+  - SurvivorsMaker.Simulation.SimMath.SecondsToTicks(System.Single,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SimMath
+  nameWithType: SimMath
+  fullName: SurvivorsMaker.Simulation.SimMath
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Shared rounding and time conversion. Every system uses these so results agree.
+  example: []
+  syntax:
+    content: public static class SimMath
+    content.vb: Public Module SimMath
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.SimMath.Pi
+  commentId: F:SurvivorsMaker.Simulation.SimMath.Pi
+  id: Pi
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Pi
+  nameWithType: SimMath.Pi
+  fullName: SurvivorsMaker.Simulation.SimMath.Pi
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const float Pi = 3.1415927
+    return:
+      type: System.Single
+    content.vb: Public Const Pi As Single = 3.1415927
+- uid: SurvivorsMaker.Simulation.SimMath.DegToRad
+  commentId: F:SurvivorsMaker.Simulation.SimMath.DegToRad
+  id: DegToRad
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: DegToRad
+  nameWithType: SimMath.DegToRad
+  fullName: SurvivorsMaker.Simulation.SimMath.DegToRad
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public const float DegToRad = 0.017453292
+    return:
+      type: System.Single
+    content.vb: Public Const DegToRad As Single = 0.017453292
+- uid: SurvivorsMaker.Simulation.SimMath.Round(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Round(System.Single)
+  id: Round(System.Single)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Round(float)
+  nameWithType: SimMath.Round(float)
+  fullName: SurvivorsMaker.Simulation.SimMath.Round(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Rounds to the nearest integer; exact halves go away from zero.
+  example: []
+  syntax:
+    content: public static int Round(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Round(value As Single) As Integer
+  overload: SurvivorsMaker.Simulation.SimMath.Round*
+  nameWithType.vb: SimMath.Round(Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Round(Single)
+  name.vb: Round(Single)
+- uid: SurvivorsMaker.Simulation.SimMath.Round(System.Double)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Round(System.Double)
+  id: Round(System.Double)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Round(double)
+  nameWithType: SimMath.Round(double)
+  fullName: SurvivorsMaker.Simulation.SimMath.Round(double)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static int Round(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Round(value As Double) As Integer
+  overload: SurvivorsMaker.Simulation.SimMath.Round*
+  nameWithType.vb: SimMath.Round(Double)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Round(Double)
+  name.vb: Round(Double)
+- uid: SurvivorsMaker.Simulation.SimMath.SecondsToTicks(System.Single,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.SecondsToTicks(System.Single,System.Int32,System.Int32)
+  id: SecondsToTicks(System.Single,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: SecondsToTicks(float, int, int)
+  nameWithType: SimMath.SecondsToTicks(float, int, int)
+  fullName: SurvivorsMaker.Simulation.SimMath.SecondsToTicks(float, int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Seconds → ticks, rounded, at least <code class="paramref">minTicks</code>.
+  example: []
+  syntax:
+    content: public static int SecondsToTicks(float seconds, int ticksPerSecond, int minTicks = 1)
+    parameters:
+    - id: seconds
+      type: System.Single
+    - id: ticksPerSecond
+      type: System.Int32
+    - id: minTicks
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SecondsToTicks(seconds As Single, ticksPerSecond As Integer, minTicks As Integer =
+      1) As Integer
+  overload: SurvivorsMaker.Simulation.SimMath.SecondsToTicks*
+  nameWithType.vb: SimMath.SecondsToTicks(Single, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.SecondsToTicks(Single, Integer, Integer)
+  name.vb: SecondsToTicks(Single, Integer, Integer)
+- uid: SurvivorsMaker.Simulation.SimMath.Clamp(System.Single,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Clamp(System.Single,System.Single,System.Single)
+  id: Clamp(System.Single,System.Single,System.Single)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Clamp(float, float, float)
+  nameWithType: SimMath.Clamp(float, float, float)
+  fullName: SurvivorsMaker.Simulation.SimMath.Clamp(float, float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static float Clamp(float v, float min, float max)
+    parameters:
+    - id: v
+      type: System.Single
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Clamp(v As Single, min As Single, max As Single) As Single
+  overload: SurvivorsMaker.Simulation.SimMath.Clamp*
+  nameWithType.vb: SimMath.Clamp(Single, Single, Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Clamp(Single, Single, Single)
+  name.vb: Clamp(Single, Single, Single)
+- uid: SurvivorsMaker.Simulation.SimMath.Clamp(System.Int32,System.Int32,System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Clamp(System.Int32,System.Int32,System.Int32)
+  id: Clamp(System.Int32,System.Int32,System.Int32)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Clamp(int, int, int)
+  nameWithType: SimMath.Clamp(int, int, int)
+  fullName: SurvivorsMaker.Simulation.SimMath.Clamp(int, int, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static int Clamp(int v, int min, int max)
+    parameters:
+    - id: v
+      type: System.Int32
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Clamp(v As Integer, min As Integer, max As Integer) As Integer
+  overload: SurvivorsMaker.Simulation.SimMath.Clamp*
+  nameWithType.vb: SimMath.Clamp(Integer, Integer, Integer)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Clamp(Integer, Integer, Integer)
+  name.vb: Clamp(Integer, Integer, Integer)
+- uid: SurvivorsMaker.Simulation.SimMath.Clamp01(System.Single)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Clamp01(System.Single)
+  id: Clamp01(System.Single)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Clamp01(float)
+  nameWithType: SimMath.Clamp01(float)
+  fullName: SurvivorsMaker.Simulation.SimMath.Clamp01(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public static float Clamp01(float v)
+    parameters:
+    - id: v
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Clamp01(v As Single) As Single
+  overload: SurvivorsMaker.Simulation.SimMath.Clamp01*
+  nameWithType.vb: SimMath.Clamp01(Single)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Clamp01(Single)
+  name.vb: Clamp01(Single)
+- uid: SurvivorsMaker.Simulation.SimMath.Percent(System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.SimMath.Percent(System.Int32)
+  id: Percent(System.Int32)
+  parent: SurvivorsMaker.Simulation.SimMath
+  langs:
+  - csharp
+  - vb
+  name: Percent(int)
+  nameWithType: SimMath.Percent(int)
+  fullName: SurvivorsMaker.Simulation.SimMath.Percent(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Percent stat (e.g. 25) → ratio (0.25).
+  example: []
+  syntax:
+    content: public static float Percent(int stat)
+    parameters:
+    - id: stat
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Percent(stat As Integer) As Single
+  overload: SurvivorsMaker.Simulation.SimMath.Percent*
+  nameWithType.vb: SimMath.Percent(Integer)
+  fullName.vb: SurvivorsMaker.Simulation.SimMath.Percent(Integer)
+  name.vb: Percent(Integer)
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.SimMath.Round*
+  commentId: Overload:SurvivorsMaker.Simulation.SimMath.Round
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimMath.html#SurvivorsMaker_Simulation_SimMath_Round_System_Single_
+  name: Round
+  nameWithType: SimMath.Round
+  fullName: SurvivorsMaker.Simulation.SimMath.Round
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SurvivorsMaker.Simulation.SimMath.SecondsToTicks*
+  commentId: Overload:SurvivorsMaker.Simulation.SimMath.SecondsToTicks
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimMath.html#SurvivorsMaker_Simulation_SimMath_SecondsToTicks_System_Single_System_Int32_System_Int32_
+  name: SecondsToTicks
+  nameWithType: SimMath.SecondsToTicks
+  fullName: SurvivorsMaker.Simulation.SimMath.SecondsToTicks
+- uid: SurvivorsMaker.Simulation.SimMath.Clamp*
+  commentId: Overload:SurvivorsMaker.Simulation.SimMath.Clamp
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimMath.html#SurvivorsMaker_Simulation_SimMath_Clamp_System_Single_System_Single_System_Single_
+  name: Clamp
+  nameWithType: SimMath.Clamp
+  fullName: SurvivorsMaker.Simulation.SimMath.Clamp
+- uid: SurvivorsMaker.Simulation.SimMath.Clamp01*
+  commentId: Overload:SurvivorsMaker.Simulation.SimMath.Clamp01
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimMath.html#SurvivorsMaker_Simulation_SimMath_Clamp01_System_Single_
+  name: Clamp01
+  nameWithType: SimMath.Clamp01
+  fullName: SurvivorsMaker.Simulation.SimMath.Clamp01
+- uid: SurvivorsMaker.Simulation.SimMath.Percent*
+  commentId: Overload:SurvivorsMaker.Simulation.SimMath.Percent
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimMath.html#SurvivorsMaker_Simulation_SimMath_Percent_System_Int32_
+  name: Percent
+  nameWithType: SimMath.Percent
+  fullName: SurvivorsMaker.Simulation.SimMath.Percent

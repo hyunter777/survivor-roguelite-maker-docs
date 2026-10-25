@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackKind
+  id: SpecialAttackKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.SpecialAttackKind.Charge
+  - SurvivorsMaker.Simulation.SpecialAttackKind.None
+  - SurvivorsMaker.Simulation.SpecialAttackKind.Shoot
+  - SurvivorsMaker.Simulation.SpecialAttackKind.Summon
+  langs:
+  - csharp
+  - vb
+  name: SpecialAttackKind
+  nameWithType: SpecialAttackKind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum SpecialAttackKind
+    content.vb: Public Enum SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind.None
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackKind.None
+  id: None
+  parent: SurvivorsMaker.Simulation.SpecialAttackKind
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: SpecialAttackKind.None
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind.Shoot
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackKind.Shoot
+  id: Shoot
+  parent: SurvivorsMaker.Simulation.SpecialAttackKind
+  langs:
+  - csharp
+  - vb
+  name: Shoot
+  nameWithType: SpecialAttackKind.Shoot
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind.Shoot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Winds up while moving, then fires projectiles at the player.
+  example: []
+  syntax:
+    content: Shoot = 1
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind.Charge
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackKind.Charge
+  id: Charge
+  parent: SurvivorsMaker.Simulation.SpecialAttackKind
+  langs:
+  - csharp
+  - vb
+  name: Charge
+  nameWithType: SpecialAttackKind.Charge
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind.Charge
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Stops to wind up, then dashes in a fixed direction.
+  example: []
+  syntax:
+    content: Charge = 2
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind.Summon
+  commentId: F:SurvivorsMaker.Simulation.SpecialAttackKind.Summon
+  id: Summon
+  parent: SurvivorsMaker.Simulation.SpecialAttackKind
+  langs:
+  - csharp
+  - vb
+  name: Summon
+  nameWithType: SpecialAttackKind.Summon
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind.Summon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Winds up while moving, then requests child spawns around itself.
+  example: []
+  syntax:
+    content: Summon = 3
+    return:
+      type: SurvivorsMaker.Simulation.SpecialAttackKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.SpecialAttackKind
+  commentId: T:SurvivorsMaker.Simulation.SpecialAttackKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpecialAttackKind.html
+  name: SpecialAttackKind
+  nameWithType: SpecialAttackKind
+  fullName: SurvivorsMaker.Simulation.SpecialAttackKind

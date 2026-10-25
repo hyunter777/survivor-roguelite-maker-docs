@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.MemoryProfileStore
+  commentId: T:SurvivorsMaker.Run.MemoryProfileStore
+  id: MemoryProfileStore
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.MemoryProfileStore.#ctor
+  - SurvivorsMaker.Run.MemoryProfileStore.Load
+  - SurvivorsMaker.Run.MemoryProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  langs:
+  - csharp
+  - vb
+  name: MemoryProfileStore
+  nameWithType: MemoryProfileStore
+  fullName: SurvivorsMaker.Run.MemoryProfileStore
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Detached copies model the serialization boundary without a file system.
+  example: []
+  syntax:
+    content: 'public sealed class MemoryProfileStore : IProfileStore'
+    content.vb: Public NotInheritable Class MemoryProfileStore Implements IProfileStore
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Run.IProfileStore
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.MemoryProfileStore.Load
+  commentId: M:SurvivorsMaker.Run.MemoryProfileStore.Load
+  id: Load
+  parent: SurvivorsMaker.Run.MemoryProfileStore
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: MemoryProfileStore.Load()
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.Load()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  example: []
+  syntax:
+    content: public ProfileState Load()
+    return:
+      type: SurvivorsMaker.Run.ProfileState
+    content.vb: Public Function Load() As ProfileState
+  overload: SurvivorsMaker.Run.MemoryProfileStore.Load*
+  implements:
+  - SurvivorsMaker.Run.IProfileStore.Load
+- uid: SurvivorsMaker.Run.MemoryProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  commentId: M:SurvivorsMaker.Run.MemoryProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  id: Save(SurvivorsMaker.Run.ProfileState)
+  parent: SurvivorsMaker.Run.MemoryProfileStore
+  langs:
+  - csharp
+  - vb
+  name: Save(ProfileState)
+  nameWithType: MemoryProfileStore.Save(ProfileState)
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  example: []
+  syntax:
+    content: public void Save(ProfileState profile)
+    parameters:
+    - id: profile
+      type: SurvivorsMaker.Run.ProfileState
+    content.vb: Public Sub Save(profile As ProfileState)
+  overload: SurvivorsMaker.Run.MemoryProfileStore.Save*
+  implements:
+  - SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+- uid: SurvivorsMaker.Run.MemoryProfileStore.#ctor
+  commentId: M:SurvivorsMaker.Run.MemoryProfileStore.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.MemoryProfileStore
+  langs:
+  - csharp
+  - vb
+  name: MemoryProfileStore()
+  nameWithType: MemoryProfileStore.MemoryProfileStore()
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.MemoryProfileStore()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public MemoryProfileStore()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.MemoryProfileStore.#ctor*
+  nameWithType.vb: MemoryProfileStore.New()
+  fullName.vb: SurvivorsMaker.Run.MemoryProfileStore.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Run.IProfileStore
+  commentId: T:SurvivorsMaker.Run.IProfileStore
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html
+  name: IProfileStore
+  nameWithType: IProfileStore
+  fullName: SurvivorsMaker.Run.IProfileStore
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.MemoryProfileStore.Load*
+  commentId: Overload:SurvivorsMaker.Run.MemoryProfileStore.Load
+  isExternal: true
+  href: SurvivorsMaker.Run.MemoryProfileStore.html#SurvivorsMaker_Run_MemoryProfileStore_Load
+  name: Load
+  nameWithType: MemoryProfileStore.Load
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.Load
+- uid: SurvivorsMaker.Run.IProfileStore.Load
+  commentId: M:SurvivorsMaker.Run.IProfileStore.Load
+  parent: SurvivorsMaker.Run.IProfileStore
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Load
+  name: Load()
+  nameWithType: IProfileStore.Load()
+  fullName: SurvivorsMaker.Run.IProfileStore.Load()
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IProfileStore.Load
+    name: Load
+    isExternal: true
+    href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Load
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IProfileStore.Load
+    name: Load
+    isExternal: true
+    href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Load
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run.ProfileState
+  commentId: T:SurvivorsMaker.Run.ProfileState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ProfileState.html
+  name: ProfileState
+  nameWithType: ProfileState
+  fullName: SurvivorsMaker.Run.ProfileState
+- uid: SurvivorsMaker.Run.MemoryProfileStore.Save*
+  commentId: Overload:SurvivorsMaker.Run.MemoryProfileStore.Save
+  isExternal: true
+  href: SurvivorsMaker.Run.MemoryProfileStore.html#SurvivorsMaker_Run_MemoryProfileStore_Save_SurvivorsMaker_Run_ProfileState_
+  name: Save
+  nameWithType: MemoryProfileStore.Save
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.Save
+- uid: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  commentId: M:SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  parent: SurvivorsMaker.Run.IProfileStore
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Save_SurvivorsMaker_Run_ProfileState_
+  name: Save(ProfileState)
+  nameWithType: IProfileStore.Save(ProfileState)
+  fullName: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+    name: Save
+    isExternal: true
+    href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Save_SurvivorsMaker_Run_ProfileState_
+  - name: (
+  - uid: SurvivorsMaker.Run.ProfileState
+    name: ProfileState
+    isExternal: true
+    href: SurvivorsMaker.Run.ProfileState.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IProfileStore.Save(SurvivorsMaker.Run.ProfileState)
+    name: Save
+    isExternal: true
+    href: SurvivorsMaker.Run.IProfileStore.html#SurvivorsMaker_Run_IProfileStore_Save_SurvivorsMaker_Run_ProfileState_
+  - name: (
+  - uid: SurvivorsMaker.Run.ProfileState
+    name: ProfileState
+    isExternal: true
+    href: SurvivorsMaker.Run.ProfileState.html
+  - name: )
+- uid: SurvivorsMaker.Run.MemoryProfileStore.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.MemoryProfileStore.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.MemoryProfileStore.html#SurvivorsMaker_Run_MemoryProfileStore__ctor
+  name: MemoryProfileStore
+  nameWithType: MemoryProfileStore.MemoryProfileStore
+  fullName: SurvivorsMaker.Run.MemoryProfileStore.MemoryProfileStore
+  nameWithType.vb: MemoryProfileStore.New
+  fullName.vb: SurvivorsMaker.Run.MemoryProfileStore.New
+  name.vb: New

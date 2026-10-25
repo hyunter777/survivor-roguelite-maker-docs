@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.ContentTableKind
+  commentId: T:SurvivorsMaker.Editor.ContentTableKind
+  id: ContentTableKind
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.ContentTableKind.Enemies
+  - SurvivorsMaker.Editor.ContentTableKind.Items
+  - SurvivorsMaker.Editor.ContentTableKind.Weapons
+  langs:
+  - csharp
+  - vb
+  name: ContentTableKind
+  nameWithType: ContentTableKind
+  fullName: SurvivorsMaker.Editor.ContentTableKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum ContentTableKind
+    content.vb: Public Enum ContentTableKind
+- uid: SurvivorsMaker.Editor.ContentTableKind.Weapons
+  commentId: F:SurvivorsMaker.Editor.ContentTableKind.Weapons
+  id: Weapons
+  parent: SurvivorsMaker.Editor.ContentTableKind
+  langs:
+  - csharp
+  - vb
+  name: Weapons
+  nameWithType: ContentTableKind.Weapons
+  fullName: SurvivorsMaker.Editor.ContentTableKind.Weapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Weapons = 0
+    return:
+      type: SurvivorsMaker.Editor.ContentTableKind
+- uid: SurvivorsMaker.Editor.ContentTableKind.Items
+  commentId: F:SurvivorsMaker.Editor.ContentTableKind.Items
+  id: Items
+  parent: SurvivorsMaker.Editor.ContentTableKind
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: ContentTableKind.Items
+  fullName: SurvivorsMaker.Editor.ContentTableKind.Items
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Items = 1
+    return:
+      type: SurvivorsMaker.Editor.ContentTableKind
+- uid: SurvivorsMaker.Editor.ContentTableKind.Enemies
+  commentId: F:SurvivorsMaker.Editor.ContentTableKind.Enemies
+  id: Enemies
+  parent: SurvivorsMaker.Editor.ContentTableKind
+  langs:
+  - csharp
+  - vb
+  name: Enemies
+  nameWithType: ContentTableKind.Enemies
+  fullName: SurvivorsMaker.Editor.ContentTableKind.Enemies
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: Enemies = 2
+    return:
+      type: SurvivorsMaker.Editor.ContentTableKind
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.ContentTableKind
+  commentId: T:SurvivorsMaker.Editor.ContentTableKind
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.ContentTableKind.html
+  name: ContentTableKind
+  nameWithType: ContentTableKind
+  fullName: SurvivorsMaker.Editor.ContentTableKind

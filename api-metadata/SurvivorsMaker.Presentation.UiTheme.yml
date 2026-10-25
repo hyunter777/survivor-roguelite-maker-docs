@@ -1,0 +1,5110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiTheme
+  commentId: T:SurvivorsMaker.Presentation.UiTheme
+  id: UiTheme
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiTheme.#ctor
+  - SurvivorsMaker.Presentation.UiTheme.Accent
+  - SurvivorsMaker.Presentation.UiTheme.AccentHover
+  - SurvivorsMaker.Presentation.UiTheme.AccentPressed
+  - SurvivorsMaker.Presentation.UiTheme.AccentText
+  - SurvivorsMaker.Presentation.UiTheme.Background
+  - SurvivorsMaker.Presentation.UiTheme.BannerHeight
+  - SurvivorsMaker.Presentation.UiTheme.BannerWidth
+  - SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
+  - SurvivorsMaker.Presentation.UiTheme.BarFill
+  - SurvivorsMaker.Presentation.UiTheme.BarHeight
+  - SurvivorsMaker.Presentation.UiTheme.BodySize
+  - SurvivorsMaker.Presentation.UiTheme.Border
+  - SurvivorsMaker.Presentation.UiTheme.BorderWidth
+  - SurvivorsMaker.Presentation.UiTheme.BossBarHeight
+  - SurvivorsMaker.Presentation.UiTheme.BossBarWidth
+  - SurvivorsMaker.Presentation.UiTheme.BossChipDelay
+  - SurvivorsMaker.Presentation.UiTheme.BossChipSpeed
+  - SurvivorsMaker.Presentation.UiTheme.BossDefeatHoldSeconds
+  - SurvivorsMaker.Presentation.UiTheme.BossFadeSeconds
+  - SurvivorsMaker.Presentation.UiTheme.BossHealth
+  - SurvivorsMaker.Presentation.UiTheme.BossHealthChip
+  - SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
+  - SurvivorsMaker.Presentation.UiTheme.BossPipSize
+  - SurvivorsMaker.Presentation.UiTheme.BossTickWidth
+  - SurvivorsMaker.Presentation.UiTheme.BossTopGap
+  - SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+  - SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
+  - SurvivorsMaker.Presentation.UiTheme.ButtonFadeSeconds
+  - SurvivorsMaker.Presentation.UiTheme.ButtonFill
+  - SurvivorsMaker.Presentation.UiTheme.ButtonHeight
+  - SurvivorsMaker.Presentation.UiTheme.ButtonHoverSprite
+  - SurvivorsMaker.Presentation.UiTheme.ButtonNormalSprite
+  - SurvivorsMaker.Presentation.UiTheme.ButtonPadding
+  - SurvivorsMaker.Presentation.UiTheme.ButtonPressedSprite
+  - SurvivorsMaker.Presentation.UiTheme.ButtonTextSize
+  - SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
+  - SurvivorsMaker.Presentation.UiTheme.CardHeight
+  - SurvivorsMaker.Presentation.UiTheme.CardPadding
+  - SurvivorsMaker.Presentation.UiTheme.CardSpacing
+  - SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
+  - SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
+  - SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
+  - SurvivorsMaker.Presentation.UiTheme.CompactIconSize
+  - SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
+  - SurvivorsMaker.Presentation.UiTheme.CornerRadius
+  - SurvivorsMaker.Presentation.UiTheme.Danger
+  - SurvivorsMaker.Presentation.UiTheme.DangerBorder
+  - SurvivorsMaker.Presentation.UiTheme.DangerHover
+  - SurvivorsMaker.Presentation.UiTheme.DangerPressed
+  - SurvivorsMaker.Presentation.UiTheme.DangerText
+  - SurvivorsMaker.Presentation.UiTheme.DialogHeight
+  - SurvivorsMaker.Presentation.UiTheme.DialogWidth
+  - SurvivorsMaker.Presentation.UiTheme.Disabled
+  - SurvivorsMaker.Presentation.UiTheme.DisabledText
+  - SurvivorsMaker.Presentation.UiTheme.DisplaySize
+  - SurvivorsMaker.Presentation.UiTheme.DropdownVisibleRows
+  - SurvivorsMaker.Presentation.UiTheme.EdgeArrowBounce
+  - SurvivorsMaker.Presentation.UiTheme.EdgeArrowMargin
+  - SurvivorsMaker.Presentation.UiTheme.EdgeArrowPulse
+  - SurvivorsMaker.Presentation.UiTheme.EdgeArrowSeconds
+  - SurvivorsMaker.Presentation.UiTheme.EdgeArrowSize
+  - SurvivorsMaker.Presentation.UiTheme.Experience
+  - SurvivorsMaker.Presentation.UiTheme.Focus
+  - SurvivorsMaker.Presentation.UiTheme.FocusGap
+  - SurvivorsMaker.Presentation.UiTheme.FocusRing
+  - SurvivorsMaker.Presentation.UiTheme.FocusWidth
+  - SurvivorsMaker.Presentation.UiTheme.Font
+  - SurvivorsMaker.Presentation.UiTheme.FooterHeight
+  - SurvivorsMaker.Presentation.UiTheme.Gold
+  - SurvivorsMaker.Presentation.UiTheme.HeaderHeight
+  - SurvivorsMaker.Presentation.UiTheme.HeadingSize
+  - SurvivorsMaker.Presentation.UiTheme.Health
+  - SurvivorsMaker.Presentation.UiTheme.HordeBannerHeight
+  - SurvivorsMaker.Presentation.UiTheme.HordeBannerSeconds
+  - SurvivorsMaker.Presentation.UiTheme.HordeBannerY
+  - SurvivorsMaker.Presentation.UiTheme.HudBackground
+  - SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
+  - SurvivorsMaker.Presentation.UiTheme.HudBarHeight
+  - SurvivorsMaker.Presentation.UiTheme.HudGap
+  - SurvivorsMaker.Presentation.UiTheme.HudHeight
+  - SurvivorsMaker.Presentation.UiTheme.HudPadding
+  - SurvivorsMaker.Presentation.UiTheme.HudTextHeight
+  - SurvivorsMaker.Presentation.UiTheme.HudWidth
+  - SurvivorsMaker.Presentation.UiTheme.IconSize
+  - SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
+  - SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
+  - SurvivorsMaker.Presentation.UiTheme.LineSpacing
+  - SurvivorsMaker.Presentation.UiTheme.Locked
+  - SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
+  - SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
+  - SurvivorsMaker.Presentation.UiTheme.MenuHeight
+  - SurvivorsMaker.Presentation.UiTheme.MenuIconSize
+  - SurvivorsMaker.Presentation.UiTheme.MenuWidth
+  - SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
+  - SurvivorsMaker.Presentation.UiTheme.Muted
+  - SurvivorsMaker.Presentation.UiTheme.Padding
+  - SurvivorsMaker.Presentation.UiTheme.Panel
+  - SurvivorsMaker.Presentation.UiTheme.PanelBorder
+  - SurvivorsMaker.Presentation.UiTheme.PanelFill
+  - SurvivorsMaker.Presentation.UiTheme.PanelHeight
+  - SurvivorsMaker.Presentation.UiTheme.PanelSprite
+  - SurvivorsMaker.Presentation.UiTheme.PanelWidth
+  - SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
+  - SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
+  - SurvivorsMaker.Presentation.UiTheme.RecordsWidth
+  - SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
+  - SurvivorsMaker.Presentation.UiTheme.ReferenceResolution
+  - SurvivorsMaker.Presentation.UiTheme.ScaleMatch
+  - SurvivorsMaker.Presentation.UiTheme.Secondary
+  - SurvivorsMaker.Presentation.UiTheme.SecondaryBorder
+  - SurvivorsMaker.Presentation.UiTheme.SecondaryHover
+  - SurvivorsMaker.Presentation.UiTheme.SecondaryPressed
+  - SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
+  - SurvivorsMaker.Presentation.UiTheme.SettingsHeight
+  - SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
+  - SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
+  - SurvivorsMaker.Presentation.UiTheme.SettingsWidth
+  - SurvivorsMaker.Presentation.UiTheme.SliderHandleSize
+  - SurvivorsMaker.Presentation.UiTheme.SmallSize
+  - SurvivorsMaker.Presentation.UiTheme.Spacing
+  - SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
+  - SurvivorsMaker.Presentation.UiTheme.StatsWidth
+  - SurvivorsMaker.Presentation.UiTheme.StockColumnWeight
+  - SurvivorsMaker.Presentation.UiTheme.Strings
+  - SurvivorsMaker.Presentation.UiTheme.Surface
+  - SurvivorsMaker.Presentation.UiTheme.Text
+  - SurvivorsMaker.Presentation.UiTheme.TierColor(System.Int32)
+  - SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
+  - SurvivorsMaker.Presentation.UiTheme.Tiers
+  - SurvivorsMaker.Presentation.UiTheme.TitleSize
+  - SurvivorsMaker.Presentation.UiTheme.ToastFadeSeconds
+  - SurvivorsMaker.Presentation.UiTheme.ToastHeight
+  - SurvivorsMaker.Presentation.UiTheme.ToastPopScale
+  - SurvivorsMaker.Presentation.UiTheme.ToastSeconds
+  - SurvivorsMaker.Presentation.UiTheme.ToastWidth
+  - SurvivorsMaker.Presentation.UiTheme.Track
+  - SurvivorsMaker.Presentation.UiTheme.UnlockPanelHeight
+  - SurvivorsMaker.Presentation.UiTheme.UnlockPanelWidth
+  - SurvivorsMaker.Presentation.UiTheme.UnlockRevealSeconds
+  - SurvivorsMaker.Presentation.UiTheme.UnlockRowHeight
+  - SurvivorsMaker.Presentation.UiTheme.Warning
+  - SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
+  - SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
+  - SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
+  langs:
+  - csharp
+  - vb
+  name: UiTheme
+  nameWithType: UiTheme
+  fullName: SurvivorsMaker.Presentation.UiTheme
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'The whole UI look in one place. Defaults are a flat dark style drawn without art: rounded panels and
+
+    buttons generated at runtime (see <xref href="SurvivorsMaker.Presentation.UiSprites" data-throw-if-not-resolved="false"></xref>).
+    Assign sprites to use your own frames.
+
+    Sizes are in reference pixels (1920 × 1080).'
+  example: []
+  syntax:
+    content: public sealed class UiTheme
+    content.vb: Public NotInheritable Class UiTheme
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.UiTheme.Font
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Font
+  id: Font
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Font
+  nameWithType: UiTheme.Font
+  fullName: SurvivorsMaker.Presentation.UiTheme.Font
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font asset; unassigned uses the available default font.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font asset; unassigned uses the available default font.")]
+
+      public TMP_FontAsset Font'
+    return:
+      type: TMPro.TMP_FontAsset
+    content.vb: '<Tooltip("TextMeshPro font asset; unassigned uses the available default font.")>
+
+      Public Font As TMP_FontAsset'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font asset; unassigned uses the available default font.
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelSprite
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.PanelSprite
+  id: PanelSprite
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: PanelSprite
+  nameWithType: UiTheme.PanelSprite
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Optional panel sprite; unassigned uses generated rounded art.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional panel sprite; unassigned uses generated rounded art.")]
+
+      [Header("Optional art (empty = generated rounded shapes)")]
+
+      public Sprite PanelSprite'
+    return:
+      type: UnityEngine.Sprite
+    content.vb: '<Tooltip("Optional panel sprite; unassigned uses generated rounded art.")>
+
+      <Header("Optional art (empty = generated rounded shapes)")>
+
+      Public PanelSprite As Sprite'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional panel sprite; unassigned uses generated rounded art.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional art (empty = generated rounded shapes)
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonNormalSprite
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonNormalSprite
+  id: ButtonNormalSprite
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonNormalSprite
+  nameWithType: UiTheme.ButtonNormalSprite
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonNormalSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Optional button normal sprite; unassigned uses generated rounded art.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional button normal sprite; unassigned uses generated rounded art.")]
+
+      public Sprite ButtonNormalSprite'
+    return:
+      type: UnityEngine.Sprite
+    content.vb: '<Tooltip("Optional button normal sprite; unassigned uses generated rounded art.")>
+
+      Public ButtonNormalSprite As Sprite'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional button normal sprite; unassigned uses generated rounded art.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonHoverSprite
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonHoverSprite
+  id: ButtonHoverSprite
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonHoverSprite
+  nameWithType: UiTheme.ButtonHoverSprite
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonHoverSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Optional button hover sprite; unassigned uses generated rounded art.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional button hover sprite; unassigned uses generated rounded art.")]
+
+      public Sprite ButtonHoverSprite'
+    return:
+      type: UnityEngine.Sprite
+    content.vb: '<Tooltip("Optional button hover sprite; unassigned uses generated rounded art.")>
+
+      Public ButtonHoverSprite As Sprite'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional button hover sprite; unassigned uses generated rounded art.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonPressedSprite
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonPressedSprite
+  id: ButtonPressedSprite
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonPressedSprite
+  nameWithType: UiTheme.ButtonPressedSprite
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonPressedSprite
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Optional button pressed sprite; unassigned uses generated rounded art.
+  example: []
+  syntax:
+    content: '[Tooltip("Optional button pressed sprite; unassigned uses generated rounded art.")]
+
+      public Sprite ButtonPressedSprite'
+    return:
+      type: UnityEngine.Sprite
+    content.vb: '<Tooltip("Optional button pressed sprite; unassigned uses generated rounded art.")>
+
+      Public ButtonPressedSprite As Sprite'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional button pressed sprite; unassigned uses generated rounded art.
+- uid: SurvivorsMaker.Presentation.UiTheme.CornerRadius
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CornerRadius
+  id: CornerRadius
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CornerRadius
+  nameWithType: UiTheme.CornerRadius
+  fullName: SurvivorsMaker.Presentation.UiTheme.CornerRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CornerRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CornerRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
+  id: ButtonCornerRadius
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonCornerRadius
+  nameWithType: UiTheme.ButtonCornerRadius
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonCornerRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float ButtonCornerRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public ButtonCornerRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
+  id: BarCornerRadius
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BarCornerRadius
+  nameWithType: UiTheme.BarCornerRadius
+  fullName: SurvivorsMaker.Presentation.UiTheme.BarCornerRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BarCornerRadius'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BarCornerRadius As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BorderWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BorderWidth
+  id: BorderWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BorderWidth
+  nameWithType: UiTheme.BorderWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.BorderWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BorderWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BorderWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.FocusWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.FocusWidth
+  id: FocusWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: FocusWidth
+  nameWithType: UiTheme.FocusWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.FocusWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float FocusWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public FocusWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.FocusGap
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.FocusGap
+  id: FocusGap
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: FocusGap
+  nameWithType: UiTheme.FocusGap
+  fullName: SurvivorsMaker.Presentation.UiTheme.FocusGap
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Gap between a button and its focus ring.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float FocusGap'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public FocusGap As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
+  id: ReferencePixelsPerUnit
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ReferencePixelsPerUnit
+  nameWithType: UiTheme.ReferencePixelsPerUnit
+  fullName: SurvivorsMaker.Presentation.UiTheme.ReferencePixelsPerUnit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Sprite reference pixels per Unity unit; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("Sprite reference pixels per Unity unit; positive.")]
+
+      public float ReferencePixelsPerUnit'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Sprite reference pixels per Unity unit; positive.")>
+
+      Public ReferencePixelsPerUnit As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sprite reference pixels per Unity unit; positive.
+- uid: SurvivorsMaker.Presentation.UiTheme.Background
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Background
+  id: Background
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Background
+  nameWithType: UiTheme.Background
+  fullName: SurvivorsMaker.Presentation.UiTheme.Background
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Full-screen shade behind modal panels.
+  example: []
+  syntax:
+    content: '[Tooltip("Background colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      [Header("Surfaces: screen < panel < card")]
+
+      public Color Background'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Background colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      <Header("Surfaces: screen < panel < card")>
+
+      Public Background As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Background colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'Surfaces: screen < panel < card'
+- uid: SurvivorsMaker.Presentation.UiTheme.Panel
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Panel
+  id: Panel
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Panel
+  nameWithType: UiTheme.Panel
+  fullName: SurvivorsMaker.Presentation.UiTheme.Panel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Panel colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Panel colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Panel'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Panel colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Panel As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Panel colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Surface
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Surface
+  id: Surface
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Surface
+  nameWithType: UiTheme.Surface
+  fullName: SurvivorsMaker.Presentation.UiTheme.Surface
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Surface colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Surface colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Surface'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Surface colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Surface As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Surface colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Border
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Border
+  id: Border
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Border
+  nameWithType: UiTheme.Border
+  fullName: SurvivorsMaker.Presentation.UiTheme.Border
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Border'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Border As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudBackground
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudBackground
+  id: HudBackground
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudBackground
+  nameWithType: UiTheme.HudBackground
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudBackground
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Hud Background colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Hud Background colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color HudBackground'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Hud Background colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public HudBackground As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Hud Background colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Track
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Track
+  id: Track
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Track
+  nameWithType: UiTheme.Track
+  fullName: SurvivorsMaker.Presentation.UiTheme.Track
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Empty part of bars.
+  example: []
+  syntax:
+    content: '[Tooltip("Track colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Track'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Track colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Track As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Track colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Text
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Text
+  id: Text
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UiTheme.Text
+  fullName: SurvivorsMaker.Presentation.UiTheme.Text
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      [Header("Text")]
+
+      public Color Text'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      <Header("Text")>
+
+      Public Text As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Text
+- uid: SurvivorsMaker.Presentation.UiTheme.Muted
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Muted
+  id: Muted
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Muted
+  nameWithType: UiTheme.Muted
+  fullName: SurvivorsMaker.Presentation.UiTheme.Muted
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Muted colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Muted colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Muted'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Muted colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Muted As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Muted colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Accent
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Accent
+  id: Accent
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Accent
+  nameWithType: UiTheme.Accent
+  fullName: SurvivorsMaker.Presentation.UiTheme.Accent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Accent colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Accent colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      [Header("Buttons")]
+
+      public Color Accent'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Accent colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      <Header("Buttons")>
+
+      Public Accent As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Accent colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Buttons
+- uid: SurvivorsMaker.Presentation.UiTheme.AccentHover
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.AccentHover
+  id: AccentHover
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: AccentHover
+  nameWithType: UiTheme.AccentHover
+  fullName: SurvivorsMaker.Presentation.UiTheme.AccentHover
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Accent Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Accent Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color AccentHover'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Accent Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public AccentHover As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Accent Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.AccentPressed
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.AccentPressed
+  id: AccentPressed
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: AccentPressed
+  nameWithType: UiTheme.AccentPressed
+  fullName: SurvivorsMaker.Presentation.UiTheme.AccentPressed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Accent Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Accent Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color AccentPressed'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Accent Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public AccentPressed As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Accent Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.AccentText
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.AccentText
+  id: AccentText
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: AccentText
+  nameWithType: UiTheme.AccentText
+  fullName: SurvivorsMaker.Presentation.UiTheme.AccentText
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Accent Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Accent Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color AccentText'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Accent Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public AccentText As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Accent Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Secondary
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Secondary
+  id: Secondary
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Secondary
+  nameWithType: UiTheme.Secondary
+  fullName: SurvivorsMaker.Presentation.UiTheme.Secondary
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Secondary colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Secondary colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Secondary'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Secondary colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Secondary As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Secondary colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.SecondaryHover
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SecondaryHover
+  id: SecondaryHover
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SecondaryHover
+  nameWithType: UiTheme.SecondaryHover
+  fullName: SurvivorsMaker.Presentation.UiTheme.SecondaryHover
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Secondary Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Secondary Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color SecondaryHover'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Secondary Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public SecondaryHover As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Secondary Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.SecondaryPressed
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SecondaryPressed
+  id: SecondaryPressed
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SecondaryPressed
+  nameWithType: UiTheme.SecondaryPressed
+  fullName: SurvivorsMaker.Presentation.UiTheme.SecondaryPressed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Secondary Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Secondary Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color SecondaryPressed'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Secondary Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public SecondaryPressed As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Secondary Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.SecondaryBorder
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SecondaryBorder
+  id: SecondaryBorder
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SecondaryBorder
+  nameWithType: UiTheme.SecondaryBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.SecondaryBorder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Secondary Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Secondary Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color SecondaryBorder'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Secondary Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public SecondaryBorder As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Secondary Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Danger
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Danger
+  id: Danger
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Danger
+  nameWithType: UiTheme.Danger
+  fullName: SurvivorsMaker.Presentation.UiTheme.Danger
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Danger colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Danger colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Danger'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Danger colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Danger As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Danger colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.DangerHover
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DangerHover
+  id: DangerHover
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DangerHover
+  nameWithType: UiTheme.DangerHover
+  fullName: SurvivorsMaker.Presentation.UiTheme.DangerHover
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Danger Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Danger Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color DangerHover'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Danger Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public DangerHover As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Danger Hover colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.DangerPressed
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DangerPressed
+  id: DangerPressed
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DangerPressed
+  nameWithType: UiTheme.DangerPressed
+  fullName: SurvivorsMaker.Presentation.UiTheme.DangerPressed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Danger Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Danger Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color DangerPressed'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Danger Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public DangerPressed As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Danger Pressed colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.DangerText
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DangerText
+  id: DangerText
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DangerText
+  nameWithType: UiTheme.DangerText
+  fullName: SurvivorsMaker.Presentation.UiTheme.DangerText
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Danger Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Danger Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color DangerText'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Danger Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public DangerText As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Danger Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.DangerBorder
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DangerBorder
+  id: DangerBorder
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DangerBorder
+  nameWithType: UiTheme.DangerBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.DangerBorder
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Danger Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Danger Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color DangerBorder'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Danger Border colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public DangerBorder As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Danger Border colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Disabled
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Disabled
+  id: Disabled
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: UiTheme.Disabled
+  fullName: SurvivorsMaker.Presentation.UiTheme.Disabled
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Disabled colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Disabled colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Disabled'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Disabled colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Disabled As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Disabled colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.DisabledText
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DisabledText
+  id: DisabledText
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DisabledText
+  nameWithType: UiTheme.DisabledText
+  fullName: SurvivorsMaker.Presentation.UiTheme.DisabledText
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Disabled Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Disabled Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color DisabledText'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Disabled Text colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public DisabledText As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Disabled Text colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Focus
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Focus
+  id: Focus
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Focus
+  nameWithType: UiTheme.Focus
+  fullName: SurvivorsMaker.Presentation.UiTheme.Focus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Focus colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Focus colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Focus'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Focus colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Focus As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Focus colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonFadeSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonFadeSeconds
+  id: ButtonFadeSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonFadeSeconds
+  nameWithType: UiTheme.ButtonFadeSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonFadeSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Button state colour transition duration in seconds; 0 = immediate.
+  example: []
+  syntax:
+    content: '[Tooltip("Button state colour transition duration in seconds; 0 = immediate.")]
+
+      public float ButtonFadeSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Button state colour transition duration in seconds; 0 = immediate.")>
+
+      Public ButtonFadeSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Button state colour transition duration in seconds; 0 = immediate.
+- uid: SurvivorsMaker.Presentation.UiTheme.Health
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Health
+  id: Health
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: UiTheme.Health
+  fullName: SurvivorsMaker.Presentation.UiTheme.Health
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Health colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Health colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      [Header("Meaning")]
+
+      public Color Health'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Health colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      <Header("Meaning")>
+
+      Public Health As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Health colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Meaning
+- uid: SurvivorsMaker.Presentation.UiTheme.Experience
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Experience
+  id: Experience
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: UiTheme.Experience
+  fullName: SurvivorsMaker.Presentation.UiTheme.Experience
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Experience colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Experience colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Experience'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Experience colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Experience As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Experience colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Warning
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Warning
+  id: Warning
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: UiTheme.Warning
+  fullName: SurvivorsMaker.Presentation.UiTheme.Warning
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Danger accents: horde banner, edge arrows.'
+  example: []
+  syntax:
+    content: '[Tooltip("Warning colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Warning'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Warning colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Warning As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Warning colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Gold
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Gold
+  id: Gold
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Gold
+  nameWithType: UiTheme.Gold
+  fullName: SurvivorsMaker.Presentation.UiTheme.Gold
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Rewards and elites: unlock popup, trophies, elite toast, currency.'
+  example: []
+  syntax:
+    content: '[Tooltip("Gold colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Gold'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Gold colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Gold As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Gold colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossHealth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossHealth
+  id: BossHealth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossHealth
+  nameWithType: UiTheme.BossHealth
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossHealth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss Health colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss Health colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BossHealth'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Boss Health colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public BossHealth As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss Health colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossHealthChip
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossHealthChip
+  id: BossHealthChip
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossHealthChip
+  nameWithType: UiTheme.BossHealthChip
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossHealthChip
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss Health Chip colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss Health Chip colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color BossHealthChip'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Boss Health Chip colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public BossHealthChip As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss Health Chip colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Locked
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Locked
+  id: Locked
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Locked
+  nameWithType: UiTheme.Locked
+  fullName: SurvivorsMaker.Presentation.UiTheme.Locked
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Locked colour (RGBA); alpha 0 = transparent, 1 = opaque.
+  example: []
+  syntax:
+    content: '[Tooltip("Locked colour (RGBA); alpha 0 = transparent, 1 = opaque.")]
+
+      public Color Locked'
+    return:
+      type: UnityEngine.Color
+    content.vb: '<Tooltip("Locked colour (RGBA); alpha 0 = transparent, 1 = opaque.")>
+
+      Public Locked As Color'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Locked colour (RGBA); alpha 0 = transparent, 1 = opaque.
+- uid: SurvivorsMaker.Presentation.UiTheme.Tiers
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Tiers
+  id: Tiers
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Tiers
+  nameWithType: UiTheme.Tiers
+  fullName: SurvivorsMaker.Presentation.UiTheme.Tiers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Tier colours by zero-based tier index; missing high tiers use the last colour.
+  example: []
+  syntax:
+    content: '[Tooltip("Tier colours by zero-based tier index; missing high tiers use the last colour.")]
+
+      public Color[] Tiers'
+    return:
+      type: UnityEngine.Color[]
+    content.vb: '<Tooltip("Tier colours by zero-based tier index; missing high tiers use the last colour.")>
+
+      Public Tiers As Color()'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Tier colours by zero-based tier index; missing high tiers use the last colour.
+- uid: SurvivorsMaker.Presentation.UiTheme.ReferenceResolution
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ReferenceResolution
+  id: ReferenceResolution
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ReferenceResolution
+  nameWithType: UiTheme.ReferenceResolution
+  fullName: SurvivorsMaker.Presentation.UiTheme.ReferenceResolution
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Canvas reference resolution in pixels; both components must be positive.
+  example: []
+  syntax:
+    content: '[Tooltip("Canvas reference resolution in pixels; both components must be positive.")]
+
+      [Header("Canvas")]
+
+      public Vector2 ReferenceResolution'
+    return:
+      type: UnityEngine.Vector2
+    content.vb: '<Tooltip("Canvas reference resolution in pixels; both components must be positive.")>
+
+      <Header("Canvas")>
+
+      Public ReferenceResolution As Vector2'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Canvas reference resolution in pixels; both components must be positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Canvas
+- uid: SurvivorsMaker.Presentation.UiTheme.ScaleMatch
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ScaleMatch
+  id: ScaleMatch
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ScaleMatch
+  nameWithType: UiTheme.ScaleMatch
+  fullName: SurvivorsMaker.Presentation.UiTheme.ScaleMatch
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Canvas match fraction from 0 (width) to 1 (height).
+  example: []
+  syntax:
+    content: '[Tooltip("Canvas match fraction from 0 (width) to 1 (height).")]
+
+      public float ScaleMatch'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Canvas match fraction from 0 (width) to 1 (height).")>
+
+      Public ScaleMatch As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Canvas match fraction from 0 (width) to 1 (height).
+- uid: SurvivorsMaker.Presentation.UiTheme.TitleSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.TitleSize
+  id: TitleSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: TitleSize
+  nameWithType: UiTheme.TitleSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.TitleSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int TitleSize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public TitleSize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.HeadingSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HeadingSize
+  id: HeadingSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HeadingSize
+  nameWithType: UiTheme.HeadingSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.HeadingSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int HeadingSize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public HeadingSize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.BodySize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BodySize
+  id: BodySize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BodySize
+  nameWithType: UiTheme.BodySize
+  fullName: SurvivorsMaker.Presentation.UiTheme.BodySize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int BodySize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public BodySize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.SmallSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SmallSize
+  id: SmallSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SmallSize
+  nameWithType: UiTheme.SmallSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.SmallSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int SmallSize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public SmallSize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.DisplaySize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DisplaySize
+  id: DisplaySize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DisplaySize
+  nameWithType: UiTheme.DisplaySize
+  fullName: SurvivorsMaker.Presentation.UiTheme.DisplaySize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int DisplaySize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public DisplaySize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonTextSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonTextSize
+  id: ButtonTextSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonTextSize
+  nameWithType: UiTheme.ButtonTextSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonTextSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: TextMeshPro font sizes in reference UI pixels; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")]
+
+      [Header("Type")]
+
+      public int ButtonTextSize'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("TextMeshPro font sizes in reference UI pixels; positive.")>
+
+      <Header("Type")>
+
+      Public ButtonTextSize As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TextMeshPro font sizes in reference UI pixels; positive.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Type
+- uid: SurvivorsMaker.Presentation.UiTheme.LineSpacing
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.LineSpacing
+  id: LineSpacing
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: LineSpacing
+  nameWithType: UiTheme.LineSpacing
+  fullName: SurvivorsMaker.Presentation.UiTheme.LineSpacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Extra line height for multi-line labels, in font-size units (TMP line spacing).
+  example: []
+  syntax:
+    content: '[Tooltip("Additional TextMeshPro line spacing in font-size units.")]
+
+      public float LineSpacing'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Additional TextMeshPro line spacing in font-size units.")>
+
+      Public LineSpacing As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Additional TextMeshPro line spacing in font-size units.
+- uid: SurvivorsMaker.Presentation.UiTheme.Padding
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Padding
+  id: Padding
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Padding
+  nameWithType: UiTheme.Padding
+  fullName: SurvivorsMaker.Presentation.UiTheme.Padding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      [Header("Spacing (8 px grid)")]
+
+      public int Padding'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      <Header("Spacing (8 px grid)")>
+
+      Public Padding As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Spacing (8 px grid)
+- uid: SurvivorsMaker.Presentation.UiTheme.Spacing
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.Spacing
+  id: Spacing
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Spacing
+  nameWithType: UiTheme.Spacing
+  fullName: SurvivorsMaker.Presentation.UiTheme.Spacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float Spacing'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public Spacing As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonHeight
+  id: ButtonHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonHeight
+  nameWithType: UiTheme.ButtonHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float ButtonHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public ButtonHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CardHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CardHeight
+  id: CardHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CardHeight
+  nameWithType: UiTheme.CardHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.CardHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CardHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CardHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.IconSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.IconSize
+  id: IconSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: IconSize
+  nameWithType: UiTheme.IconSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.IconSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float IconSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public IconSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonPadding
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ButtonPadding
+  id: ButtonPadding
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonPadding
+  nameWithType: UiTheme.ButtonPadding
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonPadding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float ButtonPadding'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public ButtonPadding As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
+  id: MinButtonWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MinButtonWidth
+  nameWithType: UiTheme.MinButtonWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.MinButtonWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MinButtonWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MinButtonWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
+  id: MaxButtonWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MaxButtonWidth
+  nameWithType: UiTheme.MaxButtonWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.MaxButtonWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MaxButtonWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MaxButtonWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CardPadding
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CardPadding
+  id: CardPadding
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CardPadding
+  nameWithType: UiTheme.CardPadding
+  fullName: SurvivorsMaker.Presentation.UiTheme.CardPadding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public int CardPadding'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CardPadding As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CardSpacing
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CardSpacing
+  id: CardSpacing
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CardSpacing
+  nameWithType: UiTheme.CardSpacing
+  fullName: SurvivorsMaker.Presentation.UiTheme.CardSpacing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CardSpacing'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CardSpacing As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
+  id: TierStripeHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: TierStripeHeight
+  nameWithType: UiTheme.TierStripeHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.TierStripeHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float TierStripeHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public TierStripeHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
+  id: CardTitleHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CardTitleHeight
+  nameWithType: UiTheme.CardTitleHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.CardTitleHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CardTitleHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CardTitleHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
+  id: CardDetailHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CardDetailHeight
+  nameWithType: UiTheme.CardDetailHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.CardDetailHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CardDetailHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CardDetailHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CompactIconSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CompactIconSize
+  id: CompactIconSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CompactIconSize
+  nameWithType: UiTheme.CompactIconSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.CompactIconSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CompactIconSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CompactIconSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
+  id: CompactTitleHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: CompactTitleHeight
+  nameWithType: UiTheme.CompactTitleHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.CompactTitleHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float CompactTitleHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public CompactTitleHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
+  id: WeaponCardHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: WeaponCardHeight
+  nameWithType: UiTheme.WeaponCardHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.WeaponCardHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float WeaponCardHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public WeaponCardHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
+  id: LevelUpPanelWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: LevelUpPanelWidth
+  nameWithType: UiTheme.LevelUpPanelWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float LevelUpPanelWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public LevelUpPanelWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
+  id: LevelUpPanelHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: LevelUpPanelHeight
+  nameWithType: UiTheme.LevelUpPanelHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.LevelUpPanelHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float LevelUpPanelHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public LevelUpPanelHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
+  id: ChoiceCardWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ChoiceCardWidth
+  nameWithType: UiTheme.ChoiceCardWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.ChoiceCardWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float ChoiceCardWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public ChoiceCardWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
+  id: ChoiceCardMinHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ChoiceCardMinHeight
+  nameWithType: UiTheme.ChoiceCardMinHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.ChoiceCardMinHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float ChoiceCardMinHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public ChoiceCardMinHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
+  id: WeaponCardWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: WeaponCardWidth
+  nameWithType: UiTheme.WeaponCardWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.WeaponCardWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float WeaponCardWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public WeaponCardWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
+  id: WeaponGridColumns
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: WeaponGridColumns
+  nameWithType: UiTheme.WeaponGridColumns
+  fullName: SurvivorsMaker.Presentation.UiTheme.WeaponGridColumns
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Number of weapon grid columns; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("Number of weapon grid columns; positive.")]
+
+      public int WeaponGridColumns'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Number of weapon grid columns; positive.")>
+
+      Public WeaponGridColumns As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Number of weapon grid columns; positive.
+- uid: SurvivorsMaker.Presentation.UiTheme.StatsWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.StatsWidth
+  id: StatsWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: StatsWidth
+  nameWithType: UiTheme.StatsWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.StatsWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float StatsWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public StatsWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudPadding
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudPadding
+  id: HudPadding
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudPadding
+  nameWithType: UiTheme.HudPadding
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudPadding
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public int HudPadding'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudPadding As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudTextHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudTextHeight
+  id: HudTextHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudTextHeight
+  nameWithType: UiTheme.HudTextHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudTextHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudTextHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudTextHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudGap
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudGap
+  id: HudGap
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudGap
+  nameWithType: UiTheme.HudGap
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudGap
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudGap'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudGap As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudBarHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudBarHeight
+  id: HudBarHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudBarHeight
+  nameWithType: UiTheme.HudBarHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudBarHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudBarHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudBarHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
+  id: HudBadgeWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudBadgeWidth
+  nameWithType: UiTheme.HudBadgeWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudBadgeWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudBadgeWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudBadgeWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HeaderHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HeaderHeight
+  id: HeaderHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HeaderHeight
+  nameWithType: UiTheme.HeaderHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.HeaderHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HeaderHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HeaderHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.FooterHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.FooterHeight
+  id: FooterHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: FooterHeight
+  nameWithType: UiTheme.FooterHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.FooterHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float FooterHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public FooterHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BarHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BarHeight
+  id: BarHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BarHeight
+  nameWithType: UiTheme.BarHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.BarHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BarHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BarHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudHeight
+  id: HudHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudHeight
+  nameWithType: UiTheme.HudHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.PanelWidth
+  id: PanelWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: PanelWidth
+  nameWithType: UiTheme.PanelWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float PanelWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public PanelWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.PanelHeight
+  id: PanelHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: PanelHeight
+  nameWithType: UiTheme.PanelHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float PanelHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public PanelHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.MenuWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuWidth
+  id: MenuWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MenuWidth
+  nameWithType: UiTheme.MenuWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.MenuWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MenuWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MenuWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.MenuHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuHeight
+  id: MenuHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MenuHeight
+  nameWithType: UiTheme.MenuHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.MenuHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MenuHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MenuHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.DialogWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DialogWidth
+  id: DialogWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DialogWidth
+  nameWithType: UiTheme.DialogWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.DialogWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float DialogWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public DialogWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.DialogHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DialogHeight
+  id: DialogHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DialogHeight
+  nameWithType: UiTheme.DialogHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.DialogHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float DialogHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public DialogHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BannerWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BannerWidth
+  id: BannerWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BannerWidth
+  nameWithType: UiTheme.BannerWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.BannerWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BannerWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BannerWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BannerHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BannerHeight
+  id: BannerHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BannerHeight
+  nameWithType: UiTheme.BannerHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.BannerHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BannerHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BannerHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.HudWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HudWidth
+  id: HudWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HudWidth
+  nameWithType: UiTheme.HudWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.HudWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float HudWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public HudWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
+  id: StatColumnWeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: StatColumnWeight
+  nameWithType: UiTheme.StatColumnWeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.StatColumnWeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Relative horizontal layout weights for stats and shop stock; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("Relative horizontal layout weights for stats and shop stock; positive.")]
+
+      public float StatColumnWeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Relative horizontal layout weights for stats and shop stock; positive.")>
+
+      Public StatColumnWeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Relative horizontal layout weights for stats and shop stock; positive.
+- uid: SurvivorsMaker.Presentation.UiTheme.StockColumnWeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.StockColumnWeight
+  id: StockColumnWeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: StockColumnWeight
+  nameWithType: UiTheme.StockColumnWeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.StockColumnWeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Relative horizontal layout weights for stats and shop stock; positive.
+  example: []
+  syntax:
+    content: '[Tooltip("Relative horizontal layout weights for stats and shop stock; positive.")]
+
+      public float StockColumnWeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Relative horizontal layout weights for stats and shop stock; positive.")>
+
+      Public StockColumnWeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Relative horizontal layout weights for stats and shop stock; positive.
+- uid: SurvivorsMaker.Presentation.UiTheme.MenuIconSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuIconSize
+  id: MenuIconSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MenuIconSize
+  nameWithType: UiTheme.MenuIconSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.MenuIconSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MenuIconSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MenuIconSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
+  id: MenuCardHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: MenuCardHeight
+  nameWithType: UiTheme.MenuCardHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.MenuCardHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float MenuCardHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public MenuCardHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossTopGap
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossTopGap
+  id: BossTopGap
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossTopGap
+  nameWithType: UiTheme.BossTopGap
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossTopGap
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossTopGap'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossTopGap As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossBarWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossBarWidth
+  id: BossBarWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossBarWidth
+  nameWithType: UiTheme.BossBarWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossBarWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossBarWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossBarWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
+  id: BossPanelHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossPanelHeight
+  nameWithType: UiTheme.BossPanelHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossPanelHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossPanelHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossPanelHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossBarHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossBarHeight
+  id: BossBarHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossBarHeight
+  nameWithType: UiTheme.BossBarHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossBarHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossBarHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossBarHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossPipSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossPipSize
+  id: BossPipSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossPipSize
+  nameWithType: UiTheme.BossPipSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossPipSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossPipSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossPipSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossTickWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossTickWidth
+  id: BossTickWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossTickWidth
+  nameWithType: UiTheme.BossTickWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossTickWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float BossTickWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public BossTickWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossChipDelay
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossChipDelay
+  id: BossChipDelay
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossChipDelay
+  nameWithType: UiTheme.BossChipDelay
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossChipDelay
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")]
+
+      public float BossChipDelay'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")>
+
+      Public BossChipDelay As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossChipSpeed
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossChipSpeed
+  id: BossChipSpeed
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossChipSpeed
+  nameWithType: UiTheme.BossChipSpeed
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossChipSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")]
+
+      public float BossChipSpeed'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")>
+
+      Public BossChipSpeed As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossFadeSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossFadeSeconds
+  id: BossFadeSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossFadeSeconds
+  nameWithType: UiTheme.BossFadeSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossFadeSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")]
+
+      public float BossFadeSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")>
+
+      Public BossFadeSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.BossDefeatHoldSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.BossDefeatHoldSeconds
+  id: BossDefeatHoldSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BossDefeatHoldSeconds
+  nameWithType: UiTheme.BossDefeatHoldSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.BossDefeatHoldSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")]
+
+      public float BossDefeatHoldSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.")>
+
+      Public BossDefeatHoldSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Boss chip delay/fade/hold in seconds; chip speed is normalized bar units per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.ToastWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ToastWidth
+  id: ToastWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ToastWidth
+  nameWithType: UiTheme.ToastWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.ToastWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+  example: []
+  syntax:
+    content: '[Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")]
+
+      public float ToastWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")>
+
+      Public ToastWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+- uid: SurvivorsMaker.Presentation.UiTheme.ToastHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ToastHeight
+  id: ToastHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ToastHeight
+  nameWithType: UiTheme.ToastHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.ToastHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+  example: []
+  syntax:
+    content: '[Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")]
+
+      public float ToastHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")>
+
+      Public ToastHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+- uid: SurvivorsMaker.Presentation.UiTheme.ToastSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ToastSeconds
+  id: ToastSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ToastSeconds
+  nameWithType: UiTheme.ToastSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.ToastSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+  example: []
+  syntax:
+    content: '[Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")]
+
+      public float ToastSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")>
+
+      Public ToastSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+- uid: SurvivorsMaker.Presentation.UiTheme.ToastFadeSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ToastFadeSeconds
+  id: ToastFadeSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ToastFadeSeconds
+  nameWithType: UiTheme.ToastFadeSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.ToastFadeSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+  example: []
+  syntax:
+    content: '[Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")]
+
+      public float ToastFadeSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")>
+
+      Public ToastFadeSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+- uid: SurvivorsMaker.Presentation.UiTheme.ToastPopScale
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.ToastPopScale
+  id: ToastPopScale
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ToastPopScale
+  nameWithType: UiTheme.ToastPopScale
+  fullName: SurvivorsMaker.Presentation.UiTheme.ToastPopScale
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+  example: []
+  syntax:
+    content: '[Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")]
+
+      public float ToastPopScale'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.")>
+
+      Public ToastPopScale As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Toast width/height in reference pixels, lifetime/fade in seconds, pop scale as an added fraction.
+- uid: SurvivorsMaker.Presentation.UiTheme.HordeBannerHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HordeBannerHeight
+  id: HordeBannerHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HordeBannerHeight
+  nameWithType: UiTheme.HordeBannerHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.HordeBannerHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+  example: []
+  syntax:
+    content: '[Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")]
+
+      public float HordeBannerHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")>
+
+      Public HordeBannerHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+- uid: SurvivorsMaker.Presentation.UiTheme.HordeBannerSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HordeBannerSeconds
+  id: HordeBannerSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HordeBannerSeconds
+  nameWithType: UiTheme.HordeBannerSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.HordeBannerSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+  example: []
+  syntax:
+    content: '[Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")]
+
+      public float HordeBannerSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")>
+
+      Public HordeBannerSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+- uid: SurvivorsMaker.Presentation.UiTheme.HordeBannerY
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.HordeBannerY
+  id: HordeBannerY
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: HordeBannerY
+  nameWithType: UiTheme.HordeBannerY
+  fullName: SurvivorsMaker.Presentation.UiTheme.HordeBannerY
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+  example: []
+  syntax:
+    content: '[Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")]
+
+      public float HordeBannerY'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.")>
+
+      Public HordeBannerY As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Horde banner height in reference pixels, duration in seconds, Y as normalized screen height.
+- uid: SurvivorsMaker.Presentation.UiTheme.EdgeArrowSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.EdgeArrowSize
+  id: EdgeArrowSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: EdgeArrowSize
+  nameWithType: UiTheme.EdgeArrowSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.EdgeArrowSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")]
+
+      public float EdgeArrowSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")>
+
+      Public EdgeArrowSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.EdgeArrowMargin
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.EdgeArrowMargin
+  id: EdgeArrowMargin
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: EdgeArrowMargin
+  nameWithType: UiTheme.EdgeArrowMargin
+  fullName: SurvivorsMaker.Presentation.UiTheme.EdgeArrowMargin
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")]
+
+      public float EdgeArrowMargin'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")>
+
+      Public EdgeArrowMargin As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.EdgeArrowSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.EdgeArrowSeconds
+  id: EdgeArrowSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: EdgeArrowSeconds
+  nameWithType: UiTheme.EdgeArrowSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.EdgeArrowSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")]
+
+      public float EdgeArrowSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")>
+
+      Public EdgeArrowSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.EdgeArrowPulse
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.EdgeArrowPulse
+  id: EdgeArrowPulse
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: EdgeArrowPulse
+  nameWithType: UiTheme.EdgeArrowPulse
+  fullName: SurvivorsMaker.Presentation.UiTheme.EdgeArrowPulse
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")]
+
+      public float EdgeArrowPulse'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")>
+
+      Public EdgeArrowPulse As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.EdgeArrowBounce
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.EdgeArrowBounce
+  id: EdgeArrowBounce
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: EdgeArrowBounce
+  nameWithType: UiTheme.EdgeArrowBounce
+  fullName: SurvivorsMaker.Presentation.UiTheme.EdgeArrowBounce
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+  example: []
+  syntax:
+    content: '[Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")]
+
+      public float EdgeArrowBounce'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.")>
+
+      Public EdgeArrowBounce As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Arrow size/margin/bounce in reference pixels, lifetime in seconds, pulse rate per second.
+- uid: SurvivorsMaker.Presentation.UiTheme.UnlockPanelWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.UnlockPanelWidth
+  id: UnlockPanelWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: UnlockPanelWidth
+  nameWithType: UiTheme.UnlockPanelWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.UnlockPanelWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+  example: []
+  syntax:
+    content: '[Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")]
+
+      public float UnlockPanelWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")>
+
+      Public UnlockPanelWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+- uid: SurvivorsMaker.Presentation.UiTheme.UnlockPanelHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.UnlockPanelHeight
+  id: UnlockPanelHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: UnlockPanelHeight
+  nameWithType: UiTheme.UnlockPanelHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.UnlockPanelHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+  example: []
+  syntax:
+    content: '[Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")]
+
+      public float UnlockPanelHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")>
+
+      Public UnlockPanelHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+- uid: SurvivorsMaker.Presentation.UiTheme.UnlockRowHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.UnlockRowHeight
+  id: UnlockRowHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: UnlockRowHeight
+  nameWithType: UiTheme.UnlockRowHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.UnlockRowHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+  example: []
+  syntax:
+    content: '[Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")]
+
+      public float UnlockRowHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")>
+
+      Public UnlockRowHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+- uid: SurvivorsMaker.Presentation.UiTheme.UnlockRevealSeconds
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.UnlockRevealSeconds
+  id: UnlockRevealSeconds
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: UnlockRevealSeconds
+  nameWithType: UiTheme.UnlockRevealSeconds
+  fullName: SurvivorsMaker.Presentation.UiTheme.UnlockRevealSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+  example: []
+  syntax:
+    content: '[Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")]
+
+      public float UnlockRevealSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Unlock panel/row sizes in reference pixels; reveal interval in seconds.")>
+
+      Public UnlockRevealSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Unlock panel/row sizes in reference pixels; reveal interval in seconds.
+- uid: SurvivorsMaker.Presentation.UiTheme.RecordsWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.RecordsWidth
+  id: RecordsWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: RecordsWidth
+  nameWithType: UiTheme.RecordsWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.RecordsWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float RecordsWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public RecordsWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
+  id: RecordsRowHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: RecordsRowHeight
+  nameWithType: UiTheme.RecordsRowHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.RecordsRowHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float RecordsRowHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public RecordsRowHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
+  id: RecordsNumberWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: RecordsNumberWidth
+  nameWithType: UiTheme.RecordsNumberWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.RecordsNumberWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float RecordsNumberWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public RecordsNumberWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.SettingsWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsWidth
+  id: SettingsWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SettingsWidth
+  nameWithType: UiTheme.SettingsWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.SettingsWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float SettingsWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public SettingsWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.SettingsHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsHeight
+  id: SettingsHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SettingsHeight
+  nameWithType: UiTheme.SettingsHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.SettingsHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float SettingsHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public SettingsHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
+  id: SettingsRowHeight
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SettingsRowHeight
+  nameWithType: UiTheme.SettingsRowHeight
+  fullName: SurvivorsMaker.Presentation.UiTheme.SettingsRowHeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float SettingsRowHeight'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public SettingsRowHeight As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
+  id: SettingsControlWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SettingsControlWidth
+  nameWithType: UiTheme.SettingsControlWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.SettingsControlWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+  example: []
+  syntax:
+    content: '[Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")]
+
+      public float SettingsControlWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.")>
+
+      Public SettingsControlWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UI layout dimensions in reference pixels; nonnegative. Offsets may be signed.
+- uid: SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
+  id: SettingsValueWidth
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SettingsValueWidth
+  nameWithType: UiTheme.SettingsValueWidth
+  fullName: SurvivorsMaker.Presentation.UiTheme.SettingsValueWidth
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+  example: []
+  syntax:
+    content: '[Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")]
+
+      public float SettingsValueWidth'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")>
+
+      Public SettingsValueWidth As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+- uid: SurvivorsMaker.Presentation.UiTheme.SliderHandleSize
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.SliderHandleSize
+  id: SliderHandleSize
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: SliderHandleSize
+  nameWithType: UiTheme.SliderHandleSize
+  fullName: SurvivorsMaker.Presentation.UiTheme.SliderHandleSize
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+  example: []
+  syntax:
+    content: '[Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")]
+
+      public float SliderHandleSize'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")>
+
+      Public SliderHandleSize As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+- uid: SurvivorsMaker.Presentation.UiTheme.DropdownVisibleRows
+  commentId: F:SurvivorsMaker.Presentation.UiTheme.DropdownVisibleRows
+  id: DropdownVisibleRows
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: DropdownVisibleRows
+  nameWithType: UiTheme.DropdownVisibleRows
+  fullName: SurvivorsMaker.Presentation.UiTheme.DropdownVisibleRows
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+  example: []
+  syntax:
+    content: '[Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")]
+
+      public float DropdownVisibleRows'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Settings value/handle size in reference pixels; dropdown rows is a visible-row count.")>
+
+      Public DropdownVisibleRows As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings value/handle size in reference pixels; dropdown rows is a visible-row count.
+- uid: SurvivorsMaker.Presentation.UiTheme.TierColor(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.UiTheme.TierColor(System.Int32)
+  id: TierColor(System.Int32)
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: TierColor(int)
+  nameWithType: UiTheme.TierColor(int)
+  fullName: SurvivorsMaker.Presentation.UiTheme.TierColor(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Color TierColor(int tier)
+    parameters:
+    - id: tier
+      type: System.Int32
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Function TierColor(tier As Integer) As Color
+  overload: SurvivorsMaker.Presentation.UiTheme.TierColor*
+  nameWithType.vb: UiTheme.TierColor(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.UiTheme.TierColor(Integer)
+  name.vb: TierColor(Integer)
+- uid: SurvivorsMaker.Presentation.UiTheme.#ctor
+  commentId: M:SurvivorsMaker.Presentation.UiTheme.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: UiTheme()
+  nameWithType: UiTheme.UiTheme()
+  fullName: SurvivorsMaker.Presentation.UiTheme.UiTheme()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public UiTheme()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Presentation.UiTheme.#ctor*
+  nameWithType.vb: UiTheme.New()
+  fullName.vb: SurvivorsMaker.Presentation.UiTheme.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Presentation.UiTheme.Strings
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.Strings
+  id: Strings
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: Strings
+  nameWithType: UiTheme.Strings
+  fullName: SurvivorsMaker.Presentation.UiTheme.Strings
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public UiStrings Strings { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Presentation.UiStrings
+    content.vb: Public ReadOnly Property Strings As UiStrings
+  overload: SurvivorsMaker.Presentation.UiTheme.Strings*
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelFill
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.PanelFill
+  id: PanelFill
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: PanelFill
+  nameWithType: UiTheme.PanelFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelFill
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Panel/card fill: the assigned sprite, else a generated rounded rectangle (play mode only, so prefabs never reference
+    it).'
+  example: []
+  syntax:
+    content: public Sprite PanelFill { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property PanelFill As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.PanelFill*
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelBorder
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.PanelBorder
+  id: PanelBorder
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: PanelBorder
+  nameWithType: UiTheme.PanelBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelBorder
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite PanelBorder { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property PanelBorder As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.PanelBorder*
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonFill
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.ButtonFill
+  id: ButtonFill
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonFill
+  nameWithType: UiTheme.ButtonFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonFill
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite ButtonFill { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property ButtonFill As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.ButtonFill*
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+  id: ButtonBorder
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: ButtonBorder
+  nameWithType: UiTheme.ButtonBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite ButtonBorder { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property ButtonBorder As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.ButtonBorder*
+- uid: SurvivorsMaker.Presentation.UiTheme.FocusRing
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.FocusRing
+  id: FocusRing
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: FocusRing
+  nameWithType: UiTheme.FocusRing
+  fullName: SurvivorsMaker.Presentation.UiTheme.FocusRing
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite FocusRing { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property FocusRing As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.FocusRing*
+- uid: SurvivorsMaker.Presentation.UiTheme.BarFill
+  commentId: P:SurvivorsMaker.Presentation.UiTheme.BarFill
+  id: BarFill
+  parent: SurvivorsMaker.Presentation.UiTheme
+  langs:
+  - csharp
+  - vb
+  name: BarFill
+  nameWithType: UiTheme.BarFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.BarFill
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public Sprite BarFill { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public ReadOnly Property BarFill As Sprite
+  overload: SurvivorsMaker.Presentation.UiTheme.BarFill*
+references:
+- uid: SurvivorsMaker.Presentation.UiSprites
+  commentId: T:SurvivorsMaker.Presentation.UiSprites
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiSprites.html
+  name: UiSprites
+  nameWithType: UiSprites
+  fullName: SurvivorsMaker.Presentation.UiSprites
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TMPro.TMP_FontAsset
+  commentId: T:TMPro.TMP_FontAsset
+  parent: TMPro
+  isExternal: true
+  name: TMP_FontAsset
+  nameWithType: TMP_FontAsset
+  fullName: TMPro.TMP_FontAsset
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.UiTheme.TierColor*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.TierColor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_TierColor_System_Int32_
+  name: TierColor
+  nameWithType: UiTheme.TierColor
+  fullName: SurvivorsMaker.Presentation.UiTheme.TierColor
+- uid: SurvivorsMaker.Presentation.UiTheme.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme__ctor
+  name: UiTheme
+  nameWithType: UiTheme.UiTheme
+  fullName: SurvivorsMaker.Presentation.UiTheme.UiTheme
+  nameWithType.vb: UiTheme.New
+  fullName.vb: SurvivorsMaker.Presentation.UiTheme.New
+  name.vb: New
+- uid: SurvivorsMaker.Presentation.UiTheme.Strings*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.Strings
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_Strings
+  name: Strings
+  nameWithType: UiTheme.Strings
+  fullName: SurvivorsMaker.Presentation.UiTheme.Strings
+- uid: SurvivorsMaker.Presentation.UiStrings
+  commentId: T:SurvivorsMaker.Presentation.UiStrings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiStrings.html
+  name: UiStrings
+  nameWithType: UiStrings
+  fullName: SurvivorsMaker.Presentation.UiStrings
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelFill*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.PanelFill
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_PanelFill
+  name: PanelFill
+  nameWithType: UiTheme.PanelFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelFill
+- uid: SurvivorsMaker.Presentation.UiTheme.PanelBorder*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.PanelBorder
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_PanelBorder
+  name: PanelBorder
+  nameWithType: UiTheme.PanelBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.PanelBorder
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonFill*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.ButtonFill
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_ButtonFill
+  name: ButtonFill
+  nameWithType: UiTheme.ButtonFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonFill
+- uid: SurvivorsMaker.Presentation.UiTheme.ButtonBorder*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_ButtonBorder
+  name: ButtonBorder
+  nameWithType: UiTheme.ButtonBorder
+  fullName: SurvivorsMaker.Presentation.UiTheme.ButtonBorder
+- uid: SurvivorsMaker.Presentation.UiTheme.FocusRing*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.FocusRing
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_FocusRing
+  name: FocusRing
+  nameWithType: UiTheme.FocusRing
+  fullName: SurvivorsMaker.Presentation.UiTheme.FocusRing
+- uid: SurvivorsMaker.Presentation.UiTheme.BarFill*
+  commentId: Overload:SurvivorsMaker.Presentation.UiTheme.BarFill
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html#SurvivorsMaker_Presentation_UiTheme_BarFill
+  name: BarFill
+  nameWithType: UiTheme.BarFill
+  fullName: SurvivorsMaker.Presentation.UiTheme.BarFill

@@ -1,0 +1,1935 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiKit
+  commentId: T:SurvivorsMaker.Presentation.UiKit
+  id: UiKit
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiKit.AddBorder(UnityEngine.Component,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites(UnityEngine.UI.Button,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite(UnityEngine.UI.Image,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)
+  - SurvivorsMaker.Presentation.UiKit.Bar(UnityEngine.Transform,System.String,UnityEngine.Color,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.Button(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  - SurvivorsMaker.Presentation.UiKit.ButtonText(UnityEngine.UI.Button,System.String)
+  - SurvivorsMaker.Presentation.UiKit.Card(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.CardColumn(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Column(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.Dropdown(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.Fixed(UnityEngine.RectTransform,System.Single,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Font(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiFontRole,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.GridScroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.Group(UnityEngine.Component,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.IgnoreLayout(UnityEngine.RectTransform)
+  - SurvivorsMaker.Presentation.UiKit.Image(UnityEngine.Transform,System.String,UnityEngine.Color,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.Label(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  - SurvivorsMaker.Presentation.UiKit.Layout(UnityEngine.RectTransform,System.Single,System.Single,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Place(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+  - SurvivorsMaker.Presentation.UiKit.Rect(UnityEngine.Transform,System.String)
+  - SurvivorsMaker.Presentation.UiKit.Role(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiColorRole,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.RoleImage(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.Row(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Scroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.SetFill(UnityEngine.UI.Image,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.SetSliced(UnityEngine.UI.Image,UnityEngine.Sprite)
+  - SurvivorsMaker.Presentation.UiKit.Size(UnityEngine.RectTransform,System.Single,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Slider(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  - SurvivorsMaker.Presentation.UiKit.Spacer(UnityEngine.Transform,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.Stretch(UnityEngine.RectTransform,System.Single)
+  - SurvivorsMaker.Presentation.UiKit.Surface(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Vector2)
+  - SurvivorsMaker.Presentation.UiKit.Text(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  - SurvivorsMaker.Presentation.UiKit.TextButton(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  - SurvivorsMaker.Presentation.UiKit.TextHeight(TMPro.TextMeshProUGUI,System.Single,System.Boolean)
+  - SurvivorsMaker.Presentation.UiKit.Wide(UnityEngine.UI.Button,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: UiKit
+  nameWithType: UiKit
+  fullName: SurvivorsMaker.Presentation.UiKit
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Shared hierarchy construction used by the reproducible prefab builder.
+  example: []
+  syntax:
+    content: public static class UiKit
+    content.vb: Public Module UiKit
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.UiKit.Rect(UnityEngine.Transform,System.String)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Rect(UnityEngine.Transform,System.String)
+  id: Rect(UnityEngine.Transform,System.String)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Rect(Transform, string)
+  nameWithType: UiKit.Rect(Transform, string)
+  fullName: SurvivorsMaker.Presentation.UiKit.Rect(UnityEngine.Transform, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static RectTransform Rect(Transform parent, string name)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Rect(parent As Transform, name As String) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Rect*
+  nameWithType.vb: UiKit.Rect(Transform, String)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Rect(UnityEngine.Transform, String)
+  name.vb: Rect(Transform, String)
+- uid: SurvivorsMaker.Presentation.UiKit.Stretch(UnityEngine.RectTransform,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Stretch(UnityEngine.RectTransform,System.Single)
+  id: Stretch(UnityEngine.RectTransform,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Stretch(RectTransform, float)
+  nameWithType: UiKit.Stretch(RectTransform, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Stretch(UnityEngine.RectTransform, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void Stretch(RectTransform rect, float inset = 0)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: inset
+      type: System.Single
+    content.vb: Public Shared Sub Stretch(rect As RectTransform, inset As Single = 0)
+  overload: SurvivorsMaker.Presentation.UiKit.Stretch*
+  nameWithType.vb: UiKit.Stretch(RectTransform, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Stretch(UnityEngine.RectTransform, Single)
+  name.vb: Stretch(RectTransform, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Size(UnityEngine.RectTransform,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Size(UnityEngine.RectTransform,System.Single,System.Single)
+  id: Size(UnityEngine.RectTransform,System.Single,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Size(RectTransform, float, float)
+  nameWithType: UiKit.Size(RectTransform, float, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Size(UnityEngine.RectTransform, float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void Size(RectTransform rect, float width, float height)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    content.vb: Public Shared Sub Size(rect As RectTransform, width As Single, height As Single)
+  overload: SurvivorsMaker.Presentation.UiKit.Size*
+  nameWithType.vb: UiKit.Size(RectTransform, Single, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Size(UnityEngine.RectTransform, Single, Single)
+  name.vb: Size(RectTransform, Single, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Layout(UnityEngine.RectTransform,System.Single,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Layout(UnityEngine.RectTransform,System.Single,System.Single,System.Single)
+  id: Layout(UnityEngine.RectTransform,System.Single,System.Single,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Layout(RectTransform, float, float, float)
+  nameWithType: UiKit.Layout(RectTransform, float, float, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Layout(UnityEngine.RectTransform, float, float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static LayoutElement Layout(RectTransform rect, float height = -1, float width = -1, float flex = -1)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: height
+      type: System.Single
+    - id: width
+      type: System.Single
+    - id: flex
+      type: System.Single
+    return:
+      type: UnityEngine.UI.LayoutElement
+    content.vb: Public Shared Function Layout(rect As RectTransform, height As Single = -1, width As Single = -1, flex As
+      Single = -1) As LayoutElement
+  overload: SurvivorsMaker.Presentation.UiKit.Layout*
+  nameWithType.vb: UiKit.Layout(RectTransform, Single, Single, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Layout(UnityEngine.RectTransform, Single, Single, Single)
+  name.vb: Layout(RectTransform, Single, Single, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Fixed(UnityEngine.RectTransform,System.Single,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Fixed(UnityEngine.RectTransform,System.Single,System.Single)
+  id: Fixed(UnityEngine.RectTransform,System.Single,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Fixed(RectTransform, float, float)
+  nameWithType: UiKit.Fixed(RectTransform, float, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Fixed(UnityEngine.RectTransform, float, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void Fixed(RectTransform rect, float width, float height)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    content.vb: Public Shared Sub Fixed(rect As RectTransform, width As Single, height As Single)
+  overload: SurvivorsMaker.Presentation.UiKit.Fixed*
+  nameWithType.vb: UiKit.Fixed(RectTransform, Single, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Fixed(UnityEngine.RectTransform, Single, Single)
+  name.vb: Fixed(RectTransform, Single, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.IgnoreLayout(UnityEngine.RectTransform)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.IgnoreLayout(UnityEngine.RectTransform)
+  id: IgnoreLayout(UnityEngine.RectTransform)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: IgnoreLayout(RectTransform)
+  nameWithType: UiKit.IgnoreLayout(RectTransform)
+  fullName: SurvivorsMaker.Presentation.UiKit.IgnoreLayout(UnityEngine.RectTransform)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Takes the element out of its parent's layout (overlays such as borders and badges).
+  example: []
+  syntax:
+    content: public static void IgnoreLayout(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Sub IgnoreLayout(rect As RectTransform)
+  overload: SurvivorsMaker.Presentation.UiKit.IgnoreLayout*
+- uid: SurvivorsMaker.Presentation.UiKit.Column(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Column(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: Column(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Column(Transform, string, UiTheme)
+  nameWithType: UiKit.Column(Transform, string, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Column(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static RectTransform Column(Transform parent, string name, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Column(parent As Transform, name As String, theme As UiTheme) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Column*
+  nameWithType.vb: UiKit.Column(Transform, String, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Column(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: Column(Transform, String, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.Row(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Row(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  id: Row(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Row(Transform, string, UiTheme, float)
+  nameWithType: UiKit.Row(Transform, string, UiTheme, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Row(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static RectTransform Row(Transform parent, string name, UiTheme theme, float height = -1)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: height
+      type: System.Single
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Row(parent As Transform, name As String, theme As UiTheme, height As Single = -1) As
+      RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Row*
+  nameWithType.vb: UiKit.Row(Transform, String, UiTheme, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Row(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme, Single)
+  name.vb: Row(Transform, String, UiTheme, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Image(UnityEngine.Transform,System.String,UnityEngine.Color,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Image(UnityEngine.Transform,System.String,UnityEngine.Color,System.Boolean)
+  id: Image(UnityEngine.Transform,System.String,UnityEngine.Color,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Image(Transform, string, Color, bool)
+  nameWithType: UiKit.Image(Transform, string, Color, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.Image(UnityEngine.Transform, string, UnityEngine.Color, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static Image Image(Transform parent, string name, Color color, bool raycast = false)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: raycast
+      type: System.Boolean
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public Shared Function Image(parent As Transform, name As String, color As Color, raycast As Boolean = False)
+      As Image
+  overload: SurvivorsMaker.Presentation.UiKit.Image*
+  nameWithType.vb: UiKit.Image(Transform, String, Color, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Image(UnityEngine.Transform, String, UnityEngine.Color, Boolean)
+  name.vb: Image(Transform, String, Color, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.Label(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Label(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  id: Label(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Label(Transform, string, string, UiTheme, int)
+  nameWithType: UiKit.Label(Transform, string, string, UiTheme, int)
+  fullName: SurvivorsMaker.Presentation.UiKit.Label(UnityEngine.Transform, string, string, SurvivorsMaker.Presentation.UiTheme,
+    int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static TextMeshProUGUI Label(Transform parent, string name, string value, UiTheme theme, int size = 0)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: size
+      type: System.Int32
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public Shared Function Label(parent As Transform, name As String, value As String, theme As UiTheme, size
+      As Integer = 0) As TextMeshProUGUI
+  overload: SurvivorsMaker.Presentation.UiKit.Label*
+  nameWithType.vb: UiKit.Label(Transform, String, String, UiTheme, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Label(UnityEngine.Transform, String, String, SurvivorsMaker.Presentation.UiTheme,
+    Integer)
+  name.vb: Label(Transform, String, String, UiTheme, Integer)
+- uid: SurvivorsMaker.Presentation.UiKit.TextHeight(TMPro.TextMeshProUGUI,System.Single,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.TextHeight(TMPro.TextMeshProUGUI,System.Single,System.Boolean)
+  id: TextHeight(TMPro.TextMeshProUGUI,System.Single,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: TextHeight(TextMeshProUGUI, float, bool)
+  nameWithType: UiKit.TextHeight(TextMeshProUGUI, float, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.TextHeight(TMPro.TextMeshProUGUI, float, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void TextHeight(TextMeshProUGUI label, float height, bool flexible = false)
+    parameters:
+    - id: label
+      type: TMPro.TextMeshProUGUI
+    - id: height
+      type: System.Single
+    - id: flexible
+      type: System.Boolean
+    content.vb: Public Shared Sub TextHeight(label As TextMeshProUGUI, height As Single, flexible As Boolean = False)
+  overload: SurvivorsMaker.Presentation.UiKit.TextHeight*
+  nameWithType.vb: UiKit.TextHeight(TextMeshProUGUI, Single, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.TextHeight(TMPro.TextMeshProUGUI, Single, Boolean)
+  name.vb: TextHeight(TextMeshProUGUI, Single, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.Text(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Text(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  id: Text(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,System.Int32)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Text(Transform, string, string, UiTheme, int)
+  nameWithType: UiKit.Text(Transform, string, string, UiTheme, int)
+  fullName: SurvivorsMaker.Presentation.UiKit.Text(UnityEngine.Transform, string, string, SurvivorsMaker.Presentation.UiTheme,
+    int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static TextMeshProUGUI Text(Transform parent, string name, string key, UiTheme theme, int size = 0)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: key
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: size
+      type: System.Int32
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public Shared Function Text(parent As Transform, name As String, key As String, theme As UiTheme, size As
+      Integer = 0) As TextMeshProUGUI
+  overload: SurvivorsMaker.Presentation.UiKit.Text*
+  nameWithType.vb: UiKit.Text(Transform, String, String, UiTheme, Integer)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Text(UnityEngine.Transform, String, String, SurvivorsMaker.Presentation.UiTheme,
+    Integer)
+  name.vb: Text(Transform, String, String, UiTheme, Integer)
+- uid: SurvivorsMaker.Presentation.UiKit.TextButton(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.TextButton(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  id: TextButton(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: TextButton(Transform, string, string, UiTheme, UiButtonKind)
+  nameWithType: UiKit.TextButton(Transform, string, string, UiTheme, UiButtonKind)
+  fullName: SurvivorsMaker.Presentation.UiKit.TextButton(UnityEngine.Transform, string, string, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiButtonKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static Button TextButton(Transform parent, string name, string key, UiTheme theme, UiButtonKind kind =
+      UiButtonKind.Primary)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: key
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: kind
+      type: SurvivorsMaker.Presentation.UiButtonKind
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: Public Shared Function TextButton(parent As Transform, name As String, key As String, theme As UiTheme, kind
+      As UiButtonKind = UiButtonKind.Primary) As Button
+  overload: SurvivorsMaker.Presentation.UiKit.TextButton*
+  nameWithType.vb: UiKit.TextButton(Transform, String, String, UiTheme, UiButtonKind)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.TextButton(UnityEngine.Transform, String, String, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiButtonKind)
+  name.vb: TextButton(Transform, String, String, UiTheme, UiButtonKind)
+- uid: SurvivorsMaker.Presentation.UiKit.Button(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Button(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  id: Button(UnityEngine.Transform,System.String,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiButtonKind)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Button(Transform, string, string, UiTheme, UiButtonKind)
+  nameWithType: UiKit.Button(Transform, string, string, UiTheme, UiButtonKind)
+  fullName: SurvivorsMaker.Presentation.UiKit.Button(UnityEngine.Transform, string, string, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiButtonKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A rounded button with state colours, a fine border (secondary/danger) and a focus ring.
+  example: []
+  syntax:
+    content: public static Button Button(Transform parent, string name, string value, UiTheme theme, UiButtonKind kind = UiButtonKind.Primary)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: kind
+      type: SurvivorsMaker.Presentation.UiButtonKind
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: Public Shared Function Button(parent As Transform, name As String, value As String, theme As UiTheme, kind
+      As UiButtonKind = UiButtonKind.Primary) As Button
+  overload: SurvivorsMaker.Presentation.UiKit.Button*
+  nameWithType.vb: UiKit.Button(Transform, String, String, UiTheme, UiButtonKind)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Button(UnityEngine.Transform, String, String, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiButtonKind)
+  name.vb: Button(Transform, String, String, UiTheme, UiButtonKind)
+- uid: SurvivorsMaker.Presentation.UiKit.ButtonText(UnityEngine.UI.Button,System.String)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.ButtonText(UnityEngine.UI.Button,System.String)
+  id: ButtonText(UnityEngine.UI.Button,System.String)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: ButtonText(Button, string)
+  nameWithType: UiKit.ButtonText(Button, string)
+  fullName: SurvivorsMaker.Presentation.UiKit.ButtonText(UnityEngine.UI.Button, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void ButtonText(Button button, string text)
+    parameters:
+    - id: button
+      type: UnityEngine.UI.Button
+    - id: text
+      type: System.String
+    content.vb: Public Shared Sub ButtonText(button As Button, text As String)
+  overload: SurvivorsMaker.Presentation.UiKit.ButtonText*
+  nameWithType.vb: UiKit.ButtonText(Button, String)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.ButtonText(UnityEngine.UI.Button, String)
+  name.vb: ButtonText(Button, String)
+- uid: SurvivorsMaker.Presentation.UiKit.SetSliced(UnityEngine.UI.Image,UnityEngine.Sprite)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.SetSliced(UnityEngine.UI.Image,UnityEngine.Sprite)
+  id: SetSliced(UnityEngine.UI.Image,UnityEngine.Sprite)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: SetSliced(Image, Sprite)
+  nameWithType: UiKit.SetSliced(Image, Sprite)
+  fullName: SurvivorsMaker.Presentation.UiKit.SetSliced(UnityEngine.UI.Image, UnityEngine.Sprite)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void SetSliced(Image image, Sprite sprite)
+    parameters:
+    - id: image
+      type: UnityEngine.UI.Image
+    - id: sprite
+      type: UnityEngine.Sprite
+    content.vb: Public Shared Sub SetSliced(image As Image, sprite As Sprite)
+  overload: SurvivorsMaker.Presentation.UiKit.SetSliced*
+- uid: SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite(UnityEngine.UI.Image,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite(UnityEngine.UI.Image,SurvivorsMaker.Presentation.UiTheme)
+  id: ApplyPanelSprite(UnityEngine.UI.Image,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: ApplyPanelSprite(Image, UiTheme)
+  nameWithType: UiKit.ApplyPanelSprite(Image, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite(UnityEngine.UI.Image, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void ApplyPanelSprite(Image image, UiTheme theme)
+    parameters:
+    - id: image
+      type: UnityEngine.UI.Image
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    content.vb: Public Shared Sub ApplyPanelSprite(image As Image, theme As UiTheme)
+  overload: SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite*
+- uid: SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites(UnityEngine.UI.Button,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites(UnityEngine.UI.Button,SurvivorsMaker.Presentation.UiTheme)
+  id: ApplyButtonSprites(UnityEngine.UI.Button,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: ApplyButtonSprites(Button, UiTheme)
+  nameWithType: UiKit.ApplyButtonSprites(Button, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites(UnityEngine.UI.Button, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void ApplyButtonSprites(Button button, UiTheme theme)
+    parameters:
+    - id: button
+      type: UnityEngine.UI.Button
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    content.vb: Public Shared Sub ApplyButtonSprites(button As Button, theme As UiTheme)
+  overload: SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites*
+- uid: SurvivorsMaker.Presentation.UiKit.AddBorder(UnityEngine.Component,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.AddBorder(UnityEngine.Component,SurvivorsMaker.Presentation.UiTheme)
+  id: AddBorder(UnityEngine.Component,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: AddBorder(Component, UiTheme)
+  nameWithType: UiKit.AddBorder(Component, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.AddBorder(UnityEngine.Component, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A fine rounded border over <code class="paramref">surface</code>, outside its layout.
+  example: []
+  syntax:
+    content: public static Image AddBorder(Component surface, UiTheme theme)
+    parameters:
+    - id: surface
+      type: UnityEngine.Component
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public Shared Function AddBorder(surface As Component, theme As UiTheme) As Image
+  overload: SurvivorsMaker.Presentation.UiKit.AddBorder*
+- uid: SurvivorsMaker.Presentation.UiKit.Card(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Card(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  id: Card(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Card(Transform, string, UiTheme, UiColorRole, bool)
+  nameWithType: UiKit.Card(Transform, string, UiTheme, UiColorRole, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.Card(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme, SurvivorsMaker.Presentation.UiColorRole,
+    bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A rounded panel or card fill with a fine border; <code class="paramref">role</code> picks the surface level.
+  example: []
+  syntax:
+    content: public static Image Card(Transform parent, string name, UiTheme theme, UiColorRole role = UiColorRole.Surface,
+      bool raycast = false)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: role
+      type: SurvivorsMaker.Presentation.UiColorRole
+    - id: raycast
+      type: System.Boolean
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public Shared Function Card(parent As Transform, name As String, theme As UiTheme, role As UiColorRole = UiColorRole.Surface,
+      raycast As Boolean = False) As Image
+  overload: SurvivorsMaker.Presentation.UiKit.Card*
+  nameWithType.vb: UiKit.Card(Transform, String, UiTheme, UiColorRole, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Card(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiColorRole, Boolean)
+  name.vb: Card(Transform, String, UiTheme, UiColorRole, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.CardColumn(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.CardColumn(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  id: CardColumn(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: CardColumn(Transform, string, UiTheme, float)
+  nameWithType: UiKit.CardColumn(Transform, string, UiTheme, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.CardColumn(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme,
+    float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A card with a padded vertical layout, for grouped content (selectors, stats).
+  example: []
+  syntax:
+    content: public static RectTransform CardColumn(Transform parent, string name, UiTheme theme, float spacing = -1)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: spacing
+      type: System.Single
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function CardColumn(parent As Transform, name As String, theme As UiTheme, spacing As Single
+      = -1) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.CardColumn*
+  nameWithType.vb: UiKit.CardColumn(Transform, String, UiTheme, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.CardColumn(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme,
+    Single)
+  name.vb: CardColumn(Transform, String, UiTheme, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Wide(UnityEngine.UI.Button,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Wide(UnityEngine.UI.Button,System.Single)
+  id: Wide(UnityEngine.UI.Button,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Wide(Button, float)
+  nameWithType: UiKit.Wide(Button, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.Wide(UnityEngine.UI.Button, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Gives a button a minimum width, for stacked dialog actions of equal size.
+  example: []
+  syntax:
+    content: public static Button Wide(Button button, float width)
+    parameters:
+    - id: button
+      type: UnityEngine.UI.Button
+    - id: width
+      type: System.Single
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: Public Shared Function Wide(button As Button, width As Single) As Button
+  overload: SurvivorsMaker.Presentation.UiKit.Wide*
+  nameWithType.vb: UiKit.Wide(Button, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Wide(UnityEngine.UI.Button, Single)
+  name.vb: Wide(Button, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Spacer(UnityEngine.Transform,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Spacer(UnityEngine.Transform,System.Boolean)
+  id: Spacer(UnityEngine.Transform,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Spacer(Transform, bool)
+  nameWithType: UiKit.Spacer(Transform, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.Spacer(UnityEngine.Transform, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A flexible gap in a row or column.
+  example: []
+  syntax:
+    content: public static RectTransform Spacer(Transform parent, bool vertical = false)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: vertical
+      type: System.Boolean
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Spacer(parent As Transform, vertical As Boolean = False) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Spacer*
+  nameWithType.vb: UiKit.Spacer(Transform, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Spacer(UnityEngine.Transform, Boolean)
+  name.vb: Spacer(Transform, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.Bar(UnityEngine.Transform,System.String,UnityEngine.Color,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Bar(UnityEngine.Transform,System.String,UnityEngine.Color,SurvivorsMaker.Presentation.UiTheme)
+  id: Bar(UnityEngine.Transform,System.String,UnityEngine.Color,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Bar(Transform, string, Color, UiTheme)
+  nameWithType: UiKit.Bar(Transform, string, Color, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Bar(UnityEngine.Transform, string, UnityEngine.Color, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static Image Bar(Transform parent, string name, Color color, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public Shared Function Bar(parent As Transform, name As String, color As Color, theme As UiTheme) As Image
+  overload: SurvivorsMaker.Presentation.UiKit.Bar*
+  nameWithType.vb: UiKit.Bar(Transform, String, Color, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Bar(UnityEngine.Transform, String, UnityEngine.Color, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: Bar(Transform, String, Color, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.SetFill(UnityEngine.UI.Image,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.SetFill(UnityEngine.UI.Image,System.Single)
+  id: SetFill(UnityEngine.UI.Image,System.Single)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: SetFill(Image, float)
+  nameWithType: UiKit.SetFill(Image, float)
+  fullName: SurvivorsMaker.Presentation.UiKit.SetFill(UnityEngine.UI.Image, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void SetFill(Image image, float value)
+    parameters:
+    - id: image
+      type: UnityEngine.UI.Image
+    - id: value
+      type: System.Single
+    content.vb: Public Shared Sub SetFill(image As Image, value As Single)
+  overload: SurvivorsMaker.Presentation.UiKit.SetFill*
+  nameWithType.vb: UiKit.SetFill(Image, Single)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.SetFill(UnityEngine.UI.Image, Single)
+  name.vb: SetFill(Image, Single)
+- uid: SurvivorsMaker.Presentation.UiKit.Scroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Scroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: Scroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Scroll(Transform, string, UiTheme)
+  nameWithType: UiKit.Scroll(Transform, string, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Scroll(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static RectTransform Scroll(Transform parent, string name, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Scroll(parent As Transform, name As String, theme As UiTheme) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Scroll*
+  nameWithType.vb: UiKit.Scroll(Transform, String, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Scroll(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: Scroll(Transform, String, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.GridScroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.GridScroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: GridScroll(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: GridScroll(Transform, string, UiTheme)
+  nameWithType: UiKit.GridScroll(Transform, string, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.GridScroll(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static RectTransform GridScroll(Transform parent, string name, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function GridScroll(parent As Transform, name As String, theme As UiTheme) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.GridScroll*
+  nameWithType.vb: UiKit.GridScroll(Transform, String, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.GridScroll(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: GridScroll(Transform, String, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.Place(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Place(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+  id: Place(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Place(RectTransform, Vector2, Vector2, Vector2, Vector2)
+  nameWithType: UiKit.Place(RectTransform, Vector2, Vector2, Vector2, Vector2)
+  fullName: SurvivorsMaker.Presentation.UiKit.Place(UnityEngine.RectTransform, UnityEngine.Vector2, UnityEngine.Vector2, UnityEngine.Vector2,
+    UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Absolute placement for overlay pieces that live outside layout groups.
+  example: []
+  syntax:
+    content: public static RectTransform Place(RectTransform rect, Vector2 anchor, Vector2 pivot, Vector2 position, Vector2
+      size)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: anchor
+      type: UnityEngine.Vector2
+    - id: pivot
+      type: UnityEngine.Vector2
+    - id: position
+      type: UnityEngine.Vector2
+    - id: size
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Place(rect As RectTransform, anchor As Vector2, pivot As Vector2, position As Vector2,
+      size As Vector2) As RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Place*
+- uid: SurvivorsMaker.Presentation.UiKit.RoleImage(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.RoleImage(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  id: RoleImage(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,SurvivorsMaker.Presentation.UiColorRole,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: RoleImage(Transform, string, UiTheme, UiColorRole, bool)
+  nameWithType: UiKit.RoleImage(Transform, string, UiTheme, UiColorRole, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.RoleImage(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiColorRole, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: An image whose colour follows a theme role (and optionally the panel sprite) after regeneration.
+  example: []
+  syntax:
+    content: public static Image RoleImage(Transform parent, string name, UiTheme theme, UiColorRole role, bool panelSprite
+      = false)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: role
+      type: SurvivorsMaker.Presentation.UiColorRole
+    - id: panelSprite
+      type: System.Boolean
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public Shared Function RoleImage(parent As Transform, name As String, theme As UiTheme, role As UiColorRole,
+      panelSprite As Boolean = False) As Image
+  overload: SurvivorsMaker.Presentation.UiKit.RoleImage*
+  nameWithType.vb: UiKit.RoleImage(Transform, String, UiTheme, UiColorRole, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.RoleImage(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme,
+    SurvivorsMaker.Presentation.UiColorRole, Boolean)
+  name.vb: RoleImage(Transform, String, UiTheme, UiColorRole, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.Role(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiColorRole,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Role(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiColorRole,SurvivorsMaker.Presentation.UiTheme)
+  id: Role(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiColorRole,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Role(TextMeshProUGUI, UiColorRole, UiTheme)
+  nameWithType: UiKit.Role(TextMeshProUGUI, UiColorRole, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Role(TMPro.TextMeshProUGUI, SurvivorsMaker.Presentation.UiColorRole, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Changes a generated label's colour role, keeping theme edits working.
+  example: []
+  syntax:
+    content: public static TextMeshProUGUI Role(TextMeshProUGUI label, UiColorRole role, UiTheme theme)
+    parameters:
+    - id: label
+      type: TMPro.TextMeshProUGUI
+    - id: role
+      type: SurvivorsMaker.Presentation.UiColorRole
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public Shared Function Role(label As TextMeshProUGUI, role As UiColorRole, theme As UiTheme) As TextMeshProUGUI
+  overload: SurvivorsMaker.Presentation.UiKit.Role*
+- uid: SurvivorsMaker.Presentation.UiKit.Font(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiFontRole,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Font(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiFontRole,SurvivorsMaker.Presentation.UiTheme)
+  id: Font(TMPro.TextMeshProUGUI,SurvivorsMaker.Presentation.UiFontRole,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Font(TextMeshProUGUI, UiFontRole, UiTheme)
+  nameWithType: UiKit.Font(TextMeshProUGUI, UiFontRole, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Font(TMPro.TextMeshProUGUI, SurvivorsMaker.Presentation.UiFontRole, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Changes a generated label's size role (e.g. a small caption built with the body size).
+  example: []
+  syntax:
+    content: public static TextMeshProUGUI Font(TextMeshProUGUI label, UiFontRole role, UiTheme theme)
+    parameters:
+    - id: label
+      type: TMPro.TextMeshProUGUI
+    - id: role
+      type: SurvivorsMaker.Presentation.UiFontRole
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public Shared Function Font(label As TextMeshProUGUI, role As UiFontRole, theme As UiTheme) As TextMeshProUGUI
+  overload: SurvivorsMaker.Presentation.UiKit.Font*
+- uid: SurvivorsMaker.Presentation.UiKit.Group(UnityEngine.Component,System.Boolean)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Group(UnityEngine.Component,System.Boolean)
+  id: Group(UnityEngine.Component,System.Boolean)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Group(Component, bool)
+  nameWithType: UiKit.Group(Component, bool)
+  fullName: SurvivorsMaker.Presentation.UiKit.Group(UnityEngine.Component, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static CanvasGroup Group(Component target, bool blocksRaycasts = false)
+    parameters:
+    - id: target
+      type: UnityEngine.Component
+    - id: blocksRaycasts
+      type: System.Boolean
+    return:
+      type: UnityEngine.CanvasGroup
+    content.vb: Public Shared Function Group(target As Component, blocksRaycasts As Boolean = False) As CanvasGroup
+  overload: SurvivorsMaker.Presentation.UiKit.Group*
+  nameWithType.vb: UiKit.Group(Component, Boolean)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Group(UnityEngine.Component, Boolean)
+  name.vb: Group(Component, Boolean)
+- uid: SurvivorsMaker.Presentation.UiKit.Slider(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Slider(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: Slider(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Slider(Transform, string, UiTheme)
+  nameWithType: UiKit.Slider(Transform, string, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Slider(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'A horizontal 0..1 slider: rounded track, accent fill and a handle that shows the focus colour.'
+  example: []
+  syntax:
+    content: public static Slider Slider(Transform parent, string name, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: UnityEngine.UI.Slider
+    content.vb: Public Shared Function Slider(parent As Transform, name As String, theme As UiTheme) As Slider
+  overload: SurvivorsMaker.Presentation.UiKit.Slider*
+  nameWithType.vb: UiKit.Slider(Transform, String, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Slider(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: Slider(Transform, String, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.Dropdown(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Dropdown(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  id: Dropdown(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Dropdown(Transform, string, UiTheme)
+  nameWithType: UiKit.Dropdown(Transform, string, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.Dropdown(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A TextMesh Pro dropdown drawn like a secondary button, its list like a panel.
+  example: []
+  syntax:
+    content: public static TMP_Dropdown Dropdown(Transform parent, string name, UiTheme theme)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    return:
+      type: TMPro.TMP_Dropdown
+    content.vb: Public Shared Function Dropdown(parent As Transform, name As String, theme As UiTheme) As TMP_Dropdown
+  overload: SurvivorsMaker.Presentation.UiKit.Dropdown*
+  nameWithType.vb: UiKit.Dropdown(Transform, String, UiTheme)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Dropdown(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme)
+  name.vb: Dropdown(Transform, String, UiTheme)
+- uid: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme)
+  id: ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: ApplySelectableColors(Selectable, UiTheme)
+  nameWithType: UiKit.ApplySelectableColors(Selectable, UiTheme)
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable, SurvivorsMaker.Presentation.UiTheme)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Tint states for sliders, dropdowns and toggles from the theme (buttons use <xref href="SurvivorsMaker.Presentation.UiButtonVisual"
+    data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public static void ApplySelectableColors(Selectable selectable, UiTheme theme)
+    parameters:
+    - id: selectable
+      type: UnityEngine.UI.Selectable
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    content.vb: Public Shared Sub ApplySelectableColors(selectable As Selectable, theme As UiTheme)
+  overload: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors*
+- uid: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)
+  id: ApplySelectableColors(UnityEngine.UI.Selectable,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: ApplySelectableColors(Selectable, UiTheme, Color, Color, Color)
+  nameWithType: UiKit.ApplySelectableColors(Selectable, UiTheme, Color, Color, Color)
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors(UnityEngine.UI.Selectable, SurvivorsMaker.Presentation.UiTheme,
+    UnityEngine.Color, UnityEngine.Color, UnityEngine.Color)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static void ApplySelectableColors(Selectable selectable, UiTheme theme, Color normal, Color hover, Color
+      pressed)
+    parameters:
+    - id: selectable
+      type: UnityEngine.UI.Selectable
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: normal
+      type: UnityEngine.Color
+    - id: hover
+      type: UnityEngine.Color
+    - id: pressed
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub ApplySelectableColors(selectable As Selectable, theme As UiTheme, normal As Color, hover
+      As Color, pressed As Color)
+  overload: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors*
+- uid: SurvivorsMaker.Presentation.UiKit.Surface(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Vector2)
+  commentId: M:SurvivorsMaker.Presentation.UiKit.Surface(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Vector2)
+  id: Surface(UnityEngine.Transform,System.String,SurvivorsMaker.Presentation.UiTheme,UnityEngine.Vector2)
+  parent: SurvivorsMaker.Presentation.UiKit
+  langs:
+  - csharp
+  - vb
+  name: Surface(Transform, string, UiTheme, Vector2)
+  nameWithType: UiKit.Surface(Transform, string, UiTheme, Vector2)
+  fullName: SurvivorsMaker.Presentation.UiKit.Surface(UnityEngine.Transform, string, SurvivorsMaker.Presentation.UiTheme,
+    UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'A modal or side panel: rounded panel fill, fine border, padded vertical layout.'
+  example: []
+  syntax:
+    content: public static RectTransform Surface(Transform parent, string name, UiTheme theme, Vector2 size)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    - id: name
+      type: System.String
+    - id: theme
+      type: SurvivorsMaker.Presentation.UiTheme
+    - id: size
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public Shared Function Surface(parent As Transform, name As String, theme As UiTheme, size As Vector2) As
+      RectTransform
+  overload: SurvivorsMaker.Presentation.UiKit.Surface*
+  nameWithType.vb: UiKit.Surface(Transform, String, UiTheme, Vector2)
+  fullName.vb: SurvivorsMaker.Presentation.UiKit.Surface(UnityEngine.Transform, String, SurvivorsMaker.Presentation.UiTheme,
+    UnityEngine.Vector2)
+  name.vb: Surface(Transform, String, UiTheme, Vector2)
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.UiKit.Rect*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Rect
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Rect_UnityEngine_Transform_System_String_
+  name: Rect
+  nameWithType: UiKit.Rect
+  fullName: SurvivorsMaker.Presentation.UiKit.Rect
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Presentation.UiKit.Stretch*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Stretch
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Stretch_UnityEngine_RectTransform_System_Single_
+  name: Stretch
+  nameWithType: UiKit.Stretch
+  fullName: SurvivorsMaker.Presentation.UiKit.Stretch
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.UiKit.Size*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Size
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Size_UnityEngine_RectTransform_System_Single_System_Single_
+  name: Size
+  nameWithType: UiKit.Size
+  fullName: SurvivorsMaker.Presentation.UiKit.Size
+- uid: SurvivorsMaker.Presentation.UiKit.Layout*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Layout
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Layout_UnityEngine_RectTransform_System_Single_System_Single_System_Single_
+  name: Layout
+  nameWithType: UiKit.Layout
+  fullName: SurvivorsMaker.Presentation.UiKit.Layout
+- uid: UnityEngine.UI.LayoutElement
+  commentId: T:UnityEngine.UI.LayoutElement
+  parent: UnityEngine.UI
+  isExternal: true
+  name: LayoutElement
+  nameWithType: LayoutElement
+  fullName: UnityEngine.UI.LayoutElement
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiKit.Fixed*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Fixed
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Fixed_UnityEngine_RectTransform_System_Single_System_Single_
+  name: Fixed
+  nameWithType: UiKit.Fixed
+  fullName: SurvivorsMaker.Presentation.UiKit.Fixed
+- uid: SurvivorsMaker.Presentation.UiKit.IgnoreLayout*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.IgnoreLayout
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_IgnoreLayout_UnityEngine_RectTransform_
+  name: IgnoreLayout
+  nameWithType: UiKit.IgnoreLayout
+  fullName: SurvivorsMaker.Presentation.UiKit.IgnoreLayout
+- uid: SurvivorsMaker.Presentation.UiKit.Column*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Column
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Column_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: Column
+  nameWithType: UiKit.Column
+  fullName: SurvivorsMaker.Presentation.UiKit.Column
+- uid: SurvivorsMaker.Presentation.UiTheme
+  commentId: T:SurvivorsMaker.Presentation.UiTheme
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiTheme.html
+  name: UiTheme
+  nameWithType: UiTheme
+  fullName: SurvivorsMaker.Presentation.UiTheme
+- uid: SurvivorsMaker.Presentation.UiKit.Row*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Row
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Row_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_System_Single_
+  name: Row
+  nameWithType: UiKit.Row
+  fullName: SurvivorsMaker.Presentation.UiKit.Row
+- uid: SurvivorsMaker.Presentation.UiKit.Image*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Image
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Image_UnityEngine_Transform_System_String_UnityEngine_Color_System_Boolean_
+  name: Image
+  nameWithType: UiKit.Image
+  fullName: SurvivorsMaker.Presentation.UiKit.Image
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: SurvivorsMaker.Presentation.UiKit.Label*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Label
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Label_UnityEngine_Transform_System_String_System_String_SurvivorsMaker_Presentation_UiTheme_System_Int32_
+  name: Label
+  nameWithType: UiKit.Label
+  fullName: SurvivorsMaker.Presentation.UiKit.Label
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: SurvivorsMaker.Presentation.UiKit.TextHeight*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.TextHeight
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_TextHeight_TMPro_TextMeshProUGUI_System_Single_System_Boolean_
+  name: TextHeight
+  nameWithType: UiKit.TextHeight
+  fullName: SurvivorsMaker.Presentation.UiKit.TextHeight
+- uid: SurvivorsMaker.Presentation.UiKit.Text*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Text
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Text_UnityEngine_Transform_System_String_System_String_SurvivorsMaker_Presentation_UiTheme_System_Int32_
+  name: Text
+  nameWithType: UiKit.Text
+  fullName: SurvivorsMaker.Presentation.UiKit.Text
+- uid: SurvivorsMaker.Presentation.UiKit.TextButton*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.TextButton
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_TextButton_UnityEngine_Transform_System_String_System_String_SurvivorsMaker_Presentation_UiTheme_SurvivorsMaker_Presentation_UiButtonKind_
+  name: TextButton
+  nameWithType: UiKit.TextButton
+  fullName: SurvivorsMaker.Presentation.UiKit.TextButton
+- uid: SurvivorsMaker.Presentation.UiButtonKind
+  commentId: T:SurvivorsMaker.Presentation.UiButtonKind
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiButtonKind.html
+  name: UiButtonKind
+  nameWithType: UiButtonKind
+  fullName: SurvivorsMaker.Presentation.UiButtonKind
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: SurvivorsMaker.Presentation.UiKit.Button*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Button
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Button_UnityEngine_Transform_System_String_System_String_SurvivorsMaker_Presentation_UiTheme_SurvivorsMaker_Presentation_UiButtonKind_
+  name: Button
+  nameWithType: UiKit.Button
+  fullName: SurvivorsMaker.Presentation.UiKit.Button
+- uid: SurvivorsMaker.Presentation.UiKit.ButtonText*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.ButtonText
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_ButtonText_UnityEngine_UI_Button_System_String_
+  name: ButtonText
+  nameWithType: UiKit.ButtonText
+  fullName: SurvivorsMaker.Presentation.UiKit.ButtonText
+- uid: SurvivorsMaker.Presentation.UiKit.SetSliced*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.SetSliced
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_SetSliced_UnityEngine_UI_Image_UnityEngine_Sprite_
+  name: SetSliced
+  nameWithType: UiKit.SetSliced
+  fullName: SurvivorsMaker.Presentation.UiKit.SetSliced
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_ApplyPanelSprite_UnityEngine_UI_Image_SurvivorsMaker_Presentation_UiTheme_
+  name: ApplyPanelSprite
+  nameWithType: UiKit.ApplyPanelSprite
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplyPanelSprite
+- uid: SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_ApplyButtonSprites_UnityEngine_UI_Button_SurvivorsMaker_Presentation_UiTheme_
+  name: ApplyButtonSprites
+  nameWithType: UiKit.ApplyButtonSprites
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplyButtonSprites
+- uid: SurvivorsMaker.Presentation.UiKit.AddBorder*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.AddBorder
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_AddBorder_UnityEngine_Component_SurvivorsMaker_Presentation_UiTheme_
+  name: AddBorder
+  nameWithType: UiKit.AddBorder
+  fullName: SurvivorsMaker.Presentation.UiKit.AddBorder
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: SurvivorsMaker.Presentation.UiKit.Card*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Card
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Card_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_SurvivorsMaker_Presentation_UiColorRole_System_Boolean_
+  name: Card
+  nameWithType: UiKit.Card
+  fullName: SurvivorsMaker.Presentation.UiKit.Card
+- uid: SurvivorsMaker.Presentation.UiColorRole
+  commentId: T:SurvivorsMaker.Presentation.UiColorRole
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiColorRole.html
+  name: UiColorRole
+  nameWithType: UiColorRole
+  fullName: SurvivorsMaker.Presentation.UiColorRole
+- uid: SurvivorsMaker.Presentation.UiKit.CardColumn*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.CardColumn
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_CardColumn_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_System_Single_
+  name: CardColumn
+  nameWithType: UiKit.CardColumn
+  fullName: SurvivorsMaker.Presentation.UiKit.CardColumn
+- uid: SurvivorsMaker.Presentation.UiKit.Wide*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Wide
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Wide_UnityEngine_UI_Button_System_Single_
+  name: Wide
+  nameWithType: UiKit.Wide
+  fullName: SurvivorsMaker.Presentation.UiKit.Wide
+- uid: SurvivorsMaker.Presentation.UiKit.Spacer*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Spacer
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Spacer_UnityEngine_Transform_System_Boolean_
+  name: Spacer
+  nameWithType: UiKit.Spacer
+  fullName: SurvivorsMaker.Presentation.UiKit.Spacer
+- uid: SurvivorsMaker.Presentation.UiKit.Bar*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Bar
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Bar_UnityEngine_Transform_System_String_UnityEngine_Color_SurvivorsMaker_Presentation_UiTheme_
+  name: Bar
+  nameWithType: UiKit.Bar
+  fullName: SurvivorsMaker.Presentation.UiKit.Bar
+- uid: SurvivorsMaker.Presentation.UiKit.SetFill*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.SetFill
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_SetFill_UnityEngine_UI_Image_System_Single_
+  name: SetFill
+  nameWithType: UiKit.SetFill
+  fullName: SurvivorsMaker.Presentation.UiKit.SetFill
+- uid: SurvivorsMaker.Presentation.UiKit.Scroll*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Scroll
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Scroll_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: Scroll
+  nameWithType: UiKit.Scroll
+  fullName: SurvivorsMaker.Presentation.UiKit.Scroll
+- uid: SurvivorsMaker.Presentation.UiKit.GridScroll*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.GridScroll
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_GridScroll_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: GridScroll
+  nameWithType: UiKit.GridScroll
+  fullName: SurvivorsMaker.Presentation.UiKit.GridScroll
+- uid: SurvivorsMaker.Presentation.UiKit.Place*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Place
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Place_UnityEngine_RectTransform_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_
+  name: Place
+  nameWithType: UiKit.Place
+  fullName: SurvivorsMaker.Presentation.UiKit.Place
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: SurvivorsMaker.Presentation.UiKit.RoleImage*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.RoleImage
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_RoleImage_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_SurvivorsMaker_Presentation_UiColorRole_System_Boolean_
+  name: RoleImage
+  nameWithType: UiKit.RoleImage
+  fullName: SurvivorsMaker.Presentation.UiKit.RoleImage
+- uid: SurvivorsMaker.Presentation.UiKit.Role*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Role
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Role_TMPro_TextMeshProUGUI_SurvivorsMaker_Presentation_UiColorRole_SurvivorsMaker_Presentation_UiTheme_
+  name: Role
+  nameWithType: UiKit.Role
+  fullName: SurvivorsMaker.Presentation.UiKit.Role
+- uid: SurvivorsMaker.Presentation.UiKit.Font*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Font
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Font_TMPro_TextMeshProUGUI_SurvivorsMaker_Presentation_UiFontRole_SurvivorsMaker_Presentation_UiTheme_
+  name: Font
+  nameWithType: UiKit.Font
+  fullName: SurvivorsMaker.Presentation.UiKit.Font
+- uid: SurvivorsMaker.Presentation.UiFontRole
+  commentId: T:SurvivorsMaker.Presentation.UiFontRole
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiFontRole.html
+  name: UiFontRole
+  nameWithType: UiFontRole
+  fullName: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiKit.Group*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Group
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Group_UnityEngine_Component_System_Boolean_
+  name: Group
+  nameWithType: UiKit.Group
+  fullName: SurvivorsMaker.Presentation.UiKit.Group
+- uid: UnityEngine.CanvasGroup
+  commentId: T:UnityEngine.CanvasGroup
+  parent: UnityEngine
+  isExternal: true
+  name: CanvasGroup
+  nameWithType: CanvasGroup
+  fullName: UnityEngine.CanvasGroup
+- uid: SurvivorsMaker.Presentation.UiKit.Slider*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Slider
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Slider_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: Slider
+  nameWithType: UiKit.Slider
+  fullName: SurvivorsMaker.Presentation.UiKit.Slider
+- uid: UnityEngine.UI.Slider
+  commentId: T:UnityEngine.UI.Slider
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Slider
+  nameWithType: Slider
+  fullName: UnityEngine.UI.Slider
+- uid: SurvivorsMaker.Presentation.UiKit.Dropdown*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Dropdown
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Dropdown_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_
+  name: Dropdown
+  nameWithType: UiKit.Dropdown
+  fullName: SurvivorsMaker.Presentation.UiKit.Dropdown
+- uid: TMPro.TMP_Dropdown
+  commentId: T:TMPro.TMP_Dropdown
+  parent: TMPro
+  isExternal: true
+  name: TMP_Dropdown
+  nameWithType: TMP_Dropdown
+  fullName: TMPro.TMP_Dropdown
+- uid: SurvivorsMaker.Presentation.UiButtonVisual
+  commentId: T:SurvivorsMaker.Presentation.UiButtonVisual
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiButtonVisual.html
+  name: UiButtonVisual
+  nameWithType: UiButtonVisual
+  fullName: SurvivorsMaker.Presentation.UiButtonVisual
+- uid: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.ApplySelectableColors
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_ApplySelectableColors_UnityEngine_UI_Selectable_SurvivorsMaker_Presentation_UiTheme_
+  name: ApplySelectableColors
+  nameWithType: UiKit.ApplySelectableColors
+  fullName: SurvivorsMaker.Presentation.UiKit.ApplySelectableColors
+- uid: UnityEngine.UI.Selectable
+  commentId: T:UnityEngine.UI.Selectable
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Selectable
+  nameWithType: Selectable
+  fullName: UnityEngine.UI.Selectable
+- uid: SurvivorsMaker.Presentation.UiKit.Surface*
+  commentId: Overload:SurvivorsMaker.Presentation.UiKit.Surface
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiKit.html#SurvivorsMaker_Presentation_UiKit_Surface_UnityEngine_Transform_System_String_SurvivorsMaker_Presentation_UiTheme_UnityEngine_Vector2_
+  name: Surface
+  nameWithType: UiKit.Surface
+  fullName: SurvivorsMaker.Presentation.UiKit.Surface

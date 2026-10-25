@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WaveEffectLease
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectLease
+  id: WaveEffectLease
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WaveEffectLease.#ctor
+  - SurvivorsMaker.Simulation.WaveEffectLease.CarryId
+  - SurvivorsMaker.Simulation.WaveEffectLease.Copy
+  - SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect(SurvivorsMaker.Core.Effect)
+  - SurvivorsMaker.Simulation.WaveEffectLease.CopyState(SurvivorsMaker.Core.EffectLeaseState)
+  - SurvivorsMaker.Simulation.WaveEffectLease.Definition
+  - SurvivorsMaker.Simulation.WaveEffectLease.HandlerState
+  - SurvivorsMaker.Simulation.WaveEffectLease.HasHandlerState
+  - SurvivorsMaker.Simulation.WaveEffectLease.Owner
+  - SurvivorsMaker.Simulation.WaveEffectLease.OwnerKey
+  - SurvivorsMaker.Simulation.WaveEffectLease.State
+  langs:
+  - csharp
+  - vb
+  name: WaveEffectLease
+  nameWithType: WaveEffectLease
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Effect definition and application state transferred across a combat boundary.
+  example: []
+  syntax:
+    content: public sealed class WaveEffectLease
+    content.vb: Public NotInheritable Class WaveEffectLease
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.Definition
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.Definition
+  id: Definition
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: Definition
+  nameWithType: WaveEffectLease.Definition
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.Definition
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public Effect Definition
+    return:
+      type: SurvivorsMaker.Core.Effect
+    content.vb: Public Definition As Effect
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.State
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.State
+  id: State
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: WaveEffectLease.State
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.State
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public EffectLeaseState State
+    return:
+      type: SurvivorsMaker.Core.EffectLeaseState
+    content.vb: Public State As EffectLeaseState
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.Owner
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.Owner
+  id: Owner
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: WaveEffectLease.Owner
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.Owner
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WaveEffectOwner Owner
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectOwner
+    content.vb: Public Owner As WaveEffectOwner
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.OwnerKey
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.OwnerKey
+  id: OwnerKey
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: OwnerKey
+  nameWithType: WaveEffectLease.OwnerKey
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.OwnerKey
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string OwnerKey
+    return:
+      type: System.String
+    content.vb: Public OwnerKey As String
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.CarryId
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.CarryId
+  id: CarryId
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: CarryId
+  nameWithType: WaveEffectLease.CarryId
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.CarryId
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public long CarryId
+    return:
+      type: System.Int64
+    content.vb: Public CarryId As Long
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.HasHandlerState
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.HasHandlerState
+  id: HasHandlerState
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: HasHandlerState
+  nameWithType: WaveEffectLease.HasHandlerState
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.HasHandlerState
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool HasHandlerState
+    return:
+      type: System.Boolean
+    content.vb: Public HasHandlerState As Boolean
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.HandlerState
+  commentId: F:SurvivorsMaker.Simulation.WaveEffectLease.HandlerState
+  id: HandlerState
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: HandlerState
+  nameWithType: WaveEffectLease.HandlerState
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.HandlerState
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string HandlerState
+    return:
+      type: System.String
+    content.vb: Public HandlerState As String
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.Copy
+  commentId: M:SurvivorsMaker.Simulation.WaveEffectLease.Copy
+  id: Copy
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: WaveEffectLease.Copy()
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.Copy()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Returns an independent copy of this saved or reported state without running gameplay logic.
+  example: []
+  syntax:
+    content: public WaveEffectLease Copy()
+    return:
+      type: SurvivorsMaker.Simulation.WaveEffectLease
+    content.vb: Public Function Copy() As WaveEffectLease
+  overload: SurvivorsMaker.Simulation.WaveEffectLease.Copy*
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.CopyState(SurvivorsMaker.Core.EffectLeaseState)
+  commentId: M:SurvivorsMaker.Simulation.WaveEffectLease.CopyState(SurvivorsMaker.Core.EffectLeaseState)
+  id: CopyState(SurvivorsMaker.Core.EffectLeaseState)
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: CopyState(EffectLeaseState)
+  nameWithType: WaveEffectLease.CopyState(EffectLeaseState)
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.CopyState(SurvivorsMaker.Core.EffectLeaseState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Copies saved effect-lease state without reapplying the effect.
+  example: []
+  syntax:
+    content: public static EffectLeaseState CopyState(EffectLeaseState state)
+    parameters:
+    - id: state
+      type: SurvivorsMaker.Core.EffectLeaseState
+    return:
+      type: SurvivorsMaker.Core.EffectLeaseState
+    content.vb: Public Shared Function CopyState(state As EffectLeaseState) As EffectLeaseState
+  overload: SurvivorsMaker.Simulation.WaveEffectLease.CopyState*
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect(SurvivorsMaker.Core.Effect)
+  commentId: M:SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect(SurvivorsMaker.Core.Effect)
+  id: CopyEffect(SurvivorsMaker.Core.Effect)
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: CopyEffect(Effect)
+  nameWithType: WaveEffectLease.CopyEffect(Effect)
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect(SurvivorsMaker.Core.Effect)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Copies effect definition fields without executing a handler.
+  example: []
+  syntax:
+    content: public static Effect CopyEffect(Effect e)
+    parameters:
+    - id: e
+      type: SurvivorsMaker.Core.Effect
+    return:
+      type: SurvivorsMaker.Core.Effect
+    content.vb: Public Shared Function CopyEffect(e As Effect) As Effect
+  overload: SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect*
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.#ctor
+  commentId: M:SurvivorsMaker.Simulation.WaveEffectLease.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.WaveEffectLease
+  langs:
+  - csharp
+  - vb
+  name: WaveEffectLease()
+  nameWithType: WaveEffectLease.WaveEffectLease()
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.WaveEffectLease()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WaveEffectLease()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.WaveEffectLease.#ctor*
+  nameWithType.vb: WaveEffectLease.New()
+  fullName.vb: SurvivorsMaker.Simulation.WaveEffectLease.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: SurvivorsMaker.Core.EffectLeaseState
+  commentId: T:SurvivorsMaker.Core.EffectLeaseState
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.EffectLeaseState.html
+  name: EffectLeaseState
+  nameWithType: EffectLeaseState
+  fullName: SurvivorsMaker.Core.EffectLeaseState
+- uid: SurvivorsMaker.Simulation.WaveEffectOwner
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectOwner
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectOwner.html
+  name: WaveEffectOwner
+  nameWithType: WaveEffectOwner
+  fullName: SurvivorsMaker.Simulation.WaveEffectOwner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.Copy*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveEffectLease.Copy
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLease.html#SurvivorsMaker_Simulation_WaveEffectLease_Copy
+  name: Copy
+  nameWithType: WaveEffectLease.Copy
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.Copy
+- uid: SurvivorsMaker.Simulation.WaveEffectLease
+  commentId: T:SurvivorsMaker.Simulation.WaveEffectLease
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLease.html
+  name: WaveEffectLease
+  nameWithType: WaveEffectLease
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.CopyState*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveEffectLease.CopyState
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLease.html#SurvivorsMaker_Simulation_WaveEffectLease_CopyState_SurvivorsMaker_Core_EffectLeaseState_
+  name: CopyState
+  nameWithType: WaveEffectLease.CopyState
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.CopyState
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLease.html#SurvivorsMaker_Simulation_WaveEffectLease_CopyEffect_SurvivorsMaker_Core_Effect_
+  name: CopyEffect
+  nameWithType: WaveEffectLease.CopyEffect
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.CopyEffect
+- uid: SurvivorsMaker.Simulation.WaveEffectLease.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WaveEffectLease.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WaveEffectLease.html#SurvivorsMaker_Simulation_WaveEffectLease__ctor
+  name: WaveEffectLease
+  nameWithType: WaveEffectLease.WaveEffectLease
+  fullName: SurvivorsMaker.Simulation.WaveEffectLease.WaveEffectLease
+  nameWithType.vb: WaveEffectLease.New
+  fullName.vb: SurvivorsMaker.Simulation.WaveEffectLease.New
+  name.vb: New

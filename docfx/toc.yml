@@ -1,0 +1,6 @@
+- name: API overview
+  href: index.md
+- name: Public namespaces
+  href: ../api-metadata/toc.yml
+- name: User manual
+  href: https://hyunter777.github.io/survivor-roguelite-maker-docs/

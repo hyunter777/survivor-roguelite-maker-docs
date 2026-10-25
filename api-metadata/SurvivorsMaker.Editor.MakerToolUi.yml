@@ -1,0 +1,1203 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.MakerToolUi
+  commentId: T:SurvivorsMaker.Editor.MakerToolUi
+  id: MakerToolUi
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.MakerToolUi.Button(UnityEngine.UIElements.VisualElement,System.String,System.Action,System.String)
+  - SurvivorsMaker.Editor.MakerToolUi.DiffColor(System.Single)
+  - SurvivorsMaker.Editor.MakerToolUi.Heading(UnityEngine.UIElements.VisualElement,System.String)
+  - SurvivorsMaker.Editor.MakerToolUi.JoinInts(System.Collections.Generic.IEnumerable{System.Int32})
+  - SurvivorsMaker.Editor.MakerToolUi.N(System.Double)
+  - SurvivorsMaker.Editor.MakerToolUi.N(System.Int32)
+  - SurvivorsMaker.Editor.MakerToolUi.N(System.Single)
+  - SurvivorsMaker.Editor.MakerToolUi.Note(UnityEngine.UIElements.VisualElement,System.String)
+  - SurvivorsMaker.Editor.MakerToolUi.ParseInts(System.String,System.Int32)
+  - SurvivorsMaker.Editor.MakerToolUi.Pct(System.Single)
+  - SurvivorsMaker.Editor.MakerToolUi.Row(UnityEngine.UIElements.VisualElement)
+  - SurvivorsMaker.Editor.MakerToolUi.Signed(System.Single)
+  - SurvivorsMaker.Editor.MakerToolUi.Style(UnityEngine.UIElements.VisualElement)
+  - SurvivorsMaker.Editor.MakerToolUi.StylePath
+  - SurvivorsMaker.Editor.MakerToolUi.Table(UnityEngine.UIElements.VisualElement,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IEnumerable{System.String[]},System.Single)
+  langs:
+  - csharp
+  - vb
+  name: MakerToolUi
+  nameWithType: MakerToolUi
+  fullName: SurvivorsMaker.Editor.MakerToolUi
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Small shared pieces of the maker tool windows (rows, notes, tables, number text, colors).
+  example: []
+  syntax:
+    content: public static class MakerToolUi
+    content.vb: Public Module MakerToolUi
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Editor.MakerToolUi.StylePath
+  commentId: F:SurvivorsMaker.Editor.MakerToolUi.StylePath
+  id: StylePath
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: StylePath
+  nameWithType: MakerToolUi.StylePath
+  fullName: SurvivorsMaker.Editor.MakerToolUi.StylePath
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public const string StylePath = "Packages/com.flycat.survivors-maker/Editor/Windows/MakerTools/Common/MakerTools.uss"
+    return:
+      type: System.String
+    content.vb: Public Const StylePath As String = "Packages/com.flycat.survivors-maker/Editor/Windows/MakerTools/Common/MakerTools.uss"
+- uid: SurvivorsMaker.Editor.MakerToolUi.Style(UnityEngine.UIElements.VisualElement)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Style(UnityEngine.UIElements.VisualElement)
+  id: Style(UnityEngine.UIElements.VisualElement)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Style(VisualElement)
+  nameWithType: MakerToolUi.Style(VisualElement)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Style(UnityEngine.UIElements.VisualElement)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Adds the maker classes and style sheets to a window root.
+  example: []
+  syntax:
+    content: public static void Style(VisualElement root)
+    parameters:
+    - id: root
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Sub Style(root As VisualElement)
+  overload: SurvivorsMaker.Editor.MakerToolUi.Style*
+- uid: SurvivorsMaker.Editor.MakerToolUi.Row(UnityEngine.UIElements.VisualElement)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Row(UnityEngine.UIElements.VisualElement)
+  id: Row(UnityEngine.UIElements.VisualElement)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Row(VisualElement)
+  nameWithType: MakerToolUi.Row(VisualElement)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Row(UnityEngine.UIElements.VisualElement)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static VisualElement Row(VisualElement parent)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Shared Function Row(parent As VisualElement) As VisualElement
+  overload: SurvivorsMaker.Editor.MakerToolUi.Row*
+- uid: SurvivorsMaker.Editor.MakerToolUi.Heading(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Heading(UnityEngine.UIElements.VisualElement,System.String)
+  id: Heading(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Heading(VisualElement, string)
+  nameWithType: MakerToolUi.Heading(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Heading(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Label Heading(VisualElement parent, string text)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: text
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Label
+    content.vb: Public Shared Function Heading(parent As VisualElement, text As String) As Label
+  overload: SurvivorsMaker.Editor.MakerToolUi.Heading*
+  nameWithType.vb: MakerToolUi.Heading(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Heading(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Heading(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerToolUi.Note(UnityEngine.UIElements.VisualElement,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Note(UnityEngine.UIElements.VisualElement,System.String)
+  id: Note(UnityEngine.UIElements.VisualElement,System.String)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Note(VisualElement, string)
+  nameWithType: MakerToolUi.Note(VisualElement, string)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Note(UnityEngine.UIElements.VisualElement, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Label Note(VisualElement parent, string text)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: text
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Label
+    content.vb: Public Shared Function Note(parent As VisualElement, text As String) As Label
+  overload: SurvivorsMaker.Editor.MakerToolUi.Note*
+  nameWithType.vb: MakerToolUi.Note(VisualElement, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Note(UnityEngine.UIElements.VisualElement, String)
+  name.vb: Note(VisualElement, String)
+- uid: SurvivorsMaker.Editor.MakerToolUi.Button(UnityEngine.UIElements.VisualElement,System.String,System.Action,System.String)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Button(UnityEngine.UIElements.VisualElement,System.String,System.Action,System.String)
+  id: Button(UnityEngine.UIElements.VisualElement,System.String,System.Action,System.String)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Button(VisualElement, string, Action, string)
+  nameWithType: MakerToolUi.Button(VisualElement, string, Action, string)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Button(UnityEngine.UIElements.VisualElement, string, System.Action, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static Button Button(VisualElement parent, string text, Action click, string name = null)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: text
+      type: System.String
+    - id: click
+      type: System.Action
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.UIElements.Button
+    content.vb: Public Shared Function Button(parent As VisualElement, text As String, click As Action, name As String = Nothing)
+      As Button
+  overload: SurvivorsMaker.Editor.MakerToolUi.Button*
+  nameWithType.vb: MakerToolUi.Button(VisualElement, String, Action, String)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Button(UnityEngine.UIElements.VisualElement, String, System.Action, String)
+  name.vb: Button(VisualElement, String, Action, String)
+- uid: SurvivorsMaker.Editor.MakerToolUi.Table(UnityEngine.UIElements.VisualElement,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IEnumerable{System.String[]},System.Single)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Table(UnityEngine.UIElements.VisualElement,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IEnumerable{System.String[]},System.Single)
+  id: Table(UnityEngine.UIElements.VisualElement,System.Collections.Generic.IReadOnlyList{System.String},System.Collections.Generic.IEnumerable{System.String[]},System.Single)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Table(VisualElement, IReadOnlyList<string>, IEnumerable<string[]>, float)
+  nameWithType: MakerToolUi.Table(VisualElement, IReadOnlyList<string>, IEnumerable<string[]>, float)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Table(UnityEngine.UIElements.VisualElement, System.Collections.Generic.IReadOnlyList<string>,
+    System.Collections.Generic.IEnumerable<string[]>, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: A simple read-only table; returns the row elements so callers can add click handlers.
+  example: []
+  syntax:
+    content: public static List<VisualElement> Table(VisualElement parent, IReadOnlyList<string> headers, IEnumerable<string[]>
+      rows, float minWidth = 600)
+    parameters:
+    - id: parent
+      type: UnityEngine.UIElements.VisualElement
+    - id: headers
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    - id: rows
+      type: System.Collections.Generic.IEnumerable{System.String[]}
+    - id: minWidth
+      type: System.Single
+    return:
+      type: System.Collections.Generic.List{UnityEngine.UIElements.VisualElement}
+    content.vb: Public Shared Function Table(parent As VisualElement, headers As IReadOnlyList(Of String), rows As IEnumerable(Of
+      String()), minWidth As Single = 600) As List(Of VisualElement)
+  overload: SurvivorsMaker.Editor.MakerToolUi.Table*
+  nameWithType.vb: MakerToolUi.Table(VisualElement, IReadOnlyList(Of String), IEnumerable(Of String()), Single)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Table(UnityEngine.UIElements.VisualElement, System.Collections.Generic.IReadOnlyList(Of
+    String), System.Collections.Generic.IEnumerable(Of String()), Single)
+  name.vb: Table(VisualElement, IReadOnlyList(Of String), IEnumerable(Of String()), Single)
+- uid: SurvivorsMaker.Editor.MakerToolUi.N(System.Single)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.N(System.Single)
+  id: N(System.Single)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: N(float)
+  nameWithType: MakerToolUi.N(float)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.N(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string N(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.String
+    content.vb: Public Shared Function N(value As Single) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.N*
+  nameWithType.vb: MakerToolUi.N(Single)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.N(Single)
+  name.vb: N(Single)
+- uid: SurvivorsMaker.Editor.MakerToolUi.N(System.Double)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.N(System.Double)
+  id: N(System.Double)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: N(double)
+  nameWithType: MakerToolUi.N(double)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.N(double)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string N(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.String
+    content.vb: Public Shared Function N(value As Double) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.N*
+  nameWithType.vb: MakerToolUi.N(Double)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.N(Double)
+  name.vb: N(Double)
+- uid: SurvivorsMaker.Editor.MakerToolUi.N(System.Int32)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.N(System.Int32)
+  id: N(System.Int32)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: N(int)
+  nameWithType: MakerToolUi.N(int)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.N(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string N(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function N(value As Integer) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.N*
+  nameWithType.vb: MakerToolUi.N(Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.N(Integer)
+  name.vb: N(Integer)
+- uid: SurvivorsMaker.Editor.MakerToolUi.Pct(System.Single)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Pct(System.Single)
+  id: Pct(System.Single)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Pct(float)
+  nameWithType: MakerToolUi.Pct(float)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Pct(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Pct(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.String
+    content.vb: Public Shared Function Pct(value As Single) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.Pct*
+  nameWithType.vb: MakerToolUi.Pct(Single)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Pct(Single)
+  name.vb: Pct(Single)
+- uid: SurvivorsMaker.Editor.MakerToolUi.Signed(System.Single)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.Signed(System.Single)
+  id: Signed(System.Single)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: Signed(float)
+  nameWithType: MakerToolUi.Signed(float)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Signed(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string Signed(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.String
+    content.vb: Public Shared Function Signed(value As Single) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.Signed*
+  nameWithType.vb: MakerToolUi.Signed(Single)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.Signed(Single)
+  name.vb: Signed(Single)
+- uid: SurvivorsMaker.Editor.MakerToolUi.DiffColor(System.Single)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.DiffColor(System.Single)
+  id: DiffColor(System.Single)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: DiffColor(float)
+  nameWithType: MakerToolUi.DiffColor(float)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.DiffColor(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Text color for a positive/negative difference, readable in both editor themes.
+  example: []
+  syntax:
+    content: public static Color DiffColor(float diff)
+    parameters:
+    - id: diff
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function DiffColor(diff As Single) As Color
+  overload: SurvivorsMaker.Editor.MakerToolUi.DiffColor*
+  nameWithType.vb: MakerToolUi.DiffColor(Single)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.DiffColor(Single)
+  name.vb: DiffColor(Single)
+- uid: SurvivorsMaker.Editor.MakerToolUi.ParseInts(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.ParseInts(System.String,System.Int32)
+  id: ParseInts(System.String,System.Int32)
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: ParseInts(string, int)
+  nameWithType: MakerToolUi.ParseInts(string, int)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.ParseInts(string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Parses "1, 5, 10" into ascending distinct positive ints. Invalid parts are skipped.
+  example: []
+  syntax:
+    content: public static List<int> ParseInts(string text, int min = 1)
+    parameters:
+    - id: text
+      type: System.String
+    - id: min
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Shared Function ParseInts(text As String, min As Integer = 1) As List(Of Integer)
+  overload: SurvivorsMaker.Editor.MakerToolUi.ParseInts*
+  nameWithType.vb: MakerToolUi.ParseInts(String, Integer)
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.ParseInts(String, Integer)
+  name.vb: ParseInts(String, Integer)
+- uid: SurvivorsMaker.Editor.MakerToolUi.JoinInts(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:SurvivorsMaker.Editor.MakerToolUi.JoinInts(System.Collections.Generic.IEnumerable{System.Int32})
+  id: JoinInts(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: SurvivorsMaker.Editor.MakerToolUi
+  langs:
+  - csharp
+  - vb
+  name: JoinInts(IEnumerable<int>)
+  nameWithType: MakerToolUi.JoinInts(IEnumerable<int>)
+  fullName: SurvivorsMaker.Editor.MakerToolUi.JoinInts(System.Collections.Generic.IEnumerable<int>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public static string JoinInts(IEnumerable<int> values)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    return:
+      type: System.String
+    content.vb: Public Shared Function JoinInts(values As IEnumerable(Of Integer)) As String
+  overload: SurvivorsMaker.Editor.MakerToolUi.JoinInts*
+  nameWithType.vb: MakerToolUi.JoinInts(IEnumerable(Of Integer))
+  fullName.vb: SurvivorsMaker.Editor.MakerToolUi.JoinInts(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: JoinInts(IEnumerable(Of Integer))
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Editor.MakerToolUi.Style*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Style
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Style_UnityEngine_UIElements_VisualElement_
+  name: Style
+  nameWithType: MakerToolUi.Style
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Style
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: SurvivorsMaker.Editor.MakerToolUi.Row*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Row
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Row_UnityEngine_UIElements_VisualElement_
+  name: Row
+  nameWithType: MakerToolUi.Row
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Row
+- uid: SurvivorsMaker.Editor.MakerToolUi.Heading*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Heading
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Heading_UnityEngine_UIElements_VisualElement_System_String_
+  name: Heading
+  nameWithType: MakerToolUi.Heading
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Heading
+- uid: UnityEngine.UIElements.Label
+  commentId: T:UnityEngine.UIElements.Label
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: UnityEngine.UIElements.Label
+- uid: SurvivorsMaker.Editor.MakerToolUi.Note*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Note
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Note_UnityEngine_UIElements_VisualElement_System_String_
+  name: Note
+  nameWithType: MakerToolUi.Note
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Note
+- uid: SurvivorsMaker.Editor.MakerToolUi.Button*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Button
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Button_UnityEngine_UIElements_VisualElement_System_String_System_Action_System_String_
+  name: Button
+  nameWithType: MakerToolUi.Button
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Button
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: UnityEngine.UIElements.Button
+  commentId: T:UnityEngine.UIElements.Button
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UIElements.Button
+- uid: SurvivorsMaker.Editor.MakerToolUi.Table*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Table
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Table_UnityEngine_UIElements_VisualElement_System_Collections_Generic_IReadOnlyList_System_String__System_Collections_Generic_IEnumerable_System_String____System_Single_
+  name: Table
+  nameWithType: MakerToolUi.Table
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Table
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String[]}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string[]>
+  nameWithType: IEnumerable<string[]>
+  fullName: System.Collections.Generic.IEnumerable<string[]>
+  nameWithType.vb: IEnumerable(Of String())
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String())
+  name.vb: IEnumerable(Of String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{UnityEngine.UIElements.VisualElement}
+  commentId: T:System.Collections.Generic.List{UnityEngine.UIElements.VisualElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VisualElement>
+  nameWithType: List<VisualElement>
+  fullName: System.Collections.Generic.List<UnityEngine.UIElements.VisualElement>
+  nameWithType.vb: List(Of VisualElement)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.UIElements.VisualElement)
+  name.vb: List(Of VisualElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Editor.MakerToolUi.N*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.N
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_N_System_Single_
+  name: N
+  nameWithType: MakerToolUi.N
+  fullName: SurvivorsMaker.Editor.MakerToolUi.N
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Editor.MakerToolUi.Pct*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Pct
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Pct_System_Single_
+  name: Pct
+  nameWithType: MakerToolUi.Pct
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Pct
+- uid: SurvivorsMaker.Editor.MakerToolUi.Signed*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.Signed
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_Signed_System_Single_
+  name: Signed
+  nameWithType: MakerToolUi.Signed
+  fullName: SurvivorsMaker.Editor.MakerToolUi.Signed
+- uid: SurvivorsMaker.Editor.MakerToolUi.DiffColor*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.DiffColor
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_DiffColor_System_Single_
+  name: DiffColor
+  nameWithType: MakerToolUi.DiffColor
+  fullName: SurvivorsMaker.Editor.MakerToolUi.DiffColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SurvivorsMaker.Editor.MakerToolUi.ParseInts*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.ParseInts
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_ParseInts_System_String_System_Int32_
+  name: ParseInts
+  nameWithType: MakerToolUi.ParseInts
+  fullName: SurvivorsMaker.Editor.MakerToolUi.ParseInts
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Editor.MakerToolUi.JoinInts*
+  commentId: Overload:SurvivorsMaker.Editor.MakerToolUi.JoinInts
+  isExternal: true
+  href: SurvivorsMaker.Editor.MakerToolUi.html#SurvivorsMaker_Editor_MakerToolUi_JoinInts_System_Collections_Generic_IEnumerable_System_Int32__
+  name: JoinInts
+  nameWithType: MakerToolUi.JoinInts
+  fullName: SurvivorsMaker.Editor.MakerToolUi.JoinInts
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.MeleeStyle
+  commentId: T:SurvivorsMaker.Simulation.MeleeStyle
+  id: MeleeStyle
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.MeleeStyle.Swing
+  - SurvivorsMaker.Simulation.MeleeStyle.Thrust
+  langs:
+  - csharp
+  - vb
+  name: MeleeStyle
+  nameWithType: MeleeStyle
+  fullName: SurvivorsMaker.Simulation.MeleeStyle
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum MeleeStyle
+    content.vb: Public Enum MeleeStyle
+- uid: SurvivorsMaker.Simulation.MeleeStyle.Thrust
+  commentId: F:SurvivorsMaker.Simulation.MeleeStyle.Thrust
+  id: Thrust
+  parent: SurvivorsMaker.Simulation.MeleeStyle
+  langs:
+  - csharp
+  - vb
+  name: Thrust
+  nameWithType: MeleeStyle.Thrust
+  fullName: SurvivorsMaker.Simulation.MeleeStyle.Thrust
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Thrust = 0
+    return:
+      type: SurvivorsMaker.Simulation.MeleeStyle
+- uid: SurvivorsMaker.Simulation.MeleeStyle.Swing
+  commentId: F:SurvivorsMaker.Simulation.MeleeStyle.Swing
+  id: Swing
+  parent: SurvivorsMaker.Simulation.MeleeStyle
+  langs:
+  - csharp
+  - vb
+  name: Swing
+  nameWithType: MeleeStyle.Swing
+  fullName: SurvivorsMaker.Simulation.MeleeStyle.Swing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Swing = 1
+    return:
+      type: SurvivorsMaker.Simulation.MeleeStyle
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.MeleeStyle
+  commentId: T:SurvivorsMaker.Simulation.MeleeStyle
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MeleeStyle.html
+  name: MeleeStyle
+  nameWithType: MeleeStyle
+  fullName: SurvivorsMaker.Simulation.MeleeStyle

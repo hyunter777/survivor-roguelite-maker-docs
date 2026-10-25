@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerComparison
+  commentId: T:SurvivorsMaker.Simulation.TriggerComparison
+  id: TriggerComparison
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerComparison.AtLeast
+  - SurvivorsMaker.Simulation.TriggerComparison.AtMost
+  - SurvivorsMaker.Simulation.TriggerComparison.Equal
+  - SurvivorsMaker.Simulation.TriggerComparison.Greater
+  - SurvivorsMaker.Simulation.TriggerComparison.Less
+  - SurvivorsMaker.Simulation.TriggerComparison.NotEqual
+  - SurvivorsMaker.Simulation.TriggerComparison.Range
+  langs:
+  - csharp
+  - vb
+  name: TriggerComparison
+  nameWithType: TriggerComparison
+  fullName: SurvivorsMaker.Simulation.TriggerComparison
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Comparison operator used by a trigger condition.
+  example: []
+  syntax:
+    content: public enum TriggerComparison
+    content.vb: Public Enum TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.AtLeast
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.AtLeast
+  id: AtLeast
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: AtLeast
+  nameWithType: TriggerComparison.AtLeast
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.AtLeast
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: AtLeast = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.AtMost
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.AtMost
+  id: AtMost
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: AtMost
+  nameWithType: TriggerComparison.AtMost
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.AtMost
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: AtMost = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.Greater
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.Greater
+  id: Greater
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: Greater
+  nameWithType: TriggerComparison.Greater
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.Greater
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Greater = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.Less
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.Less
+  id: Less
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: Less
+  nameWithType: TriggerComparison.Less
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.Less
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Less = 3
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.Equal
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.Equal
+  id: Equal
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: TriggerComparison.Equal
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.Equal
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Equal = 4
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.NotEqual
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.NotEqual
+  id: NotEqual
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: NotEqual
+  nameWithType: TriggerComparison.NotEqual
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.NotEqual
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: NotEqual = 5
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+- uid: SurvivorsMaker.Simulation.TriggerComparison.Range
+  commentId: F:SurvivorsMaker.Simulation.TriggerComparison.Range
+  id: Range
+  parent: SurvivorsMaker.Simulation.TriggerComparison
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: TriggerComparison.Range
+  fullName: SurvivorsMaker.Simulation.TriggerComparison.Range
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Range = 6
+    return:
+      type: SurvivorsMaker.Simulation.TriggerComparison
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerComparison
+  commentId: T:SurvivorsMaker.Simulation.TriggerComparison
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerComparison.html
+  name: TriggerComparison
+  nameWithType: TriggerComparison
+  fullName: SurvivorsMaker.Simulation.TriggerComparison

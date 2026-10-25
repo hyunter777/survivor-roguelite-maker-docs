@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.DamageChannel
+  commentId: T:SurvivorsMaker.Presentation.DamageChannel
+  id: DamageChannel
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.DamageChannel.Direct
+  - SurvivorsMaker.Presentation.DamageChannel.Effect
+  - SurvivorsMaker.Presentation.DamageChannel.Status
+  langs:
+  - csharp
+  - vb
+  name: DamageChannel
+  nameWithType: DamageChannel
+  fullName: SurvivorsMaker.Presentation.DamageChannel
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: How damage reached an enemy.
+  example: []
+  syntax:
+    content: public enum DamageChannel
+    content.vb: Public Enum DamageChannel
+- uid: SurvivorsMaker.Presentation.DamageChannel.Direct
+  commentId: F:SurvivorsMaker.Presentation.DamageChannel.Direct
+  id: Direct
+  parent: SurvivorsMaker.Presentation.DamageChannel
+  langs:
+  - csharp
+  - vb
+  name: Direct
+  nameWithType: DamageChannel.Direct
+  fullName: SurvivorsMaker.Presentation.DamageChannel.Direct
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: A weapon hit (projectile, melee, orbit, aura).
+  example: []
+  syntax:
+    content: Direct = 0
+    return:
+      type: SurvivorsMaker.Presentation.DamageChannel
+- uid: SurvivorsMaker.Presentation.DamageChannel.Effect
+  commentId: F:SurvivorsMaker.Presentation.DamageChannel.Effect
+  id: Effect
+  parent: SurvivorsMaker.Presentation.DamageChannel
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: DamageChannel.Effect
+  fullName: SurvivorsMaker.Presentation.DamageChannel.Effect
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Secondary hit effects: explosions, chains, trigger damage.'
+  example: []
+  syntax:
+    content: Effect = 1
+    return:
+      type: SurvivorsMaker.Presentation.DamageChannel
+- uid: SurvivorsMaker.Presentation.DamageChannel.Status
+  commentId: F:SurvivorsMaker.Presentation.DamageChannel.Status
+  id: Status
+  parent: SurvivorsMaker.Presentation.DamageChannel
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: DamageChannel.Status
+  fullName: SurvivorsMaker.Presentation.DamageChannel.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Status ticks (burn and custom statuses).
+  example: []
+  syntax:
+    content: Status = 2
+    return:
+      type: SurvivorsMaker.Presentation.DamageChannel
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.DamageChannel
+  commentId: T:SurvivorsMaker.Presentation.DamageChannel
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DamageChannel.html
+  name: DamageChannel
+  nameWithType: DamageChannel
+  fullName: SurvivorsMaker.Presentation.DamageChannel

@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ILevelCurve
+  commentId: T:SurvivorsMaker.Simulation.ILevelCurve
+  id: ILevelCurve
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ILevelCurve
+  nameWithType: ILevelCurve
+  fullName: SurvivorsMaker.Simulation.ILevelCurve
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Experience needed to go from <code>level</code> to <code>level + 1</code>.
+  example: []
+  syntax:
+    content: public interface ILevelCurve
+    content.vb: Public Interface ILevelCurve
+  derivedClasses:
+  - SurvivorsMaker.Simulation.PolynomialLevelCurve
+- uid: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext(System.Int32)
+  commentId: M:SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext(System.Int32)
+  id: ExperienceToNext(System.Int32)
+  parent: SurvivorsMaker.Simulation.ILevelCurve
+  langs:
+  - csharp
+  - vb
+  name: ExperienceToNext(int)
+  nameWithType: ILevelCurve.ExperienceToNext(int)
+  fullName: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: float ExperienceToNext(int level)
+    parameters:
+    - id: level
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Function ExperienceToNext(level As Integer) As Single
+  overload: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext*
+  nameWithType.vb: ILevelCurve.ExperienceToNext(Integer)
+  fullName.vb: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext(Integer)
+  name.vb: ExperienceToNext(Integer)
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext*
+  commentId: Overload:SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ILevelCurve.html#SurvivorsMaker_Simulation_ILevelCurve_ExperienceToNext_System_Int32_
+  name: ExperienceToNext
+  nameWithType: ILevelCurve.ExperienceToNext
+  fullName: SurvivorsMaker.Simulation.ILevelCurve.ExperienceToNext
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

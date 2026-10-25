@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerWhen
+  commentId: T:SurvivorsMaker.Simulation.TriggerWhen
+  id: TriggerWhen
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerWhen.OnDamaged
+  - SurvivorsMaker.Simulation.TriggerWhen.OnHit
+  - SurvivorsMaker.Simulation.TriggerWhen.OnKill
+  - SurvivorsMaker.Simulation.TriggerWhen.OnLevelUp
+  - SurvivorsMaker.Simulation.TriggerWhen.OnWaveStart
+  - SurvivorsMaker.Simulation.TriggerWhen.Periodic
+  langs:
+  - csharp
+  - vb
+  name: TriggerWhen
+  nameWithType: TriggerWhen
+  fullName: SurvivorsMaker.Simulation.TriggerWhen
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum TriggerWhen
+    content.vb: Public Enum TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.OnKill
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.OnKill
+  id: OnKill
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: OnKill
+  nameWithType: TriggerWhen.OnKill
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.OnKill
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: OnKill = 0
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.OnHit
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.OnHit
+  id: OnHit
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: OnHit
+  nameWithType: TriggerWhen.OnHit
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.OnHit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Each weapon hit (not status ticks or effect damage).
+  example: []
+  syntax:
+    content: OnHit = 1
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.OnDamaged
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.OnDamaged
+  id: OnDamaged
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: OnDamaged
+  nameWithType: TriggerWhen.OnDamaged
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.OnDamaged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: When the player takes damage (after dodge).
+  example: []
+  syntax:
+    content: OnDamaged = 2
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.OnWaveStart
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.OnWaveStart
+  id: OnWaveStart
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: OnWaveStart
+  nameWithType: TriggerWhen.OnWaveStart
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.OnWaveStart
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: OnWaveStart = 3
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.OnLevelUp
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.OnLevelUp
+  id: OnLevelUp
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: OnLevelUp
+  nameWithType: TriggerWhen.OnLevelUp
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.OnLevelUp
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: OnLevelUp = 4
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerWhen.Periodic
+  commentId: F:SurvivorsMaker.Simulation.TriggerWhen.Periodic
+  id: Periodic
+  parent: SurvivorsMaker.Simulation.TriggerWhen
+  langs:
+  - csharp
+  - vb
+  name: Periodic
+  nameWithType: TriggerWhen.Periodic
+  fullName: SurvivorsMaker.Simulation.TriggerWhen.Periodic
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Every PeriodSeconds.
+  example: []
+  syntax:
+    content: Periodic = 5
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.TriggerWhen
+  commentId: T:SurvivorsMaker.Simulation.TriggerWhen
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerWhen.html
+  name: TriggerWhen
+  nameWithType: TriggerWhen
+  fullName: SurvivorsMaker.Simulation.TriggerWhen

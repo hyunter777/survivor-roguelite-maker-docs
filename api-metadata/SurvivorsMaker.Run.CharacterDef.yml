@@ -1,0 +1,945 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.CharacterDef
+  commentId: T:SurvivorsMaker.Run.CharacterDef
+  id: CharacterDef
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.CharacterDef.#ctor
+  - SurvivorsMaker.Run.CharacterDef.Available
+  - SurvivorsMaker.Run.CharacterDef.BannedGroups
+  - SurvivorsMaker.Run.CharacterDef.BannedItems
+  - SurvivorsMaker.Run.CharacterDef.BannedTags
+  - SurvivorsMaker.Run.CharacterDef.BannedWeapons
+  - SurvivorsMaker.Run.CharacterDef.Effects
+  - SurvivorsMaker.Run.CharacterDef.Id
+  - SurvivorsMaker.Run.CharacterDef.MeleeAllowed
+  - SurvivorsMaker.Run.CharacterDef.PoolBans
+  - SurvivorsMaker.Run.CharacterDef.PoolConstraints
+  - SurvivorsMaker.Run.CharacterDef.PreferredTags
+  - SurvivorsMaker.Run.CharacterDef.RangedAllowed
+  - SurvivorsMaker.Run.CharacterDef.StartingItems
+  - SurvivorsMaker.Run.CharacterDef.StartingWeapons
+  - SurvivorsMaker.Run.CharacterDef.Triggers
+  langs:
+  - csharp
+  - vb
+  name: CharacterDef
+  nameWithType: CharacterDef
+  fullName: SurvivorsMaker.Run.CharacterDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Starting loadout, base effects and acquisition restrictions for a playable character.
+  example: []
+  syntax:
+    content: public sealed class CharacterDef
+    content.vb: Public NotInheritable Class CharacterDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.CharacterDef.PreferredTags
+  commentId: F:SurvivorsMaker.Run.CharacterDef.PreferredTags
+  id: PreferredTags
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: PreferredTags
+  nameWithType: CharacterDef.PreferredTags
+  fullName: SurvivorsMaker.Run.CharacterDef.PreferredTags
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<TagWeight> PreferredTags
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+    content.vb: Public PreferredTags As List(Of TagWeight)
+- uid: SurvivorsMaker.Run.CharacterDef.BannedTags
+  commentId: F:SurvivorsMaker.Run.CharacterDef.BannedTags
+  id: BannedTags
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: BannedTags
+  nameWithType: CharacterDef.BannedTags
+  fullName: SurvivorsMaker.Run.CharacterDef.BannedTags
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> BannedTags
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public BannedTags As List(Of String)
+- uid: SurvivorsMaker.Run.CharacterDef.BannedGroups
+  commentId: F:SurvivorsMaker.Run.CharacterDef.BannedGroups
+  id: BannedGroups
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: BannedGroups
+  nameWithType: CharacterDef.BannedGroups
+  fullName: SurvivorsMaker.Run.CharacterDef.BannedGroups
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<string> BannedGroups
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public BannedGroups As List(Of String)
+- uid: SurvivorsMaker.Run.CharacterDef.BannedWeapons
+  commentId: F:SurvivorsMaker.Run.CharacterDef.BannedWeapons
+  id: BannedWeapons
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: BannedWeapons
+  nameWithType: CharacterDef.BannedWeapons
+  fullName: SurvivorsMaker.Run.CharacterDef.BannedWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<WeaponItemDef> BannedWeapons
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.WeaponItemDef}
+    content.vb: Public BannedWeapons As List(Of WeaponItemDef)
+- uid: SurvivorsMaker.Run.CharacterDef.PoolBans
+  commentId: F:SurvivorsMaker.Run.CharacterDef.PoolBans
+  id: PoolBans
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: PoolBans
+  nameWithType: CharacterDef.PoolBans
+  fullName: SurvivorsMaker.Run.CharacterDef.PoolBans
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<OfferBanRule> PoolBans
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.OfferBanRule}
+    content.vb: Public PoolBans As List(Of OfferBanRule)
+- uid: SurvivorsMaker.Run.CharacterDef.PoolConstraints
+  commentId: F:SurvivorsMaker.Run.CharacterDef.PoolConstraints
+  id: PoolConstraints
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: PoolConstraints
+  nameWithType: CharacterDef.PoolConstraints
+  fullName: SurvivorsMaker.Run.CharacterDef.PoolConstraints
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public CharacterPoolConstraints PoolConstraints
+    return:
+      type: SurvivorsMaker.Run.CharacterPoolConstraints
+    content.vb: Public PoolConstraints As CharacterPoolConstraints
+- uid: SurvivorsMaker.Run.CharacterDef.Id
+  commentId: F:SurvivorsMaker.Run.CharacterDef.Id
+  id: Id
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: CharacterDef.Id
+  fullName: SurvivorsMaker.Run.CharacterDef.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Run.CharacterDef.Available
+  commentId: F:SurvivorsMaker.Run.CharacterDef.Available
+  id: Available
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: Available
+  nameWithType: CharacterDef.Available
+  fullName: SurvivorsMaker.Run.CharacterDef.Available
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool Available
+    return:
+      type: System.Boolean
+    content.vb: Public Available As Boolean
+- uid: SurvivorsMaker.Run.CharacterDef.Effects
+  commentId: F:SurvivorsMaker.Run.CharacterDef.Effects
+  id: Effects
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: CharacterDef.Effects
+  fullName: SurvivorsMaker.Run.CharacterDef.Effects
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<Effect> Effects
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+    content.vb: Public Effects As List(Of Effect)
+- uid: SurvivorsMaker.Run.CharacterDef.StartingWeapons
+  commentId: F:SurvivorsMaker.Run.CharacterDef.StartingWeapons
+  id: StartingWeapons
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: StartingWeapons
+  nameWithType: CharacterDef.StartingWeapons
+  fullName: SurvivorsMaker.Run.CharacterDef.StartingWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Weapons the player may pick one of at run start.
+  example: []
+  syntax:
+    content: public List<WeaponItemDef> StartingWeapons
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.WeaponItemDef}
+    content.vb: Public StartingWeapons As List(Of WeaponItemDef)
+- uid: SurvivorsMaker.Run.CharacterDef.StartingItems
+  commentId: F:SurvivorsMaker.Run.CharacterDef.StartingItems
+  id: StartingItems
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: StartingItems
+  nameWithType: CharacterDef.StartingItems
+  fullName: SurvivorsMaker.Run.CharacterDef.StartingItems
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Items given once at run start, in order.
+  example: []
+  syntax:
+    content: public List<ItemDef> StartingItems
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.ItemDef}
+    content.vb: Public StartingItems As List(Of ItemDef)
+- uid: SurvivorsMaker.Run.CharacterDef.BannedItems
+  commentId: F:SurvivorsMaker.Run.CharacterDef.BannedItems
+  id: BannedItems
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: BannedItems
+  nameWithType: CharacterDef.BannedItems
+  fullName: SurvivorsMaker.Run.CharacterDef.BannedItems
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Items never offered to this character.
+  example: []
+  syntax:
+    content: public List<ItemDef> BannedItems
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.ItemDef}
+    content.vb: Public BannedItems As List(Of ItemDef)
+- uid: SurvivorsMaker.Run.CharacterDef.MeleeAllowed
+  commentId: F:SurvivorsMaker.Run.CharacterDef.MeleeAllowed
+  id: MeleeAllowed
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: MeleeAllowed
+  nameWithType: CharacterDef.MeleeAllowed
+  fullName: SurvivorsMaker.Run.CharacterDef.MeleeAllowed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool MeleeAllowed
+    return:
+      type: System.Boolean
+    content.vb: Public MeleeAllowed As Boolean
+- uid: SurvivorsMaker.Run.CharacterDef.RangedAllowed
+  commentId: F:SurvivorsMaker.Run.CharacterDef.RangedAllowed
+  id: RangedAllowed
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: RangedAllowed
+  nameWithType: CharacterDef.RangedAllowed
+  fullName: SurvivorsMaker.Run.CharacterDef.RangedAllowed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool RangedAllowed
+    return:
+      type: System.Boolean
+    content.vb: Public RangedAllowed As Boolean
+- uid: SurvivorsMaker.Run.CharacterDef.Triggers
+  commentId: F:SurvivorsMaker.Run.CharacterDef.Triggers
+  id: Triggers
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: Triggers
+  nameWithType: CharacterDef.Triggers
+  fullName: SurvivorsMaker.Run.CharacterDef.Triggers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<TriggerDef> Triggers
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+    content.vb: Public Triggers As List(Of TriggerDef)
+- uid: SurvivorsMaker.Run.CharacterDef.#ctor
+  commentId: M:SurvivorsMaker.Run.CharacterDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.CharacterDef
+  langs:
+  - csharp
+  - vb
+  name: CharacterDef()
+  nameWithType: CharacterDef.CharacterDef()
+  fullName: SurvivorsMaker.Run.CharacterDef.CharacterDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public CharacterDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.CharacterDef.#ctor*
+  nameWithType.vb: CharacterDef.New()
+  fullName.vb: SurvivorsMaker.Run.CharacterDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TagWeight>
+  nameWithType: List<TagWeight>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.TagWeight>
+  nameWithType.vb: List(Of TagWeight)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.TagWeight)
+  name.vb: List(Of TagWeight)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.TagWeight
+    name: TagWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TagWeight.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.TagWeight
+    name: TagWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TagWeight.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.WeaponItemDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.WeaponItemDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WeaponItemDef>
+  nameWithType: List<WeaponItemDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.WeaponItemDef>
+  nameWithType.vb: List(Of WeaponItemDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.WeaponItemDef)
+  name.vb: List(Of WeaponItemDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.WeaponItemDef
+    name: WeaponItemDef
+    isExternal: true
+    href: SurvivorsMaker.Run.WeaponItemDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.WeaponItemDef
+    name: WeaponItemDef
+    isExternal: true
+    href: SurvivorsMaker.Run.WeaponItemDef.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.OfferBanRule}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.OfferBanRule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OfferBanRule>
+  nameWithType: List<OfferBanRule>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.OfferBanRule>
+  nameWithType.vb: List(Of OfferBanRule)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.OfferBanRule)
+  name.vb: List(Of OfferBanRule)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferBanRule
+    name: OfferBanRule
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferBanRule.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferBanRule
+    name: OfferBanRule
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferBanRule.html
+  - name: )
+- uid: SurvivorsMaker.Run.CharacterPoolConstraints
+  commentId: T:SurvivorsMaker.Run.CharacterPoolConstraints
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.CharacterPoolConstraints.html
+  name: CharacterPoolConstraints
+  nameWithType: CharacterPoolConstraints
+  fullName: SurvivorsMaker.Run.CharacterPoolConstraints
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Effect>
+  nameWithType: List<Effect>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: List(Of Effect)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.Effect)
+  name.vb: List(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+    href: SurvivorsMaker.Core.Effect.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.ItemDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.ItemDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ItemDef>
+  nameWithType: List<ItemDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.ItemDef>
+  nameWithType.vb: List(Of ItemDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.ItemDef)
+  name.vb: List(Of ItemDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.ItemDef
+    name: ItemDef
+    isExternal: true
+    href: SurvivorsMaker.Run.ItemDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.ItemDef
+    name: ItemDef
+    isExternal: true
+    href: SurvivorsMaker.Run.ItemDef.html
+  - name: )
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TriggerDef>
+  nameWithType: List<TriggerDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.TriggerDef>
+  nameWithType.vb: List(Of TriggerDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.TriggerDef)
+  name.vb: List(Of TriggerDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+- uid: SurvivorsMaker.Run.CharacterDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.CharacterDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.CharacterDef.html#SurvivorsMaker_Run_CharacterDef__ctor
+  name: CharacterDef
+  nameWithType: CharacterDef.CharacterDef
+  fullName: SurvivorsMaker.Run.CharacterDef.CharacterDef
+  nameWithType.vb: CharacterDef.New
+  fullName.vb: SurvivorsMaker.Run.CharacterDef.New
+  name.vb: New

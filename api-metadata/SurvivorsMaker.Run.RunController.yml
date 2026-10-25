@@ -1,0 +1,2324 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.RunController
+  commentId: T:SurvivorsMaker.Run.RunController
+  id: RunController
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.RunController.#ctor(SurvivorsMaker.Run.RunSystems)
+  - SurvivorsMaker.Run.RunController.Banish(System.Int32)
+  - SurvivorsMaker.Run.RunController.BanishChoice(System.Int32)
+  - SurvivorsMaker.Run.RunController.Buy(System.Int32)
+  - SurvivorsMaker.Run.RunController.CaptureEnvelope(System.Int64,System.String)
+  - SurvivorsMaker.Run.RunController.ChooseLevelUp(System.Int32)
+  - SurvivorsMaker.Run.RunController.CompleteWave
+  - SurvivorsMaker.Run.RunController.ConfigureProfile(SurvivorsMaker.Run.IProfileStore,SurvivorsMaker.Run.RunContent)
+  - SurvivorsMaker.Run.RunController.ConfigureRunStore(SurvivorsMaker.Run.IRunStore)
+  - SurvivorsMaker.Run.RunController.Create(SurvivorsMaker.Run.RunRequest)
+  - SurvivorsMaker.Run.RunController.EndWave
+  - SurvivorsMaker.Run.RunController.GiveCurrency(System.Int32)
+  - SurvivorsMaker.Run.RunController.GiveItem(System.String)
+  - SurvivorsMaker.Run.RunController.GiveLevels(System.Int32)
+  - SurvivorsMaker.Run.RunController.GiveWeapon(System.String)
+  - SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot)
+  - SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  - SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.RunRequest,SurvivorsMaker.Run.SaveMigrationRegistry)
+  - SurvivorsMaker.Run.RunController.Lock(System.Int32)
+  - SurvivorsMaker.Run.RunController.Merge(System.Int32)
+  - SurvivorsMaker.Run.RunController.NewUnlocks
+  - SurvivorsMaker.Run.RunController.NextWave
+  - SurvivorsMaker.Run.RunController.PickupRules
+  - SurvivorsMaker.Run.RunController.Profile
+  - SurvivorsMaker.Run.RunController.Recycle(System.Int32)
+  - SurvivorsMaker.Run.RunController.Reroll
+  - SurvivorsMaker.Run.RunController.RunTriggerHandlers
+  - SurvivorsMaker.Run.RunController.Save
+  - SurvivorsMaker.Run.RunController.SetInvulnerable(System.Boolean)
+  - SurvivorsMaker.Run.RunController.SkipToWave(System.Int32)
+  - SurvivorsMaker.Run.RunController.SpawnEnemies(System.String,System.Int32)
+  - SurvivorsMaker.Run.RunController.StartWave
+  - SurvivorsMaker.Run.RunController.State
+  - SurvivorsMaker.Run.RunController.Step(SurvivorsMaker.Simulation.Vec2)
+  - SurvivorsMaker.Run.RunController.ToggleLock(System.Int32)
+  - SurvivorsMaker.Run.RunController.TriggerHandlers
+  - SurvivorsMaker.Run.RunController.UsedCheats
+  langs:
+  - csharp
+  - vb
+  name: RunController
+  nameWithType: RunController
+  fullName: SurvivorsMaker.Run.RunController
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Explicit run actions with phase validation before any state changes or random draws.
+  example: []
+  syntax:
+    content: 'public sealed class RunController : IPlaytestCommands'
+    content.vb: Public NotInheritable Class RunController Implements IPlaytestCommands
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - SurvivorsMaker.Run.RunController.SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(System.Int32)
+  - SurvivorsMaker.Run.RunController.SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(System.Int32)
+- uid: SurvivorsMaker.Run.RunController.TriggerHandlers
+  commentId: F:SurvivorsMaker.Run.RunController.TriggerHandlers
+  id: TriggerHandlers
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: TriggerHandlers
+  nameWithType: RunController.TriggerHandlers
+  fullName: SurvivorsMaker.Run.RunController.TriggerHandlers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public readonly Dictionary<string, ITriggerHandler> TriggerHandlers
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+    content.vb: Public ReadOnly TriggerHandlers As Dictionary(Of String, ITriggerHandler)
+- uid: SurvivorsMaker.Run.RunController.RunTriggerHandlers
+  commentId: F:SurvivorsMaker.Run.RunController.RunTriggerHandlers
+  id: RunTriggerHandlers
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: RunTriggerHandlers
+  nameWithType: RunController.RunTriggerHandlers
+  fullName: SurvivorsMaker.Run.RunController.RunTriggerHandlers
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public readonly Dictionary<string, IRunTriggerHandler> RunTriggerHandlers
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Run.IRunTriggerHandler}
+    content.vb: Public ReadOnly RunTriggerHandlers As Dictionary(Of String, IRunTriggerHandler)
+- uid: SurvivorsMaker.Run.RunController.PickupRules
+  commentId: F:SurvivorsMaker.Run.RunController.PickupRules
+  id: PickupRules
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: PickupRules
+  nameWithType: RunController.PickupRules
+  fullName: SurvivorsMaker.Run.RunController.PickupRules
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Optional pickup/death-reward rules for subsequently started waves.
+  example: []
+  syntax:
+    content: public PickupRules PickupRules
+    return:
+      type: SurvivorsMaker.Simulation.PickupRules
+    content.vb: Public PickupRules As PickupRules
+- uid: SurvivorsMaker.Run.RunController.#ctor(SurvivorsMaker.Run.RunSystems)
+  commentId: M:SurvivorsMaker.Run.RunController.#ctor(SurvivorsMaker.Run.RunSystems)
+  id: '#ctor(SurvivorsMaker.Run.RunSystems)'
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: RunController(RunSystems)
+  nameWithType: RunController.RunController(RunSystems)
+  fullName: SurvivorsMaker.Run.RunController.RunController(SurvivorsMaker.Run.RunSystems)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunController(RunSystems systems)
+    parameters:
+    - id: systems
+      type: SurvivorsMaker.Run.RunSystems
+    content.vb: Public Sub New(systems As RunSystems)
+  overload: SurvivorsMaker.Run.RunController.#ctor*
+  nameWithType.vb: RunController.New(RunSystems)
+  fullName.vb: SurvivorsMaker.Run.RunController.New(SurvivorsMaker.Run.RunSystems)
+  name.vb: New(RunSystems)
+- uid: SurvivorsMaker.Run.RunController.Create(SurvivorsMaker.Run.RunRequest)
+  commentId: M:SurvivorsMaker.Run.RunController.Create(SurvivorsMaker.Run.RunRequest)
+  id: Create(SurvivorsMaker.Run.RunRequest)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Create(RunRequest)
+  nameWithType: RunController.Create(RunRequest)
+  fullName: SurvivorsMaker.Run.RunController.Create(SurvivorsMaker.Run.RunRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunState Create(RunRequest request)
+    parameters:
+    - id: request
+      type: SurvivorsMaker.Run.RunRequest
+    return:
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public Function Create(request As RunRequest) As RunState
+  overload: SurvivorsMaker.Run.RunController.Create*
+- uid: SurvivorsMaker.Run.RunController.ConfigureProfile(SurvivorsMaker.Run.IProfileStore,SurvivorsMaker.Run.RunContent)
+  commentId: M:SurvivorsMaker.Run.RunController.ConfigureProfile(SurvivorsMaker.Run.IProfileStore,SurvivorsMaker.Run.RunContent)
+  id: ConfigureProfile(SurvivorsMaker.Run.IProfileStore,SurvivorsMaker.Run.RunContent)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: ConfigureProfile(IProfileStore, RunContent)
+  nameWithType: RunController.ConfigureProfile(IProfileStore, RunContent)
+  fullName: SurvivorsMaker.Run.RunController.ConfigureProfile(SurvivorsMaker.Run.IProfileStore, SurvivorsMaker.Run.RunContent)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Call before displaying available characters/weapons in the menu.
+  example: []
+  syntax:
+    content: public void ConfigureProfile(IProfileStore store, RunContent content = null)
+    parameters:
+    - id: store
+      type: SurvivorsMaker.Run.IProfileStore
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    content.vb: Public Sub ConfigureProfile(store As IProfileStore, content As RunContent = Nothing)
+  overload: SurvivorsMaker.Run.RunController.ConfigureProfile*
+- uid: SurvivorsMaker.Run.RunController.Save
+  commentId: M:SurvivorsMaker.Run.RunController.Save
+  id: Save
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: RunController.Save()
+  fullName: SurvivorsMaker.Run.RunController.Save()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunSnapshot Save()
+    return:
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Public Function Save() As RunSnapshot
+  overload: SurvivorsMaker.Run.RunController.Save*
+- uid: SurvivorsMaker.Run.RunController.ConfigureRunStore(SurvivorsMaker.Run.IRunStore)
+  commentId: M:SurvivorsMaker.Run.RunController.ConfigureRunStore(SurvivorsMaker.Run.IRunStore)
+  id: ConfigureRunStore(SurvivorsMaker.Run.IRunStore)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: ConfigureRunStore(IRunStore)
+  nameWithType: RunController.ConfigureRunStore(IRunStore)
+  fullName: SurvivorsMaker.Run.RunController.ConfigureRunStore(SurvivorsMaker.Run.IRunStore)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: New adapters store run payloads independently; the old profile store remains compatible.
+  example: []
+  syntax:
+    content: public void ConfigureRunStore(IRunStore store)
+    parameters:
+    - id: store
+      type: SurvivorsMaker.Run.IRunStore
+    content.vb: Public Sub ConfigureRunStore(store As IRunStore)
+  overload: SurvivorsMaker.Run.RunController.ConfigureRunStore*
+- uid: SurvivorsMaker.Run.RunController.CaptureEnvelope(System.Int64,System.String)
+  commentId: M:SurvivorsMaker.Run.RunController.CaptureEnvelope(System.Int64,System.String)
+  id: CaptureEnvelope(System.Int64,System.String)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: CaptureEnvelope(long, string)
+  nameWithType: RunController.CaptureEnvelope(long, string)
+  fullName: SurvivorsMaker.Run.RunController.CaptureEnvelope(long, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public SaveEnvelope CaptureEnvelope(long generation = 0, string owner = "")
+    parameters:
+    - id: generation
+      type: System.Int64
+    - id: owner
+      type: System.String
+    return:
+      type: SurvivorsMaker.Run.SaveEnvelope
+    content.vb: Public Function CaptureEnvelope(generation As Long = 0, owner As String = "") As SaveEnvelope
+  overload: SurvivorsMaker.Run.RunController.CaptureEnvelope*
+  nameWithType.vb: RunController.CaptureEnvelope(Long, String)
+  fullName.vb: SurvivorsMaker.Run.RunController.CaptureEnvelope(Long, String)
+  name.vb: CaptureEnvelope(Long, String)
+- uid: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.RunRequest,SurvivorsMaker.Run.SaveMigrationRegistry)
+  commentId: M:SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.RunRequest,SurvivorsMaker.Run.SaveMigrationRegistry)
+  id: Load(SurvivorsMaker.Run.SaveEnvelope,SurvivorsMaker.Run.RunRequest,SurvivorsMaker.Run.SaveMigrationRegistry)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Load(SaveEnvelope, RunRequest, SaveMigrationRegistry)
+  nameWithType: RunController.Load(SaveEnvelope, RunRequest, SaveMigrationRegistry)
+  fullName: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.SaveEnvelope, SurvivorsMaker.Run.RunRequest, SurvivorsMaker.Run.SaveMigrationRegistry)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Load(SaveEnvelope envelope, RunRequest request, SaveMigrationRegistry migrations)
+    parameters:
+    - id: envelope
+      type: SurvivorsMaker.Run.SaveEnvelope
+    - id: request
+      type: SurvivorsMaker.Run.RunRequest
+    - id: migrations
+      type: SurvivorsMaker.Run.SaveMigrationRegistry
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Load(envelope As SaveEnvelope, request As RunRequest, migrations As SaveMigrationRegistry)
+      As RunResult
+  overload: SurvivorsMaker.Run.RunController.Load*
+- uid: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot)
+  commentId: M:SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot)
+  id: Load(SurvivorsMaker.Run.RunSnapshot)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Load(RunSnapshot)
+  nameWithType: RunController.Load(RunSnapshot)
+  fullName: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Load(RunSnapshot snapshot)
+    parameters:
+    - id: snapshot
+      type: SurvivorsMaker.Run.RunSnapshot
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Load(snapshot As RunSnapshot) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Load*
+- uid: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  commentId: M:SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  id: Load(SurvivorsMaker.Run.RunSnapshot,SurvivorsMaker.Run.RunRequest)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Load(RunSnapshot, RunRequest)
+  nameWithType: RunController.Load(RunSnapshot, RunRequest)
+  fullName: SurvivorsMaker.Run.RunController.Load(SurvivorsMaker.Run.RunSnapshot, SurvivorsMaker.Run.RunRequest)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Load(RunSnapshot snapshot, RunRequest request)
+    parameters:
+    - id: snapshot
+      type: SurvivorsMaker.Run.RunSnapshot
+    - id: request
+      type: SurvivorsMaker.Run.RunRequest
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Load(snapshot As RunSnapshot, request As RunRequest) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Load*
+- uid: SurvivorsMaker.Run.RunController.StartWave
+  commentId: M:SurvivorsMaker.Run.RunController.StartWave
+  id: StartWave
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: StartWave()
+  nameWithType: RunController.StartWave()
+  fullName: SurvivorsMaker.Run.RunController.StartWave()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult StartWave()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function StartWave() As RunResult
+  overload: SurvivorsMaker.Run.RunController.StartWave*
+- uid: SurvivorsMaker.Run.RunController.Step(SurvivorsMaker.Simulation.Vec2)
+  commentId: M:SurvivorsMaker.Run.RunController.Step(SurvivorsMaker.Simulation.Vec2)
+  id: Step(SurvivorsMaker.Simulation.Vec2)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Step(Vec2)
+  nameWithType: RunController.Step(Vec2)
+  fullName: SurvivorsMaker.Run.RunController.Step(SurvivorsMaker.Simulation.Vec2)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Step(Vec2 input)
+    parameters:
+    - id: input
+      type: SurvivorsMaker.Simulation.Vec2
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function [Step](input As Vec2) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Step*
+- uid: SurvivorsMaker.Run.RunController.ChooseLevelUp(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.ChooseLevelUp(System.Int32)
+  id: ChooseLevelUp(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: ChooseLevelUp(int)
+  nameWithType: RunController.ChooseLevelUp(int)
+  fullName: SurvivorsMaker.Run.RunController.ChooseLevelUp(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult ChooseLevelUp(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function ChooseLevelUp(index As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.ChooseLevelUp*
+  nameWithType.vb: RunController.ChooseLevelUp(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.ChooseLevelUp(Integer)
+  name.vb: ChooseLevelUp(Integer)
+- uid: SurvivorsMaker.Run.RunController.CompleteWave
+  commentId: M:SurvivorsMaker.Run.RunController.CompleteWave
+  id: CompleteWave
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: CompleteWave()
+  nameWithType: RunController.CompleteWave()
+  fullName: SurvivorsMaker.Run.RunController.CompleteWave()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult CompleteWave()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function CompleteWave() As RunResult
+  overload: SurvivorsMaker.Run.RunController.CompleteWave*
+- uid: SurvivorsMaker.Run.RunController.NextWave
+  commentId: M:SurvivorsMaker.Run.RunController.NextWave
+  id: NextWave
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: NextWave()
+  nameWithType: RunController.NextWave()
+  fullName: SurvivorsMaker.Run.RunController.NextWave()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult NextWave()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function NextWave() As RunResult
+  overload: SurvivorsMaker.Run.RunController.NextWave*
+- uid: SurvivorsMaker.Run.RunController.Reroll
+  commentId: M:SurvivorsMaker.Run.RunController.Reroll
+  id: Reroll
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Reroll()
+  nameWithType: RunController.Reroll()
+  fullName: SurvivorsMaker.Run.RunController.Reroll()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requests the reroll operation through the active run rules; invalid calls return a result without changing state.
+  example: []
+  syntax:
+    content: public RunResult Reroll()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Reroll() As RunResult
+  overload: SurvivorsMaker.Run.RunController.Reroll*
+- uid: SurvivorsMaker.Run.RunController.ToggleLock(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.ToggleLock(System.Int32)
+  id: ToggleLock(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: ToggleLock(int)
+  nameWithType: RunController.ToggleLock(int)
+  fullName: SurvivorsMaker.Run.RunController.ToggleLock(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requests the toggle lock operation through the active run rules; invalid calls return a result without changing
+    state.
+  example: []
+  syntax:
+    content: public RunResult ToggleLock(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function ToggleLock(slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.ToggleLock*
+  nameWithType.vb: RunController.ToggleLock(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.ToggleLock(Integer)
+  name.vb: ToggleLock(Integer)
+- uid: SurvivorsMaker.Run.RunController.Banish(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.Banish(System.Int32)
+  id: Banish(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Banish(int)
+  nameWithType: RunController.Banish(int)
+  fullName: SurvivorsMaker.Run.RunController.Banish(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Banish(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Banish(slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Banish*
+  nameWithType.vb: RunController.Banish(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.Banish(Integer)
+  name.vb: Banish(Integer)
+- uid: SurvivorsMaker.Run.RunController.BanishChoice(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.BanishChoice(System.Int32)
+  id: BanishChoice(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: BanishChoice(int)
+  nameWithType: RunController.BanishChoice(int)
+  fullName: SurvivorsMaker.Run.RunController.BanishChoice(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult BanishChoice(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function BanishChoice(index As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.BanishChoice*
+  nameWithType.vb: RunController.BanishChoice(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.BanishChoice(Integer)
+  name.vb: BanishChoice(Integer)
+- uid: SurvivorsMaker.Run.RunController.Lock(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.Lock(System.Int32)
+  id: Lock(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Lock(int)
+  nameWithType: RunController.Lock(int)
+  fullName: SurvivorsMaker.Run.RunController.Lock(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunResult Lock(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Lock(slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Lock*
+  nameWithType.vb: RunController.Lock(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.Lock(Integer)
+  name.vb: Lock(Integer)
+- uid: SurvivorsMaker.Run.RunController.Buy(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.Buy(System.Int32)
+  id: Buy(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Buy(int)
+  nameWithType: RunController.Buy(int)
+  fullName: SurvivorsMaker.Run.RunController.Buy(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requests the buy operation through the active run rules; invalid calls return a result without changing state.
+  example: []
+  syntax:
+    content: public RunResult Buy(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Buy(slot As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Buy*
+  nameWithType.vb: RunController.Buy(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.Buy(Integer)
+  name.vb: Buy(Integer)
+- uid: SurvivorsMaker.Run.RunController.Merge(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.Merge(System.Int32)
+  id: Merge(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Merge(int)
+  nameWithType: RunController.Merge(int)
+  fullName: SurvivorsMaker.Run.RunController.Merge(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requests the merge operation through the active run rules; invalid calls return a result without changing state.
+  example: []
+  syntax:
+    content: public RunResult Merge(int weaponIndex)
+    parameters:
+    - id: weaponIndex
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Merge(weaponIndex As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Merge*
+  nameWithType.vb: RunController.Merge(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.Merge(Integer)
+  name.vb: Merge(Integer)
+- uid: SurvivorsMaker.Run.RunController.Recycle(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.Recycle(System.Int32)
+  id: Recycle(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Recycle(int)
+  nameWithType: RunController.Recycle(int)
+  fullName: SurvivorsMaker.Run.RunController.Recycle(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Requests the recycle operation through the active run rules; invalid calls return a result without changing state.
+  example: []
+  syntax:
+    content: public RunResult Recycle(int weaponIndex)
+    parameters:
+    - id: weaponIndex
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function Recycle(weaponIndex As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.Recycle*
+  nameWithType.vb: RunController.Recycle(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.Recycle(Integer)
+  name.vb: Recycle(Integer)
+- uid: SurvivorsMaker.Run.RunController.GiveWeapon(System.String)
+  commentId: M:SurvivorsMaker.Run.RunController.GiveWeapon(System.String)
+  id: GiveWeapon(System.String)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: GiveWeapon(string)
+  nameWithType: RunController.GiveWeapon(string)
+  fullName: SurvivorsMaker.Run.RunController.GiveWeapon(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves: adds a weapon (by item id) to a free slot.'
+  example: []
+  syntax:
+    content: public RunResult GiveWeapon(string weaponId)
+    parameters:
+    - id: weaponId
+      type: System.String
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function GiveWeapon(weaponId As String) As RunResult
+  overload: SurvivorsMaker.Run.RunController.GiveWeapon*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  nameWithType.vb: RunController.GiveWeapon(String)
+  fullName.vb: SurvivorsMaker.Run.RunController.GiveWeapon(String)
+  name.vb: GiveWeapon(String)
+- uid: SurvivorsMaker.Run.RunController.GiveItem(System.String)
+  commentId: M:SurvivorsMaker.Run.RunController.GiveItem(System.String)
+  id: GiveItem(System.String)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: GiveItem(string)
+  nameWithType: RunController.GiveItem(string)
+  fullName: SurvivorsMaker.Run.RunController.GiveItem(string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves or in field mode during a wave: adds an item or upgrade by id.'
+  example: []
+  syntax:
+    content: public RunResult GiveItem(string itemId)
+    parameters:
+    - id: itemId
+      type: System.String
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function GiveItem(itemId As String) As RunResult
+  overload: SurvivorsMaker.Run.RunController.GiveItem*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  nameWithType.vb: RunController.GiveItem(String)
+  fullName.vb: SurvivorsMaker.Run.RunController.GiveItem(String)
+  name.vb: GiveItem(String)
+- uid: SurvivorsMaker.Run.RunController.GiveCurrency(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.GiveCurrency(System.Int32)
+  id: GiveCurrency(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: GiveCurrency(int)
+  nameWithType: RunController.GiveCurrency(int)
+  fullName: SurvivorsMaker.Run.RunController.GiveCurrency(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  example: []
+  syntax:
+    content: public RunResult GiveCurrency(int amount)
+    parameters:
+    - id: amount
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function GiveCurrency(amount As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.GiveCurrency*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  nameWithType.vb: RunController.GiveCurrency(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.GiveCurrency(Integer)
+  name.vb: GiveCurrency(Integer)
+- uid: SurvivorsMaker.Run.RunController.GiveLevels(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.GiveLevels(System.Int32)
+  id: GiveLevels(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: GiveLevels(int)
+  nameWithType: RunController.GiveLevels(int)
+  fullName: SurvivorsMaker.Run.RunController.GiveLevels(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Gains levels now (pending level-ups as usual).
+  example: []
+  syntax:
+    content: public RunResult GiveLevels(int levels)
+    parameters:
+    - id: levels
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function GiveLevels(levels As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.GiveLevels*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  nameWithType.vb: RunController.GiveLevels(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.GiveLevels(Integer)
+  name.vb: GiveLevels(Integer)
+- uid: SurvivorsMaker.Run.RunController.SkipToWave(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.SkipToWave(System.Int32)
+  id: SkipToWave(System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: SkipToWave(int)
+  nameWithType: RunController.SkipToWave(int)
+  fullName: SurvivorsMaker.Run.RunController.SkipToWave(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Between waves: the next wave started is <code class="paramref">wave</code> (1-based).'
+  example: []
+  syntax:
+    content: public RunResult SkipToWave(int wave)
+    parameters:
+    - id: wave
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function SkipToWave(wave As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.SkipToWave*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  nameWithType.vb: RunController.SkipToWave(Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.SkipToWave(Integer)
+  name.vb: SkipToWave(Integer)
+- uid: SurvivorsMaker.Run.RunController.SetInvulnerable(System.Boolean)
+  commentId: M:SurvivorsMaker.Run.RunController.SetInvulnerable(System.Boolean)
+  id: SetInvulnerable(System.Boolean)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: SetInvulnerable(bool)
+  nameWithType: RunController.SetInvulnerable(bool)
+  fullName: SurvivorsMaker.Run.RunController.SetInvulnerable(bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: player takes no damage while on.'
+  example: []
+  syntax:
+    content: public RunResult SetInvulnerable(bool on)
+    parameters:
+    - id: true
+      type: System.Boolean
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function SetInvulnerable([on] As Boolean) As RunResult
+  overload: SurvivorsMaker.Run.RunController.SetInvulnerable*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  nameWithType.vb: RunController.SetInvulnerable(Boolean)
+  fullName.vb: SurvivorsMaker.Run.RunController.SetInvulnerable(Boolean)
+  name.vb: SetInvulnerable(Boolean)
+- uid: SurvivorsMaker.Run.RunController.SpawnEnemies(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunController.SpawnEnemies(System.String,System.Int32)
+  id: SpawnEnemies(System.String,System.Int32)
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: SpawnEnemies(string, int)
+  nameWithType: RunController.SpawnEnemies(string, int)
+  fullName: SurvivorsMaker.Run.RunController.SpawnEnemies(string, int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: spawns <code class="paramref">count</code> of an enemy id around the player now (bypasses telegraph
+    and capacity).'
+  example: []
+  syntax:
+    content: public RunResult SpawnEnemies(string enemyId, int count)
+    parameters:
+    - id: enemyId
+      type: System.String
+    - id: count
+      type: System.Int32
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function SpawnEnemies(enemyId As String, count As Integer) As RunResult
+  overload: SurvivorsMaker.Run.RunController.SpawnEnemies*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  nameWithType.vb: RunController.SpawnEnemies(String, Integer)
+  fullName.vb: SurvivorsMaker.Run.RunController.SpawnEnemies(String, Integer)
+  name.vb: SpawnEnemies(String, Integer)
+- uid: SurvivorsMaker.Run.RunController.EndWave
+  commentId: M:SurvivorsMaker.Run.RunController.EndWave
+  id: EndWave
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: EndWave()
+  nameWithType: RunController.EndWave()
+  fullName: SurvivorsMaker.Run.RunController.EndWave()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'During a wave: ends it as survived.'
+  example: []
+  syntax:
+    content: public RunResult EndWave()
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Public Function EndWave() As RunResult
+  overload: SurvivorsMaker.Run.RunController.EndWave*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.EndWave
+- uid: SurvivorsMaker.Run.RunController.State
+  commentId: P:SurvivorsMaker.Run.RunController.State
+  id: State
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: RunController.State
+  fullName: SurvivorsMaker.Run.RunController.State
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public RunState State { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.RunState
+    content.vb: Public ReadOnly Property State As RunState
+  overload: SurvivorsMaker.Run.RunController.State*
+- uid: SurvivorsMaker.Run.RunController.Profile
+  commentId: P:SurvivorsMaker.Run.RunController.Profile
+  id: Profile
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: Profile
+  nameWithType: RunController.Profile
+  fullName: SurvivorsMaker.Run.RunController.Profile
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public ProfileState Profile { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Run.ProfileState
+    content.vb: Public ReadOnly Property Profile As ProfileState
+  overload: SurvivorsMaker.Run.RunController.Profile*
+- uid: SurvivorsMaker.Run.RunController.NewUnlocks
+  commentId: P:SurvivorsMaker.Run.RunController.NewUnlocks
+  id: NewUnlocks
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: NewUnlocks
+  nameWithType: RunController.NewUnlocks
+  fullName: SurvivorsMaker.Run.RunController.NewUnlocks
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public IReadOnlyList<UnlockDef> NewUnlocks { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.UnlockDef}
+    content.vb: Public ReadOnly Property NewUnlocks As IReadOnlyList(Of UnlockDef)
+  overload: SurvivorsMaker.Run.RunController.NewUnlocks*
+- uid: SurvivorsMaker.Run.RunController.UsedCheats
+  commentId: P:SurvivorsMaker.Run.RunController.UsedCheats
+  id: UsedCheats
+  parent: SurvivorsMaker.Run.RunController
+  langs:
+  - csharp
+  - vb
+  name: UsedCheats
+  nameWithType: RunController.UsedCheats
+  fullName: SurvivorsMaker.Run.RunController.UsedCheats
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  example: []
+  syntax:
+    content: public bool UsedCheats { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UsedCheats As Boolean
+  overload: SurvivorsMaker.Run.RunController.UsedCheats*
+  implements:
+  - SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Run.IPlaytestCommands
+  commentId: T:SurvivorsMaker.Run.IPlaytestCommands
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html
+  name: IPlaytestCommands
+  nameWithType: IPlaytestCommands
+  fullName: SurvivorsMaker.Run.IPlaytestCommands
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+  parent: SurvivorsMaker.Run.RunControllerPoolExtensions
+  definition: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+  href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  name: Banish(RunController, int)
+  nameWithType: RunControllerPoolExtensions.Banish(RunController, int)
+  fullName: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController, int)
+  nameWithType.vb: RunControllerPoolExtensions.Banish(RunController, Integer)
+  fullName.vb: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController, Integer)
+  name.vb: Banish(RunController, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+    name: Banish
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+    name: Banish
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+  parent: SurvivorsMaker.Run.RunControllerPoolExtensions
+  definition: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+  href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  name: BanishChoice(RunController, int)
+  nameWithType: RunControllerPoolExtensions.BanishChoice(RunController, int)
+  fullName: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController, int)
+  nameWithType.vb: RunControllerPoolExtensions.BanishChoice(RunController, Integer)
+  fullName.vb: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController, Integer)
+  name.vb: BanishChoice(RunController, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+    name: BanishChoice
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+    name: BanishChoice
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+  isExternal: true
+  href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  name: Banish(RunController, int)
+  nameWithType: RunControllerPoolExtensions.Banish(RunController, int)
+  fullName: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController, int)
+  nameWithType.vb: RunControllerPoolExtensions.Banish(RunController, Integer)
+  fullName.vb: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController, Integer)
+  name.vb: Banish(RunController, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+    name: Banish
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.Banish(SurvivorsMaker.Run.RunController,System.Int32)
+    name: Banish
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_Banish_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunControllerPoolExtensions
+  commentId: T:SurvivorsMaker.Run.RunControllerPoolExtensions
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunControllerPoolExtensions.html
+  name: RunControllerPoolExtensions
+  nameWithType: RunControllerPoolExtensions
+  fullName: SurvivorsMaker.Run.RunControllerPoolExtensions
+- uid: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+  commentId: M:SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+  isExternal: true
+  href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  name: BanishChoice(RunController, int)
+  nameWithType: RunControllerPoolExtensions.BanishChoice(RunController, int)
+  fullName: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController, int)
+  nameWithType.vb: RunControllerPoolExtensions.BanishChoice(RunController, Integer)
+  fullName.vb: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController, Integer)
+  name.vb: BanishChoice(RunController, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+    name: BanishChoice
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.RunControllerPoolExtensions.BanishChoice(SurvivorsMaker.Run.RunController,System.Int32)
+    name: BanishChoice
+    isExternal: true
+    href: SurvivorsMaker.Run.RunControllerPoolExtensions.html#SurvivorsMaker_Run_RunControllerPoolExtensions_BanishChoice_SurvivorsMaker_Run_RunController_System_Int32_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+    href: SurvivorsMaker.Run.RunController.html
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Simulation.ITriggerHandler}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, ITriggerHandler>
+  nameWithType: Dictionary<string, ITriggerHandler>
+  fullName: System.Collections.Generic.Dictionary<string, SurvivorsMaker.Simulation.ITriggerHandler>
+  nameWithType.vb: Dictionary(Of String, ITriggerHandler)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SurvivorsMaker.Simulation.ITriggerHandler)
+  name.vb: Dictionary(Of String, ITriggerHandler)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.ITriggerHandler
+    name: ITriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.ITriggerHandler
+    name: ITriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerHandler.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: TKey
+  - name: ','
+  - name: ' '
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Run.IRunTriggerHandler}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SurvivorsMaker.Run.IRunTriggerHandler}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, IRunTriggerHandler>
+  nameWithType: Dictionary<string, IRunTriggerHandler>
+  fullName: System.Collections.Generic.Dictionary<string, SurvivorsMaker.Run.IRunTriggerHandler>
+  nameWithType.vb: Dictionary(Of String, IRunTriggerHandler)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SurvivorsMaker.Run.IRunTriggerHandler)
+  name.vb: Dictionary(Of String, IRunTriggerHandler)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.IRunTriggerHandler
+    name: IRunTriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunTriggerHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Run.IRunTriggerHandler
+    name: IRunTriggerHandler
+    isExternal: true
+    href: SurvivorsMaker.Run.IRunTriggerHandler.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.PickupRules
+  commentId: T:SurvivorsMaker.Simulation.PickupRules
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.PickupRules.html
+  name: PickupRules
+  nameWithType: PickupRules
+  fullName: SurvivorsMaker.Simulation.PickupRules
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunController.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.RunController.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController__ctor_SurvivorsMaker_Run_RunSystems_
+  name: RunController
+  nameWithType: RunController.RunController
+  fullName: SurvivorsMaker.Run.RunController.RunController
+  nameWithType.vb: RunController.New
+  fullName.vb: SurvivorsMaker.Run.RunController.New
+  name.vb: New
+- uid: SurvivorsMaker.Run.RunSystems
+  commentId: T:SurvivorsMaker.Run.RunSystems
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSystems.html
+  name: RunSystems
+  nameWithType: RunSystems
+  fullName: SurvivorsMaker.Run.RunSystems
+- uid: SurvivorsMaker.Run.RunController.Create*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Create
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Create_SurvivorsMaker_Run_RunRequest_
+  name: Create
+  nameWithType: RunController.Create
+  fullName: SurvivorsMaker.Run.RunController.Create
+- uid: SurvivorsMaker.Run.RunRequest
+  commentId: T:SurvivorsMaker.Run.RunRequest
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunRequest.html
+  name: RunRequest
+  nameWithType: RunRequest
+  fullName: SurvivorsMaker.Run.RunRequest
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.RunController.ConfigureProfile*
+  commentId: Overload:SurvivorsMaker.Run.RunController.ConfigureProfile
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_ConfigureProfile_SurvivorsMaker_Run_IProfileStore_SurvivorsMaker_Run_RunContent_
+  name: ConfigureProfile
+  nameWithType: RunController.ConfigureProfile
+  fullName: SurvivorsMaker.Run.RunController.ConfigureProfile
+- uid: SurvivorsMaker.Run.IProfileStore
+  commentId: T:SurvivorsMaker.Run.IProfileStore
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IProfileStore.html
+  name: IProfileStore
+  nameWithType: IProfileStore
+  fullName: SurvivorsMaker.Run.IProfileStore
+- uid: SurvivorsMaker.Run.RunContent
+  commentId: T:SurvivorsMaker.Run.RunContent
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunContent.html
+  name: RunContent
+  nameWithType: RunContent
+  fullName: SurvivorsMaker.Run.RunContent
+- uid: SurvivorsMaker.Run.RunController.Save*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Save
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Save
+  name: Save
+  nameWithType: RunController.Save
+  fullName: SurvivorsMaker.Run.RunController.Save
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+- uid: SurvivorsMaker.Run.RunController.ConfigureRunStore*
+  commentId: Overload:SurvivorsMaker.Run.RunController.ConfigureRunStore
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_ConfigureRunStore_SurvivorsMaker_Run_IRunStore_
+  name: ConfigureRunStore
+  nameWithType: RunController.ConfigureRunStore
+  fullName: SurvivorsMaker.Run.RunController.ConfigureRunStore
+- uid: SurvivorsMaker.Run.IRunStore
+  commentId: T:SurvivorsMaker.Run.IRunStore
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html
+  name: IRunStore
+  nameWithType: IRunStore
+  fullName: SurvivorsMaker.Run.IRunStore
+- uid: SurvivorsMaker.Run.RunController.CaptureEnvelope*
+  commentId: Overload:SurvivorsMaker.Run.RunController.CaptureEnvelope
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_CaptureEnvelope_System_Int64_System_String_
+  name: CaptureEnvelope
+  nameWithType: RunController.CaptureEnvelope
+  fullName: SurvivorsMaker.Run.RunController.CaptureEnvelope
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Run.SaveEnvelope
+  commentId: T:SurvivorsMaker.Run.SaveEnvelope
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveEnvelope.html
+  name: SaveEnvelope
+  nameWithType: SaveEnvelope
+  fullName: SurvivorsMaker.Run.SaveEnvelope
+- uid: SurvivorsMaker.Run.RunController.Load*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Load
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Load_SurvivorsMaker_Run_SaveEnvelope_SurvivorsMaker_Run_RunRequest_SurvivorsMaker_Run_SaveMigrationRegistry_
+  name: Load
+  nameWithType: RunController.Load
+  fullName: SurvivorsMaker.Run.RunController.Load
+- uid: SurvivorsMaker.Run.SaveMigrationRegistry
+  commentId: T:SurvivorsMaker.Run.SaveMigrationRegistry
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.SaveMigrationRegistry.html
+  name: SaveMigrationRegistry
+  nameWithType: SaveMigrationRegistry
+  fullName: SurvivorsMaker.Run.SaveMigrationRegistry
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult
+- uid: SurvivorsMaker.Run.RunController.StartWave*
+  commentId: Overload:SurvivorsMaker.Run.RunController.StartWave
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_StartWave
+  name: StartWave
+  nameWithType: RunController.StartWave
+  fullName: SurvivorsMaker.Run.RunController.StartWave
+- uid: SurvivorsMaker.Run.RunController.Step*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Step
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Step_SurvivorsMaker_Simulation_Vec2_
+  name: Step
+  nameWithType: RunController.Step
+  fullName: SurvivorsMaker.Run.RunController.Step
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Run.RunController.ChooseLevelUp*
+  commentId: Overload:SurvivorsMaker.Run.RunController.ChooseLevelUp
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_ChooseLevelUp_System_Int32_
+  name: ChooseLevelUp
+  nameWithType: RunController.ChooseLevelUp
+  fullName: SurvivorsMaker.Run.RunController.ChooseLevelUp
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.RunController.CompleteWave*
+  commentId: Overload:SurvivorsMaker.Run.RunController.CompleteWave
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_CompleteWave
+  name: CompleteWave
+  nameWithType: RunController.CompleteWave
+  fullName: SurvivorsMaker.Run.RunController.CompleteWave
+- uid: SurvivorsMaker.Run.RunController.NextWave*
+  commentId: Overload:SurvivorsMaker.Run.RunController.NextWave
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_NextWave
+  name: NextWave
+  nameWithType: RunController.NextWave
+  fullName: SurvivorsMaker.Run.RunController.NextWave
+- uid: SurvivorsMaker.Run.RunController.Reroll*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Reroll
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Reroll
+  name: Reroll
+  nameWithType: RunController.Reroll
+  fullName: SurvivorsMaker.Run.RunController.Reroll
+- uid: SurvivorsMaker.Run.RunController.ToggleLock*
+  commentId: Overload:SurvivorsMaker.Run.RunController.ToggleLock
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_ToggleLock_System_Int32_
+  name: ToggleLock
+  nameWithType: RunController.ToggleLock
+  fullName: SurvivorsMaker.Run.RunController.ToggleLock
+- uid: SurvivorsMaker.Run.RunController.Banish*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Banish
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Banish_System_Int32_
+  name: Banish
+  nameWithType: RunController.Banish
+  fullName: SurvivorsMaker.Run.RunController.Banish
+- uid: SurvivorsMaker.Run.RunController.BanishChoice*
+  commentId: Overload:SurvivorsMaker.Run.RunController.BanishChoice
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_BanishChoice_System_Int32_
+  name: BanishChoice
+  nameWithType: RunController.BanishChoice
+  fullName: SurvivorsMaker.Run.RunController.BanishChoice
+- uid: SurvivorsMaker.Run.RunController.Lock*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Lock
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Lock_System_Int32_
+  name: Lock
+  nameWithType: RunController.Lock
+  fullName: SurvivorsMaker.Run.RunController.Lock
+- uid: SurvivorsMaker.Run.RunController.Buy*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Buy
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Buy_System_Int32_
+  name: Buy
+  nameWithType: RunController.Buy
+  fullName: SurvivorsMaker.Run.RunController.Buy
+- uid: SurvivorsMaker.Run.RunController.Merge*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Merge
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Merge_System_Int32_
+  name: Merge
+  nameWithType: RunController.Merge
+  fullName: SurvivorsMaker.Run.RunController.Merge
+- uid: SurvivorsMaker.Run.RunController.Recycle*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Recycle
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Recycle_System_Int32_
+  name: Recycle
+  nameWithType: RunController.Recycle
+  fullName: SurvivorsMaker.Run.RunController.Recycle
+- uid: SurvivorsMaker.Run.RunController.GiveWeapon*
+  commentId: Overload:SurvivorsMaker.Run.RunController.GiveWeapon
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_GiveWeapon_System_String_
+  name: GiveWeapon
+  nameWithType: RunController.GiveWeapon
+  fullName: SurvivorsMaker.Run.RunController.GiveWeapon
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveWeapon_System_String_
+  name: GiveWeapon(string)
+  nameWithType: IPlaytestCommands.GiveWeapon(string)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(string)
+  nameWithType.vb: IPlaytestCommands.GiveWeapon(String)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(String)
+  name.vb: GiveWeapon(String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+    name: GiveWeapon
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveWeapon_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveWeapon(System.String)
+    name: GiveWeapon
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveWeapon_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.GiveItem*
+  commentId: Overload:SurvivorsMaker.Run.RunController.GiveItem
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_GiveItem_System_String_
+  name: GiveItem
+  nameWithType: RunController.GiveItem
+  fullName: SurvivorsMaker.Run.RunController.GiveItem
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveItem_System_String_
+  name: GiveItem(string)
+  nameWithType: IPlaytestCommands.GiveItem(string)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(string)
+  nameWithType.vb: IPlaytestCommands.GiveItem(String)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(String)
+  name.vb: GiveItem(String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+    name: GiveItem
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveItem_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveItem(System.String)
+    name: GiveItem
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveItem_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.GiveCurrency*
+  commentId: Overload:SurvivorsMaker.Run.RunController.GiveCurrency
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_GiveCurrency_System_Int32_
+  name: GiveCurrency
+  nameWithType: RunController.GiveCurrency
+  fullName: SurvivorsMaker.Run.RunController.GiveCurrency
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveCurrency_System_Int32_
+  name: GiveCurrency(int)
+  nameWithType: IPlaytestCommands.GiveCurrency(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(int)
+  nameWithType.vb: IPlaytestCommands.GiveCurrency(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(Integer)
+  name.vb: GiveCurrency(Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+    name: GiveCurrency
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveCurrency_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveCurrency(System.Int32)
+    name: GiveCurrency
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveCurrency_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.GiveLevels*
+  commentId: Overload:SurvivorsMaker.Run.RunController.GiveLevels
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_GiveLevels_System_Int32_
+  name: GiveLevels
+  nameWithType: RunController.GiveLevels
+  fullName: SurvivorsMaker.Run.RunController.GiveLevels
+- uid: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveLevels_System_Int32_
+  name: GiveLevels(int)
+  nameWithType: IPlaytestCommands.GiveLevels(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(int)
+  nameWithType.vb: IPlaytestCommands.GiveLevels(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(Integer)
+  name.vb: GiveLevels(Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+    name: GiveLevels
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveLevels_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.GiveLevels(System.Int32)
+    name: GiveLevels
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_GiveLevels_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.SkipToWave*
+  commentId: Overload:SurvivorsMaker.Run.RunController.SkipToWave
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_SkipToWave_System_Int32_
+  name: SkipToWave
+  nameWithType: RunController.SkipToWave
+  fullName: SurvivorsMaker.Run.RunController.SkipToWave
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SkipToWave_System_Int32_
+  name: SkipToWave(int)
+  nameWithType: IPlaytestCommands.SkipToWave(int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(int)
+  nameWithType.vb: IPlaytestCommands.SkipToWave(Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(Integer)
+  name.vb: SkipToWave(Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+    name: SkipToWave
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SkipToWave_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SkipToWave(System.Int32)
+    name: SkipToWave
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SkipToWave_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.SetInvulnerable*
+  commentId: Overload:SurvivorsMaker.Run.RunController.SetInvulnerable
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_SetInvulnerable_System_Boolean_
+  name: SetInvulnerable
+  nameWithType: RunController.SetInvulnerable
+  fullName: SurvivorsMaker.Run.RunController.SetInvulnerable
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SetInvulnerable_System_Boolean_
+  name: SetInvulnerable(bool)
+  nameWithType: IPlaytestCommands.SetInvulnerable(bool)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(bool)
+  nameWithType.vb: IPlaytestCommands.SetInvulnerable(Boolean)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(Boolean)
+  name.vb: SetInvulnerable(Boolean)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+    name: SetInvulnerable
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SetInvulnerable_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SetInvulnerable(System.Boolean)
+    name: SetInvulnerable
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SetInvulnerable_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.RunController.SpawnEnemies*
+  commentId: Overload:SurvivorsMaker.Run.RunController.SpawnEnemies
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_SpawnEnemies_System_String_System_Int32_
+  name: SpawnEnemies
+  nameWithType: RunController.SpawnEnemies
+  fullName: SurvivorsMaker.Run.RunController.SpawnEnemies
+- uid: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SpawnEnemies_System_String_System_Int32_
+  name: SpawnEnemies(string, int)
+  nameWithType: IPlaytestCommands.SpawnEnemies(string, int)
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(string, int)
+  nameWithType.vb: IPlaytestCommands.SpawnEnemies(String, Integer)
+  fullName.vb: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(String, Integer)
+  name.vb: SpawnEnemies(String, Integer)
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+    name: SpawnEnemies
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SpawnEnemies_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.SpawnEnemies(System.String,System.Int32)
+    name: SpawnEnemies
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_SpawnEnemies_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.EndWave*
+  commentId: Overload:SurvivorsMaker.Run.RunController.EndWave
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_EndWave
+  name: EndWave
+  nameWithType: RunController.EndWave
+  fullName: SurvivorsMaker.Run.RunController.EndWave
+- uid: SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  commentId: M:SurvivorsMaker.Run.IPlaytestCommands.EndWave
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_EndWave
+  name: EndWave()
+  nameWithType: IPlaytestCommands.EndWave()
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.EndWave()
+  spec.csharp:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.EndWave
+    name: EndWave
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_EndWave
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Run.IPlaytestCommands.EndWave
+    name: EndWave
+    isExternal: true
+    href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_EndWave
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.State*
+  commentId: Overload:SurvivorsMaker.Run.RunController.State
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_State
+  name: State
+  nameWithType: RunController.State
+  fullName: SurvivorsMaker.Run.RunController.State
+- uid: SurvivorsMaker.Run.RunController.Profile*
+  commentId: Overload:SurvivorsMaker.Run.RunController.Profile
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_Profile
+  name: Profile
+  nameWithType: RunController.Profile
+  fullName: SurvivorsMaker.Run.RunController.Profile
+- uid: SurvivorsMaker.Run.ProfileState
+  commentId: T:SurvivorsMaker.Run.ProfileState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ProfileState.html
+  name: ProfileState
+  nameWithType: ProfileState
+  fullName: SurvivorsMaker.Run.ProfileState
+- uid: SurvivorsMaker.Run.RunController.NewUnlocks*
+  commentId: Overload:SurvivorsMaker.Run.RunController.NewUnlocks
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_NewUnlocks
+  name: NewUnlocks
+  nameWithType: RunController.NewUnlocks
+  fullName: SurvivorsMaker.Run.RunController.NewUnlocks
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.UnlockDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.UnlockDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<UnlockDef>
+  nameWithType: IReadOnlyList<UnlockDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.UnlockDef>
+  nameWithType.vb: IReadOnlyList(Of UnlockDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.UnlockDef)
+  name.vb: IReadOnlyList(Of UnlockDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Run.UnlockDef
+    name: UnlockDef
+    isExternal: true
+    href: SurvivorsMaker.Run.UnlockDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.UnlockDef
+    name: UnlockDef
+    isExternal: true
+    href: SurvivorsMaker.Run.UnlockDef.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Run.RunController.UsedCheats*
+  commentId: Overload:SurvivorsMaker.Run.RunController.UsedCheats
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html#SurvivorsMaker_Run_RunController_UsedCheats
+  name: UsedCheats
+  nameWithType: RunController.UsedCheats
+  fullName: SurvivorsMaker.Run.RunController.UsedCheats
+- uid: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  commentId: P:SurvivorsMaker.Run.IPlaytestCommands.UsedCheats
+  parent: SurvivorsMaker.Run.IPlaytestCommands
+  isExternal: true
+  href: SurvivorsMaker.Run.IPlaytestCommands.html#SurvivorsMaker_Run_IPlaytestCommands_UsedCheats
+  name: UsedCheats
+  nameWithType: IPlaytestCommands.UsedCheats
+  fullName: SurvivorsMaker.Run.IPlaytestCommands.UsedCheats

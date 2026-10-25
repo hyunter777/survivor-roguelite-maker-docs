@@ -1,0 +1,876 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.SpawnGroupEntry
+  commentId: T:SurvivorsMaker.Data.SpawnGroupEntry
+  id: SpawnGroupEntry
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.SpawnGroupEntry.#ctor
+  - SurvivorsMaker.Data.SpawnGroupEntry.Chance
+  - SurvivorsMaker.Data.SpawnGroupEntry.Entries
+  - SurvivorsMaker.Data.SpawnGroupEntry.IntervalDecrease
+  - SurvivorsMaker.Data.SpawnGroupEntry.IntervalSeconds
+  - SurvivorsMaker.Data.SpawnGroupEntry.MaxDifficulty
+  - SurvivorsMaker.Data.SpawnGroupEntry.MaxWave
+  - SurvivorsMaker.Data.SpawnGroupEntry.MinDifficulty
+  - SurvivorsMaker.Data.SpawnGroupEntry.MinIntervalSeconds
+  - SurvivorsMaker.Data.SpawnGroupEntry.MinWave
+  - SurvivorsMaker.Data.SpawnGroupEntry.Neutral
+  - SurvivorsMaker.Data.SpawnGroupEntry.Repeats
+  - SurvivorsMaker.Data.SpawnGroupEntry.StartSeconds
+  - SurvivorsMaker.Data.SpawnGroupEntry.ToDef
+  langs:
+  - csharp
+  - vb
+  name: SpawnGroupEntry
+  nameWithType: SpawnGroupEntry
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Wave/difficulty filters and repeated spawn timing with asset-backed enemy entries.
+  example: []
+  syntax:
+    content: public sealed class SpawnGroupEntry
+    content.vb: Public NotInheritable Class SpawnGroupEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.MinWave
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.MinWave
+  id: MinWave
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: MinWave
+  nameWithType: SpawnGroupEntry.MinWave
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.MinWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: First one-based wave eligible for this group, inclusive.
+  example: []
+  syntax:
+    content: '[Tooltip("First one-based wave eligible for this group, inclusive.")]
+
+      public int MinWave'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("First one-based wave eligible for this group, inclusive.")>
+
+      Public MinWave As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: First one-based wave eligible for this group, inclusive.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.MaxWave
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.MaxWave
+  id: MaxWave
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: MaxWave
+  nameWithType: SpawnGroupEntry.MaxWave
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.MaxWave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Last eligible wave, inclusive; 0 = no upper wave limit.
+  example: []
+  syntax:
+    content: '[Tooltip("Last eligible wave, inclusive; 0 = no upper wave limit.")]
+
+      public int MaxWave'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Last eligible wave, inclusive; 0 = no upper wave limit.")>
+
+      Public MaxWave As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Last eligible wave, inclusive; 0 = no upper wave limit.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.MinDifficulty
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.MinDifficulty
+  id: MinDifficulty
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: MinDifficulty
+  nameWithType: SpawnGroupEntry.MinDifficulty
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.MinDifficulty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Minimum nonnegative difficulty index, inclusive.
+  example: []
+  syntax:
+    content: '[Tooltip("Minimum nonnegative difficulty index, inclusive.")]
+
+      public int MinDifficulty'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Minimum nonnegative difficulty index, inclusive.")>
+
+      Public MinDifficulty As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum nonnegative difficulty index, inclusive.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.MaxDifficulty
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.MaxDifficulty
+  id: MaxDifficulty
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: MaxDifficulty
+  nameWithType: SpawnGroupEntry.MaxDifficulty
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.MaxDifficulty
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Maximum difficulty index, inclusive; a negative value removes the upper limit.
+  example: []
+  syntax:
+    content: '[Tooltip("Maximum difficulty index, inclusive; a negative value removes the upper limit.")]
+
+      public int MaxDifficulty'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Maximum difficulty index, inclusive; a negative value removes the upper limit.")>
+
+      Public MaxDifficulty As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum difficulty index, inclusive; a negative value removes the upper limit.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.Chance
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.Chance
+  id: Chance
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: Chance
+  nameWithType: SpawnGroupEntry.Chance
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.Chance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Activation probability from 0 to 1; 0 = never, 1 = always.
+  example: []
+  syntax:
+    content: '[Tooltip("Activation probability from 0 to 1; 0 = never, 1 = always.")]
+
+      public float Chance'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Activation probability from 0 to 1; 0 = never, 1 = always.")>
+
+      Public Chance As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Activation probability from 0 to 1; 0 = never, 1 = always.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.StartSeconds
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.StartSeconds
+  id: StartSeconds
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: StartSeconds
+  nameWithType: SpawnGroupEntry.StartSeconds
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.StartSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Seconds from wave start to the first occurrence; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Seconds from wave start to the first occurrence; nonnegative.")]
+
+      public float StartSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Seconds from wave start to the first occurrence; nonnegative.")>
+
+      Public StartSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Seconds from wave start to the first occurrence; nonnegative.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.Repeats
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.Repeats
+  id: Repeats
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: Repeats
+  nameWithType: SpawnGroupEntry.Repeats
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.Repeats
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Occurrences after the first; 0 = one occurrence only.
+  example: []
+  syntax:
+    content: '[Tooltip("Occurrences after the first; 0 = one occurrence only.")]
+
+      public int Repeats'
+    return:
+      type: System.Int32
+    content.vb: '<Tooltip("Occurrences after the first; 0 = one occurrence only.")>
+
+      Public Repeats As Integer'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Occurrences after the first; 0 = one occurrence only.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.IntervalSeconds
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.IntervalSeconds
+  id: IntervalSeconds
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: IntervalSeconds
+  nameWithType: SpawnGroupEntry.IntervalSeconds
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.IntervalSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Seconds between repeated occurrences; positive when Repeats is nonzero.
+  example: []
+  syntax:
+    content: '[Tooltip("Seconds between repeated occurrences; positive when Repeats is nonzero.")]
+
+      public float IntervalSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Seconds between repeated occurrences; positive when Repeats is nonzero.")>
+
+      Public IntervalSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Seconds between repeated occurrences; positive when Repeats is nonzero.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.IntervalDecrease
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.IntervalDecrease
+  id: IntervalDecrease
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: IntervalDecrease
+  nameWithType: SpawnGroupEntry.IntervalDecrease
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.IntervalDecrease
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Seconds removed after each repeat interval; 0 = no acceleration.
+  example: []
+  syntax:
+    content: '[Tooltip("Seconds removed after each repeat interval; 0 = no acceleration.")]
+
+      public float IntervalDecrease'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Seconds removed after each repeat interval; 0 = no acceleration.")>
+
+      Public IntervalDecrease As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Seconds removed after each repeat interval; 0 = no acceleration.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.MinIntervalSeconds
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.MinIntervalSeconds
+  id: MinIntervalSeconds
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: MinIntervalSeconds
+  nameWithType: SpawnGroupEntry.MinIntervalSeconds
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.MinIntervalSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Minimum repeat interval in seconds; nonnegative.
+  example: []
+  syntax:
+    content: '[Tooltip("Minimum repeat interval in seconds; nonnegative.")]
+
+      public float MinIntervalSeconds'
+    return:
+      type: System.Single
+    content.vb: '<Tooltip("Minimum repeat interval in seconds; nonnegative.")>
+
+      Public MinIntervalSeconds As Single'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum repeat interval in seconds; nonnegative.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.Neutral
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.Neutral
+  id: Neutral
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: Neutral
+  nameWithType: SpawnGroupEntry.Neutral
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.Neutral
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Spawn neutral enemies excluded from hostile counts and contact damage.
+  example: []
+  syntax:
+    content: '[Tooltip("Spawn neutral enemies excluded from hostile counts and contact damage.")]
+
+      public bool Neutral'
+    return:
+      type: System.Boolean
+    content.vb: '<Tooltip("Spawn neutral enemies excluded from hostile counts and contact damage.")>
+
+      Public Neutral As Boolean'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Spawn neutral enemies excluded from hostile counts and contact damage.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.Entries
+  commentId: F:SurvivorsMaker.Data.SpawnGroupEntry.Entries
+  id: Entries
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: Entries
+  nameWithType: SpawnGroupEntry.Entries
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.Entries
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Enemy entries rolled independently on each group occurrence, in list order.
+  example: []
+  syntax:
+    content: '[Tooltip("Enemy entries rolled independently on each group occurrence, in list order.")]
+
+      public List<SpawnEnemyEntry> Entries'
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Data.SpawnEnemyEntry}
+    content.vb: '<Tooltip("Enemy entries rolled independently on each group occurrence, in list order.")>
+
+      Public Entries As List(Of SpawnEnemyEntry)'
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy entries rolled independently on each group occurrence, in list order.
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.ToDef
+  commentId: M:SurvivorsMaker.Data.SpawnGroupEntry.ToDef
+  id: ToDef
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: ToDef()
+  nameWithType: SpawnGroupEntry.ToDef()
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.ToDef()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Converts this authoring entry to a runtime definition, resolving asset references through their caches.
+  example: []
+  syntax:
+    content: public SpawnGroupDef ToDef()
+    return:
+      type: SurvivorsMaker.Simulation.SpawnGroupDef
+    content.vb: Public Function ToDef() As SpawnGroupDef
+  overload: SurvivorsMaker.Data.SpawnGroupEntry.ToDef*
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.#ctor
+  commentId: M:SurvivorsMaker.Data.SpawnGroupEntry.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.SpawnGroupEntry
+  langs:
+  - csharp
+  - vb
+  name: SpawnGroupEntry()
+  nameWithType: SpawnGroupEntry.SpawnGroupEntry()
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.SpawnGroupEntry()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public SpawnGroupEntry()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.SpawnGroupEntry.#ctor*
+  nameWithType.vb: SpawnGroupEntry.New()
+  fullName.vb: SurvivorsMaker.Data.SpawnGroupEntry.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{SurvivorsMaker.Data.SpawnEnemyEntry}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Data.SpawnEnemyEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SpawnEnemyEntry>
+  nameWithType: List<SpawnEnemyEntry>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Data.SpawnEnemyEntry>
+  nameWithType.vb: List(Of SpawnEnemyEntry)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Data.SpawnEnemyEntry)
+  name.vb: List(Of SpawnEnemyEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Data.SpawnEnemyEntry
+    name: SpawnEnemyEntry
+    isExternal: true
+    href: SurvivorsMaker.Data.SpawnEnemyEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Data.SpawnEnemyEntry
+    name: SpawnEnemyEntry
+    isExternal: true
+    href: SurvivorsMaker.Data.SpawnEnemyEntry.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.ToDef*
+  commentId: Overload:SurvivorsMaker.Data.SpawnGroupEntry.ToDef
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnGroupEntry.html#SurvivorsMaker_Data_SpawnGroupEntry_ToDef
+  name: ToDef
+  nameWithType: SpawnGroupEntry.ToDef
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.ToDef
+- uid: SurvivorsMaker.Simulation.SpawnGroupDef
+  commentId: T:SurvivorsMaker.Simulation.SpawnGroupDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SpawnGroupDef.html
+  name: SpawnGroupDef
+  nameWithType: SpawnGroupDef
+  fullName: SurvivorsMaker.Simulation.SpawnGroupDef
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Data.SpawnGroupEntry.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.SpawnGroupEntry.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.SpawnGroupEntry.html#SurvivorsMaker_Data_SpawnGroupEntry__ctor
+  name: SpawnGroupEntry
+  nameWithType: SpawnGroupEntry.SpawnGroupEntry
+  fullName: SurvivorsMaker.Data.SpawnGroupEntry.SpawnGroupEntry
+  nameWithType.vb: SpawnGroupEntry.New
+  fullName.vb: SurvivorsMaker.Data.SpawnGroupEntry.New
+  name.vb: New

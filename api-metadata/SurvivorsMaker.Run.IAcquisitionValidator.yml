@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IAcquisitionValidator
+  commentId: T:SurvivorsMaker.Run.IAcquisitionValidator
+  id: IAcquisitionValidator
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  - SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  langs:
+  - csharp
+  - vb
+  name: IAcquisitionValidator
+  nameWithType: IAcquisitionValidator
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Shared, read-only eligibility and capacity checks for offers, purchases and upgrade choices.
+  example: []
+  syntax:
+    content: public interface IAcquisitionValidator
+    content.vb: Public Interface IAcquisitionValidator
+  derivedClasses:
+  - SurvivorsMaker.Run.AcquisitionValidator
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  id: Check(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.OfferCandidate,SurvivorsMaker.Run.OfferChannel,System.Boolean,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate},SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.IAcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out AcquisitionPlan)
+  nameWithType: IAcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, bool, IReadOnlyList<OfferCandidate>, out
+    AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, bool, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.OfferCandidate>, out
+    SurvivorsMaker.Run.AcquisitionPlan)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Checks channel eligibility, bans, ownership and capacity without changing the run; returns a destination plan when
+    valid.
+  example: []
+  syntax:
+    content: OfferFailure Check(RunState run, OfferCandidate candidate, OfferChannel channel, bool generating, IReadOnlyList<OfferCandidate>
+      reservations, out AcquisitionPlan plan)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: candidate
+      type: SurvivorsMaker.Run.OfferCandidate
+    - id: channel
+      type: SurvivorsMaker.Run.OfferChannel
+    - id: generating
+      type: System.Boolean
+    - id: reservations
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+    - id: plan
+      type: SurvivorsMaker.Run.AcquisitionPlan
+    return:
+      type: SurvivorsMaker.Run.OfferFailure
+    content.vb: Function Check(run As RunState, candidate As OfferCandidate, channel As OfferChannel, generating As Boolean,
+      reservations As IReadOnlyList(Of OfferCandidate), plan As AcquisitionPlan) As OfferFailure
+  overload: SurvivorsMaker.Run.IAcquisitionValidator.Check*
+  nameWithType.vb: IAcquisitionValidator.Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate),
+    AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.IAcquisitionValidator.Check(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.OfferCandidate,
+    SurvivorsMaker.Run.OfferChannel, Boolean, System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.OfferCandidate),
+    SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: Check(RunState, OfferCandidate, OfferChannel, Boolean, IReadOnlyList(Of OfferCandidate), AcquisitionPlan)
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  commentId: M:SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  id: CheckMerge(SurvivorsMaker.Run.RunState,System.Int32,System.Int32,SurvivorsMaker.Run.AcquisitionPlan@)
+  parent: SurvivorsMaker.Run.IAcquisitionValidator
+  langs:
+  - csharp
+  - vb
+  name: CheckMerge(RunState, int, int, out AcquisitionPlan)
+  nameWithType: IAcquisitionValidator.CheckMerge(RunState, int, int, out AcquisitionPlan)
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, int, int, out SurvivorsMaker.Run.AcquisitionPlan)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Validates two owned weapon indices and their merge destination without changing inventory.
+  example: []
+  syntax:
+    content: RunResult CheckMerge(RunState run, int first, int second, out AcquisitionPlan plan)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: first
+      type: System.Int32
+    - id: second
+      type: System.Int32
+    - id: plan
+      type: SurvivorsMaker.Run.AcquisitionPlan
+    return:
+      type: SurvivorsMaker.Run.RunResult
+    content.vb: Function CheckMerge(run As RunState, first As Integer, second As Integer, plan As AcquisitionPlan) As RunResult
+  overload: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge*
+  nameWithType.vb: IAcquisitionValidator.CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+  fullName.vb: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge(SurvivorsMaker.Run.RunState, Integer, Integer, SurvivorsMaker.Run.AcquisitionPlan)
+  name.vb: CheckMerge(RunState, Integer, Integer, AcquisitionPlan)
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.Check*
+  commentId: Overload:SurvivorsMaker.Run.IAcquisitionValidator.Check
+  isExternal: true
+  href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_Check_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_OfferCandidate_SurvivorsMaker_Run_OfferChannel_System_Boolean_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Run_OfferCandidate__SurvivorsMaker_Run_AcquisitionPlan__
+  name: Check
+  nameWithType: IAcquisitionValidator.Check
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.Check
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Run.OfferCandidate
+  commentId: T:SurvivorsMaker.Run.OfferCandidate
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferCandidate.html
+  name: OfferCandidate
+  nameWithType: OfferCandidate
+  fullName: SurvivorsMaker.Run.OfferCandidate
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferChannel.html
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Run.OfferCandidate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<OfferCandidate>
+  nameWithType: IReadOnlyList<OfferCandidate>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Run.OfferCandidate>
+  nameWithType.vb: IReadOnlyList(Of OfferCandidate)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Run.OfferCandidate)
+  name.vb: IReadOnlyList(Of OfferCandidate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferCandidate
+    name: OfferCandidate
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferCandidate.html
+  - name: )
+- uid: SurvivorsMaker.Run.AcquisitionPlan
+  commentId: T:SurvivorsMaker.Run.AcquisitionPlan
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.AcquisitionPlan.html
+  name: AcquisitionPlan
+  nameWithType: AcquisitionPlan
+  fullName: SurvivorsMaker.Run.AcquisitionPlan
+- uid: SurvivorsMaker.Run.OfferFailure
+  commentId: T:SurvivorsMaker.Run.OfferFailure
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferFailure.html
+  name: OfferFailure
+  nameWithType: OfferFailure
+  fullName: SurvivorsMaker.Run.OfferFailure
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge*
+  commentId: Overload:SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge
+  isExternal: true
+  href: SurvivorsMaker.Run.IAcquisitionValidator.html#SurvivorsMaker_Run_IAcquisitionValidator_CheckMerge_SurvivorsMaker_Run_RunState_System_Int32_System_Int32_SurvivorsMaker_Run_AcquisitionPlan__
+  name: CheckMerge
+  nameWithType: IAcquisitionValidator.CheckMerge
+  fullName: SurvivorsMaker.Run.IAcquisitionValidator.CheckMerge
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult

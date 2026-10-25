@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IRunTriggerHandler
+  commentId: T:SurvivorsMaker.Run.IRunTriggerHandler
+  id: IRunTriggerHandler
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IRunTriggerHandler.Fire(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Run.RunTriggerFact)
+  langs:
+  - csharp
+  - vb
+  name: IRunTriggerHandler
+  nameWithType: IRunTriggerHandler
+  fullName: SurvivorsMaker.Run.IRunTriggerHandler
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Extension point for deterministic run-stage trigger actions using the run-owned random stream.
+  example: []
+  syntax:
+    content: public interface IRunTriggerHandler
+    content.vb: Public Interface IRunTriggerHandler
+- uid: SurvivorsMaker.Run.IRunTriggerHandler.Fire(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Run.RunTriggerFact)
+  commentId: M:SurvivorsMaker.Run.IRunTriggerHandler.Fire(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Run.RunTriggerFact)
+  id: Fire(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.TriggerDef,SurvivorsMaker.Run.RunTriggerFact)
+  parent: SurvivorsMaker.Run.IRunTriggerHandler
+  langs:
+  - csharp
+  - vb
+  name: Fire(RunState, TriggerDef, RunTriggerFact)
+  nameWithType: IRunTriggerHandler.Fire(RunState, TriggerDef, RunTriggerFact)
+  fullName: SurvivorsMaker.Run.IRunTriggerHandler.Fire(SurvivorsMaker.Run.RunState, SurvivorsMaker.Simulation.TriggerDef,
+    SurvivorsMaker.Run.RunTriggerFact)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Executes a custom run event action; use run.Random and preserve deterministic iteration order.
+  example: []
+  syntax:
+    content: void Fire(RunState run, TriggerDef trigger, RunTriggerFact fact)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: trigger
+      type: SurvivorsMaker.Simulation.TriggerDef
+    - id: fact
+      type: SurvivorsMaker.Run.RunTriggerFact
+    content.vb: Sub Fire(run As RunState, trigger As TriggerDef, fact As RunTriggerFact)
+  overload: SurvivorsMaker.Run.IRunTriggerHandler.Fire*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IRunTriggerHandler.Fire*
+  commentId: Overload:SurvivorsMaker.Run.IRunTriggerHandler.Fire
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunTriggerHandler.html#SurvivorsMaker_Run_IRunTriggerHandler_Fire_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_TriggerDef_SurvivorsMaker_Run_RunTriggerFact_
+  name: Fire
+  nameWithType: IRunTriggerHandler.Fire
+  fullName: SurvivorsMaker.Run.IRunTriggerHandler.Fire
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+- uid: SurvivorsMaker.Run.RunTriggerFact
+  commentId: T:SurvivorsMaker.Run.RunTriggerFact
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunTriggerFact.html
+  name: RunTriggerFact
+  nameWithType: RunTriggerFact
+  fullName: SurvivorsMaker.Run.RunTriggerFact
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true

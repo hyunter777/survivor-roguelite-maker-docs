@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.ISimModule
+  commentId: T:SurvivorsMaker.Simulation.ISimModule
+  id: ISimModule
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.ISimModule.Begin(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.ISimModule.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.SimModulePhase)
+  langs:
+  - csharp
+  - vb
+  name: ISimModule
+  nameWithType: ISimModule
+  fullName: SurvivorsMaker.Simulation.ISimModule
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'An optional system that plugs into the tick loop without changing it. Keep state in the world
+
+    (or in the module keyed by world) so runs stay deterministic; use world.Random only.'
+  example: []
+  syntax:
+    content: public interface ISimModule
+    content.vb: Public Interface ISimModule
+- uid: SurvivorsMaker.Simulation.ISimModule.Begin(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.ISimModule.Begin(SurvivorsMaker.Simulation.SimWorld)
+  id: Begin(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.ISimModule
+  langs:
+  - csharp
+  - vb
+  name: Begin(SimWorld)
+  nameWithType: ISimModule.Begin(SimWorld)
+  fullName: SurvivorsMaker.Simulation.ISimModule.Begin(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Wave start, after all built-in systems began.
+  example: []
+  syntax:
+    content: void Begin(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Sub Begin(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.ISimModule.Begin*
+- uid: SurvivorsMaker.Simulation.ISimModule.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.SimModulePhase)
+  commentId: M:SurvivorsMaker.Simulation.ISimModule.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.SimModulePhase)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.SimModulePhase)
+  parent: SurvivorsMaker.Simulation.ISimModule
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld, SimModulePhase)
+  nameWithType: ISimModule.Tick(SimWorld, SimModulePhase)
+  fullName: SurvivorsMaker.Simulation.ISimModule.Tick(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.SimModulePhase)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: void Tick(SimWorld world, SimModulePhase phase)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: phase
+      type: SurvivorsMaker.Simulation.SimModulePhase
+    content.vb: Sub Tick(world As SimWorld, phase As SimModulePhase)
+  overload: SurvivorsMaker.Simulation.ISimModule.Tick*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.ISimModule.Begin*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimModule.Begin
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimModule.html#SurvivorsMaker_Simulation_ISimModule_Begin_SurvivorsMaker_Simulation_SimWorld_
+  name: Begin
+  nameWithType: ISimModule.Begin
+  fullName: SurvivorsMaker.Simulation.ISimModule.Begin
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.ISimModule.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.ISimModule.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimModule.html#SurvivorsMaker_Simulation_ISimModule_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_SimModulePhase_
+  name: Tick
+  nameWithType: ISimModule.Tick
+  fullName: SurvivorsMaker.Simulation.ISimModule.Tick
+- uid: SurvivorsMaker.Simulation.SimModulePhase
+  commentId: T:SurvivorsMaker.Simulation.SimModulePhase
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimModulePhase.html
+  name: SimModulePhase
+  nameWithType: SimModulePhase
+  fullName: SurvivorsMaker.Simulation.SimModulePhase

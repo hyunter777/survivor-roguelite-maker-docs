@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WeaponKind
+  commentId: T:SurvivorsMaker.Simulation.WeaponKind
+  id: WeaponKind
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WeaponKind.Aura
+  - SurvivorsMaker.Simulation.WeaponKind.Melee
+  - SurvivorsMaker.Simulation.WeaponKind.Orbit
+  - SurvivorsMaker.Simulation.WeaponKind.Ranged
+  langs:
+  - csharp
+  - vb
+  name: WeaponKind
+  nameWithType: WeaponKind
+  fullName: SurvivorsMaker.Simulation.WeaponKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum WeaponKind
+    content.vb: Public Enum WeaponKind
+- uid: SurvivorsMaker.Simulation.WeaponKind.Ranged
+  commentId: F:SurvivorsMaker.Simulation.WeaponKind.Ranged
+  id: Ranged
+  parent: SurvivorsMaker.Simulation.WeaponKind
+  langs:
+  - csharp
+  - vb
+  name: Ranged
+  nameWithType: WeaponKind.Ranged
+  fullName: SurvivorsMaker.Simulation.WeaponKind.Ranged
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Ranged = 0
+    return:
+      type: SurvivorsMaker.Simulation.WeaponKind
+- uid: SurvivorsMaker.Simulation.WeaponKind.Melee
+  commentId: F:SurvivorsMaker.Simulation.WeaponKind.Melee
+  id: Melee
+  parent: SurvivorsMaker.Simulation.WeaponKind
+  langs:
+  - csharp
+  - vb
+  name: Melee
+  nameWithType: WeaponKind.Melee
+  fullName: SurvivorsMaker.Simulation.WeaponKind.Melee
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Melee = 1
+    return:
+      type: SurvivorsMaker.Simulation.WeaponKind
+- uid: SurvivorsMaker.Simulation.WeaponKind.Orbit
+  commentId: F:SurvivorsMaker.Simulation.WeaponKind.Orbit
+  id: Orbit
+  parent: SurvivorsMaker.Simulation.WeaponKind
+  langs:
+  - csharp
+  - vb
+  name: Orbit
+  nameWithType: WeaponKind.Orbit
+  fullName: SurvivorsMaker.Simulation.WeaponKind.Orbit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Blades circling the player, hitting what they touch.
+  example: []
+  syntax:
+    content: Orbit = 2
+    return:
+      type: SurvivorsMaker.Simulation.WeaponKind
+- uid: SurvivorsMaker.Simulation.WeaponKind.Aura
+  commentId: F:SurvivorsMaker.Simulation.WeaponKind.Aura
+  id: Aura
+  parent: SurvivorsMaker.Simulation.WeaponKind
+  langs:
+  - csharp
+  - vb
+  name: Aura
+  nameWithType: WeaponKind.Aura
+  fullName: SurvivorsMaker.Simulation.WeaponKind.Aura
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Damages every enemy within a radius around the player on an interval.
+  example: []
+  syntax:
+    content: Aura = 3
+    return:
+      type: SurvivorsMaker.Simulation.WeaponKind
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.WeaponKind
+  commentId: T:SurvivorsMaker.Simulation.WeaponKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponKind.html
+  name: WeaponKind
+  nameWithType: WeaponKind
+  fullName: SurvivorsMaker.Simulation.WeaponKind

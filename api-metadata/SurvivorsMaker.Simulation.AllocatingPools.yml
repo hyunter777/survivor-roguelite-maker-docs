@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.AllocatingPools
+  commentId: T:SurvivorsMaker.Simulation.AllocatingPools
+  id: AllocatingPools
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.AllocatingPools.#ctor
+  - SurvivorsMaker.Simulation.AllocatingPools.RentEnemy
+  - SurvivorsMaker.Simulation.AllocatingPools.RentProjectile
+  - SurvivorsMaker.Simulation.AllocatingPools.RentStatus
+  - SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Enemy)
+  - SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Projectile)
+  - SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  langs:
+  - csharp
+  - vb
+  name: AllocatingPools
+  nameWithType: AllocatingPools
+  fullName: SurvivorsMaker.Simulation.AllocatingPools
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'No reuse: every Rent allocates. The reference behaviour and the fallback before pools are set.'
+  example: []
+  syntax:
+    content: 'public sealed class AllocatingPools : ISimPools'
+    content.vb: Public NotInheritable Class AllocatingPools Implements ISimPools
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentProjectile
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.RentProjectile
+  id: RentProjectile
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: RentProjectile()
+  nameWithType: AllocatingPools.RentProjectile()
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentProjectile()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public Projectile RentProjectile()
+    return:
+      type: SurvivorsMaker.Simulation.Projectile
+    content.vb: Public Function RentProjectile() As Projectile
+  overload: SurvivorsMaker.Simulation.AllocatingPools.RentProjectile*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.RentProjectile
+- uid: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Projectile)
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Projectile)
+  id: Return(SurvivorsMaker.Simulation.Projectile)
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: Return(Projectile)
+  nameWithType: AllocatingPools.Return(Projectile)
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Projectile)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public void Return(Projectile projectile)
+    parameters:
+    - id: projectile
+      type: SurvivorsMaker.Simulation.Projectile
+    content.vb: Public Sub [Return](projectile As Projectile)
+  overload: SurvivorsMaker.Simulation.AllocatingPools.Return*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentEnemy
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.RentEnemy
+  id: RentEnemy
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: RentEnemy()
+  nameWithType: AllocatingPools.RentEnemy()
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentEnemy()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public Enemy RentEnemy()
+    return:
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Public Function RentEnemy() As Enemy
+  overload: SurvivorsMaker.Simulation.AllocatingPools.RentEnemy*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.RentEnemy
+- uid: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Enemy)
+  id: Return(SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: Return(Enemy)
+  nameWithType: AllocatingPools.Return(Enemy)
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.Enemy)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public void Return(Enemy enemy)
+    parameters:
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    content.vb: Public Sub [Return](enemy As Enemy)
+  overload: SurvivorsMaker.Simulation.AllocatingPools.Return*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentStatus
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.RentStatus
+  id: RentStatus
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: RentStatus()
+  nameWithType: AllocatingPools.RentStatus()
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentStatus()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public StatusInstance RentStatus()
+    return:
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Public Function RentStatus() As StatusInstance
+  overload: SurvivorsMaker.Simulation.AllocatingPools.RentStatus*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.RentStatus
+- uid: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  id: Return(SurvivorsMaker.Simulation.StatusInstance)
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: Return(StatusInstance)
+  nameWithType: AllocatingPools.Return(StatusInstance)
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  example: []
+  syntax:
+    content: public void Return(StatusInstance status)
+    parameters:
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Public Sub [Return](status As StatusInstance)
+  overload: SurvivorsMaker.Simulation.AllocatingPools.Return*
+  implements:
+  - SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+- uid: SurvivorsMaker.Simulation.AllocatingPools.#ctor
+  commentId: M:SurvivorsMaker.Simulation.AllocatingPools.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.AllocatingPools
+  langs:
+  - csharp
+  - vb
+  name: AllocatingPools()
+  nameWithType: AllocatingPools.AllocatingPools()
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.AllocatingPools()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public AllocatingPools()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.AllocatingPools.#ctor*
+  nameWithType.vb: AllocatingPools.New()
+  fullName.vb: SurvivorsMaker.Simulation.AllocatingPools.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Simulation.ISimPools
+  commentId: T:SurvivorsMaker.Simulation.ISimPools
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html
+  name: ISimPools
+  nameWithType: ISimPools
+  fullName: SurvivorsMaker.Simulation.ISimPools
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentProjectile*
+  commentId: Overload:SurvivorsMaker.Simulation.AllocatingPools.RentProjectile
+  isExternal: true
+  href: SurvivorsMaker.Simulation.AllocatingPools.html#SurvivorsMaker_Simulation_AllocatingPools_RentProjectile
+  name: RentProjectile
+  nameWithType: AllocatingPools.RentProjectile
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentProjectile
+- uid: SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentProjectile
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentProjectile
+  name: RentProjectile()
+  nameWithType: ISimPools.RentProjectile()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentProjectile()
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentProjectile
+    name: RentProjectile
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentProjectile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentProjectile
+    name: RentProjectile
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentProjectile
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.Projectile
+  commentId: T:SurvivorsMaker.Simulation.Projectile
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Projectile.html
+  name: Projectile
+  nameWithType: Projectile
+  fullName: SurvivorsMaker.Simulation.Projectile
+- uid: SurvivorsMaker.Simulation.AllocatingPools.Return*
+  commentId: Overload:SurvivorsMaker.Simulation.AllocatingPools.Return
+  isExternal: true
+  href: SurvivorsMaker.Simulation.AllocatingPools.html#SurvivorsMaker_Simulation_AllocatingPools_Return_SurvivorsMaker_Simulation_Projectile_
+  name: Return
+  nameWithType: AllocatingPools.Return
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.Return
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Projectile_
+  name: Return(Projectile)
+  nameWithType: ISimPools.Return(Projectile)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Projectile_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Projectile
+    name: Projectile
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Projectile.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Projectile)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Projectile_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Projectile
+    name: Projectile
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Projectile.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentEnemy*
+  commentId: Overload:SurvivorsMaker.Simulation.AllocatingPools.RentEnemy
+  isExternal: true
+  href: SurvivorsMaker.Simulation.AllocatingPools.html#SurvivorsMaker_Simulation_AllocatingPools_RentEnemy
+  name: RentEnemy
+  nameWithType: AllocatingPools.RentEnemy
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentEnemy
+- uid: SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentEnemy
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentEnemy
+  name: RentEnemy()
+  nameWithType: ISimPools.RentEnemy()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentEnemy()
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentEnemy
+    name: RentEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentEnemy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentEnemy
+    name: RentEnemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentEnemy
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Enemy_
+  name: Return(Enemy)
+  nameWithType: ISimPools.Return(Enemy)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.Enemy)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_Enemy_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.Enemy
+    name: Enemy
+    isExternal: true
+    href: SurvivorsMaker.Simulation.Enemy.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.AllocatingPools.RentStatus*
+  commentId: Overload:SurvivorsMaker.Simulation.AllocatingPools.RentStatus
+  isExternal: true
+  href: SurvivorsMaker.Simulation.AllocatingPools.html#SurvivorsMaker_Simulation_AllocatingPools_RentStatus
+  name: RentStatus
+  nameWithType: AllocatingPools.RentStatus
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.RentStatus
+- uid: SurvivorsMaker.Simulation.ISimPools.RentStatus
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.RentStatus
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentStatus
+  name: RentStatus()
+  nameWithType: ISimPools.RentStatus()
+  fullName: SurvivorsMaker.Simulation.ISimPools.RentStatus()
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentStatus
+    name: RentStatus
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentStatus
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.RentStatus
+    name: RentStatus
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_RentStatus
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Simulation.StatusInstance
+  commentId: T:SurvivorsMaker.Simulation.StatusInstance
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusInstance.html
+  name: StatusInstance
+  nameWithType: StatusInstance
+  fullName: SurvivorsMaker.Simulation.StatusInstance
+- uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  commentId: M:SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  parent: SurvivorsMaker.Simulation.ISimPools
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_StatusInstance_
+  name: Return(StatusInstance)
+  nameWithType: ISimPools.Return(StatusInstance)
+  fullName: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_StatusInstance_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.StatusInstance
+    name: StatusInstance
+    isExternal: true
+    href: SurvivorsMaker.Simulation.StatusInstance.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ISimPools.Return(SurvivorsMaker.Simulation.StatusInstance)
+    name: Return
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ISimPools.html#SurvivorsMaker_Simulation_ISimPools_Return_SurvivorsMaker_Simulation_StatusInstance_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.StatusInstance
+    name: StatusInstance
+    isExternal: true
+    href: SurvivorsMaker.Simulation.StatusInstance.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.AllocatingPools.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.AllocatingPools.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.AllocatingPools.html#SurvivorsMaker_Simulation_AllocatingPools__ctor
+  name: AllocatingPools
+  nameWithType: AllocatingPools.AllocatingPools
+  fullName: SurvivorsMaker.Simulation.AllocatingPools.AllocatingPools
+  nameWithType.vb: AllocatingPools.New
+  fullName.vb: SurvivorsMaker.Simulation.AllocatingPools.New
+  name.vb: New

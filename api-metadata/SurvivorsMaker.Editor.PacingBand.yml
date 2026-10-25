@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Editor.PacingBand
+  commentId: T:SurvivorsMaker.Editor.PacingBand
+  id: PacingBand
+  parent: SurvivorsMaker.Editor
+  children:
+  - SurvivorsMaker.Editor.PacingBand.OnTarget
+  - SurvivorsMaker.Editor.PacingBand.Over
+  - SurvivorsMaker.Editor.PacingBand.Unknown
+  - SurvivorsMaker.Editor.PacingBand.Watch
+  langs:
+  - csharp
+  - vb
+  name: PacingBand
+  nameWithType: PacingBand
+  fullName: SurvivorsMaker.Editor.PacingBand
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  syntax:
+    content: public enum PacingBand
+    content.vb: Public Enum PacingBand
+- uid: SurvivorsMaker.Editor.PacingBand.Unknown
+  commentId: F:SurvivorsMaker.Editor.PacingBand.Unknown
+  id: Unknown
+  parent: SurvivorsMaker.Editor.PacingBand
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PacingBand.Unknown
+  fullName: SurvivorsMaker.Editor.PacingBand.Unknown
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: No data (no runs entered the wave or no player damage).
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: SurvivorsMaker.Editor.PacingBand
+- uid: SurvivorsMaker.Editor.PacingBand.OnTarget
+  commentId: F:SurvivorsMaker.Editor.PacingBand.OnTarget
+  id: OnTarget
+  parent: SurvivorsMaker.Editor.PacingBand
+  langs:
+  - csharp
+  - vb
+  name: OnTarget
+  nameWithType: PacingBand.OnTarget
+  fullName: SurvivorsMaker.Editor.PacingBand.OnTarget
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Inside the target ratio window.
+  example: []
+  syntax:
+    content: OnTarget = 1
+    return:
+      type: SurvivorsMaker.Editor.PacingBand
+- uid: SurvivorsMaker.Editor.PacingBand.Watch
+  commentId: F:SurvivorsMaker.Editor.PacingBand.Watch
+  id: Watch
+  parent: SurvivorsMaker.Editor.PacingBand
+  langs:
+  - csharp
+  - vb
+  name: Watch
+  nameWithType: PacingBand.Watch
+  fullName: SurvivorsMaker.Editor.PacingBand.Watch
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: 'Outside the window but not over the red line: too easy (below) or getting tight (above).'
+  example: []
+  syntax:
+    content: Watch = 2
+    return:
+      type: SurvivorsMaker.Editor.PacingBand
+- uid: SurvivorsMaker.Editor.PacingBand.Over
+  commentId: F:SurvivorsMaker.Editor.PacingBand.Over
+  id: Over
+  parent: SurvivorsMaker.Editor.PacingBand
+  langs:
+  - csharp
+  - vb
+  name: Over
+  nameWithType: PacingBand.Over
+  fullName: SurvivorsMaker.Editor.PacingBand.Over
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Editor
+  namespace: SurvivorsMaker.Editor
+  summary: Threat clearly outpaces the player.
+  example: []
+  syntax:
+    content: Over = 3
+    return:
+      type: SurvivorsMaker.Editor.PacingBand
+references:
+- uid: SurvivorsMaker.Editor
+  commentId: N:SurvivorsMaker.Editor
+  isExternal: true
+  name: SurvivorsMaker.Editor
+  nameWithType: SurvivorsMaker.Editor
+  fullName: SurvivorsMaker.Editor
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Editor
+    name: Editor
+    isExternal: true
+- uid: SurvivorsMaker.Editor.PacingBand
+  commentId: T:SurvivorsMaker.Editor.PacingBand
+  parent: SurvivorsMaker.Editor
+  isExternal: true
+  href: SurvivorsMaker.Editor.PacingBand.html
+  name: PacingBand
+  nameWithType: PacingBand
+  fullName: SurvivorsMaker.Editor.PacingBand

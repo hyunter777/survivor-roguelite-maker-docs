@@ -1,0 +1,14 @@
+{
+  "package_version": "1.0.0",
+  "assemblies": [
+    "SurvivorsMaker.Core",
+    "SurvivorsMaker.Simulation",
+    "SurvivorsMaker.Run",
+    "SurvivorsMaker.Balance",
+    "SurvivorsMaker.Data",
+    "SurvivorsMaker.Presentation",
+    "SurvivorsMaker.Editor"
+  ],
+  "visibility": "public",
+  "metadata_files": 604
+}

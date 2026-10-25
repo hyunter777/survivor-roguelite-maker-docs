@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferKind
+  commentId: T:SurvivorsMaker.Run.OfferKind
+  id: OfferKind
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferKind.Item
+  - SurvivorsMaker.Run.OfferKind.None
+  - SurvivorsMaker.Run.OfferKind.Weapon
+  langs:
+  - csharp
+  - vb
+  name: OfferKind
+  nameWithType: OfferKind
+  fullName: SurvivorsMaker.Run.OfferKind
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public enum OfferKind
+    content.vb: Public Enum OfferKind
+- uid: SurvivorsMaker.Run.OfferKind.None
+  commentId: F:SurvivorsMaker.Run.OfferKind.None
+  id: None
+  parent: SurvivorsMaker.Run.OfferKind
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OfferKind.None
+  fullName: SurvivorsMaker.Run.OfferKind.None
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: None = 0
+    return:
+      type: SurvivorsMaker.Run.OfferKind
+- uid: SurvivorsMaker.Run.OfferKind.Item
+  commentId: F:SurvivorsMaker.Run.OfferKind.Item
+  id: Item
+  parent: SurvivorsMaker.Run.OfferKind
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: OfferKind.Item
+  fullName: SurvivorsMaker.Run.OfferKind.Item
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Item = 1
+    return:
+      type: SurvivorsMaker.Run.OfferKind
+- uid: SurvivorsMaker.Run.OfferKind.Weapon
+  commentId: F:SurvivorsMaker.Run.OfferKind.Weapon
+  id: Weapon
+  parent: SurvivorsMaker.Run.OfferKind
+  langs:
+  - csharp
+  - vb
+  name: Weapon
+  nameWithType: OfferKind.Weapon
+  fullName: SurvivorsMaker.Run.OfferKind.Weapon
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Weapon = 2
+    return:
+      type: SurvivorsMaker.Run.OfferKind
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.OfferKind
+  commentId: T:SurvivorsMaker.Run.OfferKind
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferKind.html
+  name: OfferKind
+  nameWithType: OfferKind
+  fullName: SurvivorsMaker.Run.OfferKind

@@ -1,0 +1,1244 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  id: TriggerDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerDef.#ctor
+  - SurvivorsMaker.Simulation.TriggerDef.Action
+  - SurvivorsMaker.Simulation.TriggerDef.AllowDeadOwner
+  - SurvivorsMaker.Simulation.TriggerDef.Amount
+  - SurvivorsMaker.Simulation.TriggerDef.CarryCounterAcrossWaves
+  - SurvivorsMaker.Simulation.TriggerDef.Chance
+  - SurvivorsMaker.Simulation.TriggerDef.Conditions
+  - SurvivorsMaker.Simulation.TriggerDef.CooldownTicks
+  - SurvivorsMaker.Simulation.TriggerDef.Count
+  - SurvivorsMaker.Simulation.TriggerDef.CountEventAmount
+  - SurvivorsMaker.Simulation.TriggerDef.CounterReset
+  - SurvivorsMaker.Simulation.TriggerDef.CounterThreshold
+  - SurvivorsMaker.Simulation.TriggerDef.DamagePerStat
+  - SurvivorsMaker.Simulation.TriggerDef.DamageStat
+  - SurvivorsMaker.Simulation.TriggerDef.DeathStatus
+  - SurvivorsMaker.Simulation.TriggerDef.DurationSeconds
+  - SurvivorsMaker.Simulation.TriggerDef.Event
+  - SurvivorsMaker.Simulation.TriggerDef.Handler
+  - SurvivorsMaker.Simulation.TriggerDef.Id
+  - SurvivorsMaker.Simulation.TriggerDef.IncludeNeutral
+  - SurvivorsMaker.Simulation.TriggerDef.IncludeReactions
+  - SurvivorsMaker.Simulation.TriggerDef.MaxFirings
+  - SurvivorsMaker.Simulation.TriggerDef.MaxFiringsPerEvent
+  - SurvivorsMaker.Simulation.TriggerDef.MidpointRatio
+  - SurvivorsMaker.Simulation.TriggerDef.PeriodSeconds
+  - SurvivorsMaker.Simulation.TriggerDef.ProjectileRange
+  - SurvivorsMaker.Simulation.TriggerDef.ProjectileSpeed
+  - SurvivorsMaker.Simulation.TriggerDef.Radius
+  - SurvivorsMaker.Simulation.TriggerDef.RequireDeathStatus
+  - SurvivorsMaker.Simulation.TriggerDef.RequireStatusDamageKill
+  - SurvivorsMaker.Simulation.TriggerDef.ResetOnActualDamage
+  - SurvivorsMaker.Simulation.TriggerDef.RunCooldownEvents
+  - SurvivorsMaker.Simulation.TriggerDef.SourceSlot
+  - SurvivorsMaker.Simulation.TriggerDef.Stat
+  - SurvivorsMaker.Simulation.TriggerDef.Status
+  - SurvivorsMaker.Simulation.TriggerDef.UsesRules
+  - SurvivorsMaker.Simulation.TriggerDef.When
+  - SurvivorsMaker.Simulation.TriggerDef.WhileConditionsHold
+  langs:
+  - csharp
+  - vb
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: '"When X happens, with chance C, do Y." Comes from items, upgrades and characters.'
+  example: []
+  syntax:
+    content: public sealed class TriggerDef
+    content.vb: Public NotInheritable Class TriggerDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.TriggerDef.Id
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Id
+  id: Id
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TriggerDef.Id
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Simulation.TriggerDef.When
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.When
+  id: When
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: When
+  nameWithType: TriggerDef.When
+  fullName: SurvivorsMaker.Simulation.TriggerDef.When
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerWhen When
+    return:
+      type: SurvivorsMaker.Simulation.TriggerWhen
+    content.vb: Public [When] As TriggerWhen
+- uid: SurvivorsMaker.Simulation.TriggerDef.Chance
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Chance
+  id: Chance
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Chance
+  nameWithType: TriggerDef.Chance
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Chance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Chance
+    return:
+      type: System.Single
+    content.vb: Public Chance As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.PeriodSeconds
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.PeriodSeconds
+  id: PeriodSeconds
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: PeriodSeconds
+  nameWithType: TriggerDef.PeriodSeconds
+  fullName: SurvivorsMaker.Simulation.TriggerDef.PeriodSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float PeriodSeconds
+    return:
+      type: System.Single
+    content.vb: Public PeriodSeconds As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.CooldownTicks
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.CooldownTicks
+  id: CooldownTicks
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: CooldownTicks
+  nameWithType: TriggerDef.CooldownTicks
+  fullName: SurvivorsMaker.Simulation.TriggerDef.CooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Minimum ticks between two firings of this trigger. 0 = none.
+  example: []
+  syntax:
+    content: public int CooldownTicks
+    return:
+      type: System.Int32
+    content.vb: Public CooldownTicks As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.Action
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Action
+  id: Action
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: TriggerDef.Action
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Action
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerAction Action
+    return:
+      type: SurvivorsMaker.Simulation.TriggerAction
+    content.vb: Public Action As TriggerAction
+- uid: SurvivorsMaker.Simulation.TriggerDef.Amount
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Amount
+  id: Amount
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: TriggerDef.Amount
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Amount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Amount
+    return:
+      type: System.Int32
+    content.vb: Public Amount As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.Stat
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Stat
+  id: Stat
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Stat
+  nameWithType: TriggerDef.Stat
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Stat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Stat
+    return:
+      type: System.String
+    content.vb: Public Stat As String
+- uid: SurvivorsMaker.Simulation.TriggerDef.DurationSeconds
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.DurationSeconds
+  id: DurationSeconds
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: DurationSeconds
+  nameWithType: TriggerDef.DurationSeconds
+  fullName: SurvivorsMaker.Simulation.TriggerDef.DurationSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float DurationSeconds
+    return:
+      type: System.Single
+    content.vb: Public DurationSeconds As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.Radius
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Radius
+  id: Radius
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: TriggerDef.Radius
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Radius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Radius
+    return:
+      type: System.Single
+    content.vb: Public Radius As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.Count
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Count
+  id: Count
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: TriggerDef.Count
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Count
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int Count
+    return:
+      type: System.Int32
+    content.vb: Public Count As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.ProjectileSpeed
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.ProjectileSpeed
+  id: ProjectileSpeed
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpeed
+  nameWithType: TriggerDef.ProjectileSpeed
+  fullName: SurvivorsMaker.Simulation.TriggerDef.ProjectileSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileSpeed
+    return:
+      type: System.Single
+    content.vb: Public ProjectileSpeed As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.ProjectileRange
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.ProjectileRange
+  id: ProjectileRange
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileRange
+  nameWithType: TriggerDef.ProjectileRange
+  fullName: SurvivorsMaker.Simulation.TriggerDef.ProjectileRange
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileRange
+    return:
+      type: System.Single
+    content.vb: Public ProjectileRange As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.Handler
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Handler
+  id: Handler
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Handler
+  nameWithType: TriggerDef.Handler
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Handler
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Handler
+    return:
+      type: System.String
+    content.vb: Public Handler As String
+- uid: SurvivorsMaker.Simulation.TriggerDef.Status
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Status
+  id: Status
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: TriggerDef.Status
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Status
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatusEffectDef Status
+    return:
+      type: SurvivorsMaker.Simulation.StatusEffectDef
+    content.vb: Public Status As StatusEffectDef
+- uid: SurvivorsMaker.Simulation.TriggerDef.Event
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Event
+  id: Event
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: TriggerDef.Event
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Event
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerEvent Event
+    return:
+      type: SurvivorsMaker.Simulation.TriggerEvent
+    content.vb: Public [Event] As TriggerEvent
+- uid: SurvivorsMaker.Simulation.TriggerDef.Conditions
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.Conditions
+  id: Conditions
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: Conditions
+  nameWithType: TriggerDef.Conditions
+  fullName: SurvivorsMaker.Simulation.TriggerDef.Conditions
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public List<TriggerCondition> Conditions
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerCondition}
+    content.vb: Public Conditions As List(Of TriggerCondition)
+- uid: SurvivorsMaker.Simulation.TriggerDef.WhileConditionsHold
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.WhileConditionsHold
+  id: WhileConditionsHold
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: WhileConditionsHold
+  nameWithType: TriggerDef.WhileConditionsHold
+  fullName: SurvivorsMaker.Simulation.TriggerDef.WhileConditionsHold
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: TempStat remains one contribution while conditions hold, instead of stacking per tick.
+  example: []
+  syntax:
+    content: public bool WhileConditionsHold
+    return:
+      type: System.Boolean
+    content.vb: Public WhileConditionsHold As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.CounterThreshold
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.CounterThreshold
+  id: CounterThreshold
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: CounterThreshold
+  nameWithType: TriggerDef.CounterThreshold
+  fullName: SurvivorsMaker.Simulation.TriggerDef.CounterThreshold
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int CounterThreshold
+    return:
+      type: System.Int32
+    content.vb: Public CounterThreshold As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.CountEventAmount
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.CountEventAmount
+  id: CountEventAmount
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: CountEventAmount
+  nameWithType: TriggerDef.CountEventAmount
+  fullName: SurvivorsMaker.Simulation.TriggerDef.CountEventAmount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool CountEventAmount
+    return:
+      type: System.Boolean
+    content.vb: Public CountEventAmount As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.CounterReset
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.CounterReset
+  id: CounterReset
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: CounterReset
+  nameWithType: TriggerDef.CounterReset
+  fullName: SurvivorsMaker.Simulation.TriggerDef.CounterReset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerCounterReset CounterReset
+    return:
+      type: SurvivorsMaker.Simulation.TriggerCounterReset
+    content.vb: Public CounterReset As TriggerCounterReset
+- uid: SurvivorsMaker.Simulation.TriggerDef.ResetOnActualDamage
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.ResetOnActualDamage
+  id: ResetOnActualDamage
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: ResetOnActualDamage
+  nameWithType: TriggerDef.ResetOnActualDamage
+  fullName: SurvivorsMaker.Simulation.TriggerDef.ResetOnActualDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool ResetOnActualDamage
+    return:
+      type: System.Boolean
+    content.vb: Public ResetOnActualDamage As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.CarryCounterAcrossWaves
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.CarryCounterAcrossWaves
+  id: CarryCounterAcrossWaves
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: CarryCounterAcrossWaves
+  nameWithType: TriggerDef.CarryCounterAcrossWaves
+  fullName: SurvivorsMaker.Simulation.TriggerDef.CarryCounterAcrossWaves
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool CarryCounterAcrossWaves
+    return:
+      type: System.Boolean
+    content.vb: Public CarryCounterAcrossWaves As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.MaxFirings
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.MaxFirings
+  id: MaxFirings
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: MaxFirings
+  nameWithType: TriggerDef.MaxFirings
+  fullName: SurvivorsMaker.Simulation.TriggerDef.MaxFirings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int MaxFirings
+    return:
+      type: System.Int32
+    content.vb: Public MaxFirings As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.MaxFiringsPerEvent
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.MaxFiringsPerEvent
+  id: MaxFiringsPerEvent
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: MaxFiringsPerEvent
+  nameWithType: TriggerDef.MaxFiringsPerEvent
+  fullName: SurvivorsMaker.Simulation.TriggerDef.MaxFiringsPerEvent
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int MaxFiringsPerEvent
+    return:
+      type: System.Int32
+    content.vb: Public MaxFiringsPerEvent As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.RunCooldownEvents
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.RunCooldownEvents
+  id: RunCooldownEvents
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: RunCooldownEvents
+  nameWithType: TriggerDef.RunCooldownEvents
+  fullName: SurvivorsMaker.Simulation.TriggerDef.RunCooldownEvents
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int RunCooldownEvents
+    return:
+      type: System.Int32
+    content.vb: Public RunCooldownEvents As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.AllowDeadOwner
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.AllowDeadOwner
+  id: AllowDeadOwner
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: AllowDeadOwner
+  nameWithType: TriggerDef.AllowDeadOwner
+  fullName: SurvivorsMaker.Simulation.TriggerDef.AllowDeadOwner
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool AllowDeadOwner
+    return:
+      type: System.Boolean
+    content.vb: Public AllowDeadOwner As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.IncludeNeutral
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.IncludeNeutral
+  id: IncludeNeutral
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: IncludeNeutral
+  nameWithType: TriggerDef.IncludeNeutral
+  fullName: SurvivorsMaker.Simulation.TriggerDef.IncludeNeutral
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool IncludeNeutral
+    return:
+      type: System.Boolean
+    content.vb: Public IncludeNeutral As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.IncludeReactions
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.IncludeReactions
+  id: IncludeReactions
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: IncludeReactions
+  nameWithType: TriggerDef.IncludeReactions
+  fullName: SurvivorsMaker.Simulation.TriggerDef.IncludeReactions
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool IncludeReactions
+    return:
+      type: System.Boolean
+    content.vb: Public IncludeReactions As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.SourceSlot
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.SourceSlot
+  id: SourceSlot
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: SourceSlot
+  nameWithType: TriggerDef.SourceSlot
+  fullName: SurvivorsMaker.Simulation.TriggerDef.SourceSlot
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int SourceSlot
+    return:
+      type: System.Int32
+    content.vb: Public SourceSlot As Integer
+- uid: SurvivorsMaker.Simulation.TriggerDef.RequireDeathStatus
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.RequireDeathStatus
+  id: RequireDeathStatus
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: RequireDeathStatus
+  nameWithType: TriggerDef.RequireDeathStatus
+  fullName: SurvivorsMaker.Simulation.TriggerDef.RequireDeathStatus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool RequireDeathStatus
+    return:
+      type: System.Boolean
+    content.vb: Public RequireDeathStatus As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.DeathStatus
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.DeathStatus
+  id: DeathStatus
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: DeathStatus
+  nameWithType: TriggerDef.DeathStatus
+  fullName: SurvivorsMaker.Simulation.TriggerDef.DeathStatus
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public StatusKind DeathStatus
+    return:
+      type: SurvivorsMaker.Simulation.StatusKind
+    content.vb: Public DeathStatus As StatusKind
+- uid: SurvivorsMaker.Simulation.TriggerDef.RequireStatusDamageKill
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.RequireStatusDamageKill
+  id: RequireStatusDamageKill
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: RequireStatusDamageKill
+  nameWithType: TriggerDef.RequireStatusDamageKill
+  fullName: SurvivorsMaker.Simulation.TriggerDef.RequireStatusDamageKill
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool RequireStatusDamageKill
+    return:
+      type: System.Boolean
+    content.vb: Public RequireStatusDamageKill As Boolean
+- uid: SurvivorsMaker.Simulation.TriggerDef.DamageStat
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.DamageStat
+  id: DamageStat
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: DamageStat
+  nameWithType: TriggerDef.DamageStat
+  fullName: SurvivorsMaker.Simulation.TriggerDef.DamageStat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string DamageStat
+    return:
+      type: System.String
+    content.vb: Public DamageStat As String
+- uid: SurvivorsMaker.Simulation.TriggerDef.DamagePerStat
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.DamagePerStat
+  id: DamagePerStat
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: DamagePerStat
+  nameWithType: TriggerDef.DamagePerStat
+  fullName: SurvivorsMaker.Simulation.TriggerDef.DamagePerStat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float DamagePerStat
+    return:
+      type: System.Single
+    content.vb: Public DamagePerStat As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.MidpointRatio
+  commentId: F:SurvivorsMaker.Simulation.TriggerDef.MidpointRatio
+  id: MidpointRatio
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: MidpointRatio
+  nameWithType: TriggerDef.MidpointRatio
+  fullName: SurvivorsMaker.Simulation.TriggerDef.MidpointRatio
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float MidpointRatio
+    return:
+      type: System.Single
+    content.vb: Public MidpointRatio As Single
+- uid: SurvivorsMaker.Simulation.TriggerDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.TriggerDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: TriggerDef()
+  nameWithType: TriggerDef.TriggerDef()
+  fullName: SurvivorsMaker.Simulation.TriggerDef.TriggerDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.TriggerDef.#ctor*
+  nameWithType.vb: TriggerDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.TriggerDef.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Simulation.TriggerDef.UsesRules
+  commentId: P:SurvivorsMaker.Simulation.TriggerDef.UsesRules
+  id: UsesRules
+  parent: SurvivorsMaker.Simulation.TriggerDef
+  langs:
+  - csharp
+  - vb
+  name: UsesRules
+  nameWithType: TriggerDef.UsesRules
+  fullName: SurvivorsMaker.Simulation.TriggerDef.UsesRules
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool UsesRules { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UsesRules As Boolean
+  overload: SurvivorsMaker.Simulation.TriggerDef.UsesRules*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.TriggerWhen
+  commentId: T:SurvivorsMaker.Simulation.TriggerWhen
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerWhen.html
+  name: TriggerWhen
+  nameWithType: TriggerWhen
+  fullName: SurvivorsMaker.Simulation.TriggerWhen
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Simulation.TriggerAction
+  commentId: T:SurvivorsMaker.Simulation.TriggerAction
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerAction.html
+  name: TriggerAction
+  nameWithType: TriggerAction
+  fullName: SurvivorsMaker.Simulation.TriggerAction
+- uid: SurvivorsMaker.Simulation.StatusEffectDef
+  commentId: T:SurvivorsMaker.Simulation.StatusEffectDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusEffectDef.html
+  name: StatusEffectDef
+  nameWithType: StatusEffectDef
+  fullName: SurvivorsMaker.Simulation.StatusEffectDef
+- uid: SurvivorsMaker.Simulation.TriggerEvent
+  commentId: T:SurvivorsMaker.Simulation.TriggerEvent
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerEvent.html
+  name: TriggerEvent
+  nameWithType: TriggerEvent
+  fullName: SurvivorsMaker.Simulation.TriggerEvent
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerCondition}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.TriggerCondition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TriggerCondition>
+  nameWithType: List<TriggerCondition>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.TriggerCondition>
+  nameWithType.vb: List(Of TriggerCondition)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.TriggerCondition)
+  name.vb: List(Of TriggerCondition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerCondition
+    name: TriggerCondition
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerCondition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerCondition
+    name: TriggerCondition
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerCondition.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.TriggerCounterReset
+  commentId: T:SurvivorsMaker.Simulation.TriggerCounterReset
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerCounterReset.html
+  name: TriggerCounterReset
+  nameWithType: TriggerCounterReset
+  fullName: SurvivorsMaker.Simulation.TriggerCounterReset
+- uid: SurvivorsMaker.Simulation.StatusKind
+  commentId: T:SurvivorsMaker.Simulation.StatusKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusKind.html
+  name: StatusKind
+  nameWithType: StatusKind
+  fullName: SurvivorsMaker.Simulation.StatusKind
+- uid: SurvivorsMaker.Simulation.TriggerDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html#SurvivorsMaker_Simulation_TriggerDef__ctor
+  name: TriggerDef
+  nameWithType: TriggerDef.TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef.TriggerDef
+  nameWithType.vb: TriggerDef.New
+  fullName.vb: SurvivorsMaker.Simulation.TriggerDef.New
+  name.vb: New
+- uid: SurvivorsMaker.Simulation.TriggerDef.UsesRules*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerDef.UsesRules
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html#SurvivorsMaker_Simulation_TriggerDef_UsesRules
+  name: UsesRules
+  nameWithType: TriggerDef.UsesRules
+  fullName: SurvivorsMaker.Simulation.TriggerDef.UsesRules

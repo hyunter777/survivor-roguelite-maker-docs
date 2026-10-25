@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour
+  commentId: T:SurvivorsMaker.Simulation.IStatusBehaviour
+  id: IStatusBehaviour
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.IStatusBehaviour.Applied(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance,System.Boolean)
+  - SurvivorsMaker.Simulation.IStatusBehaviour.Modify(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  - SurvivorsMaker.Simulation.IStatusBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  langs:
+  - csharp
+  - vb
+  name: IStatusBehaviour
+  nameWithType: IStatusBehaviour
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: What a status does while it is on an enemy (step 5a).
+  example: []
+  syntax:
+    content: public interface IStatusBehaviour
+    content.vb: Public Interface IStatusBehaviour
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Applied(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance,System.Boolean)
+  commentId: M:SurvivorsMaker.Simulation.IStatusBehaviour.Applied(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance,System.Boolean)
+  id: Applied(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance,System.Boolean)
+  parent: SurvivorsMaker.Simulation.IStatusBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Applied(SimWorld, Enemy, StatusInstance, bool)
+  nameWithType: IStatusBehaviour.Applied(SimWorld, Enemy, StatusInstance, bool)
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Applied(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.StatusInstance, bool)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: A new instance or a re-application (<code class="paramref">fresh</code> false) after stacking rules ran.
+  example: []
+  syntax:
+    content: void Applied(SimWorld world, Enemy enemy, StatusInstance status, bool fresh)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusInstance
+    - id: fresh
+      type: System.Boolean
+    content.vb: Sub Applied(world As SimWorld, enemy As Enemy, status As StatusInstance, fresh As Boolean)
+  overload: SurvivorsMaker.Simulation.IStatusBehaviour.Applied*
+  nameWithType.vb: IStatusBehaviour.Applied(SimWorld, Enemy, StatusInstance, Boolean)
+  fullName.vb: SurvivorsMaker.Simulation.IStatusBehaviour.Applied(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.StatusInstance, Boolean)
+  name.vb: Applied(SimWorld, Enemy, StatusInstance, Boolean)
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  commentId: M:SurvivorsMaker.Simulation.IStatusBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  parent: SurvivorsMaker.Simulation.IStatusBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld, Enemy, StatusInstance)
+  nameWithType: IStatusBehaviour.Tick(SimWorld, Enemy, StatusInstance)
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Tick(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.StatusInstance)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Every tick while active, before the duration counts down.
+  example: []
+  syntax:
+    content: void Tick(SimWorld world, Enemy enemy, StatusInstance status)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Sub Tick(world As SimWorld, enemy As Enemy, status As StatusInstance)
+  overload: SurvivorsMaker.Simulation.IStatusBehaviour.Tick*
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Modify(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  commentId: M:SurvivorsMaker.Simulation.IStatusBehaviour.Modify(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  id: Modify(SurvivorsMaker.Simulation.SimWorld,SurvivorsMaker.Simulation.Enemy,SurvivorsMaker.Simulation.StatusInstance)
+  parent: SurvivorsMaker.Simulation.IStatusBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Modify(SimWorld, Enemy, StatusInstance)
+  nameWithType: IStatusBehaviour.Modify(SimWorld, Enemy, StatusInstance)
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Modify(SurvivorsMaker.Simulation.SimWorld, SurvivorsMaker.Simulation.Enemy,
+    SurvivorsMaker.Simulation.StatusInstance)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Folds this status into the enemy's per-tick modifiers (speed multiplier, stunned).
+  example: []
+  syntax:
+    content: void Modify(SimWorld world, Enemy enemy, StatusInstance status)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: enemy
+      type: SurvivorsMaker.Simulation.Enemy
+    - id: status
+      type: SurvivorsMaker.Simulation.StatusInstance
+    content.vb: Sub Modify(world As SimWorld, enemy As Enemy, status As StatusInstance)
+  overload: SurvivorsMaker.Simulation.IStatusBehaviour.Modify*
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Applied*
+  commentId: Overload:SurvivorsMaker.Simulation.IStatusBehaviour.Applied
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusBehaviour.html#SurvivorsMaker_Simulation_IStatusBehaviour_Applied_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_StatusInstance_System_Boolean_
+  name: Applied
+  nameWithType: IStatusBehaviour.Applied
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Applied
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Enemy
+  commentId: T:SurvivorsMaker.Simulation.Enemy
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Enemy.html
+  name: Enemy
+  nameWithType: Enemy
+  fullName: SurvivorsMaker.Simulation.Enemy
+- uid: SurvivorsMaker.Simulation.StatusInstance
+  commentId: T:SurvivorsMaker.Simulation.StatusInstance
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.StatusInstance.html
+  name: StatusInstance
+  nameWithType: StatusInstance
+  fullName: SurvivorsMaker.Simulation.StatusInstance
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.IStatusBehaviour.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusBehaviour.html#SurvivorsMaker_Simulation_IStatusBehaviour_Tick_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_StatusInstance_
+  name: Tick
+  nameWithType: IStatusBehaviour.Tick
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Tick
+- uid: SurvivorsMaker.Simulation.IStatusBehaviour.Modify*
+  commentId: Overload:SurvivorsMaker.Simulation.IStatusBehaviour.Modify
+  isExternal: true
+  href: SurvivorsMaker.Simulation.IStatusBehaviour.html#SurvivorsMaker_Simulation_IStatusBehaviour_Modify_SurvivorsMaker_Simulation_SimWorld_SurvivorsMaker_Simulation_Enemy_SurvivorsMaker_Simulation_StatusInstance_
+  name: Modify
+  nameWithType: IStatusBehaviour.Modify
+  fullName: SurvivorsMaker.Simulation.IStatusBehaviour.Modify

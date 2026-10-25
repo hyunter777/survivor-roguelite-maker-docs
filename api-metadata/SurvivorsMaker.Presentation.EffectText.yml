@@ -1,0 +1,1155 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.EffectText
+  commentId: T:SurvivorsMaker.Presentation.EffectText
+  id: EffectText
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.EffectText.Describe(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.Describe(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.Description(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.KindOf(SurvivorsMaker.Run.UnlockTarget)
+  - SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.Name(System.String,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.Result(SurvivorsMaker.Run.RunResult,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.TieredName(SurvivorsMaker.Data.ContentTextKind,System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.TieredName(System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.UnlockCondition(SurvivorsMaker.Run.UnlockDef,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.UnlockConditions(SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.UnlockTarget,System.String,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.UnlockKind(SurvivorsMaker.Run.UnlockTarget,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.Weapon(SurvivorsMaker.Run.WeaponItemDef,SurvivorsMaker.Simulation.SimSettings,SurvivorsMaker.Presentation.UiStrings)
+  - SurvivorsMaker.Presentation.EffectText.WithDescription(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: EffectText
+  nameWithType: EffectText
+  fullName: SurvivorsMaker.Presentation.EffectText
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Formats content names, tiers, effect descriptions and stat labels for the game UI.
+  example: []
+  syntax:
+    content: public static class EffectText
+    content.vb: Public Module EffectText
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.EffectText.Name(System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Name(System.String,SurvivorsMaker.Presentation.UiStrings)
+  id: Name(System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Name(string, UiStrings)
+  nameWithType: EffectText.Name(string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Name(string, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Name(string id, UiStrings strings = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Name(id As String, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.Name*
+  nameWithType.vb: EffectText.Name(String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.Name(String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: Name(String, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.TieredName(System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.TieredName(System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  id: TieredName(System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: TieredName(string, int, UiStrings)
+  nameWithType: EffectText.TieredName(string, int, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.TieredName(string, int, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string TieredName(string id, int tier, UiStrings strings = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: tier
+      type: System.Int32
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function TieredName(id As String, tier As Integer, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.TieredName*
+  nameWithType.vb: EffectText.TieredName(String, Integer, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.TieredName(String, Integer, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: TieredName(String, Integer, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  id: Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Name(ContentTextKind, string, UiStrings)
+  nameWithType: EffectText.Name(ContentTextKind, string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind, string, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Display name of a content definition: the language''s text for "&lt;key&gt;.name" (see <xref href="SurvivorsMaker.Data.ContentTextTable"
+    data-throw-if-not-resolved="false"></xref>),
+
+    then the authored display name, then the id in title case.'
+  example: []
+  syntax:
+    content: public static string Name(ContentTextKind kind, string id, UiStrings strings = null)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Name(kind As ContentTextKind, id As String, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.Name*
+  nameWithType.vb: EffectText.Name(ContentTextKind, String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind, String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: Name(ContentTextKind, String, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.TieredName(SurvivorsMaker.Data.ContentTextKind,System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.TieredName(SurvivorsMaker.Data.ContentTextKind,System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  id: TieredName(SurvivorsMaker.Data.ContentTextKind,System.String,System.Int32,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: TieredName(ContentTextKind, string, int, UiStrings)
+  nameWithType: EffectText.TieredName(ContentTextKind, string, int, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.TieredName(SurvivorsMaker.Data.ContentTextKind, string, int, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Like <xref href="SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind%2cSystem.String%2cSurvivorsMaker.Presentation.UiStrings)"
+    data-throw-if-not-resolved="false"></xref> with the tier label; without authored text, the id's tier suffix is removed.
+  example: []
+  syntax:
+    content: public static string TieredName(ContentTextKind kind, string id, int tier, UiStrings strings = null)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    - id: tier
+      type: System.Int32
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function TieredName(kind As ContentTextKind, id As String, tier As Integer, strings As UiStrings
+      = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.TieredName*
+  nameWithType.vb: EffectText.TieredName(ContentTextKind, String, Integer, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.TieredName(SurvivorsMaker.Data.ContentTextKind, String, Integer, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: TieredName(ContentTextKind, String, Integer, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.Description(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Description(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  id: Description(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Description(ContentTextKind, string, UiStrings)
+  nameWithType: EffectText.Description(ContentTextKind, string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Description(SurvivorsMaker.Data.ContentTextKind, string, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The language's text for "&lt;key&gt;.description", else the authored description, else "".
+  example: []
+  syntax:
+    content: public static string Description(ContentTextKind kind, string id, UiStrings strings = null)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Description(kind As ContentTextKind, id As String, strings As UiStrings = Nothing)
+      As String
+  overload: SurvivorsMaker.Presentation.EffectText.Description*
+  nameWithType.vb: EffectText.Description(ContentTextKind, String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.Description(SurvivorsMaker.Data.ContentTextKind, String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: Description(ContentTextKind, String, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.WithDescription(System.String,System.String)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.WithDescription(System.String,System.String)
+  id: WithDescription(System.String,System.String)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: WithDescription(string, string)
+  nameWithType: EffectText.WithDescription(string, string)
+  fullName: SurvivorsMaker.Presentation.EffectText.WithDescription(string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The description above the generated detail lines (effects, weapon summary). Either may be empty.
+  example: []
+  syntax:
+    content: public static string WithDescription(string description, string details)
+    parameters:
+    - id: description
+      type: System.String
+    - id: details
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function WithDescription(description As String, details As String) As String
+  overload: SurvivorsMaker.Presentation.EffectText.WithDescription*
+  nameWithType.vb: EffectText.WithDescription(String, String)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.WithDescription(String, String)
+  name.vb: WithDescription(String, String)
+- uid: SurvivorsMaker.Presentation.EffectText.KindOf(SurvivorsMaker.Run.UnlockTarget)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.KindOf(SurvivorsMaker.Run.UnlockTarget)
+  id: KindOf(SurvivorsMaker.Run.UnlockTarget)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: KindOf(UnlockTarget)
+  nameWithType: EffectText.KindOf(UnlockTarget)
+  fullName: SurvivorsMaker.Presentation.EffectText.KindOf(SurvivorsMaker.Run.UnlockTarget)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: The text kind of an unlock target.
+  example: []
+  syntax:
+    content: public static ContentTextKind KindOf(UnlockTarget target)
+    parameters:
+    - id: target
+      type: SurvivorsMaker.Run.UnlockTarget
+    return:
+      type: SurvivorsMaker.Data.ContentTextKind
+    content.vb: Public Shared Function KindOf(target As UnlockTarget) As ContentTextKind
+  overload: SurvivorsMaker.Presentation.EffectText.KindOf*
+- uid: SurvivorsMaker.Presentation.EffectText.Describe(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Describe(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  id: Describe(SurvivorsMaker.Core.Effect,SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Describe(Effect, StatCatalog, UiStrings)
+  nameWithType: EffectText.Describe(Effect, StatCatalog, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Describe(SurvivorsMaker.Core.Effect, SurvivorsMaker.Core.StatCatalog, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Describe(Effect effect, StatCatalog catalog, UiStrings strings = null)
+    parameters:
+    - id: effect
+      type: SurvivorsMaker.Core.Effect
+    - id: catalog
+      type: SurvivorsMaker.Core.StatCatalog
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Describe(effect As Effect, catalog As StatCatalog, strings As UiStrings = Nothing)
+      As String
+  overload: SurvivorsMaker.Presentation.EffectText.Describe*
+- uid: SurvivorsMaker.Presentation.EffectText.Describe(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Describe(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  id: Describe(System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect},SurvivorsMaker.Core.StatCatalog,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Describe(IReadOnlyList<Effect>, StatCatalog, UiStrings)
+  nameWithType: EffectText.Describe(IReadOnlyList<Effect>, StatCatalog, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Describe(System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Core.Effect>,
+    SurvivorsMaker.Core.StatCatalog, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Describe(IReadOnlyList<Effect> effects, StatCatalog catalog, UiStrings strings = null)
+    parameters:
+    - id: effects
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+    - id: catalog
+      type: SurvivorsMaker.Core.StatCatalog
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Describe(effects As IReadOnlyList(Of Effect), catalog As StatCatalog, strings As UiStrings
+      = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.Describe*
+  nameWithType.vb: EffectText.Describe(IReadOnlyList(Of Effect), StatCatalog, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.Describe(System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Core.Effect),
+    SurvivorsMaker.Core.StatCatalog, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: Describe(IReadOnlyList(Of Effect), StatCatalog, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.Weapon(SurvivorsMaker.Run.WeaponItemDef,SurvivorsMaker.Simulation.SimSettings,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Weapon(SurvivorsMaker.Run.WeaponItemDef,SurvivorsMaker.Simulation.SimSettings,SurvivorsMaker.Presentation.UiStrings)
+  id: Weapon(SurvivorsMaker.Run.WeaponItemDef,SurvivorsMaker.Simulation.SimSettings,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Weapon(WeaponItemDef, SimSettings, UiStrings)
+  nameWithType: EffectText.Weapon(WeaponItemDef, SimSettings, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Weapon(SurvivorsMaker.Run.WeaponItemDef, SurvivorsMaker.Simulation.SimSettings,
+    SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Weapon(WeaponItemDef item, SimSettings settings, UiStrings strings = null)
+    parameters:
+    - id: item
+      type: SurvivorsMaker.Run.WeaponItemDef
+    - id: settings
+      type: SurvivorsMaker.Simulation.SimSettings
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Weapon(item As WeaponItemDef, settings As SimSettings, strings As UiStrings = Nothing)
+      As String
+  overload: SurvivorsMaker.Presentation.EffectText.Weapon*
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockCondition(SurvivorsMaker.Run.UnlockDef,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.UnlockCondition(SurvivorsMaker.Run.UnlockDef,SurvivorsMaker.Presentation.UiStrings)
+  id: UnlockCondition(SurvivorsMaker.Run.UnlockDef,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: UnlockCondition(UnlockDef, UiStrings)
+  nameWithType: EffectText.UnlockCondition(UnlockDef, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockCondition(SurvivorsMaker.Run.UnlockDef, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: '"reach wave 5", "win one run as Ranger" ... (lower case, to follow a prefix such as "To unlock:").'
+  example: []
+  syntax:
+    content: public static string UnlockCondition(UnlockDef unlock, UiStrings strings = null)
+    parameters:
+    - id: unlock
+      type: SurvivorsMaker.Run.UnlockDef
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function UnlockCondition(unlock As UnlockDef, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.UnlockCondition*
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockKind(SurvivorsMaker.Run.UnlockTarget,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.UnlockKind(SurvivorsMaker.Run.UnlockTarget,SurvivorsMaker.Presentation.UiStrings)
+  id: UnlockKind(SurvivorsMaker.Run.UnlockTarget,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: UnlockKind(UnlockTarget, UiStrings)
+  nameWithType: EffectText.UnlockKind(UnlockTarget, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockKind(SurvivorsMaker.Run.UnlockTarget, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string UnlockKind(UnlockTarget target, UiStrings strings = null)
+    parameters:
+    - id: target
+      type: SurvivorsMaker.Run.UnlockTarget
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function UnlockKind(target As UnlockTarget, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.UnlockKind*
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockConditions(SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.UnlockTarget,System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.UnlockConditions(SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.UnlockTarget,System.String,SurvivorsMaker.Presentation.UiStrings)
+  id: UnlockConditions(SurvivorsMaker.Run.RunContent,SurvivorsMaker.Run.UnlockTarget,System.String,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: UnlockConditions(RunContent, UnlockTarget, string, UiStrings)
+  nameWithType: EffectText.UnlockConditions(RunContent, UnlockTarget, string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockConditions(SurvivorsMaker.Run.RunContent, SurvivorsMaker.Run.UnlockTarget,
+    string, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Conditions for one target, joined (several unlock rules for one target are alternatives).
+  example: []
+  syntax:
+    content: public static string UnlockConditions(RunContent content, UnlockTarget target, string targetId, UiStrings strings
+      = null)
+    parameters:
+    - id: content
+      type: SurvivorsMaker.Run.RunContent
+    - id: target
+      type: SurvivorsMaker.Run.UnlockTarget
+    - id: targetId
+      type: System.String
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function UnlockConditions(content As RunContent, target As UnlockTarget, targetId As String,
+      strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.UnlockConditions*
+  nameWithType.vb: EffectText.UnlockConditions(RunContent, UnlockTarget, String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.UnlockConditions(SurvivorsMaker.Run.RunContent, SurvivorsMaker.Run.UnlockTarget,
+    String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: UnlockConditions(RunContent, UnlockTarget, String, UiStrings)
+- uid: SurvivorsMaker.Presentation.EffectText.Result(SurvivorsMaker.Run.RunResult,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Result(SurvivorsMaker.Run.RunResult,SurvivorsMaker.Presentation.UiStrings)
+  id: Result(SurvivorsMaker.Run.RunResult,SurvivorsMaker.Presentation.UiStrings)
+  parent: SurvivorsMaker.Presentation.EffectText
+  langs:
+  - csharp
+  - vb
+  name: Result(RunResult, UiStrings)
+  nameWithType: EffectText.Result(RunResult, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Result(SurvivorsMaker.Run.RunResult, SurvivorsMaker.Presentation.UiStrings)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public static string Result(RunResult result, UiStrings strings = null)
+    parameters:
+    - id: result
+      type: SurvivorsMaker.Run.RunResult
+    - id: strings
+      type: SurvivorsMaker.Presentation.UiStrings
+    return:
+      type: System.String
+    content.vb: Public Shared Function Result(result As RunResult, strings As UiStrings = Nothing) As String
+  overload: SurvivorsMaker.Presentation.EffectText.Result*
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.EffectText.Name*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.Name
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Name_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: Name
+  nameWithType: EffectText.Name
+  fullName: SurvivorsMaker.Presentation.EffectText.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Presentation.UiStrings
+  commentId: T:SurvivorsMaker.Presentation.UiStrings
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiStrings.html
+  name: UiStrings
+  nameWithType: UiStrings
+  fullName: SurvivorsMaker.Presentation.UiStrings
+- uid: SurvivorsMaker.Presentation.EffectText.TieredName*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.TieredName
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_TieredName_System_String_System_Int32_SurvivorsMaker_Presentation_UiStrings_
+  name: TieredName
+  nameWithType: EffectText.TieredName
+  fullName: SurvivorsMaker.Presentation.EffectText.TieredName
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Data.ContentTextTable
+  commentId: T:SurvivorsMaker.Data.ContentTextTable
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html
+  name: ContentTextTable
+  nameWithType: ContentTextTable
+  fullName: SurvivorsMaker.Data.ContentTextTable
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  commentId: M:SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Name_SurvivorsMaker_Data_ContentTextKind_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: Name(ContentTextKind, string, UiStrings)
+  nameWithType: EffectText.Name(ContentTextKind, string, UiStrings)
+  fullName: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind, string, SurvivorsMaker.Presentation.UiStrings)
+  nameWithType.vb: EffectText.Name(ContentTextKind, String, UiStrings)
+  fullName.vb: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind, String, SurvivorsMaker.Presentation.UiStrings)
+  name.vb: Name(ContentTextKind, String, UiStrings)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+    name: Name
+    isExternal: true
+    href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Name_SurvivorsMaker_Data_ContentTextKind_System_String_SurvivorsMaker_Presentation_UiStrings_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.UiStrings
+    name: UiStrings
+    isExternal: true
+    href: SurvivorsMaker.Presentation.UiStrings.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.EffectText.Name(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Presentation.UiStrings)
+    name: Name
+    isExternal: true
+    href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Name_SurvivorsMaker_Data_ContentTextKind_System_String_SurvivorsMaker_Presentation_UiStrings_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Presentation.UiStrings
+    name: UiStrings
+    isExternal: true
+    href: SurvivorsMaker.Presentation.UiStrings.html
+  - name: )
+- uid: SurvivorsMaker.Presentation.EffectText.Description*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.Description
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Description_SurvivorsMaker_Data_ContentTextKind_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: Description
+  nameWithType: EffectText.Description
+  fullName: SurvivorsMaker.Presentation.EffectText.Description
+- uid: SurvivorsMaker.Presentation.EffectText.WithDescription*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.WithDescription
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_WithDescription_System_String_System_String_
+  name: WithDescription
+  nameWithType: EffectText.WithDescription
+  fullName: SurvivorsMaker.Presentation.EffectText.WithDescription
+- uid: SurvivorsMaker.Presentation.EffectText.KindOf*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.KindOf
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_KindOf_SurvivorsMaker_Run_UnlockTarget_
+  name: KindOf
+  nameWithType: EffectText.KindOf
+  fullName: SurvivorsMaker.Presentation.EffectText.KindOf
+- uid: SurvivorsMaker.Run.UnlockTarget
+  commentId: T:SurvivorsMaker.Run.UnlockTarget
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.UnlockTarget.html
+  name: UnlockTarget
+  nameWithType: UnlockTarget
+  fullName: SurvivorsMaker.Run.UnlockTarget
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.EffectText.Describe*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.Describe
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Describe_SurvivorsMaker_Core_Effect_SurvivorsMaker_Core_StatCatalog_SurvivorsMaker_Presentation_UiStrings_
+  name: Describe
+  nameWithType: EffectText.Describe
+  fullName: SurvivorsMaker.Presentation.EffectText.Describe
+- uid: SurvivorsMaker.Core.Effect
+  commentId: T:SurvivorsMaker.Core.Effect
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.Effect.html
+  name: Effect
+  nameWithType: Effect
+  fullName: SurvivorsMaker.Core.Effect
+- uid: SurvivorsMaker.Core.StatCatalog
+  commentId: T:SurvivorsMaker.Core.StatCatalog
+  parent: SurvivorsMaker.Core
+  isExternal: true
+  href: SurvivorsMaker.Core.StatCatalog.html
+  name: StatCatalog
+  nameWithType: StatCatalog
+  fullName: SurvivorsMaker.Core.StatCatalog
+- uid: SurvivorsMaker.Core
+  commentId: N:SurvivorsMaker.Core
+  isExternal: true
+  name: SurvivorsMaker.Core
+  nameWithType: SurvivorsMaker.Core
+  fullName: SurvivorsMaker.Core
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Core
+    name: Core
+    isExternal: true
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Core.Effect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Effect>
+  nameWithType: IReadOnlyList<Effect>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Core.Effect>
+  nameWithType.vb: IReadOnlyList(Of Effect)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Core.Effect)
+  name.vb: IReadOnlyList(Of Effect)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.Effect
+    name: Effect
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.EffectText.Weapon*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.Weapon
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Weapon_SurvivorsMaker_Run_WeaponItemDef_SurvivorsMaker_Simulation_SimSettings_SurvivorsMaker_Presentation_UiStrings_
+  name: Weapon
+  nameWithType: EffectText.Weapon
+  fullName: SurvivorsMaker.Presentation.EffectText.Weapon
+- uid: SurvivorsMaker.Run.WeaponItemDef
+  commentId: T:SurvivorsMaker.Run.WeaponItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponItemDef.html
+  name: WeaponItemDef
+  nameWithType: WeaponItemDef
+  fullName: SurvivorsMaker.Run.WeaponItemDef
+- uid: SurvivorsMaker.Simulation.SimSettings
+  commentId: T:SurvivorsMaker.Simulation.SimSettings
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimSettings.html
+  name: SimSettings
+  nameWithType: SimSettings
+  fullName: SurvivorsMaker.Simulation.SimSettings
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockCondition*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.UnlockCondition
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_UnlockCondition_SurvivorsMaker_Run_UnlockDef_SurvivorsMaker_Presentation_UiStrings_
+  name: UnlockCondition
+  nameWithType: EffectText.UnlockCondition
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockCondition
+- uid: SurvivorsMaker.Run.UnlockDef
+  commentId: T:SurvivorsMaker.Run.UnlockDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.UnlockDef.html
+  name: UnlockDef
+  nameWithType: UnlockDef
+  fullName: SurvivorsMaker.Run.UnlockDef
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockKind*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.UnlockKind
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_UnlockKind_SurvivorsMaker_Run_UnlockTarget_SurvivorsMaker_Presentation_UiStrings_
+  name: UnlockKind
+  nameWithType: EffectText.UnlockKind
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockKind
+- uid: SurvivorsMaker.Presentation.EffectText.UnlockConditions*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.UnlockConditions
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_UnlockConditions_SurvivorsMaker_Run_RunContent_SurvivorsMaker_Run_UnlockTarget_System_String_SurvivorsMaker_Presentation_UiStrings_
+  name: UnlockConditions
+  nameWithType: EffectText.UnlockConditions
+  fullName: SurvivorsMaker.Presentation.EffectText.UnlockConditions
+- uid: SurvivorsMaker.Run.RunContent
+  commentId: T:SurvivorsMaker.Run.RunContent
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunContent.html
+  name: RunContent
+  nameWithType: RunContent
+  fullName: SurvivorsMaker.Run.RunContent
+- uid: SurvivorsMaker.Presentation.EffectText.Result*
+  commentId: Overload:SurvivorsMaker.Presentation.EffectText.Result
+  isExternal: true
+  href: SurvivorsMaker.Presentation.EffectText.html#SurvivorsMaker_Presentation_EffectText_Result_SurvivorsMaker_Run_RunResult_SurvivorsMaker_Presentation_UiStrings_
+  name: Result
+  nameWithType: EffectText.Result
+  fullName: SurvivorsMaker.Presentation.EffectText.Result
+- uid: SurvivorsMaker.Run.RunResult
+  commentId: T:SurvivorsMaker.Run.RunResult
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunResult.html
+  name: RunResult
+  nameWithType: RunResult
+  fullName: SurvivorsMaker.Run.RunResult

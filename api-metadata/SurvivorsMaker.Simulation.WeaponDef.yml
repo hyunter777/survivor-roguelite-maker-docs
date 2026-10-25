@@ -1,0 +1,1300 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WeaponDef
+  commentId: T:SurvivorsMaker.Simulation.WeaponDef
+  id: WeaponDef
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WeaponDef.#ctor
+  - SurvivorsMaker.Simulation.WeaponDef.AlternateStyles
+  - SurvivorsMaker.Simulation.WeaponDef.AuraRadius
+  - SurvivorsMaker.Simulation.WeaponDef.BaseDamage
+  - SurvivorsMaker.Simulation.WeaponDef.Behaviour
+  - SurvivorsMaker.Simulation.WeaponDef.CooldownTicks
+  - SurvivorsMaker.Simulation.WeaponDef.CritChance
+  - SurvivorsMaker.Simulation.WeaponDef.CritMultiplier
+  - SurvivorsMaker.Simulation.WeaponDef.HitboxHalfExtents
+  - SurvivorsMaker.Simulation.WeaponDef.HitboxOffset
+  - SurvivorsMaker.Simulation.WeaponDef.HitsOnReturn
+  - SurvivorsMaker.Simulation.WeaponDef.Homing
+  - SurvivorsMaker.Simulation.WeaponDef.HomingTurnDegreesPerSecond
+  - SurvivorsMaker.Simulation.WeaponDef.Id
+  - SurvivorsMaker.Simulation.WeaponDef.Kind
+  - SurvivorsMaker.Simulation.WeaponDef.Knockback
+  - SurvivorsMaker.Simulation.WeaponDef.LongCooldownEvery
+  - SurvivorsMaker.Simulation.WeaponDef.LongCooldownMultiplier
+  - SurvivorsMaker.Simulation.WeaponDef.MuzzleOffset
+  - SurvivorsMaker.Simulation.WeaponDef.OnHit
+  - SurvivorsMaker.Simulation.WeaponDef.OrbitBladeRadius
+  - SurvivorsMaker.Simulation.WeaponDef.OrbitBlades
+  - SurvivorsMaker.Simulation.WeaponDef.OrbitDegreesPerSecond
+  - SurvivorsMaker.Simulation.WeaponDef.OrbitRadius
+  - SurvivorsMaker.Simulation.WeaponDef.OrbitRehitTicks
+  - SurvivorsMaker.Simulation.WeaponDef.Parameters
+  - SurvivorsMaker.Simulation.WeaponDef.Pierce
+  - SurvivorsMaker.Simulation.WeaponDef.PierceDamageLoss
+  - SurvivorsMaker.Simulation.WeaponDef.ProjectileCount
+  - SurvivorsMaker.Simulation.WeaponDef.ProjectileSpeed
+  - SurvivorsMaker.Simulation.WeaponDef.Range
+  - SurvivorsMaker.Simulation.WeaponDef.Scaling
+  - SurvivorsMaker.Simulation.WeaponDef.SpreadHalfDegrees
+  - SurvivorsMaker.Simulation.WeaponDef.Style
+  - SurvivorsMaker.Simulation.WeaponDef.VisualOffset
+  - SurvivorsMaker.Simulation.WeaponDef.WindupRetreat
+  - SurvivorsMaker.Simulation.WeaponDef.WindupSeconds
+  langs:
+  - csharp
+  - vb
+  name: WeaponDef
+  nameWithType: WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public sealed class WeaponDef
+    content.vb: Public NotInheritable Class WeaponDef
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.WeaponDef.Id
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Id
+  id: Id
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: WeaponDef.Id
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Id
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public string Id
+    return:
+      type: System.String
+    content.vb: Public Id As String
+- uid: SurvivorsMaker.Simulation.WeaponDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Kind
+  id: Kind
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: WeaponDef.Kind
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Kind
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WeaponKind Kind
+    return:
+      type: SurvivorsMaker.Simulation.WeaponKind
+    content.vb: Public Kind As WeaponKind
+- uid: SurvivorsMaker.Simulation.WeaponDef.Behaviour
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Behaviour
+  id: Behaviour
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Behaviour
+  nameWithType: WeaponDef.Behaviour
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Behaviour
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Registered weapon behaviour id (<xref href="SurvivorsMaker.Simulation.SimBehaviours.Weapons" data-throw-if-not-resolved="false"></xref>).
+    Empty = the built-in behaviour of <xref href="SurvivorsMaker.Simulation.WeaponDef.Kind" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string Behaviour
+    return:
+      type: System.String
+    content.vb: Public Behaviour As String
+- uid: SurvivorsMaker.Simulation.WeaponDef.Parameters
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Parameters
+  id: Parameters
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: WeaponDef.Parameters
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Parameters
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Values a custom weapon behaviour reads.
+  example: []
+  syntax:
+    content: public List<BehaviourParameter> Parameters
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+    content.vb: Public Parameters As List(Of BehaviourParameter)
+- uid: SurvivorsMaker.Simulation.WeaponDef.BaseDamage
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.BaseDamage
+  id: BaseDamage
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: BaseDamage
+  nameWithType: WeaponDef.BaseDamage
+  fullName: SurvivorsMaker.Simulation.WeaponDef.BaseDamage
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int BaseDamage
+    return:
+      type: System.Int32
+    content.vb: Public BaseDamage As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.Scaling
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Scaling
+  id: Scaling
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Scaling
+  nameWithType: WeaponDef.Scaling
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Scaling
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public List<StatScaling> Scaling
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Core.StatScaling}
+    content.vb: Public Scaling As List(Of StatScaling)
+- uid: SurvivorsMaker.Simulation.WeaponDef.CritChance
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.CritChance
+  id: CritChance
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: CritChance
+  nameWithType: WeaponDef.CritChance
+  fullName: SurvivorsMaker.Simulation.WeaponDef.CritChance
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Base crit chance 0–1, added to the player's crit stat.
+  example: []
+  syntax:
+    content: public float CritChance
+    return:
+      type: System.Single
+    content.vb: Public CritChance As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.CritMultiplier
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.CritMultiplier
+  id: CritMultiplier
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: CritMultiplier
+  nameWithType: WeaponDef.CritMultiplier
+  fullName: SurvivorsMaker.Simulation.WeaponDef.CritMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float CritMultiplier
+    return:
+      type: System.Single
+    content.vb: Public CritMultiplier As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.Range
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Range
+  id: Range
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: WeaponDef.Range
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Range
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Base reach / projectile travel distance, before the player's range stat.
+  example: []
+  syntax:
+    content: public float Range
+    return:
+      type: System.Single
+    content.vb: Public Range As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.CooldownTicks
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.CooldownTicks
+  id: CooldownTicks
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: CooldownTicks
+  nameWithType: WeaponDef.CooldownTicks
+  fullName: SurvivorsMaker.Simulation.WeaponDef.CooldownTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int CooldownTicks
+    return:
+      type: System.Int32
+    content.vb: Public CooldownTicks As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.LongCooldownEvery
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.LongCooldownEvery
+  id: LongCooldownEvery
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: LongCooldownEvery
+  nameWithType: WeaponDef.LongCooldownEvery
+  fullName: SurvivorsMaker.Simulation.WeaponDef.LongCooldownEvery
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Every N completed attacks the cooldown is multiplied by LongCooldownMultiplier. 0 = off.
+  example: []
+  syntax:
+    content: public int LongCooldownEvery
+    return:
+      type: System.Int32
+    content.vb: Public LongCooldownEvery As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.LongCooldownMultiplier
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.LongCooldownMultiplier
+  id: LongCooldownMultiplier
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: LongCooldownMultiplier
+  nameWithType: WeaponDef.LongCooldownMultiplier
+  fullName: SurvivorsMaker.Simulation.WeaponDef.LongCooldownMultiplier
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float LongCooldownMultiplier
+    return:
+      type: System.Single
+    content.vb: Public LongCooldownMultiplier As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.Knockback
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Knockback
+  id: Knockback
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Knockback
+  nameWithType: WeaponDef.Knockback
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Knockback
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float Knockback
+    return:
+      type: System.Single
+    content.vb: Public Knockback As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.VisualOffset
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.VisualOffset
+  id: VisualOffset
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: VisualOffset
+  nameWithType: WeaponDef.VisualOffset
+  fullName: SurvivorsMaker.Simulation.WeaponDef.VisualOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Forward offset of the weapon's visual from the anchor.
+  example: []
+  syntax:
+    content: public float VisualOffset
+    return:
+      type: System.Single
+    content.vb: Public VisualOffset As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.MuzzleOffset
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.MuzzleOffset
+  id: MuzzleOffset
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: MuzzleOffset
+  nameWithType: WeaponDef.MuzzleOffset
+  fullName: SurvivorsMaker.Simulation.WeaponDef.MuzzleOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Forward offset of the muzzle beyond the visual offset.
+  example: []
+  syntax:
+    content: public float MuzzleOffset
+    return:
+      type: System.Single
+    content.vb: Public MuzzleOffset As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.ProjectileCount
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.ProjectileCount
+  id: ProjectileCount
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileCount
+  nameWithType: WeaponDef.ProjectileCount
+  fullName: SurvivorsMaker.Simulation.WeaponDef.ProjectileCount
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int ProjectileCount
+    return:
+      type: System.Int32
+    content.vb: Public ProjectileCount As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.SpreadHalfDegrees
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.SpreadHalfDegrees
+  id: SpreadHalfDegrees
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: SpreadHalfDegrees
+  nameWithType: WeaponDef.SpreadHalfDegrees
+  fullName: SurvivorsMaker.Simulation.WeaponDef.SpreadHalfDegrees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Half spread in degrees on each side of the aim.
+  example: []
+  syntax:
+    content: public float SpreadHalfDegrees
+    return:
+      type: System.Single
+    content.vb: Public SpreadHalfDegrees As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.ProjectileSpeed
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.ProjectileSpeed
+  id: ProjectileSpeed
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: ProjectileSpeed
+  nameWithType: WeaponDef.ProjectileSpeed
+  fullName: SurvivorsMaker.Simulation.WeaponDef.ProjectileSpeed
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float ProjectileSpeed
+    return:
+      type: System.Single
+    content.vb: Public ProjectileSpeed As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.Pierce
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Pierce
+  id: Pierce
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Pierce
+  nameWithType: WeaponDef.Pierce
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Pierce
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Extra enemies a projectile may hit after the first.
+  example: []
+  syntax:
+    content: public int Pierce
+    return:
+      type: System.Int32
+    content.vb: Public Pierce As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.PierceDamageLoss
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.PierceDamageLoss
+  id: PierceDamageLoss
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: PierceDamageLoss
+  nameWithType: WeaponDef.PierceDamageLoss
+  fullName: SurvivorsMaker.Simulation.WeaponDef.PierceDamageLoss
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Damage lost per pierce, 0–1.
+  example: []
+  syntax:
+    content: public float PierceDamageLoss
+    return:
+      type: System.Single
+    content.vb: Public PierceDamageLoss As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.Homing
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Homing
+  id: Homing
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Homing
+  nameWithType: WeaponDef.Homing
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Homing
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Projectiles turn toward the nearest enemy.
+  example: []
+  syntax:
+    content: public bool Homing
+    return:
+      type: System.Boolean
+    content.vb: Public Homing As Boolean
+- uid: SurvivorsMaker.Simulation.WeaponDef.HomingTurnDegreesPerSecond
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.HomingTurnDegreesPerSecond
+  id: HomingTurnDegreesPerSecond
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: HomingTurnDegreesPerSecond
+  nameWithType: WeaponDef.HomingTurnDegreesPerSecond
+  fullName: SurvivorsMaker.Simulation.WeaponDef.HomingTurnDegreesPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float HomingTurnDegreesPerSecond
+    return:
+      type: System.Single
+    content.vb: Public HomingTurnDegreesPerSecond As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.OrbitBlades
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OrbitBlades
+  id: OrbitBlades
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OrbitBlades
+  nameWithType: WeaponDef.OrbitBlades
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OrbitBlades
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public int OrbitBlades
+    return:
+      type: System.Int32
+    content.vb: Public OrbitBlades As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.OrbitRadius
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OrbitRadius
+  id: OrbitRadius
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OrbitRadius
+  nameWithType: WeaponDef.OrbitRadius
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OrbitRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float OrbitRadius
+    return:
+      type: System.Single
+    content.vb: Public OrbitRadius As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.OrbitDegreesPerSecond
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OrbitDegreesPerSecond
+  id: OrbitDegreesPerSecond
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OrbitDegreesPerSecond
+  nameWithType: WeaponDef.OrbitDegreesPerSecond
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OrbitDegreesPerSecond
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float OrbitDegreesPerSecond
+    return:
+      type: System.Single
+    content.vb: Public OrbitDegreesPerSecond As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.OrbitBladeRadius
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OrbitBladeRadius
+  id: OrbitBladeRadius
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OrbitBladeRadius
+  nameWithType: WeaponDef.OrbitBladeRadius
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OrbitBladeRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Radius of each blade for hits.
+  example: []
+  syntax:
+    content: public float OrbitBladeRadius
+    return:
+      type: System.Single
+    content.vb: Public OrbitBladeRadius As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.OrbitRehitTicks
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OrbitRehitTicks
+  id: OrbitRehitTicks
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OrbitRehitTicks
+  nameWithType: WeaponDef.OrbitRehitTicks
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OrbitRehitTicks
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Ticks before the same blade can hit the same enemy again.
+  example: []
+  syntax:
+    content: public int OrbitRehitTicks
+    return:
+      type: System.Int32
+    content.vb: Public OrbitRehitTicks As Integer
+- uid: SurvivorsMaker.Simulation.WeaponDef.AuraRadius
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.AuraRadius
+  id: AuraRadius
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: AuraRadius
+  nameWithType: WeaponDef.AuraRadius
+  fullName: SurvivorsMaker.Simulation.WeaponDef.AuraRadius
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float AuraRadius
+    return:
+      type: System.Single
+    content.vb: Public AuraRadius As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.OnHit
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.OnHit
+  id: OnHit
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: OnHit
+  nameWithType: WeaponDef.OnHit
+  fullName: SurvivorsMaker.Simulation.WeaponDef.OnHit
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Extra effects on every hit of this weapon (explode, chain, statuses).
+  example: []
+  syntax:
+    content: public List<HitEffectDef> OnHit
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Simulation.HitEffectDef}
+    content.vb: Public OnHit As List(Of HitEffectDef)
+- uid: SurvivorsMaker.Simulation.WeaponDef.Style
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Style
+  id: Style
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: Style
+  nameWithType: WeaponDef.Style
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Style
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public MeleeStyle Style
+    return:
+      type: SurvivorsMaker.Simulation.MeleeStyle
+    content.vb: Public Style As MeleeStyle
+- uid: SurvivorsMaker.Simulation.WeaponDef.AlternateStyles
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.AlternateStyles
+  id: AlternateStyles
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: AlternateStyles
+  nameWithType: WeaponDef.AlternateStyles
+  fullName: SurvivorsMaker.Simulation.WeaponDef.AlternateStyles
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool AlternateStyles
+    return:
+      type: System.Boolean
+    content.vb: Public AlternateStyles As Boolean
+- uid: SurvivorsMaker.Simulation.WeaponDef.HitsOnReturn
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.HitsOnReturn
+  id: HitsOnReturn
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: HitsOnReturn
+  nameWithType: WeaponDef.HitsOnReturn
+  fullName: SurvivorsMaker.Simulation.WeaponDef.HitsOnReturn
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public bool HitsOnReturn
+    return:
+      type: System.Boolean
+    content.vb: Public HitsOnReturn As Boolean
+- uid: SurvivorsMaker.Simulation.WeaponDef.HitboxOffset
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.HitboxOffset
+  id: HitboxOffset
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: HitboxOffset
+  nameWithType: WeaponDef.HitboxOffset
+  fullName: SurvivorsMaker.Simulation.WeaponDef.HitboxOffset
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Forward offset of the hit box center from the anchor.
+  example: []
+  syntax:
+    content: public float HitboxOffset
+    return:
+      type: System.Single
+    content.vb: Public HitboxOffset As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.HitboxHalfExtents
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.HitboxHalfExtents
+  id: HitboxHalfExtents
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: HitboxHalfExtents
+  nameWithType: WeaponDef.HitboxHalfExtents
+  fullName: SurvivorsMaker.Simulation.WeaponDef.HitboxHalfExtents
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Hit box half extents (forward, side). ≤ 0 → settings default.
+  example: []
+  syntax:
+    content: public Vec2 HitboxHalfExtents
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public HitboxHalfExtents As Vec2
+- uid: SurvivorsMaker.Simulation.WeaponDef.WindupRetreat
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.WindupRetreat
+  id: WindupRetreat
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: WindupRetreat
+  nameWithType: WeaponDef.WindupRetreat
+  fullName: SurvivorsMaker.Simulation.WeaponDef.WindupRetreat
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float WindupRetreat
+    return:
+      type: System.Single
+    content.vb: Public WindupRetreat As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.WindupSeconds
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.WindupSeconds
+  id: WindupSeconds
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: WindupSeconds
+  nameWithType: WeaponDef.WindupSeconds
+  fullName: SurvivorsMaker.Simulation.WeaponDef.WindupSeconds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public float WindupSeconds
+    return:
+      type: System.Single
+    content.vb: Public WindupSeconds As Single
+- uid: SurvivorsMaker.Simulation.WeaponDef.#ctor
+  commentId: M:SurvivorsMaker.Simulation.WeaponDef.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.WeaponDef
+  langs:
+  - csharp
+  - vb
+  name: WeaponDef()
+  nameWithType: WeaponDef.WeaponDef()
+  fullName: SurvivorsMaker.Simulation.WeaponDef.WeaponDef()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public WeaponDef()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.WeaponDef.#ctor*
+  nameWithType.vb: WeaponDef.New()
+  fullName.vb: SurvivorsMaker.Simulation.WeaponDef.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Simulation.WeaponKind
+  commentId: T:SurvivorsMaker.Simulation.WeaponKind
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponKind.html
+  name: WeaponKind
+  nameWithType: WeaponKind
+  fullName: SurvivorsMaker.Simulation.WeaponKind
+- uid: SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  commentId: F:SurvivorsMaker.Simulation.SimBehaviours.Weapons
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimBehaviours.html#SurvivorsMaker_Simulation_SimBehaviours_Weapons
+  name: Weapons
+  nameWithType: SimBehaviours.Weapons
+  fullName: SurvivorsMaker.Simulation.SimBehaviours.Weapons
+- uid: SurvivorsMaker.Simulation.WeaponDef.Kind
+  commentId: F:SurvivorsMaker.Simulation.WeaponDef.Kind
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html#SurvivorsMaker_Simulation_WeaponDef_Kind
+  name: Kind
+  nameWithType: WeaponDef.Kind
+  fullName: SurvivorsMaker.Simulation.WeaponDef.Kind
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.BehaviourParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BehaviourParameter>
+  nameWithType: List<BehaviourParameter>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.BehaviourParameter>
+  nameWithType.vb: List(Of BehaviourParameter)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.BehaviourParameter)
+  name.vb: List(Of BehaviourParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.BehaviourParameter
+    name: BehaviourParameter
+    isExternal: true
+    href: SurvivorsMaker.Simulation.BehaviourParameter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{SurvivorsMaker.Core.StatScaling}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Core.StatScaling}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<StatScaling>
+  nameWithType: List<StatScaling>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Core.StatScaling>
+  nameWithType.vb: List(Of StatScaling)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Core.StatScaling)
+  name.vb: List(Of StatScaling)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Core.StatScaling
+    name: StatScaling
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Core.StatScaling
+    name: StatScaling
+    isExternal: true
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{SurvivorsMaker.Simulation.HitEffectDef}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Simulation.HitEffectDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HitEffectDef>
+  nameWithType: List<HitEffectDef>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Simulation.HitEffectDef>
+  nameWithType.vb: List(Of HitEffectDef)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Simulation.HitEffectDef)
+  name.vb: List(Of HitEffectDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.HitEffectDef
+    name: HitEffectDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.HitEffectDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.HitEffectDef
+    name: HitEffectDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.HitEffectDef.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.MeleeStyle
+  commentId: T:SurvivorsMaker.Simulation.MeleeStyle
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.MeleeStyle.html
+  name: MeleeStyle
+  nameWithType: MeleeStyle
+  fullName: SurvivorsMaker.Simulation.MeleeStyle
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation.WeaponDef.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.WeaponDef.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WeaponDef.html#SurvivorsMaker_Simulation_WeaponDef__ctor
+  name: WeaponDef
+  nameWithType: WeaponDef.WeaponDef
+  fullName: SurvivorsMaker.Simulation.WeaponDef.WeaponDef
+  nameWithType.vb: WeaponDef.New
+  fullName.vb: SurvivorsMaker.Simulation.WeaponDef.New
+  name.vb: New

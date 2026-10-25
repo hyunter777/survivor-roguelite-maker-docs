@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.TierOddsMode
+  commentId: T:SurvivorsMaker.Run.TierOddsMode
+  id: TierOddsMode
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.TierOddsMode.Thresholds
+  - SurvivorsMaker.Run.TierOddsMode.Weights
+  langs:
+  - csharp
+  - vb
+  name: TierOddsMode
+  nameWithType: TierOddsMode
+  fullName: SurvivorsMaker.Run.TierOddsMode
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Whether the tier table is interpreted as relative weights or cumulative thresholds.
+  example: []
+  syntax:
+    content: public enum TierOddsMode
+    content.vb: Public Enum TierOddsMode
+- uid: SurvivorsMaker.Run.TierOddsMode.Weights
+  commentId: F:SurvivorsMaker.Run.TierOddsMode.Weights
+  id: Weights
+  parent: SurvivorsMaker.Run.TierOddsMode
+  langs:
+  - csharp
+  - vb
+  name: Weights
+  nameWithType: TierOddsMode.Weights
+  fullName: SurvivorsMaker.Run.TierOddsMode.Weights
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Weights = 0
+    return:
+      type: SurvivorsMaker.Run.TierOddsMode
+- uid: SurvivorsMaker.Run.TierOddsMode.Thresholds
+  commentId: F:SurvivorsMaker.Run.TierOddsMode.Thresholds
+  id: Thresholds
+  parent: SurvivorsMaker.Run.TierOddsMode
+  langs:
+  - csharp
+  - vb
+  name: Thresholds
+  nameWithType: TierOddsMode.Thresholds
+  fullName: SurvivorsMaker.Run.TierOddsMode.Thresholds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: Thresholds = 1
+    return:
+      type: SurvivorsMaker.Run.TierOddsMode
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.TierOddsMode
+  commentId: T:SurvivorsMaker.Run.TierOddsMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.TierOddsMode.html
+  name: TierOddsMode
+  nameWithType: TierOddsMode
+  fullName: SurvivorsMaker.Run.TierOddsMode

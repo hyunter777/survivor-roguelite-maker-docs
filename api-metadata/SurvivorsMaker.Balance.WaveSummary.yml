@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.WaveSummary
+  commentId: T:SurvivorsMaker.Balance.WaveSummary
+  id: WaveSummary
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.WaveSummary.Entered
+  - SurvivorsMaker.Balance.WaveSummary.MeanCurrency
+  - SurvivorsMaker.Balance.WaveSummary.MeanDamageTaken
+  - SurvivorsMaker.Balance.WaveSummary.MeanKills
+  - SurvivorsMaker.Balance.WaveSummary.MeanLevel
+  - SurvivorsMaker.Balance.WaveSummary.SurvivalHigh
+  - SurvivorsMaker.Balance.WaveSummary.SurvivalLow
+  - SurvivorsMaker.Balance.WaveSummary.SurvivalRate
+  - SurvivorsMaker.Balance.WaveSummary.Survived
+  - SurvivorsMaker.Balance.WaveSummary.Wave
+  langs:
+  - csharp
+  - vb
+  name: WaveSummary
+  nameWithType: WaveSummary
+  fullName: SurvivorsMaker.Balance.WaveSummary
+  type: Struct
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Survival of one wave across runs, with a 95 % Wilson interval.
+  example: []
+  syntax:
+    content: public struct WaveSummary
+    content.vb: Public Structure WaveSummary
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SurvivorsMaker.Balance.WaveSummary.Wave
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.Wave
+  id: Wave
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: WaveSummary.Wave
+  fullName: SurvivorsMaker.Balance.WaveSummary.Wave
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Wave
+    return:
+      type: System.Int32
+    content.vb: Public Wave As Integer
+- uid: SurvivorsMaker.Balance.WaveSummary.Entered
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.Entered
+  id: Entered
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: Entered
+  nameWithType: WaveSummary.Entered
+  fullName: SurvivorsMaker.Balance.WaveSummary.Entered
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Entered
+    return:
+      type: System.Int32
+    content.vb: Public Entered As Integer
+- uid: SurvivorsMaker.Balance.WaveSummary.Survived
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.Survived
+  id: Survived
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: Survived
+  nameWithType: WaveSummary.Survived
+  fullName: SurvivorsMaker.Balance.WaveSummary.Survived
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public int Survived
+    return:
+      type: System.Int32
+    content.vb: Public Survived As Integer
+- uid: SurvivorsMaker.Balance.WaveSummary.SurvivalRate
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.SurvivalRate
+  id: SurvivalRate
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: SurvivalRate
+  nameWithType: WaveSummary.SurvivalRate
+  fullName: SurvivorsMaker.Balance.WaveSummary.SurvivalRate
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float SurvivalRate
+    return:
+      type: System.Single
+    content.vb: Public SurvivalRate As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.SurvivalLow
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.SurvivalLow
+  id: SurvivalLow
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: SurvivalLow
+  nameWithType: WaveSummary.SurvivalLow
+  fullName: SurvivorsMaker.Balance.WaveSummary.SurvivalLow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float SurvivalLow
+    return:
+      type: System.Single
+    content.vb: Public SurvivalLow As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.SurvivalHigh
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.SurvivalHigh
+  id: SurvivalHigh
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: SurvivalHigh
+  nameWithType: WaveSummary.SurvivalHigh
+  fullName: SurvivorsMaker.Balance.WaveSummary.SurvivalHigh
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float SurvivalHigh
+    return:
+      type: System.Single
+    content.vb: Public SurvivalHigh As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.MeanKills
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.MeanKills
+  id: MeanKills
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: MeanKills
+  nameWithType: WaveSummary.MeanKills
+  fullName: SurvivorsMaker.Balance.WaveSummary.MeanKills
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanKills
+    return:
+      type: System.Single
+    content.vb: Public MeanKills As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.MeanCurrency
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.MeanCurrency
+  id: MeanCurrency
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: MeanCurrency
+  nameWithType: WaveSummary.MeanCurrency
+  fullName: SurvivorsMaker.Balance.WaveSummary.MeanCurrency
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanCurrency
+    return:
+      type: System.Single
+    content.vb: Public MeanCurrency As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.MeanDamageTaken
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.MeanDamageTaken
+  id: MeanDamageTaken
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: MeanDamageTaken
+  nameWithType: WaveSummary.MeanDamageTaken
+  fullName: SurvivorsMaker.Balance.WaveSummary.MeanDamageTaken
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanDamageTaken
+    return:
+      type: System.Single
+    content.vb: Public MeanDamageTaken As Single
+- uid: SurvivorsMaker.Balance.WaveSummary.MeanLevel
+  commentId: F:SurvivorsMaker.Balance.WaveSummary.MeanLevel
+  id: MeanLevel
+  parent: SurvivorsMaker.Balance.WaveSummary
+  langs:
+  - csharp
+  - vb
+  name: MeanLevel
+  nameWithType: WaveSummary.MeanLevel
+  fullName: SurvivorsMaker.Balance.WaveSummary.MeanLevel
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public float MeanLevel
+    return:
+      type: System.Single
+    content.vb: Public MeanLevel As Single
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

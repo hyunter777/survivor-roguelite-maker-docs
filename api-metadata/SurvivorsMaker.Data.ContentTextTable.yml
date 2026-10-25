@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Data.ContentTextTable
+  commentId: T:SurvivorsMaker.Data.ContentTextTable
+  id: ContentTextTable
+  parent: SurvivorsMaker.Data
+  children:
+  - SurvivorsMaker.Data.ContentTextTable.#ctor
+  - SurvivorsMaker.Data.ContentTextTable.Count
+  - SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  - SurvivorsMaker.Data.ContentTextTable.DescriptionSuffix
+  - SurvivorsMaker.Data.ContentTextTable.KeyOf(SurvivorsMaker.Data.ContentTextKind,System.String)
+  - SurvivorsMaker.Data.ContentTextTable.KindPrefix(SurvivorsMaker.Data.ContentTextKind)
+  - SurvivorsMaker.Data.ContentTextTable.NameSuffix
+  - SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  - SurvivorsMaker.Data.ContentTextTable.TryGet(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Data.ContentTextEntry@)
+  langs:
+  - csharp
+  - vb
+  name: ContentTextTable
+  nameWithType: ContentTextTable
+  fullName: SurvivorsMaker.Data.ContentTextTable
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: 'Id → authored text for every content definition, built by <xref href="SurvivorsMaker.Data.ContentAsset.BuildTextTable"
+    data-throw-if-not-resolved="false"></xref>.
+
+    Hosts without a ContentAsset can fill one with <xref href="SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind%2cSystem.String%2cSystem.String%2cSystem.String%2cSystem.String)"
+    data-throw-if-not-resolved="false"></xref>.'
+  example: []
+  syntax:
+    content: public sealed class ContentTextTable
+    content.vb: Public NotInheritable Class ContentTextTable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Data.ContentTextTable.NameSuffix
+  commentId: F:SurvivorsMaker.Data.ContentTextTable.NameSuffix
+  id: NameSuffix
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: NameSuffix
+  nameWithType: ContentTextTable.NameSuffix
+  fullName: SurvivorsMaker.Data.ContentTextTable.NameSuffix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public const string NameSuffix = ".name"
+    return:
+      type: System.String
+    content.vb: Public Const NameSuffix As String = ".name"
+- uid: SurvivorsMaker.Data.ContentTextTable.DescriptionSuffix
+  commentId: F:SurvivorsMaker.Data.ContentTextTable.DescriptionSuffix
+  id: DescriptionSuffix
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: DescriptionSuffix
+  nameWithType: ContentTextTable.DescriptionSuffix
+  fullName: SurvivorsMaker.Data.ContentTextTable.DescriptionSuffix
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public const string DescriptionSuffix = ".description"
+    return:
+      type: System.String
+    content.vb: Public Const DescriptionSuffix As String = ".description"
+- uid: SurvivorsMaker.Data.ContentTextTable.#ctor
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: ContentTextTable()
+  nameWithType: ContentTextTable.ContentTextTable()
+  fullName: SurvivorsMaker.Data.ContentTextTable.ContentTextTable()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  syntax:
+    content: public ContentTextTable()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Data.ContentTextTable.#ctor*
+  nameWithType.vb: ContentTextTable.New()
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.New()
+  name.vb: New()
+- uid: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  id: DefaultKey(SurvivorsMaker.Data.ContentTextKind,System.String)
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: DefaultKey(ContentTextKind, string)
+  nameWithType: ContentTextTable.DefaultKey(ContentTextKind, string)
+  fullName: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: '"character.&lt;id&gt;", "weapon.&lt;id&gt;", "item.&lt;id&gt;", "set.&lt;id&gt;" or "enemy.&lt;id&gt;".'
+  example: []
+  syntax:
+    content: public static string DefaultKey(ContentTextKind kind, string id)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DefaultKey(kind As ContentTextKind, id As String) As String
+  overload: SurvivorsMaker.Data.ContentTextTable.DefaultKey*
+  nameWithType.vb: ContentTextTable.DefaultKey(ContentTextKind, String)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.DefaultKey(SurvivorsMaker.Data.ContentTextKind, String)
+  name.vb: DefaultKey(ContentTextKind, String)
+- uid: SurvivorsMaker.Data.ContentTextTable.KindPrefix(SurvivorsMaker.Data.ContentTextKind)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.KindPrefix(SurvivorsMaker.Data.ContentTextKind)
+  id: KindPrefix(SurvivorsMaker.Data.ContentTextKind)
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: KindPrefix(ContentTextKind)
+  nameWithType: ContentTextTable.KindPrefix(ContentTextKind)
+  fullName: SurvivorsMaker.Data.ContentTextTable.KindPrefix(SurvivorsMaker.Data.ContentTextKind)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Returns the stable lowercase localization prefix for a content kind.
+  example: []
+  syntax:
+    content: public static string KindPrefix(ContentTextKind kind)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    return:
+      type: System.String
+    content.vb: Public Shared Function KindPrefix(kind As ContentTextKind) As String
+  overload: SurvivorsMaker.Data.ContentTextTable.KindPrefix*
+- uid: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  id: Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: Set(ContentTextKind, string, string, string, string)
+  nameWithType: ContentTextTable.Set(ContentTextKind, string, string, string, string)
+  fullName: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind, string, string, string, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Adds or replaces the entry for <code class="paramref">kind</code> and <code class="paramref">id</code>.
+  example: []
+  syntax:
+    content: public ContentTextEntry Set(ContentTextKind kind, string id, string displayName, string description = "", string
+      key = "")
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    - id: displayName
+      type: System.String
+    - id: description
+      type: System.String
+    - id: key
+      type: System.String
+    return:
+      type: SurvivorsMaker.Data.ContentTextEntry
+    content.vb: Public Function [Set](kind As ContentTextKind, id As String, displayName As String, description As String
+      = "", key As String = "") As ContentTextEntry
+  overload: SurvivorsMaker.Data.ContentTextTable.Set*
+  nameWithType.vb: ContentTextTable.Set(ContentTextKind, String, String, String, String)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind, String, String, String, String)
+  name.vb: Set(ContentTextKind, String, String, String, String)
+- uid: SurvivorsMaker.Data.ContentTextTable.TryGet(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Data.ContentTextEntry@)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.TryGet(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Data.ContentTextEntry@)
+  id: TryGet(SurvivorsMaker.Data.ContentTextKind,System.String,SurvivorsMaker.Data.ContentTextEntry@)
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: TryGet(ContentTextKind, string, out ContentTextEntry)
+  nameWithType: ContentTextTable.TryGet(ContentTextKind, string, out ContentTextEntry)
+  fullName: SurvivorsMaker.Data.ContentTextTable.TryGet(SurvivorsMaker.Data.ContentTextKind, string, out SurvivorsMaker.Data.ContentTextEntry)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Looks up a content text entry by kind and id without creating an entry.
+  example: []
+  syntax:
+    content: public bool TryGet(ContentTextKind kind, string id, out ContentTextEntry entry)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    - id: entry
+      type: SurvivorsMaker.Data.ContentTextEntry
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(kind As ContentTextKind, id As String, entry As ContentTextEntry) As Boolean
+  overload: SurvivorsMaker.Data.ContentTextTable.TryGet*
+  nameWithType.vb: ContentTextTable.TryGet(ContentTextKind, String, ContentTextEntry)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.TryGet(SurvivorsMaker.Data.ContentTextKind, String, SurvivorsMaker.Data.ContentTextEntry)
+  name.vb: TryGet(ContentTextKind, String, ContentTextEntry)
+- uid: SurvivorsMaker.Data.ContentTextTable.KeyOf(SurvivorsMaker.Data.ContentTextKind,System.String)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.KeyOf(SurvivorsMaker.Data.ContentTextKind,System.String)
+  id: KeyOf(SurvivorsMaker.Data.ContentTextKind,System.String)
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: KeyOf(ContentTextKind, string)
+  nameWithType: ContentTextTable.KeyOf(ContentTextKind, string)
+  fullName: SurvivorsMaker.Data.ContentTextTable.KeyOf(SurvivorsMaker.Data.ContentTextKind, string)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: The localization key base for an id (authored key, else the default key).
+  example: []
+  syntax:
+    content: public string KeyOf(ContentTextKind kind, string id)
+    parameters:
+    - id: kind
+      type: SurvivorsMaker.Data.ContentTextKind
+    - id: id
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function KeyOf(kind As ContentTextKind, id As String) As String
+  overload: SurvivorsMaker.Data.ContentTextTable.KeyOf*
+  nameWithType.vb: ContentTextTable.KeyOf(ContentTextKind, String)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.KeyOf(SurvivorsMaker.Data.ContentTextKind, String)
+  name.vb: KeyOf(ContentTextKind, String)
+- uid: SurvivorsMaker.Data.ContentTextTable.Count
+  commentId: P:SurvivorsMaker.Data.ContentTextTable.Count
+  id: Count
+  parent: SurvivorsMaker.Data.ContentTextTable
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ContentTextTable.Count
+  fullName: SurvivorsMaker.Data.ContentTextTable.Count
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Data
+  namespace: SurvivorsMaker.Data
+  summary: Number of entries over all kinds.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: SurvivorsMaker.Data.ContentTextTable.Count*
+references:
+- uid: SurvivorsMaker.Data.ContentAsset.BuildTextTable
+  commentId: M:SurvivorsMaker.Data.ContentAsset.BuildTextTable
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentAsset.html#SurvivorsMaker_Data_ContentAsset_BuildTextTable
+  name: BuildTextTable()
+  nameWithType: ContentAsset.BuildTextTable()
+  fullName: SurvivorsMaker.Data.ContentAsset.BuildTextTable()
+  spec.csharp:
+  - uid: SurvivorsMaker.Data.ContentAsset.BuildTextTable
+    name: BuildTextTable
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentAsset.html#SurvivorsMaker_Data_ContentAsset_BuildTextTable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Data.ContentAsset.BuildTextTable
+    name: BuildTextTable
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentAsset.html#SurvivorsMaker_Data_ContentAsset_BuildTextTable
+  - name: (
+  - name: )
+- uid: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  commentId: M:SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_Set_SurvivorsMaker_Data_ContentTextKind_System_String_System_String_System_String_System_String_
+  name: Set(ContentTextKind, string, string, string, string)
+  nameWithType: ContentTextTable.Set(ContentTextKind, string, string, string, string)
+  fullName: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind, string, string, string, string)
+  nameWithType.vb: ContentTextTable.Set(ContentTextKind, String, String, String, String)
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind, String, String, String, String)
+  name.vb: Set(ContentTextKind, String, String, String, String)
+  spec.csharp:
+  - uid: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+    name: Set
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_Set_SurvivorsMaker_Data_ContentTextKind_System_String_System_String_System_String_System_String_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextKind.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Data.ContentTextTable.Set(SurvivorsMaker.Data.ContentTextKind,System.String,System.String,System.String,System.String)
+    name: Set
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_Set_SurvivorsMaker_Data_ContentTextKind_System_String_System_String_System_String_System_String_
+  - name: (
+  - uid: SurvivorsMaker.Data.ContentTextKind
+    name: ContentTextKind
+    isExternal: true
+    href: SurvivorsMaker.Data.ContentTextKind.html
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SurvivorsMaker.Data
+  commentId: N:SurvivorsMaker.Data
+  isExternal: true
+  name: SurvivorsMaker.Data
+  nameWithType: SurvivorsMaker.Data
+  fullName: SurvivorsMaker.Data
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Data
+    name: Data
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SurvivorsMaker.Data.ContentTextTable.#ctor*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable__ctor
+  name: ContentTextTable
+  nameWithType: ContentTextTable.ContentTextTable
+  fullName: SurvivorsMaker.Data.ContentTextTable.ContentTextTable
+  nameWithType.vb: ContentTextTable.New
+  fullName.vb: SurvivorsMaker.Data.ContentTextTable.New
+  name.vb: New
+- uid: SurvivorsMaker.Data.ContentTextTable.DefaultKey*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.DefaultKey
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_DefaultKey_SurvivorsMaker_Data_ContentTextKind_System_String_
+  name: DefaultKey
+  nameWithType: ContentTextTable.DefaultKey
+  fullName: SurvivorsMaker.Data.ContentTextTable.DefaultKey
+- uid: SurvivorsMaker.Data.ContentTextKind
+  commentId: T:SurvivorsMaker.Data.ContentTextKind
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextKind.html
+  name: ContentTextKind
+  nameWithType: ContentTextKind
+  fullName: SurvivorsMaker.Data.ContentTextKind
+- uid: SurvivorsMaker.Data.ContentTextTable.KindPrefix*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.KindPrefix
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_KindPrefix_SurvivorsMaker_Data_ContentTextKind_
+  name: KindPrefix
+  nameWithType: ContentTextTable.KindPrefix
+  fullName: SurvivorsMaker.Data.ContentTextTable.KindPrefix
+- uid: SurvivorsMaker.Data.ContentTextTable.Set*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.Set
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_Set_SurvivorsMaker_Data_ContentTextKind_System_String_System_String_System_String_System_String_
+  name: Set
+  nameWithType: ContentTextTable.Set
+  fullName: SurvivorsMaker.Data.ContentTextTable.Set
+- uid: SurvivorsMaker.Data.ContentTextEntry
+  commentId: T:SurvivorsMaker.Data.ContentTextEntry
+  parent: SurvivorsMaker.Data
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextEntry.html
+  name: ContentTextEntry
+  nameWithType: ContentTextEntry
+  fullName: SurvivorsMaker.Data.ContentTextEntry
+- uid: SurvivorsMaker.Data.ContentTextTable.TryGet*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.TryGet
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_TryGet_SurvivorsMaker_Data_ContentTextKind_System_String_SurvivorsMaker_Data_ContentTextEntry__
+  name: TryGet
+  nameWithType: ContentTextTable.TryGet
+  fullName: SurvivorsMaker.Data.ContentTextTable.TryGet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Data.ContentTextTable.KeyOf*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.KeyOf
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_KeyOf_SurvivorsMaker_Data_ContentTextKind_System_String_
+  name: KeyOf
+  nameWithType: ContentTextTable.KeyOf
+  fullName: SurvivorsMaker.Data.ContentTextTable.KeyOf
+- uid: SurvivorsMaker.Data.ContentTextTable.Count*
+  commentId: Overload:SurvivorsMaker.Data.ContentTextTable.Count
+  isExternal: true
+  href: SurvivorsMaker.Data.ContentTextTable.html#SurvivorsMaker_Data_ContentTextTable_Count
+  name: Count
+  nameWithType: ContentTextTable.Count
+  fullName: SurvivorsMaker.Data.ContentTextTable.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension
+  commentId: T:SurvivorsMaker.Presentation.ISceneBootstrapExtension
+  id: ISceneBootstrapExtension
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems(SurvivorsMaker.Run.RunSystems)
+  - SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured(SurvivorsMaker.Presentation.SurvivorsSceneBootstrap)
+  langs:
+  - csharp
+  - vb
+  name: ISceneBootstrapExtension
+  nameWithType: ISceneBootstrapExtension
+  fullName: SurvivorsMaker.Presentation.ISceneBootstrapExtension
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Put a component with this interface next to <xref href="SurvivorsMaker.Presentation.SurvivorsSceneBootstrap" data-throw-if-not-resolved="false"></xref>
+    to customise the game without
+
+    replacing the bootstrap: register custom behaviours, effect or trigger handlers and modules on the run systems,
+
+    custom event views on the world view, a text provider, extra wave views.'
+  example: []
+  syntax:
+    content: public interface ISceneBootstrapExtension
+    content.vb: Public Interface ISceneBootstrapExtension
+- uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems(SurvivorsMaker.Run.RunSystems)
+  commentId: M:SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems(SurvivorsMaker.Run.RunSystems)
+  id: ConfigureSystems(SurvivorsMaker.Run.RunSystems)
+  parent: SurvivorsMaker.Presentation.ISceneBootstrapExtension
+  langs:
+  - csharp
+  - vb
+  name: ConfigureSystems(RunSystems)
+  nameWithType: ISceneBootstrapExtension.ConfigureSystems(RunSystems)
+  fullName: SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems(SurvivorsMaker.Run.RunSystems)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Before the session is configured. Change or replace parts of <code class="paramref">systems</code> here.
+  example: []
+  syntax:
+    content: void ConfigureSystems(RunSystems systems)
+    parameters:
+    - id: systems
+      type: SurvivorsMaker.Run.RunSystems
+    content.vb: Sub ConfigureSystems(systems As RunSystems)
+  overload: SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems*
+- uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured(SurvivorsMaker.Presentation.SurvivorsSceneBootstrap)
+  commentId: M:SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured(SurvivorsMaker.Presentation.SurvivorsSceneBootstrap)
+  id: SceneConfigured(SurvivorsMaker.Presentation.SurvivorsSceneBootstrap)
+  parent: SurvivorsMaker.Presentation.ISceneBootstrapExtension
+  langs:
+  - csharp
+  - vb
+  name: SceneConfigured(SurvivorsSceneBootstrap)
+  nameWithType: ISceneBootstrapExtension.SceneConfigured(SurvivorsSceneBootstrap)
+  fullName: SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured(SurvivorsMaker.Presentation.SurvivorsSceneBootstrap)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: After everything is wired (game, world view, UI, music, interface sounds).
+  example: []
+  syntax:
+    content: void SceneConfigured(SurvivorsSceneBootstrap bootstrap)
+    parameters:
+    - id: bootstrap
+      type: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap
+    content.vb: Sub SceneConfigured(bootstrap As SurvivorsSceneBootstrap)
+  overload: SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured*
+references:
+- uid: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap
+  commentId: T:SurvivorsMaker.Presentation.SurvivorsSceneBootstrap
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap.html
+  name: SurvivorsSceneBootstrap
+  nameWithType: SurvivorsSceneBootstrap
+  fullName: SurvivorsMaker.Presentation.SurvivorsSceneBootstrap
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems*
+  commentId: Overload:SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ISceneBootstrapExtension.html#SurvivorsMaker_Presentation_ISceneBootstrapExtension_ConfigureSystems_SurvivorsMaker_Run_RunSystems_
+  name: ConfigureSystems
+  nameWithType: ISceneBootstrapExtension.ConfigureSystems
+  fullName: SurvivorsMaker.Presentation.ISceneBootstrapExtension.ConfigureSystems
+- uid: SurvivorsMaker.Run.RunSystems
+  commentId: T:SurvivorsMaker.Run.RunSystems
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSystems.html
+  name: RunSystems
+  nameWithType: RunSystems
+  fullName: SurvivorsMaker.Run.RunSystems
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured*
+  commentId: Overload:SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured
+  isExternal: true
+  href: SurvivorsMaker.Presentation.ISceneBootstrapExtension.html#SurvivorsMaker_Presentation_ISceneBootstrapExtension_SceneConfigured_SurvivorsMaker_Presentation_SurvivorsSceneBootstrap_
+  name: SceneConfigured
+  nameWithType: ISceneBootstrapExtension.SceneConfigured
+  fullName: SurvivorsMaker.Presentation.ISceneBootstrapExtension.SceneConfigured

@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.IRunStore
+  commentId: T:SurvivorsMaker.Run.IRunStore
+  id: IRunStore
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.IRunStore.Load
+  - SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  langs:
+  - csharp
+  - vb
+  name: IRunStore
+  nameWithType: IRunStore
+  fullName: SurvivorsMaker.Run.IRunStore
+  type: Interface
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Persistence boundary for an optional saved run, independent of profile and options storage.
+  example: []
+  syntax:
+    content: public interface IRunStore
+    content.vb: Public Interface IRunStore
+  derivedClasses:
+  - SurvivorsMaker.Presentation.JsonFileRunStore
+  - SurvivorsMaker.Run.MemoryRunStore
+- uid: SurvivorsMaker.Run.IRunStore.Load
+  commentId: M:SurvivorsMaker.Run.IRunStore.Load
+  id: Load
+  parent: SurvivorsMaker.Run.IRunStore
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: IRunStore.Load()
+  fullName: SurvivorsMaker.Run.IRunStore.Load()
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Loads the saved-run snapshot, or no snapshot when none is stored.
+  example: []
+  syntax:
+    content: RunSnapshot Load()
+    return:
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Function Load() As RunSnapshot
+  overload: SurvivorsMaker.Run.IRunStore.Load*
+- uid: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  commentId: M:SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  id: Save(SurvivorsMaker.Run.RunSnapshot)
+  parent: SurvivorsMaker.Run.IRunStore
+  langs:
+  - csharp
+  - vb
+  name: Save(RunSnapshot)
+  nameWithType: IRunStore.Save(RunSnapshot)
+  fullName: SurvivorsMaker.Run.IRunStore.Save(SurvivorsMaker.Run.RunSnapshot)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Stores the supplied run snapshot separately from profile and user options.
+  example: []
+  syntax:
+    content: void Save(RunSnapshot run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunSnapshot
+    content.vb: Sub Save(run As RunSnapshot)
+  overload: SurvivorsMaker.Run.IRunStore.Save*
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Run.IRunStore.Load*
+  commentId: Overload:SurvivorsMaker.Run.IRunStore.Load
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Load
+  name: Load
+  nameWithType: IRunStore.Load
+  fullName: SurvivorsMaker.Run.IRunStore.Load
+- uid: SurvivorsMaker.Run.RunSnapshot
+  commentId: T:SurvivorsMaker.Run.RunSnapshot
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunSnapshot.html
+  name: RunSnapshot
+  nameWithType: RunSnapshot
+  fullName: SurvivorsMaker.Run.RunSnapshot
+- uid: SurvivorsMaker.Run.IRunStore.Save*
+  commentId: Overload:SurvivorsMaker.Run.IRunStore.Save
+  isExternal: true
+  href: SurvivorsMaker.Run.IRunStore.html#SurvivorsMaker_Run_IRunStore_Save_SurvivorsMaker_Run_RunSnapshot_
+  name: Save
+  nameWithType: IRunStore.Save
+  fullName: SurvivorsMaker.Run.IRunStore.Save

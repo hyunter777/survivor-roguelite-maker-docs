@@ -1,0 +1,881 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Run.OfferPoolSettings
+  commentId: T:SurvivorsMaker.Run.OfferPoolSettings
+  id: OfferPoolSettings
+  parent: SurvivorsMaker.Run
+  children:
+  - SurvivorsMaker.Run.OfferPoolSettings.#ctor
+  - SurvivorsMaker.Run.OfferPoolSettings.AvoidPreviousWindow
+  - SurvivorsMaker.Run.OfferPoolSettings.BanishChannels
+  - SurvivorsMaker.Run.OfferPoolSettings.BanishCharges
+  - SurvivorsMaker.Run.OfferPoolSettings.BanishUpgrades
+  - SurvivorsMaker.Run.OfferPoolSettings.BanishWeapons
+  - SurvivorsMaker.Run.OfferPoolSettings.EnforceShopCapacity
+  - SurvivorsMaker.Run.OfferPoolSettings.EnforceUpgradeItemLimits
+  - SurvivorsMaker.Run.OfferPoolSettings.Guarantees
+  - SurvivorsMaker.Run.OfferPoolSettings.NegativeLuckPerPoint
+  - SurvivorsMaker.Run.OfferPoolSettings.OwnedFamilyWeight
+  - SurvivorsMaker.Run.OfferPoolSettings.OwnedSetWeight
+  - SurvivorsMaker.Run.OfferPoolSettings.PositiveLuckPerPoint
+  - SurvivorsMaker.Run.OfferPoolSettings.PreferMatchingTags
+  - SurvivorsMaker.Run.OfferPoolSettings.RecheckLegacyItemEligibility
+  - SurvivorsMaker.Run.OfferPoolSettings.RejectDuplicateContentIds
+  - SurvivorsMaker.Run.OfferPoolSettings.TagWeightMode
+  - SurvivorsMaker.Run.OfferPoolSettings.TagWeights
+  - SurvivorsMaker.Run.OfferPoolSettings.TierOdds
+  - SurvivorsMaker.Run.OfferPoolSettings.UniformIfAllWeightsInvalid
+  langs:
+  - csharp
+  - vb
+  name: OfferPoolSettings
+  nameWithType: OfferPoolSettings
+  fullName: SurvivorsMaker.Run.OfferPoolSettings
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Offer Pool tuning; defaults are defined by the field initializers and can be overridden per game.
+  example: []
+  syntax:
+    content: public sealed class OfferPoolSettings
+    content.vb: Public NotInheritable Class OfferPoolSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Run.OfferPoolSettings.EnforceShopCapacity
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.EnforceShopCapacity
+  id: EnforceShopCapacity
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: EnforceShopCapacity
+  nameWithType: OfferPoolSettings.EnforceShopCapacity
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.EnforceShopCapacity
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Opt in: legacy shops can display weapons that cannot currently fit.'
+  example: []
+  syntax:
+    content: public bool EnforceShopCapacity
+    return:
+      type: System.Boolean
+    content.vb: Public EnforceShopCapacity As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.EnforceUpgradeItemLimits
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.EnforceUpgradeItemLimits
+  id: EnforceUpgradeItemLimits
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: EnforceUpgradeItemLimits
+  nameWithType: OfferPoolSettings.EnforceUpgradeItemLimits
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.EnforceUpgradeItemLimits
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Opt in: legacy upgrades intentionally ignore BannedItems and ItemDef.MaxOwned.'
+  example: []
+  syntax:
+    content: public bool EnforceUpgradeItemLimits
+    return:
+      type: System.Boolean
+    content.vb: Public EnforceUpgradeItemLimits As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.RecheckLegacyItemEligibility
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.RecheckLegacyItemEligibility
+  id: RecheckLegacyItemEligibility
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: RecheckLegacyItemEligibility
+  nameWithType: OfferPoolSettings.RecheckLegacyItemEligibility
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.RecheckLegacyItemEligibility
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: 'Opt in: old item purchases only rechecked MaxOwned, not legacy availability/bans.'
+  example: []
+  syntax:
+    content: public bool RecheckLegacyItemEligibility
+    return:
+      type: System.Boolean
+    content.vb: Public RecheckLegacyItemEligibility As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.RejectDuplicateContentIds
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.RejectDuplicateContentIds
+  id: RejectDuplicateContentIds
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: RejectDuplicateContentIds
+  nameWithType: OfferPoolSettings.RejectDuplicateContentIds
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.RejectDuplicateContentIds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool RejectDuplicateContentIds
+    return:
+      type: System.Boolean
+    content.vb: Public RejectDuplicateContentIds As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.PreferMatchingTags
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.PreferMatchingTags
+  id: PreferMatchingTags
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: PreferMatchingTags
+  nameWithType: OfferPoolSettings.PreferMatchingTags
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.PreferMatchingTags
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool PreferMatchingTags
+    return:
+      type: System.Boolean
+    content.vb: Public PreferMatchingTags As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.AvoidPreviousWindow
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.AvoidPreviousWindow
+  id: AvoidPreviousWindow
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: AvoidPreviousWindow
+  nameWithType: OfferPoolSettings.AvoidPreviousWindow
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.AvoidPreviousWindow
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool AvoidPreviousWindow
+    return:
+      type: System.Boolean
+    content.vb: Public AvoidPreviousWindow As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.UniformIfAllWeightsInvalid
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.UniformIfAllWeightsInvalid
+  id: UniformIfAllWeightsInvalid
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: UniformIfAllWeightsInvalid
+  nameWithType: OfferPoolSettings.UniformIfAllWeightsInvalid
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.UniformIfAllWeightsInvalid
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool UniformIfAllWeightsInvalid
+    return:
+      type: System.Boolean
+    content.vb: Public UniformIfAllWeightsInvalid As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.TagWeightMode
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.TagWeightMode
+  id: TagWeightMode
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: TagWeightMode
+  nameWithType: OfferPoolSettings.TagWeightMode
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.TagWeightMode
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public TagWeightMode TagWeightMode
+    return:
+      type: SurvivorsMaker.Run.TagWeightMode
+    content.vb: Public TagWeightMode As TagWeightMode
+- uid: SurvivorsMaker.Run.OfferPoolSettings.TagWeights
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.TagWeights
+  id: TagWeights
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: TagWeights
+  nameWithType: OfferPoolSettings.TagWeights
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.TagWeights
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<TagWeight> TagWeights
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+    content.vb: Public TagWeights As List(Of TagWeight)
+- uid: SurvivorsMaker.Run.OfferPoolSettings.OwnedFamilyWeight
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.OwnedFamilyWeight
+  id: OwnedFamilyWeight
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: OwnedFamilyWeight
+  nameWithType: OfferPoolSettings.OwnedFamilyWeight
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.OwnedFamilyWeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float OwnedFamilyWeight
+    return:
+      type: System.Single
+    content.vb: Public OwnedFamilyWeight As Single
+- uid: SurvivorsMaker.Run.OfferPoolSettings.OwnedSetWeight
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.OwnedSetWeight
+  id: OwnedSetWeight
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: OwnedSetWeight
+  nameWithType: OfferPoolSettings.OwnedSetWeight
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.OwnedSetWeight
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public float OwnedSetWeight
+    return:
+      type: System.Single
+    content.vb: Public OwnedSetWeight As Single
+- uid: SurvivorsMaker.Run.OfferPoolSettings.TierOdds
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.TierOdds
+  id: TierOdds
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: TierOdds
+  nameWithType: OfferPoolSettings.TierOdds
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.TierOdds
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public TierOddsMode TierOdds
+    return:
+      type: SurvivorsMaker.Run.TierOddsMode
+    content.vb: Public TierOdds As TierOddsMode
+- uid: SurvivorsMaker.Run.OfferPoolSettings.PositiveLuckPerPoint
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.PositiveLuckPerPoint
+  id: PositiveLuckPerPoint
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: PositiveLuckPerPoint
+  nameWithType: OfferPoolSettings.PositiveLuckPerPoint
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.PositiveLuckPerPoint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Zero keeps the TierTable sequence exactly; positive luck multiplies progression growth.
+  example: []
+  syntax:
+    content: public float PositiveLuckPerPoint
+    return:
+      type: System.Single
+    content.vb: Public PositiveLuckPerPoint As Single
+- uid: SurvivorsMaker.Run.OfferPoolSettings.NegativeLuckPerPoint
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.NegativeLuckPerPoint
+  id: NegativeLuckPerPoint
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: NegativeLuckPerPoint
+  nameWithType: OfferPoolSettings.NegativeLuckPerPoint
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.NegativeLuckPerPoint
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  summary: Negative luck divides growth by 1 + abs(luck) * this coefficient.
+  example: []
+  syntax:
+    content: public float NegativeLuckPerPoint
+    return:
+      type: System.Single
+    content.vb: Public NegativeLuckPerPoint As Single
+- uid: SurvivorsMaker.Run.OfferPoolSettings.BanishCharges
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.BanishCharges
+  id: BanishCharges
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: BanishCharges
+  nameWithType: OfferPoolSettings.BanishCharges
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.BanishCharges
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public int BanishCharges
+    return:
+      type: System.Int32
+    content.vb: Public BanishCharges As Integer
+- uid: SurvivorsMaker.Run.OfferPoolSettings.BanishChannels
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.BanishChannels
+  id: BanishChannels
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: BanishChannels
+  nameWithType: OfferPoolSettings.BanishChannels
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.BanishChannels
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public OfferChannel BanishChannels
+    return:
+      type: SurvivorsMaker.Run.OfferChannel
+    content.vb: Public BanishChannels As OfferChannel
+- uid: SurvivorsMaker.Run.OfferPoolSettings.BanishWeapons
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.BanishWeapons
+  id: BanishWeapons
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: BanishWeapons
+  nameWithType: OfferPoolSettings.BanishWeapons
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.BanishWeapons
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool BanishWeapons
+    return:
+      type: System.Boolean
+    content.vb: Public BanishWeapons As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.BanishUpgrades
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.BanishUpgrades
+  id: BanishUpgrades
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: BanishUpgrades
+  nameWithType: OfferPoolSettings.BanishUpgrades
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.BanishUpgrades
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public bool BanishUpgrades
+    return:
+      type: System.Boolean
+    content.vb: Public BanishUpgrades As Boolean
+- uid: SurvivorsMaker.Run.OfferPoolSettings.Guarantees
+  commentId: F:SurvivorsMaker.Run.OfferPoolSettings.Guarantees
+  id: Guarantees
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: Guarantees
+  nameWithType: OfferPoolSettings.Guarantees
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.Guarantees
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public List<OfferGuaranteeRule> Guarantees
+    return:
+      type: System.Collections.Generic.List{SurvivorsMaker.Run.OfferGuaranteeRule}
+    content.vb: Public Guarantees As List(Of OfferGuaranteeRule)
+- uid: SurvivorsMaker.Run.OfferPoolSettings.#ctor
+  commentId: M:SurvivorsMaker.Run.OfferPoolSettings.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Run.OfferPoolSettings
+  langs:
+  - csharp
+  - vb
+  name: OfferPoolSettings()
+  nameWithType: OfferPoolSettings.OfferPoolSettings()
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.OfferPoolSettings()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Run
+  namespace: SurvivorsMaker.Run
+  syntax:
+    content: public OfferPoolSettings()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Run.OfferPoolSettings.#ctor*
+  nameWithType.vb: OfferPoolSettings.New()
+  fullName.vb: SurvivorsMaker.Run.OfferPoolSettings.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Run.TagWeightMode
+  commentId: T:SurvivorsMaker.Run.TagWeightMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.TagWeightMode.html
+  name: TagWeightMode
+  nameWithType: TagWeightMode
+  fullName: SurvivorsMaker.Run.TagWeightMode
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.TagWeight}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TagWeight>
+  nameWithType: List<TagWeight>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.TagWeight>
+  nameWithType.vb: List(Of TagWeight)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.TagWeight)
+  name.vb: List(Of TagWeight)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.TagWeight
+    name: TagWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TagWeight.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.TagWeight
+    name: TagWeight
+    isExternal: true
+    href: SurvivorsMaker.Run.TagWeight.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Run.TierOddsMode
+  commentId: T:SurvivorsMaker.Run.TierOddsMode
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.TierOddsMode.html
+  name: TierOddsMode
+  nameWithType: TierOddsMode
+  fullName: SurvivorsMaker.Run.TierOddsMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run.OfferChannel
+  commentId: T:SurvivorsMaker.Run.OfferChannel
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferChannel.html
+  name: OfferChannel
+  nameWithType: OfferChannel
+  fullName: SurvivorsMaker.Run.OfferChannel
+- uid: System.Collections.Generic.List{SurvivorsMaker.Run.OfferGuaranteeRule}
+  commentId: T:System.Collections.Generic.List{SurvivorsMaker.Run.OfferGuaranteeRule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<OfferGuaranteeRule>
+  nameWithType: List<OfferGuaranteeRule>
+  fullName: System.Collections.Generic.List<SurvivorsMaker.Run.OfferGuaranteeRule>
+  nameWithType.vb: List(Of OfferGuaranteeRule)
+  fullName.vb: System.Collections.Generic.List(Of SurvivorsMaker.Run.OfferGuaranteeRule)
+  name.vb: List(Of OfferGuaranteeRule)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SurvivorsMaker.Run.OfferGuaranteeRule
+    name: OfferGuaranteeRule
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferGuaranteeRule.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Run.OfferGuaranteeRule
+    name: OfferGuaranteeRule
+    isExternal: true
+    href: SurvivorsMaker.Run.OfferGuaranteeRule.html
+  - name: )
+- uid: SurvivorsMaker.Run.OfferPoolSettings.#ctor*
+  commentId: Overload:SurvivorsMaker.Run.OfferPoolSettings.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Run.OfferPoolSettings.html#SurvivorsMaker_Run_OfferPoolSettings__ctor
+  name: OfferPoolSettings
+  nameWithType: OfferPoolSettings.OfferPoolSettings
+  fullName: SurvivorsMaker.Run.OfferPoolSettings.OfferPoolSettings
+  nameWithType.vb: OfferPoolSettings.New
+  fullName.vb: SurvivorsMaker.Run.OfferPoolSettings.New
+  name.vb: New

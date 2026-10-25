@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.WavePhase
+  commentId: T:SurvivorsMaker.Simulation.WavePhase
+  id: WavePhase
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.WavePhase.Died
+  - SurvivorsMaker.Simulation.WavePhase.Running
+  - SurvivorsMaker.Simulation.WavePhase.Survived
+  langs:
+  - csharp
+  - vb
+  name: WavePhase
+  nameWithType: WavePhase
+  fullName: SurvivorsMaker.Simulation.WavePhase
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public enum WavePhase
+    content.vb: Public Enum WavePhase
+- uid: SurvivorsMaker.Simulation.WavePhase.Running
+  commentId: F:SurvivorsMaker.Simulation.WavePhase.Running
+  id: Running
+  parent: SurvivorsMaker.Simulation.WavePhase
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: WavePhase.Running
+  fullName: SurvivorsMaker.Simulation.WavePhase.Running
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Running = 0
+    return:
+      type: SurvivorsMaker.Simulation.WavePhase
+- uid: SurvivorsMaker.Simulation.WavePhase.Survived
+  commentId: F:SurvivorsMaker.Simulation.WavePhase.Survived
+  id: Survived
+  parent: SurvivorsMaker.Simulation.WavePhase
+  langs:
+  - csharp
+  - vb
+  name: Survived
+  nameWithType: WavePhase.Survived
+  fullName: SurvivorsMaker.Simulation.WavePhase.Survived
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Survived = 1
+    return:
+      type: SurvivorsMaker.Simulation.WavePhase
+- uid: SurvivorsMaker.Simulation.WavePhase.Died
+  commentId: F:SurvivorsMaker.Simulation.WavePhase.Died
+  id: Died
+  parent: SurvivorsMaker.Simulation.WavePhase
+  langs:
+  - csharp
+  - vb
+  name: Died
+  nameWithType: WavePhase.Died
+  fullName: SurvivorsMaker.Simulation.WavePhase.Died
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: Died = 2
+    return:
+      type: SurvivorsMaker.Simulation.WavePhase
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Simulation.WavePhase
+  commentId: T:SurvivorsMaker.Simulation.WavePhase
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.WavePhase.html
+  name: WavePhase
+  nameWithType: WavePhase
+  fullName: SurvivorsMaker.Simulation.WavePhase

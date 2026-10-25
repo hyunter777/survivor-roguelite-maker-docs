@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.UiFontRole
+  commentId: T:SurvivorsMaker.Presentation.UiFontRole
+  id: UiFontRole
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.UiFontRole.Body
+  - SurvivorsMaker.Presentation.UiFontRole.Button
+  - SurvivorsMaker.Presentation.UiFontRole.Display
+  - SurvivorsMaker.Presentation.UiFontRole.Heading
+  - SurvivorsMaker.Presentation.UiFontRole.Small
+  - SurvivorsMaker.Presentation.UiFontRole.Title
+  langs:
+  - csharp
+  - vb
+  name: UiFontRole
+  nameWithType: UiFontRole
+  fullName: SurvivorsMaker.Presentation.UiFontRole
+  type: Enum
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Semantic text-size role resolved from the active UI theme.
+  example: []
+  syntax:
+    content: public enum UiFontRole
+    content.vb: Public Enum UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Body
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Body
+  id: Body
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Body
+  nameWithType: UiFontRole.Body
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Body
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Body = 0
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Small
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Small
+  id: Small
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: UiFontRole.Small
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Small
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Small = 1
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Heading
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Heading
+  id: Heading
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Heading
+  nameWithType: UiFontRole.Heading
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Heading
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Heading = 2
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Title
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Title
+  id: Title
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: UiFontRole.Title
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Title
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Title = 3
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Display
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Display
+  id: Display
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Display
+  nameWithType: UiFontRole.Display
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Display
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Display = 4
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+- uid: SurvivorsMaker.Presentation.UiFontRole.Button
+  commentId: F:SurvivorsMaker.Presentation.UiFontRole.Button
+  id: Button
+  parent: SurvivorsMaker.Presentation.UiFontRole
+  langs:
+  - csharp
+  - vb
+  name: Button
+  nameWithType: UiFontRole.Button
+  fullName: SurvivorsMaker.Presentation.UiFontRole.Button
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: Button = 5
+    return:
+      type: SurvivorsMaker.Presentation.UiFontRole
+references:
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: SurvivorsMaker.Presentation.UiFontRole
+  commentId: T:SurvivorsMaker.Presentation.UiFontRole
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.UiFontRole.html
+  name: UiFontRole
+  nameWithType: UiFontRole
+  fullName: SurvivorsMaker.Presentation.UiFontRole

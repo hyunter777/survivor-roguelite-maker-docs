@@ -1,0 +1,922 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Presentation.DpsMeterModel
+  commentId: T:SurvivorsMaker.Presentation.DpsMeterModel
+  id: DpsMeterModel
+  parent: SurvivorsMaker.Presentation
+  children:
+  - SurvivorsMaker.Presentation.DpsMeterModel.#ctor(System.Single)
+  - SurvivorsMaker.Presentation.DpsMeterModel.Add(System.Int32,System.Int32,SurvivorsMaker.Presentation.DamageChannel,System.Single)
+  - SurvivorsMaker.Presentation.DpsMeterModel.Advance(System.Int32)
+  - SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate(System.Int32,SurvivorsMaker.Presentation.DamageChannel)
+  - SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+  - SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+  - SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds(System.Single)
+  - SurvivorsMaker.Presentation.DpsMeterModel.Share(System.Int32)
+  - SurvivorsMaker.Presentation.DpsMeterModel.SlotRate(System.Int32)
+  - SurvivorsMaker.Presentation.DpsMeterModel.Slots(System.Collections.Generic.List{System.Int32})
+  - SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+  - SurvivorsMaker.Presentation.DpsMeterModel.TotalRate
+  - SurvivorsMaker.Presentation.DpsMeterModel.Window
+  - SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+  langs:
+  - csharp
+  - vb
+  name: DpsMeterModel
+  nameWithType: DpsMeterModel
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: 'Live damage per second per weapon slot (and the unsourced line, slot <xref href="SurvivorsMaker.Presentation.CombatLedger.UnsourcedSlot"
+    data-throw-if-not-resolved="false"></xref>),
+
+    split by <xref href="SurvivorsMaker.Presentation.DamageChannel" data-throw-if-not-resolved="false"></xref>, over a sliding
+    window of the current wave.'
+  example: []
+  syntax:
+    content: public sealed class DpsMeterModel
+    content.vb: Public NotInheritable Class DpsMeterModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.#ctor(System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: DpsMeterModel(float)
+  nameWithType: DpsMeterModel.DpsMeterModel(float)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.DpsMeterModel(float)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public DpsMeterModel(float windowSeconds = 5)
+    parameters:
+    - id: windowSeconds
+      type: System.Single
+    content.vb: Public Sub New(windowSeconds As Single = 5)
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.#ctor*
+  nameWithType.vb: DpsMeterModel.New(Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.New(Single)
+  name.vb: New(Single)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds(System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds(System.Single)
+  id: SetWindowSeconds(System.Single)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: SetWindowSeconds(float)
+  nameWithType: DpsMeterModel.SetWindowSeconds(float)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds(float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Changes the window length; takes effect at the next <xref href="SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32%2cSystem.Single)"
+    data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void SetWindowSeconds(float seconds)
+    parameters:
+    - id: seconds
+      type: System.Single
+    content.vb: Public Sub SetWindowSeconds(seconds As Single)
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds*
+  nameWithType.vb: DpsMeterModel.SetWindowSeconds(Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds(Single)
+  name.vb: SetWindowSeconds(Single)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+  id: Reset(System.Int32,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Reset(int, float)
+  nameWithType: DpsMeterModel.Reset(int, float)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Reset(int, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Reset(int startTick, float tickSeconds)
+    parameters:
+    - id: startTick
+      type: System.Int32
+    - id: tickSeconds
+      type: System.Single
+    content.vb: Public Sub Reset(startTick As Integer, tickSeconds As Single)
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Reset*
+  nameWithType.vb: DpsMeterModel.Reset(Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Reset(Integer, Single)
+  name.vb: Reset(Integer, Single)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Advance(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Advance(System.Int32)
+  id: Advance(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Advance(int)
+  nameWithType: DpsMeterModel.Advance(int)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Advance(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Advance(int tick)
+    parameters:
+    - id: tick
+      type: System.Int32
+    content.vb: Public Sub Advance(tick As Integer)
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Advance*
+  nameWithType.vb: DpsMeterModel.Advance(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Advance(Integer)
+  name.vb: Advance(Integer)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Add(System.Int32,System.Int32,SurvivorsMaker.Presentation.DamageChannel,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Add(System.Int32,System.Int32,SurvivorsMaker.Presentation.DamageChannel,System.Single)
+  id: Add(System.Int32,System.Int32,SurvivorsMaker.Presentation.DamageChannel,System.Single)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Add(int, int, DamageChannel, float)
+  nameWithType: DpsMeterModel.Add(int, int, DamageChannel, float)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Add(int, int, SurvivorsMaker.Presentation.DamageChannel, float)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public void Add(int tick, int slot, DamageChannel channel, float amount)
+    parameters:
+    - id: tick
+      type: System.Int32
+    - id: slot
+      type: System.Int32
+    - id: channel
+      type: SurvivorsMaker.Presentation.DamageChannel
+    - id: amount
+      type: System.Single
+    content.vb: Public Sub Add(tick As Integer, slot As Integer, channel As DamageChannel, amount As Single)
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Add*
+  nameWithType.vb: DpsMeterModel.Add(Integer, Integer, DamageChannel, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Add(Integer, Integer, SurvivorsMaker.Presentation.DamageChannel,
+    Single)
+  name.vb: Add(Integer, Integer, DamageChannel, Single)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.SlotRate(System.Int32)
+  id: SlotRate(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: SlotRate(int)
+  nameWithType: DpsMeterModel.SlotRate(int)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float SlotRate(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function SlotRate(slot As Integer) As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate*
+  nameWithType.vb: DpsMeterModel.SlotRate(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate(Integer)
+  name.vb: SlotRate(Integer)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate(System.Int32,SurvivorsMaker.Presentation.DamageChannel)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate(System.Int32,SurvivorsMaker.Presentation.DamageChannel)
+  id: ChannelRate(System.Int32,SurvivorsMaker.Presentation.DamageChannel)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: ChannelRate(int, DamageChannel)
+  nameWithType: DpsMeterModel.ChannelRate(int, DamageChannel)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate(int, SurvivorsMaker.Presentation.DamageChannel)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float ChannelRate(int slot, DamageChannel channel)
+    parameters:
+    - id: slot
+      type: System.Int32
+    - id: channel
+      type: SurvivorsMaker.Presentation.DamageChannel
+    return:
+      type: System.Single
+    content.vb: Public Function ChannelRate(slot As Integer, channel As DamageChannel) As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate*
+  nameWithType.vb: DpsMeterModel.ChannelRate(Integer, DamageChannel)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate(Integer, SurvivorsMaker.Presentation.DamageChannel)
+  name.vb: ChannelRate(Integer, DamageChannel)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Share(System.Int32)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Share(System.Int32)
+  id: Share(System.Int32)
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Share(int)
+  nameWithType: DpsMeterModel.Share(int)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Share(int)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Fraction 0–1 of all damage in the window that came from <code class="paramref">slot</code>.
+  example: []
+  syntax:
+    content: public float Share(int slot)
+    parameters:
+    - id: slot
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Function Share(slot As Integer) As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Share*
+  nameWithType.vb: DpsMeterModel.Share(Integer)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Share(Integer)
+  name.vb: Share(Integer)
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Slots(System.Collections.Generic.List{System.Int32})
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Slots(System.Collections.Generic.List{System.Int32})
+  id: Slots(System.Collections.Generic.List{System.Int32})
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Slots(List<int>)
+  nameWithType: DpsMeterModel.Slots(List<int>)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Slots(System.Collections.Generic.List<int>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Slots that ever reported damage this run, ascending, unsourced (-1) first when present.
+  example: []
+  syntax:
+    content: public void Slots(List<int> into)
+    parameters:
+    - id: into
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public Sub Slots(into As List(Of Integer))
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Slots*
+  nameWithType.vb: DpsMeterModel.Slots(List(Of Integer))
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Slots(System.Collections.Generic.List(Of Integer))
+  name.vb: Slots(List(Of Integer))
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+  commentId: P:SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+  id: TickSeconds
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: TickSeconds
+  nameWithType: DpsMeterModel.TickSeconds
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float TickSeconds { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property TickSeconds As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds*
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+  commentId: P:SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+  id: NowTick
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: NowTick
+  nameWithType: DpsMeterModel.NowTick
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  summary: Latest tick seen; rates are measured up to it.
+  example: []
+  syntax:
+    content: public int NowTick { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NowTick As Integer
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.NowTick*
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+  commentId: P:SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+  id: WindowSeconds
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: WindowSeconds
+  nameWithType: DpsMeterModel.WindowSeconds
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float WindowSeconds { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property WindowSeconds As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds*
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Window
+  commentId: P:SurvivorsMaker.Presentation.DpsMeterModel.Window
+  id: Window
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: DpsMeterModel.Window
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Window
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public DpsWindow Window { get; }
+    parameters: []
+    return:
+      type: SurvivorsMaker.Presentation.DpsWindow
+    content.vb: Public ReadOnly Property Window As DpsWindow
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.Window*
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.TotalRate
+  commentId: P:SurvivorsMaker.Presentation.DpsMeterModel.TotalRate
+  id: TotalRate
+  parent: SurvivorsMaker.Presentation.DpsMeterModel
+  langs:
+  - csharp
+  - vb
+  name: TotalRate
+  nameWithType: DpsMeterModel.TotalRate
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.TotalRate
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Presentation
+  namespace: SurvivorsMaker.Presentation
+  syntax:
+    content: public float TotalRate { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property TotalRate As Single
+  overload: SurvivorsMaker.Presentation.DpsMeterModel.TotalRate*
+references:
+- uid: SurvivorsMaker.Presentation.CombatLedger.UnsourcedSlot
+  commentId: F:SurvivorsMaker.Presentation.CombatLedger.UnsourcedSlot
+  isExternal: true
+  href: SurvivorsMaker.Presentation.CombatLedger.html#SurvivorsMaker_Presentation_CombatLedger_UnsourcedSlot
+  name: UnsourcedSlot
+  nameWithType: CombatLedger.UnsourcedSlot
+  fullName: SurvivorsMaker.Presentation.CombatLedger.UnsourcedSlot
+- uid: SurvivorsMaker.Presentation.DamageChannel
+  commentId: T:SurvivorsMaker.Presentation.DamageChannel
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DamageChannel.html
+  name: DamageChannel
+  nameWithType: DamageChannel
+  fullName: SurvivorsMaker.Presentation.DamageChannel
+- uid: SurvivorsMaker.Presentation
+  commentId: N:SurvivorsMaker.Presentation
+  isExternal: true
+  name: SurvivorsMaker.Presentation
+  nameWithType: SurvivorsMaker.Presentation
+  fullName: SurvivorsMaker.Presentation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Presentation
+    name: Presentation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.#ctor*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel__ctor_System_Single_
+  name: DpsMeterModel
+  nameWithType: DpsMeterModel.DpsMeterModel
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.DpsMeterModel
+  nameWithType.vb: DpsMeterModel.New
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+  commentId: M:SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Reset_System_Int32_System_Single_
+  name: Reset(int, float)
+  nameWithType: DpsMeterModel.Reset(int, float)
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Reset(int, float)
+  nameWithType.vb: DpsMeterModel.Reset(Integer, Single)
+  fullName.vb: SurvivorsMaker.Presentation.DpsMeterModel.Reset(Integer, Single)
+  name.vb: Reset(Integer, Single)
+  spec.csharp:
+  - uid: SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+    name: Reset
+    isExternal: true
+    href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Reset_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Presentation.DpsMeterModel.Reset(System.Int32,System.Single)
+    name: Reset
+    isExternal: true
+    href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Reset_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: ' '
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_SetWindowSeconds_System_Single_
+  name: SetWindowSeconds
+  nameWithType: DpsMeterModel.SetWindowSeconds
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.SetWindowSeconds
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Reset*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Reset
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Reset_System_Int32_System_Single_
+  name: Reset
+  nameWithType: DpsMeterModel.Reset
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Reset
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Advance*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Advance
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Advance_System_Int32_
+  name: Advance
+  nameWithType: DpsMeterModel.Advance
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Advance
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Add*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Add
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Add_System_Int32_System_Int32_SurvivorsMaker_Presentation_DamageChannel_System_Single_
+  name: Add
+  nameWithType: DpsMeterModel.Add
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Add
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.SlotRate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_SlotRate_System_Int32_
+  name: SlotRate
+  nameWithType: DpsMeterModel.SlotRate
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.SlotRate
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_ChannelRate_System_Int32_SurvivorsMaker_Presentation_DamageChannel_
+  name: ChannelRate
+  nameWithType: DpsMeterModel.ChannelRate
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.ChannelRate
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Share*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Share
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Share_System_Int32_
+  name: Share
+  nameWithType: DpsMeterModel.Share
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Share
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Slots*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Slots
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Slots_System_Collections_Generic_List_System_Int32__
+  name: Slots
+  nameWithType: DpsMeterModel.Slots
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Slots
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_TickSeconds
+  name: TickSeconds
+  nameWithType: DpsMeterModel.TickSeconds
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.TickSeconds
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.NowTick*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_NowTick
+  name: NowTick
+  nameWithType: DpsMeterModel.NowTick
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.NowTick
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_WindowSeconds
+  name: WindowSeconds
+  nameWithType: DpsMeterModel.WindowSeconds
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.WindowSeconds
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.Window*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.Window
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_Window
+  name: Window
+  nameWithType: DpsMeterModel.Window
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.Window
+- uid: SurvivorsMaker.Presentation.DpsWindow
+  commentId: T:SurvivorsMaker.Presentation.DpsWindow
+  parent: SurvivorsMaker.Presentation
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsWindow.html
+  name: DpsWindow
+  nameWithType: DpsWindow
+  fullName: SurvivorsMaker.Presentation.DpsWindow
+- uid: SurvivorsMaker.Presentation.DpsMeterModel.TotalRate*
+  commentId: Overload:SurvivorsMaker.Presentation.DpsMeterModel.TotalRate
+  isExternal: true
+  href: SurvivorsMaker.Presentation.DpsMeterModel.html#SurvivorsMaker_Presentation_DpsMeterModel_TotalRate
+  name: TotalRate
+  nameWithType: DpsMeterModel.TotalRate
+  fullName: SurvivorsMaker.Presentation.DpsMeterModel.TotalRate

@@ -1,0 +1,836 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Balance.GreedyBot
+  commentId: T:SurvivorsMaker.Balance.GreedyBot
+  id: GreedyBot
+  parent: SurvivorsMaker.Balance
+  children:
+  - SurvivorsMaker.Balance.GreedyBot.#ctor(SurvivorsMaker.Balance.GreedyBotSettings,SurvivorsMaker.Balance.RandomBotSettings)
+  - SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  - SurvivorsMaker.Balance.GreedyBot.GreedySettings
+  - SurvivorsMaker.Balance.GreedyBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Balance.GreedyBot.Name
+  - SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  - SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  - SurvivorsMaker.Balance.GreedyBot.Shop(SurvivorsMaker.Run.RunController)
+  langs:
+  - csharp
+  - vb
+  name: GreedyBot
+  nameWithType: GreedyBot
+  fullName: SurvivorsMaker.Balance.GreedyBot
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Bot that avoids nearby threats and scores upgrades and purchases using configurable stat weights.
+  example: []
+  syntax:
+    content: 'public sealed class GreedyBot : RandomBot, IRunBot'
+    content.vb: Public NotInheritable Class GreedyBot Inherits RandomBot Implements IRunBot
+  inheritance:
+  - System.Object
+  - SurvivorsMaker.Balance.RandomBot
+  implements:
+  - SurvivorsMaker.Balance.IRunBot
+  inheritedMembers:
+  - SurvivorsMaker.Balance.RandomBot.Settings
+  - SurvivorsMaker.Balance.RandomBot.ShopRules
+  - SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Balance.GreedyBot.GreedySettings
+  commentId: F:SurvivorsMaker.Balance.GreedyBot.GreedySettings
+  id: GreedySettings
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: GreedySettings
+  nameWithType: GreedyBot.GreedySettings
+  fullName: SurvivorsMaker.Balance.GreedyBot.GreedySettings
+  type: Field
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public readonly GreedyBotSettings GreedySettings
+    return:
+      type: SurvivorsMaker.Balance.GreedyBotSettings
+    content.vb: Public ReadOnly GreedySettings As GreedyBotSettings
+- uid: SurvivorsMaker.Balance.GreedyBot.#ctor(SurvivorsMaker.Balance.GreedyBotSettings,SurvivorsMaker.Balance.RandomBotSettings)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.#ctor(SurvivorsMaker.Balance.GreedyBotSettings,SurvivorsMaker.Balance.RandomBotSettings)
+  id: '#ctor(SurvivorsMaker.Balance.GreedyBotSettings,SurvivorsMaker.Balance.RandomBotSettings)'
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: GreedyBot(GreedyBotSettings, RandomBotSettings)
+  nameWithType: GreedyBot.GreedyBot(GreedyBotSettings, RandomBotSettings)
+  fullName: SurvivorsMaker.Balance.GreedyBot.GreedyBot(SurvivorsMaker.Balance.GreedyBotSettings, SurvivorsMaker.Balance.RandomBotSettings)
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  syntax:
+    content: public GreedyBot(GreedyBotSettings settings = null, RandomBotSettings movement = null)
+    parameters:
+    - id: settings
+      type: SurvivorsMaker.Balance.GreedyBotSettings
+    - id: movement
+      type: SurvivorsMaker.Balance.RandomBotSettings
+    content.vb: Public Sub New(settings As GreedyBotSettings = Nothing, movement As RandomBotSettings = Nothing)
+  overload: SurvivorsMaker.Balance.GreedyBot.#ctor*
+  nameWithType.vb: GreedyBot.New(GreedyBotSettings, RandomBotSettings)
+  fullName.vb: SurvivorsMaker.Balance.GreedyBot.New(SurvivorsMaker.Balance.GreedyBotSettings, SurvivorsMaker.Balance.RandomBotSettings)
+  name.vb: New(GreedyBotSettings, RandomBotSettings)
+- uid: SurvivorsMaker.Balance.GreedyBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  id: Move(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: Move(SimWorld)
+  nameWithType: GreedyBot.Move(SimWorld)
+  fullName: SurvivorsMaker.Balance.GreedyBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Movement for the next tick, length 0–1.
+  example: []
+  syntax:
+    content: public override Vec2 Move(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    return:
+      type: SurvivorsMaker.Simulation.Vec2
+    content.vb: Public Overrides Function Move(world As SimWorld) As Vec2
+  overridden: SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  overload: SurvivorsMaker.Balance.GreedyBot.Move*
+- uid: SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  id: ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: ChooseLevelUp(RunState)
+  nameWithType: GreedyBot.ChooseLevelUp(RunState)
+  fullName: SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Index into <xref href="SurvivorsMaker.Run.RunState.Choices" data-throw-if-not-resolved="false"></xref>. Must be
+    a choice the controller accepts.
+  example: []
+  syntax:
+    content: public override int ChooseLevelUp(RunState run)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function ChooseLevelUp(run As RunState) As Integer
+  overridden: SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  overload: SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp*
+- uid: SurvivorsMaker.Balance.GreedyBot.Shop(SurvivorsMaker.Run.RunController)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.Shop(SurvivorsMaker.Run.RunController)
+  id: Shop(SurvivorsMaker.Run.RunController)
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: Shop(RunController)
+  nameWithType: GreedyBot.Shop(RunController)
+  fullName: SurvivorsMaker.Balance.GreedyBot.Shop(SurvivorsMaker.Run.RunController)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Spend the shop phase through the controller (buy, reroll, lock, merge, recycle). Do not call NextWave.
+  example: []
+  syntax:
+    content: public override void Shop(RunController controller)
+    parameters:
+    - id: controller
+      type: SurvivorsMaker.Run.RunController
+    content.vb: Public Overrides Sub Shop(controller As RunController)
+  overridden: SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+  overload: SurvivorsMaker.Balance.GreedyBot.Shop*
+- uid: SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  id: Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.ItemDef)
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: Score(RunState, ItemDef)
+  nameWithType: GreedyBot.Score(RunState, ItemDef)
+  fullName: SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.ItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Scores a prospective acquisition using the configured stat weights and current build context.
+  example: []
+  syntax:
+    content: public float Score(RunState run, ItemDef item)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: item
+      type: SurvivorsMaker.Run.ItemDef
+    return:
+      type: System.Single
+    content.vb: Public Function Score(run As RunState, item As ItemDef) As Single
+  overload: SurvivorsMaker.Balance.GreedyBot.Score*
+- uid: SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  commentId: M:SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  id: Score(SurvivorsMaker.Run.RunState,SurvivorsMaker.Run.WeaponItemDef)
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: Score(RunState, WeaponItemDef)
+  nameWithType: GreedyBot.Score(RunState, WeaponItemDef)
+  fullName: SurvivorsMaker.Balance.GreedyBot.Score(SurvivorsMaker.Run.RunState, SurvivorsMaker.Run.WeaponItemDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Scores a prospective acquisition using the configured stat weights and current build context.
+  example: []
+  syntax:
+    content: public float Score(RunState run, WeaponItemDef weapon)
+    parameters:
+    - id: run
+      type: SurvivorsMaker.Run.RunState
+    - id: weapon
+      type: SurvivorsMaker.Run.WeaponItemDef
+    return:
+      type: System.Single
+    content.vb: Public Function Score(run As RunState, weapon As WeaponItemDef) As Single
+  overload: SurvivorsMaker.Balance.GreedyBot.Score*
+- uid: SurvivorsMaker.Balance.GreedyBot.Name
+  commentId: P:SurvivorsMaker.Balance.GreedyBot.Name
+  id: Name
+  parent: SurvivorsMaker.Balance.GreedyBot
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: GreedyBot.Name
+  fullName: SurvivorsMaker.Balance.GreedyBot.Name
+  type: Property
+  assemblies:
+  - SurvivorsMaker.Balance
+  namespace: SurvivorsMaker.Balance
+  summary: Short name shown in reports, e.g. "random" or "greedy".
+  example: []
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: SurvivorsMaker.Balance.RandomBot.Name
+  overload: SurvivorsMaker.Balance.GreedyBot.Name*
+references:
+- uid: SurvivorsMaker.Balance
+  commentId: N:SurvivorsMaker.Balance
+  isExternal: true
+  name: SurvivorsMaker.Balance
+  nameWithType: SurvivorsMaker.Balance
+  fullName: SurvivorsMaker.Balance
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Balance
+    name: Balance
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Balance.RandomBot
+  commentId: T:SurvivorsMaker.Balance.RandomBot
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html
+  name: RandomBot
+  nameWithType: RandomBot
+  fullName: SurvivorsMaker.Balance.RandomBot
+- uid: SurvivorsMaker.Balance.IRunBot
+  commentId: T:SurvivorsMaker.Balance.IRunBot
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.IRunBot.html
+  name: IRunBot
+  nameWithType: IRunBot
+  fullName: SurvivorsMaker.Balance.IRunBot
+- uid: SurvivorsMaker.Balance.RandomBot.Settings
+  commentId: F:SurvivorsMaker.Balance.RandomBot.Settings
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Settings
+  name: Settings
+  nameWithType: RandomBot.Settings
+  fullName: SurvivorsMaker.Balance.RandomBot.Settings
+- uid: SurvivorsMaker.Balance.RandomBot.ShopRules
+  commentId: F:SurvivorsMaker.Balance.RandomBot.ShopRules
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_ShopRules
+  name: ShopRules
+  nameWithType: RandomBot.ShopRules
+  fullName: SurvivorsMaker.Balance.RandomBot.ShopRules
+- uid: SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  commentId: M:SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  name: Begin(RunState, SimRandom)
+  nameWithType: RandomBot.Begin(RunState, SimRandom)
+  fullName: SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState, SurvivorsMaker.Simulation.SimRandom)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimRandom
+    name: SimRandom
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.RandomBot.Begin(SurvivorsMaker.Run.RunState,SurvivorsMaker.Simulation.SimRandom)
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Begin_SurvivorsMaker_Run_RunState_SurvivorsMaker_Simulation_SimRandom_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: ','
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.SimRandom
+    name: SimRandom
+    isExternal: true
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Balance.GreedyBotSettings
+  commentId: T:SurvivorsMaker.Balance.GreedyBotSettings
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBotSettings.html
+  name: GreedyBotSettings
+  nameWithType: GreedyBotSettings
+  fullName: SurvivorsMaker.Balance.GreedyBotSettings
+- uid: SurvivorsMaker.Balance.GreedyBot.#ctor*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot__ctor_SurvivorsMaker_Balance_GreedyBotSettings_SurvivorsMaker_Balance_RandomBotSettings_
+  name: GreedyBot
+  nameWithType: GreedyBot.GreedyBot
+  fullName: SurvivorsMaker.Balance.GreedyBot.GreedyBot
+  nameWithType.vb: GreedyBot.New
+  fullName.vb: SurvivorsMaker.Balance.GreedyBot.New
+  name.vb: New
+- uid: SurvivorsMaker.Balance.RandomBotSettings
+  commentId: T:SurvivorsMaker.Balance.RandomBotSettings
+  parent: SurvivorsMaker.Balance
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBotSettings.html
+  name: RandomBotSettings
+  nameWithType: RandomBotSettings
+  fullName: SurvivorsMaker.Balance.RandomBotSettings
+- uid: SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Move_SurvivorsMaker_Simulation_SimWorld_
+  name: Move(SimWorld)
+  nameWithType: RandomBot.Move(SimWorld)
+  fullName: SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+    name: Move
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Move_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.RandomBot.Move(SurvivorsMaker.Simulation.SimWorld)
+    name: Move
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Move_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Balance.GreedyBot.Move*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.Move
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot_Move_SurvivorsMaker_Simulation_SimWorld_
+  name: Move
+  nameWithType: GreedyBot.Move
+  fullName: SurvivorsMaker.Balance.GreedyBot.Move
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: SurvivorsMaker.Simulation.Vec2
+  commentId: T:SurvivorsMaker.Simulation.Vec2
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.Vec2.html
+  name: Vec2
+  nameWithType: Vec2
+  fullName: SurvivorsMaker.Simulation.Vec2
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: SurvivorsMaker.Run.RunState.Choices
+  commentId: F:SurvivorsMaker.Run.RunState.Choices
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html#SurvivorsMaker_Run_RunState_Choices
+  name: Choices
+  nameWithType: RunState.Choices
+  fullName: SurvivorsMaker.Run.RunState.Choices
+- uid: SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  commentId: M:SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_ChooseLevelUp_SurvivorsMaker_Run_RunState_
+  name: ChooseLevelUp(RunState)
+  nameWithType: RandomBot.ChooseLevelUp(RunState)
+  fullName: SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+    name: ChooseLevelUp
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_ChooseLevelUp_SurvivorsMaker_Run_RunState_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.RandomBot.ChooseLevelUp(SurvivorsMaker.Run.RunState)
+    name: ChooseLevelUp
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_ChooseLevelUp_SurvivorsMaker_Run_RunState_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunState
+    name: RunState
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot_ChooseLevelUp_SurvivorsMaker_Run_RunState_
+  name: ChooseLevelUp
+  nameWithType: GreedyBot.ChooseLevelUp
+  fullName: SurvivorsMaker.Balance.GreedyBot.ChooseLevelUp
+- uid: SurvivorsMaker.Run.RunState
+  commentId: T:SurvivorsMaker.Run.RunState
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunState.html
+  name: RunState
+  nameWithType: RunState
+  fullName: SurvivorsMaker.Run.RunState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SurvivorsMaker.Run
+  commentId: N:SurvivorsMaker.Run
+  isExternal: true
+  name: SurvivorsMaker.Run
+  nameWithType: SurvivorsMaker.Run
+  fullName: SurvivorsMaker.Run
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Run
+    name: Run
+    isExternal: true
+- uid: SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+  commentId: M:SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Shop_SurvivorsMaker_Run_RunController_
+  name: Shop(RunController)
+  nameWithType: RandomBot.Shop(RunController)
+  fullName: SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+  spec.csharp:
+  - uid: SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+    name: Shop
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Shop_SurvivorsMaker_Run_RunController_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Balance.RandomBot.Shop(SurvivorsMaker.Run.RunController)
+    name: Shop
+    isExternal: true
+    href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Shop_SurvivorsMaker_Run_RunController_
+  - name: (
+  - uid: SurvivorsMaker.Run.RunController
+    name: RunController
+    isExternal: true
+  - name: )
+- uid: SurvivorsMaker.Balance.GreedyBot.Shop*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.Shop
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot_Shop_SurvivorsMaker_Run_RunController_
+  name: Shop
+  nameWithType: GreedyBot.Shop
+  fullName: SurvivorsMaker.Balance.GreedyBot.Shop
+- uid: SurvivorsMaker.Run.RunController
+  commentId: T:SurvivorsMaker.Run.RunController
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.RunController.html
+  name: RunController
+  nameWithType: RunController
+  fullName: SurvivorsMaker.Run.RunController
+- uid: SurvivorsMaker.Balance.GreedyBot.Score*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.Score
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot_Score_SurvivorsMaker_Run_RunState_SurvivorsMaker_Run_ItemDef_
+  name: Score
+  nameWithType: GreedyBot.Score
+  fullName: SurvivorsMaker.Balance.GreedyBot.Score
+- uid: SurvivorsMaker.Run.ItemDef
+  commentId: T:SurvivorsMaker.Run.ItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.ItemDef.html
+  name: ItemDef
+  nameWithType: ItemDef
+  fullName: SurvivorsMaker.Run.ItemDef
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Run.WeaponItemDef
+  commentId: T:SurvivorsMaker.Run.WeaponItemDef
+  parent: SurvivorsMaker.Run
+  isExternal: true
+  href: SurvivorsMaker.Run.WeaponItemDef.html
+  name: WeaponItemDef
+  nameWithType: WeaponItemDef
+  fullName: SurvivorsMaker.Run.WeaponItemDef
+- uid: SurvivorsMaker.Balance.RandomBot.Name
+  commentId: P:SurvivorsMaker.Balance.RandomBot.Name
+  parent: SurvivorsMaker.Balance.RandomBot
+  isExternal: true
+  href: SurvivorsMaker.Balance.RandomBot.html#SurvivorsMaker_Balance_RandomBot_Name
+  name: Name
+  nameWithType: RandomBot.Name
+  fullName: SurvivorsMaker.Balance.RandomBot.Name
+- uid: SurvivorsMaker.Balance.GreedyBot.Name*
+  commentId: Overload:SurvivorsMaker.Balance.GreedyBot.Name
+  isExternal: true
+  href: SurvivorsMaker.Balance.GreedyBot.html#SurvivorsMaker_Balance_GreedyBot_Name
+  name: Name
+  nameWithType: GreedyBot.Name
+  fullName: SurvivorsMaker.Balance.GreedyBot.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

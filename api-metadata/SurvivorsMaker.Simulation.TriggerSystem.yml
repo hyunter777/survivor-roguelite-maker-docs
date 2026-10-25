@@ -1,0 +1,829 @@
+### YamlMime:ManagedReference
+items:
+- uid: SurvivorsMaker.Simulation.TriggerSystem
+  commentId: T:SurvivorsMaker.Simulation.TriggerSystem
+  id: TriggerSystem
+  parent: SurvivorsMaker.Simulation
+  children:
+  - SurvivorsMaker.Simulation.TriggerSystem.#ctor
+  - SurvivorsMaker.Simulation.TriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  - SurvivorsMaker.Simulation.TriggerSystem.Compare(System.Single,SurvivorsMaker.Simulation.TriggerCondition)
+  - SurvivorsMaker.Simulation.TriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  - SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  - SurvivorsMaker.Simulation.TriggerSystem.Validate(SurvivorsMaker.Simulation.TriggerDef)
+  langs:
+  - csharp
+  - vb
+  name: TriggerSystem
+  nameWithType: TriggerSystem
+  fullName: SurvivorsMaker.Simulation.TriggerSystem
+  type: Class
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Ordered trigger instances; events created by actions are not recursively dispatched.
+  example: []
+  syntax:
+    content: 'public sealed class TriggerSystem : ITriggerSystem'
+    content.vb: Public NotInheritable Class TriggerSystem Implements ITriggerSystem
+  inheritance:
+  - System.Object
+  implements:
+  - SurvivorsMaker.Simulation.ITriggerSystem
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Compare(System.Single,SurvivorsMaker.Simulation.TriggerCondition)
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.Compare(System.Single,SurvivorsMaker.Simulation.TriggerCondition)
+  id: Compare(System.Single,SurvivorsMaker.Simulation.TriggerCondition)
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Compare(float, TriggerCondition)
+  nameWithType: TriggerSystem.Compare(float, TriggerCondition)
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Compare(float, SurvivorsMaker.Simulation.TriggerCondition)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Evaluates one condition comparison against an already-resolved numeric value.
+  example: []
+  syntax:
+    content: public static bool Compare(float value, TriggerCondition condition)
+    parameters:
+    - id: value
+      type: System.Single
+    - id: condition
+      type: SurvivorsMaker.Simulation.TriggerCondition
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Compare(value As Single, condition As TriggerCondition) As Boolean
+  overload: SurvivorsMaker.Simulation.TriggerSystem.Compare*
+  nameWithType.vb: TriggerSystem.Compare(Single, TriggerCondition)
+  fullName.vb: SurvivorsMaker.Simulation.TriggerSystem.Compare(Single, SurvivorsMaker.Simulation.TriggerCondition)
+  name.vb: Compare(Single, TriggerCondition)
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Validate(SurvivorsMaker.Simulation.TriggerDef)
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.Validate(SurvivorsMaker.Simulation.TriggerDef)
+  id: Validate(SurvivorsMaker.Simulation.TriggerDef)
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Validate(TriggerDef)
+  nameWithType: TriggerSystem.Validate(TriggerDef)
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Validate(SurvivorsMaker.Simulation.TriggerDef)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Returns invalid trigger-rule authoring issues without registering or firing the trigger.
+  example: []
+  syntax:
+    content: public static List<string> Validate(TriggerDef def)
+    parameters:
+    - id: def
+      type: SurvivorsMaker.Simulation.TriggerDef
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function Validate(def As TriggerDef) As List(Of String)
+  overload: SurvivorsMaker.Simulation.TriggerSystem.Validate*
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  id: Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  nameWithType: TriggerSystem.Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: 'At wave start: builds world.Triggers from the request and fires OnWaveStart.'
+  example: []
+  syntax:
+    content: public void Begin(SimWorld world, IReadOnlyList<TriggerDef> triggers)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: triggers
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+    content.vb: Public Sub Begin(world As SimWorld, triggers As IReadOnlyList(Of TriggerDef))
+  overload: SurvivorsMaker.Simulation.TriggerSystem.Begin*
+  implements:
+  - SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  nameWithType.vb: TriggerSystem.Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+  fullName.vb: SurvivorsMaker.Simulation.TriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.TriggerDef))
+  name.vb: Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+- uid: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  id: UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef},System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding})
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: UpdateDefinitions(SimWorld, IReadOnlyList<TriggerDef>, IReadOnlyList<TriggerBinding>)
+  nameWithType: TriggerSystem.UpdateDefinitions(SimWorld, IReadOnlyList<TriggerDef>, IReadOnlyList<TriggerBinding>)
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>,
+    System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerBinding>)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: Appended field-mode rewards become active without refiring OnWaveStart or resetting existing timers.
+  example: []
+  syntax:
+    content: public static void UpdateDefinitions(SimWorld world, IReadOnlyList<TriggerDef> triggers, IReadOnlyList<TriggerBinding>
+      bindings = null)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    - id: triggers
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+    - id: bindings
+      type: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+    content.vb: Public Shared Sub UpdateDefinitions(world As SimWorld, triggers As IReadOnlyList(Of TriggerDef), bindings
+      As IReadOnlyList(Of TriggerBinding) = Nothing)
+  overload: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions*
+  nameWithType.vb: TriggerSystem.UpdateDefinitions(SimWorld, IReadOnlyList(Of TriggerDef), IReadOnlyList(Of TriggerBinding))
+  fullName.vb: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.TriggerDef), System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerBinding))
+  name.vb: UpdateDefinitions(SimWorld, IReadOnlyList(Of TriggerDef), IReadOnlyList(Of TriggerBinding))
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  id: Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: Tick(SimWorld)
+  nameWithType: TriggerSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  type: Method
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  summary: "Step 13a (after deaths are collected, before pickups): reacts to this tick's events\n            (EnemyKilled,
+    EnemyDamaged from weapons, PlayerDamaged, LevelUp), periodic timers and\n            temp buff expiry."
+  example: []
+  syntax:
+    content: public void Tick(SimWorld world)
+    parameters:
+    - id: world
+      type: SurvivorsMaker.Simulation.SimWorld
+    content.vb: Public Sub Tick(world As SimWorld)
+  overload: SurvivorsMaker.Simulation.TriggerSystem.Tick*
+  implements:
+  - SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+- uid: SurvivorsMaker.Simulation.TriggerSystem.#ctor
+  commentId: M:SurvivorsMaker.Simulation.TriggerSystem.#ctor
+  id: '#ctor'
+  parent: SurvivorsMaker.Simulation.TriggerSystem
+  langs:
+  - csharp
+  - vb
+  name: TriggerSystem()
+  nameWithType: TriggerSystem.TriggerSystem()
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.TriggerSystem()
+  type: Constructor
+  assemblies:
+  - SurvivorsMaker.Simulation
+  namespace: SurvivorsMaker.Simulation
+  syntax:
+    content: public TriggerSystem()
+    content.vb: Public Sub New()
+  overload: SurvivorsMaker.Simulation.TriggerSystem.#ctor*
+  nameWithType.vb: TriggerSystem.New()
+  fullName.vb: SurvivorsMaker.Simulation.TriggerSystem.New()
+  name.vb: New()
+references:
+- uid: SurvivorsMaker.Simulation
+  commentId: N:SurvivorsMaker.Simulation
+  isExternal: true
+  name: SurvivorsMaker.Simulation
+  nameWithType: SurvivorsMaker.Simulation
+  fullName: SurvivorsMaker.Simulation
+  spec.csharp:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+  spec.vb:
+  - uid: SurvivorsMaker
+    name: SurvivorsMaker
+    isExternal: true
+  - name: .
+  - uid: SurvivorsMaker.Simulation
+    name: Simulation
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SurvivorsMaker.Simulation.ITriggerSystem
+  commentId: T:SurvivorsMaker.Simulation.ITriggerSystem
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html
+  name: ITriggerSystem
+  nameWithType: ITriggerSystem
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: ' '
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Compare*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.Compare
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem_Compare_System_Single_SurvivorsMaker_Simulation_TriggerCondition_
+  name: Compare
+  nameWithType: TriggerSystem.Compare
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Compare
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SurvivorsMaker.Simulation.TriggerCondition
+  commentId: T:SurvivorsMaker.Simulation.TriggerCondition
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerCondition.html
+  name: TriggerCondition
+  nameWithType: TriggerCondition
+  fullName: SurvivorsMaker.Simulation.TriggerCondition
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Validate*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.Validate
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem_Validate_SurvivorsMaker_Simulation_TriggerDef_
+  name: Validate
+  nameWithType: TriggerSystem.Validate
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Validate
+- uid: SurvivorsMaker.Simulation.TriggerDef
+  commentId: T:SurvivorsMaker.Simulation.TriggerDef
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerDef.html
+  name: TriggerDef
+  nameWithType: TriggerDef
+  fullName: SurvivorsMaker.Simulation.TriggerDef
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Begin*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.Begin
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__
+  name: Begin
+  nameWithType: TriggerSystem.Begin
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Begin
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  commentId: M:SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+  parent: SurvivorsMaker.Simulation.ITriggerSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__
+  name: Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  nameWithType: ITriggerSystem.Begin(SimWorld, IReadOnlyList<TriggerDef>)
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>)
+  nameWithType.vb: ITriggerSystem.Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+  fullName.vb: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld, System.Collections.Generic.IReadOnlyList(Of
+    SurvivorsMaker.Simulation.TriggerDef))
+  name.vb: Begin(SimWorld, IReadOnlyList(Of TriggerDef))
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ITriggerSystem.Begin(SurvivorsMaker.Simulation.SimWorld,System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef})
+    name: Begin
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Begin_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: ','
+  - name: ' '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+  - name: )
+- uid: SurvivorsMaker.Simulation.SimWorld
+  commentId: T:SurvivorsMaker.Simulation.SimWorld
+  parent: SurvivorsMaker.Simulation
+  isExternal: true
+  href: SurvivorsMaker.Simulation.SimWorld.html
+  name: SimWorld
+  nameWithType: SimWorld
+  fullName: SurvivorsMaker.Simulation.SimWorld
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerDef}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerDef>
+  nameWithType: IReadOnlyList<TriggerDef>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerDef>
+  nameWithType.vb: IReadOnlyList(Of TriggerDef)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerDef)
+  name.vb: IReadOnlyList(Of TriggerDef)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerDef
+    name: TriggerDef
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerDef.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - name: T
+  - name: )
+- uid: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem_UpdateDefinitions_SurvivorsMaker_Simulation_SimWorld_System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerDef__System_Collections_Generic_IReadOnlyList_SurvivorsMaker_Simulation_TriggerBinding__
+  name: UpdateDefinitions
+  nameWithType: TriggerSystem.UpdateDefinitions
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.UpdateDefinitions
+- uid: System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+  commentId: T:System.Collections.Generic.IReadOnlyList{SurvivorsMaker.Simulation.TriggerBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TriggerBinding>
+  nameWithType: IReadOnlyList<TriggerBinding>
+  fullName: System.Collections.Generic.IReadOnlyList<SurvivorsMaker.Simulation.TriggerBinding>
+  nameWithType.vb: IReadOnlyList(Of TriggerBinding)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of SurvivorsMaker.Simulation.TriggerBinding)
+  name.vb: IReadOnlyList(Of TriggerBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: SurvivorsMaker.Simulation.TriggerBinding
+    name: TriggerBinding
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerBinding.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: ' '
+  - uid: SurvivorsMaker.Simulation.TriggerBinding
+    name: TriggerBinding
+    isExternal: true
+    href: SurvivorsMaker.Simulation.TriggerBinding.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.TriggerSystem.Tick*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.Tick
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick
+  nameWithType: TriggerSystem.Tick
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.Tick
+- uid: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  commentId: M:SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  parent: SurvivorsMaker.Simulation.ITriggerSystem
+  isExternal: true
+  href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  name: Tick(SimWorld)
+  nameWithType: ITriggerSystem.Tick(SimWorld)
+  fullName: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+  spec.csharp:
+  - uid: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+  spec.vb:
+  - uid: SurvivorsMaker.Simulation.ITriggerSystem.Tick(SurvivorsMaker.Simulation.SimWorld)
+    name: Tick
+    isExternal: true
+    href: SurvivorsMaker.Simulation.ITriggerSystem.html#SurvivorsMaker_Simulation_ITriggerSystem_Tick_SurvivorsMaker_Simulation_SimWorld_
+  - name: (
+  - uid: SurvivorsMaker.Simulation.SimWorld
+    name: SimWorld
+    isExternal: true
+    href: SurvivorsMaker.Simulation.SimWorld.html
+  - name: )
+- uid: SurvivorsMaker.Simulation.TriggerSystem.#ctor*
+  commentId: Overload:SurvivorsMaker.Simulation.TriggerSystem.#ctor
+  isExternal: true
+  href: SurvivorsMaker.Simulation.TriggerSystem.html#SurvivorsMaker_Simulation_TriggerSystem__ctor
+  name: TriggerSystem
+  nameWithType: TriggerSystem.TriggerSystem
+  fullName: SurvivorsMaker.Simulation.TriggerSystem.TriggerSystem
+  nameWithType.vb: TriggerSystem.New
+  fullName.vb: SurvivorsMaker.Simulation.TriggerSystem.New
+  name.vb: New
