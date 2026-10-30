@@ -1,35 +1,25 @@
 # Five-minute demo
 
-In Package Manager, select this package and import **Demo**. Imported files live below `Assets/Samples/Survivor Roguelite Maker/<package version>/Demo/`. Work with the imported copy.
+1. Choose **Tools > Survivor Roguelite Maker > Prepare Demo Text Resources** and wait for the import to finish.
+2. Choose **Tools > Survivor Roguelite Maker > Build Demo**.
+3. Open `Assets/SurvivorsMaker/Samples/Demo/Scenes/ArenaDemo.unity`.
+4. Press **Play**.
 
-Choose **Tools/Survivor Roguelite Maker/Prepare Demo Text Resources** and wait for the TMP Essential Resources import to finish. Then choose **Tools/Survivor Roguelite Maker/Build Demo** to build the imported sample.
+## Play the first loop
 
-Find and open `ArenaDemo.unity` under that sample's `Scenes` folder. The scene bootstrap uses one scene for the menu's Arena/Field mode switch. The sample builder regenerates its authored output, so use your own folder for lasting changes. Keep only one imported sample copy to avoid duplicate scripts/GUIDs.
+Choose a character, a starting weapon and a mode. Start the run, move to avoid enemies and let automatic attacks run.
 
-Create an independent game through Tools/Survivor Roguelite Maker/New Game Project....
+- **Arena:** survive a wave, choose upgrades and visit the shop.
+- **Field:** choose upgrades during the wave and continue fighting.
 
-### Play the first loop
+The HUD displays health, experience, level, wave and currency. Open the pause menu to adjust options.
 
-Choose a character, a starting weapon and mode. Start, move to avoid contact and let automatic attacks run. Pause to inspect options. In Arena mode survive a wave, make queued upgrade selections and visit the shop; in Field mode selections interrupt the current wave. A successful setup displays health, experience, level, wave and currency and can transition through the relevant screens.
+![Demo menu with Arena and Field modes.](../../assets/demo-menu.png)
 
-## Entry point and reference fields
+## Edit the demo
 
-**Entry point:** Tools/Survivor Roguelite Maker/Build Demo
+Edit the included content under `Assets/SurvivorsMaker/Samples/Demo/`. The builder regenerates its output when you run **Build Demo**. Keep lasting changes in your own game folder.
 
-| Field / API | Purpose |
-|---|---|
-| `Seed` | Use a fixed nonzero seed while comparing attempts |
-| `Mode` | Arena shows shops; Field resumes interrupted combat |
-| `Input` | Movement and pause come from IPlayerInput |
-
-## Figure
-
-![Product capture.](../../assets/demo-menu.png)
-
-Product capture.
-
-## Check your result
-
-Validate connected content before starting a new measurement or run. Keep the settings, seed and content version with any result you compare. For code-only adapters, compile against the package version you ship and configure the required authored data before gameplay.
+To create an independent game, choose **Tools > Survivor Roguelite Maker > New Game Project...**.
 
 [Documentation home](../index.md) · [Installation](installation.md) · [Samples](samples.md) · [Ten-minute first game](first-game.md)
